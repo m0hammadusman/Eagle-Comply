@@ -1,0 +1,310 @@
+import React, { useState, useEffect } from 'react';
+import { ThemeProvider } from './context/ThemeContext';
+import { LanguageProvider } from './context/LanguageContext';
+import { AuthProvider } from './context/AuthContext';
+import { DataProvider } from './context/DataContext';
+
+// Layout & Common
+import Header from './components/common/Header';
+import Footer from './components/common/Footer';
+import SearchModal from './components/common/SearchModal';
+import ComplianceChatbot from './components/chat/ComplianceChatbot';
+import WhatsAppFloatingWidget from './components/common/WhatsAppFloatingWidget';
+import ErrorBoundary from './components/common/ErrorBoundary';
+import PlatformLoader from './components/common/PlatformLoader';
+import PageEnhancements from './components/common/PageEnhancements';
+import useScrollReveal from './hooks/useScrollReveal';
+
+// Modals
+import ConsultationModal from './components/workflows/ConsultationModal';
+import RequestQuoteModal from './components/workflows/RequestQuoteModal';
+import OrderServiceModal from './components/workflows/OrderServiceModal';
+
+// Public Pages
+import HomePage from './pages/public/HomePage';
+import SolutionsPage from './pages/public/SolutionsPage';
+import SolutionDetailPage from './pages/public/SolutionDetailPage';
+import IndustriesPage from './pages/public/IndustriesPage';
+import IndustryDetailPage from './pages/public/IndustryDetailPage';
+import GlobalCompliancePage from './pages/public/GlobalCompliancePage';
+import CountryDetailPage from './pages/public/CountryDetailPage';
+import RegulationsPage from './pages/public/RegulationsPage';
+import RegulationDetailPage from './pages/public/RegulationDetailPage';
+import KnowledgeCenterPage from './pages/public/KnowledgeCenterPage';
+import InsightsPage from './pages/public/InsightsPage';
+import ArticleDetailPage from './pages/public/ArticleDetailPage';
+import ExpertsPage from './pages/public/ExpertsPage';
+import AboutPage from './pages/public/AboutPage';
+import CaseStudiesPage from './pages/public/CaseStudiesPage';
+import CareersPage from './pages/public/CareersPage';
+import ContactPage from './pages/public/ContactPage';
+import LegalPage from './pages/public/LegalPage';
+
+// Portals
+import CustomerPortal from './pages/portals/CustomerPortal';
+import ConsultantPortal from './pages/portals/ConsultantPortal';
+import AdminPlatform from './pages/portals/AdminPlatform';
+
+function AppContent() {
+  const [isLoading, setIsLoading] = useState(true);
+  const routeFromPath = (path = window.location.pathname) => {
+    const clean = path.replace(/\/+$/, '') || '/';
+    const parts = clean.split('/').filter(Boolean);
+    if (!parts.length) return { route: 'home', params: null };
+    const [section, slug] = parts;
+    if (section === 'services') return slug ? { route: 'solution-detail', params: { id: slug } } : { route: 'solutions', params: null };
+    if (section === 'solutions') return slug ? { route: 'solution-detail', params: { id: slug } } : { route: 'solutions', params: null };
+    if (section === 'industries') return slug ? { route: 'industry-detail', params: { id: slug } } : { route: 'industries', params: null };
+    if (section === 'jurisdictions') return slug ? { route: 'country-detail', params: { id: slug } } : { route: 'global-compliance', params: null };
+    if (section === 'regulations') return slug ? { route: 'regulation-detail', params: { id: slug } } : { route: 'regulations', params: null };
+    if (section === 'insights') return slug ? { route: 'article-detail', params: { id: slug } } : { route: 'insights', params: null };
+    const direct = {
+      about:'about', contact:'contact', resources:'knowledge-center', 'knowledge-center':'knowledge-center',
+      experts:'experts', 'case-studies':'case-studies', careers:'careers', legal:'legal',
+      'global-compliance':'global-compliance', portal:'portal', consultant:'consultant', admin:'admin'
+    };
+    return { route: direct[section] || 'home', params: null };
+  };
+
+  const initialRoute = routeFromPath();
+  const [currentRoute, setCurrentRoute] = useState(initialRoute.route);
+  const [routeParams, setRouteParams] = useState(initialRoute.params);
+
+  // Modals
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [isConsultationOpen, setIsConsultationOpen] = useState(false);
+  const [isQuoteOpen, setIsQuoteOpen] = useState(false);
+  const [orderResource, setOrderResource] = useState(null);
+
+  // Initialize Global Scroll Reveal
+  useScrollReveal([currentRoute]);
+
+  const routeToPath = (route, params = null) => {
+    const id = params?.id;
+    const map = {
+      home: '/', about: '/about/', solutions: '/services/', 'solution-detail': `/services/${id || ''}`,
+      industries: '/industries/', 'industry-detail': `/industries/${id || ''}`,
+      'global-compliance': '/global-compliance/', 'country-detail': `/jurisdictions/${id || ''}`,
+      regulations: '/regulations/', 'regulation-detail': `/regulations/${id || ''}`,
+      insights: '/insights/', 'article-detail': `/insights/${id || ''}`,
+      'knowledge-center': '/resources/', experts: '/experts/', 'case-studies': '/case-studies/',
+      careers: '/careers/', contact: '/contact/', legal: '/legal/', portal: '/portal/',
+      consultant: '/consultant/', admin: '/admin/'
+    };
+    return map[route] || '/';
+  };
+
+  const navigate = (route, params = null, replace = false) => {
+    setCurrentRoute(route);
+    setRouteParams(params);
+    const nextPath = routeToPath(route, params);
+    if (window.location.pathname !== nextPath) {
+      window.history[replace ? 'replaceState' : 'pushState']({ route, params }, '', nextPath);
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  useEffect(() => {
+    const onPopState = () => {
+      const next = routeFromPath();
+      setCurrentRoute(next.route);
+      setRouteParams(next.params);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+    window.addEventListener('popstate', onPopState);
+    return () => window.removeEventListener('popstate', onPopState);
+  }, []);
+
+  return (
+    <>
+      {/* Animated Preloader on Initial Page Refresh */}
+      {isLoading && (
+        <PlatformLoader onFinish={() => setIsLoading(false)} />
+      )}
+
+      <div className="min-h-screen w-full flex flex-col bg-surface-base text-slate-900 dark:text-slate-100 transition-colors duration-300">
+        {/* Universal Header */}
+        <Header
+          currentRoute={currentRoute}
+          onNavigate={navigate}
+          onOpenSearch={() => setIsSearchOpen(true)}
+          onOpenConsultation={() => setIsConsultationOpen(true)}
+          onOpenQuote={() => setIsQuoteOpen(true)}
+        />
+
+        {/* Main Routed Content */}
+        <main className="flex-1 w-full max-w-full overflow-x-hidden">
+          {currentRoute === 'home' && (
+            <HomePage 
+              onNavigate={navigate} 
+              onOpenConsultation={() => setIsConsultationOpen(true)} 
+              onOpenQuote={() => setIsQuoteOpen(true)} 
+            />
+          )}
+          {(currentRoute === 'solutions' || currentRoute === 'services') && (
+            <SolutionsPage 
+              onNavigate={navigate} 
+              onOpenConsultation={() => setIsConsultationOpen(true)} 
+              onOpenQuote={() => setIsQuoteOpen(true)} 
+            />
+          )}
+          {(currentRoute === 'solution-detail' || currentRoute === 'service-detail') && (
+            <SolutionDetailPage 
+              params={routeParams} 
+              onNavigate={navigate} 
+              onOpenConsultation={() => setIsConsultationOpen(true)} 
+              onOpenQuote={() => setIsQuoteOpen(true)} 
+            />
+          )}
+          {currentRoute === 'industries' && (
+            <IndustriesPage onNavigate={navigate} />
+          )}
+          {currentRoute === 'industry-detail' && (
+            <IndustryDetailPage 
+              params={routeParams} 
+              onNavigate={navigate} 
+              onOpenConsultation={() => setIsConsultationOpen(true)} 
+              onOpenQuote={() => setIsQuoteOpen(true)} 
+            />
+          )}
+          {currentRoute === 'global-compliance' && (
+            <GlobalCompliancePage onNavigate={navigate} />
+          )}
+          {currentRoute === 'country-detail' && (
+            <CountryDetailPage 
+              params={routeParams} 
+              onNavigate={navigate} 
+              onOpenConsultation={() => setIsConsultationOpen(true)} 
+              onOpenQuote={() => setIsQuoteOpen(true)} 
+            />
+          )}
+          {currentRoute === 'regulations' && (
+            <RegulationsPage onNavigate={navigate} />
+          )}
+          {currentRoute === 'regulation-detail' && (
+            <RegulationDetailPage 
+              params={routeParams} 
+              onNavigate={navigate} 
+              onOpenConsultation={() => setIsConsultationOpen(true)} 
+              onOpenQuote={() => setIsQuoteOpen(true)} 
+            />
+          )}
+          {currentRoute === 'knowledge-center' && (
+            <KnowledgeCenterPage 
+              onNavigate={navigate} 
+              onOrderResource={(res) => setOrderResource(res)} 
+            />
+          )}
+          {currentRoute === 'insights' && (
+            <InsightsPage onNavigate={navigate} />
+          )}
+          {currentRoute === 'article-detail' && (
+            <ArticleDetailPage 
+              params={routeParams} 
+              onNavigate={navigate} 
+              onOpenConsultation={() => setIsConsultationOpen(true)} 
+            />
+          )}
+          {currentRoute === 'experts' && (
+            <ExpertsPage 
+              onNavigate={navigate} 
+              onOpenConsultation={() => setIsConsultationOpen(true)} 
+            />
+          )}
+          {currentRoute === 'about' && (
+            <AboutPage 
+              onNavigate={navigate} 
+              onOpenConsultation={() => setIsConsultationOpen(true)} 
+            />
+          )}
+          {currentRoute === 'case-studies' && (
+            <CaseStudiesPage 
+              onNavigate={navigate} 
+              onOpenConsultation={() => setIsConsultationOpen(true)} 
+            />
+          )}
+          {currentRoute === 'careers' && (
+            <CareersPage onNavigate={navigate} />
+          )}
+          {currentRoute === 'contact' && (
+            <ContactPage onNavigate={navigate} />
+          )}
+          {currentRoute === 'legal' && (
+            <LegalPage onNavigate={navigate} />
+          )}
+
+          {/* Authenticated Portals */}
+          {currentRoute === 'portal' && (
+            <CustomerPortal 
+              onNavigate={navigate} 
+              onOpenConsultation={() => setIsConsultationOpen(true)} 
+            />
+          )}
+          {currentRoute === 'consultant' && (
+            <ConsultantPortal onNavigate={navigate} />
+          )}
+          {currentRoute === 'admin' && (
+            <AdminPlatform onNavigate={navigate} />
+          )}
+          {/* Extended interactive experience on every non-home public page */}
+          {!['home', 'portal', 'consultant', 'admin'].includes(currentRoute) && (
+            <PageEnhancements
+              route={currentRoute}
+              onNavigate={navigate}
+              onOpenConsultation={() => setIsConsultationOpen(true)}
+            />
+          )}
+        </main>
+
+        {/* Universal Footer */}
+        <Footer onNavigate={navigate} />
+
+        {/* Live AI Regulatory Assistant */}
+        <ComplianceChatbot 
+          onNavigate={navigate}
+          onOpenConsultation={() => setIsConsultationOpen(true)}
+          onOpenQuote={() => setIsQuoteOpen(true)}
+        />
+
+        {/* Floating WhatsApp Contact Speed Dial Overlay */}
+        <WhatsAppFloatingWidget />
+
+        {/* Global Modals */}
+        <SearchModal 
+          isOpen={isSearchOpen} 
+          onClose={() => setIsSearchOpen(false)} 
+          onNavigate={navigate} 
+        />
+        <ConsultationModal 
+          isOpen={isConsultationOpen} 
+          onClose={() => setIsConsultationOpen(false)} 
+        />
+        <RequestQuoteModal 
+          isOpen={isQuoteOpen} 
+          onClose={() => setIsQuoteOpen(false)} 
+        />
+        <OrderServiceModal 
+          isOpen={!!orderResource} 
+          preselectedResource={orderResource} 
+          onClose={() => setOrderResource(null)} 
+        />
+      </div>
+    </>
+  );
+}
+
+export default function App() {
+  return (
+    <ErrorBoundary>
+      <ThemeProvider>
+        <LanguageProvider>
+          <AuthProvider>
+            <DataProvider>
+              <AppContent />
+            </DataProvider>
+          </AuthProvider>
+        </LanguageProvider>
+      </ThemeProvider>
+    </ErrorBoundary>
+  );
+}
