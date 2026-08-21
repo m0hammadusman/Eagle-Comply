@@ -156,12 +156,12 @@ function BadgeItem({ member }) {
             {/* Top-Left Clean Logo (No blue container / no blue outline) */}
             <div className="h-10 sm:h-11 w-auto flex items-center shrink-0">
               <img 
-                src="/logo-dark.png" 
+                src={`${import.meta.env.BASE_URL}logo-dark.png`} 
                 alt="EagleComply" 
                 className="h-full w-auto object-contain rounded-md block dark:hidden"
               />
               <img 
-                src="/logo-light.png" 
+                src={`${import.meta.env.BASE_URL}logo-light.png`} 
                 alt="EagleComply" 
                 className="h-full w-auto object-contain rounded-md hidden dark:block"
               />
@@ -181,7 +181,7 @@ function BadgeItem({ member }) {
           <div className="absolute right-[-6px] bottom-0 w-[82%] h-[78%] pointer-events-none z-[1] overflow-hidden flex items-end justify-end">
             {!imgError ? (
               <img
-                src={member.photo}
+                src={member.photo.startsWith("/") ? import.meta.env.BASE_URL + member.photo.slice(1) : member.photo}
                 alt={member.fullName}
                 onError={() => setImgError(true)}
                 className="h-full w-auto max-w-full object-contain object-bottom filter grayscale contrast-105 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-400 drop-shadow-xl"

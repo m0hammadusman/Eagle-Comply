@@ -12,7 +12,7 @@ export default function EagleLogo({
     return (
       <div className="relative inline-flex items-center justify-center shrink-0">
         <img
-          src="/logo-dark.png"
+          src={`${import.meta.env.BASE_URL}logo-dark.png`}
           alt={alt}
           className={`${className} object-contain shrink-0`}
         />
@@ -24,13 +24,13 @@ export default function EagleLogo({
     <div className="relative inline-flex items-center justify-center shrink-0">
       {/* Light Mode Logo */}
       <img
-        src="/logo-light.png"
+        src={`${import.meta.env.BASE_URL}logo-light.png`}
         alt={alt}
         className={`${className} object-contain transition-opacity duration-300 block dark:hidden shrink-0`}
       />
       {/* Dark Mode Logo */}
       <img
-        src="/logo-dark.png"
+        src={`${import.meta.env.BASE_URL}logo-dark.png`}
         alt={alt}
         className={`${className} object-contain transition-opacity duration-300 hidden dark:block shrink-0`}
       />

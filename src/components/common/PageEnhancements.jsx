@@ -63,7 +63,7 @@ export default function PageEnhancements({ route, onNavigate, onOpenConsultation
             </div>
             <div className="lg:col-span-5">
               <div className="relative min-h-[340px] rounded-3xl eagle-pulse overflow-hidden border border-surface-border bg-[#091F5C] shadow-2xl">
-                <img src="/assets/images/global-earth.jpg" alt="Global compliance advisory" className="absolute inset-0 w-full h-full object-cover opacity-45" />
+                <img src={`${import.meta.env.BASE_URL}assets/images/global-earth.jpg`} alt="Global compliance advisory" className="absolute inset-0 w-full h-full object-cover opacity-45" />
                 <div className="absolute inset-0 bg-gradient-to-tr from-[#091F5C] via-[#091F5C]/70 to-transparent" />
                 <div className="relative h-full min-h-[340px] flex items-center justify-center">
                   <div className="absolute top-5 right-5 text-white/50"><Globe2 className="w-10 h-10" /></div>

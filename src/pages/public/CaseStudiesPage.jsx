@@ -195,7 +195,7 @@ export default function CaseStudiesPage({ onNavigate, onOpenConsultation }) {
               <div className="relative w-72 h-72 sm:w-96 sm:h-96 rounded-full flex items-center justify-center">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-[#334DAF]/40 to-transparent blur-2xl pointer-events-none" />
                 <img
-                  src="/assets/images/global-earth.jpg"
+                  src={`${import.meta.env.BASE_URL}assets/images/global-earth.jpg`}
                   alt="Global Regulatory Network"
                   className="w-full h-full object-cover rounded-full opacity-60 mix-blend-screen shadow-[0_0_80px_rgba(112,150,209,0.3)] animate-pulse"
                   style={{ animationDuration: '6s' }}

@@ -41,7 +41,7 @@ export default function ExpertsPage({ onNavigate, onOpenConsultation }) {
               <div className="space-y-4">
                 <div className="flex items-center gap-4">
                   <img 
-                    src={exp.photo} 
+                    src={exp.photo.startsWith("/") ? import.meta.env.BASE_URL + exp.photo.slice(1) : exp.photo} 
                     alt={exp.name}
                     className="w-16 h-16 rounded-2xl object-cover object-top shadow-md border-2 border-[#334DAF]/20 dark:border-[#7096D1]/20 bg-surface-subtle"
                   />

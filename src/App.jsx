@@ -48,7 +48,12 @@ import AdminPlatform from './pages/portals/AdminPlatform';
 function AppContent() {
   const [isLoading, setIsLoading] = useState(true);
   const routeFromPath = (path = window.location.pathname) => {
-    const clean = path.replace(/\/+$/, '') || '/';
+    const baseUrl = import.meta.env.BASE_URL || '/';
+    let cleanPath = path;
+    if (baseUrl !== '/' && cleanPath.startsWith(baseUrl)) {
+      cleanPath = cleanPath.slice(baseUrl.length - 1);
+    }
+    const clean = cleanPath.replace(/\/+$/, '') || '/';
     const parts = clean.split('/').filter(Boolean);
     if (!parts.length) return { route: 'home', params: null };
     const [section, slug] = parts;
@@ -91,7 +96,10 @@ function AppContent() {
       careers: '/careers/', contact: '/contact/', legal: '/legal/', portal: '/portal/',
       consultant: '/consultant/', admin: '/admin/'
     };
-    return map[route] || '/';
+    const path = map[route] || '/';
+    const baseUrl = import.meta.env.BASE_URL || '/';
+    if (baseUrl === '/') return path;
+    return baseUrl.replace(/\/$/, '') + path;
   };
 
   const navigate = (route, params = null, replace = false) => {

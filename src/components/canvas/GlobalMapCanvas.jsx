@@ -81,7 +81,7 @@ export default function GlobalMapCanvas({ onSelectCountry }) {
         <div className="relative w-full lg:w-2/3 h-52 sm:h-80 lg:h-[430px] rounded-2xl bg-[#101E42] border border-[#7096D1]/30 overflow-hidden flex items-center justify-center shadow-2xl group">
           <video
             ref={videoRef}
-            src="/world-map.mp4"
+            src={`${import.meta.env.BASE_URL}world-map.mp4`}
             autoPlay
             loop
             muted

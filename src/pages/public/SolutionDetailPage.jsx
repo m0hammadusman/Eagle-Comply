@@ -140,7 +140,7 @@ export default function SolutionDetailPage({ params, onNavigate, onOpenConsultat
             </span>
             <div className="flex items-center gap-4">
               <img 
-                src={leadExpert.photo} 
+                src={leadExpert.photo.startsWith("/") ? import.meta.env.BASE_URL + leadExpert.photo.slice(1) : leadExpert.photo} 
                 alt={leadExpert.name}
                 className="w-14 h-14 rounded-2xl object-cover object-top border-2 border-[#334DAF]/20 dark:border-[#7096D1]/20 bg-surface-subtle"
               />
