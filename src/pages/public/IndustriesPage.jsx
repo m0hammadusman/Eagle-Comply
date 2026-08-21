@@ -59,7 +59,7 @@ export default function IndustriesPage({ onNavigate }) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {(industries || []).map((ind) => {
             const Icon = iconMap[ind.id] || Building2;
-            const imgUrl = industryImages[ind.id] || '/assets/images/governance-boardroom.jpg';
+            const imgUrl = industryImages[ind.id] || `${import.meta.env.BASE_URL}assets/images/governance-boardroom.jpg`;
 
             return (
               <div

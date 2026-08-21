@@ -82,7 +82,7 @@ export default function GlobalCompliancePage({ onNavigate }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredCountries.map((c) => {
-            const imgUrl = countryImages[c.id] || '/assets/images/global-earth.jpg';
+            const imgUrl = countryImages[c.id] || `${import.meta.env.BASE_URL}assets/images/global-earth.jpg`;
 
             return (
               <div

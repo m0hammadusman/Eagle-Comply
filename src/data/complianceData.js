@@ -567,7 +567,7 @@ export const practitioners = [
     designation: "Director Regulatory Compliance",
     department: "Regulatory Compliance",
     badge: "DIRECTOR",
-    photo: "/images/team/syed-anvar-hussain.png",
+    photo: "images/team/syed-anvar-hussain.png",
     linkedin: "https://www.linkedin.com/in/syed-husain-9165923b1",
     email: "info@eaglecomply.com"
   },
@@ -577,7 +577,7 @@ export const practitioners = [
     designation: "Director AML Compliance",
     department: "AML/CFT Compliance",
     badge: "DIRECTOR",
-    photo: "/images/team/muhammad-shahid.png",
+    photo: "images/team/muhammad-shahid.png",
     linkedin: "https://www.linkedin.com/in/shahed-m",
     email: "info@eaglecomply.com"
   },
@@ -587,7 +587,7 @@ export const practitioners = [
     designation: "Director Legal Compliance",
     department: "Legal Compliance",
     badge: "DIRECTOR",
-    photo: "/images/team/shan-ali.png",
+    photo: "images/team/shan-ali.png",
     linkedin: "https://www.linkedin.com/in/shan-ali-blockchain/",
     email: "info@eaglecomply.com"
   },
@@ -597,7 +597,7 @@ export const practitioners = [
     designation: "Director Financial Compliance",
     department: "Financial Compliance",
     badge: "DIRECTOR",
-    photo: "/images/team/zahid-munir.png",
+    photo: "images/team/zahid-munir.png",
     linkedin: "https://www.linkedin.com/in/zahid-munir",
     email: "info@eaglecomply.com"
   }
@@ -609,7 +609,7 @@ export const experts = [
     "name": "Syed Anvar Hussain",
     "role": "Director Regulatory Compliance — Statutory Governance & Licensing",
     "linkedin": "https://www.linkedin.com/in/syed-husain-9165923b1",
-    "photo": "/images/team/syed-anvar-hussain.png",
+    "photo": "images/team/syed-anvar-hussain.png",
     "specialisms": [
       "Regulatory Compliance Frameworks",
       "Licensing & Registration Readiness",
@@ -646,7 +646,7 @@ export const experts = [
     "name": "Muhammad Shahid",
     "role": "Director AML Compliance — AML/CFT & Financial Crime Prevention",
     "linkedin": "https://www.linkedin.com/in/shahed-m",
-    "photo": "/images/team/muhammad-shahid.png",
+    "photo": "images/team/muhammad-shahid.png",
     "specialisms": [
       "AML/CFT Program Development",
       "KYC/CDD/EDD Frameworks",
@@ -683,7 +683,7 @@ export const experts = [
     "name": "Shan Ali",
     "role": "Director Legal Compliance — Corporate Legal & Regulatory Counsel",
     "linkedin": "https://www.linkedin.com/company/eaglecomply/?viewAsMember=true",
-    "photo": "/images/team/shan-ali.png",
+    "photo": "images/team/shan-ali.png",
     "specialisms": [
       "Regulatory Legal Research & Opinions",
       "Corporate Legal Compliance & Web3",
@@ -720,7 +720,7 @@ export const experts = [
     "name": "Zahid Munir",
     "role": "Director Financial Compliance — Prudential Risk & Capital Governance",
     "linkedin": "https://www.linkedin.com/company/eaglecomply/?viewAsMember=true",
-    "photo": "/images/team/zahid-munir.png",
+    "photo": "images/team/zahid-munir.png",
     "specialisms": [
       "Financial Compliance & Accounting Standards",
       "Prudential Risk & Capital Adequacy",
@@ -814,7 +814,7 @@ export const insights = [
     "author": "Muhammad Shahid",
     "readTime": "7 min read",
     "summary": "How regulated financial institutions and fintechs can build defensible, risk-proportionate ML/TF risk assessment methodologies that satisfy supervisory inspections.",
-    "image": "/assets/images/ai-matrix.jpg"
+    "image": "assets/images/ai-matrix.jpg"
   },
   {
     "id": "navigating-fintech-licensing-readiness",
@@ -824,7 +824,7 @@ export const insights = [
     "author": "Syed Anwar Hussain",
     "readTime": "9 min read",
     "summary": "From governance structures to operational resilience narratives, understand the core pillars required for a successful regulatory license application.",
-    "image": "/assets/images/cyber-resilience.jpg"
+    "image": "assets/images/cyber-resilience.jpg"
   },
   {
     "id": "crypto-travel-rule-compliance-guide",
@@ -834,7 +834,7 @@ export const insights = [
     "author": "Shan Ali",
     "readTime": "8 min read",
     "summary": "A deep dive into cross-border crypto payment transparency, VASP counterparty verification, and technical messaging protocol integration.",
-    "image": "/assets/images/blockchain-crypto.jpg"
+    "image": "assets/images/blockchain-crypto.jpg"
   },
   {
     "id": "building-effective-compliance-monitoring-programs",
@@ -844,7 +844,7 @@ export const insights = [
     "author": "Syed Anwar Hussain",
     "readTime": "6 min read",
     "summary": "How to move beyond static checklists to establish risk-weighted, continuous compliance testing that alerts management to emerging risks early.",
-    "image": "/assets/images/governance-boardroom.jpg"
+    "image": "assets/images/governance-boardroom.jpg"
   }
 ];
 

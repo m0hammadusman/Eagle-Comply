@@ -368,7 +368,7 @@ export default function CaseStudiesPage({ onNavigate, onOpenConsultation }) {
                 {/* Left Column: Image with Badge Overlay */}
                 <div className="lg:col-span-3 relative w-full h-48 lg:h-56 rounded-2xl overflow-hidden bg-slate-900 border border-surface-border shrink-0">
                   <img
-                    src={cs.image || '/assets/images/case-study-bank.jpg'}
+                    src={cs.image || `${import.meta.env.BASE_URL}assets/images/case-study-bank.jpg`}
                     alt={cs.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />

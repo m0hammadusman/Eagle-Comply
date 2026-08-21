@@ -71,7 +71,7 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
       badge: service.badge || '',
       title: service.name || '',
       subtitle: service.shortDesc || '',
-      image: service.image || '/assets/images/ai-matrix.jpg',
+      image: service.image || `${import.meta.env.BASE_URL}assets/images/ai-matrix.jpg`,
       icon,
       route: 'solution-detail',
       param: { id },
@@ -445,7 +445,7 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
 
             <div className="h-48 sm:h-64 rounded-xl sm:rounded-2xl overflow-hidden relative shadow-inner">
               <img
-                src={sectorDetails[activeIndustryTab].image}
+                src={(sectorDetails[activeIndustryTab].image||"").startsWith("/") ? import.meta.env.BASE_URL+(sectorDetails[activeIndustryTab].image||"").slice(1) : (sectorDetails[activeIndustryTab].image||"")}
                 alt={sectorDetails[activeIndustryTab].title}
                 className="w-full h-full object-cover"
               />
