@@ -28,20 +28,13 @@ export default function InteractivePillarCard({
 
       {/* Top Header Cluster */}
       <div className="relative z-10 p-6 flex items-start justify-between gap-3">
-        <div className="flex items-center gap-2">
-          {Icon && (
-            <div className="w-10 h-10 rounded-2xl bg-[#334DAF]/15 dark:bg-[#7096D1]/20 border border-[#334DAF]/30 dark:border-[#7096D1]/40 flex items-center justify-center text-[#334DAF] dark:text-[#7096D1] group-hover:scale-110 transition-transform">
-              <Icon className="w-5 h-5" />
-            </div>
-          )}
-          <div>
-            <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-[#334DAF] dark:text-[#7096D1] block">
-              {category}
-            </span>
-            <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-surface-subtle border border-surface-border text-slate-700 dark:text-slate-300 font-semibold">
-              {badge}
-            </span>
-          </div>
+        <div>
+          <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-[#334DAF] dark:text-[#7096D1] block">
+            {category}
+          </span>
+          <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-surface-subtle border border-surface-border text-slate-700 dark:text-slate-300 font-semibold mt-1 inline-block">
+            {badge}
+          </span>
         </div>
 
         <div className="w-8 h-8 rounded-full bg-surface-subtle border border-surface-border flex items-center justify-center text-slate-500 group-hover:bg-[#334DAF] group-hover:text-white dark:group-hover:bg-[#7096D1] dark:group-hover:text-[#101E42] transition-colors">
