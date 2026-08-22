@@ -12,7 +12,7 @@ export const teamMembers = [
     department: "AML / CFT Compliance",
     strapHeight: 80,
     linkedin: "https://www.linkedin.com/in/shahed-m",
-    photo: "/images/team/muhammad-shahid.png"
+    photo: `${import.meta.env.BASE_URL}images/team/muhammad-shahid.png`
   },
   {
     id: "syed-anvar-hussain",
@@ -23,7 +23,7 @@ export const teamMembers = [
     department: "Regulatory Compliance",
     strapHeight: 55,
     linkedin: "https://www.linkedin.com/in/syed-husain-9165923b1",
-    photo: "/images/team/syed-anvar-hussain.png"
+    photo: `${import.meta.env.BASE_URL}images/team/syed-anvar-hussain.png`
   },
   {
     id: "zahid-munir",
@@ -34,7 +34,7 @@ export const teamMembers = [
     department: "Financial Compliance",
     strapHeight: 100,
     linkedin: "https://www.linkedin.com/in/zahid-munir",
-    photo: "/images/team/zahid-munir.png"
+    photo: `${import.meta.env.BASE_URL}images/team/zahid-munir.png`
   },
   {
     id: "shan-ali",
@@ -45,7 +45,7 @@ export const teamMembers = [
     department: "Legal Compliance",
     strapHeight: 68,
     linkedin: "https://www.linkedin.com/in/shan-ali-blockchain/",
-    photo: "/images/team/shan-ali.png"
+    photo: `${import.meta.env.BASE_URL}images/team/shan-ali.png`
   }
 ];
 
