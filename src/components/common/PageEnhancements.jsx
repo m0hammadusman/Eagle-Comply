@@ -7,12 +7,12 @@ import { useLanguage } from '../../context/LanguageContext';
 import ComplianceShield3D from '../canvas/ComplianceShield3D';
 
 const SERVICE_IMAGES = {
-  aml: '/assets/images/case-study-bank.jpg',
-  regulatory: '/assets/images/governance-boardroom.jpg',
-  risk: '/assets/images/ai-governance.jpg',
-  legal: '/assets/images/law-statute.jpg',
-  training: '/assets/images/expert-thorne.jpg',
-  reviews: '/assets/images/legal-library.jpg'
+  aml: `${import.meta.env.BASE_URL}assets/images/case-study-bank.jpg`,
+  regulatory: `${import.meta.env.BASE_URL}assets/images/governance-boardroom.jpg`,
+  risk: `${import.meta.env.BASE_URL}assets/images/ai-governance.jpg`,
+  legal: `${import.meta.env.BASE_URL}assets/images/law-statute.jpg`,
+  training: `${import.meta.env.BASE_URL}assets/images/expert-thorne.jpg`,
+  reviews: `${import.meta.env.BASE_URL}assets/images/legal-library.jpg`
 };
 
 export default function PageEnhancements({ route, onNavigate, onOpenConsultation }) {
