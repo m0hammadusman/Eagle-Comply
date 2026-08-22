@@ -455,15 +455,7 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
         </div>
       </section>
 
-      {/* 7. Leadership & Team Spotlight (Physical Lanyard ID Badges) */}
-      <section className="py-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <TeamBadges 
-          title={hx.practitionersTitle || "Our Leadership"} 
-          subtitle={hx.practitionersDesc || "Senior compliance practitioners and directors leading our global regulatory advisory"} 
-        />
-      </section>
-
-      {/* 8. Conversion Section */}
+      {/* 7. Conversion Section */}
       <section className="relative py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-[#091F5C] via-[#16295C] to-[#334DAF] text-white overflow-hidden">
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-4 sm:space-y-6">
           <span className="px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-white/10 text-blue-200 border border-white/20 text-[10px] sm:text-xs font-mono font-bold uppercase tracking-widest inline-block">
