@@ -19,13 +19,13 @@ export default function IndustriesPage({ onNavigate }) {
   const { t, industries } = useLanguage();
 
   const industryImages = {
-    'banking': '/assets/images/case-study-bank.jpg',
-    'fintech': '/assets/images/fintech-banking.jpg',
-    'payments': '/assets/images/critical-infra.jpg',
-    'remittance-msb': '/assets/images/global-earth.jpg',
-    'digital-assets': '/assets/images/blockchain-nodes.jpg',
-    'financial-services': '/assets/images/governance-boardroom.jpg',
-    'startups': '/assets/images/careers-culture.jpg'
+    'banking': `${import.meta.env.BASE_URL}assets/images/case-study-bank.jpg`,
+    'fintech': `${import.meta.env.BASE_URL}assets/images/fintech-banking.jpg`,
+    'payments': `${import.meta.env.BASE_URL}assets/images/critical-infra.jpg`,
+    'remittance-msb': `${import.meta.env.BASE_URL}assets/images/global-earth.jpg`,
+    'digital-assets': `${import.meta.env.BASE_URL}assets/images/blockchain-nodes.jpg`,
+    'financial-services': `${import.meta.env.BASE_URL}assets/images/governance-boardroom.jpg`,
+    'startups': `${import.meta.env.BASE_URL}assets/images/careers-culture.jpg`
   };
 
   const iconMap = {
