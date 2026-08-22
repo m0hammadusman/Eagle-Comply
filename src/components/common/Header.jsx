@@ -35,7 +35,7 @@ export default function Header({ onNavigate, currentRoute, onOpenSearch, onOpenC
   }, []);
 
   const navItems = [
-    { id: 'home', label: t.nav?.home || 'Home', route: 'home', hasMega: false, icon: Home },
+    { id: 'home', label: t.nav?.home || 'Home', route: 'home', hasMega: false,},
     { id: 'about', label: t.nav?.about || 'About', route: 'about', hasMega: false },
     { id: 'team', label: t.nav?.team || 'Team', route: 'team', hasMega: false },
     { id: 'solutions', label: t.nav?.services || 'Services', route: 'solutions', hasMega: true },
