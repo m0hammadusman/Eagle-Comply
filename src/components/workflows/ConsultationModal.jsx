@@ -1,13 +1,15 @@
 import React, { useMemo, useState } from 'react';
-import { X, CalendarDays, Clock3, User, Building2, Mail, Globe2, CheckCircle2, ArrowRight, ArrowLeft, ShieldCheck } from 'lucide-react';
+import { X, CalendarDays, Clock3, User, Building2, Mail, Globe2, CheckCircle2, ArrowRight, ArrowLeft, ShieldCheck, Loader2 } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
 import { useData } from '../../context/DataContext';
 import { sendInquiryToCompanyEmail, generateMailtoLink, COMPANY_EMAIL, UK_WHATSAPP_LINK } from '../../utils/contactDispatcher';
+import { WhatsAppIcon } from '../common/ContactWorldMap';
 
 export default function ConsultationModal({ isOpen, onClose }) {
   const { t, solutions } = useLanguage();
   const { bookConsultation } = useData();
   const [step, setStep] = useState(1);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [success, setSuccess] = useState(null);
   const [form, setForm] = useState({
     serviceId: solutions?.[0]?.id || 'financial-crime-compliance',
@@ -30,11 +32,12 @@ export default function ConsultationModal({ isOpen, onClose }) {
 
   const update = (key, value) => setForm(prev => ({ ...prev, [key]: value }));
 
-  const next = () => {
+  const next = async () => {
     if (step === 1 && !form.serviceId) return;
     if (step === 2 && !form.date) return;
     if (step === 3) {
       if (!form.fullName || !form.workEmail || !form.company) return;
+      setIsSubmitting(true);
       const service = solutions.find(s => s.id === form.serviceId);
       const booking = bookConsultation({
         title: service?.name || 'Compliance Consultation',
@@ -48,7 +51,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
         requirement: form.requirement,
         status: 'Consultation Requested'
       });
-      sendInquiryToCompanyEmail({
+      await sendInquiryToCompanyEmail({
         type: 'Consultation Booking',
         clientName: form.fullName,
         email: form.workEmail,
@@ -59,6 +62,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
         time: `${form.time} (${form.timezone})`,
         requirement: form.requirement
       });
+      setIsSubmitting(false);
       setSuccess(booking);
       return;
     }
@@ -68,6 +72,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
   const back = () => setStep(s => Math.max(1, s - 1));
   const close = () => {
     setStep(1);
+    setIsSubmitting(false);
     setSuccess(null);
     onClose();
   };
@@ -92,7 +97,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
               <div className="mx-auto w-16 h-16 rounded-full bg-emerald-500/10 text-emerald-500 flex items-center justify-center"><CheckCircle2 className="w-9 h-9" /></div>
               <h4 className="text-2xl font-bold text-slate-900 dark:text-white">{m.confirmedTitle || 'Consultation Request Dispatched'}</h4>
               <p className="text-xs text-slate-500 max-w-md mx-auto">
-                Your consultation booking details have been transmitted directly to EagleComply Counsel at <strong className="text-[#334DAF] dark:text-[#7096D1]">{COMPANY_EMAIL}</strong>.
+                Your consultation booking details have been transmitted directly to EagleComply Counsel at <strong className="text-[#334DAF] dark:text-[#7096D1]">{COMPANY_EMAIL}</strong>. A compliance officer will contact you shortly.
               </p>
               
               <div className="p-4 rounded-2xl bg-surface-subtle border border-surface-border text-left rtl:text-right text-xs space-y-1.5 font-mono">
@@ -119,6 +124,15 @@ export default function ConsultationModal({ isOpen, onClose }) {
                 >
                   <Mail className="w-4 h-4" />
                   <span>Open Email Draft ({COMPANY_EMAIL})</span>
+                </a>
+                <a
+                  href={UK_WHATSAPP_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-md"
+                >
+                  <WhatsAppIcon className="w-4 h-4 fill-white" />
+                  <span>Direct WhatsApp Chat</span>
                 </a>
               </div>
 
@@ -186,9 +200,27 @@ export default function ConsultationModal({ isOpen, onClose }) {
               )}
 
               <div className="mt-7 pt-5 border-t border-surface-border flex items-center justify-between">
-                {step > 1 ? <button onClick={back} className="px-4 py-2.5 rounded-xl border border-surface-border text-xs font-bold flex items-center gap-2"><ArrowLeft className="w-4 h-4 rtl:rotate-180" />{comm.back || 'Back'}</button> : <span />}
-                <button onClick={next} className="px-5 py-2.5 rounded-xl bg-[#091F5C] dark:bg-[#334DAF] text-white font-bold text-xs flex items-center gap-2">
-                  {step === 3 ? (comm.confirm || 'Request Consultation') : (comm.next || 'Continue')} <ArrowRight className="w-4 h-4 rtl:rotate-180" />
+                {step > 1 ? (
+                  <button disabled={isSubmitting} onClick={back} className="px-4 py-2.5 rounded-xl border border-surface-border text-xs font-bold flex items-center gap-2 disabled:opacity-50">
+                    <ArrowLeft className="w-4 h-4 rtl:rotate-180" />{comm.back || 'Back'}
+                  </button>
+                ) : <span />}
+                <button 
+                  disabled={isSubmitting} 
+                  onClick={next} 
+                  className="px-5 py-2.5 rounded-xl bg-[#091F5C] dark:bg-[#334DAF] hover:bg-[#1E3778] text-white font-bold text-xs flex items-center gap-2 disabled:opacity-50 transition-all shadow-md"
+                >
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="w-4 h-4 animate-spin" />
+                      <span>Transmitting to Counsel...</span>
+                    </>
+                  ) : (
+                    <>
+                      <span>{step === 3 ? (comm.confirm || 'Request Consultation') : (comm.next || 'Continue')}</span>
+                      <ArrowRight className="w-4 h-4 rtl:rotate-180" />
+                    </>
+                  )}
                 </button>
               </div>
               <div className="mt-4 text-center text-[10px] text-slate-400">Your information is used only to process the consultation request and coordinate follow-up.</div>

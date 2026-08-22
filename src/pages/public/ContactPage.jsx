@@ -12,7 +12,8 @@ import {
   Lock,
   Check,
   Globe2,
-  ExternalLink
+  ExternalLink,
+  Loader2
 } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
 import ContactWorldMap, { WhatsAppIcon, LinkedInIcon } from '../../components/common/ContactWorldMap';
@@ -22,6 +23,7 @@ export default function ContactPage({ onNavigate }) {
   const { t, countries, solutions, industries } = useLanguage();
   const c = t.contactPage;
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -32,9 +34,10 @@ export default function ContactPage({ onNavigate }) {
     description: ''
   });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    sendInquiryToCompanyEmail({
+    setIsSubmitting(true);
+    await sendInquiryToCompanyEmail({
       type: 'Consultation & Advisory Request',
       clientName: formData.name,
       email: formData.email,
@@ -43,6 +46,7 @@ export default function ContactPage({ onNavigate }) {
       service: formData.service,
       requirement: formData.description
     });
+    setIsSubmitting(false);
     setSubmitted(true);
   };
 
@@ -253,10 +257,20 @@ export default function ContactPage({ onNavigate }) {
 
                 <button
                   type="submit"
-                  className="w-full py-3 rounded-xl bg-gradient-to-r from-[#091F5C] to-[#334DAF] dark:from-[#334DAF] dark:to-[#7096D1] text-white dark:text-[#101E42] font-bold text-xs shadow-xl hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2"
+                  disabled={isSubmitting}
+                  className="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#091F5C] to-[#334DAF] dark:from-[#334DAF] dark:to-[#7096D1] text-white dark:text-[#101E42] font-bold text-xs shadow-xl hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2 disabled:opacity-50"
                 >
-                  <Calendar className="w-4 h-4" />
-                  <span>{c.requestConsultation}</span>
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="w-4 h-4 animate-spin" />
+                      <span>Transmitting Consultation Request to Counsel...</span>
+                    </>
+                  ) : (
+                    <>
+                      <Calendar className="w-4 h-4" />
+                      <span>{c.requestConsultation}</span>
+                    </>
+                  )}
                 </button>
               </form>
             )}

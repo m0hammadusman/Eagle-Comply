@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
-import { X, Calculator, ShieldCheck, CheckCircle2, ArrowRight, ArrowLeft, Building2, Mail } from 'lucide-react';
+import { X, Calculator, ShieldCheck, CheckCircle2, ArrowRight, ArrowLeft, Building2, Mail, Loader2 } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
 import { useData } from '../../context/DataContext';
-import { sendInquiryToCompanyEmail, generateMailtoLink, COMPANY_EMAIL } from '../../utils/contactDispatcher';
+import { sendInquiryToCompanyEmail, generateMailtoLink, COMPANY_EMAIL, UK_WHATSAPP_LINK } from '../../utils/contactDispatcher';
+import { WhatsAppIcon } from '../common/ContactWorldMap';
 
 export default function RequestQuoteModal({ isOpen, onClose }) {
   const { t, solutions, industries, countries } = useLanguage();
   const { requestQuote } = useData();
   const [step, setStep] = useState(1);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [createdQuote, setCreatedQuote] = useState(null);
 
@@ -48,7 +50,8 @@ export default function RequestQuoteModal({ isOpen, onClose }) {
     if (step > 1) setStep(step - 1);
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
+    setIsSubmitting(true);
     const q = requestQuote({
       clientName: quoteForm.contactName || 'Corporate Client',
       company: quoteForm.company || 'Enterprise Entity',
@@ -61,7 +64,7 @@ export default function RequestQuoteModal({ isOpen, onClose }) {
       timeline: quoteForm.timeline,
       scopeNotes: quoteForm.projectScopeSummary
     });
-    sendInquiryToCompanyEmail({
+    await sendInquiryToCompanyEmail({
       type: 'Statement of Work (SOW) Quote Request',
       clientName: quoteForm.contactName,
       email: quoteForm.workEmail,
@@ -72,12 +75,14 @@ export default function RequestQuoteModal({ isOpen, onClose }) {
       timeline: quoteForm.timeline,
       notes: quoteForm.projectScopeSummary
     });
+    setIsSubmitting(false);
     setCreatedQuote(q);
     setIsSuccess(true);
   };
 
   const resetAndClose = () => {
     setStep(1);
+    setIsSubmitting(false);
     setIsSuccess(false);
     onClose();
   };
@@ -116,14 +121,43 @@ export default function RequestQuoteModal({ isOpen, onClose }) {
               <h4 className="font-sans tracking-tight text-2xl font-bold text-slate-900 dark:text-white">
                 {m.quoteGenerated || 'Statement of Work (SOW) Estimate Generated'}
               </h4>
-              <p className="text-xs text-slate-400 max-w-md mx-auto">
-                {m.quoteDesc || 'Your preliminary scope estimate has been logged with reference'}: <span className="font-mono font-bold text-[#334DAF] dark:text-[#7096D1]">{createdQuote?.id}</span>
+              <p className="text-xs text-slate-500 dark:text-slate-400 max-w-md mx-auto">
+                {m.quoteDesc || 'Your preliminary scope estimate has been logged and transmitted to EagleComply Counsel at'} <strong className="text-[#334DAF] dark:text-[#7096D1]">{COMPANY_EMAIL}</strong>. Reference ID: <span className="font-mono font-bold text-[#334DAF] dark:text-[#7096D1]">{createdQuote?.id}</span>
               </p>
 
-              <div className="pt-4 flex justify-center">
+              <div className="pt-2 flex flex-wrap items-center justify-center gap-3">
+                <a
+                  href={generateMailtoLink({
+                    type: 'Statement of Work (SOW) Quote Request',
+                    clientName: quoteForm.contactName,
+                    email: quoteForm.workEmail,
+                    company: quoteForm.company,
+                    phone: quoteForm.phone,
+                    service: quoteForm.serviceId,
+                    budget: quoteForm.budgetRange,
+                    timeline: quoteForm.timeline,
+                    notes: quoteForm.projectScopeSummary
+                  })}
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#091F5C] dark:bg-[#334DAF] hover:bg-[#1E3778] text-white font-bold text-xs shadow-md"
+                >
+                  <Mail className="w-4 h-4" />
+                  <span>Open Email Draft ({COMPANY_EMAIL})</span>
+                </a>
+                <a
+                  href={UK_WHATSAPP_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-md"
+                >
+                  <WhatsAppIcon className="w-4 h-4 fill-white" />
+                  <span>Direct WhatsApp Chat</span>
+                </a>
+              </div>
+
+              <div className="pt-2 flex justify-center">
                 <button
                   onClick={resetAndClose}
-                  className="px-6 py-2.5 rounded-xl bg-gradient-to-r from-[#091F5C] to-[#334DAF] dark:from-[#334DAF] dark:to-[#7096D1] text-white dark:text-[#101E42] font-bold text-xs shadow-md"
+                  className="px-6 py-2 rounded-full bg-surface-subtle text-slate-700 dark:text-slate-300 font-bold text-xs hover:bg-surface-raised border border-surface-border"
                 >
                   {comm.close || 'Close'}
                 </button>
@@ -244,11 +278,21 @@ export default function RequestQuoteModal({ isOpen, onClose }) {
                 ) : <div />}
 
                 <button
+                  disabled={isSubmitting}
                   onClick={handleNext}
-                  className="px-6 py-2.5 rounded-xl bg-gradient-to-r from-[#091F5C] to-[#334DAF] dark:from-[#334DAF] dark:to-[#7096D1] text-white dark:text-[#101E42] font-bold text-xs shadow-md flex items-center gap-2"
+                  className="px-6 py-2.5 rounded-xl bg-gradient-to-r from-[#091F5C] to-[#334DAF] dark:from-[#334DAF] dark:to-[#7096D1] text-white dark:text-[#101E42] font-bold text-xs shadow-md flex items-center gap-2 disabled:opacity-50 transition-all"
                 >
-                  <span>{step === 3 ? (comm.confirm || 'Generate Estimate') : (comm.next || 'Next Step')}</span>
-                  <ArrowRight className="w-3.5 h-3.5 rtl:rotate-180" />
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="w-4 h-4 animate-spin" />
+                      <span>Transmitting SOW Request...</span>
+                    </>
+                  ) : (
+                    <>
+                      <span>{step === 3 ? (comm.confirm || 'Generate Estimate') : (comm.next || 'Next Step')}</span>
+                      <ArrowRight className="w-3.5 h-3.5 rtl:rotate-180" />
+                    </>
+                  )}
                 </button>
               </div>
             </div>

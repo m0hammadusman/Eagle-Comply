@@ -1,12 +1,13 @@
 /**
  * EagleComply Central Dispatcher Utility
  * Automatically formats and transmits all user consultations, quotes, orders, and inquiries
- * directly to the primary company email: info@eaglecomply.com
+ * directly to the primary company email: info@eaglecomply.com via FormSubmit API.
  */
 
 export const COMPANY_EMAIL = "info@eaglecomply.com";
 export const UK_WHATSAPP = "+44 7706 413233";
 export const UK_WHATSAPP_LINK = "https://wa.me/447706413233";
+export const ITALY_WHATSAPP_LINK = "https://wa.me/393488184787";
 
 export function generateMailtoLink({
   type = "General Inquiry",
@@ -56,13 +57,62 @@ export function generateMailtoLink({
   return `mailto:${COMPANY_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
 
-export function sendInquiryToCompanyEmail(data) {
-  const mailtoUrl = generateMailtoLink(data);
+/**
+ * Dispatches the inquiry directly to info@eaglecomply.com over the internet using FormSubmit API.
+ */
+export async function sendInquiryToCompanyEmail(data) {
+  const {
+    type = "General Inquiry",
+    clientName = "",
+    email = "",
+    company = "",
+    phone = "",
+    jurisdiction = "",
+    service = "",
+    date = "",
+    time = "",
+    budget = "",
+    timeline = "",
+    requirement = "",
+    notes = ""
+  } = data;
+
+  const subject = `[EagleComply ${type}] - ${company || clientName || 'New Client'} (${service || 'Advisory'})`;
+
+  const payload = {
+    _subject: subject,
+    _replyto: email || undefined,
+    _template: "table",
+    _captcha: "false",
+    "Engagement Type": type,
+    "Client Name": clientName || "N/A",
+    "Work Email": email || "N/A",
+    "Company / Entity": company || "N/A",
+    "Phone / Contact": phone || "N/A",
+    "Jurisdiction": jurisdiction || "N/A",
+    "Service Requested": service || "General Compliance Advisory",
+    "Scheduled Date & Time": date ? `${date} at ${time || '09:00'}` : "Immediate Scoping",
+    "Budget Range": budget || "To be scoped",
+    "Target Timeline": timeline || "Standard",
+    "Scope & Requirement": requirement || notes || "Advisory consultation requested.",
+    "Submitted At": new Date().toUTCString()
+  };
+
   try {
-    // Open in background or trigger mail client
-    window.location.href = mailtoUrl;
+    const response = await fetch(`https://formsubmit.co/ajax/${COMPANY_EMAIL}`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      body: JSON.stringify(payload)
+    });
+
+    const result = await response.json();
+    return { success: true, result };
   } catch (err) {
-    console.error("Mailto trigger error:", err);
+    console.error("FormSubmit dispatch error:", err);
+    return { success: false, error: err };
   }
-  return mailtoUrl;
 }
+
