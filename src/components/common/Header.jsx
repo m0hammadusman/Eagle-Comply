@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { 
+  Home,
   Search, 
   Moon, 
   Sun, 
@@ -8,10 +9,9 @@ import {
   Menu, 
   X, 
   Calendar, 
-  ArrowRight,
-  BrainCircuit,
-  Building2,
-  Globe2
+  ArrowRight, 
+  Building2, 
+  Globe2 
 } from 'lucide-react';
 import { useTheme } from '../../context/ThemeContext';
 import { useLanguage } from '../../context/LanguageContext';
@@ -35,6 +35,7 @@ export default function Header({ onNavigate, currentRoute, onOpenSearch, onOpenC
   }, []);
 
   const navItems = [
+    { id: 'home', label: t.nav?.home || 'Home', route: 'home', hasMega: false,},
     { id: 'about', label: t.nav?.about || 'About', route: 'about', hasMega: false },
     { id: 'solutions', label: t.nav?.services || 'Services', route: 'solutions', hasMega: true },
     { id: 'industries', label: t.nav?.industries || 'Industries', route: 'industries', hasMega: true },
@@ -66,6 +67,7 @@ export default function Header({ onNavigate, currentRoute, onOpenSearch, onOpenC
           <nav className="hidden lg:flex items-center gap-0.5 xl:gap-2 flex-nowrap shrink-0">
             {navItems.map((item) => {
               const isActive = currentRoute === item.route;
+              const ItemIcon = item.icon;
               return (
                 <div 
                   key={item.id} 
@@ -75,12 +77,13 @@ export default function Header({ onNavigate, currentRoute, onOpenSearch, onOpenC
                 >
                   <button
                     onClick={() => { onNavigate(item.route); setActiveMegaMenu(null); }}
-                    className={`px-2 xl:px-3 py-1.5 rounded-xl text-xs xl:text-sm font-semibold transition-all flex items-center gap-1 whitespace-nowrap shrink-0 ${
+                    className={`px-2 xl:px-3 py-1.5 rounded-xl text-xs xl:text-sm font-semibold transition-all flex items-center gap-1.5 whitespace-nowrap shrink-0 ${
                       isActive 
                         ? 'text-[#334DAF] dark:text-[#7096D1] bg-[#334DAF]/10 dark:bg-[#7096D1]/15 font-bold' 
                         : 'text-slate-700 dark:text-slate-200 hover:text-[#334DAF] dark:hover:text-[#7096D1] hover:bg-surface-subtle'
                     }`}
                   >
+                    {ItemIcon && <ItemIcon className="w-3.5 h-3.5 shrink-0" />}
                     <span className="whitespace-nowrap">{item.label}</span>
                     {item.hasMega && (
                       <ChevronDown className={`w-3.5 h-3.5 shrink-0 transition-transform duration-200 ${activeMegaMenu === item.id ? 'rotate-180 text-[#334DAF] dark:text-[#7096D1]' : 'text-slate-400'}`} />
@@ -106,18 +109,13 @@ export default function Header({ onNavigate, currentRoute, onOpenSearch, onOpenC
                                   <button
                                     key={sol.id}
                                     onClick={() => { onNavigate('solution-detail', { id: sol.id }); setActiveMegaMenu(null); }}
-                                    className="p-2.5 rounded-xl hover:bg-surface-subtle transition-all text-left rtl:text-right flex items-start gap-2.5 group/card border border-transparent hover:border-surface-border"
+                                    className="p-3 rounded-xl hover:bg-surface-subtle transition-all text-left rtl:text-right flex flex-col justify-center group/card border border-transparent hover:border-surface-border"
                                   >
-                                    <div className="w-7 h-7 rounded-lg bg-[#334DAF]/10 text-[#334DAF] dark:text-[#7096D1] flex items-center justify-center shrink-0 mt-0.5 border border-[#334DAF]/20">
-                                      <BrainCircuit className="w-3.5 h-3.5" />
+                                    <div className="text-xs font-bold text-slate-900 dark:text-white group-hover/card:text-[#334DAF] dark:group-hover/card:text-[#7096D1] transition-colors">
+                                      {sol.name}
                                     </div>
-                                    <div>
-                                      <div className="text-xs font-bold text-slate-900 dark:text-white group-hover/card:text-[#334DAF] dark:group-hover/card:text-[#7096D1]">
-                                        {sol.name}
-                                      </div>
-                                      <div className="text-[11px] text-slate-500 line-clamp-1">
-                                        {sol.valueProp || sol.shortDesc}
-                                      </div>
+                                    <div className="text-[11px] text-slate-500 line-clamp-1 mt-0.5">
+                                      {sol.valueProp || sol.shortDesc}
                                     </div>
                                   </button>
                                 ))}
