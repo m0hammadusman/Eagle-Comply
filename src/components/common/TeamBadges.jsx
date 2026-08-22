@@ -181,7 +181,7 @@ function BadgeItem({ member }) {
           <div className="absolute right-[-6px] bottom-0 w-[82%] h-[78%] pointer-events-none z-[1] overflow-hidden flex items-end justify-end">
             {!imgError ? (
               <img
-                src={member.photo.startsWith("/") ? import.meta.env.BASE_URL + member.photo.slice(1) : member.photo}
+                src={`${import.meta.env.BASE_URL}${(member.photo || '').replace(import.meta.env.BASE_URL, '').replace(/^\/+/, '')}`}
                 alt={member.fullName}
                 onError={() => setImgError(true)}
                 className="h-full w-auto max-w-full object-contain object-bottom filter grayscale contrast-105 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-400 drop-shadow-xl"
