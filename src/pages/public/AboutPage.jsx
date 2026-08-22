@@ -244,18 +244,91 @@ export default function AboutPage({ onNavigate, onOpenConsultation, onOpenQuote 
   return (
     <div className="w-full">
       {/* 1. Hero Header */}
-      <section className="relative py-14 lg:py-20 bg-surface-subtle/70 border-b border-surface-border overflow-hidden">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#334DAF]/10 dark:bg-[#7096D1]/15 border border-[#334DAF]/25 dark:border-[#7096D1]/30 text-[#091F5C] dark:text-[#D0E4FE] text-xs font-mono font-bold tracking-wider uppercase">
-            <Sparkles className="w-3.5 h-3.5 text-[#334DAF] dark:text-[#7096D1]" />
-            <span>ABOUT EAGLECOMPLY</span>
+      <section className="relative py-12 lg:py-16 bg-surface-subtle/70 border-b border-surface-border overflow-hidden">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            
+            {/* Left Content Column */}
+            <div className="lg:col-span-7 space-y-5 text-left rtl:text-right">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#334DAF]/10 dark:bg-[#7096D1]/15 border border-[#334DAF]/25 dark:border-[#7096D1]/30 text-[#091F5C] dark:text-[#D0E4FE] text-xs font-mono font-bold tracking-wider uppercase">
+                <Sparkles className="w-3.5 h-3.5 text-[#334DAF] dark:text-[#7096D1]" />
+                <span>ABOUT EAGLECOMPLY</span>
+              </div>
+
+              <h1 className="font-sans text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 dark:text-white leading-[1.15]">
+                {t.brand?.tagline || 'Complex Regulations. Clear Solutions. Confident Growth.'}
+              </h1>
+
+              <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed font-normal max-w-2xl">
+                EagleComply is an international compliance advisory firm helping financial institutions, fintechs, payment companies, remittance businesses, and startups operate with complete regulatory certainty.
+              </p>
+
+              {/* Action Buttons */}
+              <div className="pt-2 flex flex-wrap items-center gap-3">
+                <button
+                  onClick={() => onOpenConsultation?.()}
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-[#091F5C] to-[#334DAF] dark:from-[#334DAF] dark:to-[#7096D1] text-white dark:text-[#101E42] font-bold text-xs shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all"
+                >
+                  <Calendar className="w-4 h-4" />
+                  <span>Book a Consultation</span>
+                </button>
+                <button
+                  onClick={() => onNavigate?.('solutions')}
+                  className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-surface-base border border-surface-border text-slate-800 dark:text-slate-200 hover:border-[#334DAF] font-bold text-xs transition-all shadow-sm"
+                >
+                  <span>Explore Practice Areas</span>
+                  <ArrowRight className="w-4 h-4 rtl:rotate-180" />
+                </button>
+              </div>
+
+              {/* Key Practice Credential Highlights */}
+              <div className="pt-4 grid grid-cols-3 gap-3 border-t border-surface-border/60 max-w-lg">
+                <div>
+                  <div className="text-base sm:text-lg font-bold text-slate-900 dark:text-white font-mono">100%</div>
+                  <div className="text-[11px] text-slate-500 font-mono">Audit Tested</div>
+                </div>
+                <div>
+                  <div className="text-base sm:text-lg font-bold text-slate-900 dark:text-white font-mono">FATF</div>
+                  <div className="text-[11px] text-slate-500 font-mono">Aligned Baselines</div>
+                </div>
+                <div>
+                  <div className="text-base sm:text-lg font-bold text-slate-900 dark:text-white font-mono">UK / EU</div>
+                  <div className="text-[11px] text-slate-500 font-mono">Cross-Border</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Video Showcase Column */}
+            <div className="lg:col-span-5 relative">
+              <div className="relative rounded-3xl overflow-hidden glass-panel border border-surface-border shadow-2xl bg-[#091F5C]/5 dark:bg-[#101E42]/40 aspect-[4/3] sm:aspect-[16/11] flex items-center justify-center group">
+                {/* Seamless Infinite Looping Video */}
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  preload="auto"
+                  className="w-full h-full object-cover rounded-3xl"
+                  poster={`${import.meta.env.BASE_URL}assets/images/governance-boardroom.jpg`}
+                >
+                  <source src={`${import.meta.env.BASE_URL}about-video.mp4`} type="video/mp4" />
+                  <source src={`${import.meta.env.BASE_URL}assets/about-video.mp4`} type="video/mp4" />
+                  {/* Fallback to existing world-map until about-video.mp4 is provided */}
+                  <source src={`${import.meta.env.BASE_URL}world-map.mp4`} type="video/mp4" />
+                </video>
+
+                {/* Subtle Gradient Vignette Overlay for aesthetics */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none rounded-3xl" />
+
+                {/* Clean Live Status Tag */}
+                <div className="absolute top-3.5 left-3.5 rtl:left-auto rtl:right-3.5 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] font-mono flex items-center gap-2 pointer-events-none">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
+                  <span className="font-bold">EAGLECOMPLY MOTION</span>
+                </div>
+              </div>
+            </div>
+
           </div>
-          <h1 className="font-sans text-3xl sm:text-5xl font-bold tracking-tight text-slate-900 dark:text-white">
-            {t.brand.tagline}
-          </h1>
-          <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed font-normal">
-            EagleComply is an international compliance advisory firm helping financial institutions, fintechs, payment companies, remittance businesses, and startups operate with complete regulatory certainty.
-          </p>
         </div>
       </section>
 
