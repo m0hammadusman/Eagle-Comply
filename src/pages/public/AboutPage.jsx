@@ -418,15 +418,7 @@ export default function AboutPage({ onNavigate, onOpenConsultation, onOpenQuote 
         </div>
       </section>
 
-      {/* 4. Leadership & Senior Practitioners (Physical Lanyard ID Badges) */}
-      <section className="py-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <TeamBadges 
-          title="Senior Compliance Practitioners" 
-          subtitle="Directing multi-jurisdictional AML/CFT, regulatory governance, legal safeguards, and financial compliance advisory" 
-        />
-      </section>
-
-      {/* 5. Interactive Pipeline Console (Methodology) */}
+      {/* 4. Interactive Pipeline Console (Methodology) */}
       <section className="py-16 lg:py-24 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#334DAF] dark:text-[#7096D1]">

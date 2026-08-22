@@ -35,12 +35,21 @@ export default function Header({ onNavigate, currentRoute, onOpenSearch, onOpenC
   }, []);
 
   const navItems = [
-    { id: 'home', label: t.nav?.home || 'Home', route: 'home', hasMega: false,},
+    { id: 'home', label: t.nav?.home || 'Home', route: 'home', hasMega: false, icon: Home },
     { id: 'about', label: t.nav?.about || 'About', route: 'about', hasMega: false },
+    { id: 'team', label: t.nav?.team || 'Team', route: 'team', hasMega: false },
     { id: 'solutions', label: t.nav?.services || 'Services', route: 'solutions', hasMega: true },
     { id: 'industries', label: t.nav?.industries || 'Industries', route: 'industries', hasMega: true },
-    { id: 'insights', label: t.nav?.insights || 'Insights', route: 'insights', hasMega: false },
-    { id: 'knowledge-center', label: t.nav?.resources || 'Resources', route: 'knowledge-center', hasMega: false },
+    { 
+      id: 'news-blogs', 
+      label: 'News / Blogs', 
+      route: 'blogs', 
+      hasDropdown: true,
+      children: [
+        { id: 'blogs', label: 'Blogs', route: 'blogs', desc: 'Compliance analysis & practice insights' },
+        { id: 'news', label: 'News', route: 'news', desc: 'Regulatory dispatches & announcements' }
+      ]
+    },
     { id: 'contact', label: t.nav?.contact || 'Contact', route: 'contact', hasMega: false }
   ];
 
@@ -66,17 +75,24 @@ export default function Header({ onNavigate, currentRoute, onOpenSearch, onOpenC
           {/* Desktop Navigation Links */}
           <nav className="hidden lg:flex items-center gap-0.5 xl:gap-2 flex-nowrap shrink-0">
             {navItems.map((item) => {
-              const isActive = currentRoute === item.route;
+              const isActive = currentRoute === item.route || (item.children && item.children.some(c => c.route === currentRoute));
               const ItemIcon = item.icon;
+              const hasSubmenu = item.hasMega || item.hasDropdown;
+
               return (
                 <div 
                   key={item.id} 
                   className="relative group shrink-0"
-                  onMouseEnter={() => item.hasMega && setActiveMegaMenu(item.id)}
+                  onMouseEnter={() => hasSubmenu && setActiveMegaMenu(item.id)}
                   onMouseLeave={() => setActiveMegaMenu(null)}
                 >
                   <button
-                    onClick={() => { onNavigate(item.route); setActiveMegaMenu(null); }}
+                    onClick={() => { 
+                      if (!item.hasDropdown) {
+                        onNavigate(item.route); 
+                      }
+                      setActiveMegaMenu(null); 
+                    }}
                     className={`px-2 xl:px-3 py-1.5 rounded-xl text-xs xl:text-sm font-semibold transition-all flex items-center gap-1.5 whitespace-nowrap shrink-0 ${
                       isActive 
                         ? 'text-[#334DAF] dark:text-[#7096D1] bg-[#334DAF]/10 dark:bg-[#7096D1]/15 font-bold' 
@@ -85,12 +101,38 @@ export default function Header({ onNavigate, currentRoute, onOpenSearch, onOpenC
                   >
                     {ItemIcon && <ItemIcon className="w-3.5 h-3.5 shrink-0" />}
                     <span className="whitespace-nowrap">{item.label}</span>
-                    {item.hasMega && (
+                    {hasSubmenu && (
                       <ChevronDown className={`w-3.5 h-3.5 shrink-0 transition-transform duration-200 ${activeMegaMenu === item.id ? 'rotate-180 text-[#334DAF] dark:text-[#7096D1]' : 'text-slate-400'}`} />
                     )}
                   </button>
 
-                  {/* Mega Menu Dropdowns */}
+                  {/* Standard Simple Dropdown for News / Blogs */}
+                  {item.hasDropdown && activeMegaMenu === item.id && (
+                    <div 
+                      className="absolute top-full left-0 rtl:left-auto rtl:right-0 w-64 pt-2 animate-fade-in z-50"
+                      onMouseEnter={() => setActiveMegaMenu(item.id)}
+                      onMouseLeave={() => setActiveMegaMenu(null)}
+                    >
+                      <div className="bg-surface-raised rounded-2xl border border-surface-border shadow-2xl p-2.5 glass-panel space-y-1">
+                        {item.children.map((child) => (
+                          <button
+                            key={child.id}
+                            onClick={() => { onNavigate(child.route); setActiveMegaMenu(null); }}
+                            className={`w-full p-2.5 rounded-xl hover:bg-surface-subtle transition-all text-left rtl:text-right flex flex-col border ${
+                              currentRoute === child.route 
+                                ? 'bg-[#334DAF]/10 text-[#334DAF] dark:text-[#7096D1] border-[#334DAF]/20' 
+                                : 'border-transparent text-slate-800 dark:text-slate-200'
+                            }`}
+                          >
+                            <span className="text-xs font-bold">{child.label}</span>
+                            <span className="text-[11px] text-slate-500 line-clamp-1">{child.desc}</span>
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Mega Menu Dropdowns for Services & Industries */}
                   {item.hasMega && activeMegaMenu === item.id && (
                     <div 
                       className="absolute top-full left-0 rtl:left-auto rtl:right-0 w-[640px] xl:w-[720px] pt-2 animate-fade-in z-50"
@@ -281,14 +323,29 @@ export default function Header({ onNavigate, currentRoute, onOpenSearch, onOpenC
         <div className="lg:hidden bg-surface-raised border-b border-surface-border px-4 py-6 space-y-4 animate-fade-in">
           <div className="space-y-1">
             {navItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => { onNavigate(item.route); setIsMobileMenuOpen(false); }}
-                className={`w-full p-2.5 rounded-xl text-left rtl:text-right text-sm font-semibold flex items-center justify-between whitespace-nowrap ${currentRoute === item.route ? 'text-[#334DAF] dark:text-[#7096D1] bg-[#334DAF]/10' : 'text-slate-800 dark:text-slate-200'}`}
-              >
-                <span>{item.label}</span>
-                <ArrowRight className="w-4 h-4 text-slate-400 rtl:rotate-180" />
-              </button>
+              item.children ? (
+                <div key={item.id} className="space-y-1 pl-1">
+                  {item.children.map(child => (
+                    <button
+                      key={child.id}
+                      onClick={() => { onNavigate(child.route); setIsMobileMenuOpen(false); }}
+                      className={`w-full p-2.5 rounded-xl text-left rtl:text-right text-sm font-semibold flex items-center justify-between whitespace-nowrap ${currentRoute === child.route ? 'text-[#334DAF] dark:text-[#7096D1] bg-[#334DAF]/10 font-bold' : 'text-slate-800 dark:text-slate-200'}`}
+                    >
+                      <span>{child.label}</span>
+                      <ArrowRight className="w-4 h-4 text-slate-400 rtl:rotate-180" />
+                    </button>
+                  ))}
+                </div>
+              ) : (
+                <button
+                  key={item.id}
+                  onClick={() => { onNavigate(item.route); setIsMobileMenuOpen(false); }}
+                  className={`w-full p-2.5 rounded-xl text-left rtl:text-right text-sm font-semibold flex items-center justify-between whitespace-nowrap ${currentRoute === item.route ? 'text-[#334DAF] dark:text-[#7096D1] bg-[#334DAF]/10 font-bold' : 'text-slate-800 dark:text-slate-200'}`}
+                >
+                  <span>{item.label}</span>
+                  <ArrowRight className="w-4 h-4 text-slate-400 rtl:rotate-180" />
+                </button>
+              )
             ))}
           </div>
 

@@ -35,6 +35,10 @@ import InsightsPage from './pages/public/InsightsPage';
 import ArticleDetailPage from './pages/public/ArticleDetailPage';
 import ExpertsPage from './pages/public/ExpertsPage';
 import AboutPage from './pages/public/AboutPage';
+import TeamPage from './pages/public/TeamPage';
+import TeamMemberDetailPage from './pages/public/TeamMemberDetailPage';
+import BlogsPage from './pages/public/BlogsPage';
+import NewsPage from './pages/public/NewsPage';
 import CaseStudiesPage from './pages/public/CaseStudiesPage';
 import CareersPage from './pages/public/CareersPage';
 import ContactPage from './pages/public/ContactPage';
@@ -213,17 +217,30 @@ function AppContent() {
               onOpenConsultation={() => setIsConsultationOpen(true)} 
             />
           )}
-          {currentRoute === 'experts' && (
-            <ExpertsPage 
-              onNavigate={navigate} 
-              onOpenConsultation={() => setIsConsultationOpen(true)} 
-            />
-          )}
           {currentRoute === 'about' && (
             <AboutPage 
               onNavigate={navigate} 
               onOpenConsultation={() => setIsConsultationOpen(true)} 
             />
+          )}
+          {(currentRoute === 'team' || currentRoute === 'experts') && (
+            <TeamPage 
+              onNavigate={navigate} 
+              onOpenConsultation={() => setIsConsultationOpen(true)} 
+            />
+          )}
+          {(currentRoute === 'team-detail' || currentRoute === 'expert-detail') && (
+            <TeamMemberDetailPage 
+              params={routeParams} 
+              onNavigate={navigate} 
+              onOpenConsultation={() => setIsConsultationOpen(true)} 
+            />
+          )}
+          {currentRoute === 'blogs' && (
+            <BlogsPage onNavigate={navigate} />
+          )}
+          {currentRoute === 'news' && (
+            <NewsPage onNavigate={navigate} />
           )}
           {currentRoute === 'case-studies' && (
             <CaseStudiesPage 

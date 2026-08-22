@@ -49,15 +49,20 @@ export const teamMembers = [
   }
 ];
 
-function BadgeItem({ member }) {
+function BadgeItem({ member, onNavigate }) {
   const [imgError, setImgError] = useState(false);
 
+  const handleClick = (e) => {
+    if (onNavigate) {
+      e.preventDefault();
+      onNavigate('team-detail', { id: member.id });
+    }
+  };
+
   return (
-    <a
-      href={member.linkedin}
-      target="_blank"
-      rel="noopener noreferrer"
-      title={`View ${member.fullName}'s LinkedIn Profile`}
+    <div
+      onClick={handleClick}
+      title={`Inspect ${member.fullName}'s Professional Dossier`}
       className="group relative flex flex-col items-center cursor-pointer transition-all duration-300 no-underline focus:outline-none shrink-0 md:shrink w-[240px] sm:w-[255px] md:w-full md:max-w-[270px] snap-center"
     >
       {/* Realistic Ribbed Strap extending from top */}
@@ -227,16 +232,16 @@ function BadgeItem({ member }) {
               </span>
             </div>
           </div>
-
         </div>
       </div>
-    </a>
+    </div>
   );
 }
 
 export default function TeamBadges({ 
   title = "Leadership & Practice Directors", 
-  subtitle = "Senior compliance practitioners directing our multi-jurisdictional regulatory advisory" 
+  subtitle = "Senior compliance practitioners directing our multi-jurisdictional regulatory advisory",
+  onNavigate
 }) {
   return (
     <section className="relative w-full py-12 sm:py-16 px-4 sm:px-6 lg:px-8 overflow-hidden rounded-3xl bg-surface-subtle/70 dark:bg-[#070D1A] border border-surface-border shadow-xl my-6 transition-colors duration-300">
@@ -260,7 +265,7 @@ export default function TeamBadges({
       <div className="w-full max-w-[1280px] mx-auto">
         <div className="flex flex-nowrap overflow-x-auto md:overflow-visible md:grid md:grid-cols-4 gap-4 sm:gap-6 xl:gap-8 items-start justify-start md:justify-items-center pt-2 pb-6 px-2 sm:px-4 lg:px-0 scroll-smooth snap-x snap-mandatory [-webkit-overflow-scrolling:touch]">
           {teamMembers.map((member) => (
-            <BadgeItem key={member.id} member={member} />
+            <BadgeItem key={member.id} member={member} onNavigate={onNavigate} />
           ))}
         </div>
       </div>

@@ -608,14 +608,18 @@ export const experts = [
     "id": "syed-anvar-hussain",
     "name": "Syed Anvar Hussain",
     "role": "Director Regulatory Compliance — Statutory Governance & Licensing",
+    "department": "Regulatory Compliance",
     "linkedin": "https://www.linkedin.com/in/syed-husain-9165923b1",
+    "email": "info@eaglecomply.com",
     "photo": "images/team/syed-anvar-hussain.png",
+    "location": "London, UK & Global Advisory",
     "specialisms": [
       "Regulatory Compliance Frameworks",
       "Licensing & Registration Readiness",
       "Enterprise Risk Management (ERM)",
       "Compliance Monitoring Programs",
-      "Board & Governance Structuring"
+      "Board & Governance Structuring",
+      "Three Lines of Defense Architecture"
     ],
     "industries": [
       "Banking & Financial Institutions",
@@ -634,31 +638,77 @@ export const experts = [
       "Urdu"
     ],
     "certs": [
-      "Certified Regulatory Compliance Professional",
+      "Certified Regulatory Compliance Professional (CRCP)",
       "Enterprise Risk Governance Fellow",
-      "Governance & Internal Control Specialist"
+      "Governance & Internal Control Specialist",
+      "ISO 37301 Compliance Management Systems Specialist"
     ],
-    "bio": "Syed Anvar Hussain directs regulatory compliance, risk governance, and statutory oversight. He specializes in assisting regulated entities establish comprehensive compliance monitoring programs, secure regulatory authorizations, and structure robust Three Lines of Defense governance models.",
+    "bio": "Syed Anvar Hussain directs regulatory compliance, risk governance, and statutory oversight at EagleComply. He specializes in assisting regulated entities establish comprehensive compliance monitoring programs, secure regulatory authorizations, and structure robust Three Lines of Defense governance models across global financial centers.",
+    "intro": "With extensive institutional advisory experience across banking, wealth management, and cross-border financial services, Syed Anvar Hussain bridges statutory supervisory obligations and executive operations. His practice focuses on designing auditable compliance ecosystems, leading supervisory liaison, and managing regulatory change across multi-jurisdictional frameworks.",
+    "experience": [
+      {
+        "period": "2020 – Present",
+        "role": "Director Regulatory Compliance",
+        "organization": "EagleComply International Advisory",
+        "details": "Directs regulatory licensing, governance architecture, and compliance monitoring programs for international financial institutions, fintechs, and asset managers."
+      },
+      {
+        "period": "2015 – 2020",
+        "role": "Senior Regulatory Counsel & Compliance Lead",
+        "organization": "Financial Institutions Advisory Group",
+        "details": "Engineered institutional Three Lines of Defense frameworks, drafted statutory compliance manuals, and represented clients before supervisory authorities."
+      },
+      {
+        "period": "2010 – 2015",
+        "role": "Compliance & Risk Governance Manager",
+        "organization": "Banking & Capital Markets Practice",
+        "details": "Oversaw enterprise risk assessments, regulatory gap analysis, and policy formulation under UK and international prudential guidelines."
+      }
+    ],
+    "publications": [
+      {
+        "title": "Structuring Enterprise Three Lines of Defense in Regulated Institutions",
+        "publisher": "EagleComply Regulatory Brief",
+        "year": "2024",
+        "summary": "Practical blueprint for segregating operational risk ownership from independent compliance oversight and internal audit."
+      },
+      {
+        "title": "Cross-Border Regulatory Licensing Playbook for UK & EU FinTechs",
+        "publisher": "International Compliance Review",
+        "year": "2023",
+        "summary": "Authoritative analysis on statutory readiness dossiers, capital adequacy documentation, and fit-and-proper supervisory requirements."
+      },
+      {
+        "title": "Implementing ISO 37301 Compliance Management in High-Growth Entities",
+        "publisher": "Global Governance Quarterly",
+        "year": "2022",
+        "summary": "Systematic methodology for adopting international standard compliance baselines with measurable assurance metrics."
+      }
+    ],
     "videoIntro": false
   },
   {
     "id": "muhammad-shahid",
     "name": "Muhammad Shahid",
     "role": "Director AML Compliance — AML/CFT & Financial Crime Prevention",
+    "department": "AML/CFT Compliance",
     "linkedin": "https://www.linkedin.com/in/shahed-m",
+    "email": "info@eaglecomply.com",
     "photo": "images/team/muhammad-shahid.png",
+    "location": "Global Financial Crime Advisory",
     "specialisms": [
       "AML/CFT Program Development",
-      "KYC/CDD/EDD Frameworks",
-      "Institutional ML/TF Risk Assessments",
-      "Transaction Monitoring & Sanctions",
-      "Independent AML/CFT Reviews"
+      "KYC / CDD / EDD Frameworks",
+      "Institutional ML/TF Risk Assessments (EWRA)",
+      "Transaction Monitoring & Sanctions Screening",
+      "Independent AML/CFT Reviews & Remediation",
+      "FATF & Wolfsberg Principles Alignment"
     ],
     "industries": [
       "Banking & Credit Institutions",
       "Money Service Businesses & Remittance",
       "FinTech & Payments",
-      "Digital Assets"
+      "Digital Assets & VASP Platforms"
     ],
     "countries": [
       "International / Global Standards",
@@ -673,34 +723,80 @@ export const experts = [
     "certs": [
       "Certified Anti-Money Laundering Specialist (CAMS)",
       "ICA International Diploma in AML/CFT",
-      "Financial Crime Risk Assessor"
+      "Financial Crime Risk Assessor (FCRA)",
+      "Certified Sanctions Specialist (CSS)"
     ],
     "bio": "Muhammad Shahid directs AML/CFT compliance, financial crime prevention, and risk-based compliance programs. He has designed, audited, and remediated financial crime frameworks for international banks, payment institutions, remittance businesses, and fintech companies across multiple jurisdictions.",
+    "intro": "Muhammad Shahid is a recognized authority in anti-money laundering, counter-terrorist financing (AML/CFT), sanctions governance, and proliferation financing risk assessment. His practice delivers end-to-end financial crime architectures from institutional risk baselines and transaction surveillance calibration to high-stakes independent regulatory remediation.",
+    "experience": [
+      {
+        "period": "2019 – Present",
+        "role": "Director AML Compliance",
+        "organization": "EagleComply Financial Crime Practice",
+        "details": "Leads AML/CFT program design, enterprise-wide ML/TF risk assessments, and independent statutory reviews for international financial services firms."
+      },
+      {
+        "period": "2014 – 2019",
+        "role": "Head of Financial Crime Compliance & MLRO Advisory",
+        "organization": "Cross-Border Payments & Remittance Group",
+        "details": "Supervised KYC/CDD customer onboarding, high-risk EDD escalation workflows, real-time transaction monitoring, and SAR/STR reporting protocols."
+      },
+      {
+        "period": "2009 – 2014",
+        "role": "Senior AML Auditor & Sanctions Officer",
+        "organization": "International Banking Syndicate",
+        "details": "Audited correspondent banking controls, PEP screening algorithms, and OFAC/EU/UK sanctions screening systems across cross-border channels."
+      }
+    ],
+    "publications": [
+      {
+        "title": "Enterprise-Wide ML/TF Risk Assessment: Methodologies for Complex Institutions",
+        "publisher": "Financial Crime Assurance Review",
+        "year": "2024",
+        "summary": "Detailed technical guide for quantifying customer, geographic, product, and channel risk vectors aligned with FATF Recommendations."
+      },
+      {
+        "title": "Transaction Monitoring Threshold Optimization & False Positive Suppression",
+        "publisher": "AML Technology Journal",
+        "year": "2023",
+        "summary": "Rule calibration and statistical typology analysis for modern payment gateways and remittance corridors."
+      },
+      {
+        "title": "Independent AML Review Best Practice Guide under Statutory Mandates",
+        "publisher": "EagleComply Executive Monograph",
+        "year": "2022",
+        "summary": "Standardized evaluation criteria for assessing financial crime operational effectiveness and board governance."
+      }
+    ],
     "videoIntro": false
   },
   {
     "id": "shan-ali",
     "name": "Shan Ali",
     "role": "Director Legal Compliance — Corporate Legal & Regulatory Counsel",
+    "department": "Legal Compliance",
     "linkedin": "https://www.linkedin.com/company/eaglecomply/?viewAsMember=true",
+    "email": "info@eaglecomply.com",
     "photo": "images/team/shan-ali.png",
+    "location": "Corporate Legal & Digital Assets Hub",
     "specialisms": [
-      "Regulatory Legal Research & Opinions",
-      "Corporate Legal Compliance & Web3",
-      "Compliance Documentation & Terms",
+      "Regulatory Legal Research & Statutory Opinions",
+      "Corporate Legal Compliance & Web3 Licensing",
       "Commercial & Partner Contract Reviews",
-      "Data Protection & Cross-Border Privacy"
+      "Data Protection & Cross-Border Privacy (GDPR)",
+      "Digital Asset Legal Classification & MiCA Alignment",
+      "Bilateral Non-Disclosure & Corporate Safeguards"
     ],
     "industries": [
       "Crypto & Digital Assets",
       "FinTech & Web3 Startups",
-      "Payments & Technology",
-      "International Businesses"
+      "Payments & Technology Platforms",
+      "International Commercial Businesses"
     ],
     "countries": [
       "United Kingdom",
       "European Union",
-      "UAE & GCC",
+      "UAE & GCC (VARA / ADGM)",
       "International Jurisdictions"
     ],
     "languages": [
@@ -710,28 +806,75 @@ export const experts = [
     "certs": [
       "LL.M. in International Commercial & Financial Law",
       "Certified Blockchain & FinTech Legal Advisor",
-      "IAPP CIPP/E Privacy Professional"
+      "IAPP CIPP/E European Privacy Professional",
+      "Corporate Governance Practitioner"
     ],
-    "bio": "Bahi Shan directs legal compliance and corporate legal governance, advising emerging tech innovators and established institutions on regulatory legal positioning, commercial contract safeguards, and cross-border compliance.",
+    "bio": "Shan Ali directs legal compliance and corporate legal governance, advising emerging tech innovators and established institutions on regulatory legal positioning, commercial contract safeguards, and cross-border statutory compliance.",
+    "intro": "Shan Ali leads EagleComply's legal compliance and regulatory research practice. He advises corporate enterprises, fintech disruptors, and digital asset ventures on navigating statutory directives, cross-border regulatory classifications, commercial agreement terms, and rigorous data protection frameworks.",
+    "experience": [
+      {
+        "period": "2020 – Present",
+        "role": "Director Legal Compliance",
+        "organization": "EagleComply Legal Advisory Practice",
+        "details": "Directs regulatory legal research, client legal positioning memos, commercial agreement drafting, and digital asset regulatory structuring."
+      },
+      {
+        "period": "2016 – 2020",
+        "role": "Corporate Counsel & Regulatory Affairs Lead",
+        "organization": "Technology & FinTech Advisory Counsel",
+        "details": "Negotiated partner agreements, drafted statutory disclosure terms, and structured GDPR-compliant cross-border data transfer mechanisms."
+      },
+      {
+        "period": "2012 – 2016",
+        "role": "Commercial Law Associate & Regulatory Researcher",
+        "organization": "International Corporate Law Chambers",
+        "details": "Conducted multi-jurisdictional legal comparative analysis, statutory compliance audits, and corporate governance filings."
+      }
+    ],
+    "publications": [
+      {
+        "title": "Navigating the EU Markets in Crypto-Assets (MiCA) Statutory Framework",
+        "publisher": "Digital Asset Legal Journal",
+        "year": "2024",
+        "summary": "In-depth guide to CASP authorization, whitepaper publication standards, and reserve asset prudential requirements."
+      },
+      {
+        "title": "Drafting Defensible Commercial Agreements in Highly Regulated Sectors",
+        "publisher": "Corporate Governance & Legal Review",
+        "year": "2023",
+        "summary": "Clauses and indemnities required to safeguard institutions against downstream regulatory sanctions and vendor defaults."
+      },
+      {
+        "title": "Cross-Border Data Transfer Post-Schrems II: Practical Compliance Roadmap",
+        "publisher": "Privacy & Data Protection Law Brief",
+        "year": "2022",
+        "summary": "Transfer Impact Assessments (TIA) and Standard Contractual Clauses (SCCs) implementation for cloud-native enterprises."
+      }
+    ],
     "videoIntro": false
   },
   {
     "id": "zahid-munir",
     "name": "Zahid Munir",
     "role": "Director Financial Compliance — Prudential Risk & Capital Governance",
+    "department": "Financial Compliance",
     "linkedin": "https://www.linkedin.com/company/eaglecomply/?viewAsMember=true",
+    "email": "info@eaglecomply.com",
     "photo": "images/team/zahid-munir.png",
+    "location": "Financial & Prudential Advisory",
     "specialisms": [
       "Financial Compliance & Accounting Standards",
-      "Prudential Risk & Capital Adequacy",
-      "Statutory Financial Reporting & Controls",
-      "Audit Readiness & Gap Assessments"
+      "Prudential Risk & Capital Adequacy (ICAAP/ILAAP)",
+      "Statutory Financial Reporting & Internal Controls",
+      "Audit Readiness & Regulatory Assurance",
+      "Client Asset Safeguarding & Segregation (CASS)",
+      "Stress Testing & Capital Solvency Modeling"
     ],
     "industries": [
       "Banks & Credit Institutions",
       "Asset & Wealth Managers",
-      "Payment Institutions & Remittance",
-      "Commercial Entities"
+      "Payment Institutions & Remittance Firms",
+      "Commercial Enterprises"
     ],
     "countries": [
       "United Kingdom",
@@ -744,10 +887,53 @@ export const experts = [
       "Urdu"
     ],
     "certs": [
-      "Financial Compliance & Risk Specialist",
-      "Statutory Reporting & Governance Fellow"
+      "Financial Compliance & Risk Specialist (FCRS)",
+      "Statutory Reporting & Governance Fellow",
+      "Certified Internal Control Auditor (CICA)",
+      "Prudential Capital Management Practitioner"
     ],
     "bio": "Zahid Munir directs financial compliance, prudential risk baselines, and statutory financial reporting controls for regulated financial institutions and corporate enterprises.",
+    "intro": "Zahid Munir leads EagleComply's financial compliance and prudential advisory division. With extensive expertise in accounting compliance, statutory reporting, internal financial controls, and capital solvency modeling, he prepares regulated entities to satisfy demanding supervisory capital rules and external regulatory audits.",
+    "experience": [
+      {
+        "period": "2019 – Present",
+        "role": "Director Financial Compliance",
+        "organization": "EagleComply Financial Governance Group",
+        "details": "Directs prudential capital adequacy assessments, internal financial control design, and statutory audit readiness for regulated entities."
+      },
+      {
+        "period": "2013 – 2019",
+        "role": "Senior Financial Compliance & Audit Lead",
+        "organization": "Prudential Advisory & Assurance Practice",
+        "details": "Formulated ICAAP/ILAAP capital documentation, audited client funds segregation (CASS) protocols, and established statutory management accounting systems."
+      },
+      {
+        "period": "2008 – 2013",
+        "role": "Financial Risk & Controls Auditor",
+        "organization": "Corporate Financial Assurance Firm",
+        "details": "Conducted financial control reviews, balance sheet solvency assessments, and regulatory capital reporting audits across corporate entities."
+      }
+    ],
+    "publications": [
+      {
+        "title": "Prudential Capital Adequacy & ICAAP Formulation for Non-Bank Financial Institutions",
+        "publisher": "Prudential Risk Journal",
+        "year": "2024",
+        "summary": "Framework for stress-testing liquidity buffers and calculating risk-weighted asset ratios under supervisory scrutiny."
+      },
+      {
+        "title": "Client Asset Safeguarding (CASS) Compliance & Audit Readiness",
+        "publisher": "Financial Compliance Review",
+        "year": "2023",
+        "summary": "Daily reconciliation protocols, trust status verification, and acknowledgment letter maintenance."
+      },
+      {
+        "title": "Internal Financial Controls & Audit Trail Architecture in Digital Payment Entities",
+        "publisher": "EagleComply Executive Insight",
+        "year": "2022",
+        "summary": "Building end-to-end auditable transaction logs for statutory annual external audits."
+      }
+    ],
     "videoIntro": false
   }
 ];

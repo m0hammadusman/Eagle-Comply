@@ -203,8 +203,13 @@ export default function Footer({ onNavigate }) {
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('insights')} className="hover:text-white transition-colors text-left">
-                  {f.latestInsights}
+                <button onClick={() => onNavigate('blogs')} className="hover:text-white transition-colors text-left">
+                  Compliance Blogs
+                </button>
+              </li>
+              <li>
+                <button onClick={() => onNavigate('news')} className="hover:text-white transition-colors text-left">
+                  Regulatory News
                 </button>
               </li>
             </ul>
@@ -222,13 +227,13 @@ export default function Footer({ onNavigate }) {
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('knowledge-center')} className="hover:text-white transition-colors">
-                  {f.resourceCentre}
+                <button onClick={() => onNavigate('team')} className="hover:text-white transition-colors">
+                  Compliance Leadership
                 </button>
               </li>
               <li>
                 <button onClick={() => onNavigate('contact')} className="hover:text-white transition-colors">
-                  {f.contactConsultations}
+                  {f.contact}
                 </button>
               </li>
               <li>
