@@ -133,7 +133,7 @@ export default function ComplianceChatbot({ onNavigate, onOpenConsultation, onOp
   return (
     <>
       <button onClick={() => setOpen(v => !v)} className="fixed bottom-6 right-6 rtl:right-auto rtl:left-6 z-40 w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-white shadow-2xl hover:scale-105 transition-all border border-slate-200 overflow-hidden" title={t.modals?.chatbotTitle || 'Eagle Regulatory Assistant'}>
-        <img src={isDark ? '/logo-light.png' : '/logo-dark.png'} alt="EagleComply AI Assistant" className="w-full h-full object-cover" />
+        <img src={isDark ? `${import.meta.env.BASE_URL}logo-light.png` : `${import.meta.env.BASE_URL}logo-dark.png`} alt="EagleComply AI Assistant" className="w-full h-full object-cover" />
       </button>
 
       {open && (
