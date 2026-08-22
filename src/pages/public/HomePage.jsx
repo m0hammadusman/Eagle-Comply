@@ -88,7 +88,7 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
 
   const sectorDetails = Object.fromEntries(Object.entries(hx.sectors || {}).map(([key, value]) => [
     key,
-    { title: value[0], desc: value[1], image: ({ banking:'/assets/images/case-study-bank.jpg', fintech:'/assets/images/fintech-banking.jpg', payments:'/assets/images/critical-infra.jpg', crypto:'/assets/images/blockchain-nodes.jpg' })[key], points: value[2] }
+    { title: value[0], desc: value[1], image: ({ banking:`${import.meta.env.BASE_URL}assets/images/case-study-bank.jpg`, fintech:`${import.meta.env.BASE_URL}assets/images/fintech-banking.jpg`, payments:`${import.meta.env.BASE_URL}assets/images/critical-infra.jpg`, crypto:`${import.meta.env.BASE_URL}assets/images/blockchain-nodes.jpg` })[key], points: value[2] }
   ]));
 
   const practitioners = teamPractitioners;
