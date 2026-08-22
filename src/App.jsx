@@ -271,8 +271,8 @@ function AppContent() {
           {currentRoute === 'admin' && (
             <AdminPlatform onNavigate={navigate} />
           )}
-          {/* Extended interactive experience on every non-home public page */}
-          {!['home', 'portal', 'consultant', 'admin'].includes(currentRoute) && (
+          {/* Extended interactive experience on specific service/industry/regulatory pages */}
+          {!['home', 'portal', 'consultant', 'admin', 'team', 'team-detail', 'experts', 'expert-detail', 'blogs', 'news', 'contact'].includes(currentRoute) && (
             <PageEnhancements
               route={currentRoute}
               onNavigate={navigate}
