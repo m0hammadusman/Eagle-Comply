@@ -23,10 +23,10 @@ export default function RegulationsPage({ onNavigate }) {
   });
 
   const regulationImages = {
-    'eu-ai-act': '/assets/images/ai-matrix.jpg',
-    'dora': '/assets/images/cyber-resilience.jpg',
-    'gdpr': '/assets/images/law-statute.jpg',
-    'mica': '/assets/images/blockchain-crypto.jpg'
+    'eu-ai-act': `${import.meta.env.BASE_URL}assets/images/ai-matrix.jpg`,
+    'dora': `${import.meta.env.BASE_URL}assets/images/cyber-resilience.jpg`,
+    'gdpr': `${import.meta.env.BASE_URL}assets/images/law-statute.jpg`,
+    'mica': `${import.meta.env.BASE_URL}assets/images/blockchain-crypto.jpg`
   };
 
   return (
