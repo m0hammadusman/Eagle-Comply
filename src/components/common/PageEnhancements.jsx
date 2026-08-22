@@ -103,7 +103,7 @@ export default function PageEnhancements({ route, onNavigate, onOpenConsultation
           {services[activeService] && (
             <div className="lg:col-span-7 rounded-3xl overflow-hidden border border-surface-border bg-surface-raised shadow-xl">
               <div className="grid md:grid-cols-2 min-h-[330px]">
-                <img src={(services[activeService].image||"").startsWith("/") ? import.meta.env.BASE_URL+(services[activeService].image||"").slice(1) : (services[activeService].image||"")} alt={services[activeService].name} className="w-full h-full min-h-[240px] object-cover" />
+                <img src={`${import.meta.env.BASE_URL}${(services[activeService].image || '').replace(import.meta.env.BASE_URL, '').replace(/^\/+/, '')}`} alt={services[activeService].name} className="w-full h-full min-h-[240px] object-cover" />
                 <div className="p-7 flex flex-col justify-center">
                   <span className="text-[10px] font-mono uppercase tracking-wider text-[#334DAF] dark:text-[#7096D1]">{e.selected || 'SELECTED PRACTICE'}</span>
                   <h3 className="mt-2 text-2xl font-bold text-slate-900 dark:text-white">{services[activeService].name}</h3>
