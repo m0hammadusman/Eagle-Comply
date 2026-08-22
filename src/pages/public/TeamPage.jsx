@@ -30,79 +30,36 @@ export default function TeamPage({ onNavigate, onOpenConsultation }) {
   return (
     <div className="w-full space-y-16 animate-fade-in">
       
-      {/* 1. Executive Hero Header with Team Boardroom Portrait */}
-      <section className="relative pt-6 pb-10 sm:pb-14 lg:pt-8 lg:pb-16 bg-surface-subtle/70 border-b border-surface-border overflow-hidden">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            
-            {/* Left Content Column */}
-            <div className="lg:col-span-6 space-y-5 text-left rtl:text-right">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#334DAF]/10 dark:bg-[#7096D1]/15 text-[#334DAF] dark:text-[#7096D1] text-xs font-mono font-bold tracking-wider uppercase border border-[#334DAF]/20 dark:border-[#7096D1]/30">
-                <Users className="w-3.5 h-3.5" />
-                <span>OUR COMPLIANCE LEADERSHIP</span>
-              </div>
+      {/* 1. Full-Width Edge-to-Edge Background Hero Section */}
+      <section className="relative w-full min-h-[480px] sm:min-h-[540px] lg:min-h-[600px] flex items-center justify-center border-b border-[#1E3778] overflow-hidden">
+        
+        {/* Full-Cover Background Image Layer from Left to Right */}
+        <div className="absolute inset-0 w-full h-full z-0">
+          <img
+            src={`${import.meta.env.BASE_URL}assets/images/team-boardroom.jpg`}
+            alt="EagleComply Senior Practice Directors in Boardroom"
+            className="w-full h-full object-cover object-top"
+          />
+          {/* Executive Backdrop Overlay for Sharp Readable Text and Clear Visibility */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[#091F5C]/80 via-[#091F5C]/45 to-[#091F5C]/85 backdrop-brightness-90" />
+        </div>
 
-              <h1 className="font-sans tracking-tight text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white leading-[1.15]">
-                Senior Practice Directors & Regulatory Counsel
-              </h1>
-
-              <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
-                Directing multi-jurisdictional AML/CFT frameworks, regulatory licensing, statutory governance, corporate legal opinions, and prudential financial assurance.
-              </p>
-
-              {/* Action Buttons */}
-              <div className="pt-2 flex flex-wrap items-center gap-3">
-                <button
-                  onClick={onOpenConsultation}
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-[#091F5C] to-[#334DAF] dark:from-[#334DAF] dark:to-[#7096D1] text-white dark:text-[#101E42] font-bold text-xs shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all"
-                >
-                  <Calendar className="w-4 h-4" />
-                  <span>Book Consultation Session</span>
-                </button>
-                <button
-                  onClick={() => onNavigate('solutions')}
-                  className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-surface-base border border-surface-border text-slate-800 dark:text-slate-200 hover:border-[#334DAF] font-bold text-xs transition-all shadow-sm"
-                >
-                  <span>Explore Practice Areas</span>
-                  <ArrowRight className="w-4 h-4 rtl:rotate-180" />
-                </button>
-              </div>
-
-              {/* Quick Trust Highlights */}
-              <div className="pt-4 grid grid-cols-3 gap-3 border-t border-surface-border/60">
-                <div>
-                  <div className="text-base sm:text-lg font-bold text-slate-900 dark:text-white font-mono">4 Partners</div>
-                  <div className="text-[11px] text-slate-500 font-mono">Executive Council</div>
-                </div>
-                <div>
-                  <div className="text-base sm:text-lg font-bold text-slate-900 dark:text-white font-mono">FATF</div>
-                  <div className="text-[11px] text-slate-500 font-mono">Aligned Standards</div>
-                </div>
-                <div>
-                  <div className="text-base sm:text-lg font-bold text-slate-900 dark:text-white font-mono">UK · EU · GCC</div>
-                  <div className="text-[11px] text-slate-500 font-mono">Cross-Border Desks</div>
-                </div>
-              </div>
-            </div>
-
-            {/* Right Column: Full Boardroom Team Photo (Uncropped, Perfect Fit) */}
-            <div className="lg:col-span-6 relative">
-              <div className="relative rounded-3xl overflow-hidden glass-panel border border-surface-border shadow-2xl bg-surface-base flex items-center justify-center group p-2 sm:p-3">
-                <img
-                  src={`${import.meta.env.BASE_URL}assets/images/team-boardroom.jpg`}
-                  alt="EagleComply Leadership Team"
-                  className="w-full h-auto max-h-[480px] object-contain object-top rounded-2xl group-hover:scale-[1.01] transition-transform duration-500"
-                />
-                
-                {/* Subtle Live Badge */}
-                <div className="absolute top-5 left-5 rtl:left-auto rtl:right-5 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] font-mono flex items-center gap-2 pointer-events-none">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-                  <span className="font-bold">EXECUTIVE BOARDROOM</span>
-                </div>
-              </div>
-            </div>
-
+        {/* Hero Content in the Middle of Hero Section */}
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 text-center space-y-4">
+          
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/20 backdrop-blur-md text-white text-xs font-mono font-bold tracking-wider uppercase border border-white/30 shadow-lg">
+            <Users className="w-3.5 h-3.5 text-sky-300" />
+            <span>OUR COMPLIANCE LEADERSHIP</span>
           </div>
+
+          <h1 className="font-sans tracking-tight text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight drop-shadow-lg">
+            Senior Practice Directors & Regulatory Counsel
+          </h1>
+
+          <p className="text-sm sm:text-base lg:text-lg text-blue-50 font-medium leading-relaxed max-w-2xl mx-auto drop-shadow-md">
+            Directing multi-jurisdictional AML/CFT frameworks, regulatory licensing, statutory governance, corporate legal opinions, and prudential financial assurance.
+          </p>
+
         </div>
       </section>
 
