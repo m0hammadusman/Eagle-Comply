@@ -32,12 +32,12 @@ export default function SolutionsPage({ onNavigate, onOpenConsultation, onOpenQu
   };
 
   const solutionImages = {
-    'financial-crime-compliance': '/assets/images/ai-matrix.jpg',
-    'regulatory-compliance': '/assets/images/governance-boardroom.jpg',
-    'risk-governance': '/assets/images/cyber-resilience.jpg',
-    'legal-compliance': '/assets/images/law-justice.jpg',
-    'compliance-training': '/assets/images/law-statute.jpg',
-    'compliance-reviews': '/assets/images/global-earth.jpg'
+    'financial-crime-compliance': `${import.meta.env.BASE_URL}assets/images/ai-matrix.jpg`,
+    'regulatory-compliance': `${import.meta.env.BASE_URL}assets/images/governance-boardroom.jpg`,
+    'risk-governance': `${import.meta.env.BASE_URL}assets/images/cyber-resilience.jpg`,
+    'legal-compliance': `${import.meta.env.BASE_URL}assets/images/law-justice.jpg`,
+    'compliance-training': `${import.meta.env.BASE_URL}assets/images/law-statute.jpg`,
+    'compliance-reviews': `${import.meta.env.BASE_URL}assets/images/global-earth.jpg`
   };
 
   const categories = [
