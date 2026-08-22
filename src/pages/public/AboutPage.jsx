@@ -244,7 +244,7 @@ export default function AboutPage({ onNavigate, onOpenConsultation, onOpenQuote 
   return (
     <div className="w-full">
       {/* 1. Hero Header */}
-      <section className="relative py-12 lg:py-16 bg-surface-subtle/70 border-b border-surface-border overflow-hidden">
+      <section className="relative pt-4 sm:pt-6 pb-8 sm:pb-12 lg:pt-6 lg:pb-12 bg-surface-subtle/70 border-b border-surface-border overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             
