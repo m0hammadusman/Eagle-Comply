@@ -27,12 +27,12 @@ export default function GlobalCompliancePage({ onNavigate }) {
   });
 
   const countryImages = {
-    'european-union': '/assets/images/law-statute.jpg',
-    'united-states': '/assets/images/governance-boardroom.jpg',
-    'united-kingdom': '/assets/images/law-justice.jpg',
-    'uae-gcc': '/assets/images/blockchain-crypto.jpg',
-    'singapore': '/assets/images/fintech-banking.jpg',
-    'japan': '/assets/images/ai-matrix.jpg'
+    'european-union': `${import.meta.env.BASE_URL}assets/images/law-statute.jpg`,
+    'united-states': `${import.meta.env.BASE_URL}assets/images/governance-boardroom.jpg`,
+    'united-kingdom': `${import.meta.env.BASE_URL}assets/images/law-justice.jpg`,
+    'uae-gcc': `${import.meta.env.BASE_URL}assets/images/blockchain-crypto.jpg`,
+    'singapore': `${import.meta.env.BASE_URL}assets/images/fintech-banking.jpg`,
+    'japan': `${import.meta.env.BASE_URL}assets/images/ai-matrix.jpg`
   };
 
   const regions = [
