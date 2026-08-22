@@ -445,7 +445,7 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
 
             <div className="h-48 sm:h-64 rounded-xl sm:rounded-2xl overflow-hidden relative shadow-inner">
               <img
-                src={(sectorDetails[activeIndustryTab].image||"").startsWith("/") ? import.meta.env.BASE_URL+(sectorDetails[activeIndustryTab].image||"").slice(1) : (sectorDetails[activeIndustryTab].image||"")}
+                src={`${import.meta.env.BASE_URL}${(sectorDetails[activeIndustryTab].image || '').replace(import.meta.env.BASE_URL, '').replace(/^\/+/, '')}`}
                 alt={sectorDetails[activeIndustryTab].title}
                 className="w-full h-full object-cover"
               />
