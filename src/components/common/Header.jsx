@@ -177,7 +177,7 @@ export default function Header({ onNavigate, currentRoute, onOpenSearch, onOpenC
                                 onClick={() => { onNavigate('solutions'); setActiveMegaMenu(null); }}
                                 className="mt-3 text-xs font-bold text-[#334DAF] dark:text-[#7096D1] hover:underline flex items-center gap-1 whitespace-nowrap"
                               >
-                                {t.solutionsSec?.viewAll || 'View All 6 Practices'} <ArrowRight className="w-3 h-3 rtl:rotate-180" />
+                                {t.solutionsSec?.viewAll || 'See all services'} <ArrowRight className="w-3 h-3 rtl:rotate-180" />
                               </button>
                             </div>
                           </>
