@@ -92,7 +92,7 @@ export default function Footer({ onNavigate }) {
               {f.footerBody}
             </p>
             
-            {/* Direct Contact Action Chips (Round Shaped) */}
+            {/* Direct Contact Action Chips */}
             <div className="pt-2 flex flex-wrap items-center gap-2.5">
               <a
                 href="https://wa.me/447706413233"
@@ -102,7 +102,7 @@ export default function Footer({ onNavigate }) {
                 title="Direct WhatsApp Contact UK"
               >
                 <WhatsAppIcon className="w-4 h-4 fill-white" />
-                <span>WhatsApp (UK) <strong></strong></span>
+                <span>WhatsApp (UK)</span>
               </a>
               <a
                 href="https://wa.me/393488184787"
@@ -112,7 +112,7 @@ export default function Footer({ onNavigate }) {
                 title="Direct WhatsApp Contact Italy"
               >
                 <WhatsAppIcon className="w-4 h-4 fill-white" />
-                <span>WhatsApp (Italy) <strong></strong></span>
+                <span>WhatsApp (Italy)</span>
               </a>
               <a
                 href="mailto:info@eaglecomply.com"
@@ -137,10 +137,10 @@ export default function Footer({ onNavigate }) {
             </div>
           </div>
 
-          {/* Col 2: Services / Solutions */}
+          {/* Col 3: Services / Solutions */}
           <div className="space-y-3">
             <h4 className="text-xs font-mono font-bold uppercase tracking-wider text-white">
-              Compliance Solutions
+              {f.solutions}
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
@@ -176,10 +176,10 @@ export default function Footer({ onNavigate }) {
             </ul>
           </div>
 
-          {/* Col 3: Industries & Insights */}
+          {/* Col 4: Industries & Insights */}
           <div className="space-y-3">
             <h4 className="text-xs font-mono font-bold uppercase tracking-wider text-white">
-              Industries & Insights
+              {f.industriesInsights}
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
@@ -215,66 +215,6 @@ export default function Footer({ onNavigate }) {
             </ul>
           </div>
 
-          {/* Col 4: Institutional Governance & Policies */}
-          <div className="space-y-3">
-            <h4 className="text-xs font-mono font-bold uppercase tracking-wider text-white flex items-center gap-1.5">
-              <ShieldCheck className="w-3.5 h-3.5 text-sky-400" />
-              Governance & Policies
-            </h4>
-            <ul className="space-y-1.5 text-[11px] text-blue-200/90">
-              <li>
-                <button onClick={() => onNavigate('legal', { section: 'dpa' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
-                  • Data Processing Agreement
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigate('legal', { section: 'idta' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
-                  • International Data Transfer (IDTA)
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigate('legal', { section: 'data-protection' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
-                  • Data Protection Policy
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigate('legal', { section: 'privacy' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
-                  • Privacy Notice
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigate('legal', { section: 'data-retention' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
-                  • Data Retention Policy
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigate('legal', { section: 'infosec' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
-                  • Information Security Policy
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigate('legal', { section: 'access-control' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
-                  • Access Control Policy
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigate('legal', { section: 'breach-response' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
-                  • Incident & Breach Response
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigate('legal', { section: 'remote-working' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
-                  • Remote Working Policy
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigate('legal', { section: 'nda' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
-                  • Confidentiality & NDA Agreements
-                </button>
-              </li>
-            </ul>
-          </div>
-
           {/* Col 5: Company & Legal */}
           <div className="space-y-3">
             <h4 className="text-xs font-mono font-bold uppercase tracking-wider text-white">
@@ -303,26 +243,26 @@ export default function Footer({ onNavigate }) {
               </li>
               <li>
                 <button onClick={() => onNavigate('legal')} className="hover:text-white transition-colors text-left">
-                  Legal & Disclaimers
+                  Privacy & Data Governance
+                </button>
+              </li>
+              <li>
+                <button onClick={() => onNavigate('legal')} className="hover:text-white transition-colors text-left">
+                  Terms & Disclaimers
                 </button>
               </li>
             </ul>
           </div>
+
         </div>
 
-        {/* Explicit Statutory Disclaimers */}
-        <div className="py-4 border-b border-[#1E3778]/60 space-y-2 text-[11px] leading-relaxed">
-          <div className="p-3 rounded-xl bg-slate-900/40 border border-[#1E3778] text-amber-200/90 font-medium">
-            <strong className="text-amber-300 font-bold uppercase tracking-wider block mb-1">
-              ⚠️ Statutory Disclaimers:
-            </strong>
-            <ul className="list-disc pl-4 space-y-0.5 text-blue-100/90 text-[11px]">
-              <li>We do not provide financial promotion in the UK.</li>
-              <li>We do not provide accountancy and tax services.</li>
-            </ul>
-          </div>
-          <p className="text-[10px] text-blue-200/60 leading-relaxed pt-1">
-            <strong>Professional Advisory Notice:</strong> EagleComply is an independent regulatory compliance, risk management, and legal advisory consultancy. Content on eaglecomply.com is provided for informational and educational purposes only and does not constitute formal legal or financial advice without an executed bilateral engagement agreement.
+        {/* Streamlined Disclaimers Note in Natural Sequence */}
+        <div className="py-4 border-b border-[#1E3778]/50 text-[10px] sm:text-[11px] text-blue-200/60 leading-relaxed space-y-1">
+          <p>
+            <strong className="text-amber-300 font-semibold">Statutory Disclaimers:</strong> We do not provide financial promotion in the UK. We do not provide accountancy and tax services.
+          </p>
+          <p>
+            <strong>Professional Advisory Notice:</strong> EagleComply is an independent regulatory compliance, risk management, and legal advisory consultancy. Materials on eaglecomply.com are provided for informational and educational purposes only and do not constitute formal legal or financial advice without an executed bilateral engagement agreement.
           </p>
         </div>
 
