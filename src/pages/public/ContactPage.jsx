@@ -360,15 +360,15 @@ export default function ContactPage({ onNavigate }) {
                 </div>
                 <div className="flex items-center gap-2">
                   <span>🇬🇧</span>
-                  <span><strong>United Kingdom:</strong> London Practice Desk</span>
+                  <span className="font-bold text-slate-800 dark:text-slate-200">United Kingdom</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span>🇮🇹</span>
-                  <span><strong>Italy:</strong> Milan / Rome Desk</span>
+                  <span className="font-bold text-slate-800 dark:text-slate-200">Italy</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span>🇵🇰</span>
-                  <span><strong>Pakistan:</strong> South Asia Advisory Hub</span>
+                  <span className="font-bold text-slate-800 dark:text-slate-200">Pakistan</span>
                 </div>
               </div>
 

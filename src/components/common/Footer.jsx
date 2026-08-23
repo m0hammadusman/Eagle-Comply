@@ -61,15 +61,15 @@ export default function Footer({ onNavigate }) {
           <div className="flex flex-wrap items-center gap-2.5 sm:gap-4 text-xs font-medium text-white">
             <button onClick={() => onNavigate('contact')} className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1E3778]/80 hover:bg-[#1E3778] border border-blue-400/25 shadow-sm transition-all text-left">
               <span>🇬🇧</span>
-              <span><strong>United Kingdom</strong> (London Desk)</span>
+              <span><strong>United Kingdom</strong></span>
             </button>
             <button onClick={() => onNavigate('contact')} className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1E3778]/80 hover:bg-[#1E3778] border border-blue-400/25 shadow-sm transition-all text-left">
               <span>🇮🇹</span>
-              <span><strong>Italy</strong> (Milan / Rome Desk)</span>
+              <span><strong>Italy</strong></span>
             </button>
             <button onClick={() => onNavigate('contact')} className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1E3778]/80 hover:bg-[#1E3778] border border-blue-400/25 shadow-sm transition-all text-left">
               <span>🇵🇰</span>
-              <span><strong>Pakistan</strong> (South Asia Hub)</span>
+              <span><strong>Pakistan</strong></span>
             </button>
           </div>
         </div>

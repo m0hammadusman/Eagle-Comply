@@ -211,9 +211,6 @@ export default function ContactWorldMap({ onSelectLocation }) {
                     <h3 className="text-lg font-bold text-white flex items-center gap-2">
                       {selectedLocation.name}
                     </h3>
-                    <div className="text-xs font-mono text-blue-200">
-                      {selectedLocation.city} • {selectedLocation.desk}
-                    </div>
                   </div>
                 </div>
               </div>
@@ -284,7 +281,6 @@ export default function ContactWorldMap({ onSelectLocation }) {
               >
                 <div className="text-base mb-1">{loc.flag}</div>
                 <div className="text-xs font-bold text-slate-900 dark:text-white truncate">{loc.name}</div>
-                <div className="text-[10px] text-slate-500 dark:text-slate-400 truncate">{loc.city}</div>
               </button>
             ))}
           </div>
