@@ -14,12 +14,17 @@ export const solutions = [
       "Meeting cross-border Travel Rule and crypto transparency obligations"
     ],
     "scope": [
-      "AML/CFT Program & Policy Suite Development",
-      "Enterprise & Customer ML/TF Risk Assessments",
+      "AML/CFT Programme & Framework Development",
+      "Enterprise ML/TF/PF Risk Assessments (EWRA)",
       "KYC, CDD & Enhanced Due Diligence (EDD) Frameworks",
-      "Transaction Monitoring & Suspicious Activity Escalation Protocols",
-      "Sanctions Compliance, PEP & Adverse Media Screening Controls",
-      "Travel Rule, Payment Transparency & Crypto AML Architecture"
+      "Customer Risk-Rating Models & Methodologies",
+      "Sanctions Compliance Policies & Risk Assessments",
+      "Transaction Monitoring Framework Design & Alert Calibration",
+      "AML Audits, Independent Reviews & Gap Assessments",
+      "Financial Crime & Institutional Staff Training",
+      "Correspondent Banking Due Diligence & Compliance",
+      "Remittance & Money Service Business (MSB) Compliance",
+      "FinTech, Crypto & Digital Assets Compliance"
     ],
     "deliverables": [
       "Comprehensive AML/CFT Governance Manual & Standard Operating Procedures",
@@ -85,12 +90,15 @@ export const solutions = [
       "Building verifiable compliance testing and monitoring routines"
     ],
     "scope": [
-      "Regulatory Authorization & Licensing Application Preparation",
-      "Comprehensive Regulatory Gap Assessments & Horizon Scanning",
-      "Compliance Monitoring Programs (CMP) & Testing Schedules",
-      "Regulatory Reporting & Prudential Governance Structuring",
-      "Board & Senior Management Compliance Reporting Architecture",
-      "Regulatory Change Management & Implementation Roadmaps"
+      "Regulatory Gap Assessments & Horizon Scanning",
+      "Comprehensive Compliance Frameworks & Monitoring Programmes (CMP)",
+      "Regulatory Change Management & Strategic Impact Analysis",
+      "Governance & Enterprise Risk Frameworks",
+      "Licensing & Regulatory Application Preparation & Support",
+      "Regulatory Research & FinTech Regulatory Analysis",
+      "Compliance Manuals, Policies & Standard Operating Procedures",
+      "Remediation Projects & Supervisory Response",
+      "Outsourced Compliance Advisory & Support"
     ],
     "deliverables": [
       "Full Regulatory License Dossier & Business Model Narrative",
@@ -226,12 +234,14 @@ export const solutions = [
       "Ensuring marketing and product claims comply with consumer protection and disclosure laws"
     ],
     "scope": [
-      "Regulatory Legal Research & Comparative Jurisdictional Analysis",
-      "Compliance-Related Legal Documentation & Customer Disclosures",
-      "Commercial Contract Review & Regulatory Protection Clauses",
-      "Digital Asset, Web3 & FinTech Regulatory Advisory & Whitepaper Review",
-      "Data Privacy (GDPR/CCPA) Documentation & Data Processing Agreements (DPAs)",
-      "Corporate Governance Documentation & Statutory Secretarial Support"
+      "Contract Compliance Review & Commercial Documentation Support",
+      "Corporate Governance Documentation & Board Charters",
+      "Regulatory Legal Research & FinTech Regulatory Analysis",
+      "Compliance Obligations Mapping & Legal Gap Analysis",
+      "Corporate Compliance Frameworks & Policy Drafting",
+      "AML/CFT Advisory & Specialized Legal Compliance",
+      "Data Privacy, Compliance Support & Data Processing Agreements (DPAs)",
+      "Regulatory Application Preparation & Statutory Filing Support"
     ],
     "deliverables": [
       "Tailored Regulatory Legal Opinions & Risk Memoranda",
@@ -700,42 +710,41 @@ export const experts = [
     "photo": "images/team/muhammad-shahid.png",
     "location": "Global Financial Crime Advisory",
     "specialisms": [
-      "AML/CFT Program Development",
-      "KYC / CDD / EDD Frameworks",
-      "Institutional ML/TF Risk Assessments (EWRA)",
-      "Transaction Monitoring & Sanctions Screening",
-      "Independent AML/CFT Reviews & Remediation",
-      "FATF & Wolfsberg Principles Alignment"
+      "AML/CFT Framework Development",
+      "Enterprise ML/TF/PF Risk Assessments",
+      "KYC / CDD / EDD Frameworks & Customer Risk Rating",
+      "Sanctions Policies & Transaction Monitoring Design",
+      "Correspondent Banking & MSB/Remittance Compliance",
+      "Fintech, Crypto & Blockchain Compliance"
     ],
     "industries": [
       "Banking & Credit Institutions",
-      "Money Service Businesses & Remittance",
-      "FinTech & Payments",
-      "Digital Assets & VASP Platforms"
+      "FinTech & Digital Challengers",
+      "Crypto & Blockchain Ventures",
+      "Money Service Businesses & Remittance"
     ],
     "countries": [
       "International / Global Standards",
       "United Kingdom",
       "European Union",
-      "Middle East & Asia"
+      "Middle East & Pakistan"
     ],
     "languages": [
       "English",
       "Urdu"
     ],
     "certs": [
-      "Certified Anti-Money Laundering Specialist (CAMS)",
-      "ICA International Diploma in AML/CFT",
-      "Financial Crime Risk Assessor (FCRA)",
-      "Certified Sanctions Specialist (CSS)"
+      "Certified KYC Specialist (GO-AKS)",
+      "Associate Chartered Banker — ACBI (UK)",
+      "Associate of the Institute of Bankers Pakistan (AIBP)"
     ],
     "aboutParagraphs": [
-      "Muhammad Shahid directs AML/CFT compliance, financial crime prevention, and risk-based compliance programs at EagleComply. He is an authority in anti-money laundering, counter-terrorist financing, sanctions governance, and proliferation financing risk assessment.",
-      "He has designed, audited, and remediated financial crime frameworks for international banks, payment institutions, remittance businesses, and fintech companies across multiple jurisdictions.",
-      "His practice delivers end-to-end financial crime architectures from institutional risk baselines and transaction surveillance calibration to high-stakes independent regulatory remediation."
+      "A seasoned compliance professional with extensive experience across Banking, Fintech, Crypto and Blockchain, specializing in AML/CFT, KYC, regulatory compliance and financial crime risk management.",
+      "Globally certified as a KYC Specialist (GO-AKS), with professional credentials as an Associate Chartered Banker (UK) and Associate of the Institute of Bankers Pakistan (AIBP).",
+      "Bringing a practical, risk-based approach to helping financial institutions and emerging businesses meet regulatory expectations and build strong, sustainable compliance frameworks."
     ],
-    "bio": "Muhammad Shahid directs AML/CFT compliance, financial crime prevention, and risk-based compliance programs. He has designed, audited, and remediated financial crime frameworks for international banks, payment institutions, remittance businesses, and fintech companies across multiple jurisdictions.",
-    "intro": "Muhammad Shahid is a recognized authority in anti-money laundering, counter-terrorist financing (AML/CFT), sanctions governance, and proliferation financing risk assessment. His practice delivers end-to-end financial crime architectures from institutional risk baselines and transaction surveillance calibration to high-stakes independent regulatory remediation.",
+    "bio": "A seasoned compliance professional with extensive experience across Banking, Fintech, Crypto and Blockchain, specializing in AML/CFT, KYC, regulatory compliance and financial crime risk management. Certified KYC Specialist (GO-AKS), Associate Chartered Banker (UK) and AIBP.",
+    "intro": "A seasoned compliance professional with extensive experience across Banking, Fintech, Crypto and Blockchain, specializing in AML/CFT, KYC, regulatory compliance and financial crime risk management.",
     "experience": [
       {
         "period": "2019 – Present",

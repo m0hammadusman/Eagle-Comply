@@ -1,6 +1,7 @@
 import React from 'react';
 import { 
   Shield, 
+  ShieldCheck,
   ArrowRight, 
   Mail, 
   MapPin, 
@@ -130,76 +131,80 @@ export default function Footer({ onNavigate }) {
                 <span>LinkedIn</span>
               </a>
             </div>
+            <div className="pt-2 text-[11px] font-mono text-emerald-400 flex items-center gap-1.5 font-bold">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+              UK • Italy • Pakistan
+            </div>
           </div>
 
-          {/* Col 3: Services */}
+          {/* Col 2: Services / Solutions */}
           <div className="space-y-3">
             <h4 className="text-xs font-mono font-bold uppercase tracking-wider text-white">
-              {t.nav.services}
+              Compliance Solutions
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
                 <button onClick={() => onNavigate('solution-detail', { id: 'financial-crime-compliance' })} className="hover:text-white transition-colors text-left">
-                  {solutions.find((s) => s.id === 'financial-crime-compliance')?.name || t.pillars.p1_title}
+                  AML & Financial Crime
                 </button>
               </li>
               <li>
                 <button onClick={() => onNavigate('solution-detail', { id: 'regulatory-compliance' })} className="hover:text-white transition-colors text-left">
-                  {solutions.find((s) => s.id === 'regulatory-compliance')?.name || 'Regulatory Compliance & Licensing'}
+                  Regulatory Compliance
                 </button>
               </li>
               <li>
                 <button onClick={() => onNavigate('solution-detail', { id: 'risk-governance' })} className="hover:text-white transition-colors text-left">
-                  {solutions.find((s) => s.id === 'risk-governance')?.name || 'Enterprise Risk & Governance'}
+                  Enterprise Risk & Governance
                 </button>
               </li>
               <li>
                 <button onClick={() => onNavigate('solution-detail', { id: 'legal-compliance' })} className="hover:text-white transition-colors text-left">
-                  {solutions.find((s) => s.id === 'legal-compliance')?.name || t.pillars.p4_title}
+                  Legal & Corporate Compliance
                 </button>
               </li>
               <li>
                 <button onClick={() => onNavigate('solution-detail', { id: 'compliance-training' })} className="hover:text-white transition-colors text-left">
-                  {solutions.find((s) => s.id === 'compliance-training')?.name || 'Compliance & AML Training'}
+                  Compliance & AML Training
                 </button>
               </li>
               <li>
                 <button onClick={() => onNavigate('solution-detail', { id: 'compliance-reviews' })} className="hover:text-white transition-colors text-left">
-                  {solutions.find((s) => s.id === 'compliance-reviews')?.name || 'Independent Reviews & Audits'}
+                  Independent Reviews & Audits
                 </button>
               </li>
             </ul>
           </div>
 
-          {/* Col 4: {f.industriesInsights} */}
+          {/* Col 3: Industries & Insights */}
           <div className="space-y-3">
             <h4 className="text-xs font-mono font-bold uppercase tracking-wider text-white">
-              {f.industriesInsights}
+              Industries & Insights
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
                 <button onClick={() => onNavigate('industry-detail', { id: 'banking' })} className="hover:text-white transition-colors text-left">
-                  {industries.find((i) => i.id === 'banking')?.name || 'Banking & Credit Institutions'}
+                  Banking & Credit Institutions
                 </button>
               </li>
               <li>
                 <button onClick={() => onNavigate('industry-detail', { id: 'fintech' })} className="hover:text-white transition-colors text-left">
-                  {industries.find((i) => i.id === 'fintech')?.name || 'FinTech & Digital Challengers'}
+                  FinTech & Digital Challengers
                 </button>
               </li>
               <li>
                 <button onClick={() => onNavigate('industry-detail', { id: 'payments' })} className="hover:text-white transition-colors text-left">
-                  {industries.find((i) => i.id === 'payments')?.name || 'Payment Service Providers'}
+                  Payment Service Providers
                 </button>
               </li>
               <li>
                 <button onClick={() => onNavigate('industry-detail', { id: 'remittance-msb' })} className="hover:text-white transition-colors text-left">
-                  {industries.find((i) => i.id === 'remittance-msb')?.name || 'Money Service Businesses'}
+                  Remittance & MSBs
                 </button>
               </li>
               <li>
                 <button onClick={() => onNavigate('industry-detail', { id: 'digital-assets' })} className="hover:text-white transition-colors text-left">
-                  {industries.find((i) => i.id === 'digital-assets')?.name || 'Crypto & Digital Assets'}
+                  Crypto & Blockchain
                 </button>
               </li>
               <li>
@@ -207,64 +212,117 @@ export default function Footer({ onNavigate }) {
                   Compliance Blogs
                 </button>
               </li>
+            </ul>
+          </div>
+
+          {/* Col 4: Institutional Governance & Policies */}
+          <div className="space-y-3">
+            <h4 className="text-xs font-mono font-bold uppercase tracking-wider text-white flex items-center gap-1.5">
+              <ShieldCheck className="w-3.5 h-3.5 text-sky-400" />
+              Governance & Policies
+            </h4>
+            <ul className="space-y-1.5 text-[11px] text-blue-200/90">
               <li>
-                <button onClick={() => onNavigate('news')} className="hover:text-white transition-colors text-left">
-                  Regulatory News
+                <button onClick={() => onNavigate('legal', { section: 'dpa' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
+                  • Data Processing Agreement
+                </button>
+              </li>
+              <li>
+                <button onClick={() => onNavigate('legal', { section: 'idta' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
+                  • International Data Transfer (IDTA)
+                </button>
+              </li>
+              <li>
+                <button onClick={() => onNavigate('legal', { section: 'data-protection' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
+                  • Data Protection Policy
+                </button>
+              </li>
+              <li>
+                <button onClick={() => onNavigate('legal', { section: 'privacy' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
+                  • Privacy Notice
+                </button>
+              </li>
+              <li>
+                <button onClick={() => onNavigate('legal', { section: 'data-retention' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
+                  • Data Retention Policy
+                </button>
+              </li>
+              <li>
+                <button onClick={() => onNavigate('legal', { section: 'infosec' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
+                  • Information Security Policy
+                </button>
+              </li>
+              <li>
+                <button onClick={() => onNavigate('legal', { section: 'access-control' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
+                  • Access Control Policy
+                </button>
+              </li>
+              <li>
+                <button onClick={() => onNavigate('legal', { section: 'breach-response' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
+                  • Incident & Breach Response
+                </button>
+              </li>
+              <li>
+                <button onClick={() => onNavigate('legal', { section: 'remote-working' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
+                  • Remote Working Policy
+                </button>
+              </li>
+              <li>
+                <button onClick={() => onNavigate('legal', { section: 'nda' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
+                  • Confidentiality & NDA Agreements
                 </button>
               </li>
             </ul>
           </div>
 
-          {/* Col 5: {f.company} */}
+          {/* Col 5: Company & Legal */}
           <div className="space-y-3">
             <h4 className="text-xs font-mono font-bold uppercase tracking-wider text-white">
               {f.company}
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
-                <button onClick={() => onNavigate('about')} className="hover:text-white transition-colors">
+                <button onClick={() => onNavigate('about')} className="hover:text-white transition-colors text-left">
                   {f.about}
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('team')} className="hover:text-white transition-colors">
+                <button onClick={() => onNavigate('team')} className="hover:text-white transition-colors text-left">
                   Compliance Leadership
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('faqs')} className="hover:text-white transition-colors">
+                <button onClick={() => onNavigate('faqs')} className="hover:text-white transition-colors text-left">
                   Compliance FAQs
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('contact')} className="hover:text-white transition-colors">
+                <button onClick={() => onNavigate('contact')} className="hover:text-white transition-colors text-left">
                   {f.contact}
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('legal')} className="hover:text-white transition-colors">
-                  {f.privacy}
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigate('legal')} className="hover:text-white transition-colors">
-                  {f.terms}
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigate('legal')} className="hover:text-white transition-colors">
-                  {f.disclaimer}
+                <button onClick={() => onNavigate('legal')} className="hover:text-white transition-colors text-left">
+                  Legal & Disclaimers
                 </button>
               </li>
             </ul>
           </div>
-
         </div>
 
-        {/* Disclaimer Note */}
-        <div className="py-4 border-b border-[#1E3778]/50 text-[10px] text-blue-200/50 leading-relaxed">
-          <p>
-            <strong>{t.nav?.legal || 'Professional Services Disclaimer'}:</strong> {t.brand.disclaimer}
+        {/* Explicit Statutory Disclaimers */}
+        <div className="py-4 border-b border-[#1E3778]/60 space-y-2 text-[11px] leading-relaxed">
+          <div className="p-3 rounded-xl bg-slate-900/40 border border-[#1E3778] text-amber-200/90 font-medium">
+            <strong className="text-amber-300 font-bold uppercase tracking-wider block mb-1">
+              ⚠️ Statutory Disclaimers:
+            </strong>
+            <ul className="list-disc pl-4 space-y-0.5 text-blue-100/90 text-[11px]">
+              <li>We do not provide financial promotion in the UK.</li>
+              <li>We do not provide accountancy and tax services.</li>
+            </ul>
+          </div>
+          <p className="text-[10px] text-blue-200/60 leading-relaxed pt-1">
+            <strong>Professional Advisory Notice:</strong> EagleComply is an independent regulatory compliance, risk management, and legal advisory consultancy. Content on eaglecomply.com is provided for informational and educational purposes only and does not constitute formal legal or financial advice without an executed bilateral engagement agreement.
           </p>
         </div>
 
