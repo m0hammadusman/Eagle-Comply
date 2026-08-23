@@ -643,6 +643,11 @@ export const experts = [
       "Governance & Internal Control Specialist",
       "ISO 37301 Compliance Management Systems Specialist"
     ],
+    "aboutParagraphs": [
+      "Syed Anvar Hussain directs regulatory compliance, risk governance, and statutory oversight at EagleComply. With extensive institutional advisory experience across banking, wealth management, and cross-border financial services, he bridges statutory supervisory obligations and executive operations.",
+      "His practice focuses on designing auditable compliance ecosystems, leading supervisory liaison, and managing regulatory change across UK, EU, and international frameworks.",
+      "He specializes in assisting regulated entities establish comprehensive compliance monitoring programs, secure regulatory authorizations, and structure robust Three Lines of Defense governance models."
+    ],
     "bio": "Syed Anvar Hussain directs regulatory compliance, risk governance, and statutory oversight at EagleComply. He specializes in assisting regulated entities establish comprehensive compliance monitoring programs, secure regulatory authorizations, and structure robust Three Lines of Defense governance models across global financial centers.",
     "intro": "With extensive institutional advisory experience across banking, wealth management, and cross-border financial services, Syed Anvar Hussain bridges statutory supervisory obligations and executive operations. His practice focuses on designing auditable compliance ecosystems, leading supervisory liaison, and managing regulatory change across multi-jurisdictional frameworks.",
     "experience": [
@@ -726,6 +731,11 @@ export const experts = [
       "Financial Crime Risk Assessor (FCRA)",
       "Certified Sanctions Specialist (CSS)"
     ],
+    "aboutParagraphs": [
+      "Muhammad Shahid directs AML/CFT compliance, financial crime prevention, and risk-based compliance programs at EagleComply. He is an authority in anti-money laundering, counter-terrorist financing, sanctions governance, and proliferation financing risk assessment.",
+      "He has designed, audited, and remediated financial crime frameworks for international banks, payment institutions, remittance businesses, and fintech companies across multiple jurisdictions.",
+      "His practice delivers end-to-end financial crime architectures from institutional risk baselines and transaction surveillance calibration to high-stakes independent regulatory remediation."
+    ],
     "bio": "Muhammad Shahid directs AML/CFT compliance, financial crime prevention, and risk-based compliance programs. He has designed, audited, and remediated financial crime frameworks for international banks, payment institutions, remittance businesses, and fintech companies across multiple jurisdictions.",
     "intro": "Muhammad Shahid is a recognized authority in anti-money laundering, counter-terrorist financing (AML/CFT), sanctions governance, and proliferation financing risk assessment. His practice delivers end-to-end financial crime architectures from institutional risk baselines and transaction surveillance calibration to high-stakes independent regulatory remediation.",
     "experience": [
@@ -773,82 +783,136 @@ export const experts = [
   {
     "id": "shan-ali",
     "name": "Shan Ali",
-    "role": "Director Legal Compliance — Corporate Legal & Regulatory Counsel",
-    "department": "Legal Compliance",
-    "linkedin": "https://www.linkedin.com/company/eaglecomply/?viewAsMember=true",
+    "role": "Director Legal Compliance — Corporate, FinTech & Emerging Technology Counsel",
+    "department": "Legal & Technology Law Compliance",
+    "linkedin": "https://www.linkedin.com/in/shan-ali-blockchain/",
     "email": "info@eaglecomply.com",
     "photo": "images/team/shan-ali.png",
-    "location": "Corporate Legal & Digital Assets Hub",
+    "location": "Italy / Switzerland / South Asia Desk",
     "specialisms": [
-      "Regulatory Legal Research & Statutory Opinions",
-      "Corporate Legal Compliance & Web3 Licensing",
-      "Commercial & Partner Contract Reviews",
-      "Data Protection & Cross-Border Privacy (GDPR)",
-      "Digital Asset Legal Classification & MiCA Alignment",
-      "Bilateral Non-Disclosure & Corporate Safeguards"
+      "FinTech & Financial Regulation",
+      "Corporate & Commercial Law",
+      "Blockchain & Web3 Regulation",
+      "Digital Assets & Emerging Technologies",
+      "Legal Technology & LegalTech",
+      "Decentralized Autonomous Organizations (DAOs)",
+      "Digital & Internet Governance",
+      "AI, Neuroscience & Emerging Technology Law",
+      "Public Law, Law & Economics",
+      "Regulatory & Legal Implications of Technological Innovation"
     ],
     "industries": [
-      "Crypto & Digital Assets",
       "FinTech & Web3 Startups",
-      "Payments & Technology Platforms",
-      "International Commercial Businesses"
+      "Crypto & Digital Asset Platforms",
+      "Technology & Artificial Intelligence",
+      "International Commercial Enterprises",
+      "Decentralized Autonomous Organizations (DAOs)"
     ],
     "countries": [
+      "Italy & European Union (EU)",
+      "Switzerland",
       "United Kingdom",
-      "European Union",
-      "UAE & GCC (VARA / ADGM)",
-      "International Jurisdictions"
+      "Pakistan & South Asia",
+      "Cross-Border Jurisdictions"
     ],
     "languages": [
       "English",
+      "Italian",
       "Urdu"
     ],
     "certs": [
-      "LL.M. in International Commercial & Financial Law",
-      "Certified Blockchain & FinTech Legal Advisor",
-      "IAPP CIPP/E European Privacy Professional",
-      "Corporate Governance Practitioner"
+      "PhD Researcher in Law (Blockchain, Web3 & Emerging Tech) — University of Padua, Italy",
+      "Visiting PhD Researcher (Legal Tech, Law & Economics) — University of Zurich, Switzerland",
+      "LL.M. in Corporate Law (Gold Medalist / Summa Cum Laude) — Bahria University (2019–2021)",
+      "EuroSSIG 2025 Fellow — European Summer School on Internet Governance"
     ],
-    "bio": "Shan Ali directs legal compliance and corporate legal governance, advising emerging tech innovators and established institutions on regulatory legal positioning, commercial contract safeguards, and cross-border statutory compliance.",
-    "intro": "Shan Ali leads EagleComply's legal compliance and regulatory research practice. He advises corporate enterprises, fintech disruptors, and digital asset ventures on navigating statutory directives, cross-border regulatory classifications, commercial agreement terms, and rigorous data protection frameworks.",
+    "aboutParagraphs": [
+      "Shan Ali is a legal and regulatory counsel and researcher operating at the intersection of financial regulation, corporate law, blockchain technology, Web3, legal technology, and emerging digital technologies. As a FinTech and corporate legal advisor, he bridges statutory legal frameworks with technological innovation across digital asset ecosystems.",
+      "He is pursuing doctoral research at the University of Padua (Italy), where his research focuses on blockchain and its legal, economic, and social implications within Web 3.0. He previously undertook research as a Visiting PhD Researcher at the Law Faculty of the University of Zurich (Switzerland), collaborating with the Chair for Legal Tech, Law and Economics, and Public Law.",
+      "Shan completed his LL.M. in Corporate Law from Bahria University as a Gold Medalist (Summa Cum Laude) and is a selected EuroSSIG Fellow. His practice mandate focuses on FinTech compliance, corporate governance, digital asset classification, decentralized organizations (DAOs), and multi-jurisdictional technology law across Italy, Switzerland, the UK, and South Asia."
+    ],
+    "bio": "Shan Ali is a legal and regulatory professional and researcher working at the intersection of financial regulation, corporate law, blockchain technology, Web3, legal technology, and emerging digital technologies. He advises fintech ventures, digital asset platforms, and corporate institutions on regulatory positioning, corporate governance, and technological innovation law.",
+    "intro": "Shan Ali is a legal and regulatory professional and researcher working at the intersection of financial regulation, corporate law, blockchain technology, Web3, legal technology, and emerging digital technologies. He is pursuing doctoral research at the University of Padua (Italy) examining blockchain's impact on legal, economic, and social systems within Web 3.0, and previously undertook visiting doctoral research at the University of Zurich (Switzerland) with the Chair for Legal Tech, Law and Economics, and Public Law. As a corporate and fintech legal counsel, his practice combines rigorous academic research with practical regulatory advisory across digital asset frameworks, corporate governance, and emerging technology law.",
     "experience": [
       {
-        "period": "2020 – Present",
-        "role": "Director Legal Compliance",
-        "organization": "EagleComply Legal Advisory Practice",
-        "details": "Directs regulatory legal research, client legal positioning memos, commercial agreement drafting, and digital asset regulatory structuring."
+        "period": "2022 – Present",
+        "role": "PhD Researcher / Doctor of Law Researcher",
+        "organization": "University of Padua, Italy",
+        "details": "Conducts doctoral research on blockchain technology, Web3 legal frameworks, digital governance, and their legal, economic, and social implications within Web 3.0."
       },
       {
-        "period": "2016 – 2020",
-        "role": "Corporate Counsel & Regulatory Affairs Lead",
-        "organization": "Technology & FinTech Advisory Counsel",
-        "details": "Negotiated partner agreements, drafted statutory disclosure terms, and structured GDPR-compliant cross-border data transfer mechanisms."
+        "period": "Visiting Researcher",
+        "role": "Visiting PhD Researcher",
+        "organization": "University of Zurich, Switzerland (Law Faculty)",
+        "details": "Worked with the Chair for Legal Tech, Law and Economics, and Public Law, conducting advanced research on blockchain regulation, Web3, LegalTech, and public law."
       },
       {
-        "period": "2012 – 2016",
-        "role": "Commercial Law Associate & Regulatory Researcher",
-        "organization": "International Corporate Law Chambers",
-        "details": "Conducted multi-jurisdictional legal comparative analysis, statutory compliance audits, and corporate governance filings."
+        "period": "Ongoing Practice",
+        "role": "FinTech & Corporate Legal Counsel",
+        "organization": "Corporate & FinTech Advisory Practice",
+        "details": "Advises corporate enterprises, FinTech challengers, and digital asset ventures on corporate and commercial matters, financial and fintech regulation, regulatory compliance, Web3 legal frameworks, DAOs, and emerging technology governance."
+      },
+      {
+        "period": "Nov 2022 – Dec 2023",
+        "role": "Senior Legal Executive",
+        "organization": "Crime Victim Services Pakistan",
+        "details": "Managed statutory legal compliance, regulatory filings, institutional documentation, and client advocacy."
+      },
+      {
+        "period": "2019 – 2021",
+        "role": "LL.M. in Corporate Law (Gold Medalist / Summa Cum Laude)",
+        "organization": "Bahria University",
+        "details": "Graduated with highest distinction. Advanced coursework in Corporate Law, Banking Law, Intellectual Property Law, International Trade Law, Commercial Arbitration, and International Criminal Law."
       }
     ],
     "publications": [
       {
-        "title": "Navigating the EU Markets in Crypto-Assets (MiCA) Statutory Framework",
-        "publisher": "Digital Asset Legal Journal",
+        "title": "Legal Structuring of Web-Based Trading and Tax Complexities in Pakistan: A Comparative Study",
+        "publisher": "Peer-Reviewed Legal Journal (Shan Ali, Asad Ullah Taimur Muhmand & Faheem Raza Khuhro)",
+        "year": "November 2025",
+        "summary": "Comprehensive comparative legal analysis examining the structural frameworks of web-based digital trading and cross-border tax complexities."
+      },
+      {
+        "title": "Decentralized Autonomous Organizations (DAOs) in Italy: Legal and Regulatory Reforms within the Italian Third Sector (TS) and its Effect on Blockchain Innovation",
+        "publisher": "Journal of Ethics and Legal Technologies, Vol. 6(1)",
+        "year": "June 2024",
+        "summary": "Examines how DAOs interact with Italian corporate and third-sector law, addressing entity recognition, civil liability, regulatory compliance, consumer safeguards, and financial regulation."
+      },
+      {
+        "title": "The Role of Blockchain in Managing Neuroscientific Evidence and Its Impact on Cognitive Liberty",
+        "publisher": "Co-authored with Prof. Paolo Sommaggio",
         "year": "2024",
-        "summary": "In-depth guide to CASP authorization, whitepaper publication standards, and reserve asset prudential requirements."
+        "summary": "Investigates blockchain's technological and evidential role in managing neuroscientific data and its direct implications for neurolaw, cognitive liberty, human rights, and emerging neuro-rights."
       },
       {
-        "title": "Drafting Defensible Commercial Agreements in Highly Regulated Sectors",
-        "publisher": "Corporate Governance & Legal Review",
-        "year": "2023",
-        "summary": "Clauses and indemnities required to safeguard institutions against downstream regulatory sanctions and vendor defaults."
+        "title": "From Code to Courtroom: Legal Challenges and Opportunities in AI-Human Collaborations within the Metaverse",
+        "publisher": "Sadia Tanveer, Shan Ali & Abdul Azim",
+        "year": "September 2023",
+        "summary": "Analyzes legal jurisdiction, smart contract enforceability, liability attribution, and intellectual property challenges in collaborative AI-human virtual environments."
       },
       {
-        "title": "Cross-Border Data Transfer Post-Schrems II: Practical Compliance Roadmap",
-        "publisher": "Privacy & Data Protection Law Brief",
+        "title": "A Legislative Cuff around the Pharmaceutical Industry in Pakistan",
+        "publisher": "Hamza Khalid Niazi, Syed Zaheer Hussain Shah, Sadia Tanveer & Shan Ali",
+        "year": "January 2023",
+        "summary": "Regulatory and statutory critique of pricing controls, intellectual property protections, and distribution legislation impacting the pharmaceutical sector."
+      },
+      {
+        "title": "Legal Framework of Right of Self Defense in Cyber Warfare: Application through Laws of Armed Conflict",
+        "publisher": "Co-authored with Sabira Naz Qureshi",
+        "year": "January 2022",
+        "summary": "Examines the application of customary international law and the UN Charter framework to state-sponsored cyber offensive actions and proportional self-defense."
+      },
+      {
+        "title": "Derivative Action in Pakistan in Context of Protection of Minority Shareholders; A Comparative Analysis with UK and USA",
+        "publisher": "Journal of Islamic Countries Society of Statistical Sciences (J-ISOSS)",
         "year": "2022",
-        "summary": "Transfer Impact Assessments (TIA) and Standard Contractual Clauses (SCCs) implementation for cloud-native enterprises."
+        "summary": "Evaluates statutory derivative litigation mechanisms for safeguarding minority shareholder interests in Pakistan with comparative benchmarks against UK Companies Act and US corporate jurisprudence."
+      },
+      {
+        "title": "Derivative Action — An Impartial Right Given to Minority Shareholders under Pakistan's Legislation",
+        "publisher": "Central European Management Journal, Vol. 30, Issue 4",
+        "year": "2022",
+        "summary": "Explores legislative avenues and judicial precedents empowering minority shareholders to challenge board mismanagement and breach of fiduciary duties."
       }
     ],
     "videoIntro": false
@@ -891,6 +955,11 @@ export const experts = [
       "Statutory Reporting & Governance Fellow",
       "Certified Internal Control Auditor (CICA)",
       "Prudential Capital Management Practitioner"
+    ],
+    "aboutParagraphs": [
+      "Zahid Munir directs financial compliance, prudential risk baselines, and statutory financial reporting controls for regulated financial institutions and corporate enterprises at EagleComply.",
+      "With over two decades of financial sector expertise in accounting compliance, statutory reporting, and capital solvency modeling, he advises banks, asset managers, and payment institutions on satisfying demanding supervisory capital rules.",
+      "His practice delivers comprehensive prudential governance architectures, ICAAP/ILAAP preparation, regulatory capital structuring, and board-level financial risk oversight."
     ],
     "bio": "Zahid Munir directs financial compliance, prudential risk baselines, and statutory financial reporting controls for regulated financial institutions and corporate enterprises.",
     "intro": "Zahid Munir leads EagleComply's financial compliance and prudential advisory division. With extensive expertise in accounting compliance, statutory reporting, internal financial controls, and capital solvency modeling, he prepares regulated entities to satisfy demanding supervisory capital rules and external regulatory audits.",
