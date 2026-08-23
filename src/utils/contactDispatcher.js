@@ -77,25 +77,32 @@ export async function sendInquiryToCompanyEmail(data) {
     notes = ""
   } = data;
 
-  const subject = `[EagleComply ${type}] - ${company || clientName || 'New Client'} (${service || 'Advisory'})`;
+  // High-visibility, distinctive subject line so each email is instantly identifiable in your inbox
+  const senderDisplayName = company ? `${clientName} (${company})` : (clientName || "Prospective Client");
+  const subject = `[${type.toUpperCase()}] ${senderDisplayName} — ${service || 'Compliance Advisory'}`;
 
   const payload = {
+    // FormSubmit standard header fields
+    name: senderDisplayName,
+    email: email || undefined,
     _subject: subject,
     _replyto: email || undefined,
     _template: "table",
     _captcha: "false",
-    "Engagement Type": type,
-    "Client Name": clientName || "N/A",
+    
+    // Structured data table fields for email body
+    "Inquiry Category": type,
+    "Sender Name": clientName || "N/A",
     "Work Email": email || "N/A",
     "Company / Entity": company || "N/A",
-    "Phone / Contact": phone || "N/A",
-    "Jurisdiction": jurisdiction || "N/A",
-    "Service Requested": service || "General Compliance Advisory",
-    "Scheduled Date & Time": date ? `${date} at ${time || '09:00'}` : "Immediate Scoping",
-    "Budget Range": budget || "To be scoped",
+    "Contact Phone": phone || "N/A",
+    "Country / Jurisdiction": jurisdiction || "N/A",
+    "Practice Area / Service": service || "General Compliance Advisory",
+    "Requested Date & Time": date ? `${date} at ${time || '09:00'}` : "Immediate Scoping",
+    "Budget Indication": budget || "To be scoped",
     "Target Timeline": timeline || "Standard",
-    "Scope & Requirement": requirement || notes || "Advisory consultation requested.",
-    "Submitted At": new Date().toUTCString()
+    "Scope & Requirements": requirement || notes || "Advisory consultation requested.",
+    "Submission Timestamp": new Date().toUTCString()
   };
 
   try {
