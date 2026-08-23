@@ -141,6 +141,17 @@ export default function PageEnhancements({ route, onNavigate, onOpenConsultation
                 {openFaq === i && <div className="px-5 pb-5 text-sm leading-6 text-slate-600 dark:text-slate-300">{a}</div>}
               </div>
             ))}
+
+            {/* Small 'View More' option at the end of the last FAQ */}
+            <div className="pt-2 flex justify-end">
+              <button
+                onClick={() => onNavigate('faqs')}
+                className="inline-flex items-center gap-1.5 text-xs font-bold text-[#334DAF] dark:text-[#7096D1] hover:underline px-3 py-1.5 rounded-xl hover:bg-[#334DAF]/10 dark:hover:bg-[#7096D1]/15 transition-all"
+              >
+                <span>View More FAQs</span>
+                <ArrowRight className="w-3.5 h-3.5 rtl:rotate-180" />
+              </button>
+            </div>
           </div>
           <div className="mt-10 p-6 rounded-3xl bg-[#091F5C] text-white flex flex-col md:flex-row items-center justify-between gap-5">
             <div>

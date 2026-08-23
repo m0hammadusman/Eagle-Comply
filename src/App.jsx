@@ -39,6 +39,7 @@ import TeamPage from './pages/public/TeamPage';
 import TeamMemberDetailPage from './pages/public/TeamMemberDetailPage';
 import BlogsPage from './pages/public/BlogsPage';
 import NewsPage from './pages/public/NewsPage';
+import FaqPage from './pages/public/FaqPage';
 import CaseStudiesPage from './pages/public/CaseStudiesPage';
 import CareersPage from './pages/public/CareersPage';
 import ContactPage from './pages/public/ContactPage';
@@ -242,6 +243,12 @@ function AppContent() {
           {currentRoute === 'news' && (
             <NewsPage onNavigate={navigate} />
           )}
+          {(currentRoute === 'faqs' || currentRoute === 'faq') && (
+            <FaqPage 
+              onNavigate={navigate} 
+              onOpenConsultation={() => setIsConsultationOpen(true)} 
+            />
+          )}
           {currentRoute === 'case-studies' && (
             <CaseStudiesPage 
               onNavigate={navigate} 
@@ -272,7 +279,7 @@ function AppContent() {
             <AdminPlatform onNavigate={navigate} />
           )}
           {/* Extended interactive experience on specific service/industry/regulatory pages */}
-          {!['home', 'portal', 'consultant', 'admin', 'team', 'team-detail', 'experts', 'expert-detail', 'blogs', 'news', 'contact'].includes(currentRoute) && (
+          {!['home', 'portal', 'consultant', 'admin', 'team', 'team-detail', 'experts', 'expert-detail', 'blogs', 'news', 'contact', 'faqs', 'faq'].includes(currentRoute) && (
             <PageEnhancements
               route={currentRoute}
               onNavigate={navigate}

@@ -232,6 +232,11 @@ export default function Footer({ onNavigate }) {
                 </button>
               </li>
               <li>
+                <button onClick={() => onNavigate('faqs')} className="hover:text-white transition-colors">
+                  Compliance FAQs
+                </button>
+              </li>
+              <li>
                 <button onClick={() => onNavigate('contact')} className="hover:text-white transition-colors">
                   {f.contact}
                 </button>
