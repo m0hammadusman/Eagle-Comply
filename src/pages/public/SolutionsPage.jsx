@@ -195,7 +195,7 @@ export default function SolutionsPage({ onNavigate, onOpenConsultation, onOpenQu
                 </tr>
                 <tr>
                   <td className="py-3.5 font-bold text-slate-900 dark:text-white">Regulatory Licensing Readiness</td>
-                  <td className="py-3.5">FCA, CBUAE, DFSA, FSRA, MAS, SBP</td>
+                  <td className="py-3.5">FCA, PRA, CBUAE, DFSA, FSRA, BaFin, SBP</td>
                   <td className="py-3.5">Complete Authorization Dossier, CMP, Governance Pack</td>
                   <td className="py-3.5 font-mono">6–12 Weeks</td>
                 </tr>

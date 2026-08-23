@@ -26,7 +26,7 @@ const projectOverrides = {
     industries: {
       banking:{name:'Banking & Credit Institutions'},fintech:{name:'FinTech & Digital Challengers'},payments:{name:'Payment Service Providers'},'remittance-msb':{name:'Remittance & Money Service Businesses'},'digital-assets':{name:'Crypto & Digital Assets'},'financial-services':{name:'Financial Services'},startups:{name:'Regulated-Industry Startups'}
     },
-    countries:{'united-kingdom':{name:'United Kingdom'},'european-union':{name:'European Union'},'united-states':{name:'United States'},'united-arab-emirates':{name:'United Arab Emirates'},singapore:{name:'Singapore'},pakistan:{name:'Pakistan'},australia:{name:'Australia'}},
+    countries:{'united-kingdom':{name:'United Kingdom'},'european-union':{name:'European Union'},'united-states':{name:'United States'},'united-arab-emirates':{name:'United Arab Emirates'},pakistan:{name:'Pakistan'},australia:{name:'Australia'}},
     regulations:{'fatf-standards':{name:'FATF Recommendations'},'eu-6amld':{name:'EU 6AMLD'},'uk-mlr-2017':{name:'UK Money Laundering Regulations 2017'},'us-bsa-aml':{name:'US BSA/AML'},'eu-mica':{name:'EU MiCA'},gdpr:{name:'GDPR & Data Protection'}}
   },
   fr: {
@@ -39,7 +39,7 @@ const projectOverrides = {
       'compliance-reviews':{name:'Revues indépendantes & analyses d’écarts réglementaires',category:'Assurance indépendante',badge:'Assurance indépendante',shortDesc:'Revues AML/CFT, tests de conformité, gap assessments, plans de remédiation et reporting.',valueProp:'Obtenir une évaluation indépendante de l’efficacité des contrôles et des écarts.'}
     },
     industries:{banking:{name:'Banques & établissements de crédit'},fintech:{name:'FinTech & acteurs numériques'},payments:{name:'Prestataires de services de paiement'},'remittance-msb':{name:'Transferts de fonds & MSB'},'digital-assets':{name:'Crypto & actifs numériques'},'financial-services':{name:'Services financiers'},startups:{name:'Startups des secteurs réglementés'}},
-    countries:{'united-kingdom':{name:'Royaume-Uni'},'european-union':{name:'Union européenne'},'united-states':{name:'États-Unis'},'united-arab-emirates':{name:'Émirats arabes unis'},singapore:{name:'Singapour'},pakistan:{name:'Pakistan'},australia:{name:'Australie'}},
+    countries:{'united-kingdom':{name:'Royaume-Uni'},'european-union':{name:'Union européenne'},'united-states':{name:'États-Unis'},'united-arab-emirates':{name:'Émirats arabes unis'},pakistan:{name:'Pakistan'},australia:{name:'Australie'}},
     regulations:{'fatf-standards':{name:'Recommandations du GAFI'},'eu-6amld':{name:'6AMLD de l’UE'},'uk-mlr-2017':{name:'Règlement britannique 2017 sur le blanchiment'},'us-bsa-aml':{name:'BSA/AML américain'},'eu-mica':{name:'MiCA de l’UE'},gdpr:{name:'RGPD & protection des données'}}
   },
   de:{
@@ -52,7 +52,7 @@ const projectOverrides = {
       'compliance-reviews':{name:'Unabhängige Reviews & regulatorische Gap-Assessments',category:'Unabhängige Prüfung',badge:'Independent Assurance',shortDesc:'AML/CFT-Reviews, Compliance-Tests, Gap-Assessments, Maßnahmenpläne und Assurance-Reporting.',valueProp:'Eine unabhängige Sicht auf Kontrollwirksamkeit, Lücken und Prioritäten erhalten.'}
     },
     industries:{banking:{name:'Banken & Kreditinstitute'},fintech:{name:'FinTech & digitale Herausforderer'},payments:{name:'Zahlungsdienstleister'},'remittance-msb':{name:'Geldtransfer & Money Service Businesses'},'digital-assets':{name:'Krypto & digitale Vermögenswerte'},'financial-services':{name:'Finanzdienstleistungen'},startups:{name:'Startups in regulierten Branchen'}},
-    countries:{'united-kingdom':{name:'Vereinigtes Königreich'},'european-union':{name:'Europäische Union'},'united-states':{name:'Vereinigte Staaten'},'united-arab-emirates':{name:'Vereinigte Arabische Emirate'},singapore:{name:'Singapur'},pakistan:{name:'Pakistan'},australia:{name:'Australien'}},
+    countries:{'united-kingdom':{name:'Vereinigtes Königreich'},'european-union':{name:'Europäische Union'},'united-states':{name:'Vereinigte Staaten'},'united-arab-emirates':{name:'Vereinigte Arabische Emirate'},pakistan:{name:'Pakistan'},australia:{name:'Australien'}},
     regulations:{'fatf-standards':{name:'FATF-Empfehlungen'},'eu-6amld':{name:'EU 6AMLD'},'uk-mlr-2017':{name:'UK Geldwäscheverordnung 2017'},'us-bsa-aml':{name:'US BSA/AML'},'eu-mica':{name:'EU MiCA'},gdpr:{name:'DSGVO & Datenschutz'}}
   },
   es:{
@@ -65,7 +65,7 @@ const projectOverrides = {
       'compliance-reviews':{name:'Revisiones Independientes y Evaluaciones de Brechas',category:'Aseguramiento independiente',badge:'Aseguramiento',shortDesc:'Revisiones AML/CFT, pruebas de cumplimiento, análisis de brechas, planes de remediación e informes.',valueProp:'Obtener una visión independiente de la eficacia de los controles y las brechas.'}
     },
     industries:{banking:{name:'Banca e Instituciones de Crédito'},fintech:{name:'FinTech y Nuevos Operadores Digitales'},payments:{name:'Proveedores de Servicios de Pago'},'remittance-msb':{name:'Remesas y Money Service Businesses'},'digital-assets':{name:'Criptoactivos y Activos Digitales'},'financial-services':{name:'Servicios Financieros'},startups:{name:'Startups de Sectores Regulados'}},
-    countries:{'united-kingdom':{name:'Reino Unido'},'european-union':{name:'Unión Europea'},'united-states':{name:'Estados Unidos'},'united-arab-emirates':{name:'Emiratos Árabes Unidos'},singapore:{name:'Singapur'},pakistan:{name:'Pakistán'},australia:{name:'Australia'}},
+    countries:{'united-kingdom':{name:'Reino Unido'},'european-union':{name:'Unión Europea'},'united-states':{name:'Estados Unidos'},'united-arab-emirates':{name:'Emiratos Árabes Unidos'},pakistan:{name:'Pakistán'},australia:{name:'Australia'}},
     regulations:{'fatf-standards':{name:'Recomendaciones del GAFI'},'eu-6amld':{name:'6AMLD de la UE'},'uk-mlr-2017':{name:'Reglamento británico contra el blanqueo 2017'},'us-bsa-aml':{name:'BSA/AML de EE. UU.'},'eu-mica':{name:'MiCA de la UE'},gdpr:{name:'RGPD y protección de datos'}}
   }
 };
@@ -88,7 +88,7 @@ Object.assign(projectOverrides.it, {
     'compliance-training':{...projectOverrides.en.solutions['compliance-training'],name:'Formazione istituzionale compliance e AML'},
     'compliance-reviews':{...projectOverrides.en.solutions['compliance-reviews'],name:'Review indipendenti e gap assessment regolamentari'}},
   industries:{banking:{name:'Banche e istituti di credito'},fintech:{name:'FinTech e operatori digitali'},payments:{name:'Prestatori di servizi di pagamento'},'remittance-msb':{name:'Rimesse e Money Service Business'},'digital-assets':{name:'Crypto e asset digitali'},'financial-services':{name:'Servizi finanziari'},startups:{name:'Startup in settori regolamentati'}},
-  countries:{'united-kingdom':{name:'Regno Unito'},'european-union':{name:'Unione Europea'},'united-states':{name:'Stati Uniti'},'united-arab-emirates':{name:'Emirati Arabi Uniti'},singapore:{name:'Singapore'},pakistan:{name:'Pakistan'},australia:{name:'Australia'}},
+  countries:{'united-kingdom':{name:'Regno Unito'},'european-union':{name:'Unione Europea'},'united-states':{name:'Stati Uniti'},'united-arab-emirates':{name:'Emirati Arabi Uniti'},pakistan:{name:'Pakistan'},australia:{name:'Australia'}},
   regulations:{'fatf-standards':{name:'Raccomandazioni FATF'},'eu-6amld':{name:'EU 6AMLD'},'uk-mlr-2017':{name:'UK Money Laundering Regulations 2017'},'us-bsa-aml':{name:'US BSA/AML'},'eu-mica':{name:'EU MiCA'},gdpr:{name:'GDPR e protezione dei dati'}}
 });
 Object.assign(projectOverrides.pt, {industries:{banking:{name:'Bancos e instituições de crédito'},fintech:{name:'FinTech e operadores digitais'},payments:{name:'Prestadores de serviços de pagamento'},'remittance-msb':{name:'Remessas e Money Service Businesses'},'digital-assets':{name:'Criptoativos e ativos digitais'},'financial-services':{name:'Serviços financeiros'},startups:{name:'Startups em setores regulados'}}});

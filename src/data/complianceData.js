@@ -136,8 +136,7 @@ export const solutions = [
     "relatedRegulations": [
       "fca-handbook",
       "mifid-ii",
-      "psd2-psd3",
-      "singapore-mas-guidelines"
+      "psd2-psd3"
     ],
     "leadExpert": "syed-anvar-hussain"
   },
@@ -417,8 +416,7 @@ export const solutions = [
     "relatedRegulations": [
       "fatf-guidance",
       "fincen-expectations",
-      "fca-sysc",
-      "mas-regulations"
+      "fca-sysc"
     ],
     "leadExpert": "muhammad-shahid"
   }
@@ -1144,16 +1142,6 @@ export const countries = [
     "office": "Dubai DIFC & ADGM Desk",
     "status": "Global Financial Gateway",
     "overview": "Specialized regulatory compliance under DFSA (DIFC), FSRA (ADGM), CBUAE federal directives, and Dubai VARA virtual asset rulebooks."
-  },
-  {
-    "id": "singapore",
-    "name": "Singapore",
-    "region": "Asia-Pacific",
-    "capital": "Singapore",
-    "flag": "🇸🇬",
-    "office": "Singapore Practice Desk",
-    "status": "APAC Financial Hub",
-    "overview": "Payment Services Act (PSA) licensing readiness, MAS AML/CFT notice compliance, and institutional risk management guidelines."
   },
   {
     "id": "pakistan",

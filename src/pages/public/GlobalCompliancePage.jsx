@@ -31,7 +31,6 @@ export default function GlobalCompliancePage({ onNavigate }) {
     'united-states': `${import.meta.env.BASE_URL}assets/images/governance-boardroom.jpg`,
     'united-kingdom': `${import.meta.env.BASE_URL}assets/images/law-justice.jpg`,
     'uae-gcc': `${import.meta.env.BASE_URL}assets/images/blockchain-crypto.jpg`,
-    'singapore': `${import.meta.env.BASE_URL}assets/images/fintech-banking.jpg`,
     'japan': `${import.meta.env.BASE_URL}assets/images/ai-matrix.jpg`
   };
 
