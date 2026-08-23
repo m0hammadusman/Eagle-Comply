@@ -173,13 +173,20 @@ function BadgeItem({ member, onNavigate }) {
             </div>
 
             {/* Top-Right Scannable LinkedIn QR Code */}
-            <div className="w-[52px] h-[52px] sm:w-[56px] sm:h-[56px] bg-white p-1 rounded-xl shadow-md border border-slate-200 shrink-0">
+            <a
+              href={member.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              title={`Open ${member.fullName}'s LinkedIn profile`}
+              className="w-[52px] h-[52px] sm:w-[56px] sm:h-[56px] bg-white p-1 rounded-xl shadow-md border border-slate-200 shrink-0 hover:scale-105 transition-transform z-20 cursor-pointer block"
+            >
               <img
                 src={`https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=${encodeURIComponent(member.linkedin)}`}
                 alt={`${member.fullName} LinkedIn QR`}
                 className="w-full h-full object-contain block"
               />
-            </div>
+            </a>
           </div>
 
           {/* Layer 1: Transparent Cutout Portrait (Behind Blue Gradient) */}
@@ -226,10 +233,17 @@ function BadgeItem({ member, onNavigate }) {
             {/* Card Footer URL & LinkedIn */}
             <div className="flex items-center justify-between text-[0.62rem] sm:text-[0.66rem] text-slate-200 font-mono tracking-wider font-bold drop-shadow-md">
               <span>www.eaglecomply.com</span>
-              <span className="inline-flex items-center gap-0.5 text-cyan-300 font-extrabold group-hover:underline">
+              <a
+                href={member.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className="inline-flex items-center gap-0.5 text-cyan-300 font-extrabold hover:underline hover:text-cyan-200 transition-colors z-20 cursor-pointer"
+                title={`Open ${member.fullName}'s LinkedIn profile`}
+              >
                 <span>LinkedIn</span>
                 <ExternalLink className="w-2.5 h-2.5" />
-              </span>
+              </a>
             </div>
           </div>
         </div>
