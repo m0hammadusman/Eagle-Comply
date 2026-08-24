@@ -1910,8 +1910,8 @@ export const practitioners = [
   {
     id: "muhammad-shahid",
     name: "Muhammad Shahid",
-    designation: "Director AML Compliance",
-    department: "AML/CFT Compliance",
+    designation: "Compliance & Financial Crime Professional",
+    department: "Compliance & Financial Crime Advisory",
     badge: "DIRECTOR",
     photo: "images/team/muhammad-shahid.png",
     linkedin: "https://www.linkedin.com/in/shahed-m",
@@ -2031,66 +2031,75 @@ export const experts = [
   {
     "id": "muhammad-shahid",
     "name": "Muhammad Shahid",
-    "role": "Director AML Compliance — AML/CFT & Financial Crime Prevention",
-    "department": "AML/CFT Compliance",
+    "role": "Compliance & Financial Crime Professional",
+    "department": "Compliance & Financial Crime Advisory",
     "linkedin": "https://www.linkedin.com/in/shahed-m",
     "email": "info@eaglecomply.com",
     "photo": "images/team/muhammad-shahid.png",
-    "location": "Global Financial Crime Advisory",
+    "location": "United Kingdom / Middle East / Pakistan",
     "specialisms": [
-      "AML/CFT Framework Development",
-      "Enterprise ML/TF/PF Risk Assessments",
-      "KYC / CDD / EDD Frameworks & Customer Risk Rating",
-      "Sanctions Policies & Transaction Monitoring Design",
-      "Correspondent Banking & MSB/Remittance Compliance",
-      "Fintech, Crypto & Blockchain Compliance"
+      "AML/CFT Compliance & Program Development",
+      "KYC, CDD & Enhanced Due Diligence (EDD)",
+      "Financial Crime Risk Management",
+      "Enterprise AML/CTF Risk Assessments",
+      "Sanctions & PEP Compliance",
+      "Transaction Monitoring & Suspicious Activity Reviews",
+      "Regulatory Compliance & Advisory",
+      "Compliance Policies, Procedures & Control Frameworks",
+      "Compliance Gap Assessments & Remediation",
+      "Regulatory Readiness & Compliance Reviews",
+      "Fintech, Payments & Digital Finance Compliance",
+      "Compliance Monitoring, Testing & Assurance",
+      "Governance, Risk & Internal Controls",
+      "AML/CFT & Regulatory Compliance Training"
     ],
     "industries": [
       "Banking & Credit Institutions",
-      "FinTech & Digital Challengers",
-      "Crypto & Blockchain Ventures",
-      "Money Service Businesses & Remittance"
+      "Fintech, Payments & Digital Finance",
+      "Digital Assets & Emerging Financial Services",
+      "Financial Services & Non-Bank Financial Institutions (NBFIs)",
+      "Money Service Businesses (MSBs) & Cross-Border Remittance"
     ],
     "countries": [
-      "International / Global Standards",
       "United Kingdom",
       "European Union",
-      "Middle East & Pakistan"
+      "Middle East",
+      "Pakistan",
+      "International / Global Standards"
     ],
     "languages": [
       "English",
       "Urdu"
     ],
     "certs": [
-      "Certified KYC Specialist (GO-AKS)",
+      "Globally Certified KYC Specialist (GO-AKS)",
       "Associate Chartered Banker — ACBI (UK)",
       "Associate of the Institute of Bankers Pakistan (AIBP)"
     ],
     "aboutParagraphs": [
-      "A seasoned compliance professional with extensive experience across Banking, Fintech, Crypto and Blockchain, specializing in AML/CFT, KYC, regulatory compliance and financial crime risk management.",
-      "Globally certified as a KYC Specialist (GO-AKS), with professional credentials as an Associate Chartered Banker (UK) and Associate of the Institute of Bankers Pakistan (AIBP).",
-      "Bringing a practical, risk-based approach to helping financial institutions and emerging businesses meet regulatory expectations and build strong, sustainable compliance frameworks."
+      "Seasoned compliance professional with 17+ years of experience across banking, fintech, digital finance, and financial services. Specialised in AML/CFT, KYC/CDD/EDD, sanctions compliance, regulatory compliance, financial crime risk management, and compliance framework development.",
+      "A Globally Certified KYC Specialist (GO-AKS), Associate Chartered Banker (UK), and Associate of the Institute of Bankers Pakistan (AIBP), bringing a practical, risk-based approach to helping businesses navigate complex regulatory requirements with confidence."
     ],
-    "bio": "A seasoned compliance professional with extensive experience across Banking, Fintech, Crypto and Blockchain, specializing in AML/CFT, KYC, regulatory compliance and financial crime risk management. Certified KYC Specialist (GO-AKS), Associate Chartered Banker (UK) and AIBP.",
-    "intro": "A seasoned compliance professional with extensive experience across Banking, Fintech, Crypto and Blockchain, specializing in AML/CFT, KYC, regulatory compliance and financial crime risk management.",
+    "bio": "Seasoned compliance professional with 17+ years of experience across banking, fintech, digital finance, and financial services. Specialised in AML/CFT, KYC/CDD/EDD, sanctions compliance, regulatory compliance, financial crime risk management, and compliance framework development.",
+    "intro": "Seasoned compliance professional with 17+ years of experience across banking, fintech, digital finance, and financial services. Specialised in AML/CFT, KYC/CDD/EDD, sanctions compliance, regulatory compliance, financial crime risk management, and compliance framework development.",
     "experience": [
       {
-        "period": "2019 – Present",
-        "role": "Director AML Compliance",
-        "organization": "EagleComply Financial Crime Practice",
-        "details": "Leads AML/CFT program design, enterprise-wide ML/TF risk assessments, and independent statutory reviews for international financial services firms."
+        "period": "17+ Years Practice",
+        "role": "Compliance & Financial Crime Professional",
+        "organization": "Financial Crime & Regulatory Advisory",
+        "details": "Advises banking institutions, fintechs, and financial services firms on AML/CFT compliance program development, enterprise-wide risk assessments, sanctions controls, and regulatory gap remediation."
       },
       {
-        "period": "2014 – 2019",
+        "period": "Senior Leadership",
         "role": "Head of Financial Crime Compliance & MLRO Advisory",
-        "organization": "Cross-Border Payments & Remittance Group",
-        "details": "Supervised KYC/CDD customer onboarding, high-risk EDD escalation workflows, real-time transaction monitoring, and SAR/STR reporting protocols."
+        "organization": "Banking, Fintech & Payments Practice",
+        "details": "Managed KYC/CDD/EDD customer risk rating frameworks, automated transaction monitoring calibration, suspicious activity reporting (SAR/STR), and AML/CFT regulatory audits."
       },
       {
-        "period": "2009 – 2014",
-        "role": "Senior AML Auditor & Sanctions Officer",
-        "organization": "International Banking Syndicate",
-        "details": "Audited correspondent banking controls, PEP screening algorithms, and OFAC/EU/UK sanctions screening systems across cross-border channels."
+        "period": "Professional Credentials",
+        "role": "Chartered Banker & Certified KYC Specialist",
+        "organization": "GO-AKS / Chartered Banker Institute UK / IBP",
+        "details": "Globally Certified KYC Specialist (GO-AKS), Associate Chartered Banker (ACBI UK), and Associate of the Institute of Bankers Pakistan (AIBP)."
       }
     ],
     "publications": [

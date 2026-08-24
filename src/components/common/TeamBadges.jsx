@@ -8,8 +8,8 @@ export const teamMembers = [
     firstName: "Muhammad",
     lastName: "Shahid",
     fullName: "Muhammad Shahid",
-    role: "Director AML Compliance",
-    department: "AML / CFT Compliance",
+    role: "Compliance & Financial Crime Professional",
+    department: "Compliance & Financial Crime Advisory",
     strapHeight: 80,
     linkedin: "https://www.linkedin.com/in/shahed-m",
     photo: `${import.meta.env.BASE_URL}images/team/muhammad-shahid.png`
