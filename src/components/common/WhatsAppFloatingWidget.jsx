@@ -6,7 +6,7 @@ export default function WhatsAppFloatingWidget() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="fixed bottom-6 right-4 sm:right-6 rtl:right-auto rtl:left-4 sm:rtl:left-6 z-40 flex flex-col items-end rtl:items-start gap-3">
+    <div className="fixed bottom-4 sm:bottom-6 right-[60px] sm:right-[72px] rtl:right-auto rtl:left-[60px] sm:rtl:left-[72px] z-40 flex flex-col items-end rtl:items-start gap-3">
       {isOpen && (
         <div className="w-80 max-w-xs bg-[#091F5C] dark:bg-[#101E42] text-white rounded-3xl border border-[#1E3778] p-5 shadow-2xl space-y-4 animate-fade-in backdrop-blur-xl mb-1">
           <div className="flex items-center justify-between pb-3 border-b border-[#1E3778]">

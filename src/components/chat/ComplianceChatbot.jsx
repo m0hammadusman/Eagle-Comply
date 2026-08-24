@@ -139,25 +139,25 @@ export default function ComplianceChatbot({ onNavigate, onOpenConsultation, onOp
 
   return (
     <>
-      {/* Vertical Golden AI Assistant Floating Button */}
+      {/* Vertical Golden AI Assistant Floating Button - Right Side at Bottom */}
       <button 
         onClick={() => setOpen(v => !v)} 
-        className="fixed right-0 top-1/2 -translate-y-1/2 rtl:right-auto rtl:left-0 z-40 py-3.5 px-2 rounded-l-2xl rtl:rounded-l-none rtl:rounded-r-2xl bg-gradient-to-b from-[#FDE68A] via-[#D4AF37] to-[#A16207] text-[#091F5C] font-extrabold shadow-[0_4px_25px_rgba(212,175,55,0.5)] hover:shadow-[0_6px_30px_rgba(212,175,55,0.7)] hover:-translate-x-1 rtl:hover:translate-x-1 active:scale-95 transition-all duration-300 flex flex-col items-center gap-2 border-y border-l rtl:border-l-0 rtl:border-r border-amber-200/80 cursor-pointer group select-none backdrop-blur-sm" 
+        className="fixed bottom-4 sm:bottom-6 right-4 sm:right-6 rtl:right-auto rtl:left-4 sm:rtl:left-6 z-40 py-3 px-2 sm:py-3.5 sm:px-2.5 rounded-2xl bg-gradient-to-b from-[#FDE68A] via-[#D4AF37] to-[#A16207] text-[#091F5C] font-extrabold shadow-[0_4px_25px_rgba(212,175,55,0.5)] hover:shadow-[0_6px_30px_rgba(212,175,55,0.7)] hover:scale-105 active:scale-95 transition-all duration-300 flex flex-col items-center gap-2 border-2 border-white/50 dark:border-amber-200/70 cursor-pointer group select-none backdrop-blur-sm" 
         title={t.modals?.chatbotTitle || 'Eagle Regulatory Assistant'}
         aria-label="Open AI Assistant"
       >
-        <span className="relative flex h-2 w-2">
+        <span className="relative flex h-2 w-2 shrink-0">
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#091F5C] opacity-75"></span>
           <span className="relative inline-flex rounded-full h-2 w-2 bg-[#091F5C]"></span>
         </span>
-        <MessageSquare className="w-4 h-4 text-[#091F5C] group-hover:scale-110 transition-transform" />
-        <span className="[writing-mode:vertical-rl] rotate-180 uppercase tracking-widest font-mono text-[10.5px] font-black text-[#091F5C]">
+        <MessageSquare className="w-4 h-4 text-[#091F5C] group-hover:scale-110 transition-transform shrink-0" />
+        <span className="[writing-mode:vertical-rl] uppercase tracking-widest font-mono text-[10.5px] font-black text-[#091F5C]">
           {t.modals?.chatButtonText || 'AI Assistant'}
         </span>
       </button>
 
       {open && (
-        <div className="fixed bottom-6 right-4 sm:right-12 rtl:right-auto rtl:left-4 sm:rtl:left-12 z-50 w-96 max-w-[calc(100vw-2rem)] h-[520px] max-h-[calc(100vh-100px)] bg-surface-raised border border-surface-border rounded-3xl shadow-2xl flex flex-col overflow-hidden animate-fade-in">
+        <div className="fixed bottom-28 sm:bottom-32 right-4 sm:right-6 rtl:right-auto rtl:left-4 sm:rtl:left-6 z-50 w-96 max-w-[calc(100vw-2rem)] h-[520px] max-h-[calc(100vh-140px)] bg-surface-raised border border-surface-border rounded-3xl shadow-2xl flex flex-col overflow-hidden animate-fade-in">
           {/* Chat Header with Company Logo */}
           <div className="p-3.5 sm:p-4 bg-surface-subtle border-b border-surface-border flex items-center justify-between">
             <div className="flex items-center gap-2.5">
