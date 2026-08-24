@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { 
   FileText, Clock, User, Calendar, ArrowLeft, Share2, Bookmark, 
   Check, MessageSquare, Send, Sparkles, Tag, ExternalLink 
@@ -6,6 +6,34 @@ import {
 import { useArticleDetail } from '../../hooks/useContentful';
 import { useLanguage } from '../../context/LanguageContext';
 import Breadcrumbs from '../../components/common/Breadcrumbs';
+
+function renderInlineFormatting(text) {
+  if (!text) return null;
+  // Support bold **text** and markdown links [text](url)
+  const parts = text.split(/(\*\*.*?\*\*|\[.*?\]\(.*?\))/g);
+  return parts.map((part, pIdx) => {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      return <strong key={pIdx} className="font-bold text-slate-900 dark:text-white">{part.slice(2, -2)}</strong>;
+    }
+    const linkMatch = part.match(/^\[(.*?)\]\((.*?)\)$/);
+    if (linkMatch) {
+      const [_, linkText, linkUrl] = linkMatch;
+      const cleanUrl = linkUrl.startsWith('//') ? `https:${linkUrl}` : linkUrl;
+      return (
+        <a 
+          key={pIdx} 
+          href={cleanUrl} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="text-[#334DAF] dark:text-[#7096D1] underline font-medium hover:opacity-80"
+        >
+          {linkText}
+        </a>
+      );
+    }
+    return part;
+  });
+}
 
 function FormattedArticleContent({ content }) {
   if (!content) return null;
@@ -17,7 +45,29 @@ function FormattedArticleContent({ content }) {
         const text = section.trim();
         if (!text) return null;
 
-        // Headings
+        // 1. Standalone Markdown Image: ![alt](url)
+        const standaloneImgMatch = text.match(/^!\[(.*?)\]\((.*?)\)$/);
+        if (standaloneImgMatch) {
+          const [_, alt, rawUrl] = standaloneImgMatch;
+          const url = rawUrl.startsWith('//') ? `https:${rawUrl}` : rawUrl;
+          return (
+            <figure key={sIdx} className="my-6 rounded-2xl overflow-hidden border border-surface-border bg-surface-subtle shadow-md">
+              <img
+                src={url}
+                alt={alt || 'Article visual reference'}
+                className="w-full max-h-[480px] object-cover"
+                loading="lazy"
+              />
+              {alt && alt !== 'image' && alt !== 'newImg' && alt !== 'img' && (
+                <figcaption className="px-4 py-2 text-center text-xs font-mono text-slate-500 dark:text-slate-400 border-t border-surface-border bg-surface-base">
+                  {alt}
+                </figcaption>
+              )}
+            </figure>
+          );
+        }
+
+        // 2. Headings
         if (text.startsWith('### ')) {
           return (
             <h3 key={sIdx} className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white pt-4 pb-1 border-b border-surface-border">
@@ -32,8 +82,15 @@ function FormattedArticleContent({ content }) {
             </h2>
           );
         }
+        if (text.startsWith('# ')) {
+          return (
+            <h1 key={sIdx} className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white pt-6 pb-2 border-b border-surface-border">
+              {text.replace(/^#\s+/, '')}
+            </h1>
+          );
+        }
 
-        // Blockquote
+        // 3. Blockquote
         if (text.startsWith('> ')) {
           return (
             <blockquote key={sIdx} className="p-4 rounded-2xl bg-surface-subtle border-l-4 border-[#334DAF] dark:border-[#7096D1] text-slate-800 dark:text-slate-200 italic my-4">
@@ -42,20 +99,15 @@ function FormattedArticleContent({ content }) {
           );
         }
 
-        // Bullet lists
-        if (text.includes('\n• ') || text.startsWith('• ') || text.includes('\n- ') || text.startsWith('- ')) {
+        // 4. Bullet lists
+        if (text.includes('\n• ') || text.startsWith('• ') || text.includes('\n- ') || text.startsWith('- ') || text.includes('\n* ') || text.startsWith('* ')) {
           const lines = text.split('\n');
           return (
             <ul key={sIdx} className="space-y-2.5 my-3 pl-2">
               {lines.map((line, lIdx) => {
-                const cleanLine = line.replace(/^[•\-]\s*/, '').trim();
+                const cleanLine = line.replace(/^[•\-\*]\s*/, '').trim();
                 if (!cleanLine) return null;
-                const parts = cleanLine.split(/(\*\*.*?\*\*)/g).map((part, pIdx) => {
-                  if (part.startsWith('**') && part.endsWith('**')) {
-                    return <strong key={pIdx} className="font-bold text-slate-900 dark:text-white">{part.slice(2, -2)}</strong>;
-                  }
-                  return part;
-                });
+                const parts = renderInlineFormatting(cleanLine);
                 return (
                   <li key={lIdx} className="flex items-start gap-2 text-sm sm:text-base">
                     <span className="text-[#334DAF] dark:text-[#7096D1] font-bold mt-1 shrink-0">•</span>
@@ -67,15 +119,36 @@ function FormattedArticleContent({ content }) {
           );
         }
 
-        // Regular paragraph with bold support
-        const parts = text.split(/(\*\*.*?\*\*)/g).map((part, pIdx) => {
-          if (part.startsWith('**') && part.endsWith('**')) {
-            return <strong key={pIdx} className="font-bold text-slate-900 dark:text-white">{part.slice(2, -2)}</strong>;
-          }
-          return part;
-        });
+        // 5. Embedded Markdown Image in text chunk
+        if (text.includes('![') && text.includes('](')) {
+          const chunks = text.split(/(!\[.*?\]\(.*?\))/g);
+          return (
+            <div key={sIdx} className="space-y-4">
+              {chunks.map((chunk, cIdx) => {
+                const imgMatch = chunk.match(/^!\[(.*?)\]\((.*?)\)$/);
+                if (imgMatch) {
+                  const [_, alt, rawUrl] = imgMatch;
+                  const url = rawUrl.startsWith('//') ? `https:${rawUrl}` : rawUrl;
+                  return (
+                    <figure key={cIdx} className="my-4 rounded-2xl overflow-hidden border border-surface-border bg-surface-subtle shadow-md">
+                      <img
+                        src={url}
+                        alt={alt || 'Article visual reference'}
+                        className="w-full max-h-[480px] object-cover"
+                        loading="lazy"
+                      />
+                    </figure>
+                  );
+                }
+                if (!chunk.trim()) return null;
+                return <p key={cIdx} className="leading-relaxed">{renderInlineFormatting(chunk)}</p>;
+              })}
+            </div>
+          );
+        }
 
-        return <p key={sIdx} className="leading-relaxed">{parts}</p>;
+        // 6. Regular paragraph with bold & link support
+        return <p key={sIdx} className="leading-relaxed">{renderInlineFormatting(text)}</p>;
       })}
     </div>
   );
@@ -143,18 +216,52 @@ export default function ArticleDetailPage({ params, onNavigate, onOpenConsultati
 
       {!loading && (
         <article className="space-y-8">
-          {/* Header Metadata */}
-          <div className="space-y-4">
-            <div className="flex flex-wrap items-center gap-2.5 text-xs font-mono">
-              <span className="px-3 py-1 rounded-full bg-[#334DAF]/10 dark:bg-[#7096D1]/15 text-[#334DAF] dark:text-[#7096D1] font-bold uppercase tracking-wider">
-                {article.category || 'Regulatory Practice'}
-              </span>
-              <span className="text-slate-400 flex items-center gap-1">
-                <Calendar className="w-3.5 h-3.5" /> {article.publishDate || 'Recent'}
-              </span>
-              <span className="text-slate-400 flex items-center gap-1">
-                <Clock className="w-3.5 h-3.5" /> {article.readTime || '5 min read'}
-              </span>
+          {/* Header Metadata & Top Sharing Controls */}
+          <div className="space-y-4 border-b border-surface-border pb-6">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div className="flex flex-wrap items-center gap-2.5 text-xs font-mono">
+                <span className="px-3 py-1 rounded-full bg-[#334DAF]/10 dark:bg-[#7096D1]/15 text-[#334DAF] dark:text-[#7096D1] font-bold uppercase tracking-wider">
+                  {article.category || 'Regulatory Practice'}
+                </span>
+                <span className="text-slate-400 flex items-center gap-1">
+                  <Calendar className="w-3.5 h-3.5" /> {article.publishDate || 'Recent'}
+                </span>
+                <span className="text-slate-400 flex items-center gap-1">
+                  <Clock className="w-3.5 h-3.5" /> {article.readTime || '5 min read'}
+                </span>
+              </div>
+
+              {/* Social Sharing at Top */}
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={handleCopyLink}
+                  className="px-2.5 py-1.5 rounded-xl bg-surface-base border border-surface-border text-slate-600 dark:text-slate-300 hover:text-[#334DAF] text-xs font-semibold flex items-center gap-1.5 transition-colors cursor-pointer shadow-xs"
+                  title="Copy link"
+                >
+                  {copied ? <Check className="w-3.5 h-3.5 text-emerald-500" /> : <Share2 className="w-3.5 h-3.5" />}
+                  <span>{copied ? 'Copied!' : 'Share'}</span>
+                </button>
+
+                <button
+                  onClick={handleShareLinkedIn}
+                  className="px-2.5 py-1.5 rounded-xl bg-[#0A66C2]/10 text-[#0A66C2] border border-[#0A66C2]/20 hover:bg-[#0A66C2]/20 text-xs font-semibold flex items-center gap-1.5 transition-colors cursor-pointer"
+                  title="Share on LinkedIn"
+                >
+                  <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                  </svg>
+                  <span className="hidden sm:inline">LinkedIn</span>
+                </button>
+
+                <button
+                  onClick={handleShareWhatsApp}
+                  className="px-2.5 py-1.5 rounded-xl bg-[#25D366]/10 text-[#25D366] border border-[#25D366]/20 hover:bg-[#25D366]/20 text-xs font-semibold flex items-center gap-1.5 transition-colors cursor-pointer"
+                  title="Share on WhatsApp"
+                >
+                  <MessageSquare className="w-3.5 h-3.5" />
+                  <span className="hidden sm:inline">WhatsApp</span>
+                </button>
+              </div>
             </div>
 
             <h1 className="font-sans tracking-tight text-2xl sm:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white leading-tight">
@@ -179,14 +286,14 @@ export default function ArticleDetailPage({ params, onNavigate, onOpenConsultati
             </div>
           )}
 
-          {/* Author & Share Bar */}
+          {/* Author Profile & Referenced Social Links */}
           <div className="p-4 sm:p-5 rounded-2xl bg-surface-subtle border border-surface-border flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div className="flex items-center gap-3">
               {article.author?.avatar && (
                 <img
                   src={article.author.avatar}
                   alt={article.author.name}
-                  className="w-11 h-11 rounded-full object-cover object-top border-2 border-[#334DAF] dark:border-[#7096D1] shadow-xs shrink-0"
+                  className="w-12 h-12 rounded-full object-cover object-top border-2 border-[#334DAF] dark:border-[#7096D1] shadow-xs shrink-0"
                 />
               )}
               <div>
@@ -199,35 +306,23 @@ export default function ArticleDetailPage({ params, onNavigate, onOpenConsultati
               </div>
             </div>
 
-            {/* Social Sharing */}
-            <div className="flex items-center gap-2">
-              <button
-                onClick={handleCopyLink}
-                className="p-2 rounded-xl bg-surface-base border border-surface-border text-slate-600 dark:text-slate-300 hover:text-[#334DAF] text-xs font-semibold flex items-center gap-1.5 transition-colors cursor-pointer"
-                title="Copy link"
-              >
-                {copied ? <Check className="w-3.5 h-3.5 text-emerald-500" /> : <Share2 className="w-3.5 h-3.5" />}
-                <span>{copied ? 'Copied!' : 'Copy Link'}</span>
-              </button>
-
-              <button
-                onClick={handleShareLinkedIn}
-                className="p-2 rounded-xl bg-[#0A66C2]/10 text-[#0A66C2] border border-[#0A66C2]/20 hover:bg-[#0A66C2]/20 text-xs font-semibold flex items-center gap-1 transition-colors cursor-pointer"
-                title="Share on LinkedIn"
-              >
-                <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
-                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
-                </svg>
-              </button>
-
-              <button
-                onClick={handleShareWhatsApp}
-                className="p-2 rounded-xl bg-[#25D366]/10 text-[#25D366] border border-[#25D366]/20 hover:bg-[#25D366]/20 text-xs font-semibold flex items-center gap-1 transition-colors cursor-pointer"
-                title="Share on WhatsApp"
-              >
-                <MessageSquare className="w-3.5 h-3.5" />
-              </button>
-            </div>
+            {/* Author's Referenced Profile Links (from Contentful) */}
+            {article.author?.linkedIn && (
+              <div className="flex items-center gap-2">
+                <a
+                  href={article.author.linkedIn}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3.5 py-1.5 rounded-xl bg-[#0A66C2]/10 hover:bg-[#0A66C2]/20 text-[#0A66C2] border border-[#0A66C2]/20 text-xs font-semibold flex items-center gap-1.5 transition-colors cursor-pointer"
+                >
+                  <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                  </svg>
+                  <span>Connect with Author</span>
+                  <ExternalLink className="w-3 h-3 ml-0.5 opacity-70" />
+                </a>
+              </div>
+            )}
           </div>
 
           {/* Article Main Body */}
