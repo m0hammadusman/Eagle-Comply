@@ -6,7 +6,7 @@ export default function WhatsAppFloatingWidget() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="fixed bottom-18 sm:bottom-20 right-4 sm:right-6 rtl:right-auto rtl:left-4 sm:rtl:left-6 z-40 flex flex-col items-end rtl:items-start gap-3">
+    <div className="fixed bottom-[74px] sm:bottom-[82px] right-4 sm:right-6 rtl:right-auto rtl:left-4 sm:rtl:left-6 z-40 flex flex-col items-end rtl:items-start gap-3">
       {isOpen && (
         <div className="w-80 max-w-xs bg-[#091F5C] dark:bg-[#101E42] text-white rounded-3xl border border-[#1E3778] p-5 shadow-2xl space-y-4 animate-fade-in backdrop-blur-xl mb-1">
           <div className="flex items-center justify-between pb-3 border-b border-[#1E3778]">
@@ -79,11 +79,11 @@ export default function WhatsAppFloatingWidget() {
 
       <button
         onClick={() => setIsOpen(v => !v)}
-        className="w-12 h-12 sm:w-13 sm:h-13 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white shadow-xl hover:shadow-2xl hover:scale-105 active:scale-95 transition-all flex items-center justify-center border-2 border-white/30 relative group focus:outline-none cursor-pointer"
+        className="w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white shadow-xl hover:shadow-2xl hover:scale-105 active:scale-95 transition-all flex items-center justify-center border-2 border-white/30 relative group focus:outline-none cursor-pointer"
         title="Chat on WhatsApp (UK and Italy Desks)"
         aria-label="WhatsApp Contact"
       >
-        <WhatsAppIcon className="w-6 h-6 fill-white" />
+        <WhatsAppIcon className="w-7 h-7 sm:w-8 sm:h-8 fill-white" />
         <span className="absolute -top-0.5 -right-0.5 w-3.5 h-3.5 bg-emerald-300 border-2 border-[#091F5C] rounded-full animate-ping" />
         <span className="absolute -top-0.5 -right-0.5 w-3.5 h-3.5 bg-emerald-400 border-2 border-[#091F5C] rounded-full" />
       </button>
