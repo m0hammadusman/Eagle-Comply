@@ -21,7 +21,7 @@ const client = isContentfulConfigured
   : null;
 
 // ==========================================
-// FALLBACK DATASET (Used when Contentful is not connected or offline)
+// FALLBACK DATASET (Used when Contentful is offline or empty)
 // ==========================================
 
 export const fallbackBlogs = [
@@ -37,7 +37,8 @@ export const fallbackBlogs = [
       name: 'Shan Ali',
       role: 'Legal, Regulatory and Commercial Advisor',
       avatar: `${import.meta.env.BASE_URL}images/team/shan-ali.png`,
-      email: 'info@eaglecomply.com'
+      email: 'info@eaglecomply.com',
+      linkedIn: 'https://www.linkedin.com/in/shan-ali-blockchain/'
     },
     publishDate: '2026-08-20',
     readTime: '6 min read',
@@ -141,7 +142,8 @@ Under CSRD, companies must evaluate sustainability impacts through two complemen
       name: 'Shan Ali',
       role: 'Legal, Regulatory and Commercial Advisor',
       avatar: `${import.meta.env.BASE_URL}images/team/shan-ali.png`,
-      email: 'info@eaglecomply.com'
+      email: 'info@eaglecomply.com',
+      linkedIn: 'https://www.linkedin.com/in/shan-ali-blockchain/'
     },
     publishDate: '2026-08-05',
     readTime: '6 min read',
@@ -241,6 +243,14 @@ export const fallbackNews = [
   }
 ];
 
+// Team avatar mapping lookup
+const teamPhotoMap = {
+  'shan ali': `${import.meta.env.BASE_URL}images/team/shan-ali.png`,
+  'muhammad shahid': `${import.meta.env.BASE_URL}images/team/muhammad-shahid.png`,
+  'syed anvar hussain': `${import.meta.env.BASE_URL}images/team/syed-anvar-hussain.png`,
+  'zahid munir': `${import.meta.env.BASE_URL}images/team/zahid-munir.png`
+};
+
 // ==========================================
 // CONTENTFUL DATA NORMALIZATION
 // ==========================================
@@ -249,63 +259,94 @@ function normalizeContentfulEntry(entry) {
   if (!entry || !entry.fields) return null;
   const f = entry.fields;
 
-  // Extract cover image
+  // 1. Extract cover image (supports Asset Link coverImg, coverImage, or URL string)
   let coverImage = 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80';
-  if (f.coverImage) {
-    if (typeof f.coverImage === 'string') {
-      coverImage = f.coverImage;
-    } else if (f.coverImage.fields?.file?.url) {
-      const url = f.coverImage.fields.file.url;
+  const imgField = f.coverImg || f.coverImage || f.image;
+  if (imgField) {
+    if (typeof imgField === 'string') {
+      coverImage = imgField;
+    } else if (imgField.fields?.file?.url) {
+      const url = imgField.fields.file.url;
       coverImage = url.startsWith('//') ? `https:${url}` : url;
     }
   }
 
-  // Extract content (support string, markdown, or Rich Text document)
+  // 2. Extract content (supports description, content, body, or Rich Text)
   let content = '';
-  if (typeof f.content === 'string') {
+  if (typeof f.description === 'string') {
+    content = f.description;
+  } else if (typeof f.content === 'string') {
     content = f.content;
-  } else if (f.body && typeof f.body === 'string') {
+  } else if (typeof f.body === 'string') {
     content = f.body;
-  } else if (f.content?.nodeType === 'document') {
-    content = renderRichTextToMarkdown(f.content);
+  } else if (f.content?.nodeType === 'document' || f.description?.nodeType === 'document') {
+    content = renderRichTextToMarkdown(f.content || f.description);
   }
 
-  // Extract author
-  let author = {
-    name: 'EagleComply Editorial Board',
-    role: 'Regulatory Advisory Practice',
-    avatar: `${import.meta.env.BASE_URL}logo-light.png`,
+  // 3. Extract author (supports Array of author Entry references, single author object, or string)
+  let authorRaw = Array.isArray(f.author) ? f.author[0] : f.author;
+  let authorName = 'Shan Ali';
+  let authorRole = 'Legal, Regulatory and Commercial Advisor';
+  let authorLinkedIn = '';
+  let authorAvatar = `${import.meta.env.BASE_URL}images/team/shan-ali.png`;
+
+  if (typeof authorRaw === 'string') {
+    authorName = authorRaw;
+  } else if (authorRaw?.fields) {
+    const af = authorRaw.fields;
+    authorName = af.name || authorName;
+    authorRole = af.bio || af.role || af.title || authorRole;
+    authorLinkedIn = af.linkedIn || '';
+    if (af.avatar?.fields?.file?.url) {
+      const aUrl = af.avatar.fields.file.url;
+      authorAvatar = aUrl.startsWith('//') ? `https:${aUrl}` : aUrl;
+    }
+  }
+
+  // If avatar is default, match against resident team members
+  const lowerName = authorName.toLowerCase().trim();
+  if (teamPhotoMap[lowerName]) {
+    authorAvatar = teamPhotoMap[lowerName];
+  }
+
+  const author = {
+    name: authorName,
+    role: authorRole,
+    avatar: authorAvatar,
+    linkedIn: authorLinkedIn,
     email: 'info@eaglecomply.com'
   };
 
-  if (typeof f.author === 'string') {
-    author.name = f.author;
-  } else if (f.author?.fields) {
-    author = {
-      name: f.author.fields.name || 'EagleComply Advisor',
-      role: f.author.fields.role || f.author.fields.title || 'Senior Regulatory Counsel',
-      avatar: f.author.fields.avatar?.fields?.file?.url 
-        ? (f.author.fields.avatar.fields.file.url.startsWith('//') ? `https:${f.author.fields.avatar.fields.file.url}` : f.author.fields.avatar.fields.file.url)
-        : `${import.meta.env.BASE_URL}logo-light.png`,
-      email: f.author.fields.email || 'info@eaglecomply.com'
-    };
-  }
+  // 4. Extract date
+  const publishDate = f.date || f.publishDate || (entry.sys?.createdAt ? entry.sys.createdAt.split('T')[0] : '2026-08-24');
 
-  const slug = f.slug || (f.title ? f.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '') : entry.sys.id);
-  const type = f.type || (entry.sys.contentType?.sys?.id === 'newsArticle' || entry.sys.contentType?.sys?.id === 'news' ? 'news' : 'blog');
+  // 5. Generate clean slug from title if not set
+  const title = f.title || 'Untitled Publication';
+  const slug = f.slug || title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '') || entry.sys.id;
+  const type = f.type || (entry.sys?.contentType?.sys?.id === 'newsArticle' || entry.sys?.contentType?.sys?.id === 'news' ? 'news' : 'blog');
+
+  // 6. Excerpt
+  const excerpt = f.excerpt || f.summary || f.shortDescription || (content ? (content.length > 200 ? content.slice(0, 195) + '…' : content) : '');
+
+  // 7. Calculate estimated read time
+  const wordCount = content.split(/\s+/).filter(Boolean).length || 300;
+  const readTime = f.readTime || `${Math.max(2, Math.ceil(wordCount / 180))} min read`;
+
+  // 8. Tags
+  const tags = Array.isArray(f.tags) ? f.tags : (f.tags ? [f.tags] : []);
 
   return {
-    id: entry.sys.id,
+    id: entry.sys?.id || slug,
     slug: slug,
     type: type,
-    title: f.title || 'Untitled Publication',
+    title: title,
     category: f.category || (type === 'news' ? 'Regulatory Update' : 'Compliance Advisory'),
-    excerpt: f.excerpt || f.summary || f.shortDescription || (content ? content.slice(0, 180) + '...' : ''),
+    excerpt: excerpt,
     coverImage: coverImage,
     author: author,
-    publishDate: f.publishDate || f.date || entry.sys.createdAt.split('T')[0],
-    readTime: f.readTime || `${Math.max(3, Math.ceil((content.length || 500) / 600))} min read`,
-    tags: Array.isArray(f.tags) ? f.tags : (f.tags ? [f.tags] : []),
+    publishDate: publishDate,
+    readTime: readTime,
+    tags: tags,
     featured: Boolean(f.featured),
     breaking: Boolean(f.breaking),
     content: content
@@ -343,11 +384,14 @@ export async function fetchBlogPosts() {
   try {
     const res = await client.getEntries({
       content_type: 'blogPost',
-      order: '-fields.publishDate,-sys.createdAt',
-      limit: 20
+      include: 2,
+      limit: 30
     });
     if (res.items && res.items.length > 0) {
-      return res.items.map(normalizeContentfulEntry);
+      const posts = res.items.map(normalizeContentfulEntry).filter(Boolean);
+      // Sort newest date first
+      posts.sort((a, b) => new Date(b.publishDate) - new Date(a.publishDate));
+      return posts;
     }
     return fallbackBlogs;
   } catch (error) {
@@ -362,11 +406,13 @@ export async function fetchNewsArticles() {
   try {
     const res = await client.getEntries({
       content_type: 'newsArticle',
-      order: '-fields.publishDate,-sys.createdAt',
-      limit: 20
+      include: 2,
+      limit: 30
     });
     if (res.items && res.items.length > 0) {
-      return res.items.map(normalizeContentfulEntry);
+      const articles = res.items.map(normalizeContentfulEntry).filter(Boolean);
+      articles.sort((a, b) => new Date(b.publishDate) - new Date(a.publishDate));
+      return articles;
     }
     return fallbackNews;
   } catch (error) {
@@ -375,17 +421,22 @@ export async function fetchNewsArticles() {
   }
 }
 
-export async function fetchArticleBySlug(slug) {
-  if (!slug) return null;
+export async function fetchArticleBySlug(slugOrId) {
+  if (!slugOrId) return null;
 
   if (client) {
     try {
-      const res = await client.getEntries({
-        'fields.slug': slug,
-        limit: 1
-      });
-      if (res.items && res.items.length > 0) {
-        return normalizeContentfulEntry(res.items[0]);
+      // 1. Try fetching all entries and match by slug or sys.id
+      const allEntries = await fetchAllArticles();
+      const match = allEntries.find(a => a.slug === slugOrId || a.id === slugOrId);
+      if (match) return match;
+
+      // 2. Direct lookup by Contentful entry ID
+      try {
+        const entry = await client.getEntry(slugOrId, { include: 2 });
+        if (entry) return normalizeContentfulEntry(entry);
+      } catch (e) {
+        // Entry ID direct lookup not found, proceed to fallback
       }
     } catch (error) {
       console.warn('[Contentful] Error fetching article by slug, checking fallback data:', error.message);
@@ -394,7 +445,7 @@ export async function fetchArticleBySlug(slug) {
 
   // Check fallback collections
   const allFallback = [...fallbackBlogs, ...fallbackNews];
-  return allFallback.find(a => a.slug === slug || a.id === slug) || null;
+  return allFallback.find(a => a.slug === slugOrId || a.id === slugOrId) || null;
 }
 
 export async function fetchAllArticles() {
