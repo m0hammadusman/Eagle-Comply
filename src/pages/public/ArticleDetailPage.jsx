@@ -170,7 +170,7 @@ export default function ArticleDetailPage({ params, onNavigate, onOpenConsultati
 
           {/* Cover Image Banner */}
           {article.coverImage && (
-            <div className="w-full h-72 sm:h-96 rounded-3xl overflow-hidden bg-slate-950 border border-surface-border shadow-xl relative">
+            <div className="w-full h-56 sm:h-72 md:h-80 max-h-[360px] rounded-3xl overflow-hidden bg-slate-950 border border-surface-border shadow-lg relative">
               <img
                 src={article.coverImage}
                 alt={article.title}

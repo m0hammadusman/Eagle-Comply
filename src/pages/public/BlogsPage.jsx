@@ -111,23 +111,23 @@ export default function BlogsPage({ onNavigate }) {
           {featuredPost && (
             <div 
               onClick={() => onNavigate('article-detail', { id: featuredPost.slug || featuredPost.id })}
-              className="group relative rounded-3xl bg-surface-raised border border-surface-border shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden cursor-pointer grid grid-cols-1 lg:grid-cols-12 gap-0"
+              className="group relative rounded-3xl bg-surface-raised border border-surface-border shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden cursor-pointer grid grid-cols-1 lg:grid-cols-12 gap-0"
             >
-              <div className="lg:col-span-7 h-64 lg:h-auto min-h-[280px] relative overflow-hidden bg-slate-950">
+              <div className="lg:col-span-5 h-52 sm:h-64 lg:h-full min-h-[220px] max-h-[300px] lg:max-h-none relative overflow-hidden bg-slate-950">
                 <img
                   src={featuredPost.coverImage}
                   alt={featuredPost.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100"
                 />
-                <div className="absolute top-4 left-4">
-                  <span className="px-3 py-1 rounded-full text-xs font-mono font-bold uppercase tracking-wider bg-amber-500 text-slate-950 shadow-md">
+                <div className="absolute top-3.5 left-3.5">
+                  <span className="px-2.5 py-1 rounded-lg text-[11px] font-mono font-bold uppercase tracking-wider bg-amber-500 text-slate-950 shadow-sm">
                     Featured Analysis
                   </span>
                 </div>
               </div>
 
-              <div className="lg:col-span-5 p-6 sm:p-8 flex flex-col justify-between space-y-4">
-                <div className="space-y-3">
+              <div className="lg:col-span-7 p-5 sm:p-7 flex flex-col justify-between space-y-4">
+                <div className="space-y-2.5">
                   <div className="flex items-center gap-2">
                     <span className="px-2.5 py-0.5 rounded-lg text-[11px] font-mono font-bold uppercase bg-[#334DAF]/10 dark:bg-[#7096D1]/20 text-[#334DAF] dark:text-[#7096D1]">
                       {featuredPost.category}
@@ -137,7 +137,7 @@ export default function BlogsPage({ onNavigate }) {
                     </span>
                   </div>
 
-                  <h2 className="font-sans tracking-tight text-xl sm:text-2xl font-bold text-slate-900 dark:text-white group-hover:text-[#334DAF] dark:group-hover:text-[#7096D1] transition-colors leading-snug">
+                  <h2 className="font-sans tracking-tight text-lg sm:text-xl md:text-2xl font-bold text-slate-900 dark:text-white group-hover:text-[#334DAF] dark:group-hover:text-[#7096D1] transition-colors leading-snug">
                     {featuredPost.title}
                   </h2>
 
@@ -146,7 +146,7 @@ export default function BlogsPage({ onNavigate }) {
                   </p>
                 </div>
 
-                <div className="pt-4 border-t border-surface-border flex items-center justify-between">
+                <div className="pt-3.5 border-t border-surface-border flex items-center justify-between">
                   <div className="flex items-center gap-2.5">
                     {featuredPost.author?.avatar && (
                       <img
@@ -180,9 +180,9 @@ export default function BlogsPage({ onNavigate }) {
                 <div
                   key={post.id}
                   onClick={() => onNavigate('article-detail', { id: post.slug || post.id })}
-                  className="group rounded-3xl bg-surface-raised border border-surface-border shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer flex flex-col justify-between"
+                  className="group rounded-3xl bg-surface-raised border border-surface-border shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer flex flex-col justify-between h-full"
                 >
-                  <div className="relative h-48 w-full overflow-hidden bg-slate-950">
+                  <div className="relative h-40 sm:h-44 w-full overflow-hidden bg-slate-950 shrink-0">
                     <img
                       src={post.coverImage}
                       alt={post.title}
@@ -195,7 +195,7 @@ export default function BlogsPage({ onNavigate }) {
                     </div>
                   </div>
 
-                  <div className="p-5 flex-1 flex flex-col justify-between space-y-3">
+                  <div className="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
                     <div className="space-y-2">
                       <div className="flex items-center gap-2 text-[10px] font-mono text-slate-400">
                         <span className="flex items-center gap-1">
@@ -207,16 +207,16 @@ export default function BlogsPage({ onNavigate }) {
                         </span>
                       </div>
 
-                      <h3 className="font-sans text-base font-bold text-slate-900 dark:text-white group-hover:text-[#334DAF] dark:group-hover:text-[#7096D1] transition-colors leading-snug line-clamp-2">
+                      <h3 className="font-sans text-sm sm:text-base font-bold text-slate-900 dark:text-white group-hover:text-[#334DAF] dark:group-hover:text-[#7096D1] transition-colors leading-snug line-clamp-2 min-h-[2.5rem]">
                         {post.title}
                       </h3>
 
-                      <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-2">
+                      <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-2 min-h-[2rem]">
                         {post.excerpt}
                       </p>
                     </div>
 
-                    <div className="pt-3 border-t border-surface-border flex items-center justify-between">
+                    <div className="pt-3 border-t border-surface-border flex items-center justify-between mt-auto">
                       <div className="flex items-center gap-2">
                         {post.author?.avatar && (
                           <img
