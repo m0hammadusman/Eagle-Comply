@@ -41,8 +41,8 @@ export const teamMembers = [
     firstName: "Shan",
     lastName: "Ali",
     fullName: "Shan Ali",
-    role: "Director Legal Compliance",
-    department: "Legal Compliance",
+    role: "Legal, Regulatory & Commercial Advisor",
+    department: "Legal & Commercial Advisory",
     strapHeight: 68,
     linkedin: "https://www.linkedin.com/in/shan-ali-blockchain/",
     photo: `${import.meta.env.BASE_URL}images/team/shan-ali.png`

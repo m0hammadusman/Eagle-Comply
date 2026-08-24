@@ -1920,8 +1920,8 @@ export const practitioners = [
   {
     id: "shan-ali",
     name: "Shan Ali",
-    designation: "Director Legal Compliance",
-    department: "Legal Compliance",
+    designation: "Legal, Regulatory and Commercial Advisor",
+    department: "Legal, Regulatory & Commercial Advisory",
     badge: "DIRECTOR",
     photo: "images/team/shan-ali.png",
     linkedin: "https://www.linkedin.com/in/shan-ali-blockchain/",
@@ -2118,37 +2118,36 @@ export const experts = [
   {
     "id": "shan-ali",
     "name": "Shan Ali",
-    "role": "Director Legal Compliance — Corporate, FinTech & Emerging Technology Counsel",
-    "department": "Legal & Technology Law Compliance",
+    "role": "Legal, Regulatory and Commercial Advisor",
+    "department": "Legal, Regulatory & Commercial Advisory",
     "linkedin": "https://www.linkedin.com/in/shan-ali-blockchain/",
     "email": "info@eaglecomply.com",
     "photo": "images/team/shan-ali.png",
-    "location": "Italy / Switzerland / South Asia Desk",
+    "location": "United Kingdom / Italy / Pakistan",
     "specialisms": [
-      "FinTech & Financial Regulation",
-      "Corporate & Commercial Law",
-      "Blockchain & Web3 Regulation",
-      "Digital Assets & Emerging Technologies",
-      "Legal Technology & LegalTech",
-      "Decentralized Autonomous Organizations (DAOs)",
-      "Digital & Internet Governance",
-      "AI, Neuroscience & Emerging Technology Law",
-      "Public Law, Law & Economics",
-      "Regulatory & Legal Implications of Technological Innovation"
+      "Financial Services and FinTech Regulation",
+      "Regulatory Strategy, Licensing and Market Entry",
+      "Corporate and Commercial Law",
+      "Commercial Contracts and Negotiation",
+      "Crypto-Assets, Blockchain and DeFi Regulation",
+      "EU Digital Regulation and Technology Governance",
+      "Corporate Governance and Regulatory Risk",
+      "Cross-Border Legal and Regulatory Advisory",
+      "AML/CTF, Sanctions and Financial Crime Compliance"
     ],
     "industries": [
-      "FinTech & Web3 Startups",
-      "Crypto & Digital Asset Platforms",
-      "Technology & Artificial Intelligence",
-      "International Commercial Enterprises",
-      "Decentralized Autonomous Organizations (DAOs)"
+      "Financial Services & Banking",
+      "FinTech Challengers & Digital Platforms",
+      "Crypto-Assets, Web3 & Digital Asset Platforms",
+      "Corporate & Commercial Enterprises",
+      "Technology & Cross-Border Businesses"
     ],
     "countries": [
-      "Italy & European Union (EU)",
-      "Switzerland",
       "United Kingdom",
-      "Pakistan & South Asia",
-      "Cross-Border Jurisdictions"
+      "Italy & European Union (EU)",
+      "Pakistan",
+      "Switzerland",
+      "Finland"
     ],
     "languages": [
       "English",
@@ -2156,48 +2155,53 @@ export const experts = [
       "Urdu"
     ],
     "certs": [
-      "PhD Researcher in Law (Blockchain, Web3 & Emerging Tech) — University of Padua, Italy",
-      "Visiting PhD Researcher (Legal Tech, Law & Economics) — University of Zurich, Switzerland",
-      "LL.M. in Corporate Law (Gold Medalist / Summa Cum Laude) — Bahria University (2019–2021)",
-      "EuroSSIG 2025 Fellow — European Summer School on Internet Governance"
+      "PhD in Law (EU Regulation of Blockchain-Based Finance) — In Progress",
+      "LL.M. with Distinction & Gold Medalist",
+      "Licensed Lawyer (Advocate)"
     ],
     "aboutParagraphs": [
-      "Shan Ali is a legal and regulatory counsel and researcher operating at the intersection of financial regulation, corporate law, blockchain technology, Web3, legal technology, and emerging digital technologies. As a FinTech and corporate legal advisor, he bridges statutory legal frameworks with technological innovation across digital asset ecosystems.",
-      "He is pursuing doctoral research at the University of Padua (Italy), where his research focuses on blockchain and its legal, economic, and social implications within Web 3.0. He previously undertook research as a Visiting PhD Researcher at the Law Faculty of the University of Zurich (Switzerland), collaborating with the Chair for Legal Tech, Law and Economics, and Public Law.",
-      "Shan completed his LL.M. in Corporate Law from Bahria University as a Gold Medalist (Summa Cum Laude) and is a selected EuroSSIG Fellow. His practice mandate focuses on FinTech compliance, corporate governance, digital asset classification, decentralized organizations (DAOs), and multi-jurisdictional technology law across Italy, Switzerland, the UK, and South Asia."
+      "Shan Ali is a legal, regulatory and commercial advisor with over eight years of experience in financial services and FinTech regulation, corporate and commercial law, contract drafting and negotiation, and digital-asset regulation. He advises businesses on regulatory strategy, licensing and market entry, product structuring, corporate governance, commercial agreements and the legal implications of technology-enabled financial services.",
+      "His approach is practical and commercially focused, translating complex legal and regulatory requirements into workable frameworks, policies, governance structures and risk-management measures.",
+      "His international experience spans legal practice in Pakistan, EU-focused regulatory and compliance work for an Australian financial-services group while based in Italy, and research engagements in Switzerland, the United Kingdom and Finland. He is completing a PhD in Law focused on the EU regulation of blockchain-based finance, holds an LL.M. with Distinction and a Gold Medal, and is a licensed lawyer."
     ],
-    "bio": "Shan Ali is a legal and regulatory professional and researcher working at the intersection of financial regulation, corporate law, blockchain technology, Web3, legal technology, and emerging digital technologies. He advises fintech ventures, digital asset platforms, and corporate institutions on regulatory positioning, corporate governance, and technological innovation law.",
-    "intro": "Shan Ali is a legal and regulatory professional and researcher working at the intersection of financial regulation, corporate law, blockchain technology, Web3, legal technology, and emerging digital technologies. He is pursuing doctoral research at the University of Padua (Italy) examining blockchain's impact on legal, economic, and social systems within Web 3.0, and previously undertook visiting doctoral research at the University of Zurich (Switzerland) with the Chair for Legal Tech, Law and Economics, and Public Law. As a corporate and fintech legal counsel, his practice combines rigorous academic research with practical regulatory advisory across digital asset frameworks, corporate governance, and emerging technology law.",
+    "bio": "Shan Ali is a legal, regulatory and commercial advisor with over eight years of experience in financial services and FinTech regulation, corporate and commercial law, contract drafting and negotiation, and digital-asset regulation. He advises businesses on regulatory strategy, licensing and market entry, product structuring, corporate governance, commercial agreements and the legal implications of technology-enabled financial services.",
+    "intro": "Shan Ali is a legal, regulatory and commercial advisor with over eight years of experience in financial services and FinTech regulation, corporate and commercial law, contract drafting and negotiation, and digital-asset regulation. His approach translates complex legal and regulatory requirements into workable frameworks, governance structures and risk-management measures.",
     "experience": [
       {
-        "period": "2022 – Present",
-        "role": "PhD Researcher / Doctor of Law Researcher",
-        "organization": "University of Padua, Italy",
-        "details": "Conducts doctoral research on blockchain technology, Web3 legal frameworks, digital governance, and their legal, economic, and social implications within Web 3.0."
+        "period": "Senior Practice",
+        "role": "Legal, Regulatory and Commercial Advisor",
+        "organization": "Financial Services & FinTech Advisory",
+        "details": "Advises businesses on regulatory strategy, licensing and market entry, product structuring, corporate governance, commercial agreements and the legal implications of technology-enabled financial services."
       },
       {
-        "period": "Visiting Researcher",
-        "role": "Visiting PhD Researcher",
-        "organization": "University of Zurich, Switzerland (Law Faculty)",
-        "details": "Worked with the Chair for Legal Tech, Law and Economics, and Public Law, conducting advanced research on blockchain regulation, Web3, LegalTech, and public law."
+        "period": "International Advisory",
+        "role": "EU-Focused Regulatory & Compliance Counsel",
+        "organization": "Australian Financial-Services Group (Based in Italy)",
+        "details": "Conducted EU-focused regulatory and compliance operations, cross-border financial services advisory, and statutory documentation."
       },
       {
-        "period": "Ongoing Practice",
-        "role": "FinTech & Corporate Legal Counsel",
-        "organization": "Corporate & FinTech Advisory Practice",
-        "details": "Advises corporate enterprises, FinTech challengers, and digital asset ventures on corporate and commercial matters, financial and fintech regulation, regulatory compliance, Web3 legal frameworks, DAOs, and emerging technology governance."
+        "period": "International Research",
+        "role": "Visiting & Collaborative Legal Researcher",
+        "organization": "Switzerland, United Kingdom & Finland",
+        "details": "Engaged in specialized research initiatives focusing on EU regulation of blockchain-based finance, crypto-assets, DeFi, and digital technology governance."
       },
       {
-        "period": "Nov 2022 – Dec 2023",
-        "role": "Senior Legal Executive",
-        "organization": "Crime Victim Services Pakistan",
-        "details": "Managed statutory legal compliance, regulatory filings, institutional documentation, and client advocacy."
+        "period": "Doctoral Research",
+        "role": "PhD Researcher in Law (EU Blockchain Finance Regulation)",
+        "organization": "Doctoral Legal Studies",
+        "details": "Completing PhD in Law focused on the EU regulation of blockchain-based finance and decentralized financial structures."
       },
       {
-        "period": "2019 – 2021",
-        "role": "LL.M. in Corporate Law (Gold Medalist / Summa Cum Laude)",
-        "organization": "Bahria University",
-        "details": "Graduated with highest distinction. Advanced coursework in Corporate Law, Banking Law, Intellectual Property Law, International Trade Law, Commercial Arbitration, and International Criminal Law."
+        "period": "Legal Practice",
+        "role": "Licensed Lawyer / Advocate",
+        "organization": "Corporate & Commercial Legal Practice (Pakistan)",
+        "details": "Corporate and commercial law, contract drafting and negotiation, regulatory risk mitigation, and commercial dispute resolution."
+      },
+      {
+        "period": "Postgraduate Law",
+        "role": "LL.M. with Distinction & Gold Medal",
+        "organization": "Postgraduate Faculty of Law",
+        "details": "Graduated with highest academic distinction and Gold Medal in Corporate and Commercial Law."
       }
     ],
     "publications": [
