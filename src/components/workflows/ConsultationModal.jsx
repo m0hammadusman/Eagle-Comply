@@ -60,6 +60,38 @@ export default function ConsultationModal({ isOpen, onClose }) {
         cal("ui", {
           theme: isDark ? "dark" : "light",
           styles: { branding: { brandColor: "#334DAF" } },
+          cssVarsPerTheme: {
+            dark: {
+              "cal-brand": "#334DAF",
+              "cal-brand-emphasis": "#253982",
+              "cal-brand-text": "#FFFFFF",
+              "cal-brand-subtle": "#16295C",
+              "cal-bg-booker": "#101E42",
+              "cal-bg-muted": "#16295C",
+              "cal-bg-emphasis": "#1E3778",
+              "cal-border-booker": "#1E3778",
+              "cal-border-subtle": "#1E3778",
+              "cal-border-default": "#2B4E9E",
+              "cal-text": "#FFFFFF",
+              "cal-text-muted": "#D0E4FE",
+              "cal-text-emphasis": "#F9FBFF"
+            },
+            light: {
+              "cal-brand": "#334DAF",
+              "cal-brand-emphasis": "#253982",
+              "cal-brand-text": "#FFFFFF",
+              "cal-brand-subtle": "#E8F2FE",
+              "cal-bg-booker": "#FFFFFF",
+              "cal-bg-muted": "#F9FBFF",
+              "cal-bg-emphasis": "#E8F2FE",
+              "cal-border-booker": "#D0E4FE",
+              "cal-border-subtle": "#D0E4FE",
+              "cal-border-default": "#D0E4FE",
+              "cal-text": "#091F5C",
+              "cal-text-muted": "#334DAF",
+              "cal-text-emphasis": "#091F5C"
+            }
+          },
           hideEventTypeDetails: false,
           layout: "month_view"
         });
@@ -67,7 +99,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
         console.error("Cal.com initialization notice:", err);
       }
     })();
-  }, [isDark]);
+  }, [isDark, isOpen]);
 
   if (!isOpen) return null;
 
@@ -88,78 +120,76 @@ export default function ConsultationModal({ isOpen, onClose }) {
         clientName: form.fullName,
         organization: form.company,
         email: form.workEmail,
-        country: form.country,
-        requirement: form.requirement,
-        status: 'Consultation Requested'
+        phone: '',
+        notes: `Jurisdiction: ${form.country}, Requirement: ${form.requirement}`
       });
       await sendInquiryToCompanyEmail({
-        type: 'Consultation Booking',
+        type: 'Partner Consultation Booking',
         clientName: form.fullName,
         email: form.workEmail,
         company: form.company,
         jurisdiction: form.country,
-        service: service?.name || form.serviceId,
+        service: service?.name,
         date: form.date,
-        time: `${form.time} (${form.timezone})`,
+        time: form.time,
         requirement: form.requirement
       });
       setIsSubmitting(false);
       setSuccess(booking);
-      return;
+    } else {
+      setStep(s => s + 1);
     }
-    setStep(s => Math.min(3, s + 1));
   };
 
-  const back = () => setStep(s => Math.max(1, s - 1));
   const close = () => {
     setStep(1);
-    setIsSubmitting(false);
     setSuccess(null);
+    setIsSubmitting(false);
     onClose();
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 md:p-6 bg-black/80 backdrop-blur-md" onClick={close}>
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80 backdrop-blur-md" onClick={close}>
       <div 
-        className={`w-full ${bookingMode === 'cal' ? 'max-w-4xl' : 'max-w-xl'} max-h-[92vh] flex flex-col bg-surface-raised border border-surface-border rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden transition-all duration-300`} 
+        className={`w-full ${bookingMode === 'cal' ? 'max-w-4xl' : 'max-w-xl'} flex flex-col bg-surface-raised border border-surface-border rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden transition-all duration-300`} 
         onClick={e => e.stopPropagation()}
       >
         {/* Sticky Modal Header (Close button always visible) */}
-        <div className="shrink-0 p-4 sm:p-5 bg-surface-subtle border-b border-surface-border flex items-center justify-between z-10">
+        <div className="shrink-0 px-4 sm:px-5 py-3 sm:py-3.5 bg-surface-subtle border-b border-surface-border flex items-center justify-between z-10">
           <div className="flex items-center gap-3 min-w-0">
-            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#334DAF]/10 text-[#334DAF] dark:text-[#7096D1] flex items-center justify-center shrink-0">
-              <CalendarDays className="w-5 h-5" />
+            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-[#334DAF]/10 text-[#334DAF] dark:text-[#7096D1] flex items-center justify-center shrink-0">
+              <CalendarDays className="w-4 h-4 sm:w-5 sm:h-5" />
             </div>
             <div className="min-w-0">
               <div className="flex items-center gap-2">
-                <h3 className="font-bold text-base sm:text-lg text-slate-900 dark:text-white truncate">
+                <h3 className="font-bold text-sm sm:text-base text-slate-900 dark:text-white truncate">
                   {m.consultationTitle || 'Schedule Partner Consultation'}
                 </h3>
                 <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 font-bold hidden sm:inline-block shrink-0">
                   Live Calendar
                 </span>
               </div>
-              <p className="text-xs text-slate-500 truncate">
+              <p className="text-[11px] sm:text-xs text-slate-500 truncate">
                 Direct consultation with EagleComply Senior Compliance Directors.
               </p>
             </div>
           </div>
           <button 
             onClick={close} 
-            className="p-2 rounded-xl bg-surface-base hover:bg-surface-raised text-slate-500 hover:text-slate-900 dark:hover:text-white border border-surface-border transition-colors cursor-pointer shrink-0 ml-2"
+            className="p-1.5 sm:p-2 rounded-xl bg-surface-base hover:bg-surface-raised text-slate-500 hover:text-slate-900 dark:hover:text-white border border-surface-border transition-colors cursor-pointer shrink-0 ml-2"
             title="Close modal"
             aria-label="Close"
           >
-            <X className="w-5 h-5" />
+            <X className="w-4 h-4 sm:w-5 sm:h-5" />
           </button>
         </div>
 
         {/* Mode Selector Tabs */}
-        <div className="shrink-0 px-4 sm:px-6 py-2.5 border-b border-surface-border bg-surface-base flex flex-wrap items-center justify-between gap-2">
+        <div className="shrink-0 px-4 sm:px-5 py-2 border-b border-surface-border bg-surface-base flex flex-wrap items-center justify-between gap-2">
           <div className="flex items-center gap-2">
             <button
               onClick={() => setBookingMode('cal')}
-              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
+              className={`px-3 py-1 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
                 bookingMode === 'cal'
                   ? 'bg-[#334DAF] text-white shadow-xs'
                   : 'bg-surface-subtle text-slate-600 dark:text-slate-400 hover:bg-surface-raised border border-surface-border'
@@ -170,7 +200,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
             </button>
             <button
               onClick={() => setBookingMode('custom')}
-              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
+              className={`px-3 py-1 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
                 bookingMode === 'custom'
                   ? 'bg-[#334DAF] text-white shadow-xs'
                   : 'bg-surface-subtle text-slate-600 dark:text-slate-400 hover:bg-surface-raised border border-surface-border'
@@ -194,16 +224,16 @@ export default function ConsultationModal({ isOpen, onClose }) {
           )}
         </div>
 
-        {/* Scrollable Modal Body */}
-        <div className="flex-1 overflow-y-auto p-4 sm:p-6">
+        {/* Modal Body: Cal fits completely without scroll */}
+        <div className="p-3 sm:p-4">
           {bookingMode === 'cal' ? (
             /* Cal.com Live Interactive Embed */
-            <div className="space-y-3">
-              <div className="w-full h-[460px] sm:h-[500px] md:h-[540px] max-h-[58vh] rounded-2xl overflow-hidden border border-surface-border bg-white dark:bg-slate-950">
+            <div className="space-y-2">
+              <div className="w-full h-[400px] sm:h-[430px] md:h-[450px] rounded-xl sm:rounded-2xl overflow-hidden border border-[#1E3778]/50 bg-white dark:bg-[#101E42]">
                 <Cal
                   namespace="strategic-compliance-consultation"
                   calLink={calLink}
-                  style={{ width: "100%", height: "100%", overflow: "auto" }}
+                  style={{ width: "100%", height: "100%", overflow: "hidden" }}
                   config={{ 
                     layout: 'month_view',
                     theme: isDark ? 'dark' : 'light',
@@ -212,9 +242,9 @@ export default function ConsultationModal({ isOpen, onClose }) {
                 />
               </div>
 
-              <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500 pt-1 px-1 font-mono">
+              <div className="flex flex-wrap items-center justify-between gap-2 text-[11px] text-slate-500 pt-0.5 px-1 font-mono">
                 <div className="flex items-center gap-1.5">
-                  <ShieldCheck className="w-4 h-4 text-[#334DAF] dark:text-[#7096D1]" />
+                  <ShieldCheck className="w-3.5 h-3.5 text-[#334DAF] dark:text-[#7096D1]" />
                   <span>Automated calendar invites with Google Meet / Zoom links dispatched immediately.</span>
                 </div>
                 <div className="flex items-center gap-2">
