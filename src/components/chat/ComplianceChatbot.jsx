@@ -1,8 +1,7 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { X, Send, Sparkles, ArrowRight, RotateCcw } from 'lucide-react';
+import { X, Send, Sparkles, ArrowRight, RotateCcw, MessageSquare } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
 import { useTheme } from '../../context/ThemeContext';
-import AnimatedBotAvatar from './AnimatedBotAvatar';
 
 const STOP = new Set(['the','and','for','with','what','how','does','can','help','about','your','from','into','this','that','are','is','to','of','a','an','in','on','do','i','we','me','my','please']);
 
@@ -28,44 +27,51 @@ export default function ComplianceChatbot({ onNavigate, onOpenConsultation, onOp
     }));
     industries.forEach(i => items.push({ type: 'industry', name: i.name, id: i.id, text: `${i.name} ${i.heroTag || ''} ${i.overview || ''}` }));
     regulations.forEach(r => items.push({ type: 'regulation', name: r.name, id: r.id, text: `${r.name} ${r.jurisdiction || ''} ${r.shortDesc || ''} ${r.penalties || ''}` }));
-    countries.forEach(c => items.push({ type: 'jurisdiction', name: c.name, id: c.id, text: `${c.name} ${c.region || ''} ${c.overview || ''} ${(c.keySectors || []).join(' ')}` }));
+    countries.forEach(c => items.push({ type: 'jurisdiction', name: c.name, id: c.id, text: `${c.name} ${c.overview || ''} ${(c.authorities || []).join(' ')}` }));
     return items;
   }, [solutions, industries, regulations, countries]);
 
   useEffect(() => {
-    setMessages([{
-      id: 1,
-      sender: 'bot',
-      text: chat.greet || 'Hello! I’m the EagleComply Assistant.',
-      actions: [
-        { label: chat.consult || 'Book a Consultation', action: 'consultation' },
-        { label: chat.services || 'Explore Services', action: 'services' }
-      ]
-    }]);
+    setMessages([
+      {
+        id: 1,
+        sender: 'bot',
+        text: chat.greet || 'Hello! I am EagleComply’s AI Regulatory Assistant. How can I assist you with financial crime, licensing, or corporate compliance today?'
+      }
+    ]);
   }, [language]); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
-    if (open) endRef.current?.scrollIntoView({ behavior: 'smooth' });
+    if (open) {
+      endRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }
   }, [messages, typing, open]);
 
-  const answer = (question) => {
-    const q = normalize(question);
-    const qSet = new Set(q);
-
-    let best = null, bestScore = 0;
-    for (const item of knowledge) {
-      const words = normalize(item.text);
-      const score = words.reduce((sum, w) => sum + (qSet.has(w) ? 1 : 0), 0);
-      if (score > bestScore) { bestScore = score; best = item; }
+  const answer = (query) => {
+    const words = normalize(query);
+    if (!words.length) {
+      return { text: chat.clarify || 'Please specify a jurisdiction, regulation, or compliance topic so I can guide you.' };
     }
 
-    const topic = q.join(' ');
-    const wantsRisk = /risk|governance|fraud|control|three lines|appetite/.test(topic);
-    const wantsLegal = /legal|contract|privacy|law|advisory|document/.test(topic);
-    const wantsTraining = /training|train|board|staff|education/.test(topic);
-    const wantsReview = /review|audit|testing|assurance|gap|assessment/.test(topic);
-    const wantsLicence = /licen|license|authorization|registration|regulator|permit|readiness/.test(topic);
-    const wantsAml = /aml|cft|kyc|cdd|edd|sanction|pep|transaction|monitor|suspicious|financial crime|fraud/.test(topic);
+    const scored = knowledge.map(k => {
+      const targetWords = normalize(k.text);
+      let score = 0;
+      words.forEach(w => {
+        if (targetWords.includes(w)) score += 2;
+        else if (targetWords.some(tw => tw.includes(w) || w.includes(tw))) score += 1;
+      });
+      return { ...k, score };
+    }).filter(x => x.score > 0).sort((a, b) => b.score - a.score);
+
+    let best = scored[0];
+
+    const qLower = query.toLowerCase();
+    const wantsAml = /aml|cft|money laundering|terrorist|kyc|cdd|edd|sanction|transaction monitor/i.test(qLower);
+    const wantsLicence = /license|licensing|authorisation|authorization|application|sandbox/i.test(qLower);
+    const wantsRisk = /risk|governance|three lines|framework|appetite|operational risk/i.test(qLower);
+    const wantsLegal = /legal|contract|dpa|gdpr|corporate|opinion|memorandum|dispute/i.test(qLower);
+    const wantsTraining = /training|course|workshop|staff|masterclass|certification/i.test(qLower);
+    const wantsReview = /review|audit|health-check|healthcheck|gap analysis|independent/i.test(qLower);
 
     if (!best && (wantsRisk || wantsLegal || wantsTraining || wantsReview || wantsLicence || wantsAml)) {
       best = { type: 'service', name:
@@ -133,25 +139,25 @@ export default function ComplianceChatbot({ onNavigate, onOpenConsultation, onOp
 
   return (
     <>
-      {/* Floating Animated SVG Bot Assistant Launcher with Seamless Motion */}
       <button 
         onClick={() => setOpen(v => !v)} 
-        className="fixed bottom-3 right-3 sm:bottom-5 sm:right-5 rtl:right-auto rtl:left-3 sm:rtl:left-5 z-40 p-0 bg-transparent border-none outline-none focus:outline-none hover:scale-110 active:scale-95 transition-transform duration-300 cursor-pointer group select-none flex flex-col items-center" 
+        className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 rtl:right-auto rtl:left-4 sm:rtl:left-6 z-40 px-4 py-2.5 sm:px-5 sm:py-3 rounded-full bg-gradient-to-r from-[#091F5C] to-[#334DAF] dark:from-[#334DAF] dark:to-[#7096D1] text-white dark:text-[#091F5C] font-bold text-xs sm:text-sm shadow-xl hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-300 flex items-center gap-2.5 border border-white/20 backdrop-blur-md cursor-pointer group select-none" 
         title={t.modals?.chatbotTitle || 'Eagle Regulatory Assistant'}
       >
-        <div className="relative flex items-center justify-center">
-          <AnimatedBotAvatar size={66} />
-          {/* Online Pulsing Indicator */}
-          <span className="absolute bottom-2 right-1.5 w-3.5 h-3.5 rounded-full bg-emerald-500 ring-2 ring-white dark:ring-slate-900 animate-pulse shadow-sm z-10" />
-        </div>
+        <span className="relative flex h-2.5 w-2.5 shrink-0">
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+          <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+        </span>
+        <MessageSquare className="w-4 h-4 text-cyan-300 dark:text-[#091F5C]" />
+        <span className="tracking-wide">{t.modals?.chatButtonText || 'Ask AI Assistant'}</span>
       </button>
 
       {open && (
-        <div className="fixed bottom-[95px] right-4 sm:right-6 rtl:right-auto rtl:left-4 sm:rtl:left-6 z-50 w-96 max-w-[calc(100vw-2rem)] h-[520px] max-h-[calc(100vh-120px)] bg-surface-raised border border-surface-border rounded-3xl shadow-2xl flex flex-col overflow-hidden animate-fade-in">
+        <div className="fixed bottom-[85px] right-4 sm:right-6 rtl:right-auto rtl:left-4 sm:rtl:left-6 z-50 w-96 max-w-[calc(100vw-2rem)] h-[520px] max-h-[calc(100vh-120px)] bg-surface-raised border border-surface-border rounded-3xl shadow-2xl flex flex-col overflow-hidden animate-fade-in">
           <div className="p-3.5 sm:p-4 bg-surface-subtle border-b border-surface-border flex items-center justify-between">
             <div className="flex items-center gap-2.5">
-              <div className="w-10 h-10 rounded-2xl bg-[#091F5C]/10 dark:bg-[#7096D1]/15 p-0.5 flex items-center justify-center border border-surface-border overflow-hidden">
-                <AnimatedBotAvatar size={32} />
+              <div className="w-9 h-9 rounded-2xl bg-[#091F5C]/10 dark:bg-[#7096D1]/15 text-[#334DAF] dark:text-[#7096D1] flex items-center justify-center border border-surface-border">
+                <Sparkles className="w-4 h-4" />
               </div>
               <div>
                 <h4 className="text-xs font-bold text-slate-900 dark:text-white">{t.modals?.chatbotTitle || 'Eagle Regulatory Assistant'}</h4>
@@ -162,7 +168,7 @@ export default function ComplianceChatbot({ onNavigate, onOpenConsultation, onOp
               </div>
             </div>
             <div className="flex items-center gap-1">
-              <button onClick={() => setMessages([{ id: Date.now(), sender: 'bot', text: chat.greet || 'Hello! I’m the EagleComply Assistant.' }])} className="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-white transition-colors" title="Reset Conversation"><RotateCcw className="w-4 h-4" /></button>
+              <button onClick={() => setMessages([{ id: Date.now(), sender: 'bot', text: chat.greet || 'Hello! I am EagleComply’s AI Regulatory Assistant. How can I assist you with financial crime, licensing, or corporate compliance today?' }])} className="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-white transition-colors" title="Reset Conversation"><RotateCcw className="w-4 h-4" /></button>
               <button onClick={() => setOpen(false)} className="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-white transition-colors" title="Close"><X className="w-4 h-4" /></button>
             </div>
           </div>
@@ -172,9 +178,7 @@ export default function ComplianceChatbot({ onNavigate, onOpenConsultation, onOp
               <div key={msg.id} className={`flex flex-col ${msg.sender === 'user' ? 'items-end' : 'items-start'}`}>
                 {msg.sender === 'bot' && (
                   <div className="flex items-center gap-1.5 mb-1 text-[10px] font-mono text-slate-400">
-                    <span className="w-3.5 h-3.5 inline-block">
-                      <AnimatedBotAvatar size={16} />
-                    </span>
+                    <Sparkles className="w-3 h-3 text-[#334DAF] dark:text-[#7096D1]" />
                     <span>EagleComply AI</span>
                   </div>
                 )}
@@ -184,9 +188,7 @@ export default function ComplianceChatbot({ onNavigate, onOpenConsultation, onOp
             ))}
             {typing && (
               <div className="flex items-center gap-2 text-[11px] text-slate-400 font-mono animate-pulse">
-                <span className="w-4 h-4 inline-block">
-                  <AnimatedBotAvatar size={18} />
-                </span>
+                <Sparkles className="w-3.5 h-3.5 text-[#334DAF] dark:text-[#7096D1]" />
                 <span>Analyzing EagleComply regulatory knowledge base…</span>
               </div>
             )}
