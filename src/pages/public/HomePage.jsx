@@ -210,11 +210,22 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
             </p>
           </div>
           <div className="lg:col-span-5 flex justify-center">
-            <div className="p-3 sm:p-4 rounded-2xl sm:rounded-3xl glass-panel border border-surface-border shadow-xl relative max-w-full overflow-hidden">
-              <ComplianceShield3D size={180} />
-              <div className="text-center pt-2">
-                <span className="text-[9px] sm:text-[10px] font-mono font-bold uppercase tracking-wider text-[#334DAF] dark:text-[#7096D1]">
-                  {hx.threeD}
+            <div className="p-3 sm:p-4 rounded-2xl sm:rounded-3xl glass-panel border border-surface-border shadow-xl relative w-full max-w-sm sm:max-w-md overflow-hidden group">
+              <div className="relative rounded-xl sm:rounded-2xl overflow-hidden bg-slate-950 border border-surface-border shadow-inner">
+                <video
+                  src={`${import.meta.env.BASE_URL}pillars-video.mp4`}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full aspect-[4/3] sm:aspect-video object-cover"
+                />
+                <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
+              </div>
+              <div className="text-center pt-2.5 sm:pt-3">
+                <span className="text-[9px] sm:text-[10px] font-mono font-bold uppercase tracking-wider text-[#334DAF] dark:text-[#7096D1] flex items-center justify-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping inline-block" />
+                  EagleComply Governance Overview
                 </span>
               </div>
             </div>
