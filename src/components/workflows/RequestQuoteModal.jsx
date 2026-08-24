@@ -127,23 +127,6 @@ export default function RequestQuoteModal({ isOpen, onClose }) {
 
               <div className="pt-2 flex flex-wrap items-center justify-center gap-3">
                 <a
-                  href={generateMailtoLink({
-                    type: 'Statement of Work (SOW) Quote Request',
-                    clientName: quoteForm.contactName,
-                    email: quoteForm.workEmail,
-                    company: quoteForm.company,
-                    phone: quoteForm.phone,
-                    service: quoteForm.serviceId,
-                    budget: quoteForm.budgetRange,
-                    timeline: quoteForm.timeline,
-                    notes: quoteForm.projectScopeSummary
-                  })}
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#091F5C] dark:bg-[#334DAF] hover:bg-[#1E3778] text-white font-bold text-xs shadow-md"
-                >
-                  <Mail className="w-4 h-4" />
-                  <span>Open Email Draft ({COMPANY_EMAIL})</span>
-                </a>
-                <a
                   href={UK_WHATSAPP_LINK}
                   target="_blank"
                   rel="noopener noreferrer"

@@ -80,19 +80,6 @@ export default function OrderServiceModal({ isOpen, onClose, preselectedResource
 
               <div className="pt-2 flex flex-wrap items-center justify-center gap-3">
                 <a
-                  href={generateMailtoLink({
-                    type: 'Compliance Toolkit Order',
-                    email: orderDetails.email,
-                    company: orderDetails.company,
-                    service: selectedRes?.title,
-                    notes: `Tier: ${orderDetails.licenseTier}, Delivery: ${orderDetails.deliveryMethod}`
-                  })}
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#091F5C] dark:bg-[#334DAF] hover:bg-[#1E3778] text-white font-bold text-xs shadow-md"
-                >
-                  <Mail className="w-4 h-4" />
-                  <span>Open Email Draft ({COMPANY_EMAIL})</span>
-                </a>
-                <a
                   href={UK_WHATSAPP_LINK}
                   target="_blank"
                   rel="noopener noreferrer"
