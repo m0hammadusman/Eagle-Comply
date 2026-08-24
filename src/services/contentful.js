@@ -1,7 +1,7 @@
 // Contentful Service - Fast, direct REST client with zero caching bugs
 
-const spaceId = import.meta.env.VITE_CONTENTFUL_SPACE_ID || 'hhcyea97g1z3';
-const accessToken = import.meta.env.VITE_CONTENTFUL_ACCESS_TOKEN || 'XeJPJaDA8Xy7Wvmx6HCsZnWbvYWXFhm2GeXZ_tn03Bs';
+const spaceId = import.meta.env.VITE_CONTENTFUL_SPACE_ID || 'dqelhpseod7d';
+const accessToken = import.meta.env.VITE_CONTENTFUL_ACCESS_TOKEN || 'CJyRGKCDqtRoPiRe7-fi5OJkBPKhmI34JJVg_FvVvE8';
 const environment = import.meta.env.VITE_CONTENTFUL_ENVIRONMENT || 'master';
 
 export const isContentfulConfigured = Boolean(
