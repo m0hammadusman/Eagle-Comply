@@ -250,7 +250,7 @@ export default function FaqPage({ onNavigate, onOpenConsultation }) {
         <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-[#091F5C] via-[#16295C] to-[#334DAF] text-white shadow-2xl text-center space-y-5">
           <div className="space-y-2">
             <span className="text-xs font-mono uppercase tracking-widest text-blue-200 font-bold inline-block px-3 py-1 rounded-full bg-white/10 border border-white/20">
-              DIRECT INQUIRY DESK
+              DIRECT INQUIRY & SUPPORT
             </span>
             <h3 className="text-2xl sm:text-3xl font-bold">
               If you have any other questions, send us your query.

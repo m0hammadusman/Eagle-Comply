@@ -30,7 +30,7 @@ export const activeLocations = [
     code: "UK",
     flag: "🇬🇧",
     city: "London",
-    desk: "UK & Global Practice Desk",
+    practice: "UK & Global Practice",
     address: "London, United Kingdom",
     phone: "+44 7706 413233",
     whatsapp: "+44 7706 413233",
@@ -48,16 +48,16 @@ export const activeLocations = [
     code: "IT",
     flag: "🇮🇹",
     city: "Milan / Rome",
-    desk: "Italy & Southern Europe Desk",
+    practice: "Italy & Southern Europe",
     address: "Milan & Rome, Italy",
     phone: "+39 348 818 4787",
     whatsapp: "+39 348 818 4787",
     whatsappUrl: "https://wa.me/393488184787",
     email: "info@eaglecomply.com",
-    status: "EU Advisory Desk",
+    status: "EU Advisory Office",
     timezone: "CET (UTC+1)",
     coverage: "EU 6AMLD, MiCA, DORA, Bank of Italy & OAM Regulatory Frameworks",
-    badge: "EU Desk",
+    badge: "EU Office",
     coords: { x: 520, y: 165 }
   },
   {
@@ -66,7 +66,7 @@ export const activeLocations = [
     code: "PK",
     flag: "🇵🇰",
     city: "Islamabad / Karachi",
-    desk: "South Asia Advisory Hub",
+    practice: "South Asia Advisory Hub",
     address: "Islamabad & Karachi, Pakistan",
     phone: "+44 7706 413233",
     whatsapp: "+44 7706 413233",
@@ -90,7 +90,7 @@ export default function ContactWorldMap({ onSelectLocation }) {
         <div className="space-y-1">
           <div className="flex items-center gap-2 text-xs font-mono font-bold tracking-wider uppercase text-[#334DAF] dark:text-[#7096D1]">
             <Globe2 className="w-4 h-4 text-[#334DAF] dark:text-[#7096D1]" />
-            <span>GLOBAL ADVISORY PRESENCE & RESIDENT DESKS</span>
+            <span>GLOBAL ADVISORY PRESENCE & REGIONAL OFFICES</span>
           </div>
           <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
             Operational Locations: United Kingdom, Italy & Pakistan
@@ -128,7 +128,7 @@ export default function ContactWorldMap({ onSelectLocation }) {
           <div className="flex items-center justify-between text-[11px] font-mono text-blue-200/70 mb-2">
             <span className="flex items-center gap-1.5">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              GLOBAL SURVEILLANCE RADAR: 3 ACTIVE DESKS
+              GLOBAL COMPLIANCE RADAR: 3 ACTIVE LOCATIONS
             </span>
             <span>PROJECTION: MERCATOR</span>
           </div>
@@ -186,18 +186,18 @@ export default function ContactWorldMap({ onSelectLocation }) {
             <div className="flex items-center gap-4">
               <span className="flex items-center gap-1.5">
                 <span className="w-2.5 h-2.5 rounded-full bg-sky-400" />
-                <span>UK Desk</span>
+                <span>United Kingdom</span>
               </span>
               <span className="flex items-center gap-1.5">
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-400" />
-                <span>Italy Desk</span>
+                <span>Italy</span>
               </span>
               <span className="flex items-center gap-1.5">
                 <span className="w-2.5 h-2.5 rounded-full bg-amber-400" />
-                <span>Pakistan Hub</span>
+                <span>Pakistan</span>
               </span>
             </div>
-            <span className="text-[11px] text-blue-300/70">Click pin or card to view desk details</span>
+            <span className="text-[11px] text-blue-300/70">Click pin or card to view location details</span>
           </div>
         </div>
 
@@ -252,7 +252,7 @@ export default function ContactWorldMap({ onSelectLocation }) {
               >
                 <div className="flex items-center gap-2.5">
                   <Mail className="w-4 h-4 text-blue-300" />
-                  <span>Email Desk: <strong>{selectedLocation.email}</strong></span>
+                  <span>Email: <strong>{selectedLocation.email}</strong></span>
                 </div>
                 <ArrowRight className="w-3.5 h-3.5 text-blue-300" />
               </a>

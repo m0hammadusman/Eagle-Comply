@@ -56,7 +56,7 @@ export default function Footer({ onNavigate }) {
           <div className="flex items-center gap-2">
             <Globe2 className="w-3.5 h-3.5 text-sky-400 shrink-0" />
             <span className="text-[11px] font-mono font-bold tracking-wider uppercase text-blue-200">
-              Operational Locations & Desks:
+              Operational Locations & Presence:
             </span>
           </div>
           <div className="flex flex-wrap items-center gap-2 text-xs font-medium text-white">
@@ -117,7 +117,7 @@ export default function Footer({ onNavigate }) {
                 className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#1E3778]/80 hover:bg-[#1E3778] text-white text-[10.5px] font-medium border border-blue-400/25 transition-colors"
               >
                 <Mail className="w-3 h-3 text-blue-300" />
-                <span>Email Desk</span>
+                <span>Email Us</span>
               </a>
               <a
                 href="https://www.linkedin.com/company/eaglecomply/?viewAsMember=true"
@@ -131,7 +131,7 @@ export default function Footer({ onNavigate }) {
             </div>
             <div className="pt-1 text-[10.5px] font-mono text-emerald-400 flex items-center gap-1 font-bold">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-              UK • Italy • Pakistan Desks
+              UK • Italy • Pakistan
             </div>
           </div>
 

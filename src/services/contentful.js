@@ -167,7 +167,7 @@ export const fallbackNews = [
     excerpt: 'The EBA has published final technical standards outlining suitability requirements for management bodies, internal controls, and conflict-of-interest policies for CASP operators.',
     coverImage: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1200&q=80',
     author: {
-      name: 'EagleComply Regulatory Intelligence Desk',
+      name: 'EagleComply Regulatory Intelligence Team',
       role: 'Supervisory Dispatch',
       avatar: `${import.meta.env.BASE_URL}logo-light.png`
     },
@@ -191,7 +191,7 @@ export const fallbackNews = [
     excerpt: 'The UK FCA and Bank of England have announced an expanded cohort for the Digital Securities Sandbox (DSS), enabling institutions to test DLT in trading and settlement.',
     coverImage: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80',
     author: {
-      name: 'EagleComply UK Regulatory Desk',
+      name: 'EagleComply UK Regulatory Team',
       role: 'London Dispatch',
       avatar: `${import.meta.env.BASE_URL}logo-light.png`
     },

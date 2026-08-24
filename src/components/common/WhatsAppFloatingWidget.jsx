@@ -31,7 +31,7 @@ export default function WhatsAppFloatingWidget() {
           </div>
 
           <p className="text-[11px] text-blue-100/80 leading-relaxed">
-            Directly message our resident regulatory and AML/CFT compliance desks on WhatsApp:
+            Directly message our resident regulatory and AML/CFT compliance team on WhatsApp:
           </p>
 
           <div className="space-y-2.5">
@@ -44,7 +44,7 @@ export default function WhatsAppFloatingWidget() {
               <div className="flex items-center gap-2.5">
                 <span className="text-base">🇬🇧</span>
                 <div className="text-left">
-                  <div className="text-xs font-bold">UK & Global Desk</div>
+                  <div className="text-xs font-bold">UK & Global Practice</div>
                   <div className="text-[10px] font-mono opacity-90">+44 7706 413233</div>
                 </div>
               </div>
@@ -60,7 +60,7 @@ export default function WhatsAppFloatingWidget() {
               <div className="flex items-center gap-2.5">
                 <span className="text-base">🇮🇹</span>
                 <div className="text-left">
-                  <div className="text-xs font-bold">Italy & EU Desk</div>
+                  <div className="text-xs font-bold">Italy & EU Practice</div>
                   <div className="text-[10px] font-mono opacity-90">+39 348 818 4787</div>
                 </div>
               </div>
@@ -80,7 +80,7 @@ export default function WhatsAppFloatingWidget() {
       <button
         onClick={() => setIsOpen(v => !v)}
         className="w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white shadow-xl hover:shadow-2xl hover:scale-105 active:scale-95 transition-all flex items-center justify-center border-2 border-white/30 relative group focus:outline-none cursor-pointer"
-        title="Chat on WhatsApp (UK and Italy Desks)"
+        title="Chat on WhatsApp (UK and Italy)"
         aria-label="WhatsApp Contact"
       >
         <WhatsAppIcon className="w-7 h-7 sm:w-8 sm:h-8 fill-white" />

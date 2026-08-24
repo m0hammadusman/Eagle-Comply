@@ -170,7 +170,7 @@ export default function SearchModal({ isOpen, onClose, onNavigate }) {
               {(filter === 'all' || filter === 'countries') && results.countries.length > 0 && (
                 <div className="space-y-2">
                   <div className="text-[11px] font-mono font-bold uppercase tracking-widest text-[#334DAF] dark:text-[#7096D1] flex items-center gap-1.5">
-                    <Globe2 className="w-3.5 h-3.5" /> Country & Jurisdiction Desks ({results.countries.length})
+                    <Globe2 className="w-3.5 h-3.5" /> Countries & Jurisdictions ({results.countries.length})
                   </div>
                   <div className="grid gap-2">
                     {results.countries.map(c => (

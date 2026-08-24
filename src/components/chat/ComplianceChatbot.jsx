@@ -238,7 +238,7 @@ export default function ComplianceChatbot({ onNavigate, onOpenConsultation, onOp
     // 7. Contact & Consultation Inquiries
     if (/contact|email|phone|whatsapp|book|meeting|consultation|call|reach|talk/i.test(q)) {
       return {
-        text: "You can easily connect directly with EagleComply:\n\n• **Email**: info@eaglecomply.com\n• **UK & Global Desk (WhatsApp)**: +44 7706 413233\n• **Italy & EU Desk (WhatsApp)**: +39 348 818 4787\n• **Direct Video Consultation**: You can book a consultation with our resident directors and counsel right here.",
+        text: "You can easily connect directly with EagleComply:\n\n• **Email**: info@eaglecomply.com\n• **UK & Global (WhatsApp)**: +44 7706 413233\n• **Italy & EU (WhatsApp)**: +39 348 818 4787\n• **Direct Video Consultation**: You can book a consultation with our resident directors and counsel right here.",
         actions: [
           { label: 'Book a Consultation', action: 'consultation' }
         ]

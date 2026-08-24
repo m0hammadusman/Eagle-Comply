@@ -77,7 +77,7 @@ export default function CountryDetailPage({ params, onNavigate, onOpenConsultati
         <div className="space-y-8">
           <div className="p-6 rounded-3xl glass-panel border border-surface-border shadow-md space-y-4">
             <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#334DAF] dark:text-[#7096D1]">
-              {detailCommon?.residentDesk || 'Resident Regional Desk'}
+              {detailCommon?.residentDesk || 'Regional Regulatory Office'}
             </span>
             <div className="flex items-center gap-3">
               <Building2 className="w-5 h-5 text-[#334DAF] dark:text-[#7096D1]" />

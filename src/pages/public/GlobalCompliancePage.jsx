@@ -51,10 +51,10 @@ export default function GlobalCompliancePage({ onNavigate }) {
           <span>{t.globalPage?.tag || 'Cross-Border Supervisory Directory'}</span>
         </div>
         <h1 className="font-sans tracking-tight text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white">
-          {t.globalPage?.title || 'Global Compliance & Country Desks'}
+          {t.globalPage?.title || 'Global Compliance & Jurisdiction Directory'}
         </h1>
         <p className="text-base text-slate-600 dark:text-slate-300 max-w-3xl mx-auto leading-relaxed">
-          {t.globalPage?.subtitle || 'Comprehensive statutory dossiers, competent national authorities, and dedicated advisory desks across 45+ supervised jurisdictions.'}
+          {t.globalPage?.subtitle || 'Comprehensive statutory dossiers, competent national authorities, and dedicated advisory coverage across 45+ supervised jurisdictions.'}
         </p>
 
         {/* Search & Region Filter Bar */}

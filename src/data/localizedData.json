@@ -7,7 +7,7 @@
       "uptime": "99.98% Telemetry Uptime",
       "selectJurisdiction": "Select Jurisdiction",
       "supervisoryRegulators": "Supervisory Regulators",
-      "residentDesk": "Resident Desk",
+      "residentDesk": "Regional Office",
       "inspectDossier": "Inspect {name} Dossier",
       "activeJurisdiction": "ACTIVE FULL JURISDICTION"
     },
@@ -45,7 +45,7 @@
         "sub": "Double Materiality Disclosures"
       },
       {
-        "title": "DUBAI VARA & ADGM DESKS",
+        "title": "DUBAI VARA & ADGM PRACTICE",
         "sub": "Virtual Asset Rulebook Matrices"
       },
       {
@@ -459,7 +459,7 @@
       {
         "year": "2021",
         "title": "Global Practice Expansion",
-        "desc": "Opened resident advisory desks in Washington D.C., Dubai DIFC, and Singapore."
+        "desc": "Opened regional advisory offices in Washington D.C., Dubai DIFC, and Singapore."
       },
       {
         "year": "2023",
@@ -490,7 +490,7 @@
         "lead": "EU Regulatory Affairs"
       },
       {
-        "name": "Washington D.C. Desk",
+        "name": "Washington D.C. Office",
         "city": "Washington, D.C.",
         "address": "1200 K Street NW, Washington, DC 20005",
         "phone": "+1 202 555 0178",
@@ -506,7 +506,7 @@
         "lead": "Middle East & Virtual Assets"
       },
       {
-        "name": "Singapore APAC Desk",
+        "name": "Singapore APAC Office",
         "city": "Singapore",
         "address": "10 Collyer Quay, Ocean Financial Centre",
         "phone": "+65 6812 8900",
@@ -514,7 +514,7 @@
         "lead": "Asia-Pacific Practice"
       },
       {
-        "name": "Tokyo Japan Desk",
+        "name": "Tokyo Japan Office",
         "city": "Tokyo",
         "address": "Marunouchi Park Building, Chiyoda-ku",
         "phone": "+81 3 5219 8000",
@@ -535,7 +535,7 @@
       "requestQuote": "Request SOW Estimate",
       "inspectDossier": "Inspect Regulatory Dossier",
       "regulators": "Competent Supervisory Authorities",
-      "residentDesk": "Resident Regional Desk",
+      "residentDesk": "Regional Regulatory Office",
       "keySectors": "Priority Supervised Sectors",
       "status": "Supervisory Status",
       "capital": "Regulatory Capital / Center",
@@ -567,7 +567,7 @@
       "uptime": "Disponibilité Télémétrique 99,98%",
       "selectJurisdiction": "Sélectionner la Juridiction",
       "supervisoryRegulators": "Autorités de Surveillance",
-      "residentDesk": "Bureau Résident",
+      "residentDesk": "Bureau Regional",
       "inspectDossier": "Consulter le Dossier {name}",
       "activeJurisdiction": "JURIDICTION COMPLÈTE ACTIVE"
     },
@@ -1095,7 +1095,7 @@
       "requestQuote": "Demander une Estimation SOW",
       "inspectDossier": "Examiner le Dossier Réglementaire",
       "regulators": "Autorités de Surveillance Compétentes",
-      "residentDesk": "Bureau Régional Résident",
+      "residentDesk": "Bureau Regional",
       "keySectors": "Secteurs Supervisés Prioritaires",
       "status": "Statut de Surveillance",
       "capital": "Capitale / Centre Réglementaire",
@@ -1127,7 +1127,7 @@
       "uptime": "99,98% Telemetrie-Betriebszeit",
       "selectJurisdiction": "Jurisdiktion Auswählen",
       "supervisoryRegulators": "Aufsichtsbehörden",
-      "residentDesk": "Resident Desk",
+      "residentDesk": "Regional Office",
       "inspectDossier": "Dossier für {name} Prüfen",
       "activeJurisdiction": "AKTIVE VOLLSTÄNDIGE JURISDIKTION"
     },
@@ -1165,7 +1165,7 @@
         "sub": "Doppelte Wesentlichkeitsoffenlegungen"
       },
       {
-        "title": "DUBAI VARA & ADGM DESKS",
+        "title": "DUBAI VARA & ADGM PRACTICE",
         "sub": "Regelwerk-Matrizen für Virtuelle Vermögenswerte"
       },
       {
@@ -1206,7 +1206,7 @@
         "badge": "Judikative Präzision",
         "title": "Grenzüberschreitende Regulierungsverteidigung",
         "subtitle": "Harmonisierte Rechtsberatung über EU-Richtlinien, US-Bundesdurchsetzung, UK FCA und Schweizer FINMA-Standards.",
-        "statLabel": "Aufsichtsdesks",
+        "statLabel": "Aufsichtsstandorte",
         "statValue": "45+ Jurisdiktionen"
       },
       {
@@ -1610,7 +1610,7 @@
         "lead": "EU-Regulierungsangelegenheiten"
       },
       {
-        "name": "Desk Washington D.C.",
+        "name": "Office Washington D.C.",
         "city": "Washington, D.C.",
         "address": "1200 K Street NW, Washington, DC 20005",
         "phone": "+1 202 555 0178",
@@ -1626,7 +1626,7 @@
         "lead": "Naher Osten & Virtuelle Vermögenswerte"
       },
       {
-        "name": "Desk Singapur APAC",
+        "name": "Office Singapur APAC",
         "city": "Singapur",
         "address": "10 Collyer Quay, Ocean Financial Centre",
         "phone": "+65 6812 8900",
@@ -1634,7 +1634,7 @@
         "lead": "Asien-Pazifik-Praxis"
       },
       {
-        "name": "Desk Tokio Japan",
+        "name": "Office Tokio Japan",
         "city": "Tokio",
         "address": "Marunouchi Park Building, Chiyoda-ku",
         "phone": "+81 3 5219 8000",
@@ -1655,7 +1655,7 @@
       "requestQuote": "SOW-Kostenschätzung Anfordern",
       "inspectDossier": "Behördendossier Prüfen",
       "regulators": "Zuständige Aufsichtsbehörden",
-      "residentDesk": "Regionales Resident Desk",
+      "residentDesk": "Regionales Beratungsbuero",
       "keySectors": "Prioritäre Aufsichtssektoren",
       "status": "Aufsichtsstatus",
       "capital": "Regulatorische Hauptstadt / Zentrum",
@@ -1687,7 +1687,7 @@
       "uptime": "Disponibilidad Telemétrica 99.98%",
       "selectJurisdiction": "Seleccionar Jurisdicción",
       "supervisoryRegulators": "Autoridades de Supervisión",
-      "residentDesk": "Mesa Residente",
+      "residentDesk": "Sede Regional",
       "inspectDossier": "Inspeccionar Expediente de {name}",
       "activeJurisdiction": "JURISDICCIÓN COMPLETA ACTIVA"
     },
@@ -2170,7 +2170,7 @@
         "lead": "EU-Regulierungsangelegenheiten"
       },
       {
-        "name": "Desk Washington D.C.",
+        "name": "Office Washington D.C.",
         "city": "Washington, D.C.",
         "address": "1200 K Street NW, Washington, DC 20005",
         "phone": "+1 202 555 0178",
@@ -2186,7 +2186,7 @@
         "lead": "Naher Osten & Virtuelle Vermögenswerte"
       },
       {
-        "name": "Desk Singapur APAC",
+        "name": "Office Singapur APAC",
         "city": "Singapur",
         "address": "10 Collyer Quay, Ocean Financial Centre",
         "phone": "+65 6812 8900",
@@ -2194,7 +2194,7 @@
         "lead": "Asien-Pazifik-Praxis"
       },
       {
-        "name": "Desk Tokio Japan",
+        "name": "Office Tokio Japan",
         "city": "Tokio",
         "address": "Marunouchi Park Building, Chiyoda-ku",
         "phone": "+81 3 5219 8000",
@@ -2215,7 +2215,7 @@
       "requestQuote": "Solicitar Estimación SOW",
       "inspectDossier": "Examinar Expediente Regulatorio",
       "regulators": "Autoridades Supervisoras Competentes",
-      "residentDesk": "Mesa Regional Residente",
+      "residentDesk": "Sede Regional",
       "keySectors": "Sectores Supervisados Prioritarios",
       "status": "Estado de Supervisión",
       "capital": "Centro / Capital Regulatoria",
@@ -2247,7 +2247,7 @@
       "uptime": "Disponibilità Telemetrica 99,98%",
       "selectJurisdiction": "Seleziona Giurisdizione",
       "supervisoryRegulators": "Autorità di Vigilanza",
-      "residentDesk": "Desk Residente",
+      "residentDesk": "Sede Regionale",
       "inspectDossier": "Ispeziona Dossier {name}",
       "activeJurisdiction": "GIURISDIZIONE COMPLETA ATTIVA"
     },
@@ -2285,7 +2285,7 @@
         "sub": "Informativa Doppia Rilevanza"
       },
       {
-        "title": "DESK DUBAI VARA & ADGM",
+        "title": "PRACTICE DUBAI VARA & ADGM",
         "sub": "Matrici di Regole per Asset Virtuali"
       },
       {
@@ -2326,7 +2326,7 @@
         "badge": "Precisione Giudiziaria",
         "title": "Difesa Normativa Transfrontaliera",
         "subtitle": "Consulenza legale armonizzata su direttive UE, applicazione federale USA, FCA britannica e standard FINMA svizzera.",
-        "statLabel": "Desk di Vigilanza",
+        "statLabel": "Sedi di Vigilanza",
         "statValue": "Oltre 45 Giurisdizioni"
       },
       {
@@ -2730,7 +2730,7 @@
         "lead": "EU-Regulierungsangelegenheiten"
       },
       {
-        "name": "Desk Washington D.C.",
+        "name": "Office Washington D.C.",
         "city": "Washington, D.C.",
         "address": "1200 K Street NW, Washington, DC 20005",
         "phone": "+1 202 555 0178",
@@ -2746,7 +2746,7 @@
         "lead": "Naher Osten & Virtuelle Vermögenswerte"
       },
       {
-        "name": "Desk Singapur APAC",
+        "name": "Office Singapur APAC",
         "city": "Singapur",
         "address": "10 Collyer Quay, Ocean Financial Centre",
         "phone": "+65 6812 8900",
@@ -2754,7 +2754,7 @@
         "lead": "Asien-Pazifik-Praxis"
       },
       {
-        "name": "Desk Tokio Japan",
+        "name": "Office Tokio Japan",
         "city": "Tokio",
         "address": "Marunouchi Park Building, Chiyoda-ku",
         "phone": "+81 3 5219 8000",
@@ -2775,7 +2775,7 @@
       "requestQuote": "Solicitar Estimación SOW",
       "inspectDossier": "Examinar Expediente Regulatorio",
       "regulators": "Autoridades Supervisoras Competentes",
-      "residentDesk": "Mesa Regional Residente",
+      "residentDesk": "Sede Regional",
       "keySectors": "Sectores Supervisados Prioritarios",
       "status": "Estado de Supervisión",
       "capital": "Centro / Capital Regulatoria",
@@ -2807,7 +2807,7 @@
       "uptime": "99,98% Disponibilidade Telemétrica",
       "selectJurisdiction": "Selecionar Jurisdição",
       "supervisoryRegulators": "Autoridades de Supervisão",
-      "residentDesk": "Mesa Residente",
+      "residentDesk": "Sede Regional",
       "inspectDossier": "Inspecionar Dossiê de {name}",
       "activeJurisdiction": "JURISDIÇÃO INTEGRAL ATIVA"
     },
@@ -3290,7 +3290,7 @@
         "lead": "EU-Regulierungsangelegenheiten"
       },
       {
-        "name": "Desk Washington D.C.",
+        "name": "Office Washington D.C.",
         "city": "Washington, D.C.",
         "address": "1200 K Street NW, Washington, DC 20005",
         "phone": "+1 202 555 0178",
@@ -3306,7 +3306,7 @@
         "lead": "Naher Osten & Virtuelle Vermögenswerte"
       },
       {
-        "name": "Desk Singapur APAC",
+        "name": "Office Singapur APAC",
         "city": "Singapur",
         "address": "10 Collyer Quay, Ocean Financial Centre",
         "phone": "+65 6812 8900",
@@ -3314,7 +3314,7 @@
         "lead": "Asien-Pazifik-Praxis"
       },
       {
-        "name": "Desk Tokio Japan",
+        "name": "Office Tokio Japan",
         "city": "Tokio",
         "address": "Marunouchi Park Building, Chiyoda-ku",
         "phone": "+81 3 5219 8000",
@@ -3335,7 +3335,7 @@
       "requestQuote": "Solicitar Estimación SOW",
       "inspectDossier": "Examinar Expediente Regulatorio",
       "regulators": "Autoridades Supervisoras Competentes",
-      "residentDesk": "Mesa Regional Residente",
+      "residentDesk": "Sede Regional",
       "keySectors": "Sectores Supervisados Prioritarios",
       "status": "Estado de Supervisión",
       "capital": "Centro / Capital Regulatoria",
@@ -3850,7 +3850,7 @@
         "lead": "EU-Regulierungsangelegenheiten"
       },
       {
-        "name": "Desk Washington D.C.",
+        "name": "Office Washington D.C.",
         "city": "Washington, D.C.",
         "address": "1200 K Street NW, Washington, DC 20005",
         "phone": "+1 202 555 0178",
@@ -3866,7 +3866,7 @@
         "lead": "Naher Osten & Virtuelle Vermögenswerte"
       },
       {
-        "name": "Desk Singapur APAC",
+        "name": "Office Singapur APAC",
         "city": "Singapur",
         "address": "10 Collyer Quay, Ocean Financial Centre",
         "phone": "+65 6812 8900",
@@ -3874,7 +3874,7 @@
         "lead": "Asien-Pazifik-Praxis"
       },
       {
-        "name": "Desk Tokio Japan",
+        "name": "Office Tokio Japan",
         "city": "Tokio",
         "address": "Marunouchi Park Building, Chiyoda-ku",
         "phone": "+81 3 5219 8000",
@@ -3965,7 +3965,7 @@
         "sub": "Double Materiality Disclosures"
       },
       {
-        "title": "DUBAI VARA & ADGM DESKS",
+        "title": "DUBAI VARA & ADGM PRACTICE",
         "sub": "Virtual Asset Rulebook Matrices"
       },
       {
@@ -4410,7 +4410,7 @@
         "lead": "EU-Regulierungsangelegenheiten"
       },
       {
-        "name": "Desk Washington D.C.",
+        "name": "Office Washington D.C.",
         "city": "Washington, D.C.",
         "address": "1200 K Street NW, Washington, DC 20005",
         "phone": "+1 202 555 0178",
@@ -4426,7 +4426,7 @@
         "lead": "Naher Osten & Virtuelle Vermögenswerte"
       },
       {
-        "name": "Desk Singapur APAC",
+        "name": "Office Singapur APAC",
         "city": "Singapur",
         "address": "10 Collyer Quay, Ocean Financial Centre",
         "phone": "+65 6812 8900",
@@ -4434,7 +4434,7 @@
         "lead": "Asien-Pazifik-Praxis"
       },
       {
-        "name": "Desk Tokio Japan",
+        "name": "Office Tokio Japan",
         "city": "Tokio",
         "address": "Marunouchi Park Building, Chiyoda-ku",
         "phone": "+81 3 5219 8000",
@@ -4455,7 +4455,7 @@
       "requestQuote": "Request SOW Estimate",
       "inspectDossier": "Inspect Regulatory Dossier",
       "regulators": "Competent Supervisory Authorities",
-      "residentDesk": "Resident Regional Desk",
+      "residentDesk": "Regional Regulatory Office",
       "keySectors": "Priority Supervised Sectors",
       "status": "Supervisory Status",
       "capital": "Regulatory Capital / Center",
@@ -4525,7 +4525,7 @@
         "sub": "Double Materiality Disclosures"
       },
       {
-        "title": "DUBAI VARA & ADGM DESKS",
+        "title": "DUBAI VARA & ADGM PRACTICE",
         "sub": "Virtual Asset Rulebook Matrices"
       },
       {
@@ -4970,7 +4970,7 @@
         "lead": "EU-Regulierungsangelegenheiten"
       },
       {
-        "name": "Desk Washington D.C.",
+        "name": "Office Washington D.C.",
         "city": "Washington, D.C.",
         "address": "1200 K Street NW, Washington, DC 20005",
         "phone": "+1 202 555 0178",
@@ -4986,7 +4986,7 @@
         "lead": "Naher Osten & Virtuelle Vermögenswerte"
       },
       {
-        "name": "Desk Singapur APAC",
+        "name": "Office Singapur APAC",
         "city": "Singapur",
         "address": "10 Collyer Quay, Ocean Financial Centre",
         "phone": "+65 6812 8900",
@@ -4994,7 +4994,7 @@
         "lead": "Asien-Pazifik-Praxis"
       },
       {
-        "name": "Desk Tokio Japan",
+        "name": "Office Tokio Japan",
         "city": "Tokio",
         "address": "Marunouchi Park Building, Chiyoda-ku",
         "phone": "+81 3 5219 8000",
@@ -5015,7 +5015,7 @@
       "requestQuote": "Request SOW Estimate",
       "inspectDossier": "Inspect Regulatory Dossier",
       "regulators": "Competent Supervisory Authorities",
-      "residentDesk": "Resident Regional Desk",
+      "residentDesk": "Regional Regulatory Office",
       "keySectors": "Priority Supervised Sectors",
       "status": "Supervisory Status",
       "capital": "Regulatory Capital / Center",
@@ -5085,7 +5085,7 @@
         "sub": "Double Materiality Disclosures"
       },
       {
-        "title": "DUBAI VARA & ADGM DESKS",
+        "title": "DUBAI VARA & ADGM PRACTICE",
         "sub": "Virtual Asset Rulebook Matrices"
       },
       {
@@ -5530,7 +5530,7 @@
         "lead": "EU-Regulierungsangelegenheiten"
       },
       {
-        "name": "Desk Washington D.C.",
+        "name": "Office Washington D.C.",
         "city": "Washington, D.C.",
         "address": "1200 K Street NW, Washington, DC 20005",
         "phone": "+1 202 555 0178",
@@ -5546,7 +5546,7 @@
         "lead": "Naher Osten & Virtuelle Vermögenswerte"
       },
       {
-        "name": "Desk Singapur APAC",
+        "name": "Office Singapur APAC",
         "city": "Singapur",
         "address": "10 Collyer Quay, Ocean Financial Centre",
         "phone": "+65 6812 8900",
@@ -5554,7 +5554,7 @@
         "lead": "Asien-Pazifik-Praxis"
       },
       {
-        "name": "Desk Tokio Japan",
+        "name": "Office Tokio Japan",
         "city": "Tokio",
         "address": "Marunouchi Park Building, Chiyoda-ku",
         "phone": "+81 3 5219 8000",
@@ -5575,7 +5575,7 @@
       "requestQuote": "Request SOW Estimate",
       "inspectDossier": "Inspect Regulatory Dossier",
       "regulators": "Competent Supervisory Authorities",
-      "residentDesk": "Resident Regional Desk",
+      "residentDesk": "Regional Regulatory Office",
       "keySectors": "Priority Supervised Sectors",
       "status": "Supervisory Status",
       "capital": "Regulatory Capital / Center",

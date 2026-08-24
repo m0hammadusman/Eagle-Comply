@@ -77,7 +77,7 @@ export default function ContactPage({ onNavigate }) {
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-3">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#334DAF]/10 dark:bg-[#7096D1]/15 text-[#334DAF] dark:text-[#7096D1] text-xs font-mono font-bold tracking-wider uppercase border border-[#334DAF]/20 dark:border-[#7096D1]/30">
           <Building2 className="w-3.5 h-3.5" />
-          <span>EAGLECOMPLY CONSULTATION DESK</span>
+          <span>EAGLECOMPLY CONSULTATION & ADVISORY</span>
         </div>
         <h1 className="font-sans tracking-tight text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white">
           Discuss Your Compliance Requirements

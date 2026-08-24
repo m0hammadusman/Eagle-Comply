@@ -27,7 +27,7 @@ export default function LegalPage({ onNavigate, params }) {
       icon: Shield,
       summary: 'Standard contractual clauses and UK IDTA transfer mechanisms for cross-border regulatory advisory, scoping UK, EU, and international corridors.',
       content: [
-        'Cross-border transfers of regulatory documentation and personal data between UK, European Union, and international desks are safeguarded using approved transfer mechanisms.',
+        'Cross-border transfers of regulatory documentation and personal data between UK, European Union, and international offices are safeguarded using approved transfer mechanisms.',
         'Transfers utilize the UK International Data Transfer Addendum to the EU Standard Contractual Clauses (SCCs) and UK IDTA frameworks.',
         'Transfer Risk Assessments (TRAs) are conducted to ensure destination jurisdiction legal protections are adequate and compatible with UK and EU data privacy regimes.'
       ]

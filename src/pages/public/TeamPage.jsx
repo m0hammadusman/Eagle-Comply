@@ -119,7 +119,7 @@ export default function TeamPage({ onNavigate, onOpenConsultation }) {
                       </p>
                       <div className="flex items-center gap-1.5 text-[11px] font-mono text-slate-500">
                         <MapPin className="w-3 h-3" />
-                        <span>{exp.location || 'Global Practice Desk'}</span>
+                        <span>{exp.location || 'Global Practice'}</span>
                       </div>
                     </div>
                   </div>

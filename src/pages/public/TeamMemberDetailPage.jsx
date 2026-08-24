@@ -195,7 +195,7 @@ export default function TeamMemberDetailPage({ params, onNavigate, onOpenConsult
             <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-[#091F5C] via-[#16295C] to-[#334DAF] text-white shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="space-y-2 text-center md:text-left">
                 <span className="text-xs font-mono uppercase tracking-widest text-blue-200 font-bold inline-block px-3 py-1 rounded-full bg-white/10 border border-white/20">
-                  DIRECT ADVISORY DESK
+                  DIRECT ADVISORY & CONSULTATION
                 </span>
                 <h3 className="text-2xl font-bold text-white">
                   Consult with {member.name}
