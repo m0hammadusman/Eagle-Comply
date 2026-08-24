@@ -274,7 +274,7 @@ export default function ArticleDetailPage({ params, onNavigate, onOpenConsultati
 
             <button
               onClick={() => onOpenConsultation?.()}
-              className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#FDE68A] via-[#D4AF37] to-[#B8860B] text-[#091F5C] font-extrabold text-xs shadow-md hover:shadow-lg hover:scale-105 transition-all cursor-pointer whitespace-nowrap"
+              className="px-5 py-2.5 rounded-xl bg-[#091F5C] dark:bg-[#334DAF] hover:bg-[#1E3778] dark:hover:bg-[#253982] text-white font-bold text-xs shadow-md hover:shadow-lg transition-all cursor-pointer whitespace-nowrap"
             >
               Book a Consultation
             </button>
