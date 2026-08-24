@@ -48,7 +48,6 @@ import LegalPage from './pages/public/LegalPage';
 // Portals
 import CustomerPortal from './pages/portals/CustomerPortal';
 import ConsultantPortal from './pages/portals/ConsultantPortal';
-import AdminPlatform from './pages/portals/AdminPlatform';
 
 function AppContent() {
   const [isLoading, setIsLoading] = useState(true);
@@ -71,7 +70,7 @@ function AppContent() {
     const direct = {
       about:'about', contact:'contact', resources:'knowledge-center', 'knowledge-center':'knowledge-center',
       experts:'experts', 'case-studies':'case-studies', careers:'careers', legal:'legal',
-      'global-compliance':'global-compliance', portal:'portal', consultant:'consultant', admin:'admin'
+      'global-compliance':'global-compliance', portal:'portal', consultant:'consultant'
     };
     return { route: direct[section] || 'home', params: null };
   };
@@ -99,7 +98,7 @@ function AppContent() {
       insights: '/insights/', 'article-detail': `/insights/${id || ''}`,
       'knowledge-center': '/resources/', experts: '/experts/', 'case-studies': '/case-studies/',
       careers: '/careers/', contact: '/contact/', legal: '/legal/', portal: '/portal/',
-      consultant: '/consultant/', admin: '/admin/'
+      consultant: '/consultant/'
     };
     const path = map[route] || '/';
     const baseUrl = import.meta.env.BASE_URL || '/';
@@ -275,11 +274,8 @@ function AppContent() {
           {currentRoute === 'consultant' && (
             <ConsultantPortal onNavigate={navigate} />
           )}
-          {currentRoute === 'admin' && (
-            <AdminPlatform onNavigate={navigate} />
-          )}
           {/* Extended interactive experience on specific service/industry/regulatory pages */}
-          {!['home', 'portal', 'consultant', 'admin', 'team', 'team-detail', 'experts', 'expert-detail', 'blogs', 'news', 'contact', 'faqs', 'faq'].includes(currentRoute) && (
+          {!['home', 'portal', 'consultant', 'team', 'team-detail', 'experts', 'expert-detail', 'blogs', 'news', 'contact', 'faqs', 'faq'].includes(currentRoute) && (
             <PageEnhancements
               route={currentRoute}
               onNavigate={navigate}

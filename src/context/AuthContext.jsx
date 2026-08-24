@@ -5,8 +5,7 @@ const AuthContext = createContext();
 export const ROLES = {
   VISITOR: 'visitor',
   CUSTOMER: 'customer',
-  CONSULTANT: 'consultant',
-  ADMIN: 'admin'
+  CONSULTANT: 'consultant'
 };
 
 const userProfiles = {
@@ -30,16 +29,6 @@ const userProfiles = {
     email: 'e.vance@eaglecompliance.com',
     avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80',
     specialisms: ['EU AI Act', 'ISO 42001', 'TLPT']
-  },
-  admin: {
-    id: 'ADM-001',
-    name: 'Victoria Hawthorne',
-    role: 'admin',
-    organization: 'Eagle Compliance Operations & Technology',
-    title: 'Principal Compliance Architect & System Administrator',
-    email: 'v.hawthorne@eaglecompliance.com',
-    avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&q=80',
-    permissions: ['all']
   }
 };
 
