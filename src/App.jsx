@@ -280,7 +280,7 @@ function AppContent() {
             <ConsultantPortal onNavigate={navigate} />
           )}
           {/* Extended interactive experience on specific service/industry/regulatory pages */}
-          {!['home', 'portal', 'consultant', 'team', 'team-detail', 'experts', 'expert-detail', 'blogs', 'news', 'contact', 'faqs', 'faq'].includes(currentRoute) && (
+          {!['home', 'portal', 'consultant', 'team', 'team-detail', 'experts', 'expert-detail', 'blogs', 'news', 'article-detail', 'insights', 'contact', 'faqs', 'faq'].includes(currentRoute) && (
             <PageEnhancements
               route={currentRoute}
               onNavigate={navigate}
