@@ -149,34 +149,34 @@ export default function ConsultationModal({ isOpen, onClose }) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80 backdrop-blur-md" onClick={close}>
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/80 backdrop-blur-md overflow-y-auto" onClick={close}>
       <div 
-        className={`w-full ${bookingMode === 'cal' ? 'max-w-4xl' : 'max-w-xl'} flex flex-col bg-surface-raised border border-surface-border rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden transition-all duration-300`} 
+        className={`w-full ${bookingMode === 'cal' ? 'max-w-3xl' : 'max-w-xl'} max-h-[88vh] flex flex-col bg-surface-raised border border-surface-border rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden my-auto transition-all duration-300`} 
         onClick={e => e.stopPropagation()}
       >
-        {/* Sticky Modal Header (Close button always visible) */}
-        <div className="shrink-0 px-4 sm:px-5 py-3 sm:py-3.5 bg-surface-subtle border-b border-surface-border flex items-center justify-between z-10">
-          <div className="flex items-center gap-3 min-w-0">
-            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-[#334DAF]/10 text-[#334DAF] dark:text-[#7096D1] flex items-center justify-center shrink-0">
-              <CalendarDays className="w-4 h-4 sm:w-5 sm:h-5" />
+        {/* Compact Modal Header (Close button always 100% visible) */}
+        <div className="shrink-0 px-4 sm:px-5 py-2.5 sm:py-3 bg-surface-subtle border-b border-surface-border flex items-center justify-between z-10">
+          <div className="flex items-center gap-2.5 min-w-0">
+            <div className="w-8 h-8 rounded-lg bg-[#334DAF]/10 text-[#334DAF] dark:text-[#7096D1] flex items-center justify-center shrink-0">
+              <CalendarDays className="w-4 h-4" />
             </div>
             <div className="min-w-0">
               <div className="flex items-center gap-2">
                 <h3 className="font-bold text-sm sm:text-base text-slate-900 dark:text-white truncate">
-                  {m.consultationTitle || 'Schedule Partner Consultation'}
+                  {m.consultationTitle || 'Book Partner Scoping Consultation'}
                 </h3>
                 <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 font-bold hidden sm:inline-block shrink-0">
                   Live Calendar
                 </span>
               </div>
-              <p className="text-[11px] sm:text-xs text-slate-500 truncate">
+              <p className="text-[11px] text-slate-500 truncate">
                 Direct consultation with EagleComply Senior Compliance Directors.
               </p>
             </div>
           </div>
           <button 
             onClick={close} 
-            className="p-1.5 sm:p-2 rounded-xl bg-surface-base hover:bg-surface-raised text-slate-500 hover:text-slate-900 dark:hover:text-white border border-surface-border transition-colors cursor-pointer shrink-0 ml-2"
+            className="p-1.5 sm:p-2 rounded-xl bg-surface-base hover:bg-slate-200 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white border border-surface-border transition-all cursor-pointer shrink-0 ml-2 shadow-xs"
             title="Close modal"
             aria-label="Close"
           >
@@ -185,7 +185,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
         </div>
 
         {/* Mode Selector Tabs */}
-        <div className="shrink-0 px-4 sm:px-5 py-2 border-b border-surface-border bg-surface-base flex flex-wrap items-center justify-between gap-2">
+        <div className="shrink-0 px-4 sm:px-5 py-1.5 border-b border-surface-border bg-surface-base flex flex-wrap items-center justify-between gap-2">
           <div className="flex items-center gap-2">
             <button
               onClick={() => setBookingMode('cal')}
@@ -224,12 +224,12 @@ export default function ConsultationModal({ isOpen, onClose }) {
           )}
         </div>
 
-        {/* Modal Body: Cal fits completely without scroll */}
-        <div className="p-3 sm:p-4">
+        {/* Modal Body: Compact Cal embed without scroll */}
+        <div className="p-3 sm:p-3.5">
           {bookingMode === 'cal' ? (
             /* Cal.com Live Interactive Embed */
             <div className="space-y-2">
-              <div className="w-full h-[400px] sm:h-[430px] md:h-[450px] rounded-xl sm:rounded-2xl overflow-hidden border border-[#1E3778]/50 bg-white dark:bg-[#101E42]">
+              <div className="w-full h-[360px] sm:h-[380px] rounded-xl overflow-hidden border border-[#1E3778]/50 bg-white dark:bg-[#101E42]">
                 <Cal
                   namespace="strategic-compliance-consultation"
                   calLink={calLink}
