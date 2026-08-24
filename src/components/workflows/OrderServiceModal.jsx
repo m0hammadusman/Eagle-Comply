@@ -36,31 +36,36 @@ export default function OrderServiceModal({ isOpen, onClose, preselectedResource
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-md animate-fade-in overflow-y-auto">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 md:p-6 bg-black/80 backdrop-blur-md animate-fade-in" onClick={onClose}>
       <div 
-        className="w-full max-w-xl bg-surface-raised border border-surface-border rounded-2xl shadow-2xl overflow-hidden my-8"
+        className="w-full max-w-xl max-h-[92vh] flex flex-col bg-surface-raised border border-surface-border rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden"
         onClick={e => e.stopPropagation()}
       >
-        <div className="p-6 bg-surface-subtle border-b border-surface-border flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-[#334DAF]/10 dark:bg-[#7096D1]/15 border border-[#334DAF]/20 dark:border-[#7096D1]/30 flex items-center justify-center text-[#334DAF] dark:text-[#7096D1]">
+        <div className="shrink-0 p-4 sm:p-5 bg-surface-subtle border-b border-surface-border flex items-center justify-between z-10">
+          <div className="flex items-center gap-3 min-w-0">
+            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#334DAF]/10 dark:bg-[#7096D1]/15 border border-[#334DAF]/20 dark:border-[#7096D1]/30 flex items-center justify-center text-[#334DAF] dark:text-[#7096D1] shrink-0">
               <ShoppingBag className="w-5 h-5" />
             </div>
-            <div>
-              <h3 className="font-sans tracking-tight text-lg font-bold text-slate-900 dark:text-white">
+            <div className="min-w-0">
+              <h3 className="font-sans tracking-tight text-base sm:text-lg font-bold text-slate-900 dark:text-white truncate">
                 {m.orderTitle || 'Compliance Toolkit & Dossier Ordering'}
               </h3>
-              <p className="text-xs text-slate-500 font-mono">
+              <p className="text-xs text-slate-500 truncate">
                 {m.orderSubtitle || 'Instant delivery of audit-tested regulatory packages'}
               </p>
             </div>
           </div>
-          <button onClick={onClose} className="p-2 rounded-lg text-slate-400 hover:text-slate-200">
+          <button 
+            onClick={onClose} 
+            className="p-2 rounded-xl bg-surface-base hover:bg-surface-raised text-slate-500 hover:text-slate-900 dark:hover:text-white border border-surface-border transition-colors cursor-pointer shrink-0 ml-2"
+            title="Close modal"
+            aria-label="Close"
+          >
             <X className="w-5 h-5" />
           </button>
         </div>
 
-        <div className="p-6">
+        <div className="flex-1 overflow-y-auto p-4 sm:p-6">
           {isSuccess ? (
             <div className="text-center py-6 space-y-4 animate-scale-in">
               <div className="w-16 h-16 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 flex items-center justify-center mx-auto shadow-lg">

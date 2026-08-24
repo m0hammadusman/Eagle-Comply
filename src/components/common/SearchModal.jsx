@@ -42,13 +42,13 @@ export default function SearchModal({ isOpen, onClose, onNavigate }) {
   );
 
   return (
-    <div className="fixed inset-0 z-50 flex items-start justify-center pt-20 px-4 bg-black/60 backdrop-blur-md animate-fade-in">
+    <div className="fixed inset-0 z-50 flex items-start justify-center pt-16 sm:pt-20 p-3 sm:p-4 bg-black/80 backdrop-blur-md animate-fade-in" onClick={onClose}>
       <div 
-        className="w-full max-w-3xl bg-surface-raised border border-surface-border rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[80vh]"
+        className="w-full max-w-3xl bg-surface-raised border border-surface-border rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[85vh]"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Search Header Input */}
-        <div className="p-4 border-b border-surface-border flex items-center gap-3 bg-surface-subtle">
+        <div className="p-4 sm:p-5 border-b border-surface-border flex items-center gap-3 bg-surface-subtle shrink-0">
           <Search className="w-5 h-5 text-[#334DAF] dark:text-[#7096D1] shrink-0" />
           <input
             type="text"
@@ -61,14 +61,16 @@ export default function SearchModal({ isOpen, onClose, onNavigate }) {
           {query && (
             <button 
               onClick={() => setQuery('')}
-              className="text-xs font-mono text-slate-400 hover:text-slate-200 px-2 py-1 bg-surface-base rounded"
+              className="text-xs font-mono text-slate-500 hover:text-slate-900 dark:hover:text-white px-2.5 py-1 bg-surface-base border border-surface-border rounded-lg cursor-pointer"
             >
               Clear
             </button>
           )}
           <button 
             onClick={onClose}
-            className="p-1 text-slate-400 hover:text-slate-600 dark:hover:text-white rounded-lg"
+            className="p-2 bg-surface-base hover:bg-surface-raised text-slate-500 hover:text-slate-900 dark:hover:text-white border border-surface-border rounded-xl transition-colors cursor-pointer shrink-0"
+            title="Close modal"
+            aria-label="Close"
           >
             <X className="w-5 h-5" />
           </button>
