@@ -20,18 +20,20 @@ import {
 import Cal, { getCalApi } from '@calcom/embed-react';
 import { useLanguage } from '../../context/LanguageContext';
 import { useData } from '../../context/DataContext';
+import { useTheme } from '../../context/ThemeContext';
 import { sendInquiryToCompanyEmail, generateMailtoLink, COMPANY_EMAIL, UK_WHATSAPP_LINK } from '../../utils/contactDispatcher';
 import { WhatsAppIcon } from '../common/ContactWorldMap';
 
 export default function ConsultationModal({ isOpen, onClose }) {
   const { t, solutions } = useLanguage();
   const { bookConsultation } = useData();
+  const { isDark } = useTheme();
   const [bookingMode, setBookingMode] = useState('cal'); // 'cal' | 'custom'
   const [step, setStep] = useState(1);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [success, setSuccess] = useState(null);
 
-  const calLink = import.meta.env.VITE_CAL_LINK || 'mohammad-usman-4ezn1s';
+  const calLink = import.meta.env.VITE_CAL_LINK || 'mohammad-usman-4ezn1s/eagle-comply';
 
   const [form, setForm] = useState({
     serviceId: solutions?.[0]?.id || 'financial-crime-compliance',
@@ -50,13 +52,13 @@ export default function ConsultationModal({ isOpen, onClose }) {
   const minDate = useMemo(() => new Date().toISOString().slice(0, 10), []);
   const slots = ['09:00','10:30','12:00','14:00','15:30','17:00'];
 
-  // Initialize Cal.com styling
+  // Initialize Cal.com styling and reactive theme (Dark/Light)
   useEffect(() => {
     (async function () {
       try {
-        const cal = await getCalApi();
+        const cal = await getCalApi({ namespace: 'eagle-comply' });
         cal("ui", {
-          theme: "auto",
+          theme: isDark ? "dark" : "light",
           styles: { branding: { brandColor: "#334DAF" } },
           hideEventTypeDetails: false,
           layout: "month_view"
@@ -65,7 +67,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
         console.error("Cal.com initialization notice:", err);
       }
     })();
-  }, []);
+  }, [isDark]);
 
   if (!isOpen) return null;
 
@@ -179,7 +181,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
 
           {bookingMode === 'cal' && (
             <a
-              href={`https://cal.com/${calLink}`}
+              href={`https://app.cal.com/${calLink}`}
               target="_blank"
               rel="noopener noreferrer"
               className="text-[11px] font-mono text-[#334DAF] dark:text-[#7096D1] hover:underline flex items-center gap-1 shrink-0"
@@ -197,11 +199,13 @@ export default function ConsultationModal({ isOpen, onClose }) {
             <div className="space-y-3">
               <div className="w-full h-[580px] sm:h-[620px] rounded-2xl overflow-hidden border border-surface-border bg-white dark:bg-slate-950">
                 <Cal
+                  namespace="eagle-comply"
                   calLink={calLink}
                   style={{ width: "100%", height: "100%", overflow: "auto" }}
                   config={{ 
                     layout: 'month_view',
-                    theme: 'auto'
+                    theme: isDark ? 'dark' : 'light',
+                    useSlotsViewOnSmallScreen: true
                   }}
                 />
               </div>

@@ -21,6 +21,20 @@ export function ThemeProvider({ children }) {
       } else {
         document.documentElement.classList.remove('dark');
       }
+
+      // Sync Cal.com embed theme dynamically
+      if (typeof window !== 'undefined' && window.Cal && window.Cal.ns && window.Cal.ns["eagle-comply"]) {
+        try {
+          window.Cal.ns["eagle-comply"]("ui", {
+            theme: dark ? "dark" : "light",
+            styles: { branding: { brandColor: "#334DAF" } },
+            hideEventTypeDetails: false,
+            layout: "month_view"
+          });
+        } catch (e) {
+          // Cal not yet initialized or ready
+        }
+      }
     }
     applyTheme();
 

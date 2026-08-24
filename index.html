@@ -32,6 +32,24 @@
       ]
     }
     </script>
+    <!-- Cal element-click embed code begins -->
+    <script type="text/javascript">
+      (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+      Cal("init", "eagle-comply", {origin:"https://app.cal.com"});
+      Cal.config = Cal.config || {};
+      Cal.config.forwardQueryParams = true;
+
+      const isDarkCal = document.documentElement.classList.contains("dark") || (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches);
+      Cal.ns["eagle-comply"]("ui", {
+        "hideEventTypeDetails": false,
+        "layout": "month_view",
+        "theme": isDarkCal ? "dark" : "light",
+        "styles": {
+          "branding": { "brandColor": "#334DAF" }
+        }
+      });
+    </script>
+    <!-- Cal element-click embed code ends -->
   </head>
   <body class="bg-surface-base text-[#091F5C] dark:text-[#F9FBFF] min-h-screen antialiased selection:bg-[#334DAF] selection:text-[#FFFFFF] font-sans">
     <div id="root"></div>
