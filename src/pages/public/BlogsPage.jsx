@@ -152,7 +152,7 @@ export default function BlogsPage({ onNavigate }) {
                       <img
                         src={featuredPost.author.avatar}
                         alt={featuredPost.author.name}
-                        className="w-8 h-8 rounded-full object-cover border border-surface-border shrink-0"
+                        className="w-8 h-8 rounded-full object-cover object-top border border-surface-border shrink-0"
                       />
                     )}
                     <div>
@@ -222,7 +222,7 @@ export default function BlogsPage({ onNavigate }) {
                           <img
                             src={post.author.avatar}
                             alt={post.author.name}
-                            className="w-6 h-6 rounded-full object-cover border border-surface-border shrink-0"
+                            className="w-6 h-6 rounded-full object-cover object-top border border-surface-border shrink-0"
                           />
                         )}
                         <span className="text-[11px] font-semibold text-slate-700 dark:text-slate-300 truncate max-w-[120px]">

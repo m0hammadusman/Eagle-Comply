@@ -186,7 +186,7 @@ export default function ArticleDetailPage({ params, onNavigate, onOpenConsultati
                 <img
                   src={article.author.avatar}
                   alt={article.author.name}
-                  className="w-11 h-11 rounded-full object-cover border-2 border-[#334DAF] dark:border-[#7096D1] shadow-xs shrink-0"
+                  className="w-11 h-11 rounded-full object-cover object-top border-2 border-[#334DAF] dark:border-[#7096D1] shadow-xs shrink-0"
                 />
               )}
               <div>
@@ -259,7 +259,7 @@ export default function ArticleDetailPage({ params, onNavigate, onOpenConsultati
                 <img
                   src={article.author.avatar}
                   alt={article.author.name}
-                  className="w-14 h-14 rounded-2xl object-cover border border-surface-border shadow-sm shrink-0"
+                  className="w-14 h-14 rounded-2xl object-cover object-top border border-surface-border shadow-sm shrink-0"
                 />
               )}
               <div>
