@@ -301,7 +301,7 @@ export default function Header({ onNavigate, currentRoute, onOpenSearch, onOpenC
             {/* Book Consultation CTA */}
             <button
               onClick={onOpenConsultation}
-              className="hidden md:inline-flex items-center gap-1.5 px-2.5 xl:px-4 py-1.5 xl:py-2 rounded-xl bg-gradient-to-r from-[#091F5C] to-[#334DAF] dark:from-[#334DAF] dark:to-[#7096D1] text-white dark:text-[#101E42] font-bold text-[11px] xl:text-xs shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all whitespace-nowrap shrink-0 ml-1"
+              className="hidden md:inline-flex items-center gap-1.5 px-3.5 xl:px-4 py-2 rounded-xl bg-[#334DAF] hover:bg-[#253982] text-white font-bold text-xs shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all whitespace-nowrap shrink-0 ml-1 cursor-pointer"
             >
               <Calendar className="w-3.5 h-3.5 shrink-0" />
               <span className="hidden lg:block whitespace-nowrap">{t.nav?.bookConsultation || 'Consultation'}</span>

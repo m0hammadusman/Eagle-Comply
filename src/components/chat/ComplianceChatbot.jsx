@@ -288,19 +288,19 @@ export default function ComplianceChatbot({ onNavigate, onOpenConsultation, onOp
 
   return (
     <>
-      {/* Horizontal Golden AI Assistant Floating Button - Lower Side */}
+      {/* Brand Aligned AI Assistant Floating Button */}
       <button 
         onClick={() => setOpen(v => !v)} 
-        className="fixed bottom-4 sm:bottom-6 right-4 sm:right-6 rtl:right-auto rtl:left-4 sm:rtl:left-6 z-40 px-4 py-2.5 sm:px-5 sm:py-3 rounded-full bg-gradient-to-r from-[#FDE68A] via-[#D4AF37] to-[#B8860B] text-[#091F5C] font-extrabold text-xs sm:text-sm shadow-xl hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-300 flex items-center gap-2.5 border-2 border-white/40 dark:border-amber-200/60 cursor-pointer group select-none backdrop-blur-sm" 
+        className="fixed bottom-4 sm:bottom-6 right-4 sm:right-6 rtl:right-auto rtl:left-4 sm:rtl:left-6 z-40 px-4 py-2.5 sm:px-5 sm:py-3 rounded-full bg-[#091F5C] hover:bg-[#152e75] dark:bg-[#101E42] dark:hover:bg-[#1c336b] text-white font-bold text-xs sm:text-sm shadow-xl hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-300 flex items-center gap-2.5 border-2 border-[#334DAF]/60 dark:border-[#7096D1]/50 cursor-pointer group select-none backdrop-blur-sm" 
         title={t.modals?.chatbotTitle || 'Eagle Regulatory Assistant'}
         aria-label="Open AI Assistant"
       >
         <span className="relative flex h-2.5 w-2.5 shrink-0">
-          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#091F5C] opacity-75"></span>
-          <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#091F5C]"></span>
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+          <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-cyan-400"></span>
         </span>
-        <MessageSquare className="w-4 h-4 text-[#091F5C] group-hover:scale-110 transition-transform shrink-0" />
-        <span className="font-extrabold tracking-wide text-[#091F5C] whitespace-nowrap">
+        <MessageSquare className="w-4 h-4 text-cyan-300 group-hover:scale-110 transition-transform shrink-0" />
+        <span className="font-bold tracking-wide text-white whitespace-nowrap">
           {t.modals?.chatButtonText || 'Ask AI Assistant'}
         </span>
       </button>

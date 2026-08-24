@@ -102,9 +102,9 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-full max-w-[700px] h-[300px] sm:h-[400px] bg-gradient-to-tr from-[#091F5C]/30 via-[#334DAF]/20 to-[#7096D1]/15 blur-3xl pointer-events-none rounded-full" />
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-[#334DAF]/10 dark:bg-[#7096D1]/15 border border-[#334DAF]/25 dark:border-[#7096D1]/30 text-[#091F5C] dark:text-[#D0E4FE] text-[10px] sm:text-xs font-mono font-bold tracking-wider uppercase mb-4 sm:mb-6 animate-fade-in shadow-sm max-w-full truncate">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#334DAF]/10 dark:bg-[#7096D1]/15 border border-[#334DAF]/25 dark:border-[#7096D1]/30 text-[#091F5C] dark:text-[#D0E4FE] text-xs font-semibold tracking-wide mb-4 sm:mb-6 animate-fade-in shadow-xs max-w-full truncate">
             <Sparkles className="w-3.5 h-3.5 text-[#334DAF] dark:text-[#7096D1] shrink-0" />
-            <span className="truncate">{t.hero.badge}</span>
+            <span className="truncate">{t.hero?.badge || 'AML · Regulatory · Risk · Legal Compliance'}</span>
           </div>
 
           <h1 className="font-sans text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#091F5C] dark:text-[#F9FBFF] max-w-4xl mx-auto leading-[1.15] mb-4 sm:mb-6">
@@ -121,7 +121,7 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 max-w-md mx-auto w-full px-2 sm:px-0">
             <button
               onClick={onOpenConsultation}
-              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-3.5 rounded-xl bg-gradient-to-r from-[#091F5C] to-[#334DAF] dark:from-[#334DAF] dark:to-[#7096D1] text-white dark:text-[#101E42] font-bold text-xs shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-[#334DAF] hover:bg-[#253982] text-white font-bold text-xs shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2 cursor-pointer"
             >
               <Calendar className="w-4 h-4" />
               <span>{t.nav.bookConsultation}</span>
@@ -129,7 +129,7 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
 
             <button
               onClick={() => onNavigate('solutions')}
-              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-3.5 rounded-xl glass-panel border border-surface-border text-[#091F5C] dark:text-white font-semibold text-xs hover:bg-surface-subtle transition-all flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-7 py-3.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white/80 dark:bg-slate-900/80 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-800 dark:text-slate-200 font-semibold text-xs transition-all flex items-center justify-center gap-2 cursor-pointer"
             >
               <span>{t.hero.quoteBtn}</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -286,13 +286,13 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 pt-2">
             <div>
-              <label className="block text-[11px] font-mono font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-2">
-                1. {hx.industry}
+              <label className="block text-xs font-semibold text-slate-800 dark:text-slate-200 mb-2">
+                1. {hx.industry || 'Industry Sector'}
               </label>
               <select
                 value={diagSector}
                 onChange={(e) => setDiagSector(e.target.value)}
-                className="w-full px-3 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#334DAF]"
+                className="w-full px-3.5 py-2.5 rounded-xl bg-surface-raised border border-surface-border text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#334DAF]"
               >
                 <option value="banking">{dx.banking}</option>
                 <option value="fintech">{dx.fintech}</option>
@@ -303,13 +303,13 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
             </div>
 
             <div>
-              <label className="block text-[11px] font-mono font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-2">
-                2. {hx.jurisdiction}
+              <label className="block text-xs font-semibold text-slate-800 dark:text-slate-200 mb-2">
+                2. {hx.jurisdiction || 'Primary Jurisdiction'}
               </label>
               <select
                 value={diagJurisdiction}
                 onChange={(e) => setDiagJurisdiction(e.target.value)}
-                className="w-full px-3 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#334DAF]"
+                className="w-full px-3.5 py-2.5 rounded-xl bg-surface-raised border border-surface-border text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#334DAF]"
               >
                 <option value="uk_eu">{dx.uk_eu}</option>
                 <option value="us">{dx.us}</option>
@@ -320,13 +320,13 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
             </div>
 
             <div className="sm:col-span-2 lg:col-span-1">
-              <label className="block text-[11px] font-mono font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-2">
-                3. {hx.priority}
+              <label className="block text-xs font-semibold text-slate-800 dark:text-slate-200 mb-2">
+                3. {hx.priority || 'Target Objective'}
               </label>
               <select
                 value={diagService}
                 onChange={(e) => setDiagService(e.target.value)}
-                className="w-full px-3 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#334DAF]"
+                className="w-full px-3.5 py-2.5 rounded-xl bg-surface-raised border border-surface-border text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#334DAF]"
               >
                 <option value="aml">{dx.aml}</option>
                 <option value="licensing">{dx.licensing}</option>
@@ -336,10 +336,10 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
             </div>
           </div>
 
-          <div className="p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-surface-subtle border border-surface-border flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div className="space-y-1 text-center sm:text-left">
-              <div className="text-[10px] sm:text-xs font-mono uppercase text-[#334DAF] dark:text-[#7096D1] font-bold">
-                {hx.recommended}
+          <div className="p-5 sm:p-6 rounded-2xl bg-surface-subtle border border-surface-border flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div className="space-y-1 text-center md:text-left">
+              <div className="text-xs font-mono uppercase text-[#334DAF] dark:text-[#7096D1] font-bold">
+                {hx.recommended || 'Recommended Advisory Roadmap'}
               </div>
               <div className="text-xs sm:text-sm font-bold text-slate-900 dark:text-white">
                 {diagSector === 'crypto' ? dx.cryptoAction :
@@ -351,9 +351,9 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
 
             <button
               onClick={onOpenConsultation}
-              className="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-gradient-to-r from-[#091F5C] to-[#334DAF] dark:from-[#334DAF] dark:to-[#7096D1] text-white dark:text-[#101E42] text-xs font-bold shadow-md hover:scale-105 transition-all text-center whitespace-nowrap"
+              className="w-full md:w-auto px-6 py-3 rounded-xl bg-[#334DAF] hover:bg-[#253982] text-white text-xs font-bold shadow-md hover:scale-[1.02] active:scale-[0.98] transition-all text-center whitespace-nowrap cursor-pointer shrink-0"
             >
-              {hx.discuss}
+              {hx.discuss || 'Discuss This Plan'}
             </button>
           </div>
         </div>

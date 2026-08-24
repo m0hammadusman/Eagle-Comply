@@ -7,7 +7,7 @@ import {
   MapPin, 
   Phone, 
   ExternalLink,
-  Globe2,
+  Globe2, 
   Lock,
   Sparkles,
   Scale
@@ -45,7 +45,7 @@ function WhatsAppIcon({ className = "w-3.5 h-3.5", ...props }) {
 
 export default function Footer({ onNavigate }) {
   const { t, solutions, industries } = useLanguage();
-  const f = t.footer;
+  const f = t.footer || {};
 
   return (
     <footer className="w-full bg-[#091F5C] dark:bg-[#101E42] text-slate-300 border-t border-[#1E3778] pt-10 pb-8 transition-colors duration-300">
@@ -54,40 +54,49 @@ export default function Footer({ onNavigate }) {
         {/* Practice Locations Bar */}
         <div className="mb-8 pb-5 border-b border-[#1E3778] flex flex-col md:flex-row md:items-center justify-between gap-3">
           <div className="flex items-center gap-2">
-            <Globe2 className="w-3.5 h-3.5 text-sky-400 shrink-0" />
-            <span className="text-[11px] font-mono font-bold tracking-wider uppercase text-blue-200">
+            <Globe2 className="w-4 h-4 text-sky-400 shrink-0" />
+            <span className="text-xs sm:text-sm font-semibold tracking-wider text-slate-200">
               Operational Locations & Presence:
             </span>
           </div>
           <div className="flex flex-wrap items-center gap-2 text-xs font-medium text-white">
-            <button onClick={() => onNavigate('contact')} className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#1E3778]/80 hover:bg-[#1E3778] border border-blue-400/25 shadow-xs transition-all text-left">
+            <button 
+              onClick={() => onNavigate('contact')} 
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#1E3778] hover:bg-[#28489d] border border-blue-400/30 shadow-xs transition-all text-left cursor-pointer"
+            >
               <span>🇬🇧</span>
-              <span className="text-[11px]"><strong>United Kingdom</strong></span>
+              <span><strong>United Kingdom</strong></span>
             </button>
-            <button onClick={() => onNavigate('contact')} className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#1E3778]/80 hover:bg-[#1E3778] border border-blue-400/25 shadow-xs transition-all text-left">
+            <button 
+              onClick={() => onNavigate('contact')} 
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#1E3778] hover:bg-[#28489d] border border-blue-400/30 shadow-xs transition-all text-left cursor-pointer"
+            >
               <span>🇮🇹</span>
-              <span className="text-[11px]"><strong>Italy</strong></span>
+              <span><strong>Italy</strong></span>
             </button>
-            <button onClick={() => onNavigate('contact')} className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#1E3778]/80 hover:bg-[#1E3778] border border-blue-400/25 shadow-xs transition-all text-left">
+            <button 
+              onClick={() => onNavigate('contact')} 
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#1E3778] hover:bg-[#28489d] border border-blue-400/30 shadow-xs transition-all text-left cursor-pointer"
+            >
               <span>🇵🇰</span>
-              <span className="text-[11px]"><strong>Pakistan</strong></span>
+              <span><strong>Pakistan</strong></span>
             </button>
           </div>
         </div>
 
-        {/* 5-Column High-Density Grid with All 10 Policies Visible */}
+        {/* 5-Column High-Density Balanced Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 lg:gap-5 pb-8 border-b border-[#1E3778] items-start">
           
           {/* Col 1: Brand & Identity (lg:col-span-3) */}
-          <div className="lg:col-span-3 space-y-2.5">
+          <div className="lg:col-span-3 space-y-3">
             <div className="flex items-center gap-2.5">
               <EagleLogo forceWhite={true} className="h-9 md:h-10 w-auto" />
             </div>
-            <div className="text-[11px] font-mono text-[#D0E4FE] font-bold tracking-wide">
-              {t.brand.subphrase}
+            <div className="text-xs font-mono text-slate-200 font-bold tracking-wide">
+              {t.brand?.subphrase || 'AML, Regulatory, Risk & Legal Compliance'}
             </div>
-            <p className="text-[11px] text-blue-100/75 leading-relaxed">
-              {t.brand.tagline}
+            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              {t.brand?.tagline || 'Complex Regulations. Clear Solutions. Confident Growth.'}
             </p>
             
             {/* Direct Contact Action Chips */}
@@ -96,78 +105,78 @@ export default function Footer({ onNavigate }) {
                 href="https://wa.me/447706413233"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white text-[10.5px] font-medium shadow-xs transition-all"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-medium shadow-xs transition-all"
                 title="Direct WhatsApp Contact UK"
               >
-                <WhatsAppIcon className="w-3 h-3 fill-white" />
+                <WhatsAppIcon className="w-3.5 h-3.5 fill-white" />
                 <span>WhatsApp UK</span>
               </a>
               <a
                 href="https://wa.me/393488184787"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white text-[10.5px] font-medium shadow-xs transition-all"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-medium shadow-xs transition-all"
                 title="Direct WhatsApp Contact Italy"
               >
-                <WhatsAppIcon className="w-3 h-3 fill-white" />
+                <WhatsAppIcon className="w-3.5 h-3.5 fill-white" />
                 <span>WhatsApp IT</span>
               </a>
               <a
                 href="mailto:info@eaglecomply.com"
-                className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#1E3778]/80 hover:bg-[#1E3778] text-white text-[10.5px] font-medium border border-blue-400/25 transition-colors"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#1E3778] hover:bg-[#28489d] text-white text-xs font-medium border border-blue-400/30 transition-colors"
               >
-                <Mail className="w-3 h-3 text-blue-300" />
+                <Mail className="w-3.5 h-3.5 text-blue-300" />
                 <span>Email Us</span>
               </a>
               <a
                 href="https://www.linkedin.com/company/eaglecomply/?viewAsMember=true"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#1E3778]/80 hover:bg-[#1E3778] text-white text-[10.5px] font-medium border border-blue-400/25 transition-colors"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#1E3778] hover:bg-[#28489d] text-white text-xs font-medium border border-blue-400/30 transition-colors"
               >
-                <LinkedInIcon className="w-3 h-3 text-blue-300" />
+                <LinkedInIcon className="w-3.5 h-3.5 text-blue-300" />
                 <span>LinkedIn</span>
               </a>
             </div>
-            <div className="pt-1 text-[10.5px] font-mono text-emerald-400 flex items-center gap-1 font-bold">
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-              UK • Italy • Pakistan
+            <div className="pt-1 text-xs text-emerald-400 flex items-center gap-1.5 font-medium">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+              <span>United Kingdom • Italy • Pakistan</span>
             </div>
           </div>
 
-          {/* Col 2: Solutions (lg:col-span-2) */}
-          <div className="lg:col-span-2 space-y-2">
-            <h4 className="text-[11px] font-mono font-bold uppercase tracking-wider text-white">
-              {f.solutions}
-            </h4>
-            <ul className="space-y-1.5 text-[11px]">
+          {/* Col 2: Services & Solutions (lg:col-span-2) */}
+          <div className="lg:col-span-2 space-y-2.5">
+            <h3 className="text-xs sm:text-sm font-semibold tracking-wider uppercase text-white">
+              {f.solutions || 'Our Services'}
+            </h3>
+            <ul className="space-y-2 text-xs text-slate-300">
               <li>
-                <button onClick={() => onNavigate('solution-detail', { id: 'financial-crime-compliance' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
+                <button onClick={() => onNavigate('solution-detail', { id: 'financial-crime-compliance' })} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
                   AML & Financial Crime
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('solution-detail', { id: 'regulatory-compliance' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
+                <button onClick={() => onNavigate('solution-detail', { id: 'regulatory-compliance' })} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
                   Regulatory Compliance
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('solution-detail', { id: 'risk-governance' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
+                <button onClick={() => onNavigate('solution-detail', { id: 'risk-governance' })} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
                   Risk & Governance
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('solution-detail', { id: 'legal-compliance' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
+                <button onClick={() => onNavigate('solution-detail', { id: 'legal-compliance' })} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
                   Legal & Corporate
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('solution-detail', { id: 'compliance-training' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
+                <button onClick={() => onNavigate('solution-detail', { id: 'compliance-training' })} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
                   Compliance Training
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('solution-detail', { id: 'compliance-reviews' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
+                <button onClick={() => onNavigate('solution-detail', { id: 'compliance-reviews' })} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
                   Independent Reviews
                 </button>
               </li>
@@ -175,132 +184,131 @@ export default function Footer({ onNavigate }) {
           </div>
 
           {/* Col 3: Industries & Insights (lg:col-span-2) */}
-          <div className="lg:col-span-2 space-y-2">
-            <h4 className="text-[11px] font-mono font-bold uppercase tracking-wider text-white">
-              {f.industriesInsights}
-            </h4>
-            <ul className="space-y-1.5 text-[11px]">
+          <div className="lg:col-span-2 space-y-2.5">
+            <h3 className="text-xs sm:text-sm font-semibold tracking-wider uppercase text-white">
+              {f.industriesInsights || 'Industries & Insights'}
+            </h3>
+            <ul className="space-y-2 text-xs text-slate-300">
               <li>
-                <button onClick={() => onNavigate('industry-detail', { id: 'banking' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
+                <button onClick={() => onNavigate('industry-detail', { id: 'banking' })} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
                   Banking & Credit
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('industry-detail', { id: 'fintech' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
+                <button onClick={() => onNavigate('industry-detail', { id: 'fintech' })} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
                   FinTech & Digital
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('industry-detail', { id: 'payments' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
+                <button onClick={() => onNavigate('industry-detail', { id: 'payments' })} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
                   Payment Providers
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('industry-detail', { id: 'remittance-msb' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
+                <button onClick={() => onNavigate('industry-detail', { id: 'remittance-msb' })} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
                   Remittance & MSBs
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('industry-detail', { id: 'digital-assets' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
+                <button onClick={() => onNavigate('industry-detail', { id: 'digital-assets' })} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
                   Crypto & Blockchain
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('blogs')} className="hover:text-white transition-colors text-left truncate block max-w-full">
+                <button onClick={() => onNavigate('blogs')} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
                   Compliance Blogs
                 </button>
               </li>
             </ul>
           </div>
 
-          {/* Col 4: All 10 Institutional Governance Policies (lg:col-span-3) */}
-          <div className="lg:col-span-3 space-y-2">
-            <h4 className="text-[11px] font-mono font-bold uppercase tracking-wider text-white flex items-center gap-1">
-              <ShieldCheck className="w-3.5 h-3.5 text-sky-400 shrink-0" />
+          {/* Col 4: Institutional Governance Policies (lg:col-span-3) */}
+          <div className="lg:col-span-3 space-y-2.5">
+            <h3 className="text-xs sm:text-sm font-semibold tracking-wider uppercase text-white">
               Governance & Policies
-            </h4>
-            <ul className="space-y-1 text-[10.5px] text-blue-200/85">
+            </h3>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-x-2 gap-y-2 text-xs text-slate-300">
               <li>
-                <button onClick={() => onNavigate('legal', { section: 'dpa' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
-                  • Data Processing Agreement (DPA)
+                <button onClick={() => onNavigate('legal', { section: 'dpa' })} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
+                  Data Processing (DPA)
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('legal', { section: 'idta' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
-                  • International Data Transfer (IDTA)
+                <button onClick={() => onNavigate('legal', { section: 'idta' })} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
+                  Data Transfer (IDTA)
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('legal', { section: 'data-protection' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
-                  • Data Protection Policy
+                <button onClick={() => onNavigate('legal', { section: 'data-protection' })} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
+                  Data Protection Policy
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('legal', { section: 'privacy' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
-                  • Privacy Notice
+                <button onClick={() => onNavigate('legal', { section: 'privacy' })} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
+                  Privacy Notice
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('legal', { section: 'data-retention' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
-                  • Data Retention Policy
+                <button onClick={() => onNavigate('legal', { section: 'data-retention' })} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
+                  Data Retention
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('legal', { section: 'infosec' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
-                  • Information Security Policy
+                <button onClick={() => onNavigate('legal', { section: 'infosec' })} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
+                  Information Security
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('legal', { section: 'access-control' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
-                  • Access Control Policy
+                <button onClick={() => onNavigate('legal', { section: 'access-control' })} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
+                  Access Control
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('legal', { section: 'breach-response' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
-                  • Incident & Breach Response
+                <button onClick={() => onNavigate('legal', { section: 'breach-response' })} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
+                  Incident Response
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('legal', { section: 'remote-working' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
-                  • Remote Working Policy
+                <button onClick={() => onNavigate('legal', { section: 'remote-working' })} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
+                  Remote Working
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('legal', { section: 'nda' })} className="hover:text-white transition-colors text-left truncate block max-w-full">
-                  • Confidentiality & NDA Agreements
+                <button onClick={() => onNavigate('legal', { section: 'nda' })} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
+                  Confidentiality NDA
                 </button>
               </li>
             </ul>
           </div>
 
           {/* Col 5: Company & Legal (lg:col-span-2) */}
-          <div className="lg:col-span-2 space-y-2">
-            <h4 className="text-[11px] font-mono font-bold uppercase tracking-wider text-white">
-              {f.company}
-            </h4>
-            <ul className="space-y-1.5 text-[11px]">
+          <div className="lg:col-span-2 space-y-2.5">
+            <h3 className="text-xs sm:text-sm font-semibold tracking-wider uppercase text-white">
+              {f.company || 'Company & Legal'}
+            </h3>
+            <ul className="space-y-2 text-xs text-slate-300">
               <li>
-                <button onClick={() => onNavigate('about')} className="hover:text-white transition-colors text-left truncate block max-w-full">
-                  {f.about}
+                <button onClick={() => onNavigate('about')} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
+                  {f.about || 'About Us'}
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('team')} className="hover:text-white transition-colors text-left truncate block max-w-full">
+                <button onClick={() => onNavigate('team')} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
                   Leadership
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('faqs')} className="hover:text-white transition-colors text-left truncate block max-w-full">
+                <button onClick={() => onNavigate('faqs')} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
                   Compliance FAQs
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('contact')} className="hover:text-white transition-colors text-left truncate block max-w-full">
-                  {f.contact}
+                <button onClick={() => onNavigate('contact')} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
+                  {f.contact || 'Contact Us'}
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('legal')} className="hover:text-white transition-colors text-left truncate block max-w-full font-semibold text-sky-300">
+                <button onClick={() => onNavigate('legal')} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer text-slate-300">
                   Legal & Disclaimers
                 </button>
               </li>
@@ -310,59 +318,59 @@ export default function Footer({ onNavigate }) {
         </div>
 
         {/* Streamlined Disclaimers Note in Natural Sequence */}
-        <div className="py-3 border-b border-[#1E3778]/50 text-[10px] text-blue-200/60 leading-relaxed space-y-0.5">
+        <div className="py-4 border-b border-[#1E3778]/50 text-xs text-slate-300 leading-relaxed space-y-1.5">
           <p>
             <strong className="text-amber-300 font-semibold">Statutory Disclaimers:</strong> We do not provide financial promotion in the UK. We do not provide accountancy and tax services.
           </p>
           <p>
-            <strong>Professional Advisory Notice:</strong> EagleComply is an independent regulatory compliance, risk management, and legal advisory consultancy. Materials on eaglecomply.com are provided for informational and educational purposes only and do not constitute formal legal or financial advice without an executed bilateral engagement agreement.
+            <strong className="text-slate-200">Professional Advisory Notice:</strong> EagleComply is an independent regulatory compliance, risk management, and legal advisory consultancy. Materials on eaglecomply.com are provided for informational and educational purposes only and do not constitute formal legal or financial advice without an executed bilateral engagement agreement.
           </p>
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-blue-200/60">
+        <div className="pt-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-300">
           <div>
-            © 2026 EagleComply. All rights reserved. {f.website}
+            © 2026 EagleComply. All rights reserved. {f.website || 'www.eaglecomply.com'}
           </div>
-          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-5">
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
             <a 
               href="https://wa.me/447706413233" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="inline-flex items-center gap-1 hover:text-white transition-colors"
+              className="inline-flex items-center gap-1.5 hover:text-white transition-colors"
               title="Chat on WhatsApp (UK)"
             >
-              <WhatsAppIcon className="w-3 h-3 text-emerald-400" />
+              <WhatsAppIcon className="w-3.5 h-3.5 text-emerald-400" />
               <span>WhatsApp UK</span>
             </a>
             <a 
               href="https://wa.me/393488184787" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="inline-flex items-center gap-1 hover:text-white transition-colors"
+              className="inline-flex items-center gap-1.5 hover:text-white transition-colors"
               title="Chat on WhatsApp (Italy)"
             >
-              <WhatsAppIcon className="w-3 h-3 text-emerald-400" />
+              <WhatsAppIcon className="w-3.5 h-3.5 text-emerald-400" />
               <span>WhatsApp Italy</span>
             </a>
             <a 
               href="mailto:info@eaglecomply.com" 
-              className="inline-flex items-center gap-1 hover:text-white transition-colors"
+              className="inline-flex items-center gap-1.5 hover:text-white transition-colors"
             >
-              <Mail className="w-3 h-3 text-blue-300" />
+              <Mail className="w-3.5 h-3.5 text-blue-300" />
               <span>info@eaglecomply.com</span>
             </a>
             <a 
               href="https://www.linkedin.com/company/eaglecomply/?viewAsMember=true" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="inline-flex items-center gap-1 hover:text-white transition-colors"
+              className="inline-flex items-center gap-1.5 hover:text-white transition-colors"
             >
-              <LinkedInIcon className="w-3 h-3 text-blue-300" />
+              <LinkedInIcon className="w-3.5 h-3.5 text-blue-300" />
               <span>{f.linkedin || 'LinkedIn'}</span>
             </a>
-            <span className="flex items-center gap-1 font-mono text-[10px] text-blue-200">
-              <Lock className="w-3 h-3" /> {f.secureComms}
+            <span className="flex items-center gap-1.5 text-xs text-slate-300">
+              <Lock className="w-3.5 h-3.5 text-emerald-400" /> {f.secureComms || '256-Bit Encrypted'}
             </span>
           </div>
         </div>
