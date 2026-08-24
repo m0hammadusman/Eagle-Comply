@@ -30,8 +30,8 @@ export const teamMembers = [
     firstName: "Zahid",
     lastName: "Munir",
     fullName: "Zahid Munir",
-    role: "Director Financial Compliance",
-    department: "Financial Compliance",
+    role: "Chartered Accountant, ESG & Sustainability Advisor",
+    department: "Accounting, ESG & Sustainability",
     strapHeight: 100,
     linkedin: "https://www.linkedin.com/in/zahid-munir",
     photo: `${import.meta.env.BASE_URL}images/team/zahid-munir.png`

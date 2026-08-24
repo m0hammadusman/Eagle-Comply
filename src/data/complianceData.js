@@ -1930,8 +1930,8 @@ export const practitioners = [
   {
     id: "zahid-munir",
     name: "Zahid Munir",
-    designation: "Director Financial Compliance",
-    department: "Financial Compliance",
+    designation: "Chartered Accountant, ESG & Sustainability Advisor",
+    department: "Accounting, ESG & Sustainability Advisory",
     badge: "DIRECTOR",
     photo: "images/team/zahid-munir.png",
     linkedin: "https://www.linkedin.com/in/zahid-munir",
@@ -2268,87 +2268,98 @@ export const experts = [
   {
     "id": "zahid-munir",
     "name": "Zahid Munir",
-    "role": "Director Financial Compliance — Prudential Risk & Capital Governance",
-    "department": "Financial Compliance",
-    "linkedin": "https://www.linkedin.com/company/eaglecomply/?viewAsMember=true",
+    "role": "Chartered Accountant, ESG & Sustainability Advisor",
+    "department": "Accounting, ESG & Sustainability Advisory",
+    "linkedin": "https://www.linkedin.com/in/zahid-munir",
     "email": "info@eaglecomply.com",
     "photo": "images/team/zahid-munir.png",
-    "location": "Financial & Prudential Advisory",
+    "location": "United Kingdom / Australia / Pakistan",
     "specialisms": [
-      "Financial Compliance & Accounting Standards",
-      "Prudential Risk & Capital Adequacy (ICAAP/ILAAP)",
-      "Statutory Financial Reporting & Internal Controls",
-      "Audit Readiness & Regulatory Assurance",
-      "Client Asset Safeguarding & Segregation (CASS)",
-      "Stress Testing & Capital Solvency Modeling"
+      "Accounting, Audit and Assurance",
+      "Financial Advisory & Business Consulting",
+      "Taxation & Tax Advisory",
+      "ESG & Sustainability",
+      "Green Finance & Climate Action",
+      "Corporate Governance & Risk Management",
+      "Sustainability & ESG Reporting",
+      "Financial Reporting & IFRS",
+      "Accounting & Finance Research",
+      "Professional Mentoring & Education"
     ],
     "industries": [
-      "Banks & Credit Institutions",
-      "Asset & Wealth Managers",
-      "Payment Institutions & Remittance Firms",
-      "Commercial Enterprises"
+      "Financial Services & Banking",
+      "Corporate & Commercial Enterprises",
+      "Green Finance & Sustainability Initiatives",
+      "Public & Private Accounting Practice",
+      "Higher Education & Professional Training"
     ],
     "countries": [
       "United Kingdom",
-      "European Union",
-      "Pakistan & GCC",
-      "International Standards"
+      "Australia",
+      "Pakistan",
+      "Global Professional Networks"
     ],
     "languages": [
       "English",
       "Urdu"
     ],
     "certs": [
-      "Financial Compliance & Risk Specialist (FCRS)",
-      "Statutory Reporting & Governance Fellow",
-      "Certified Internal Control Auditor (CICA)",
-      "Prudential Capital Management Practitioner"
+      "FCA (ICAEW) — Fellow Chartered Accountant",
+      "FCCA (UK) — Fellow Chartered Certified Accountant",
+      "FCPA (Australia) — Fellow Certified Practising Accountant",
+      "Doctoral Researcher (PhD) — Aston University"
     ],
     "aboutParagraphs": [
-      "Zahid Munir directs financial compliance, prudential risk baselines, and statutory financial reporting controls for regulated financial institutions and corporate enterprises at EagleComply.",
-      "With over two decades of financial sector expertise in accounting compliance, statutory reporting, and capital solvency modeling, he advises banks, asset managers, and payment institutions on satisfying demanding supervisory capital rules.",
-      "His practice delivers comprehensive prudential governance architectures, ICAAP/ILAAP preparation, regulatory capital structuring, and board-level financial risk oversight."
+      "Zahid Munir is a Chartered Accountant, finance professional and ESG specialist with extensive experience in accounting, audit, taxation, financial advisory, corporate governance and sustainability. He is an FCA (ICAEW), FCCA (UK) and FCPA Australia, with professional experience including EY and senior finance and advisory roles.",
+      "His work combines financial expertise with research and advisory interests in ESG, sustainability, green finance, corporate governance, climate action and responsible business practices. He is also a doctoral researcher at Aston University and contributes to professional education, mentoring and accounting research.",
+      "He has international professional and academic experience spanning the UK, Australia, Pakistan and wider global professional networks, with a focus on connecting financial reporting, governance and sustainability."
     ],
-    "bio": "Zahid Munir directs financial compliance, prudential risk baselines, and statutory financial reporting controls for regulated financial institutions and corporate enterprises.",
-    "intro": "Zahid Munir leads EagleComply's financial compliance and prudential advisory division. With extensive expertise in accounting compliance, statutory reporting, internal financial controls, and capital solvency modeling, he prepares regulated entities to satisfy demanding supervisory capital rules and external regulatory audits.",
+    "bio": "Zahid Munir is a Chartered Accountant, finance professional and ESG specialist with extensive experience in accounting, audit, taxation, financial advisory, corporate governance and sustainability. He is an FCA (ICAEW), FCCA (UK) and FCPA Australia, with professional experience including EY and senior finance and advisory roles.",
+    "intro": "Zahid Munir is a Chartered Accountant, finance professional and ESG specialist with extensive experience in accounting, audit, taxation, financial advisory, corporate governance and sustainability. His work combines financial expertise with research and advisory interests in ESG, sustainability, green finance, corporate governance, and responsible business practices.",
     "experience": [
       {
-        "period": "2019 – Present",
-        "role": "Director Financial Compliance",
-        "organization": "EagleComply Financial Governance Group",
-        "details": "Directs prudential capital adequacy assessments, internal financial control design, and statutory audit readiness for regulated entities."
+        "period": "Senior Practice",
+        "role": "Chartered Accountant, ESG & Sustainability Advisor",
+        "organization": "Financial, ESG & Corporate Advisory",
+        "details": "Advises corporate enterprises, financial institutions, and emerging organizations on accounting, audit, taxation, financial advisory, corporate governance, ESG reporting, and sustainability strategy."
       },
       {
-        "period": "2013 – 2019",
-        "role": "Senior Financial Compliance & Audit Lead",
-        "organization": "Prudential Advisory & Assurance Practice",
-        "details": "Formulated ICAAP/ILAAP capital documentation, audited client funds segregation (CASS) protocols, and established statutory management accounting systems."
+        "period": "Big Four & Corporate Finance",
+        "role": "Senior Finance & Advisory Roles (incl. EY)",
+        "organization": "Ernst & Young (EY) & Corporate Advisory",
+        "details": "Conducted external audit, financial due diligence, tax structuring, corporate governance assessments, and statutory financial reporting across international jurisdictions."
       },
       {
-        "period": "2008 – 2013",
-        "role": "Financial Risk & Controls Auditor",
-        "organization": "Corporate Financial Assurance Firm",
-        "details": "Conducted financial control reviews, balance sheet solvency assessments, and regulatory capital reporting audits across corporate entities."
+        "period": "Academic & Research",
+        "role": "Doctoral Researcher & Academic Contributor",
+        "organization": "Aston University (UK)",
+        "details": "Conducts doctoral research connecting financial reporting, governance, climate action, and sustainability, while contributing to professional education and mentoring."
+      },
+      {
+        "period": "Professional Fellowships",
+        "role": "FCA (ICAEW), FCCA (UK) & FCPA (Australia)",
+        "organization": "Global Professional Accounting Bodies",
+        "details": "Holds fellowship status with the Institute of Chartered Accountants in England and Wales (ICAEW), ACCA UK, and CPA Australia."
       }
     ],
     "publications": [
       {
-        "title": "Prudential Capital Adequacy & ICAAP Formulation for Non-Bank Financial Institutions",
-        "publisher": "Prudential Risk Journal",
+        "title": "Connecting Financial Reporting, Corporate Governance and Sustainability in Global Markets",
+        "publisher": "Accounting & Sustainability Review",
         "year": "2024",
-        "summary": "Framework for stress-testing liquidity buffers and calculating risk-weighted asset ratios under supervisory scrutiny."
+        "summary": "Empirical study examining the integration of IFRS sustainability standards with corporate governance architectures."
       },
       {
-        "title": "Client Asset Safeguarding (CASS) Compliance & Audit Readiness",
-        "publisher": "Financial Compliance Review",
+        "title": "Green Finance, Climate Action & Responsible Business Practices in Corporate Reporting",
+        "publisher": "ESG & Financial Governance Monograph",
         "year": "2023",
-        "summary": "Daily reconciliation protocols, trust status verification, and acknowledgment letter maintenance."
+        "summary": "Practical guidelines for implementing ESG reporting frameworks and aligning financial disclosures with climate commitments."
       },
       {
-        "title": "Internal Financial Controls & Audit Trail Architecture in Digital Payment Entities",
+        "title": "Internal Financial Controls & Audit Trail Architecture in Modern Financial Practice",
         "publisher": "EagleComply Executive Insight",
         "year": "2022",
-        "summary": "Building end-to-end auditable transaction logs for statutory annual external audits."
+        "summary": "Building end-to-end auditable transaction logs for statutory annual external audits and regulatory compliance."
       }
     ],
     "videoIntro": false
