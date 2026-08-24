@@ -1,34 +1,203 @@
-import React from 'react';
-import { Newspaper, Sparkles } from 'lucide-react';
+import React, { useState, useMemo } from 'react';
+import { Newspaper, Search, ArrowRight, Clock, Calendar, Globe, AlertCircle, ShieldAlert, Sparkles } from 'lucide-react';
+import { useNewsArticles } from '../../hooks/useContentful';
 import { useLanguage } from '../../context/LanguageContext';
 
 export default function NewsPage({ onNavigate }) {
   const { t } = useLanguage();
+  const { articles, loading, isContentfulConfigured } = useNewsArticles();
+  const [searchQuery, setSearchQuery] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('All');
+
+  const categories = useMemo(() => {
+    const cats = new Set(['All']);
+    articles.forEach(a => {
+      if (a.category) cats.add(a.category);
+    });
+    return Array.from(cats);
+  }, [articles]);
+
+  const filteredArticles = useMemo(() => {
+    return articles.filter(article => {
+      const matchesCategory = selectedCategory === 'All' || article.category === selectedCategory;
+      const q = searchQuery.toLowerCase().trim();
+      const matchesSearch = !q || 
+        article.title.toLowerCase().includes(q) || 
+        article.excerpt.toLowerCase().includes(q) ||
+        (article.tags && article.tags.some(t => t.toLowerCase().includes(q)));
+      return matchesCategory && matchesSearch;
+    });
+  }, [articles, selectedCategory, searchQuery]);
+
+  const breakingNews = useMemo(() => {
+    return articles.find(a => a.breaking) || articles[0];
+  }, [articles]);
 
   return (
-    <div className="w-full py-16 lg:py-24 space-y-12 animate-fade-in">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+    <div className="w-full py-12 sm:py-16 lg:py-20 space-y-12 animate-fade-in">
+      {/* Header Banner */}
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#334DAF]/10 dark:bg-[#7096D1]/15 text-[#334DAF] dark:text-[#7096D1] text-xs font-mono font-bold tracking-wider uppercase border border-[#334DAF]/20 dark:border-[#7096D1]/30">
           <Newspaper className="w-3.5 h-3.5" />
-          <span>EAGLECOMPLY NEWSROOM</span>
+          <span>EAGLECOMPLY REGULATORY NEWSROOM</span>
         </div>
-        <h1 className="font-sans tracking-tight text-3xl md:text-5xl font-bold text-slate-900 dark:text-white">
+        <h1 className="font-sans tracking-tight text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white">
           Regulatory News & Supervisory Updates
         </h1>
-        <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 max-w-xl mx-auto leading-relaxed">
-          Stay informed on international supervisory developments, statutory enforcement actions, and firm announcements.
+        <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
+          Real-time tracking of statutory deadlines, regulatory enforcement actions, and international financial crime intelligence.
         </p>
-      </div>
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="p-12 rounded-3xl glass-panel border border-surface-border text-center space-y-3">
-          <Sparkles className="w-8 h-8 text-[#334DAF] dark:text-[#7096D1] mx-auto animate-pulse" />
-          <h3 className="text-lg font-bold text-slate-900 dark:text-white">Latest Regulatory Dispatches Pending</h3>
-          <p className="text-xs text-slate-500 max-w-md mx-auto">
-            Real-time regulatory tracking and institutional news updates will appear here shortly.
-          </p>
+        {/* Contentful Connection Pill */}
+        <div className="flex items-center justify-center gap-2 pt-1 text-[11px] font-mono text-slate-500">
+          <span className={`w-2 h-2 rounded-full ${isContentfulConfigured ? 'bg-emerald-500 animate-pulse' : 'bg-blue-500'}`} />
+          <span>{isContentfulConfigured ? 'Live Contentful CMS Active' : 'Headless CMS Managed'}</span>
         </div>
       </div>
+
+      {/* Breaking News Banner (if available) */}
+      {breakingNews && (
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div 
+            onClick={() => onNavigate('article-detail', { id: breakingNews.slug || breakingNews.id })}
+            className="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-amber-500/10 via-amber-500/5 to-transparent border border-amber-500/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 cursor-pointer hover:border-amber-500/60 transition-all shadow-sm"
+          >
+            <div className="flex items-start sm:items-center gap-3">
+              <span className="px-2.5 py-1 rounded-lg bg-amber-500 text-slate-950 text-[10px] font-mono font-black uppercase tracking-wider shrink-0 flex items-center gap-1.5 shadow-xs">
+                <span className="w-1.5 h-1.5 rounded-full bg-slate-950 animate-ping inline-block" />
+                SUPERVISORY DISPATCH
+              </span>
+              <p className="text-xs sm:text-sm font-bold text-slate-900 dark:text-white leading-snug line-clamp-1">
+                {breakingNews.title}
+              </p>
+            </div>
+            <span className="text-xs font-bold text-amber-600 dark:text-amber-400 whitespace-nowrap flex items-center gap-1 shrink-0">
+              Read Dispatch <ArrowRight className="w-3.5 h-3.5" />
+            </span>
+          </div>
+        </div>
+      )}
+
+      {/* Filter & Search Bar */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 bg-surface-subtle p-3 rounded-2xl border border-surface-border">
+          {/* Categories */}
+          <div className="flex flex-wrap items-center gap-2 w-full md:w-auto">
+            {categories.map(cat => (
+              <button
+                key={cat}
+                onClick={() => setSelectedCategory(cat)}
+                className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
+                  selectedCategory === cat
+                    ? 'bg-[#334DAF] text-white shadow-sm dark:bg-[#7096D1] dark:text-[#091F5C]'
+                    : 'bg-surface-base text-slate-600 dark:text-slate-300 hover:text-[#334DAF] border border-surface-border'
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+
+          {/* Search Box */}
+          <div className="relative w-full md:w-72">
+            <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={e => setSearchQuery(e.target.value)}
+              placeholder="Search news, regulations, authorities…"
+              className="w-full pl-9 pr-4 py-1.5 rounded-xl bg-surface-base border border-surface-border text-xs text-slate-900 dark:text-white outline-none focus:border-[#334DAF]"
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Loading Skeleton */}
+      {loading && (
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+          {[1, 2, 3, 4].map(i => (
+            <div key={i} className="h-28 rounded-2xl bg-surface-subtle border border-surface-border animate-pulse" />
+          ))}
+        </div>
+      )}
+
+      {/* News Feed */}
+      {!loading && (
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-5">
+          {filteredArticles.map(article => (
+            <div
+              key={article.id}
+              onClick={() => onNavigate('article-detail', { id: article.slug || article.id })}
+              className="group p-5 sm:p-6 rounded-3xl bg-surface-raised border border-surface-border shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer flex flex-col md:flex-row items-start md:items-center justify-between gap-6"
+            >
+              <div className="flex-1 space-y-2.5">
+                <div className="flex flex-wrap items-center gap-2.5 text-[11px] font-mono">
+                  <span className="px-2.5 py-0.5 rounded-lg bg-[#334DAF]/10 dark:bg-[#7096D1]/20 text-[#334DAF] dark:text-[#7096D1] font-bold">
+                    {article.category}
+                  </span>
+                  <span className="text-slate-400 flex items-center gap-1">
+                    <Calendar className="w-3 h-3" /> {article.publishDate}
+                  </span>
+                  <span className="text-slate-400 flex items-center gap-1">
+                    <Clock className="w-3 h-3" /> {article.readTime}
+                  </span>
+                </div>
+
+                <h3 className="font-sans text-base sm:text-lg font-bold text-slate-900 dark:text-white group-hover:text-[#334DAF] dark:group-hover:text-[#7096D1] transition-colors leading-snug">
+                  {article.title}
+                </h3>
+
+                <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-2">
+                  {article.excerpt}
+                </p>
+
+                {article.tags && article.tags.length > 0 && (
+                  <div className="flex flex-wrap gap-1.5 pt-1">
+                    {article.tags.map(tag => (
+                      <span key={tag} className="text-[10px] font-mono px-2 py-0.5 rounded bg-surface-subtle border border-surface-border text-slate-500">
+                        #{tag}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              <div className="flex items-center gap-4 shrink-0 w-full md:w-auto justify-between md:justify-end pt-3 md:pt-0 border-t md:border-t-0 border-surface-border">
+                {article.coverImage && (
+                  <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden bg-slate-950 border border-surface-border shrink-0 hidden sm:block">
+                    <img
+                      src={article.coverImage}
+                      alt={article.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                )}
+
+                <div className="p-3 rounded-2xl bg-surface-subtle group-hover:bg-[#334DAF] group-hover:text-white text-[#334DAF] dark:text-[#7096D1] transition-colors">
+                  <ArrowRight className="w-4 h-4 rtl:rotate-180" />
+                </div>
+              </div>
+            </div>
+          ))}
+
+          {/* Empty State */}
+          {filteredArticles.length === 0 && (
+            <div className="p-12 rounded-3xl glass-panel border border-surface-border text-center space-y-3">
+              <Search className="w-8 h-8 text-slate-400 mx-auto" />
+              <h3 className="text-base font-bold text-slate-900 dark:text-white">No regulatory updates found</h3>
+              <p className="text-xs text-slate-500 max-w-sm mx-auto">
+                No articles matched your filter "{searchQuery || selectedCategory}".
+              </p>
+              <button
+                onClick={() => { setSearchQuery(''); setSelectedCategory('All'); }}
+                className="px-4 py-2 rounded-xl bg-[#334DAF] text-white text-xs font-bold hover:bg-[#253982] transition-colors cursor-pointer"
+              >
+                Reset Filters
+              </button>
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 }

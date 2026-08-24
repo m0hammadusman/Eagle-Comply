@@ -1,34 +1,263 @@
-import React from 'react';
-import { BookOpen, Sparkles } from 'lucide-react';
+import React, { useState, useMemo } from 'react';
+import { BookOpen, Search, ArrowRight, Clock, Calendar, User, Tag, Sparkles, Database, CheckCircle2 } from 'lucide-react';
+import { useBlogPosts } from '../../hooks/useContentful';
 import { useLanguage } from '../../context/LanguageContext';
 
 export default function BlogsPage({ onNavigate }) {
   const { t } = useLanguage();
+  const { posts, loading, isContentfulConfigured } = useBlogPosts();
+  const [searchQuery, setSearchQuery] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('All');
+
+  const categories = useMemo(() => {
+    const cats = new Set(['All']);
+    posts.forEach(p => {
+      if (p.category) cats.add(p.category);
+    });
+    return Array.from(cats);
+  }, [posts]);
+
+  const filteredPosts = useMemo(() => {
+    return posts.filter(post => {
+      const matchesCategory = selectedCategory === 'All' || post.category === selectedCategory;
+      const q = searchQuery.toLowerCase().trim();
+      const matchesSearch = !q || 
+        post.title.toLowerCase().includes(q) || 
+        post.excerpt.toLowerCase().includes(q) ||
+        post.author?.name?.toLowerCase().includes(q) ||
+        (post.tags && post.tags.some(t => t.toLowerCase().includes(q)));
+      return matchesCategory && matchesSearch;
+    });
+  }, [posts, selectedCategory, searchQuery]);
+
+  const featuredPost = useMemo(() => {
+    return filteredPosts.find(p => p.featured) || filteredPosts[0];
+  }, [filteredPosts]);
+
+  const gridPosts = useMemo(() => {
+    if (!featuredPost) return filteredPosts;
+    return filteredPosts.filter(p => p.id !== featuredPost.id);
+  }, [filteredPosts, featuredPost]);
 
   return (
-    <div className="w-full py-16 lg:py-24 space-y-12 animate-fade-in">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+    <div className="w-full py-12 sm:py-16 lg:py-20 space-y-12 animate-fade-in">
+      {/* Header Banner */}
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#334DAF]/10 dark:bg-[#7096D1]/15 text-[#334DAF] dark:text-[#7096D1] text-xs font-mono font-bold tracking-wider uppercase border border-[#334DAF]/20 dark:border-[#7096D1]/30">
           <BookOpen className="w-3.5 h-3.5" />
-          <span>EAGLECOMPLY BLOGS</span>
+          <span>EAGLECOMPLY EDITORIAL & BLOGS</span>
         </div>
-        <h1 className="font-sans tracking-tight text-3xl md:text-5xl font-bold text-slate-900 dark:text-white">
+        <h1 className="font-sans tracking-tight text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white">
           Compliance Insights & Practice Blogs
         </h1>
-        <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 max-w-xl mx-auto leading-relaxed">
-          Expert commentary, practitioner analyses, and regulatory guidance from EagleComply directors.
+        <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
+          In-depth commentary, technical blueprints, and regulatory analysis from resident directors and advisors.
         </p>
-      </div>
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="p-12 rounded-3xl glass-panel border border-surface-border text-center space-y-3">
-          <Sparkles className="w-8 h-8 text-[#334DAF] dark:text-[#7096D1] mx-auto animate-pulse" />
-          <h3 className="text-lg font-bold text-slate-900 dark:text-white">New Articles Coming Soon</h3>
-          <p className="text-xs text-slate-500 max-w-md mx-auto">
-            Our editorial board is preparing practical compliance guides, AML typologies, and supervisory reviews.
-          </p>
+        {/* Contentful Connection Pill */}
+        <div className="flex items-center justify-center gap-2 pt-1 text-[11px] font-mono text-slate-500">
+          <span className={`w-2 h-2 rounded-full ${isContentfulConfigured ? 'bg-emerald-500 animate-pulse' : 'bg-blue-500'}`} />
+          <span>{isContentfulConfigured ? 'Live Contentful CMS Active' : 'Headless CMS Managed'}</span>
         </div>
       </div>
+
+      {/* Filter & Search Bar */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 bg-surface-subtle p-3 rounded-2xl border border-surface-border">
+          {/* Categories */}
+          <div className="flex flex-wrap items-center gap-2 w-full md:w-auto">
+            {categories.map(cat => (
+              <button
+                key={cat}
+                onClick={() => setSelectedCategory(cat)}
+                className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
+                  selectedCategory === cat
+                    ? 'bg-[#334DAF] text-white shadow-sm dark:bg-[#7096D1] dark:text-[#091F5C]'
+                    : 'bg-surface-base text-slate-600 dark:text-slate-300 hover:text-[#334DAF] border border-surface-border'
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+
+          {/* Search Box */}
+          <div className="relative w-full md:w-72">
+            <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={e => setSearchQuery(e.target.value)}
+              placeholder="Search blogs, topics, authors…"
+              className="w-full pl-9 pr-4 py-1.5 rounded-xl bg-surface-base border border-surface-border text-xs text-slate-900 dark:text-white outline-none focus:border-[#334DAF]"
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Loading Skeleton */}
+      {loading && (
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+          {[1, 2, 3].map(i => (
+            <div key={i} className="h-80 rounded-3xl bg-surface-subtle border border-surface-border animate-pulse" />
+          ))}
+        </div>
+      )}
+
+      {/* Main Content */}
+      {!loading && (
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+          {/* Featured Hero Article */}
+          {featuredPost && (
+            <div 
+              onClick={() => onNavigate('article-detail', { id: featuredPost.slug || featuredPost.id })}
+              className="group relative rounded-3xl bg-surface-raised border border-surface-border shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden cursor-pointer grid grid-cols-1 lg:grid-cols-12 gap-0"
+            >
+              <div className="lg:col-span-7 h-64 lg:h-auto min-h-[280px] relative overflow-hidden bg-slate-950">
+                <img
+                  src={featuredPost.coverImage}
+                  alt={featuredPost.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100"
+                />
+                <div className="absolute top-4 left-4">
+                  <span className="px-3 py-1 rounded-full text-xs font-mono font-bold uppercase tracking-wider bg-amber-500 text-slate-950 shadow-md">
+                    Featured Analysis
+                  </span>
+                </div>
+              </div>
+
+              <div className="lg:col-span-5 p-6 sm:p-8 flex flex-col justify-between space-y-4">
+                <div className="space-y-3">
+                  <div className="flex items-center gap-2">
+                    <span className="px-2.5 py-0.5 rounded-lg text-[11px] font-mono font-bold uppercase bg-[#334DAF]/10 dark:bg-[#7096D1]/20 text-[#334DAF] dark:text-[#7096D1]">
+                      {featuredPost.category}
+                    </span>
+                    <span className="text-[11px] font-mono text-slate-400 flex items-center gap-1">
+                      <Clock className="w-3 h-3" /> {featuredPost.readTime}
+                    </span>
+                  </div>
+
+                  <h2 className="font-sans tracking-tight text-xl sm:text-2xl font-bold text-slate-900 dark:text-white group-hover:text-[#334DAF] dark:group-hover:text-[#7096D1] transition-colors leading-snug">
+                    {featuredPost.title}
+                  </h2>
+
+                  <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">
+                    {featuredPost.excerpt}
+                  </p>
+                </div>
+
+                <div className="pt-4 border-t border-surface-border flex items-center justify-between">
+                  <div className="flex items-center gap-2.5">
+                    {featuredPost.author?.avatar && (
+                      <img
+                        src={featuredPost.author.avatar}
+                        alt={featuredPost.author.name}
+                        className="w-8 h-8 rounded-full object-cover border border-surface-border shrink-0"
+                      />
+                    )}
+                    <div>
+                      <div className="text-xs font-bold text-slate-900 dark:text-white">
+                        {featuredPost.author?.name || 'EagleComply Advisor'}
+                      </div>
+                      <div className="text-[10px] text-slate-400 font-mono">
+                        {featuredPost.publishDate}
+                      </div>
+                    </div>
+                  </div>
+
+                  <span className="text-xs font-bold text-[#334DAF] dark:text-[#7096D1] flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                    Read Article <ArrowRight className="w-3.5 h-3.5" />
+                  </span>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Subsequent Articles Grid */}
+          {gridPosts.length > 0 && (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {gridPosts.map(post => (
+                <div
+                  key={post.id}
+                  onClick={() => onNavigate('article-detail', { id: post.slug || post.id })}
+                  className="group rounded-3xl bg-surface-raised border border-surface-border shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer flex flex-col justify-between"
+                >
+                  <div className="relative h-48 w-full overflow-hidden bg-slate-950">
+                    <img
+                      src={post.coverImage}
+                      alt={post.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100"
+                    />
+                    <div className="absolute top-3 left-3">
+                      <span className="px-2.5 py-0.5 rounded-lg text-[10px] font-mono font-bold uppercase bg-black/60 backdrop-blur-sm text-white border border-white/20">
+                        {post.category}
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="p-5 flex-1 flex flex-col justify-between space-y-3">
+                    <div className="space-y-2">
+                      <div className="flex items-center gap-2 text-[10px] font-mono text-slate-400">
+                        <span className="flex items-center gap-1">
+                          <Calendar className="w-3 h-3" /> {post.publishDate}
+                        </span>
+                        <span>•</span>
+                        <span className="flex items-center gap-1">
+                          <Clock className="w-3 h-3" /> {post.readTime}
+                        </span>
+                      </div>
+
+                      <h3 className="font-sans text-base font-bold text-slate-900 dark:text-white group-hover:text-[#334DAF] dark:group-hover:text-[#7096D1] transition-colors leading-snug line-clamp-2">
+                        {post.title}
+                      </h3>
+
+                      <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-2">
+                        {post.excerpt}
+                      </p>
+                    </div>
+
+                    <div className="pt-3 border-t border-surface-border flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        {post.author?.avatar && (
+                          <img
+                            src={post.author.avatar}
+                            alt={post.author.name}
+                            className="w-6 h-6 rounded-full object-cover border border-surface-border shrink-0"
+                          />
+                        )}
+                        <span className="text-[11px] font-semibold text-slate-700 dark:text-slate-300 truncate max-w-[120px]">
+                          {post.author?.name}
+                        </span>
+                      </div>
+
+                      <span className="text-xs font-bold text-[#334DAF] dark:text-[#7096D1] flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                        Read <ArrowRight className="w-3 h-3" />
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* Empty State */}
+          {filteredPosts.length === 0 && (
+            <div className="p-12 rounded-3xl glass-panel border border-surface-border text-center space-y-3">
+              <Search className="w-8 h-8 text-slate-400 mx-auto" />
+              <h3 className="text-base font-bold text-slate-900 dark:text-white">No blog posts found</h3>
+              <p className="text-xs text-slate-500 max-w-sm mx-auto">
+                No articles matched your filter "{searchQuery || selectedCategory}". Try clearing your search query.
+              </p>
+              <button
+                onClick={() => { setSearchQuery(''); setSelectedCategory('All'); }}
+                className="px-4 py-2 rounded-xl bg-[#334DAF] text-white text-xs font-bold hover:bg-[#253982] transition-colors cursor-pointer"
+              >
+                Reset Filters
+              </button>
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 }

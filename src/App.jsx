@@ -67,10 +67,14 @@ function AppContent() {
     if (section === 'jurisdictions') return slug ? { route: 'country-detail', params: { id: slug } } : { route: 'global-compliance', params: null };
     if (section === 'regulations') return slug ? { route: 'regulation-detail', params: { id: slug } } : { route: 'regulations', params: null };
     if (section === 'insights') return slug ? { route: 'article-detail', params: { id: slug } } : { route: 'insights', params: null };
+    if (section === 'blogs' || section === 'blog') return slug ? { route: 'article-detail', params: { id: slug } } : { route: 'blogs', params: null };
+    if (section === 'news') return slug ? { route: 'article-detail', params: { id: slug } } : { route: 'news', params: null };
+    if (section === 'article') return slug ? { route: 'article-detail', params: { id: slug } } : { route: 'insights', params: null };
     const direct = {
       about:'about', contact:'contact', resources:'knowledge-center', 'knowledge-center':'knowledge-center',
       experts:'experts', 'case-studies':'case-studies', careers:'careers', legal:'legal',
-      'global-compliance':'global-compliance', portal:'portal', consultant:'consultant'
+      'global-compliance':'global-compliance', portal:'portal', consultant:'consultant',
+      blogs:'blogs', news:'news'
     };
     return { route: direct[section] || 'home', params: null };
   };
@@ -96,6 +100,7 @@ function AppContent() {
       'global-compliance': '/global-compliance/', 'country-detail': `/jurisdictions/${id || ''}`,
       regulations: '/regulations/', 'regulation-detail': `/regulations/${id || ''}`,
       insights: '/insights/', 'article-detail': `/insights/${id || ''}`,
+      blogs: '/blogs/', news: '/news/',
       'knowledge-center': '/resources/', experts: '/experts/', 'case-studies': '/case-studies/',
       careers: '/careers/', contact: '/contact/', legal: '/legal/', portal: '/portal/',
       consultant: '/consultant/'
