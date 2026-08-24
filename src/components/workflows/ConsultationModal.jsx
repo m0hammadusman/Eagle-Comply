@@ -33,7 +33,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [success, setSuccess] = useState(null);
 
-  const calLink = import.meta.env.VITE_CAL_LINK || 'mohammad-usman-4ezn1s/eagle-comply';
+  const calLink = import.meta.env.VITE_CAL_LINK || 'eagle-comply/strategic-compliance-consultation';
 
   const [form, setForm] = useState({
     serviceId: solutions?.[0]?.id || 'financial-crime-compliance',
@@ -56,7 +56,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
   useEffect(() => {
     (async function () {
       try {
-        const cal = await getCalApi({ namespace: 'eagle-comply' });
+        const cal = await getCalApi({ namespace: 'strategic-compliance-consultation' });
         cal("ui", {
           theme: isDark ? "dark" : "light",
           styles: { branding: { brandColor: "#334DAF" } },
@@ -199,7 +199,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
             <div className="space-y-3">
               <div className="w-full h-[580px] sm:h-[620px] rounded-2xl overflow-hidden border border-surface-border bg-white dark:bg-slate-950">
                 <Cal
-                  namespace="eagle-comply"
+                  namespace="strategic-compliance-consultation"
                   calLink={calLink}
                   style={{ width: "100%", height: "100%", overflow: "auto" }}
                   config={{ 
