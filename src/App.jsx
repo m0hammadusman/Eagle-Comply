@@ -44,10 +44,6 @@ import CareersPage from './pages/public/CareersPage';
 import ContactPage from './pages/public/ContactPage';
 import LegalPage from './pages/public/LegalPage';
 
-// Portals
-import CustomerPortal from './pages/portals/CustomerPortal';
-import ConsultantPortal from './pages/portals/ConsultantPortal';
-
 function AppContent() {
   const [isLoading, setIsLoading] = useState(true);
   const routeFromPath = (path = window.location.pathname) => {
@@ -72,8 +68,7 @@ function AppContent() {
     const direct = {
       about:'about', contact:'contact', resources:'knowledge-center', 'knowledge-center':'knowledge-center',
       experts:'experts', 'case-studies':'case-studies', careers:'careers', legal:'legal',
-      'global-compliance':'global-compliance', portal:'portal', consultant:'consultant',
-      blogs:'blogs', news:'news'
+      'global-compliance':'global-compliance', blogs:'blogs', news:'news'
     };
     return { route: direct[section] || 'home', params: null };
   };
@@ -260,18 +255,8 @@ function AppContent() {
             <LegalPage onNavigate={navigate} />
           )}
 
-          {/* Authenticated Portals */}
-          {currentRoute === 'portal' && (
-            <CustomerPortal 
-              onNavigate={navigate} 
-              onOpenConsultation={() => setIsConsultationOpen(true)} 
-            />
-          )}
-          {currentRoute === 'consultant' && (
-            <ConsultantPortal onNavigate={navigate} />
-          )}
           {/* Extended interactive experience on specific service/industry/regulatory pages */}
-          {!['home', 'portal', 'consultant', 'team', 'team-detail', 'experts', 'expert-detail', 'blogs', 'news', 'article-detail', 'insights', 'contact', 'faqs', 'faq'].includes(currentRoute) && (
+          {!['home', 'team', 'team-detail', 'experts', 'expert-detail', 'blogs', 'news', 'article-detail', 'insights', 'contact', 'faqs', 'faq'].includes(currentRoute) && (
             <PageEnhancements
               route={currentRoute}
               onNavigate={navigate}
