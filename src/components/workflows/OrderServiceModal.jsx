@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { X, ShoppingBag, CheckCircle2, ShieldCheck, Download, CreditCard, Mail, Loader2 } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
-import { sendInquiryToCompanyEmail, generateMailtoLink, COMPANY_EMAIL, UK_WHATSAPP_LINK } from '../../utils/contactDispatcher';
+import { sendInquiryToCompanyEmail, COMPANY_EMAIL, UK_WHATSAPP_LINK } from '../../utils/contactDispatcher';
 import { WhatsAppIcon } from '../common/ContactWorldMap';
 
 export default function OrderServiceModal({ isOpen, onClose, preselectedResource }) {

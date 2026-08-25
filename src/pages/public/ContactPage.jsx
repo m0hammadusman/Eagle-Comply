@@ -17,7 +17,7 @@ import {
 } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
 import ContactWorldMap, { WhatsAppIcon, LinkedInIcon } from '../../components/common/ContactWorldMap';
-import { sendInquiryToCompanyEmail, generateMailtoLink, COMPANY_EMAIL, UK_WHATSAPP_LINK } from '../../utils/contactDispatcher';
+import { sendInquiryToCompanyEmail, COMPANY_EMAIL } from '../../utils/contactDispatcher';
 
 export default function ContactPage({ onNavigate }) {
   const { t, countries, solutions, industries } = useLanguage();
@@ -99,51 +99,38 @@ export default function ContactPage({ onNavigate }) {
                   <ShieldCheck className="w-8 h-8" />
                 </div>
                 <h3 className="text-2xl font-bold text-slate-900 dark:text-white">
-                  Consultation Request Dispatched
+                  Email Sent Successfully!
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 max-w-md mx-auto leading-relaxed">
-                  Your engagement requirements have been formatted and dispatched directly to EagleComply Counsel at <strong className="text-[#334DAF] dark:text-[#7096D1]">{COMPANY_EMAIL}</strong>. A senior compliance specialist will respond within 1 business day under confidential bilateral terms.
+                  Thank you for reaching out. Your message has been received and our compliance advisory team will contact you soon.
                 </p>
 
                 <div className="p-4 rounded-2xl bg-surface-subtle border border-surface-border text-xs text-left max-w-md mx-auto space-y-1.5 font-mono">
-                  <div className="flex justify-between"><span className="text-slate-500">Recipient:</span><strong>{COMPANY_EMAIL}</strong></div>
-                  <div className="flex justify-between"><span className="text-slate-500">Client / Company:</span><strong>{formData.company || formData.name}</strong></div>
-                  <div className="flex justify-between"><span className="text-slate-500">Selected Service:</span><strong className="truncate max-w-[200px]">{formData.service}</strong></div>
+                  <div className="flex justify-between"><span className="text-slate-500">Sender:</span><strong>{formData.name}</strong></div>
+                  <div className="flex justify-between"><span className="text-slate-500">Email:</span><strong>{formData.email}</strong></div>
+                  <div className="flex justify-between"><span className="text-slate-500">Company:</span><strong>{formData.company || '—'}</strong></div>
+                  <div className="flex justify-between"><span className="text-slate-500">Service:</span><strong className="truncate max-w-[200px]">{formData.service}</strong></div>
                 </div>
 
-                <div className="pt-3 flex flex-wrap items-center justify-center gap-3">
-                  <a
-                    href={generateMailtoLink({
-                      type: 'Consultation & Advisory Request',
-                      clientName: formData.name,
-                      email: formData.email,
-                      company: formData.company,
-                      jurisdiction: formData.jurisdiction,
-                      service: formData.service,
-                      requirement: formData.description
-                    })}
-                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#091F5C] dark:bg-[#334DAF] hover:bg-[#1E3778] text-white font-bold text-xs shadow-md transition-all"
+                <div className="pt-2">
+                  <button
+                    onClick={() => {
+                      setSubmitted(false);
+                      setFormData({
+                        name: '',
+                        email: '',
+                        company: '',
+                        jurisdiction: 'United Kingdom',
+                        industry: 'FinTech & Digital Challengers',
+                        service: 'AML/CFT & Financial Crime Compliance',
+                        description: ''
+                      });
+                    }}
+                    className="px-6 py-2.5 rounded-full bg-[#091F5C] dark:bg-[#334DAF] text-xs font-bold text-white hover:opacity-90 shadow-sm transition-all cursor-pointer"
                   >
-                    <Mail className="w-4 h-4" />
-                    <span>Open Email Draft ({COMPANY_EMAIL})</span>
-                  </a>
-                  <a
-                    href={UK_WHATSAPP_LINK}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-md transition-all"
-                  >
-                    <WhatsAppIcon className="w-4 h-4 fill-white" />
-                    <span>Direct WhatsApp Chat</span>
-                  </a>
+                    Send Another Message
+                  </button>
                 </div>
-
-                <button
-                  onClick={() => setSubmitted(false)}
-                  className="mt-4 px-6 py-2 rounded-full bg-surface-subtle text-xs font-bold text-slate-700 dark:text-slate-300 hover:bg-surface-raised border border-surface-border transition-all"
-                >
-                  Submit Another Enquiry
-                </button>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5">
@@ -258,17 +245,17 @@ export default function ContactPage({ onNavigate }) {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#091F5C] to-[#334DAF] dark:from-[#334DAF] dark:to-[#7096D1] text-white dark:text-[#101E42] font-bold text-xs shadow-xl hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2 disabled:opacity-50"
+                  className="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#091F5C] to-[#334DAF] dark:from-[#334DAF] dark:to-[#7096D1] text-white dark:text-[#101E42] font-bold text-xs shadow-xl hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2 disabled:opacity-50 cursor-pointer"
                 >
                   {isSubmitting ? (
                     <>
                       <Loader2 className="w-4 h-4 animate-spin" />
-                      <span>Transmitting Consultation Request to Counsel...</span>
+                      <span>Sending Message...</span>
                     </>
                   ) : (
                     <>
-                      <Calendar className="w-4 h-4" />
-                      <span>{c.requestConsultation}</span>
+                      <Send className="w-4 h-4" />
+                      <span>{c.requestConsultation || 'Send Message / Query'}</span>
                     </>
                   )}
                 </button>

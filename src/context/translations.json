@@ -279,7 +279,7 @@
       "industrySector": "Industry Sector",
       "serviceRequired": "Service Required",
       "briefDescription": "Brief Description of Requirement",
-      "requestConsultation": "Request a Consultation",
+      "requestConsultation": "Send Message / Query",
       "directContacts": "Direct Contacts",
       "placeholders": {
         "name": "e.g. Alexander Vance",
@@ -1070,7 +1070,7 @@
       "industrySector": "Secteur d’activité",
       "serviceRequired": "Service requis",
       "briefDescription": "Brève description du besoin",
-      "requestConsultation": "Demander une consultation",
+      "requestConsultation": "Envoyer le message / Demande",
       "directContacts": "Direct Contacts",
       "placeholders": {
         "name": "ex. Alexander Vance",
@@ -1794,7 +1794,7 @@
       "industrySector": "Industriesektor",
       "serviceRequired": "Benötigte Leistung",
       "briefDescription": "Kurze Beschreibung des Bedarfs",
-      "requestConsultation": "Beratung anfragen",
+      "requestConsultation": "Send Message / Query",
       "directContacts": "Direct Contacts",
       "placeholders": {
         "name": "z. B. Alexander Vance",
@@ -2518,7 +2518,7 @@
       "industrySector": "Sector industrial",
       "serviceRequired": "Servicio requerido",
       "briefDescription": "Breve descripción del requisito",
-      "requestConsultation": "Solicitar una consulta",
+      "requestConsultation": "Enviar mensaje / Consulta",
       "directContacts": "Direct Contacts",
       "placeholders": {
         "name": "p. ej. Alexander Vance",
@@ -3242,7 +3242,7 @@
       "industrySector": "Settore industriale",
       "serviceRequired": "Servizio richiesto",
       "briefDescription": "Breve descrizione della richiesta",
-      "requestConsultation": "Richiedi una consulenza",
+      "requestConsultation": "Invia messaggio / Richiesta",
       "directContacts": "Direct Contacts",
       "placeholders": {
         "name": "es. Alexander Vance",
@@ -3966,7 +3966,7 @@
       "industrySector": "Setor de atividade",
       "serviceRequired": "Serviço necessário",
       "briefDescription": "Breve descrição da necessidade",
-      "requestConsultation": "Solicitar uma consulta",
+      "requestConsultation": "Send Message / Query",
       "directContacts": "Direct Contacts",
       "placeholders": {
         "name": "ex. Alexander Vance",
@@ -4690,7 +4690,7 @@
       "industrySector": "القطاع الصناعي",
       "serviceRequired": "الخدمة المطلوبة",
       "briefDescription": "وصف موجز للمتطلب",
-      "requestConsultation": "طلب استشارة",
+      "requestConsultation": "إرسال الرسالة / الاستفسار",
       "directContacts": "Direct Contacts",
       "placeholders": {
         "name": "مثال: Alexander Vance",
@@ -5414,7 +5414,7 @@
       "industrySector": "業種",
       "serviceRequired": "必要なサービス",
       "briefDescription": "要件の概要",
-      "requestConsultation": "相談を申し込む",
+      "requestConsultation": "Send Message / Query",
       "directContacts": "Direct Contacts",
       "placeholders": {
         "name": "例：Alexander Vance",
@@ -6138,7 +6138,7 @@
       "industrySector": "行业领域",
       "serviceRequired": "所需服务",
       "briefDescription": "需求简述",
-      "requestConsultation": "申请咨询",
+      "requestConsultation": "Send Message / Query",
       "directContacts": "Direct Contacts",
       "placeholders": {
         "name": "例如：Alexander Vance",
@@ -6862,7 +6862,7 @@
       "industrySector": "산업 분야",
       "serviceRequired": "필요 서비스",
       "briefDescription": "요구사항 간략 설명",
-      "requestConsultation": "상담 요청",
+      "requestConsultation": "Send Message / Query",
       "directContacts": "Direct Contacts",
       "placeholders": {
         "name": "예: Alexander Vance",
