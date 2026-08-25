@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ThemeProvider } from './context/ThemeContext';
 import { LanguageProvider } from './context/LanguageContext';
-import { AuthProvider } from './context/AuthContext';
 import { DataProvider } from './context/DataContext';
 
 // Layout & Common
@@ -302,11 +301,9 @@ export default function App() {
     <ErrorBoundary>
       <ThemeProvider>
         <LanguageProvider>
-          <AuthProvider>
-            <DataProvider>
-              <AppContent />
-            </DataProvider>
-          </AuthProvider>
+          <DataProvider>
+            <AppContent />
+          </DataProvider>
         </LanguageProvider>
       </ThemeProvider>
     </ErrorBoundary>
