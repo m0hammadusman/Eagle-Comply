@@ -34,17 +34,10 @@ export default function IndustryDetailPage({ params, onNavigate, onOpenConsultat
         <div className="flex flex-wrap gap-4 mt-8">
           <button
             onClick={onOpenConsultation}
-            className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#091F5C] to-[#334DAF] dark:from-[#334DAF] dark:to-[#7096D1] text-white dark:text-[#101E42] font-bold text-xs shadow-md flex items-center gap-2"
+            className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#091F5C] to-[#334DAF] dark:from-[#334DAF] dark:to-[#7096D1] text-white dark:text-[#101E42] font-bold text-xs shadow-md flex items-center gap-2 cursor-pointer"
           >
             <Calendar className="w-4 h-4" />
             <span>{detailCommon?.bookConsultation || 'Book Partner Consultation'}</span>
-          </button>
-          <button
-            onClick={onOpenQuote}
-            className="px-6 py-3 rounded-xl glass-panel border border-surface-border text-slate-900 dark:text-white font-semibold text-xs flex items-center gap-2"
-          >
-            <Calculator className="w-4 h-4 text-[#334DAF] dark:text-[#7096D1]" />
-            <span>{detailCommon?.requestQuote || 'Request SOW Estimate'}</span>
           </button>
         </div>
       </div>
