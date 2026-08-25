@@ -356,12 +356,6 @@ export default function Header({ onNavigate, currentRoute, onOpenSearch, onOpenC
             >
               {t.common?.bookConsultation || 'Book Consultation'}
             </button>
-            <button
-              onClick={() => { onOpenQuote(); setIsMobileMenuOpen(false); }}
-              className="w-full py-3 rounded-xl bg-surface-subtle border border-surface-border text-slate-900 dark:text-white font-semibold text-sm text-center whitespace-nowrap"
-            >
-              {t.common?.requestQuote || 'Request a Quote'}
-            </button>
           </div>
         </div>
       )}

@@ -17,7 +17,6 @@ import useScrollReveal from './hooks/useScrollReveal';
 
 // Modals
 import ConsultationModal from './components/workflows/ConsultationModal';
-import RequestQuoteModal from './components/workflows/RequestQuoteModal';
 import OrderServiceModal from './components/workflows/OrderServiceModal';
 
 // Public Pages
@@ -86,7 +85,6 @@ function AppContent() {
   // Modals
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isConsultationOpen, setIsConsultationOpen] = useState(false);
-  const [isQuoteOpen, setIsQuoteOpen] = useState(false);
   const [orderResource, setOrderResource] = useState(null);
 
   // Initialize Global Scroll Reveal
@@ -311,10 +309,6 @@ function AppContent() {
         <ConsultationModal 
           isOpen={isConsultationOpen} 
           onClose={() => setIsConsultationOpen(false)} 
-        />
-        <RequestQuoteModal 
-          isOpen={isQuoteOpen} 
-          onClose={() => setIsQuoteOpen(false)} 
         />
         <OrderServiceModal 
           isOpen={!!orderResource} 
