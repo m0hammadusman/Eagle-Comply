@@ -1,0 +1,724 @@
+{
+  "nav": {
+    "solutions": "ソリューション",
+    "industries": "対象業界",
+    "globalCompliance": "グローバルコンプライアンス",
+    "knowledge": "ナレッジ＆インサイト",
+    "caseStudies": "導入事例",
+    "about": "会社概要",
+    "careers": "採用情報",
+    "contact": "お問い合わせ",
+    "legal": "法的開示事項",
+    "search": "ディレクトリ検索",
+    "home": "ホーム",
+    "services": "サービス",
+    "insights": "インサイト",
+    "resources": "リソース",
+    "bookConsultation": "相談を予約"
+  },
+  "hero": {
+    "badge": "AI支援型・独立系グローバル規制アドバイザリー",
+    "h1": "インテリジェントな規制コンプライアンス。",
+    "h1Span": "最高水準の法的精度。",
+    "desc": "Eagle Complianceは、専門家主導の規制戦略、CEマーキング適合性、DORAデジタル耐障害性、EU AI法ガバナンス、および複数管轄区での認可取得を提供します。",
+    "bookBtn": "個別相談を予約",
+    "quoteBtn": "見積りを依頼"
+  },
+  "pillars": {
+    "title": "相互に連携する4つのコンプライアンス領域",
+    "subtitle": "経験豊富な実務家が、規制対象企業や規制対象を目指す企業のために、実行可能な包括的コンプライアンス体制を構築します。",
+    "ai": "人工知能",
+    "blockchain": "ブロックチェーン＆Web3",
+    "law": "制定法・法務",
+    "governance": "エンタープライズガバナンス",
+    "tag": "主要な専門領域",
+    "p1_title": "AML/CFT・金融犯罪対策",
+    "p1_desc": "AML/CFTプログラム、組織的リスク評価、KYC/CDD/EDDフレームワーク、取引モニタリング、制裁スクリーニング、トラベルルール対応。",
+    "p2_title": "規制コンプライアンス",
+    "p2_desc": "ライセンス準備、規制コンプライアンス体制、ギャップ評価、コンプライアンス監視、規制変更管理。",
+    "p3_title": "リスク・ガバナンス",
+    "p3_desc": "全社的リスク評価、リスクアペタイト、オペレーショナルリスク、第三者コンプライアンス管理、取締役会ガバナンス。",
+    "p4_title": "法務・コンプライアンスアドバイザリー",
+    "p4_desc": "規制法務リサーチ、コンプライアンス文書、契約・ポリシー審査、暗号資産・フィンテック助言、プライバシー対応。"
+  },
+  "solutionsSec": {
+    "tag": "専門プラクティス",
+    "title": "エンドツーエンドの規制対応プラクティス領域",
+    "viewAll": "全6領域を表示",
+    "exploreSow": "業務範囲を確認",
+    "megaTitle": "規制対応プラクティス領域",
+    "megaSubtitle": "包括的コンプライアンス",
+    "megaDesc": "CEマーキング、DORA ICT台帳、規制当局対応・防御。"
+  },
+  "globalSec": {
+    "tag": "グローバル展開",
+    "title": "45以上の監督対象管轄区",
+    "desc": "EU加盟国、英国FCA、米国連邦各機関、ドバイVARA/ADGM、シンガポールMAS、日本金融庁(FSA)の最新規制動向を網羅。"
+  },
+  "cta": {
+    "tag": "機関向けエンゲージメント",
+    "title": "グローバル市場への進出と事業展開を保護",
+    "desc": "相互秘密保持契約（NDA）保護のもと、担当パートナーとの機密スコーピング相談をご予約いただけます。",
+    "bookBtn": "パートナー相談を予約",
+    "quoteBtn": "即時SOW試算を生成"
+  },
+  "solutionsPage": {
+    "tag": "包括的規制アシュアランス",
+    "title": "機関向けプラクティス領域",
+    "subtitle": "先端AIリスク評価からDORA耐障害性テスト、MiCAライセンス取得まで、法的基準を満たした検証済み監査調書を提供します。",
+    "all": "全6プラクティス",
+    "inspect": "プラクティス詳細"
+  },
+  "industriesPage": {
+    "tag": "業界別規制専門性",
+    "title": "産業別規制バーティカル",
+    "subtitle": "厳格な国際規制監督下に置かれる重要産業向けに特別設計されたコンプライアンス構造。",
+    "desk": "アドバイザリーデスク",
+    "explore": "業界を探索"
+  },
+  "globalPage": {
+    "tag": "クロスボーダー監督ディレクトリ",
+    "title": "グローバルコンプライアンス＆各国デスク",
+    "subtitle": "45以上の管轄区における包括的法定調書、管轄監督官庁、および専任アドバイザリーデスク。",
+    "search": "国名、規制当局（FCA、BaFin、金融庁、VARA等）で検索...",
+    "inspect": "調書を確認"
+  },
+  "regulationsPage": {
+    "tag": "法定指令＆リスク規範",
+    "title": "主要規制フレームワーク",
+    "subtitle": "詳細な条文解説、施行タイムライン、必須ガバナンス義務、および最大制裁金基準。",
+    "search": "規制名（AI法、DORA、GDPR、MiCA等）で検索...",
+    "fines": "法定最大制裁金",
+    "inspect": "規制条文を確認"
+  },
+  "knowledgePage": {
+    "tag": "規制インテリジェンス・リポジトリ",
+    "title": "ナレッジセンター＆エグゼクティブツールキット",
+    "subtitle": "コンプライアンス責任者向けの法定チェックリスト、CEマーキング雛形、DORAサードパーティ台帳、技術論文。",
+    "download": "PDFをダウンロード",
+    "purchase": "SOWを購入"
+  },
+  "insightsPage": {
+    "tag": "エグゼクティブ向け法務分析",
+    "title": "規制インサイト＆エディトリアル分析",
+    "subtitle": "新興国際規制、監督当局の執行動向、およびコンプライアンス設計に関する実践的ガイダンス。",
+    "read": "記事を読む"
+  },
+  "expertsPage": {
+    "tag": "シニアプラクティス陣",
+    "title": "シニアプラクティスパートナー",
+    "subtitle": "元規制監督官、ISO技術委員会委員、および一流の法務顧問が直接エグゼクティブアドバイザリーを提供します。",
+    "book": "セッションを予約"
+  },
+  "aboutPage": {
+    "tag": "組織の沿革と理念",
+    "title": "Eagle Complianceについて",
+    "subtitle": "アルゴリズム科学者、元規制当局検査官、および国際法学者を結集した専門アドバイザリー機関です。",
+    "dossier": "機関調書番号 EC-2026-HERITAGE",
+    "established": "設立：ロンドン＆ブリュッセル（2019年）",
+    "heroHeadline": "アルゴリズム革新の時代における規制確実性の確立。",
+    "heroProclamation": "EU AI法やDORAの下で巨額の制裁金が課される時代において、形式的なチェック作業は無意味です。当局の厳格な対審検査に耐えうる検証可能な監査調書を構築します。",
+    "metrics": {
+      "jurisdictions": "45+ 監督対象ハブ",
+      "approval": "99.4% 認可承認実績",
+      "fines": "クライアント制裁金0円"
+    },
+    "charterTitle": "機関ガバナンス憲章",
+    "charterPrinciples": [
+      "厳格な対審監査即応体制",
+      "Zero-Trustクライアントデータ完全隔離",
+      "双務的秘密保持契約（NDA）標準適用"
+    ],
+    "mission": "ミッション",
+    "missionDesc": "当局の厳格な対審検査に耐えうる検証可能なコンプライアンス証跡を構築する。",
+    "vision": "ビジョン",
+    "visionDesc": "アルゴリズムガバナンスと規制耐障害性において世界で最も信頼されるパートナーとなる。",
+    "values": "バリュー",
+    "valuesList": [
+      "機関としての誠実性",
+      "技術的精度",
+      "グローバルな責任",
+      "プライバシー・バイ・デザイン"
+    ],
+    "roadmapTitle": "機関成長ロードマップ",
+    "viewTimeline": "詳細タイムラインを表示",
+    "futureCommitment": "未来へのコミットメント",
+    "futureDesc": "信頼性が高く、法規制に準拠した強靭なデジタル経済の基盤を構築します。",
+    "coreCompetenciesTitle": "コアコンピテンシー",
+    "competencies": [
+      {
+        "title": "AIガバナンス＆リスク管理",
+        "desc": "EU AI法, ISO/IEC 42001, NIST AI RMF"
+      },
+      {
+        "title": "規制戦略＆アドバイザリー",
+        "desc": "EU, 米国, 英国, UAE, APAC規制枠組み"
+      },
+      {
+        "title": "プライバシー＆データ保護",
+        "desc": "GDPR, CPRA, 個人情報保護法, PIPL"
+      },
+      {
+        "title": "サイバー耐障害性＆TLPTテスト",
+        "desc": "DORA, TIBER-EU, ストレステスト"
+      },
+      {
+        "title": "適合性評価＆市場アクセス",
+        "desc": "CEマーク, FCC, UKCA, 各国認可"
+      },
+      {
+        "title": "監査＆アシュアランス技術",
+        "desc": "AI監査金庫, 証跡自動化, ダッシュボード"
+      }
+    ],
+    "leadershipTitle": "信頼を築くリーダーシップ",
+    "viewTeam": "全チームメンバーを表示",
+    "presenceTitle": "グローバルな拠点展開と現地の知見",
+    "presenceSubtitle": "主要規制拠点に常駐し、現地の最新実務とリアルタイムの規制インテリジェンスを提供します。",
+    "whyTitle": "Eagle Complianceが選ばれる理由",
+    "whyCards": [
+      {
+        "title": "規制当局の視点",
+        "desc": "監督官庁の審査基準と思考論理を深く熟知しています。"
+      },
+      {
+        "title": "技術的専門性の深さ",
+        "desc": "エンジニア、監査員、弁護士、研究者が結集。"
+      },
+      {
+        "title": "グローバルな対応力",
+        "desc": "45以上の管轄区を1つの窓口で包括支援。"
+      },
+      {
+        "title": "実証された実績",
+        "desc": "当局への正式申請における99.4%の承認率。"
+      },
+      {
+        "title": "徹底した機密保持",
+        "desc": "完全暗号化・厳格なアクセス制御・確実な保護。"
+      }
+    ],
+    "certificationsTitle": "認定資格＆公式パートナーシップ"
+  },
+  "caseStudiesPage": {
+    "tag": "実績と成果",
+    "title": "クライアント事例＆監査実績",
+    "subtitle": "Eagle Complianceが複雑なグローバル環境において、確実な規制認可、リスク軽減、運用の耐障害性をどのように実現しているかをご覧ください。",
+    "pills": {
+      "precision": "規制対応の精密性",
+      "mitigation": "リスクの確実な軽減",
+      "resilience": "運用耐障害性の確立"
+    },
+    "telemetry": {
+      "reach": "グローバル展開",
+      "reachSub": "対応監督管轄区",
+      "outcomes": "プロジェクト実績",
+      "outcomesSub": "完了エンゲージメント",
+      "success": "許認可成功率",
+      "successSub": "平均当局承認率"
+    },
+    "metrics": [
+      {
+        "value": "20+",
+        "label": "年の規制法務実績"
+      },
+      {
+        "value": "500+",
+        "label": "件の成功エンゲージメント"
+      },
+      {
+        "value": "45+",
+        "label": "の対象管轄区"
+      },
+      {
+        "value": "98.7%",
+        "label": "当局認可承認率"
+      }
+    ],
+    "categories": [
+      "すべての事例",
+      "金融サービス",
+      "テクノロジー",
+      "デジタル資産",
+      "ヘルスケア",
+      "製造・産業",
+      "エネルギー",
+      "政府・公共"
+    ],
+    "filter": "フィルター",
+    "challenge": "規制上の課題",
+    "solution": "実施ソリューション",
+    "outcome": "検証済みの成果",
+    "viewSummary": "詳細サマリーを見る",
+    "ctaTag": "コンプライアンス体制を強化する準備はできましたか？",
+    "ctaTitle": "次の規制マイルストーンを共に達成しましょう",
+    "ctaSubtitle": "高リスクで複雑な国際市場における成果重視の規制インテリジェンスを提供します。",
+    "ctaBtn": "相談を予約する"
+  },
+  "careersPage": {
+    "tag": "採用情報",
+    "title": "規制法務の未来を共に創る",
+    "subtitle": "ロンドン、ブリュッセル、ニューヨーク、ドバイにおいて、シニアAI監査員、DORA設計者、金融規制弁護士を募集しています。",
+    "openings": "現在の募集職種",
+    "apply": "この職種に応募"
+  },
+  "contactPage": {
+    "tag": "常駐リージョナルデスク",
+    "title": "規制スコーピングの開始",
+    "subtitle": "秘密保持契約（NDA）のもと、ロンドン、ブリュッセル、ワシントンD.C.、ドバイDIFC、シンガポールの担当パートナーへご相談ください。",
+    "successTitle": "お問い合わせを暗号化して受信しました",
+    "successDesc": "担当管轄デスクのプラクティスリードが、双務的NDA確認とともに4営業時間以内にご連絡いたします。",
+    "name": "氏名（正式名）",
+    "email": "会社メールアドレス",
+    "company": "会社名・組織名",
+    "jurisdiction": "主要管轄区",
+    "message": "規制要件の概要",
+    "transmit": "スコーピング申請を送信（双務NDA）",
+    "desksTitle": "常駐リージョナルデスク",
+    "fullName": "氏名",
+    "businessEmail": "業務用メールアドレス",
+    "companyOrg": "会社 / 組織",
+    "countryJurisdiction": "国 / 管轄区",
+    "industrySector": "業種",
+    "serviceRequired": "必要なサービス",
+    "briefDescription": "要件の概要",
+    "requestConsultation": "Send Message / Query",
+    "directContacts": "Direct Contacts",
+    "placeholders": {
+      "name": "例：Alexander Vance",
+      "email": "name@company.com",
+      "company": "例：Apex Global Payments Ltd",
+      "jurisdiction": "例：英国、UAE、オーストラリア",
+      "description": "コンプライアンス範囲、規制上の目標、認可取得時期、または具体的な金融犯罪上の課題をご記入ください。"
+    }
+  },
+  "legalPage": {
+    "tag": "法定ガバナンス",
+    "title": "利用規約、プライバシーポリシーおよび法的開示",
+    "sec1Title": "1. 規制上の位置づけと助言範囲",
+    "sec1Text": "Eagle Complianceは独立系規制アシュアランスおよびテクノロジーリスク助言機関として運営されています。すべての調書および監査文書はISO/IEC 42001、ISO/IEC 27001等の国際基準に準拠して作成されます。",
+    "sec2Title": "2. 機密保持とデータの完全隔離",
+    "sec2Text": "クライアントの技術文書、ソースコードレビュー、およびベンダー台帳は、保存時AES-256および通信時TLS 1.3により暗号化された専用リポジトリに厳格に隔離されます。",
+    "sec3Title": "3. 免責事項",
+    "sec3Text": "当サイトで提供される情報は戦略的インテリジェンスを目的としており、正式な契約に基づく業務範囲外の法的助言を構成するものではありません。"
+  },
+  "footer": {
+    "desc": "Eagle Complianceは独立系グローバル規制アドバイザリー機関です。検証済み監査調書、CEマーキング適合性ファイル、クロスボーダー許認可取得を支援します。",
+    "badge": "ISO/IEC 27001 & 42001 主任監査員",
+    "quickLinks": "ナビゲーション",
+    "practices": "プラクティス",
+    "legal": "法務・開示事項",
+    "copyright": "© 2026 Eagle Compliance Group Ltd. All rights reserved.",
+    "encrypted": "256ビット暗号化保管庫",
+    "directivesCodex": "指令・法規コード",
+    "aiPractice": "EU AI法ガバナンス",
+    "doraPractice": "DORA耐障害性＆TLPT",
+    "cryptoPractice": "MiCA＆暗号資産規制",
+    "privacyPractice": "GDPR＆グローバルプライバシー",
+    "esgPractice": "CSRDダブルマテリアリティ",
+    "seniorPartners": "シニアパートナー",
+    "careersCulture": "キャリア＆組織文化",
+    "residentDesks": "常駐デスク",
+    "ndaPolicy": "双務的NDAポリシー",
+    "company": "会社・法務",
+    "industriesInsights": "業界・インサイト",
+    "latestInsights": "最新のコンプライアンス情報",
+    "about": "EagleComplyについて",
+    "resourceCentre": "リソースセンター",
+    "contactConsultations": "お問い合わせ・相談",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約",
+    "disclaimer": "専門サービス免責事項",
+    "email": "info@eaglecomply.com",
+    "website": "www.eaglecomply.com",
+    "linkedin": "EagleComply LinkedIn",
+    "footerBody": "複雑な規制要件の理解、適切なコンプライアンス体制の構築、規制・金融犯罪リスクの管理を支援します。",
+    "secureComms": "機密・暗号化通信"
+  },
+  "common": {
+    "bookConsultation": "個別相談を予約",
+    "requestQuote": "見積りを依頼",
+    "search": "検索...",
+    "explore": "詳細を見る",
+    "close": "閉じる",
+    "clear": "クリア",
+    "filter": "絞り込み",
+    "results": "件の結果",
+    "back": "戻る",
+    "next": "次へ",
+    "confirm": "確認して送信",
+    "status": "ステータス",
+    "overview": "概要と業務範囲",
+    "challenges": "主な規制課題",
+    "deliverables": "主要な成果物",
+    "methodology": "導入メソドロジー",
+    "leadExpert": "主任担当パートナー",
+    "relatedRegulations": "関連する主要法規",
+    "relatedIndustries": "適用業界",
+    "regulators": "所管監督当局",
+    "residentDesk": "常駐リージョナルデスク",
+    "penalties": "法定最大制裁金",
+    "jurisdiction": "対象管轄区",
+    "timeline": "法定施行スケジュール",
+    "articles": "規制記事・論考",
+    "resources": "ツールキット＆調書",
+    "applyRole": "この職種に応募",
+    "caseStudy": "注目の監査実績"
+  },
+  "modals": {
+    "consultationTitle": "パートナー相談の予約",
+    "consultationSubtitle": "相互NDA保護のもと、常駐プラクティスパートナーとの個別機密相談を実施します。",
+    "step1": "1. プラクティス領域とテーマ",
+    "step2": "2. 日時とタイムゾーン",
+    "step3": "3. ご担当者様情報",
+    "step4": "4. NDAの確認",
+    "selectPractice": "プラクティス領域を選択",
+    "selectExpert": "担当パートナーを選択",
+    "consultationTopic": "ご相談のテーマ",
+    "format": "相談形式",
+    "selectDate": "希望日を選択",
+    "selectTime": "時間帯を選択",
+    "selectTimezone": "タイムゾーン",
+    "name": "氏名（正式名）",
+    "email": "会社メールアドレス",
+    "organization": "企業・組織名",
+    "jobTitle": "お役職",
+    "ndaCheckbox": "双務的秘密保持契約（NDA）の即時締結を希望する",
+    "background": "規制対応の背景概要",
+    "confirmedTitle": "相談予約が完了・暗号化されました",
+    "confirmedDesc": "パートナー面談が確定し、接続情報がご指定のメールアドレスへ送信されました。",
+    "bookingRef": "予約参照番号",
+    "calendarInvite": "カレンダー招待状をダウンロード (.ICS)",
+    "quoteTitle": "即時SOW見積シミュレーター",
+    "quoteSubtitle": "組織のコンプライアンス要件を設定し、検証済みのお見積りを即座に取得できます。",
+    "quoteStep1": "1. プラクティスと業界",
+    "quoteStep2": "2. 管轄区と対象法人",
+    "quoteStep3": "3. 範囲とご連絡先",
+    "selectIndustry": "主要業界を選択",
+    "targetJurisdictions": "対象管轄区",
+    "entityCount": "対象となる規制法人数",
+    "targetTimeline": "ご希望の納期・期間",
+    "scopeBudget": "ご予算・スコープ枠",
+    "phone": "お電話番号",
+    "scopeSummary": "プロジェクト概要",
+    "quoteGenerated": "SOW見積りが生成されました",
+    "quoteDesc": "試算結果は以下の参照番号で保存されました",
+    "orderTitle": "コンプライアンスツールキットの注文",
+    "orderSubtitle": "監査検証済みの規制パッケージを即時配信",
+    "orderSuccessTitle": "調書ダウンロードの準備が整いました",
+    "orderSuccessDesc": "ライセンスキーおよびSHA-256検証ハッシュが生成され、ご登録のメールアドレスに送信されました。",
+    "deliveryMethod": "受取方法",
+    "licenseTier": "ライセンス区分",
+    "searchTitle": "グローバル規制ディレクトリ検索",
+    "searchPlaceholder": "規制名（DORA、AI法、CSRD等）、領域、管轄区で検索...",
+    "chatbotTitle": "Eagle 規制インテリジェンス・アシスタント",
+    "chatbotWelcome": "こんにちは。Eagle Complianceの機関向けAIアシスタントです。規制調査や適合性評価についてどのようなご質問がございますか？",
+    "chatbotPlaceholder": "EU AI法、DORA、MiCA、GDPR、特定管轄区について質問..."
+  },
+  "experience": {
+    "tag": "アドバイザリー・エクスペリエンス",
+    "title": "規制の複雑さを実務的な行動へ",
+    "subtitle": "サービス構成、対応プロセス、効果的なコンプライアンス支援に関するよくある質問をご確認ください。",
+    "servicesTag": "サービス体系",
+    "servicesTitle": "統合コンプライアンスサービス",
+    "servicesSubtitle": "分野を選択すると、範囲、主な成果物、ビジネス上の価値を確認できます。",
+    "selected": "選択中の分野",
+    "explore": "分野を見る",
+    "faqTag": "コンプライアンス・ガイダンス",
+    "faqTitle": "よくあるコンプライアンス質問",
+    "ctaTag": "次のステップ",
+    "ctaTitle": "コンプライアンス上の課題について相談が必要ですか？",
+    "ctaDesc": "状況を共有し、EagleComplyと実務的な選択肢を検討してください。",
+    "ctaBtn": "相談を予約",
+    "steps": [
+      {
+        "title": "評価",
+        "desc": "義務、リスク、ビジネスモデル、対象法域を整理します。"
+      },
+      {
+        "title": "設計",
+        "desc": "適切なポリシー、統制、ガバナンス、文書を設計します。"
+      },
+      {
+        "title": "実装",
+        "desc": "要件を業務プロセスと証跡に落とし込みます。"
+      },
+      {
+        "title": "保証",
+        "desc": "統制をテストし、ギャップを特定して改善を優先します。"
+      }
+    ],
+    "faq1q": "AML/CFTプログラムには通常何が含まれますか？",
+    "faq1a": "ガバナンス、リスク評価、KYC/CDD/EDD、制裁・PEPスクリーニング、取引モニタリング、疑わしい活動のエスカレーション、研修、報告、独立テストなどが含まれます。",
+    "faq2q": "ライセンス取得準備を支援できますか？",
+    "faq2a": "はい。ギャップ評価、ガバナンス、ポリシー、統制フレームワーク、証跡パック、準備支援などが可能です。最終的な認可は所管当局が行います。",
+    "faq3q": "新しい規制要件にはどう対応すべきですか？",
+    "faq3a": "適用範囲を確認し、現行統制とのギャップを評価し、重要リスクを優先して文書化した対応を実施し、証跡を保持します。",
+    "faq4q": "このサイトは法域別の法律相談を提供しますか？",
+    "faq4a": "サイトの情報は一般的なものです。具体的な法律・規制助言は適切な契約の下で提供し、必要に応じて現地弁護士と連携します。"
+  },
+  "chatbot": {
+    "greet": "こんにちは。EagleComplyアシスタントです。AML/CFT、ライセンス、リスク、ガバナンス、法務・コンプライアンス、業界、法域について質問できます。",
+    "noMatch": "EagleComplyのサービス、AML/CFT、ライセンス準備、リスク・ガバナンス、法務・コンプライアンス、研修、レビューについて案内できます。",
+    "service": "ご質問に最も関連するEagleComplyの分野は",
+    "guidance": "実務的には、範囲と法域を確認し、リスクと規制ギャップを評価し、適切な統制を文書化・実装してからテストします。",
+    "disclaimer": "一般情報であり、法域別の法律助言ではありません。",
+    "consult": "相談を予約",
+    "services": "サービスを見る"
+  },
+  "brand": {
+    "name": "EagleComply",
+    "separated": "Eagle Comply",
+    "tagline": "複雑な規制に、明確な解決策を。自信を持った成長へ。",
+    "subphrase": "AML | 規制 | リスク | 法務コンプライアンス",
+    "disclaimer": "EagleComplyは、規制コンプライアンス、リスク管理、法務リサーチを独立した立場から支援します。本サイトの情報は一般的な情報提供を目的としたものであり、特定の法域における正式な法律代理または金融助言を構成するものではありません。"
+  },
+  "homeExtended": {
+    "pillarsDesc": "EagleComplyは、企業が複雑な規制要件を理解し、適切なコンプライアンス体制を構築し、金融犯罪リスクを管理し、適用法令の範囲内で安全に成長できるよう支援します。",
+    "threeD": "インタラクティブ3Dガバナンス・ラティス",
+    "coverageTag": "国際対応",
+    "coverageTitle": "クロスボーダー規制インテリジェンス",
+    "coverageDesc": "主要な世界金融センターの規制枠組み、認可当局、アドバイザリーデスクをご覧ください。",
+    "diagTag": "インタラクティブ・コンプライアンス・スコーピングツール",
+    "diagTitle": "規制フレームワーク即時診断",
+    "diagDesc": "組織のプロフィールを選択し、主要なコンプライアンス優先事項と推奨フレームワークを確認してください。",
+    "industry": "業種",
+    "jurisdiction": "対象管轄区",
+    "priority": "主要な優先事項",
+    "recommended": "推奨アクションプラン",
+    "discuss": "このプランを相談する",
+    "method": "実行方法論",
+    "frameworkTitle": "5段階アドバイザリーフレームワーク",
+    "frameworkDesc": "初期リスク診断から継続的な監督対応まで、各段階で構造化された監査可能な成果を提供します。",
+    "industryVerticals": "業界分野",
+    "sectorTitle": "業界別コンプライアンス・アーキテクチャ",
+    "exploreSector": "業界別ソリューションをすべて見る",
+    "practitionersTag": "専門家・パートナー",
+    "practitionersTitle": "実績あるコンプライアンス専門家が主導",
+    "practitionersDesc": "AML/CFT、金融規制、国際法務コンプライアンスに深い専門性を持つシニア専門家が直接支援します。",
+    "credentials": "専門性・資格",
+    "linkedin": "LinkedInでつながる",
+    "conversionDesc": "EagleComplyがコンプライアンス体制を構築、評価、強化する方法をご相談ください。",
+    "marquee": [
+      [
+        "FATF基準",
+        "グローバル基準"
+      ],
+      [
+        "リスクベース",
+        "最適化された統制"
+      ],
+      [
+        "認可準備",
+        "規制当局向け資料"
+      ],
+      [
+        "双務NDA",
+        "機密アドバイザリー"
+      ],
+      [
+        "EU 6AMLD & AMLA",
+        "欧州指令"
+      ],
+      [
+        "FinCEN BSA/AML",
+        "米国連邦基準"
+      ],
+      [
+        "Travel Rule (CASP)",
+        "暗号資産プロトコル"
+      ],
+      [
+        "三線モデル",
+        "企業ガバナンス"
+      ],
+      [
+        "ISO 31000 & COSO",
+        "組織リスク"
+      ],
+      [
+        "GDPR & プライバシー",
+        "法定保護"
+      ],
+      [
+        "CMP認証",
+        "監督モニタリング"
+      ],
+      [
+        "スクリーニング＆制裁",
+        "リアルタイムPEP確認"
+      ]
+    ],
+    "pillarData": [
+      [
+        "Financial Crime",
+        "Core Focus",
+        "AML/CFT & Financial Crime",
+        "Enterprise ML/TF risk assessments, KYC/CDD/EDD frameworks, transaction monitoring, sanctions screening, and Travel Rule implementation",
+        "Standards",
+        "FATF Aligned"
+      ],
+      [
+        "Regulatory Advisory",
+        "Licensing & CMP",
+        "Regulatory Compliance",
+        "Licensing and authorization readiness, regulatory gap assessments, compliance monitoring programs (CMP), and change management.",
+        "Scope",
+        "Multi-Jurisdiction"
+      ],
+      [
+        "Risk & Oversight",
+        "Board Governance",
+        "Risk & Governance",
+        "Enterprise risk assessments, risk appetite statements, operational risk, third-party compliance oversight, and governance structures.",
+        "Model",
+        "3 Lines of Defense"
+      ],
+      [
+        "Legal Advisory",
+        "Specialized Counsel",
+        "Legal & Compliance Advisory",
+        "Regulatory legal research, compliance documentation, contract and policy reviews, crypto/fintech advisory, and privacy compliance.",
+        "Precision",
+        "Cross-Border Depth"
+      ]
+    ],
+    "roadmap": [
+      [
+        "診断・ギャップ評価",
+        "規制範囲とリスク特定",
+        "顧客、商品、クロスボーダー回廊、第三者依存を対象に固有リスクを包括的にマッピングします。"
+      ],
+      [
+        "ポリシー・統制設計",
+        "監査対応型フレームワーク",
+        "AML/CFTポリシー、KYC/EDDワークフロー、リスクアペタイト、ガバナンス憲章を設計します。"
+      ],
+      [
+        "システム調整・スクリーニング",
+        "金融犯罪テクノロジー",
+        "取引モニタリング、制裁リスト、PEPデータベース、Travel Ruleシステムを設定します。"
+      ],
+      [
+        "人材・取締役会の強化",
+        "役割別コンプライアンス研修",
+        "現場、コンプライアンス担当者、役員向けに義務と警戒サインの研修を行います。"
+      ],
+      [
+        "独立保証・監査",
+        "継続的な監督対応",
+        "AML/CFTレビュー、サンプルテスト、改善報告により銀行・監督当局への対応を支援します。"
+      ]
+    ],
+    "sectors": {
+      "banking": [
+        "銀行・信用機関",
+        "健全性規制、組織のML/TFリスク、監督当局によるコンプライアンス監視に対応します。",
+        [
+          "ML/TFリスク評価と調整",
+          "コルレス銀行デューデリジェンス",
+          "プルデンシャル・ガバナンスと三線モデル",
+          "制裁スクリーニングと高リスク回廊監視"
+        ]
+      ],
+      "fintech": [
+        "FinTech・デジタル事業者",
+        "迅速な認可準備、デジタルKYC、提携銀行向けコンプライアンスを支援します。",
+        [
+          "決済・電子マネー認可資料",
+          "自動化デジタルKYC/CDD",
+          "提携銀行とのコンプライアンス整合",
+          "成長に対応する監視プログラム"
+        ]
+      ],
+      "payments": [
+        "決済サービス事業者・アクワイアラー",
+        "リスク管理、取引モニタリング、クロスボーダー決済規制に対応します。",
+        [
+          "加盟店デューデリジェンスとリスク分類",
+          "不正検知と紛争管理",
+          "顧客資金保護と規制資本",
+          "PSD2 / PSD3とオープンバンキング"
+        ]
+      ],
+      "crypto": [
+        "暗号資産・デジタルアセット事業者",
+        "VASP/CASP認可、FATF Travel Rule、ブロックチェーン分析を支援します。",
+        [
+          "MiCA、VARA、FCA認可準備",
+          "Travel Ruleと相手方確認",
+          "トークン分類とホワイトペーパー審査",
+          "非カストディ型ウォレットと分散型プロトコルのリスク管理"
+        ]
+      ]
+    },
+    "practitioners": [
+      [
+        "LEAD",
+        "AML/CFT・金融犯罪",
+        "Muhammad Shahid",
+        "銀行、決済、送金事業におけるAML/CFTプログラムと規制リスクを専門とします。",
+        [
+          "認定AMLスペシャリスト (CAMS)",
+          "ICA国際AML/CFTディプロマ",
+          "金融犯罪リスク評価者"
+        ]
+      ],
+      [
+        "PARTNER",
+        "規制・リスクガバナンス",
+        "Syed Anwar Hussain",
+        "認可準備、法定ガバナンス、三線モデルの構築を統括します。",
+        [
+          "規制コンプライアンス認定プロフェッショナル",
+          "エンタープライズ・リスク・ガバナンス・フェロー",
+          "内部統制シニアスペシャリスト"
+        ]
+      ],
+      [
+        "ADVISORY",
+        "法務コンプライアンス・Web3",
+        "Shan Ali",
+        "デジタル資産、フィンテックの商業保護、国際的なデータプライバシーを専門とします。",
+        [
+          "LL.M. 国際金融・商法",
+          "認定ブロックチェーン法務アドバイザー",
+          "IAPP CIPP/Eプライバシー専門家"
+        ]
+      ]
+    ],
+    "diagOptions": {
+      "banking": "銀行・信用機関",
+      "fintech": "FinTech・ネオバンク",
+      "payments": "決済サービス事業者",
+      "remittance": "送金・マネーサービス事業者",
+      "crypto": "暗号資産・デジタルアセット",
+      "uk_eu": "英国・欧州連合",
+      "us": "米国（FinCEN / 州MTL）",
+      "uae": "UAE（ADGM・DIFC・VARA）",
+      "apac": "シンガポール（MAS）・アジア太平洋",
+      "global": "クロスボーダー複数回廊",
+      "aml": "AML/CFTプログラム・リスク評価",
+      "licensing": "認可取得・規制対応準備",
+      "review": "独立プログラムレビュー／監査",
+      "training": "従業員・取締役会研修",
+      "cryptoAction": "VASP / MiCA認可・Travel Ruleアーキテクチャ",
+      "remittanceAction": "回廊ML/TF評価・独立AML年次レビュー",
+      "fintechAction": "迅速な認可資料・提携銀行コンプライアンスパック",
+      "defaultAction": "包括的AML/CFTガバナンス・CMPフレームワーク"
+    },
+    "submitInquiry": "お問い合わせを送信",
+    "statLabels": [
+      "基準",
+      "範囲",
+      "モデル",
+      "精度"
+    ],
+    "statValues": [
+      "FATF準拠",
+      "複数管轄区",
+      "三線モデル",
+      "クロスボーダー対応力"
+    ]
+  }
+}

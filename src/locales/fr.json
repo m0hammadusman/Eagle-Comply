@@ -1,0 +1,724 @@
+{
+  "nav": {
+    "solutions": "Solutions",
+    "industries": "Industries",
+    "globalCompliance": "Conformité Mondiale",
+    "knowledge": "Connaissances & Analyses",
+    "caseStudies": "Études de Cas",
+    "about": "À Propos",
+    "careers": "Carrières",
+    "contact": "Contact",
+    "legal": "Mentions Légales",
+    "search": "Rechercher dans le Répertoire",
+    "home": "Accueil",
+    "services": "Services",
+    "insights": "Analyses",
+    "resources": "Ressources",
+    "bookConsultation": "Réserver une consultation"
+  },
+  "hero": {
+    "badge": "CONSEIL RÉGLEMENTAIRE INDÉPENDANT ASSISTÉ PAR IA",
+    "h1": "Conformité Réglementaire Intelligente.",
+    "h1Span": "Précision Juridique.",
+    "desc": "Eagle Compliance offre une stratégie réglementaire dirigée par des experts, le marquage CE, la résilience DORA, la gouvernance de l'IA européenne et des autorisations multi-juridictionnelles.",
+    "bookBtn": "Réserver une Consultation",
+    "quoteBtn": "Demander un Devis"
+  },
+  "pillars": {
+    "title": "Quatre piliers interconnectés de la conformité",
+    "subtitle": "Des architectures de conformité complètes conçues par des praticiens expérimentés pour aider les entités réglementées et souhaitant le devenir à opérer avec une plus grande maîtrise des exigences réglementaires.",
+    "ai": "Intelligence Artificielle",
+    "blockchain": "Blockchain & Web3",
+    "law": "Droit Statutaire",
+    "governance": "Gouvernance d'Entreprise",
+    "tag": "Domaines clés d’expertise",
+    "p1_title": "AML/CFT & Criminalité financière",
+    "p1_desc": "Programmes AML/CFT, évaluations institutionnelles des risques, cadres KYC/CDD/EDD, surveillance des transactions, filtrage des sanctions et mise en œuvre de la Travel Rule.",
+    "p2_title": "Conformité réglementaire",
+    "p2_desc": "Préparation aux licences, cadres de conformité, analyses d’écarts, programmes de surveillance et gestion des évolutions réglementaires.",
+    "p3_title": "Risques & Gouvernance",
+    "p3_desc": "Évaluations des risques d’entreprise, appétit au risque, risques opérationnels, supervision de la conformité des tiers et structures de gouvernance du conseil.",
+    "p4_title": "Conseil juridique & conformité",
+    "p4_desc": "Recherche juridique réglementaire, documentation de conformité, revue des contrats et politiques, conseil crypto/fintech et conformité de la vie privée."
+  },
+  "solutionsSec": {
+    "tag": "Solutions Spécialisées",
+    "title": "Domaines de Pratique Réglementaire de Bout en Bout",
+    "viewAll": "Voir les 6 pratiques",
+    "exploreSow": "Explorer le Cahier des Charges",
+    "megaTitle": "Pratiques Réglementaires",
+    "megaSubtitle": "Conformité Globale",
+    "megaDesc": "Marquage CE, registres TIC DORA et défense réglementaire."
+  },
+  "globalSec": {
+    "tag": "Couverture Mondiale",
+    "title": "+45 Juridictions Supervisées",
+    "desc": "Renseignement juridictionnel en temps réel à travers les États membres de l'UE, le Royaume-Uni, les autorités fédérales américaines, Dubaï DIFC/ADGM, Singapour MAS et le Japon FSA."
+  },
+  "cta": {
+    "tag": "Engagement Institutionnel",
+    "title": "Sécurisez Votre Accès aux Marchés Mondiaux",
+    "desc": "Réservez une consultation de cadrage confidentielle menée par un associé sous protection bilatérale NDA.",
+    "bookBtn": "Réserver une Consultation Associé",
+    "quoteBtn": "Générer une Estimation SOW Instantanée"
+  },
+  "solutionsPage": {
+    "tag": "Assurance Réglementaire Complète",
+    "title": "Domaines de Pratique Institutionnels",
+    "subtitle": "Des dossiers de risque pour l'IA aux tests de résilience DORA et licences MiCA, Eagle Compliance fournit des dossiers d'audit vérifiés de niveau juridique.",
+    "all": "Toutes les 6 Pratiques",
+    "inspect": "Examiner la Pratique"
+  },
+  "industriesPage": {
+    "tag": "Profondeur Réglementaire Sectorielle",
+    "title": "Pôles Réglementaires Industriels",
+    "subtitle": "Architectures de conformité sur mesure conçues pour les industries à fort impact soumises à un contrôle multi-juridictionnel rigoureux.",
+    "desk": "Bureau de Conseil",
+    "explore": "Explorer le Secteur"
+  },
+  "globalPage": {
+    "tag": "Répertoire de Supervision Transfrontalière",
+    "title": "Conformité Mondiale & Bureaux Nationaux",
+    "subtitle": "Dossiers statutaires complets, autorités nationales compétentes et bureaux de conseil dédiés dans plus de 45 juridictions supervisées.",
+    "search": "Rechercher par pays, régulateur (ex. FCA, BaFin, VARA)...",
+    "inspect": "Consulter le Dossier"
+  },
+  "regulationsPage": {
+    "tag": "Directives Statutaires & Codex du Risque",
+    "title": "Principaux Cadres Réglementaires",
+    "subtitle": "Analyses statutaires approfondies, calendriers de mise en œuvre, obligations de gouvernance obligatoires et sanctions maximales de non-conformité.",
+    "search": "Rechercher par règlement (ex. AI Act, DORA, RGPD, MiCA)...",
+    "fines": "Sanctions Légales Maximales",
+    "inspect": "Examiner le Statut"
+  },
+  "knowledgePage": {
+    "tag": "Coffre-Fort d'Intelligence Réglementaire",
+    "title": "Centre de Connaissances & Outils Dirigeants",
+    "subtitle": "Listes de contrôle statutaires, modèles de marquage CE, registres tiers DORA et livres blancs évalués par des pairs pour les directeurs de conformité.",
+    "download": "Télécharger le PDF",
+    "purchase": "Commander le Cahier des Charges"
+  },
+  "insightsPage": {
+    "tag": "Analyse Juridique Dirigeants",
+    "title": "Perspectives Réglementaires & Analyses Éditoriales",
+    "subtitle": "Commentaires critiques et conseils pratiques sur les nouvelles réglementations mondiales, la jurisprudence et l'architecture de conformité.",
+    "read": "Lire l'Article"
+  },
+  "expertsPage": {
+    "tag": "Corps Professoral et Associés",
+    "title": "Associés Principaux du Cabinet",
+    "subtitle": "Anciens régulateurs de surveillance, membres des comités techniques ISO et avocats fiscalistes offrant un conseil exécutif direct.",
+    "book": "Réserver une Session"
+  },
+  "aboutPage": {
+    "tag": "PATRIMOINE INSTITUTIONNEL & MANDAT",
+    "title": "À Propos d'Eagle Compliance",
+    "subtitle": "Nous sommes un cabinet spécialisé en intelligence réglementaire réunissant scientifiques algorithmiques, anciens inspecteurs de supervision et juristes internationaux.",
+    "dossier": "DOSSIER INSTITUTIONNEL N° EC-2026-HERITAGE",
+    "established": "FONDATION : LONDRES & BRUXELLES (2019)",
+    "heroHeadline": "Bâtir la Certitude Réglementaire à l'Ère de la Rupture Algorithmique.",
+    "heroProclamation": "À l'ère où les systèmes algorithmiques et plateformes financières risquent des dizaines de millions d'euros d'amendes sous l'AI Act et DORA, la simple case à cocher est obsolète. Nous créons des dossiers d'audit vérifiables qui résistent aux inspections contradictoires formelles.",
+    "metrics": {
+      "jurisdictions": "+45 Pôles Supervisés",
+      "approval": "Taux d'Approbation 99,4%",
+      "fines": "0 € d'Amende Client"
+    },
+    "charterTitle": "Charte de Gouvernance Institutionnelle",
+    "charterPrinciples": [
+      "Préparation Rigoureuse aux Audits Contradictoires",
+      "Isolation Zéro-Trust des Données Clients",
+      "Protocole NDA Bilatéral par Défaut"
+    ],
+    "mission": "Notre Mission",
+    "missionDesc": "Concevoir des preuves de conformité vérifiables capables de résister à l'examen contradictoire formel des autorités.",
+    "vision": "Notre Vision",
+    "visionDesc": "Être le partenaire mondial le plus fiable pour la gouvernance algorithmique et la résilience réglementaire.",
+    "values": "Nos Valeurs",
+    "valuesList": [
+      "Intégrité Institutionnelle",
+      "Précision Technique",
+      "Responsabilité Globale",
+      "Confidentialité Dès la Conception"
+    ],
+    "roadmapTitle": "FEUILLE DE ROUTE DE CROISSANCE INSTITUTIONNELLE",
+    "viewTimeline": "Voir la Chronologie Détaillée",
+    "futureCommitment": "Engagement Futur",
+    "futureDesc": "Bâtir l'infrastructure de référence pour des économies numériques fiables, conformes et résilientes.",
+    "coreCompetenciesTitle": "NOS COMPÉTENCES FONDAMENTALES",
+    "competencies": [
+      {
+        "title": "Gouvernance IA & Risques",
+        "desc": "AI Act UE, ISO/CEI 42001, NIST AI RMF"
+      },
+      {
+        "title": "Stratégie & Conseil Réglementaire",
+        "desc": "Cadres UE, USA, UK, EAU & APAC"
+      },
+      {
+        "title": "Confidentialité & Protection des Données",
+        "desc": "RGPD, CPRA, LGPD, PIPL, NDPR"
+      },
+      {
+        "title": "Cyber-Résilience & Tests TLPT",
+        "desc": "DORA, TIBER-UE, Tests de Résistance"
+      },
+      {
+        "title": "Conformité & Accès aux Marchés",
+        "desc": "Marquage CE, FCC, UKCA, Autorisations"
+      },
+      {
+        "title": "Technologies d'Audit & d'Assurance",
+        "desc": "Coffre IA, Automatisation des Preuves"
+      }
+    ],
+    "leadershipTitle": "UNE DIRECTION QUI INSPIRE LA CONFIANCE",
+    "viewTeam": "Voir Tous les Membres de l'Équipe",
+    "presenceTitle": "PRÉSENCE MONDIALE. EXPERTISE LOCALE.",
+    "presenceSubtitle": "Nous opérons au cœur des principaux pôles réglementaires pour offrir une expertise de terrain et une intelligence en temps réel.",
+    "whyTitle": "POURQUOI LES DIRIGEANTS CHOISISSENT EAGLE COMPLIANCE",
+    "whyCards": [
+      {
+        "title": "Perspective des Régulateurs",
+        "desc": "Nous comprenons la doctrine exacte des autorités de contrôle."
+      },
+      {
+        "title": "Profondeur Technique",
+        "desc": "Ingénieurs, auditeurs, juristes et scientifiques sous un même toit."
+      },
+      {
+        "title": "Couverture Mondiale",
+        "desc": "+45 juridictions supervisées. Un partenaire unique et éprouvé."
+      },
+      {
+        "title": "Historique Éprouvé",
+        "desc": "Taux d'approbation de 99,4% lors des soumissions officielles."
+      },
+      {
+        "title": "Confidentialité Absolue",
+        "desc": "Chiffré. Contrôlé. Toujours protégé."
+      }
+    ],
+    "certificationsTitle": "CERTIFICATIONS & PARTENARIATS"
+  },
+  "caseStudiesPage": {
+    "tag": "RÉSULTATS D'ENTREPRISE ÉPROUVÉS",
+    "title": "Études de Cas Clients & Dossiers d'Audit",
+    "subtitle": "Découvrez comment Eagle Compliance assure une conformité mesurable, une atténuation des risques et une résilience opérationnelle dans des environnements mondiaux complexes.",
+    "pills": {
+      "precision": "Précision Réglementaire",
+      "mitigation": "Atténuation des Risques",
+      "resilience": "Résilience Opérationnelle"
+    },
+    "telemetry": {
+      "reach": "Portée Mondiale",
+      "reachSub": "Juridictions Desservies",
+      "outcomes": "Résultats Clients",
+      "outcomesSub": "Projets Livrés",
+      "success": "Succès Réglementaire",
+      "successSub": "Taux d'Approbation Moyen"
+    },
+    "metrics": [
+      {
+        "value": "20+",
+        "label": "Années d'Excellence Réglementaire"
+      },
+      {
+        "value": "500+",
+        "label": "Missions Réussies"
+      },
+      {
+        "value": "45+",
+        "label": "Juridictions Mondiales"
+      },
+      {
+        "value": "98,7%",
+        "label": "Taux d'Approbation Réglementaire"
+      }
+    ],
+    "categories": [
+      "Toutes les Études de Cas",
+      "Services Financiers",
+      "Technologie",
+      "Actifs Numériques",
+      "Santé",
+      "Industrie",
+      "Énergie",
+      "Secteur Public"
+    ],
+    "filter": "Filtrer",
+    "challenge": "DÉFI",
+    "solution": "SOLUTION",
+    "outcome": "RÉSULTAT VÉRIFIÉ",
+    "viewSummary": "Voir le Résumé Complet",
+    "ctaTag": "PRÊT À RENFORCER VOTRE POSTURE DE CONFORMITÉ ?",
+    "ctaTitle": "Atteignons Ensemble Votre Prochain Jalon Réglementaire",
+    "ctaSubtitle": "Associez-vous à Eagle Compliance pour une intelligence réglementaire axée sur les résultats dans les environnements à fort impact.",
+    "ctaBtn": "Réserver une Consultation"
+  },
+  "careersPage": {
+    "tag": "Rejoindre le Cabinet",
+    "title": "Façonnez l'Avenir du Droit Réglementaire",
+    "subtitle": "Nous recrutons des auditeurs seniors en gouvernance IA, des architectes de résilience DORA et des juristes financiers à Londres, Bruxelles, New York et Dubaï.",
+    "openings": "Postes Ouverts Actuels",
+    "apply": "Postuler à cette Opportunité"
+  },
+  "contactPage": {
+    "tag": "Bureaux Régionaux Résidents",
+    "title": "Initier un Cadrage Réglementaire",
+    "subtitle": "Contactez directement nos associés résidents à Londres, Bruxelles, Washington D.C., Dubaï DIFC et Singapour sous accord bilatéral NDA.",
+    "successTitle": "Demande Chiffrée & Reçue",
+    "successDesc": "Un Associé Responsable du bureau compétent vous répondra sous 4 heures ouvrées avec validation bilatérale NDA.",
+    "name": "Nom Légal Complet",
+    "email": "Courriel Professionnel",
+    "company": "Organisation / Entité",
+    "jurisdiction": "Juridiction Principale",
+    "message": "Note de Cadrage Réglementaire",
+    "transmit": "Transmettre la Demande (NDA Bilatéral)",
+    "desksTitle": "Bureaux Régionaux Résidents",
+    "fullName": "Nom complet",
+    "businessEmail": "E-mail professionnel",
+    "companyOrg": "Entreprise / Organisation",
+    "countryJurisdiction": "Pays / Juridiction",
+    "industrySector": "Secteur d’activité",
+    "serviceRequired": "Service requis",
+    "briefDescription": "Brève description du besoin",
+    "requestConsultation": "Envoyer le message / Demande",
+    "directContacts": "Direct Contacts",
+    "placeholders": {
+      "name": "ex. Alexander Vance",
+      "email": "nom@entreprise.com",
+      "company": "ex. Apex Global Payments Ltd",
+      "jurisdiction": "ex. Royaume-Uni, EAU, Australie",
+      "description": "Décrivez le périmètre de conformité, les objectifs réglementaires, les délais de licence ou les difficultés spécifiques liées à la criminalité financière..."
+    }
+  },
+  "legalPage": {
+    "tag": "Gouvernance Statutaire",
+    "title": "Conditions Juridiques, Confidentialité & Divulgations",
+    "sec1Title": "1. Statut Réglementaire & Périmètre de Conseil",
+    "sec1Text": "Eagle Compliance opère en tant que cabinet indépendant d'assurance réglementaire et de conseil en risques technologiques. Tous les dossiers réglementaires, fiches de modèles et rapports d'audit sont préparés dans le respect strict des normes internationales dont ISO/CEI 42001, ISO/CEI 27001 et des directives applicables.",
+    "sec2Title": "2. Confidentialité & Isolation des Données",
+    "sec2Text": "Les dossiers techniques, revues de code source et registres fournisseurs des clients sont isolés dans des référentiels locataires chiffrés selon les normes AES-256 au repos et TLS 1.3 en transit.",
+    "sec3Title": "3. Avertissement Légal",
+    "sec3Text": "Les informations publiées sur le centre de connaissances, le radar réglementaire et les livres blancs sont fournies à des fins de veille stratégique et ne constituent pas un conseil juridique formel hors contrat d'engagement signé."
+  },
+  "footer": {
+    "desc": "Eagle Compliance est un cabinet indépendant de conseil réglementaire mondial. Nous concevons des dossiers d'audit certifiés, des fichiers de marquage CE et des autorisations transfrontalières.",
+    "badge": "Auditeur Principal ISO/CEI 27001 & 42001",
+    "quickLinks": "Navigation",
+    "practices": "Pratiques",
+    "legal": "Légal & Directives",
+    "copyright": "© 2026 Eagle Compliance Group Ltd. Tous droits réservés.",
+    "encrypted": "Coffre-Fort Chiffré 256-Bit",
+    "directivesCodex": "Directives & Codex",
+    "aiPractice": "Gouvernance IA UE",
+    "doraPractice": "Résilience DORA & TLPT",
+    "cryptoPractice": "MiCA & Actifs Numériques",
+    "privacyPractice": "RGPD & Confidentialité Transfrontalière",
+    "esgPractice": "Double Matérialité CSRD",
+    "seniorPartners": "Associés Principaux",
+    "careersCulture": "Carrières & Culture",
+    "residentDesks": "Bureaux Résidents",
+    "ndaPolicy": "Politique NDA Bilatérale",
+    "company": "Entreprise & juridique",
+    "industriesInsights": "Secteurs & analyses",
+    "latestInsights": "Dernières analyses de conformité",
+    "about": "À propos d’EagleComply",
+    "resourceCentre": "Centre de ressources",
+    "contactConsultations": "Contact & consultations",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d’utilisation",
+    "disclaimer": "Avertissement professionnel",
+    "email": "info@eaglecomply.com",
+    "website": "www.eaglecomply.com",
+    "linkedin": "EagleComply sur LinkedIn",
+    "footerBody": "Nous aidons les entreprises à comprendre les exigences réglementaires complexes, à bâtir des cadres de conformité adaptés et à gérer les risques réglementaires et de criminalité financière.",
+    "secureComms": "Communications confidentielles et chiffrées"
+  },
+  "common": {
+    "bookConsultation": "Réserver une Consultation",
+    "requestQuote": "Demander un Devis",
+    "search": "Rechercher...",
+    "explore": "Explorer",
+    "close": "Fermer",
+    "clear": "Effacer",
+    "filter": "Filtrer",
+    "results": "Résultats",
+    "back": "Retour",
+    "next": "Suivant",
+    "confirm": "Confirmer & Soumettre",
+    "status": "Statut",
+    "overview": "Aperçu & Périmètre Exécutif",
+    "challenges": "Principaux Défis Réglementaires",
+    "deliverables": "Livrables Institutionnels Clés",
+    "methodology": "Méthodologie d'Implémentation",
+    "leadExpert": "Associé Responsable de la Pratique",
+    "relatedRegulations": "Cadres Juridiques Principaux",
+    "relatedIndustries": "Secteurs d'Activité Concernés",
+    "regulators": "Autorités de Surveillance Compétentes",
+    "residentDesk": "Bureau Régional Résident",
+    "penalties": "Sanctions Légales Maximales",
+    "jurisdiction": "Juridiction Supervisée",
+    "timeline": "Calendrier d'Application Légale",
+    "articles": "Articles & Analyses Réglementaires",
+    "resources": "Boîtes à Outils & Dossiers de Conformité",
+    "applyRole": "Postuler à ce Poste",
+    "caseStudy": "Dossier d'Audit Vedette"
+  },
+  "modals": {
+    "consultationTitle": "Réserver une Consultation de Cadrage avec un Associé",
+    "consultationSubtitle": "Consultation bilatérale confidentielle avec un Associé résident sous accord NDA mutuel.",
+    "step1": "1. Pratique & Thématique",
+    "step2": "2. Date, Heure & Fuseau",
+    "step3": "3. Coordonnées Dirigeant",
+    "step4": "4. Vérification NDA",
+    "selectPractice": "Sélectionner la Pratique",
+    "selectExpert": "Sélectionner l'Associé",
+    "consultationTopic": "Sujet du Cadrage",
+    "format": "Format de la Consultation",
+    "selectDate": "Sélectionner la Date",
+    "selectTime": "Sélectionner l'Horaire",
+    "selectTimezone": "Votre Fuseau Horaire",
+    "name": "Nom Légal Complet",
+    "email": "Courriel Professionnel",
+    "organization": "Organisation / Entreprise",
+    "jobTitle": "Votre Titre Exécutif",
+    "ndaCheckbox": "Exiger l'exécution immédiate d'un accord bilatéral de confidentialité (NDA)",
+    "background": "Note de Contexte Réglementaire",
+    "confirmedTitle": "Consultation Confirmée & Chiffrée",
+    "confirmedDesc": "Votre session avec un associé a été réservée et les coordonnées d'accès ont été transmises à votre boîte courriel.",
+    "bookingRef": "Référence de Réservation",
+    "calendarInvite": "Télécharger l'Invitation Calendrier (.ICS)",
+    "quoteTitle": "Estimateur Instantané de Cahier des Charges (SOW)",
+    "quoteSubtitle": "Configurez le périmètre de conformité de votre institution et recevez une estimation vérifiée.",
+    "quoteStep1": "1. Pratique & Secteur",
+    "quoteStep2": "2. Juridiction & Entités",
+    "quoteStep3": "3. Périmètre & Contact",
+    "selectIndustry": "Sélectionner le Secteur d'Activité",
+    "targetJurisdictions": "Juridictions Ciblées",
+    "entityCount": "Nombre d'Entités Régulées",
+    "targetTimeline": "Délai de Livraison Souhaité",
+    "scopeBudget": "Périmètre & Tranche Budgétaire",
+    "phone": "Numéro de Téléphone Direct",
+    "scopeSummary": "Résumé du Projet",
+    "quoteGenerated": "Estimation de Cahier des Charges Générée",
+    "quoteDesc": "Votre estimation préliminaire a été enregistrée avec la référence",
+    "orderTitle": "Commande de Boîtes à Outils & Dossiers",
+    "orderSubtitle": "Livraison instantanée de dossiers de conformité éprouvés",
+    "orderSuccessTitle": "Dossier Prêt pour Téléchargement",
+    "orderSuccessDesc": "Votre clé de licence et votre empreinte d'intégrité SHA-256 ont été générées et envoyées à votre boîte courriel.",
+    "deliveryMethod": "Mode de Livraison",
+    "licenseTier": "Niveau de Licence",
+    "searchTitle": "Recherche dans le Répertoire Réglementaire Mondial",
+    "searchPlaceholder": "Rechercher par règlement (DORA, AI Act, CSRD), pratique, juridiction...",
+    "chatbotTitle": "Assistant d'Intelligence Réglementaire Eagle",
+    "chatbotWelcome": "Bonjour. Je suis l'assistant institutionnel d'Eagle Compliance. Comment puis-je vous aider dans votre cadrage réglementaire aujourd'hui ?",
+    "chatbotPlaceholder": "Posez vos questions sur l'AI Act, DORA, MiCA, le RGPD ou une juridiction..."
+  },
+  "experience": {
+    "tag": "EXPÉRIENCE CONSEIL",
+    "title": "De la complexité réglementaire à l'action concrète",
+    "subtitle": "Explorez l'architecture des services, le processus d'intervention et les questions de conformité courantes.",
+    "servicesTag": "ARCHITECTURE DES SERVICES",
+    "servicesTitle": "Services de conformité intégrés",
+    "servicesSubtitle": "Sélectionnez un domaine pour examiner son périmètre, ses livrables et sa valeur métier.",
+    "selected": "DOMAINE SÉLECTIONNÉ",
+    "explore": "Explorer le domaine",
+    "faqTag": "GUIDE DE CONFORMITÉ",
+    "faqTitle": "Questions fréquentes",
+    "ctaTag": "PROCHAINE ÉTAPE",
+    "ctaTitle": "Besoin d'aide sur un sujet de conformité ?",
+    "ctaDesc": "Présentez votre situation et échangez sur des options pratiques avec EagleComply.",
+    "ctaBtn": "Réserver une consultation",
+    "steps": [
+      {
+        "title": "Évaluer",
+        "desc": "Cartographier les obligations, risques, modèle économique et juridictions."
+      },
+      {
+        "title": "Concevoir",
+        "desc": "Construire des politiques, contrôles, gouvernance et documents proportionnés."
+      },
+      {
+        "title": "Mettre en œuvre",
+        "desc": "Transformer les exigences en processus opérationnels et preuves."
+      },
+      {
+        "title": "Assurer",
+        "desc": "Tester les contrôles, identifier les écarts et prioriser les remédiations."
+      }
+    ],
+    "faq1q": "Que couvre généralement un programme AML/CFT ?",
+    "faq1a": "Il peut couvrir la gouvernance, l'évaluation des risques, KYC/CDD/EDD, les sanctions et PEP, la surveillance des transactions, l'escalade des activités suspectes, la formation, le reporting et les tests indépendants.",
+    "faq2q": "EagleComply peut-il aider à la préparation d'une licence ?",
+    "faq2a": "Oui. L'intervention peut inclure l'analyse des écarts, la gouvernance, les politiques, les contrôles, les dossiers de preuves et l'accompagnement à la préparation. L'autorisation finale appartient au régulateur compétent.",
+    "faq3q": "Comment aborder une nouvelle exigence réglementaire ?",
+    "faq3a": "Définir le périmètre, évaluer l'écart avec les contrôles existants, prioriser les risques importants, mettre en œuvre les actions documentées et conserver les preuves.",
+    "faq4q": "Le site fournit-il des conseils juridiques propres à une juridiction ?",
+    "faq4a": "Le contenu du site est général. Les conseils juridiques ou réglementaires spécifiques doivent être fournis dans le cadre d'un mandat approprié, avec un conseil local si nécessaire."
+  },
+  "chatbot": {
+    "greet": "Bonjour ! Je suis l’assistant EagleComply. Posez vos questions sur l’AML/CFT, les licences, les risques, la gouvernance, le droit, les secteurs ou les juridictions.",
+    "noMatch": "Je peux vous aider sur les services EagleComply, l’AML/CFT, la préparation aux licences, les risques, la gouvernance, le conseil juridique et conformité, la formation et les revues.",
+    "service": "D’après votre question, le domaine EagleComply le plus pertinent est",
+    "guidance": "Conseil pratique : définissez le périmètre et la juridiction, évaluez les risques et écarts, documentez des contrôles proportionnés, mettez-les en œuvre puis testez-les.",
+    "disclaimer": "Il s’agit d’informations générales et non d’un conseil juridique propre à une juridiction.",
+    "consult": "Réserver une consultation",
+    "services": "Explorer les services"
+  },
+  "brand": {
+    "name": "EagleComply",
+    "separated": "Eagle Comply",
+    "tagline": "Réglementations complexes. Solutions claires. Croissance maîtrisée.",
+    "subphrase": "AML | Réglementaire | Risques | Conformité juridique",
+    "disclaimer": "EagleComply fournit des conseils indépendants en conformité réglementaire, en gestion des risques et en recherche juridique. Le contenu du site est fourni à titre informatif général et ne constitue pas une représentation juridique formelle ou un conseil financier réglementaire propre à une juridiction."
+  },
+  "homeExtended": {
+    "pillarsDesc": "EagleComply aide les entreprises à comprendre les exigences réglementaires complexes, à bâtir des cadres de conformité adaptés, à maîtriser les risques de criminalité financière et à croître en toute sécurité dans les limites légales applicables.",
+    "threeD": "Lattice 3D interactif de gouvernance",
+    "coverageTag": "Couverture internationale",
+    "coverageTitle": "Intelligence réglementaire transfrontalière",
+    "coverageDesc": "Explorez les cadres réglementaires, les autorités de licence et nos bureaux de conseil dans les principaux centres financiers mondiaux.",
+    "diagTag": "OUTIL INTERACTIF DE CADRAGE DE CONFORMITÉ",
+    "diagTitle": "Diagnostic instantané du cadre réglementaire",
+    "diagDesc": "Sélectionnez le profil de votre institution pour identifier les priorités de conformité et les cadres recommandés.",
+    "industry": "Secteur d’activité",
+    "jurisdiction": "Juridiction cible",
+    "priority": "Priorité principale",
+    "recommended": "Plan d’action recommandé",
+    "discuss": "Discuter de ce plan",
+    "method": "Méthodologie d’exécution",
+    "frameworkTitle": "Notre cadre de conseil en 5 étapes",
+    "frameworkDesc": "Du diagnostic initial des risques à l’assurance continue auprès des autorités, nous produisons des résultats structurés et auditables à chaque étape.",
+    "industryVerticals": "Secteurs industriels",
+    "sectorTitle": "Architectures de conformité sectorielles",
+    "exploreSector": "Explorer toutes les solutions sectorielles",
+    "practitionersTag": "PRATICIENS & PARTENAIRES",
+    "practitionersTitle": "Dirigé par des praticiens reconnus de la conformité",
+    "practitionersDesc": "Conseil direct de spécialistes seniors possédant une expertise approfondie en AML/CFT, réglementation financière et conformité juridique internationale.",
+    "credentials": "Expertise & qualifications",
+    "linkedin": "Se connecter sur LinkedIn",
+    "conversionDesc": "Planifiez une consultation confidentielle pour voir comment EagleComply peut construire, évaluer ou renforcer votre cadre de conformité.",
+    "marquee": [
+      [
+        "Normes GAFI",
+        "Référence mondiale"
+      ],
+      [
+        "Approche par les risques",
+        "Contrôles adaptés"
+      ],
+      [
+        "Prêt pour les licences",
+        "Dossiers réglementaires"
+      ],
+      [
+        "NDA bilatéral",
+        "Conseil confidentiel"
+      ],
+      [
+        "UE 6AMLD & AMLA",
+        "Directives européennes"
+      ],
+      [
+        "FinCEN BSA/AML",
+        "Normes fédérales"
+      ],
+      [
+        "Travel Rule (CASP)",
+        "Protocole actifs virtuels"
+      ],
+      [
+        "Modèle des trois lignes",
+        "Gouvernance d’entreprise"
+      ],
+      [
+        "ISO 31000 & COSO",
+        "Risque institutionnel"
+      ],
+      [
+        "RGPD & confidentialité",
+        "Protection légale"
+      ],
+      [
+        "Attestation CMP",
+        "Suivi prudentiel"
+      ],
+      [
+        "Filtrage & sanctions",
+        "Contrôles PEP en temps réel"
+      ]
+    ],
+    "pillarData": [
+      [
+        "Financial Crime",
+        "Core Focus",
+        "AML/CFT & Financial Crime",
+        "Enterprise ML/TF risk assessments, KYC/CDD/EDD frameworks, transaction monitoring, sanctions screening, and Travel Rule implementation",
+        "Standards",
+        "FATF Aligned"
+      ],
+      [
+        "Regulatory Advisory",
+        "Licensing & CMP",
+        "Regulatory Compliance",
+        "Licensing and authorization readiness, regulatory gap assessments, compliance monitoring programs (CMP), and change management.",
+        "Scope",
+        "Multi-Jurisdiction"
+      ],
+      [
+        "Risk & Oversight",
+        "Board Governance",
+        "Risk & Governance",
+        "Enterprise risk assessments, risk appetite statements, operational risk, third-party compliance oversight, and governance structures.",
+        "Model",
+        "3 Lines of Defense"
+      ],
+      [
+        "Legal Advisory",
+        "Specialized Counsel",
+        "Legal & Compliance Advisory",
+        "Regulatory legal research, compliance documentation, contract and policy reviews, crypto/fintech advisory, and privacy compliance.",
+        "Precision",
+        "Cross-Border Depth"
+      ]
+    ],
+    "roadmap": [
+      [
+        "Diagnostic & analyse des écarts",
+        "Périmètre réglementaire & identification des risques",
+        "Cartographie complète des risques inhérents selon les clients, produits, corridors transfrontaliers et dépendances tierces."
+      ],
+      [
+        "Ingénierie des politiques & contrôles",
+        "Architecture prête pour audit",
+        "Élaboration de politiques AML/CFT, flux KYC/EDD, appétit au risque et chartes de gouvernance adaptés au modèle opérationnel."
+      ],
+      [
+        "Calibrage des systèmes & filtrage",
+        "Technologie automatisée de criminalité financière",
+        "Configuration des règles de surveillance des transactions, listes de sanctions, bases PEP et systèmes Travel Rule."
+      ],
+      [
+        "Formation des équipes & du conseil",
+        "Formation de conformité par rôle",
+        "Modules interactifs pour les équipes opérationnelles, responsables conformité et dirigeants sur les obligations et l’escalade des signaux d’alerte."
+      ],
+      [
+        "Assurance indépendante & audits",
+        "Préparation prudentielle continue",
+        "Revues AML/CFT annuelles, tests d’échantillons et rapports de remédiation pour répondre aux partenaires bancaires et autorités."
+      ]
+    ],
+    "sectors": {
+      "banking": [
+        "Banques & établissements de crédit",
+        "Gestion des règles prudentielles, des risques ML/TF institutionnels et du suivi de conformité par les autorités.",
+        [
+          "Méthodologie d’évaluation du risque ML/TF",
+          "Due diligence de la banque correspondante et comptes imbriqués",
+          "Gouvernance prudentielle et supervision des trois lignes de défense",
+          "Filtrage des sanctions en temps réel et corridors à haut risque"
+        ]
+      ],
+      "fintech": [
+        "FinTech & acteurs numériques",
+        "Préparation accélérée aux licences, KYC numérique automatisé et conformité des banques partenaires.",
+        [
+          "Dossiers d’autorisation des établissements de paiement et monnaie électronique",
+          "KYC/CDD numérique automatisé et contrôles biométriques",
+          "Alignement conformité avec les banques partenaires",
+          "Programmes de surveillance évolutifs pour accompagner la croissance"
+        ]
+      ],
+      "payments": [
+        "Prestataires de paiement & acquéreurs",
+        "Gestion du risque, règles de surveillance des transactions et conformité des paiements transfrontaliers.",
+        [
+          "Due diligence et segmentation du risque des marchands",
+          "Détection de fraude et contrôle des litiges",
+          "Protection des fonds clients et calculs de capital réglementaire",
+          "Alignement PSD2 / PSD3 et open banking"
+        ]
+      ],
+      "crypto": [
+        "Crypto & actifs numériques",
+        "Préparation aux licences VASP/CASP, Travel Rule du GAFI et analyse blockchain.",
+        [
+          "Préparation MiCA, VARA EAU et licences crypto FCA britannique",
+          "Messagerie Travel Rule et vérification des contreparties",
+          "Avis juridiques sur les tokens et revue des whitepapers",
+          "Gestion des risques des wallets non hébergés et protocoles décentralisés"
+        ]
+      ]
+    },
+    "practitioners": [
+      [
+        "LEAD",
+        "AML/CFT & criminalité financière",
+        "Muhammad Shahid",
+        "Spécialiste des programmes AML/CFT et des référentiels de risque réglementaire pour banques, paiements et transferts.",
+        [
+          "Spécialiste AML certifié (CAMS)",
+          "Diplôme international ICA en AML/CFT",
+          "Évaluateur des risques de criminalité financière"
+        ]
+      ],
+      [
+        "PARTNER",
+        "Réglementation & gouvernance des risques",
+        "Syed Anwar Hussain",
+        "Dirige la préparation aux licences, la gouvernance statutaire et les modèles institutionnels des trois lignes de défense.",
+        [
+          "Professionnel certifié en conformité réglementaire",
+          "Fellow en gouvernance des risques",
+          "Spécialiste senior du contrôle interne"
+        ]
+      ],
+      [
+        "ADVISORY",
+        "Conformité juridique & Web3",
+        "Shan Ali",
+        "Spécialiste des actifs numériques, des protections commerciales fintech et de la confidentialité transfrontalière.",
+        [
+          "LL.M. droit financier et commercial international",
+          "Conseiller juridique blockchain certifié",
+          "Professionnel IAPP CIPP/E en confidentialité"
+        ]
+      ]
+    ],
+    "diagOptions": {
+      "banking": "Banques & établissements de crédit",
+      "fintech": "FinTech & néobanques",
+      "payments": "Prestataires de services de paiement",
+      "remittance": "Entreprises de transfert de fonds",
+      "crypto": "Crypto & actifs numériques",
+      "uk_eu": "Royaume-Uni & Union européenne",
+      "us": "États-Unis (FinCEN / MTL d’État)",
+      "uae": "EAU (ADGM, DIFC, VARA)",
+      "apac": "Singapour (MAS) & Asie-Pacifique",
+      "global": "Multi-corridors transfrontaliers",
+      "aml": "Programme AML/CFT & évaluation des risques",
+      "licensing": "Préparation aux licences & conformité réglementaire",
+      "review": "Revue / audit indépendant du programme",
+      "training": "Formation des équipes & du conseil",
+      "cryptoAction": "Architecture d’autorisation VASP / MiCA & Travel Rule",
+      "remittanceAction": "Évaluation ML/TF des corridors & revue AML annuelle indépendante",
+      "fintechAction": "Dossier de licence agile & pack conformité banque partenaire",
+      "defaultAction": "Gouvernance AML/CFT complète & cadre CMP"
+    },
+    "submitInquiry": "Envoyer une demande",
+    "statLabels": [
+      "Normes",
+      "Périmètre",
+      "Modèle",
+      "Précision"
+    ],
+    "statValues": [
+      "Aligné sur le GAFI",
+      "Multi-juridictions",
+      "Trois lignes de défense",
+      "Expertise transfrontalière"
+    ]
+  }
+}

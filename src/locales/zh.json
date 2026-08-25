@@ -1,0 +1,724 @@
+{
+  "nav": {
+    "solutions": "合规方案",
+    "industries": "行业领域",
+    "globalCompliance": "全球合规",
+    "knowledge": "智库洞察",
+    "caseStudies": "客户案例",
+    "about": "关于我们",
+    "careers": "招贤纳士",
+    "contact": "联系我们",
+    "legal": "法律声明",
+    "search": "搜索目录",
+    "home": "首页",
+    "services": "服务",
+    "insights": "洞察",
+    "resources": "资源",
+    "bookConsultation": "预约咨询"
+  },
+  "hero": {
+    "badge": "AI赋能的独立全球监管咨询机构",
+    "h1": "智能化全球合规监管。",
+    "h1Span": "法律级精确保障。",
+    "desc": "Eagle Compliance 提供由专家主导的监管战略、欧盟CE认证、DORA运营韧性、欧盟人工智能法案治理及跨司法管辖区牌照准入服务。",
+    "bookBtn": "预约合伙人咨询",
+    "quoteBtn": "获取即时报价"
+  },
+  "pillars": {
+    "title": "四大互联合规支柱",
+    "subtitle": "由经验丰富的合规实践者构建的综合合规架构，帮助受监管及计划进入受监管行业的企业更清晰地应对监管要求。",
+    "ai": "人工智能",
+    "blockchain": "区块链与Web3",
+    "law": "成文法典",
+    "governance": "企业治理",
+    "tag": "核心专业领域",
+    "p1_title": "反洗钱/反恐融资与金融犯罪",
+    "p1_desc": "AML/CFT项目、机构风险评估、KYC/CDD/EDD框架、交易监控、制裁筛查及旅行规则实施。",
+    "p2_title": "监管合规",
+    "p2_desc": "牌照准备、监管合规框架、差距评估、合规监测计划及监管变化管理。",
+    "p3_title": "风险与治理",
+    "p3_desc": "企业风险评估、风险偏好、运营风险、第三方合规监督及董事会治理架构。",
+    "p4_title": "法律与合规咨询",
+    "p4_desc": "监管法律研究、合规文件、合同与政策审查、加密资产/金融科技咨询及隐私合规。"
+  },
+  "solutionsSec": {
+    "tag": "专业解决方案",
+    "title": "全流程监管业务实践领域",
+    "viewAll": "查看全部6大业务",
+    "exploreSow": "查看工作范围",
+    "megaTitle": "监管业务实践领域",
+    "megaSubtitle": "全范围合规保障",
+    "megaDesc": "CE认证标记、DORA ICT登记册及监管抗辩。"
+  },
+  "globalSec": {
+    "tag": "全球覆盖",
+    "title": "覆盖45+受监管司法管辖区",
+    "desc": "实时追踪欧盟成员国、英国FCA、美国联邦机构、迪拜VARA/ADGM、新加坡MAS及日本金融厅监管动态。"
+  },
+  "cta": {
+    "tag": "机构级合作",
+    "title": "确保您的全球市场准入与商业拓展",
+    "desc": "在双边保密协议（NDA）保障下，预约资深合伙人进行机密需求沟通与范围评估。",
+    "bookBtn": "预约合伙人咨询",
+    "quoteBtn": "即时生成工作范围SOW估算"
+  },
+  "solutionsPage": {
+    "tag": "全方位监管鉴证",
+    "title": "机构级业务实践领域",
+    "subtitle": "从前沿AI风险档案到DORA韧性压力测试及MiCA牌照申请，Eagle Compliance交付经得起司法考验的审计卷宗。",
+    "all": "全部6大业务",
+    "inspect": "查看业务详情"
+  },
+  "industriesPage": {
+    "tag": "行业监管纵深",
+    "title": "重点行业监管垂直领域",
+    "subtitle": "专为面临严苛跨国监管审查的高影响产业量身定制的合规架构。",
+    "desk": "咨询台",
+    "explore": "探索行业"
+  },
+  "globalPage": {
+    "tag": "跨国监管监督名录",
+    "title": "全球合规与国家/地区事务台",
+    "subtitle": "覆盖45+受监管司法管辖区的完整法定卷宗、主管当局名录及专属咨询服务台。",
+    "search": "按国家、监管机构（如FCA、BaFin、VARA）搜索...",
+    "inspect": "查阅监管卷宗"
+  },
+  "regulationsPage": {
+    "tag": "成文指令与风险法典",
+    "title": "主要监管合规框架",
+    "subtitle": "深度法条解析、实施时间表、强制性治理义务及最高违规处罚标准。",
+    "search": "按法规名称（如AI Act、DORA、GDPR、MiCA）搜索...",
+    "fines": "法定最高违规罚金",
+    "inspect": "查阅法条"
+  },
+  "knowledgePage": {
+    "tag": "监管情报智库",
+    "title": "知识中心与高管合规工具包",
+    "subtitle": "法定自查清单、CE标记模板、DORA第三方风险登记册以及面向合规官的同行评审白皮书。",
+    "download": "下载PDF文档",
+    "purchase": "订购工作说明书"
+  },
+  "insightsPage": {
+    "tag": "高管法务分析",
+    "title": "监管洞察与深度社论",
+    "subtitle": "针对全球新兴法规、监管执法趋势及合规体系构建的专业评论与实务指引。",
+    "read": "阅读文章"
+  },
+  "expertsPage": {
+    "tag": "资深专家团队",
+    "title": "高级业务实践合伙人",
+    "subtitle": "由前监管机构官员、ISO技术委员会委员及资深法律顾问组成，提供直接的高管顾问支持。",
+    "book": "预约咨询"
+  },
+  "aboutPage": {
+    "tag": "机构传承与法定使命",
+    "title": "关于 Eagle Compliance",
+    "subtitle": "我们是一家专业监管智库机构，汇聚算法科学家、前监管执法官员与国际法学学者。",
+    "dossier": "机构档案编号 EC-2026-HERITAGE",
+    "established": "创立于：伦敦与布鲁塞尔（2019年）",
+    "heroHeadline": "在算法颠覆时代铸就确定的监管合规保障。",
+    "heroProclamation": "在欧盟人工智能法案和DORA巨额罚金的时代，形式主义合规早已过时。我们构建经得起监管机构对抗性审查的可验证审计档案。",
+    "metrics": {
+      "jurisdictions": "45+ 监管中心",
+      "approval": "99.4% 官方核准率",
+      "fines": "0欧元 客户罚金记录"
+    },
+    "charterTitle": "机构治理准则宪章",
+    "charterPrinciples": [
+      "经得起实战检验的对抗性审计准备",
+      "零信任租户级数据物理与逻辑隔离",
+      "默认签署双边保密协议（NDA）"
+    ],
+    "mission": "我们的使命",
+    "missionDesc": "构建能够经受监管机构正式对抗性审查的可验证合规证据体系。",
+    "vision": "我们的愿景",
+    "visionDesc": "成为全球在算法治理与监管运营韧性领域最受推崇的战略合作伙伴。",
+    "values": "核心价值观",
+    "valuesList": [
+      "机构诚信",
+      "工程级精确",
+      "全球责任",
+      "原生机密性设计"
+    ],
+    "roadmapTitle": "机构发展历程与路线图",
+    "viewTimeline": "查看详细发展历程",
+    "futureCommitment": "未来承诺",
+    "futureDesc": "为构建值得信赖、合规且具韧性的数字经济体筑牢制度与技术基石。",
+    "coreCompetenciesTitle": "核心专业能力矩阵",
+    "competencies": [
+      {
+        "title": "人工智能治理与算法风险",
+        "desc": "欧盟AI法案, ISO/IEC 42001, NIST AI RMF"
+      },
+      {
+        "title": "监管合规战略与顾问咨询",
+        "desc": "欧盟、美国、英国、阿联酋及亚太监管框架"
+      },
+      {
+        "title": "数据隐私与跨境传输保护",
+        "desc": "GDPR, 个人信息保护法, CPRA, PIPL"
+      },
+      {
+        "title": "网络韧性与TLPT威胁渗透测试",
+        "desc": "DORA, TIBER-EU, 系统压力测试"
+      },
+      {
+        "title": "市场准入与符合性认证",
+        "desc": "CE认证, FCC, UKCA, 全球牌照核准"
+      },
+      {
+        "title": "审计与合规鉴证前沿技术",
+        "desc": "AI加密保险库, 证据链自动化, 监控面板"
+      }
+    ],
+    "leadershipTitle": "缔造信任的高管领导团队",
+    "viewTeam": "查看所有专家合伙人",
+    "presenceTitle": "全球战略布局 · 本地监管纵深",
+    "presenceSubtitle": "常驻主要国际金融与监管中心，提供第一线实务经验与实时合规情报。",
+    "whyTitle": "为什么领军企业选择 Eagle Compliance",
+    "whyCards": [
+      {
+        "title": "监管者思维视角",
+        "desc": "深刻理解监管当局与审查法官的内在裁量逻辑。"
+      },
+      {
+        "title": "跨学科技术深度",
+        "desc": "顶尖工程师、主任审计师、资深律师与科学家强强联合。"
+      },
+      {
+        "title": "全球一体化网络",
+        "desc": "覆盖45+司法管辖区，一个值得信赖的全球伙伴。"
+      },
+      {
+        "title": "经实战验证的记录",
+        "desc": "在官方审批与公告机构审核中保持99.4%的高核准率。"
+      },
+      {
+        "title": "严守机密第一准则",
+        "desc": "高强度加密 · 专有隔离 · 坚实防护。"
+      }
+    ],
+    "certificationsTitle": "权威认证与机构合作伙伴"
+  },
+  "caseStudiesPage": {
+    "tag": "卓越企业实践成果",
+    "title": "客户案例与审计实战档案",
+    "subtitle": "深入了解 Eagle Compliance 如何在复杂的全球监管环境中协助企业获得官方核准、化解系统性风险并建立卓越的运营韧性。",
+    "pills": {
+      "precision": "监管精确性",
+      "mitigation": "全景风险化解",
+      "resilience": "卓越运营韧性"
+    },
+    "telemetry": {
+      "reach": "全球覆盖",
+      "reachSub": "服务受监管辖区",
+      "outcomes": "交付成果",
+      "outcomesSub": "成功交付项目",
+      "success": "监管成功率",
+      "successSub": "平均官方核准率"
+    },
+    "metrics": [
+      {
+        "value": "20+",
+        "label": "年监管合规卓越经验"
+      },
+      {
+        "value": "500+",
+        "label": "个成功落地咨询项目"
+      },
+      {
+        "value": "45+",
+        "label": "个全球受监管司法管辖区"
+      },
+      {
+        "value": "98.7%",
+        "label": "官方审查核准率"
+      }
+    ],
+    "categories": [
+      "全部案例",
+      "金融服务与银行",
+      "科技与企业软件",
+      "数字资产与Web3",
+      "医疗健康与医药",
+      "先进制造与工业",
+      "能源与基础设施",
+      "政府与公共事业"
+    ],
+    "filter": "筛选",
+    "challenge": "监管挑战",
+    "solution": "实施方案",
+    "outcome": "核实成果",
+    "viewSummary": "查看完整摘要",
+    "ctaTag": "准备好筑牢您的机构合规防线了吗？",
+    "ctaTitle": "让我们携手达成您的下一个监管里程碑",
+    "ctaSubtitle": "与 Eagle Compliance 携手，为应对复杂的全球高风险监管环境获取以成果为导向的专业智慧。",
+    "ctaBtn": "预约合伙人咨询"
+  },
+  "careersPage": {
+    "tag": "加入我们",
+    "title": "共同塑造监管法律的未来",
+    "subtitle": "我们正在伦敦、布鲁塞尔、纽约和迪拜招聘资深AI审计师、DORA架构师及金融监管顾问。",
+    "openings": "当前开放职位",
+    "apply": "申请该职位"
+  },
+  "contactPage": {
+    "tag": "全球常驻咨询台",
+    "title": "发起监管范围评估",
+    "subtitle": "在双边保密协议（NDA）保障下，直接与我们常驻伦敦、布鲁塞尔、华盛顿、迪拜DIFC及新加坡的合伙人取得联系。",
+    "successTitle": "咨询已加密并成功接收",
+    "successDesc": "相关管辖台的业务合伙人将在4个工作小时内与您联系并完成双边NDA签署。",
+    "name": "法定全名",
+    "email": "企业工作邮箱",
+    "company": "机构/企业名称",
+    "jurisdiction": "主要管辖区",
+    "message": "监管诉求简述",
+    "transmit": "提交评估请求（双边保密协议）",
+    "desksTitle": "常驻区域咨询台",
+    "fullName": "姓名",
+    "businessEmail": "企业邮箱",
+    "companyOrg": "公司 / 组织",
+    "countryJurisdiction": "国家 / 司法管辖区",
+    "industrySector": "行业领域",
+    "serviceRequired": "所需服务",
+    "briefDescription": "需求简述",
+    "requestConsultation": "Send Message / Query",
+    "directContacts": "Direct Contacts",
+    "placeholders": {
+      "name": "例如：Alexander Vance",
+      "email": "name@company.com",
+      "company": "例如：Apex Global Payments Ltd",
+      "jurisdiction": "例如：英国、阿联酋、澳大利亚",
+      "description": "请说明您的合规范围、监管目标、牌照时间表或具体的金融犯罪挑战……"
+    }
+  },
+  "legalPage": {
+    "tag": "法定治理",
+    "title": "法律条款、隐私政策与监管披露",
+    "sec1Title": "1. 监管地位与咨询范围",
+    "sec1Text": "Eagle Compliance 作为一家独立的监管鉴证与技术风险咨询机构运营。所有卷宗与审计准备报告均严格遵循 ISO/IEC 42001、ISO/IEC 27001 等国际标准及相关法定指令编制。",
+    "sec2Title": "2. 保密机制与数据隔离",
+    "sec2Text": "客户技术文档、源码审查及第三方供应商登记册均隔离保存在遵循静态 AES-256 和传输中 TLS 1.3 的高强度加密多租户仓库中。",
+    "sec3Title": "3. 免责声明",
+    "sec3Text": "本站发布的信息仅供战略情报参考，在未签署正式业务委托协议前不构成正式法律意见。"
+  },
+  "footer": {
+    "desc": "Eagle Compliance 是一家独立的全球监管咨询机构。我们编制经核实的审计档案、CE标记符合性文件并协助获取跨国合规准入。",
+    "badge": "ISO/IEC 27001 & 42001 主任审核员",
+    "quickLinks": "快速导航",
+    "practices": "业务领域",
+    "legal": "法务与指令",
+    "copyright": "© 2026 Eagle Compliance Group Ltd. 保留所有权利。",
+    "encrypted": "256位高强度加密库",
+    "directivesCodex": "指令与法典",
+    "aiPractice": "欧盟AI法案治理",
+    "doraPractice": "DORA韧性与TLPT",
+    "cryptoPractice": "MiCA与加密资产",
+    "privacyPractice": "GDPR与全球隐私",
+    "esgPractice": "CSRD双重重大性",
+    "seniorPartners": "高级合伙人",
+    "careersCulture": "职业与文化",
+    "residentDesks": "常驻办事处",
+    "ndaPolicy": "双边保密协议政策",
+    "company": "公司与法务",
+    "industriesInsights": "行业与洞察",
+    "latestInsights": "最新合规洞察",
+    "about": "关于EagleComply",
+    "resourceCentre": "资源中心",
+    "contactConsultations": "联系与咨询",
+    "privacy": "隐私政策",
+    "terms": "使用条款",
+    "disclaimer": "专业服务免责声明",
+    "email": "info@eaglecomply.com",
+    "website": "www.eaglecomply.com",
+    "linkedin": "EagleComply LinkedIn",
+    "footerBody": "我们帮助企业理解复杂监管要求，建立适当的合规框架，并管理监管及金融犯罪风险。",
+    "secureComms": "机密与加密通信"
+  },
+  "common": {
+    "bookConsultation": "预约合伙人咨询",
+    "requestQuote": "获取即时报价",
+    "search": "搜索...",
+    "explore": "了解详情",
+    "close": "关闭",
+    "clear": "清除",
+    "filter": "筛选",
+    "results": "条结果",
+    "back": "返回",
+    "next": "下一步",
+    "confirm": "确认并提交",
+    "status": "状态",
+    "overview": "概述与业务范围",
+    "challenges": "主要监管挑战",
+    "deliverables": "核心交付成果",
+    "methodology": "实施方法论",
+    "leadExpert": "主管业务合伙人",
+    "relatedRegulations": "主要法定监管框架",
+    "relatedIndustries": "适用行业领域",
+    "regulators": "主管监督机构",
+    "residentDesk": "常驻区域咨询台",
+    "penalties": "法定最高违规罚金",
+    "jurisdiction": "受监管管辖区",
+    "timeline": "法定合规时间线",
+    "articles": "监管文章与专栏",
+    "resources": "合规工具包与卷宗",
+    "applyRole": "申请该职位",
+    "caseStudy": "精选审计实战档案"
+  },
+  "modals": {
+    "consultationTitle": "预约合伙人合规评估咨询",
+    "consultationSubtitle": "在双边保密协议（NDA）保障下与常驻合伙人进行机密咨询。",
+    "step1": "1. 业务领域与议题",
+    "step2": "2. 日期、时间与时区",
+    "step3": "3. 负责人信息",
+    "step4": "4. 保密协议确认",
+    "selectPractice": "选择业务领域",
+    "selectExpert": "选择对接合伙人",
+    "consultationTopic": "咨询核心议题",
+    "format": "咨询形式",
+    "selectDate": "选择日期",
+    "selectTime": "选择时间段",
+    "selectTimezone": "您所在的时区",
+    "name": "法定全名",
+    "email": "企业工作邮箱",
+    "organization": "企业/机构名称",
+    "jobTitle": "您的职务",
+    "ndaCheckbox": "要求立即签署双边保密协议（NDA）",
+    "background": "监管背景简述",
+    "confirmedTitle": "咨询已确认并加密完成",
+    "confirmedDesc": "您的合伙人咨询已成功排期，会议接入信息已发送至您的企业邮箱。",
+    "bookingRef": "预约编号",
+    "calendarInvite": "下载日历日程邀请 (.ICS)",
+    "quoteTitle": "即时工作范围说明书（SOW）估算器",
+    "quoteSubtitle": "配置您的机构合规需求并获取经过验证的费用与周期估算。",
+    "quoteStep1": "1. 业务与行业",
+    "quoteStep2": "2. 管辖区与实体数量",
+    "quoteStep3": "3. 范围与联系方式",
+    "selectIndustry": "选择主要行业",
+    "targetJurisdictions": "目标司法管辖区",
+    "entityCount": "涉及受监管实体数量",
+    "targetTimeline": "预期交付周期",
+    "scopeBudget": "预算与项目规模",
+    "phone": "联系电话",
+    "scopeSummary": "项目范围简述",
+    "quoteGenerated": "工作说明书（SOW）估算已生成",
+    "quoteDesc": "您的初步范围估算已记录，档案参考号为",
+    "orderTitle": "合规工具包与卷宗订购",
+    "orderSubtitle": "即刻获取经过实战检验的合规卷宗",
+    "orderSuccessTitle": "卷宗已就绪可供下载",
+    "orderSuccessDesc": "您的许可证密钥和SHA-256验证哈希已生成并发送至您的企业邮箱。",
+    "deliveryMethod": "交付方式",
+    "licenseTier": "授权级别",
+    "searchTitle": "全球监管名录检索",
+    "searchPlaceholder": "搜索法规（如DORA、AI Act、CSRD）、业务领域、管辖区...",
+    "chatbotTitle": "Eagle 监管智能助手",
+    "chatbotWelcome": "您好！我是 Eagle Compliance 机构智能助手。请问今天能为您在合规评估或监管咨询方面提供什么帮助？",
+    "chatbotPlaceholder": "咨询关于欧盟AI法案、DORA、MiCA、GDPR或特定管辖区的问题..."
+  },
+  "experience": {
+    "tag": "咨询体验",
+    "title": "将监管复杂性转化为可执行行动",
+    "subtitle": "了解服务架构、交付流程以及常见合规问题，帮助建立有效的合规合作。",
+    "servicesTag": "服务架构",
+    "servicesTitle": "一体化合规服务",
+    "servicesSubtitle": "选择一个实践领域，查看其范围、典型交付成果和业务价值。",
+    "selected": "已选领域",
+    "explore": "查看领域",
+    "faqTag": "合规指引",
+    "faqTitle": "常见合规问题",
+    "ctaTag": "下一步",
+    "ctaTitle": "需要针对合规问题获得指导？",
+    "ctaDesc": "分享您的情况，与 EagleComply 讨论可行的实践方案。",
+    "ctaBtn": "预约咨询",
+    "steps": [
+      {
+        "title": "评估",
+        "desc": "梳理义务、风险、业务模式和适用司法辖区。"
+      },
+      {
+        "title": "设计",
+        "desc": "建立适当的政策、控制、治理机制和文件体系。"
+      },
+      {
+        "title": "实施",
+        "desc": "将监管要求转化为运营流程和可验证证据。"
+      },
+      {
+        "title": "保障",
+        "desc": "测试控制、识别差距并确定整改优先级。"
+      }
+    ],
+    "faq1q": "AML/CFT 计划通常包括哪些内容？",
+    "faq1a": "通常可包括治理、风险评估、KYC/CDD/EDD、制裁和 PEP 筛查、交易监控、可疑活动升级、培训、报告以及独立测试。",
+    "faq2q": "EagleComply 能否协助许可证准备？",
+    "faq2a": "可以。服务可包括差距评估、治理、政策、控制框架、证据包和准备支持。最终许可决定由主管监管机构作出。",
+    "faq3q": "企业应如何处理新的监管要求？",
+    "faq3a": "先确定适用范围，再评估现有控制的差距，优先处理重大风险，实施并记录措施，同时保留管理层和监管审查所需的证据。",
+    "faq4q": "网站是否提供特定司法辖区的法律意见？",
+    "faq4a": "网站内容属于一般信息。具体法律或监管意见应在适当的委托关系下提供，必要时由合资格的当地法律顾问参与。"
+  },
+  "chatbot": {
+    "greet": "您好！我是 EagleComply 助手。您可以询问 AML/CFT、许可、风险、治理、法律与合规、行业或司法辖区。",
+    "noMatch": "我可以帮助您了解 EagleComply 的服务、AML/CFT、许可准备、风险与治理、法律合规咨询、培训和独立审查。",
+    "service": "根据您的问题，最相关的 EagleComply 服务领域是",
+    "guidance": "实务建议：确定范围和司法辖区，评估风险与监管差距，记录适当控制措施，实施后进行测试和整改。",
+    "disclaimer": "以上为一般信息，不构成特定司法辖区的法律意见。",
+    "consult": "预约咨询",
+    "services": "查看服务"
+  },
+  "brand": {
+    "name": "EagleComply",
+    "separated": "Eagle Comply",
+    "tagline": "复杂监管，清晰方案，自信增长。",
+    "subphrase": "反洗钱 | 监管 | 风险 | 法律合规",
+    "disclaimer": "EagleComply提供独立的监管合规、风险管理咨询及法律研究支持。本网站内容仅用于一般信息参考，不构成针对特定司法辖区的正式法律代理、监管或金融建议。"
+  },
+  "homeExtended": {
+    "pillarsDesc": "EagleComply帮助企业理解复杂的监管要求，建立适当的合规框架，管理金融犯罪风险，并在适用法律边界内实现安全、可持续增长。",
+    "threeD": "交互式3D治理晶格",
+    "coverageTag": "国际覆盖",
+    "coverageTitle": "跨境监管情报",
+    "coverageDesc": "探索全球主要金融中心的监管框架、牌照主管机构和咨询服务台。",
+    "diagTag": "交互式合规范围评估工具",
+    "diagTitle": "即时监管框架诊断",
+    "diagDesc": "选择您的机构画像，以发现关键合规重点和推荐框架。",
+    "industry": "行业领域",
+    "jurisdiction": "目标司法管辖区",
+    "priority": "主要优先事项",
+    "recommended": "推荐行动方案",
+    "discuss": "讨论此方案",
+    "method": "执行方法论",
+    "frameworkTitle": "我们的五阶段咨询框架",
+    "frameworkDesc": "从初始风险诊断到持续监管准备，我们在每个阶段提供结构化、可审计的成果。",
+    "industryVerticals": "行业领域",
+    "sectorTitle": "行业专属合规架构",
+    "exploreSector": "探索全部行业解决方案",
+    "practitionersTag": "专业人士与合作伙伴",
+    "practitionersTitle": "由资深合规专业人士主导",
+    "practitionersDesc": "由在AML/CFT、金融监管和国际法律合规方面拥有深厚资历的高级专家直接提供咨询。",
+    "credentials": "专业能力与资质",
+    "linkedin": "在LinkedIn上联系",
+    "conversionDesc": "预约保密咨询，了解EagleComply如何构建、评估或强化您的合规框架。",
+    "marquee": [
+      [
+        "FATF标准",
+        "全球基准"
+      ],
+      [
+        "风险为本",
+        "定制控制"
+      ],
+      [
+        "牌照准备就绪",
+        "监管申报档案"
+      ],
+      [
+        "双边NDA",
+        "保密咨询"
+      ],
+      [
+        "EU 6AMLD & AMLA",
+        "欧洲指令"
+      ],
+      [
+        "FinCEN BSA/AML",
+        "联邦标准"
+      ],
+      [
+        "Travel Rule (CASP)",
+        "虚拟资产协议"
+      ],
+      [
+        "三道防线模型",
+        "企业治理"
+      ],
+      [
+        "ISO 31000 & COSO",
+        "机构风险"
+      ],
+      [
+        "GDPR与隐私",
+        "法定保护"
+      ],
+      [
+        "CMP鉴证",
+        "监管监测"
+      ],
+      [
+        "筛查与制裁",
+        "实时PEP检查"
+      ]
+    ],
+    "pillarData": [
+      [
+        "Financial Crime",
+        "Core Focus",
+        "AML/CFT & Financial Crime",
+        "Enterprise ML/TF risk assessments, KYC/CDD/EDD frameworks, transaction monitoring, sanctions screening, and Travel Rule implementation",
+        "Standards",
+        "FATF Aligned"
+      ],
+      [
+        "Regulatory Advisory",
+        "Licensing & CMP",
+        "Regulatory Compliance",
+        "Licensing and authorization readiness, regulatory gap assessments, compliance monitoring programs (CMP), and change management.",
+        "Scope",
+        "Multi-Jurisdiction"
+      ],
+      [
+        "Risk & Oversight",
+        "Board Governance",
+        "Risk & Governance",
+        "Enterprise risk assessments, risk appetite statements, operational risk, third-party compliance oversight, and governance structures.",
+        "Model",
+        "3 Lines of Defense"
+      ],
+      [
+        "Legal Advisory",
+        "Specialized Counsel",
+        "Legal & Compliance Advisory",
+        "Regulatory legal research, compliance documentation, contract and policy reviews, crypto/fintech advisory, and privacy compliance.",
+        "Precision",
+        "Cross-Border Depth"
+      ]
+    ],
+    "roadmap": [
+      [
+        "诊断与差距评估",
+        "监管范围与风险识别",
+        "围绕客户类型、产品、跨境业务通道和第三方依赖全面梳理机构固有风险。"
+      ],
+      [
+        "政策与控制工程",
+        "审计就绪框架架构",
+        "制定AML/CFT政策、KYC/EDD流程、风险偏好声明和治理章程。"
+      ],
+      [
+        "系统校准与筛查",
+        "自动化金融犯罪技术",
+        "配置交易监控规则、制裁名单、PEP数据库及Travel Rule系统。"
+      ],
+      [
+        "员工与董事会赋能",
+        "按角色开展合规培训",
+        "为一线员工、合规人员和高管提供监管职责及风险信号培训。"
+      ],
+      [
+        "独立鉴证与审计",
+        "持续监管准备",
+        "开展年度AML/CFT审查、抽样测试和整改报告，以满足银行及监管机构要求。"
+      ]
+    ],
+    "sectors": {
+      "banking": [
+        "银行与信贷机构",
+        "应对审慎监管、机构ML/TF风险评估及监管合规监测。",
+        [
+          "ML/TF风险评估与校准",
+          "代理行尽职调查",
+          "审慎治理与三道防线",
+          "实时制裁筛查及高风险通道监测"
+        ]
+      ],
+      "fintech": [
+        "金融科技与数字化挑战者",
+        "支持快速牌照准备、数字KYC和合作银行合规。",
+        [
+          "支付及电子货币机构授权档案",
+          "自动化数字KYC/CDD",
+          "合作银行合规对接",
+          "可扩展的合规监控体系"
+        ]
+      ],
+      "payments": [
+        "支付服务商与收单机构",
+        "覆盖风险管理、交易监控和跨境支付合规。",
+        [
+          "商户尽调与风险分层",
+          "欺诈检测与争议控制",
+          "客户资金保障与监管资本",
+          "PSD2 / PSD3及开放银行对接"
+        ]
+      ],
+      "crypto": [
+        "加密与数字资产企业",
+        "支持VASP/CASP牌照、FATF Travel Rule和区块链分析。",
+        [
+          "MiCA、VARA及FCA牌照准备",
+          "Travel Rule消息与交易对手验证",
+          "代币分类及白皮书审查",
+          "非托管钱包和去中心化协议风险管理"
+        ]
+      ]
+    },
+    "practitioners": [
+      [
+        "LEAD",
+        "AML/CFT与金融犯罪",
+        "Muhammad Shahid",
+        "专注于银行、支付和汇款领域的AML/CFT项目及监管风险体系。",
+        [
+          "认证AML专家（CAMS）",
+          "ICA国际AML/CFT文凭",
+          "金融犯罪风险评估师"
+        ]
+      ],
+      [
+        "PARTNER",
+        "监管与风险治理",
+        "Syed Anwar Hussain",
+        "负责牌照准备、法定治理及三道防线治理模型。",
+        [
+          "认证监管合规专业人士",
+          "企业风险治理研究员",
+          "高级内部控制专家"
+        ]
+      ],
+      [
+        "ADVISORY",
+        "法律合规与Web3",
+        "Shan Ali",
+        "专注于数字资产、金融科技商业保障和跨境数据隐私。",
+        [
+          "国际金融与商法LL.M.",
+          "认证区块链法律顾问",
+          "IAPP CIPP/E数据隐私专家"
+        ]
+      ]
+    ],
+    "diagOptions": {
+      "banking": "银行与信贷机构",
+      "fintech": "金融科技与数字银行",
+      "payments": "支付服务提供商",
+      "remittance": "汇款与货币服务企业",
+      "crypto": "加密与数字资产",
+      "uk_eu": "英国与欧盟",
+      "us": "美国（FinCEN / 各州MTL）",
+      "uae": "阿联酋（ADGM、DIFC、VARA）",
+      "apac": "新加坡（MAS）及亚太地区",
+      "global": "跨境多业务通道",
+      "aml": "AML/CFT项目与风险评估",
+      "licensing": "牌照与监管准备",
+      "review": "独立项目审查 / 审计",
+      "training": "员工与董事会培训",
+      "cryptoAction": "VASP / MiCA授权与Travel Rule架构",
+      "remittanceAction": "业务通道ML/TF评估与独立年度AML审查",
+      "fintechAction": "敏捷牌照档案与合作银行合规包",
+      "defaultAction": "全面AML/CFT治理与CMP框架"
+    },
+    "submitInquiry": "提交咨询",
+    "statLabels": [
+      "标准",
+      "范围",
+      "模型",
+      "精度"
+    ],
+    "statValues": [
+      "符合FATF",
+      "多司法管辖区",
+      "三道防线",
+      "跨境深度"
+    ]
+  }
+}
