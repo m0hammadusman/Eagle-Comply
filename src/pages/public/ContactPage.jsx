@@ -24,6 +24,7 @@ export default function ContactPage({ onNavigate }) {
   const c = t.contactPage;
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errorMessage, setErrorMessage] = useState(null);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -37,22 +38,39 @@ export default function ContactPage({ onNavigate }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setErrorMessage(null);
+
+    const formDataPayload = new FormData();
+    formDataPayload.append("access_key", "82d704f5-ba44-4790-b41d-55dd4cd644c4");
+    formDataPayload.append("name", formData.name);
+    formDataPayload.append("email", formData.email);
+    formDataPayload.append("subject", `[EagleComply Inquiry] ${formData.name} (${formData.company || 'Direct'}) — ${formData.service}`);
+    formDataPayload.append("from_name", "EagleComply Client Portal");
+    formDataPayload.append("replyto", formData.email);
+    formDataPayload.append("company", formData.company || "N/A");
+    formDataPayload.append("jurisdiction", formData.jurisdiction || "N/A");
+    formDataPayload.append("industry", formData.industry || "N/A");
+    formDataPayload.append("service", formData.service || "General Compliance Advisory");
+    formDataPayload.append("message", `• Service: ${formData.service}\n• Industry: ${formData.industry}\n• Jurisdiction: ${formData.jurisdiction}\n• Company: ${formData.company || 'N/A'}\n\nClient Requirements / Message:\n${formData.description}`);
+
     try {
-      const res = await sendInquiryToCompanyEmail({
-        type: 'Consultation & Advisory Request',
-        clientName: formData.name,
-        email: formData.email,
-        company: formData.company,
-        jurisdiction: formData.jurisdiction,
-        service: formData.service,
-        requirement: formData.description
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formDataPayload
       });
-      console.log('Contact form dispatch result:', res);
+      const data = await response.json();
+      console.log("Web3Forms Response:", data);
+
+      if (data.success) {
+        setSubmitted(true);
+      } else {
+        setErrorMessage(data.message || "Submission failed. Please check your Web3Forms settings.");
+      }
     } catch (err) {
-      console.error('Contact form submission error:', err);
+      console.error("Submission network error:", err);
+      setErrorMessage("Network error connecting to email service. Please email us directly at info@eaglecomply.com");
     } finally {
       setIsSubmitting(false);
-      setSubmitted(true);
     }
   };
 
@@ -142,6 +160,12 @@ export default function ContactPage({ onNavigate }) {
               <form onSubmit={handleSubmit} className="space-y-5">
                 <input type="hidden" name="access_key" value="82d704f5-ba44-4790-b41d-55dd4cd644c4" />
                 <input type="hidden" name="from_name" value="EagleComply Advisory Inquiries" />
+
+                {errorMessage && (
+                  <div className="p-4 rounded-xl bg-red-500/10 border border-red-500/30 text-red-600 dark:text-red-400 text-xs font-semibold flex items-center gap-2 animate-shake">
+                    <span>⚠️ {errorMessage}</span>
+                  </div>
+                )}
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
