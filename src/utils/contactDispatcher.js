@@ -29,8 +29,8 @@ export async function sendInquiryToCompanyEmail(data) {
   const senderDisplayName = company ? `${clientName} (${company})` : (clientName || "Prospective Client");
   const subject = `[EagleComply ${type}] - ${senderDisplayName} — ${service || 'Compliance Advisory'}`;
   
-  // Web3Forms API Access Key (configured via environment or fallback)
-  const web3FormsAccessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || "YOUR_ACCESS_KEY_HERE";
+  // Web3Forms API Access Key
+  const web3FormsAccessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || "82d704f5-ba44-4790-b41d-55dd4cd644c4";
 
   const messageBody = [
     `EAGLECOMPLY CLIENT INQUIRY & SCOPING DETAILS`,
