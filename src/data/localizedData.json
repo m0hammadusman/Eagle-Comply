@@ -7,7 +7,7 @@
       "uptime": "99.98% Telemetry Uptime",
       "selectJurisdiction": "Select Jurisdiction",
       "supervisoryRegulators": "Supervisory Regulators",
-      "residentDesk": "Regional Office",
+      "residentDesk": "Jurisdiction Practice Coverage",
       "inspectDossier": "Inspect {name} Dossier",
       "activeJurisdiction": "ACTIVE FULL JURISDICTION"
     },
@@ -194,7 +194,7 @@
         "capital": "Brussels",
         "overview": "The global epicenter of regulatory standard-setting. Navigating the EU requires synchronized mastery of digital resilience (DORA, NIS2), artificial intelligence (EU AI Act), privacy (GDPR), and sustainability (CSRD).",
         "status": "Active Full Jurisdiction",
-        "office": "Brussels & Frankfurt Advisory Hubs",
+        
         "keySectors": [
           "Financial Services",
           "Technology & AI",
@@ -208,7 +208,7 @@
         "capital": "Washington, D.C.",
         "overview": "High-stakes federal and state regulatory landscape governed by aggressive SEC enforcement, FTC privacy oversight, FDA pre-market reviews, and rigorous DoD cybersecurity standards.",
         "status": "Active Full Jurisdiction",
-        "office": "New York (Wall St) & Washington D.C.",
+        
         "keySectors": [
           "Financial Markets",
           "MedTech & Biotech",
@@ -222,7 +222,7 @@
         "capital": "London",
         "overview": "Post-Brexit independent regulatory powerhouse combining high-velocity financial innovation with strict FCA Consumer Duty, UK GDPR, and emerging AI regulatory frameworks.",
         "status": "Active Full Jurisdiction",
-        "office": "London Global Headquarters (Mayfair)",
+        
         "keySectors": [
           "FinTech & Banking",
           "Asset Management",
@@ -236,7 +236,7 @@
         "capital": "Abu Dhabi / Dubai",
         "overview": "The Middle East's premier international finance and virtual asset hub, governed by world-leading digital asset frameworks (VARA), Abu Dhabi Global Market (ADGM), and UAE Federal PDPL.",
         "status": "Active Full Jurisdiction",
-        "office": "Dubai (DIFC) & Abu Dhabi Hubs",
+        
         "keySectors": [
           "Digital Assets & Web3",
           "Sovereign Wealth",
@@ -250,7 +250,7 @@
         "capital": "Singapore",
         "overview": "Asia-Pacific's most trusted regulatory jurisdiction, defined by MAS progressive fintech licensing, strict PDPA privacy laws, and regional ESG disclosure roadmaps.",
         "status": "Active Full Jurisdiction",
-        "office": "Marina Bay Financial Centre",
+        
         "keySectors": [
           "Wealth Management",
           "Payments & FinTech",
@@ -264,7 +264,7 @@
         "capital": "Tokyo",
         "overview": "Pioneering Asian digital asset and corporate governance market overseen by the Financial Services Agency (JFSA) and Personal Information Protection Commission (PPC).",
         "status": "Active Full Jurisdiction",
-        "office": "Marunouchi Financial District, Tokyo",
+        
         "keySectors": [
           "Banking & Insurance",
           "Robotics & AI",
@@ -535,7 +535,7 @@
       "requestQuote": "Request SOW Estimate",
       "inspectDossier": "Inspect Regulatory Dossier",
       "regulators": "Competent Supervisory Authorities",
-      "residentDesk": "Regional Regulatory Office",
+      "residentDesk": "Jurisdiction Practice Coverage",
       "keySectors": "Priority Supervised Sectors",
       "status": "Supervisory Status",
       "capital": "Regulatory Capital / Center",
@@ -567,7 +567,7 @@
       "uptime": "Disponibilité Télémétrique 99,98%",
       "selectJurisdiction": "Sélectionner la Juridiction",
       "supervisoryRegulators": "Autorités de Surveillance",
-      "residentDesk": "Bureau Regional",
+      "residentDesk": "Jurisdiction Practice Coverage",
       "inspectDossier": "Consulter le Dossier {name}",
       "activeJurisdiction": "JURIDICTION COMPLÈTE ACTIVE"
     },
@@ -754,7 +754,7 @@
         "capital": "Bruxelles",
         "overview": "L'épicentre mondial de l'établissement des normes réglementaires. Naviguer dans l'UE nécessite une maîtrise synchronisée de la résilience numérique (DORA, NIS2), de l'intelligence artificielle (EU AI Act), de la confidentialité (RGPD) et de la durabilité (CSRD).",
         "status": "Juridiction Complète Active",
-        "office": "Pôles de Conseil de Bruxelles & Francfort",
+        
         "keySectors": [
           "Services Financiers",
           "Technologie & IA",
@@ -768,7 +768,7 @@
         "capital": "Washington, D.C.",
         "overview": "Paysage réglementaire fédéral et étatique à forts enjeux, régi par une répression agressive de la SEC, la surveillance de la confidentialité par la FTC, les examens pré-marché de la FDA et les normes strictes de cybersécurité du DoD.",
         "status": "Juridiction Complète Active",
-        "office": "New York (Wall St) & Washington D.C.",
+        
         "keySectors": [
           "Marchés Financiers",
           "MedTech & Biotech",
@@ -782,7 +782,7 @@
         "capital": "Londres",
         "overview": "Puissance réglementaire indépendante post-Brexit combinant innovation financière à grande vitesse avec l'exigeant Consumer Duty de la FCA, le UK GDPR et les cadres émergents de régulation de l'IA.",
         "status": "Juridiction Complète Active",
-        "office": "Siège Mondial de Londres (Mayfair)",
+        
         "keySectors": [
           "FinTech & Banque",
           "Gestion d'Actifs",
@@ -796,7 +796,7 @@
         "capital": "Abou Dhabi / Dubaï",
         "overview": "Le premier pôle international de finance et d'actifs virtuels du Moyen-Orient, régi par des cadres d'actifs numériques de pointe (VARA), l'Abu Dhabi Global Market (ADGM) et la loi fédérale PDPL des EAU.",
         "status": "Juridiction Complète Active",
-        "office": "Pôles de Dubaï (DIFC) & Abou Dhabi",
+        
         "keySectors": [
           "Actifs Numériques & Web3",
           "Fonds Souverains",
@@ -810,7 +810,7 @@
         "capital": "Singapour",
         "overview": "La juridiction réglementaire la plus fiable d'Asie-Pacifique, caractérisée par l'octroi progressif de licences fintech par la MAS, des lois strictes sur la protection des données (PDPA) et des feuilles de route ESG régionales.",
         "status": "Juridiction Complète Active",
-        "office": "Marina Bay Financial Centre",
+        
         "keySectors": [
           "Gestion de Fortune",
           "Paiements & FinTech",
@@ -824,7 +824,7 @@
         "capital": "Tokyo",
         "overview": "Marché asiatique pionnier des actifs numériques et de la gouvernance d'entreprise supervisé par l'Agence des services financiers (JFSA) et la Commission de protection des informations personnelles (PPC).",
         "status": "Juridiction Complète Active",
-        "office": "District Financier de Marunouchi, Tokyo",
+        
         "keySectors": [
           "Banque & Assurance",
           "Robotique & IA",
@@ -1095,7 +1095,7 @@
       "requestQuote": "Demander une Estimation SOW",
       "inspectDossier": "Examiner le Dossier Réglementaire",
       "regulators": "Autorités de Surveillance Compétentes",
-      "residentDesk": "Bureau Regional",
+      "residentDesk": "Jurisdiction Practice Coverage",
       "keySectors": "Secteurs Supervisés Prioritaires",
       "status": "Statut de Surveillance",
       "capital": "Capitale / Centre Réglementaire",
@@ -1127,7 +1127,7 @@
       "uptime": "99,98% Telemetrie-Betriebszeit",
       "selectJurisdiction": "Jurisdiktion Auswählen",
       "supervisoryRegulators": "Aufsichtsbehörden",
-      "residentDesk": "Regional Office",
+      "residentDesk": "Jurisdiction Practice Coverage",
       "inspectDossier": "Dossier für {name} Prüfen",
       "activeJurisdiction": "AKTIVE VOLLSTÄNDIGE JURISDIKTION"
     },
@@ -1314,7 +1314,7 @@
         "capital": "Brüssel",
         "overview": "Das weltweite Epizentrum für regulatorische Standardsetzung. Die Navigation in der EU erfordert synchrone Beherrschung digitaler Resilienz (DORA, NIS2), künstlicher Intelligenz (EU AI Act), Datenschutz (DSGVO) und Nachhaltigkeit (CSRD).",
         "status": "Aktive Vollständige Jurisdiktion",
-        "office": "Beratungszentren Brüssel & Frankfurt",
+        
         "keySectors": [
           "Finanzdienstleistungen",
           "Technologie & KI",
@@ -1328,7 +1328,7 @@
         "capital": "Washington, D.C.",
         "overview": "Anspruchsvolle bundesstaatliche und staatliche Regulierungslandschaft, geprägt von aggressiver SEC-Durchsetzung, FTC-Datenschutzaufsicht, FDA-Zulassungsprüfungen und strengen DoD-Cybersicherheitsstandards.",
         "status": "Aktive Vollständige Jurisdiktion",
-        "office": "New York (Wall St) & Washington D.C.",
+        
         "keySectors": [
           "Finanzmärkte",
           "MedTech & Biotech",
@@ -1342,7 +1342,7 @@
         "capital": "London",
         "overview": "Unabhängiges regulatorisches Kraftzentrum nach dem Brexit, das schnelle Finanzinnovation mit strenger FCA Consumer Duty, UK GDPR und aufstrebenden KI-Regulierungsrahmen vereint.",
         "status": "Aktive Vollständige Jurisdiktion",
-        "office": "Globaler Hauptsitz London (Mayfair)",
+        
         "keySectors": [
           "FinTech & Banken",
           "Vermögensverwaltung",
@@ -1356,7 +1356,7 @@
         "capital": "Abu Dhabi / Dubai",
         "overview": "Das führende internationale Finanz- und Krypto-Zentrum des Nahen Ostens, reguliert durch weltweit führende Digital-Asset-Frameworks (VARA), Abu Dhabi Global Market (ADGM) und VAE PDPL.",
         "status": "Aktive Vollständige Jurisdiktion",
-        "office": "Zentren Dubai (DIFC) & Abu Dhabi",
+        
         "keySectors": [
           "Digitale Assets & Web3",
           "Staatsfonds",
@@ -1370,7 +1370,7 @@
         "capital": "Singapur",
         "overview": "Die vertrauenswürdigste Aufsichtsjurisdiktion im asiatisch-pazifischen Raum, definiert durch progressive MAS-Fintech-Lizenzen, strenge PDPA-Datenschutzgesetze und regionale ESG-Offenlegungspläne.",
         "status": "Aktive Vollständige Jurisdiktion",
-        "office": "Marina Bay Financial Centre",
+        
         "keySectors": [
           "Vermögensverwaltung",
           "Zahlungen & FinTech",
@@ -1384,7 +1384,7 @@
         "capital": "Tokio",
         "overview": "Wegweisender asiatischer Markt für digitale Vermögenswerte und Corporate Governance unter der Aufsicht der Finanzdienstleistungsbehörde (JFSA) und der Datenschutzkommission (PPC).",
         "status": "Aktive Vollständige Jurisdiktion",
-        "office": "Finanzdistrikt Marunouchi, Tokio",
+        
         "keySectors": [
           "Banken & Versicherungen",
           "Robotik & KI",
@@ -1655,7 +1655,7 @@
       "requestQuote": "SOW-Kostenschätzung Anfordern",
       "inspectDossier": "Behördendossier Prüfen",
       "regulators": "Zuständige Aufsichtsbehörden",
-      "residentDesk": "Regionales Beratungsbuero",
+      "residentDesk": "Jurisdiction Practice Coverage",
       "keySectors": "Prioritäre Aufsichtssektoren",
       "status": "Aufsichtsstatus",
       "capital": "Regulatorische Hauptstadt / Zentrum",
@@ -1687,7 +1687,7 @@
       "uptime": "Disponibilidad Telemétrica 99.98%",
       "selectJurisdiction": "Seleccionar Jurisdicción",
       "supervisoryRegulators": "Autoridades de Supervisión",
-      "residentDesk": "Sede Regional",
+      "residentDesk": "Jurisdiction Practice Coverage",
       "inspectDossier": "Inspeccionar Expediente de {name}",
       "activeJurisdiction": "JURISDICCIÓN COMPLETA ACTIVA"
     },
@@ -1874,7 +1874,7 @@
         "capital": "Bruselas",
         "overview": "El epicentro global del establecimiento de normas regulatorias. Navegar por la UE requiere un dominio sincronizado de la resiliencia digital (DORA, NIS2), inteligencia artificial (EU AI Act), privacidad (GDPR) y sostenibilidad (CSRD).",
         "status": "Jurisdicción Completa Activa",
-        "office": "Centros de Asesoría de Bruselas y Fráncfort",
+        
         "keySectors": [
           "Servicios Financieros",
           "Tecnología e IA",
@@ -1888,7 +1888,7 @@
         "capital": "Washington, D.C.",
         "overview": "Panorama regulatorio federal y estatal de alto impacto gobernado por la estricta aplicación de la SEC, supervisión de privacidad de la FTC, revisiones pre-mercado de la FDA y rigurosos estándares de ciberseguridad del DoD.",
         "status": "Jurisdicción Completa Activa",
-        "office": "Nueva York (Wall St) y Washington D.C.",
+        
         "keySectors": [
           "Mercados Financieros",
           "MedTech y Biotecnología",
@@ -1902,7 +1902,7 @@
         "capital": "Londres",
         "overview": "Potencia regulatoria independiente post-Brexit que combina innovación financiera ágil con el estricto Consumer Duty de la FCA, UK GDPR y marcos emergentes de regulación de IA.",
         "status": "Jurisdicción Completa Activa",
-        "office": "Sede Central Global de Londres (Mayfair)",
+        
         "keySectors": [
           "FinTech y Banca",
           "Gestión de Activos",
@@ -1916,7 +1916,7 @@
         "capital": "Abu Dabi / Dubái",
         "overview": "El principal centro financiero internacional y de activos virtuales de Oriente Medio, regido por marcos de activos digitales líderes (VARA), Abu Dhabi Global Market (ADGM) y la ley federal de privacidad de los EAU.",
         "status": "Jurisdicción Completa Activa",
-        "office": "Centros de Dubái (DIFC) y Abu Dabi",
+        
         "keySectors": [
           "Activos Digitales y Web3",
           "Fondos Soberanos",
@@ -1930,7 +1930,7 @@
         "capital": "Singapur",
         "overview": "La jurisdicción regulatoria más confiable de Asia-Pacífico, caracterizada por licencias fintech progresivas de la MAS, estrictas leyes de privacidad PDPA y planes regionales de divulgación ESG.",
         "status": "Jurisdicción Completa Activa",
-        "office": "Marina Bay Financial Centre",
+        
         "keySectors": [
           "Gestión de Patrimonios",
           "Pagos y FinTech",
@@ -1944,7 +1944,7 @@
         "capital": "Tokio",
         "overview": "Mercado asiático pionero en activos digitales y gobernanza corporativa supervisado por la Agencia de Servicios Financieros (JFSA) y la Comisión de Protección de Información Personal (PPC).",
         "status": "Jurisdicción Completa Activa",
-        "office": "Distrito Financiero de Marunouchi, Tokio",
+        
         "keySectors": [
           "Banca y Seguros",
           "Robótica e IA",
@@ -2215,7 +2215,7 @@
       "requestQuote": "Solicitar Estimación SOW",
       "inspectDossier": "Examinar Expediente Regulatorio",
       "regulators": "Autoridades Supervisoras Competentes",
-      "residentDesk": "Sede Regional",
+      "residentDesk": "Jurisdiction Practice Coverage",
       "keySectors": "Sectores Supervisados Prioritarios",
       "status": "Estado de Supervisión",
       "capital": "Centro / Capital Regulatoria",
@@ -2247,7 +2247,7 @@
       "uptime": "Disponibilità Telemetrica 99,98%",
       "selectJurisdiction": "Seleziona Giurisdizione",
       "supervisoryRegulators": "Autorità di Vigilanza",
-      "residentDesk": "Sede Regionale",
+      "residentDesk": "Jurisdiction Practice Coverage",
       "inspectDossier": "Ispeziona Dossier {name}",
       "activeJurisdiction": "GIURISDIZIONE COMPLETA ATTIVA"
     },
@@ -2434,7 +2434,7 @@
         "capital": "Bruselas",
         "overview": "El epicentro global del establecimiento de normas regulatorias. Navegar por la UE requiere un dominio sincronizado de la resiliencia digital (DORA, NIS2), inteligencia artificial (EU AI Act), privacidad (GDPR) y sostenibilidad (CSRD).",
         "status": "Jurisdicción Completa Activa",
-        "office": "Centros de Asesoría de Bruselas y Fráncfort",
+        
         "keySectors": [
           "Servicios Financieros",
           "Tecnología e IA",
@@ -2448,7 +2448,7 @@
         "capital": "Washington, D.C.",
         "overview": "Panorama regulatorio federal y estatal de alto impacto gobernado por la estricta aplicación de la SEC, supervisión de privacidad de la FTC, revisiones pre-mercado de la FDA y rigurosos estándares de ciberseguridad del DoD.",
         "status": "Jurisdicción Completa Activa",
-        "office": "Nueva York (Wall St) y Washington D.C.",
+        
         "keySectors": [
           "Mercados Financieros",
           "MedTech y Biotecnología",
@@ -2462,7 +2462,7 @@
         "capital": "Londres",
         "overview": "Potencia regulatoria independiente post-Brexit que combina innovación financiera ágil con el estricto Consumer Duty de la FCA, UK GDPR y marcos emergentes de regulación de IA.",
         "status": "Jurisdicción Completa Activa",
-        "office": "Sede Central Global de Londres (Mayfair)",
+        
         "keySectors": [
           "FinTech y Banca",
           "Gestión de Activos",
@@ -2476,7 +2476,7 @@
         "capital": "Abu Dabi / Dubái",
         "overview": "El principal centro financiero internacional y de activos virtuales de Oriente Medio, regido por marcos de activos digitales líderes (VARA), Abu Dhabi Global Market (ADGM) y la ley federal de privacidad de los EAU.",
         "status": "Jurisdicción Completa Activa",
-        "office": "Centros de Dubái (DIFC) y Abu Dabi",
+        
         "keySectors": [
           "Activos Digitales y Web3",
           "Fondos Soberanos",
@@ -2490,7 +2490,7 @@
         "capital": "Singapur",
         "overview": "La jurisdicción regulatoria más confiable de Asia-Pacífico, caracterizada por licencias fintech progresivas de la MAS, estrictas leyes de privacidad PDPA y planes regionales de divulgación ESG.",
         "status": "Jurisdicción Completa Activa",
-        "office": "Marina Bay Financial Centre",
+        
         "keySectors": [
           "Gestión de Patrimonios",
           "Pagos y FinTech",
@@ -2504,7 +2504,7 @@
         "capital": "Tokio",
         "overview": "Mercado asiático pionero en activos digitales y gobernanza corporativa supervisado por la Agencia de Servicios Financieros (JFSA) y la Comisión de Protección de Información Personal (PPC).",
         "status": "Jurisdicción Completa Activa",
-        "office": "Distrito Financiero de Marunouchi, Tokio",
+        
         "keySectors": [
           "Banca y Seguros",
           "Robótica e IA",
@@ -2775,7 +2775,7 @@
       "requestQuote": "Solicitar Estimación SOW",
       "inspectDossier": "Examinar Expediente Regulatorio",
       "regulators": "Autoridades Supervisoras Competentes",
-      "residentDesk": "Sede Regional",
+      "residentDesk": "Jurisdiction Practice Coverage",
       "keySectors": "Sectores Supervisados Prioritarios",
       "status": "Estado de Supervisión",
       "capital": "Centro / Capital Regulatoria",
@@ -2807,7 +2807,7 @@
       "uptime": "99,98% Disponibilidade Telemétrica",
       "selectJurisdiction": "Selecionar Jurisdição",
       "supervisoryRegulators": "Autoridades de Supervisão",
-      "residentDesk": "Sede Regional",
+      "residentDesk": "Jurisdiction Practice Coverage",
       "inspectDossier": "Inspecionar Dossiê de {name}",
       "activeJurisdiction": "JURISDIÇÃO INTEGRAL ATIVA"
     },
@@ -2994,7 +2994,7 @@
         "capital": "Bruselas",
         "overview": "El epicentro global del establecimiento de normas regulatorias. Navegar por la UE requiere un dominio sincronizado de la resiliencia digital (DORA, NIS2), inteligencia artificial (EU AI Act), privacidad (GDPR) y sostenibilidad (CSRD).",
         "status": "Jurisdicción Completa Activa",
-        "office": "Centros de Asesoría de Bruselas y Fráncfort",
+        
         "keySectors": [
           "Servicios Financieros",
           "Tecnología e IA",
@@ -3008,7 +3008,7 @@
         "capital": "Washington, D.C.",
         "overview": "Panorama regulatorio federal y estatal de alto impacto gobernado por la estricta aplicación de la SEC, supervisión de privacidad de la FTC, revisiones pre-mercado de la FDA y rigurosos estándares de ciberseguridad del DoD.",
         "status": "Jurisdicción Completa Activa",
-        "office": "Nueva York (Wall St) y Washington D.C.",
+        
         "keySectors": [
           "Mercados Financieros",
           "MedTech y Biotecnología",
@@ -3022,7 +3022,7 @@
         "capital": "Londres",
         "overview": "Potencia regulatoria independiente post-Brexit que combina innovación financiera ágil con el estricto Consumer Duty de la FCA, UK GDPR y marcos emergentes de regulación de IA.",
         "status": "Jurisdicción Completa Activa",
-        "office": "Sede Central Global de Londres (Mayfair)",
+        
         "keySectors": [
           "FinTech y Banca",
           "Gestión de Activos",
@@ -3036,7 +3036,7 @@
         "capital": "Abu Dabi / Dubái",
         "overview": "El principal centro financiero internacional y de activos virtuales de Oriente Medio, regido por marcos de activos digitales líderes (VARA), Abu Dhabi Global Market (ADGM) y la ley federal de privacidad de los EAU.",
         "status": "Jurisdicción Completa Activa",
-        "office": "Centros de Dubái (DIFC) y Abu Dabi",
+        
         "keySectors": [
           "Activos Digitales y Web3",
           "Fondos Soberanos",
@@ -3050,7 +3050,7 @@
         "capital": "Singapur",
         "overview": "La jurisdicción regulatoria más confiable de Asia-Pacífico, caracterizada por licencias fintech progresivas de la MAS, estrictas leyes de privacidad PDPA y planes regionales de divulgación ESG.",
         "status": "Jurisdicción Completa Activa",
-        "office": "Marina Bay Financial Centre",
+        
         "keySectors": [
           "Gestión de Patrimonios",
           "Pagos y FinTech",
@@ -3064,7 +3064,7 @@
         "capital": "Tokio",
         "overview": "Mercado asiático pionero en activos digitales y gobernanza corporativa supervisado por la Agencia de Servicios Financieros (JFSA) y la Comisión de Protección de Información Personal (PPC).",
         "status": "Jurisdicción Completa Activa",
-        "office": "Distrito Financiero de Marunouchi, Tokio",
+        
         "keySectors": [
           "Banca y Seguros",
           "Robótica e IA",
@@ -3335,7 +3335,7 @@
       "requestQuote": "Solicitar Estimación SOW",
       "inspectDossier": "Examinar Expediente Regulatorio",
       "regulators": "Autoridades Supervisoras Competentes",
-      "residentDesk": "Sede Regional",
+      "residentDesk": "Jurisdiction Practice Coverage",
       "keySectors": "Sectores Supervisados Prioritarios",
       "status": "Estado de Supervisión",
       "capital": "Centro / Capital Regulatoria",
@@ -3367,7 +3367,7 @@
       "uptime": "جاهزية بنسبة 99.98%",
       "selectJurisdiction": "اختر الولاية القضائية",
       "supervisoryRegulators": "الهيئات الرقابية المختصة",
-      "residentDesk": "المكتب الإقليمي المقيم",
+      "residentDesk": "Jurisdiction Practice Coverage",
       "inspectDossier": "فحص الملف التنظيمي لـ {name}",
       "activeJurisdiction": "ولاية قضائية كاملة نشطة"
     },
@@ -3554,7 +3554,7 @@
         "capital": "بروكسل",
         "overview": "المركز العالمي الرائد في وضع المعايير التنظيمية. يتطلب العمل في الاتحاد الأوروبي إتقاناً متزامناً للصمود الرقمي والذكاء الاصطناعي والخصوصية والاستدامة.",
         "status": "ولاية قضائية كاملة نشطة",
-        "office": "مكاتب الاستشارات في بروكسل وفرانكفورت",
+        
         "keySectors": [
           "الخدمات المالية",
           "التكنولوجيا والذكاء الاصطناعي",
@@ -3568,7 +3568,7 @@
         "capital": "واشنطن العاصمة",
         "overview": "بيئة تنظيمية فيدرالية ومحلية عالية الأهمية تخضع لرقابة صارمة من هيئة الأوراق المالية ولجنة التجارة الفيدرالية وإدارة الغذاء والدواء.",
         "status": "ولاية قضائية كاملة نشطة",
-        "office": "نيويورك (وول ستريت) وواشنطن العاصمة",
+        
         "keySectors": [
           "الأسواق المالية",
           "التكنولوجيا الطبية",
@@ -3582,7 +3582,7 @@
         "capital": "لندن",
         "overview": "قوة تنظيمية مستقلة تجمع بين الابتكار المالي السريع والرقابة الصارمة من هيئة السلوك المالي FCA وقوانين حماية البيانات البريطانية.",
         "status": "ولاية قضائية كاملة نشطة",
-        "office": "المقر الرئيسي العالمي في لندن (مايفير)",
+        
         "keySectors": [
           "التقنية المالية والمصارف",
           "إدارة الأصول",
@@ -3596,7 +3596,7 @@
         "capital": "أبوظبي / دبي",
         "overview": "المركز الدولي الرائد للمال والأصول الافتراضية في الشرق الأوسط، تحكمه أطر رائدة للأصول الرقمية (VARA) وسوق أبوظبي العالمي (ADGM).",
         "status": "ولاية قضائية كاملة نشطة",
-        "office": "مراكز دبي (DIFC) وأبوظبي",
+        
         "keySectors": [
           "الأصول الرقمية وويب 3",
           "الصناديق السيادية",
@@ -3610,7 +3610,7 @@
         "capital": "سنغافورة",
         "overview": "أكثر الولايات القضائية موثوقية في آسيا، وتتميز بتراخيص التقنية المالية المتقدمة من سلطة النقد السنغافورية MAS وقوانين الخصوصية الصارمة.",
         "status": "ولاية قضائية كاملة نشطة",
-        "office": "مركز مارينا باي المالي",
+        
         "keySectors": [
           "إدارة الثروات",
           "المدفوعات والتقنية المالية",
@@ -3624,7 +3624,7 @@
         "capital": "طوكيو",
         "overview": "سوق رائد في آسيا للأصول الرقمية وحوكمة الشركات تحت إشراف وكالة الخدمات المالية JFSA ولجنة حماية المعلومات الشخصية PPC.",
         "status": "ولاية قضائية كاملة نشطة",
-        "office": "حي مارونوتشي المالي، طوكيو",
+        
         "keySectors": [
           "المصارف والتأمين",
           "الروبوتات والذكاء الاصطناعي",
@@ -3895,7 +3895,7 @@
       "requestQuote": "طلب تقدير نطاق العمل",
       "inspectDossier": "فحص الملف التنظيمي",
       "regulators": "السلطات الرقابية المختصة",
-      "residentDesk": "المكتب الإقليمي المقيم",
+      "residentDesk": "Jurisdiction Practice Coverage",
       "keySectors": "القطاعات الخاضعة للرقابة ذات الأولوية",
       "status": "الحالة التنظيمية والرقابية",
       "capital": "العاصمة / المركز التنظيمي",
@@ -3927,7 +3927,7 @@
       "uptime": "99.98% テレメトリ稼働率",
       "selectJurisdiction": "管轄地域を選択",
       "supervisoryRegulators": "監督規制当局",
-      "residentDesk": "駐在デスク",
+      "residentDesk": "Jurisdiction Practice Coverage",
       "inspectDossier": "{name} のドシエを調査",
       "activeJurisdiction": "完全管轄権が有効"
     },
@@ -4114,7 +4114,7 @@
         "capital": "Brussels",
         "overview": "The global epicenter of regulatory standard-setting. Navigating the EU requires synchronized mastery of digital resilience (DORA, NIS2), artificial intelligence (EU AI Act), privacy (GDPR), and sustainability (CSRD).",
         "status": "Active Full Jurisdiction",
-        "office": "Brussels & Frankfurt Advisory Hubs",
+        
         "keySectors": [
           "Financial Services",
           "Technology & AI",
@@ -4128,7 +4128,7 @@
         "capital": "Washington, D.C.",
         "overview": "High-stakes federal and state regulatory landscape governed by aggressive SEC enforcement, FTC privacy oversight, FDA pre-market reviews, and rigorous DoD cybersecurity standards.",
         "status": "Active Full Jurisdiction",
-        "office": "New York (Wall St) & Washington D.C.",
+        
         "keySectors": [
           "Financial Markets",
           "MedTech & Biotech",
@@ -4142,7 +4142,7 @@
         "capital": "London",
         "overview": "Post-Brexit independent regulatory powerhouse combining high-velocity financial innovation with strict FCA Consumer Duty, UK GDPR, and emerging AI regulatory frameworks.",
         "status": "Active Full Jurisdiction",
-        "office": "London Global Headquarters (Mayfair)",
+        
         "keySectors": [
           "FinTech & Banking",
           "Asset Management",
@@ -4156,7 +4156,7 @@
         "capital": "Abu Dhabi / Dubai",
         "overview": "The Middle East's premier international finance and virtual asset hub, governed by world-leading digital asset frameworks (VARA), Abu Dhabi Global Market (ADGM), and UAE Federal PDPL.",
         "status": "Active Full Jurisdiction",
-        "office": "Dubai (DIFC) & Abu Dhabi Hubs",
+        
         "keySectors": [
           "Digital Assets & Web3",
           "Sovereign Wealth",
@@ -4170,7 +4170,7 @@
         "capital": "Singapore",
         "overview": "Asia-Pacific's most trusted regulatory jurisdiction, defined by MAS progressive fintech licensing, strict PDPA privacy laws, and regional ESG disclosure roadmaps.",
         "status": "Active Full Jurisdiction",
-        "office": "Marina Bay Financial Centre",
+        
         "keySectors": [
           "Wealth Management",
           "Payments & FinTech",
@@ -4184,7 +4184,7 @@
         "capital": "Tokyo",
         "overview": "Pioneering Asian digital asset and corporate governance market overseen by the Financial Services Agency (JFSA) and Personal Information Protection Commission (PPC).",
         "status": "Active Full Jurisdiction",
-        "office": "Marunouchi Financial District, Tokyo",
+        
         "keySectors": [
           "Banking & Insurance",
           "Robotics & AI",
@@ -4455,7 +4455,7 @@
       "requestQuote": "Request SOW Estimate",
       "inspectDossier": "Inspect Regulatory Dossier",
       "regulators": "Competent Supervisory Authorities",
-      "residentDesk": "Regional Regulatory Office",
+      "residentDesk": "Jurisdiction Practice Coverage",
       "keySectors": "Priority Supervised Sectors",
       "status": "Supervisory Status",
       "capital": "Regulatory Capital / Center",
@@ -4487,7 +4487,7 @@
       "uptime": "99.98% 遥测正常运行时间",
       "selectJurisdiction": "选择司法管辖区",
       "supervisoryRegulators": "监管当局",
-      "residentDesk": "常驻办公桌",
+      "residentDesk": "Jurisdiction Practice Coverage",
       "inspectDossier": "检查 {name} 档案",
       "activeJurisdiction": "已激活完全管辖权"
     },
@@ -4674,7 +4674,7 @@
         "capital": "Brussels",
         "overview": "The global epicenter of regulatory standard-setting. Navigating the EU requires synchronized mastery of digital resilience (DORA, NIS2), artificial intelligence (EU AI Act), privacy (GDPR), and sustainability (CSRD).",
         "status": "Active Full Jurisdiction",
-        "office": "Brussels & Frankfurt Advisory Hubs",
+        
         "keySectors": [
           "Financial Services",
           "Technology & AI",
@@ -4688,7 +4688,7 @@
         "capital": "Washington, D.C.",
         "overview": "High-stakes federal and state regulatory landscape governed by aggressive SEC enforcement, FTC privacy oversight, FDA pre-market reviews, and rigorous DoD cybersecurity standards.",
         "status": "Active Full Jurisdiction",
-        "office": "New York (Wall St) & Washington D.C.",
+        
         "keySectors": [
           "Financial Markets",
           "MedTech & Biotech",
@@ -4702,7 +4702,7 @@
         "capital": "London",
         "overview": "Post-Brexit independent regulatory powerhouse combining high-velocity financial innovation with strict FCA Consumer Duty, UK GDPR, and emerging AI regulatory frameworks.",
         "status": "Active Full Jurisdiction",
-        "office": "London Global Headquarters (Mayfair)",
+        
         "keySectors": [
           "FinTech & Banking",
           "Asset Management",
@@ -4716,7 +4716,7 @@
         "capital": "Abu Dhabi / Dubai",
         "overview": "The Middle East's premier international finance and virtual asset hub, governed by world-leading digital asset frameworks (VARA), Abu Dhabi Global Market (ADGM), and UAE Federal PDPL.",
         "status": "Active Full Jurisdiction",
-        "office": "Dubai (DIFC) & Abu Dhabi Hubs",
+        
         "keySectors": [
           "Digital Assets & Web3",
           "Sovereign Wealth",
@@ -4730,7 +4730,7 @@
         "capital": "Singapore",
         "overview": "Asia-Pacific's most trusted regulatory jurisdiction, defined by MAS progressive fintech licensing, strict PDPA privacy laws, and regional ESG disclosure roadmaps.",
         "status": "Active Full Jurisdiction",
-        "office": "Marina Bay Financial Centre",
+        
         "keySectors": [
           "Wealth Management",
           "Payments & FinTech",
@@ -4744,7 +4744,7 @@
         "capital": "Tokyo",
         "overview": "Pioneering Asian digital asset and corporate governance market overseen by the Financial Services Agency (JFSA) and Personal Information Protection Commission (PPC).",
         "status": "Active Full Jurisdiction",
-        "office": "Marunouchi Financial District, Tokyo",
+        
         "keySectors": [
           "Banking & Insurance",
           "Robotics & AI",
@@ -5015,7 +5015,7 @@
       "requestQuote": "Request SOW Estimate",
       "inspectDossier": "Inspect Regulatory Dossier",
       "regulators": "Competent Supervisory Authorities",
-      "residentDesk": "Regional Regulatory Office",
+      "residentDesk": "Jurisdiction Practice Coverage",
       "keySectors": "Priority Supervised Sectors",
       "status": "Supervisory Status",
       "capital": "Regulatory Capital / Center",
@@ -5047,7 +5047,7 @@
       "uptime": "99.98% 원격 측정 가동 시간",
       "selectJurisdiction": "관할권 선택",
       "supervisoryRegulators": "감독 규제 기관",
-      "residentDesk": "상주 데스크",
+      "residentDesk": "Jurisdiction Practice Coverage",
       "inspectDossier": "{name} 도시에 검토",
       "activeJurisdiction": "활성 전체 관할권"
     },
@@ -5234,7 +5234,7 @@
         "capital": "Brussels",
         "overview": "The global epicenter of regulatory standard-setting. Navigating the EU requires synchronized mastery of digital resilience (DORA, NIS2), artificial intelligence (EU AI Act), privacy (GDPR), and sustainability (CSRD).",
         "status": "Active Full Jurisdiction",
-        "office": "Brussels & Frankfurt Advisory Hubs",
+        
         "keySectors": [
           "Financial Services",
           "Technology & AI",
@@ -5248,7 +5248,7 @@
         "capital": "Washington, D.C.",
         "overview": "High-stakes federal and state regulatory landscape governed by aggressive SEC enforcement, FTC privacy oversight, FDA pre-market reviews, and rigorous DoD cybersecurity standards.",
         "status": "Active Full Jurisdiction",
-        "office": "New York (Wall St) & Washington D.C.",
+        
         "keySectors": [
           "Financial Markets",
           "MedTech & Biotech",
@@ -5262,7 +5262,7 @@
         "capital": "London",
         "overview": "Post-Brexit independent regulatory powerhouse combining high-velocity financial innovation with strict FCA Consumer Duty, UK GDPR, and emerging AI regulatory frameworks.",
         "status": "Active Full Jurisdiction",
-        "office": "London Global Headquarters (Mayfair)",
+        
         "keySectors": [
           "FinTech & Banking",
           "Asset Management",
@@ -5276,7 +5276,7 @@
         "capital": "Abu Dhabi / Dubai",
         "overview": "The Middle East's premier international finance and virtual asset hub, governed by world-leading digital asset frameworks (VARA), Abu Dhabi Global Market (ADGM), and UAE Federal PDPL.",
         "status": "Active Full Jurisdiction",
-        "office": "Dubai (DIFC) & Abu Dhabi Hubs",
+        
         "keySectors": [
           "Digital Assets & Web3",
           "Sovereign Wealth",
@@ -5290,7 +5290,7 @@
         "capital": "Singapore",
         "overview": "Asia-Pacific's most trusted regulatory jurisdiction, defined by MAS progressive fintech licensing, strict PDPA privacy laws, and regional ESG disclosure roadmaps.",
         "status": "Active Full Jurisdiction",
-        "office": "Marina Bay Financial Centre",
+        
         "keySectors": [
           "Wealth Management",
           "Payments & FinTech",
@@ -5304,7 +5304,7 @@
         "capital": "Tokyo",
         "overview": "Pioneering Asian digital asset and corporate governance market overseen by the Financial Services Agency (JFSA) and Personal Information Protection Commission (PPC).",
         "status": "Active Full Jurisdiction",
-        "office": "Marunouchi Financial District, Tokyo",
+        
         "keySectors": [
           "Banking & Insurance",
           "Robotics & AI",
@@ -5575,7 +5575,7 @@
       "requestQuote": "Request SOW Estimate",
       "inspectDossier": "Inspect Regulatory Dossier",
       "regulators": "Competent Supervisory Authorities",
-      "residentDesk": "Regional Regulatory Office",
+      "residentDesk": "Jurisdiction Practice Coverage",
       "keySectors": "Priority Supervised Sectors",
       "status": "Supervisory Status",
       "capital": "Regulatory Capital / Center",

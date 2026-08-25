@@ -117,12 +117,6 @@ export default function GlobalCompliancePage({ onNavigate }) {
                     </p>
                   </div>
 
-                  <div className="space-y-2 pt-2">
-                    <div className="text-[11px] font-mono font-bold text-slate-500 dark:text-slate-400">
-                      {c.office}
-                    </div>
-                  </div>
-
                   <div className="pt-4 border-t border-surface-border flex items-center justify-between">
                     <span className="text-xs font-mono font-bold text-emerald-600 dark:text-emerald-400">
                       {c.status || 'Active Full Jurisdiction'}

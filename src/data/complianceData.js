@@ -2470,7 +2470,6 @@ export const countries = [
     "region": "Europe",
     "capital": "London",
     "flag": "🇬🇧",
-    "office": "London Office",
     "status": "Tier-1 Supervisory Hub",
     "overview": "Comprehensive compliance with UK FCA statutory standards, MLR 2017 financial crime regulations, and SM&CR governance frameworks."
   },
@@ -2480,7 +2479,6 @@ export const countries = [
     "region": "Europe",
     "capital": "Brussels / Frankfurt",
     "flag": "🇪🇺",
-    "office": "Brussels Office",
     "status": "Unified Single Market",
     "overview": "Cross-border compliance with EU 6AMLD, MiCA crypto asset framework, DORA digital operational resilience, and PSD2/PSD3 directives."
   },
@@ -2490,7 +2488,6 @@ export const countries = [
     "region": "North America",
     "capital": "Washington D.C.",
     "flag": "🇺🇸",
-    "office": "Washington D.C. Office",
     "status": "Federal & State Scrutiny",
     "overview": "Federal FinCEN BSA/AML program compliance, OFAC sanctions adherence, SEC/CFTC disclosures, and multi-state money transmitter licensing (MTL)."
   },
@@ -2500,7 +2497,6 @@ export const countries = [
     "region": "Middle East",
     "capital": "Abu Dhabi / Dubai",
     "flag": "🇦🇪",
-    "office": "Dubai DIFC & ADGM Practice",
     "status": "Global Financial Gateway",
     "overview": "Specialized regulatory compliance under DFSA (DIFC), FSRA (ADGM), CBUAE federal directives, and Dubai VARA virtual asset rulebooks."
   },
@@ -2510,8 +2506,7 @@ export const countries = [
     "region": "South Asia",
     "capital": "Islamabad / Karachi",
     "flag": "🇵🇰",
-    "office": "South Asia Advisory Hub",
-    "status": "Regional Regulatory Office",
+    "status": "Active Advisory Practice",
     "overview": "State Bank of Pakistan (SBP) regulatory directives, SECP compliance frameworks, and national AML/CFT statutory obligations."
   },
   {
@@ -2520,8 +2515,7 @@ export const countries = [
     "region": "Asia-Pacific",
     "capital": "Sydney / Canberra",
     "flag": "🇦🇺",
-    "office": "Sydney Regional Office",
-    "status": "APAC Advisory Hub",
+    "status": "APAC Advisory Practice",
     "overview": "AUSTRAC AML/CTF reporting compliance, ASIC licensing requirements, and APRA prudential standards."
   }
 ];
