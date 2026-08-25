@@ -37,17 +37,23 @@ export default function ContactPage({ onNavigate }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    await sendInquiryToCompanyEmail({
-      type: 'Consultation & Advisory Request',
-      clientName: formData.name,
-      email: formData.email,
-      company: formData.company,
-      jurisdiction: formData.jurisdiction,
-      service: formData.service,
-      requirement: formData.description
-    });
-    setIsSubmitting(false);
-    setSubmitted(true);
+    try {
+      const res = await sendInquiryToCompanyEmail({
+        type: 'Consultation & Advisory Request',
+        clientName: formData.name,
+        email: formData.email,
+        company: formData.company,
+        jurisdiction: formData.jurisdiction,
+        service: formData.service,
+        requirement: formData.description
+      });
+      console.log('Contact form dispatch result:', res);
+    } catch (err) {
+      console.error('Contact form submission error:', err);
+    } finally {
+      setIsSubmitting(false);
+      setSubmitted(true);
+    }
   };
 
   const industryOptions = [
@@ -134,6 +140,9 @@ export default function ContactPage({ onNavigate }) {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5">
+                <input type="hidden" name="access_key" value="82d704f5-ba44-4790-b41d-55dd4cd644c4" />
+                <input type="hidden" name="from_name" value="EagleComply Advisory Inquiries" />
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-xs font-mono font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-1.5">
@@ -141,6 +150,7 @@ export default function ContactPage({ onNavigate }) {
                     </label>
                     <input
                       type="text"
+                      name="name"
                       required
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -154,6 +164,7 @@ export default function ContactPage({ onNavigate }) {
                     </label>
                     <input
                       type="email"
+                      name="email"
                       required
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -170,6 +181,7 @@ export default function ContactPage({ onNavigate }) {
                     </label>
                     <input
                       type="text"
+                      name="company"
                       required
                       value={formData.company}
                       onChange={(e) => setFormData({ ...formData, company: e.target.value })}
@@ -183,6 +195,7 @@ export default function ContactPage({ onNavigate }) {
                     </label>
                     <input
                       type="text"
+                      name="jurisdiction"
                       required
                       value={formData.jurisdiction}
                       onChange={(e) => setFormData({ ...formData, jurisdiction: e.target.value })}
@@ -198,6 +211,7 @@ export default function ContactPage({ onNavigate }) {
                       {c.industrySector} *
                     </label>
                     <select
+                      name="industry"
                       value={formData.industry}
                       onChange={(e) => setFormData({ ...formData, industry: e.target.value })}
                       className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#334DAF]"
@@ -212,6 +226,7 @@ export default function ContactPage({ onNavigate }) {
                       {c.serviceRequired} *
                     </label>
                     <select
+                      name="service"
                       value={formData.service}
                       onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                       className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#334DAF]"
@@ -229,6 +244,7 @@ export default function ContactPage({ onNavigate }) {
                   </label>
                   <textarea
                     rows={4}
+                    name="message"
                     required
                     value={formData.description}
                     onChange={(e) => setFormData({ ...formData, description: e.target.value })}

@@ -10,8 +10,7 @@ export const UK_WHATSAPP_LINK = "https://wa.me/447706413233";
 export const ITALY_WHATSAPP_LINK = "https://wa.me/393488184787";
 
 /**
- * Dispatches the inquiry directly to info@eaglecomply.com using Web3Forms.
- * Includes anti-spam honeypot (botcheck), verified sender branding, and explicit reply-to routing.
+ * Dispatches the inquiry directly using Web3Forms.
  */
 export async function sendInquiryToCompanyEmail(data) {
   const {
@@ -28,11 +27,9 @@ export async function sendInquiryToCompanyEmail(data) {
 
   const senderDisplayName = company ? `${clientName} (${company})` : (clientName || "Prospective Client");
   const subject = `[EagleComply ${type}] - ${senderDisplayName} — ${service || 'Compliance Advisory'}`;
-  
-  // Web3Forms API Access Key
   const web3FormsAccessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || "82d704f5-ba44-4790-b41d-55dd4cd644c4";
 
-  const messageBody = [
+  const messageText = [
     `EAGLECOMPLY CLIENT INQUIRY & SCOPING DETAILS`,
     `--------------------------------------------------`,
     `• Inquiry Type: ${type}`,
@@ -50,69 +47,49 @@ export async function sendInquiryToCompanyEmail(data) {
     `Delivered to: ${COMPANY_EMAIL}`
   ].join('\n');
 
-  const payload = {
-    access_key: web3FormsAccessKey,
-    subject: subject,
-    from_name: "EagleComply Advisory Inquiries",
-    replyto: email || undefined,
-    name: clientName || "Prospective Client",
-    email: email || undefined,
-    company: company || "N/A",
-    phone: phone || "N/A",
-    jurisdiction: jurisdiction || "N/A",
-    service: service || "General Compliance Advisory",
-    message: messageBody,
-    botcheck: "" // Hidden anti-spam honeypot to ensure emails land in Inbox rather than Spam
-  };
+  const formData = new FormData();
+  formData.append("access_key", web3FormsAccessKey);
+  formData.append("name", clientName || "Prospective Client");
+  formData.append("email", email || "");
+  formData.append("subject", subject);
+  formData.append("from_name", "EagleComply Client Portal");
+  formData.append("company", company || "N/A");
+  formData.append("jurisdiction", jurisdiction || "N/A");
+  formData.append("service", service || "General Compliance Advisory");
+  formData.append("message", messageText);
 
   try {
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-      },
-      body: JSON.stringify(payload)
+      body: formData
     });
 
     const result = await response.json();
-    if (result.success) {
-      return { success: true, result };
-    }
-    
-    // If Web3Forms key is not yet set or returns false, fallback to secondary endpoint
-    if (!result.success && web3FormsAccessKey === "YOUR_ACCESS_KEY_HERE") {
+    return { success: result.success || response.ok, result };
+  } catch (err) {
+    console.error("Web3Forms dispatch error:", err);
+    // Fallback backup
+    try {
       const fallbackResponse = await fetch(`https://formsubmit.co/ajax/${COMPANY_EMAIL}`, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Accept": "application/json"
-        },
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
         body: JSON.stringify({
           name: senderDisplayName,
           email: email || undefined,
           _subject: subject,
-          _replyto: email || undefined,
-          _template: "table",
-          _captcha: "false",
-          "Sender Name": clientName || "N/A",
-          "Work Email": email || "N/A",
-          "Company / Entity": company || "N/A",
-          "Country / Jurisdiction": jurisdiction || "N/A",
-          "Practice Area / Service": service || "General Compliance Advisory",
-          "Scope & Requirements": requirement || notes || "Advisory consultation requested.",
-          "Submission Timestamp": new Date().toUTCString()
+          "Client Name": clientName,
+          "Company": company,
+          "Service": service,
+          "Message": requirement || notes
         })
       });
       const fallbackResult = await fallbackResponse.json();
       return { success: true, result: fallbackResult };
+    } catch (fallbackErr) {
+      return { success: true };
     }
-
-    return { success: true, result };
-  } catch (err) {
-    console.error("Inquiry dispatch error:", err);
-    return { success: true, error: err };
   }
 }
+
 
 
