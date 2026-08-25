@@ -34,36 +34,42 @@ function LinkedInIcon({ className = "w-3.5 h-3.5" }) {
 }
 
 function PipelineConsole() {
-  const pipelineData = [
+  const { t } = useLanguage();
+  const ap = t.aboutPage || {};
+
+  const icons = [ScanEye, Cpu, Terminal, ShieldAlert];
+
+  const defaultPipeline = [
     {
       index: "PHASE 01 // DISCOVERY",
       title: "Diagnostic & Risk Discovery",
       desc: "We conduct an in-depth review of your products, customer corridors, business model, and operational processes against applicable regulatory baselines.",
-      output: "Regulatory Gap Matrix & Perimeter Map",
-      icon: ScanEye
+      output: "Regulatory Gap Matrix & Perimeter Map"
     },
     {
       index: "PHASE 02 // ARCHITECTURE",
       title: "Practical Control Design",
       desc: "We translate complex statutory rules into clear policies, standard operating procedures, and automated workflows that frontline teams can execute.",
-      output: "Customized SOPs & Policy Blueprints",
-      icon: Cpu
+      output: "Customized SOPs & Policy Blueprints"
     },
     {
       index: "PHASE 03 // DEPLOYMENT",
       title: "Implementation & Staff Training",
       desc: "We embed compliance routines into your daily operations and train compliance staff, management, and board members on their legal duties.",
-      output: "Operationalized Governance & Board Briefing",
-      icon: Terminal
+      output: "Operationalized Governance & Board Briefing"
     },
     {
       index: "PHASE 04 // SURVEILLANCE",
       title: "Ongoing Assurance & Reviews",
       desc: "We conduct periodic independent testing, gap assessments, and regulatory horizon scanning to keep your organization ahead of supervisory changes.",
-      output: "Continuous Audit Logs & Risk Horizon Radar",
-      icon: ShieldAlert
+      output: "Continuous Audit Logs & Risk Horizon Radar"
     }
   ];
+
+  const pipelineData = (ap.pipelineData || defaultPipeline).map((item, idx) => ({
+    ...item,
+    icon: icons[idx] || ScanEye
+  }));
 
   const [activeStep, setActiveStep] = useState(0);
   const [progress, setProgress] = useState(0);
@@ -84,7 +90,7 @@ function PipelineConsole() {
     }, 50);
 
     return () => clearInterval(interval);
-  }, [activeStep]);
+  }, [activeStep, pipelineData.length]);
 
   const handleStepClick = (index) => {
     setActiveStep(index);
@@ -92,7 +98,7 @@ function PipelineConsole() {
     setProgress(0);
   };
 
-  const currentItem = pipelineData[activeStep];
+  const currentItem = pipelineData[activeStep] || pipelineData[0];
   const IconComponent = currentItem.icon;
   const circumference = 88;
   const strokeDashoffset = circumference - (circumference * progress);
@@ -104,11 +110,11 @@ function PipelineConsole() {
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-6 border-b border-slate-200/80 dark:border-white/10 mb-8">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg font-mono text-xs font-bold uppercase tracking-wider text-[#334DAF] dark:text-cyan-400 bg-[#334DAF]/10 dark:bg-cyan-500/10 border border-[#334DAF]/20 dark:border-cyan-500/30">
           <span className="w-2 h-2 rounded-full bg-[#334DAF] dark:bg-cyan-400 animate-ping" />
-          <span>Methodology & Architecture</span>
+          <span>{ap.methodologyBadge || 'Methodology & Architecture'}</span>
         </div>
         <div className="font-mono text-xs text-slate-500 dark:text-slate-400 flex items-center gap-1.5">
-          <span>EXECUTION PIPELINE:</span>
-          <span className="text-emerald-600 dark:text-emerald-400 font-bold">ACTIVE</span>
+          <span>{ap.executionPipeline || 'EXECUTION PIPELINE:'}</span>
+          <span className="text-emerald-600 dark:text-emerald-400 font-bold">{ap.activeStatus || 'ACTIVE'}</span>
         </div>
       </div>
 
@@ -179,7 +185,7 @@ function PipelineConsole() {
           {/* Telemetry Output Box with Progress Ring */}
           <div className="mt-6 p-3.5 sm:p-4 rounded-xl bg-white/90 dark:bg-[#030712]/70 border border-dashed border-slate-300 dark:border-white/15 flex items-center justify-between gap-3 shadow-sm">
             <div className="font-mono text-xs text-slate-600 dark:text-slate-300">
-              <span className="text-slate-400 uppercase text-[10px] block font-bold">DELIVERABLE:</span>
+              <span className="text-slate-400 uppercase text-[10px] block font-bold">{ap.deliverableLabel || 'DELIVERABLE:'}</span>
               <span className="font-bold text-slate-900 dark:text-slate-100">{currentItem.output}</span>
             </div>
 
@@ -216,28 +222,33 @@ function PipelineConsole() {
 
 export default function AboutPage({ onNavigate, onOpenConsultation, onOpenQuote }) {
   const { t } = useLanguage();
-  const brandValues = [
+  const ap = t.aboutPage || {};
+
+  const valueIcons = [ShieldCheck, Lock, Scale, Eye];
+  
+  const defaultValues = [
     {
-      icon: ShieldCheck,
       title: "Professional Ethics & Integrity",
       desc: "We adhere to the highest standards of professional conduct, objective assessment, and unbiased regulatory guidance."
     },
     {
-      icon: Lock,
       title: "Strict Confidentiality",
       desc: "All client disclosures, risk assessments, and documentation are safeguarded under mutual bilateral NDA protocols."
     },
     {
-      icon: Scale,
       title: "Risk-Based Approach",
       desc: "We engineer proportionate compliance frameworks tailored to your actual institutional risk profile and operational realities."
     },
     {
-      icon: Eye,
       title: "Vigilance & Clear Vision",
       desc: "Like the eagle, we identify regulatory risks early and provide clear foresight across evolving international supervisory standards."
     }
   ];
+
+  const brandValues = (ap.brandValues || defaultValues).map((val, idx) => ({
+    ...val,
+    icon: valueIcons[idx] || ShieldCheck
+  }));
 
   const seniorPractitioners = teamPractitioners;
 
@@ -252,31 +263,31 @@ export default function AboutPage({ onNavigate, onOpenConsultation, onOpenQuote 
             <div className="lg:col-span-7 space-y-5 text-left rtl:text-right">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#334DAF]/10 dark:bg-[#7096D1]/15 border border-[#334DAF]/25 dark:border-[#7096D1]/30 text-[#091F5C] dark:text-[#D0E4FE] text-xs font-mono font-bold tracking-wider uppercase">
                 <Sparkles className="w-3.5 h-3.5 text-[#334DAF] dark:text-[#7096D1]" />
-                <span>ABOUT EAGLECOMPLY</span>
+                <span>{ap.tag || 'ABOUT EAGLECOMPLY'}</span>
               </div>
 
               <h1 className="font-sans text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 dark:text-white leading-[1.15]">
-                {t.brand?.tagline || 'Complex Regulations. Clear Solutions. Confident Growth.'}
+                {t.brand?.tagline || ap.title || 'Complex Regulations. Clear Solutions. Confident Growth.'}
               </h1>
 
               <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed font-normal max-w-2xl">
-                EagleComply is an international compliance advisory firm helping financial institutions, fintechs, payment companies, remittance businesses, and startups operate with complete regulatory certainty.
+                {ap.description || 'EagleComply is an international compliance advisory firm helping financial institutions, fintechs, payment companies, remittance businesses, and startups operate with complete regulatory certainty.'}
               </p>
 
               {/* Action Buttons */}
               <div className="pt-2 flex flex-wrap items-center gap-3">
                 <button
                   onClick={() => onOpenConsultation?.()}
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-[#091F5C] to-[#334DAF] dark:from-[#334DAF] dark:to-[#7096D1] text-white dark:text-[#101E42] font-bold text-xs shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-[#091F5C] to-[#334DAF] dark:from-[#334DAF] dark:to-[#7096D1] text-white dark:text-[#101E42] font-bold text-xs shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer"
                 >
                   <Calendar className="w-4 h-4" />
-                  <span>Book a Consultation</span>
+                  <span>{ap.bookConsultation || t.nav?.bookConsultation || 'Book a Consultation'}</span>
                 </button>
                 <button
                   onClick={() => onNavigate?.('solutions')}
-                  className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-surface-base border border-surface-border text-slate-800 dark:text-slate-200 hover:border-[#334DAF] font-bold text-xs transition-all shadow-sm"
+                  className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-surface-base border border-surface-border text-slate-800 dark:text-slate-200 hover:border-[#334DAF] font-bold text-xs transition-all shadow-sm cursor-pointer"
                 >
-                  <span>Explore Practice Areas</span>
+                  <span>{ap.explorePractice || 'Explore Practice Areas'}</span>
                   <ArrowRight className="w-4 h-4 rtl:rotate-180" />
                 </button>
               </div>
@@ -285,15 +296,15 @@ export default function AboutPage({ onNavigate, onOpenConsultation, onOpenQuote 
               <div className="pt-4 grid grid-cols-3 gap-3 border-t border-surface-border/60 max-w-lg">
                 <div>
                   <div className="text-base sm:text-lg font-bold text-slate-900 dark:text-white font-mono">100%</div>
-                  <div className="text-[11px] text-slate-500 font-mono">Audit Tested</div>
+                  <div className="text-[11px] text-slate-500 font-mono">{ap.auditTested || 'Audit Tested'}</div>
                 </div>
                 <div>
                   <div className="text-base sm:text-lg font-bold text-slate-900 dark:text-white font-mono">FATF</div>
-                  <div className="text-[11px] text-slate-500 font-mono">Aligned Baselines</div>
+                  <div className="text-[11px] text-slate-500 font-mono">{ap.alignedBaselines || 'Aligned Baselines'}</div>
                 </div>
                 <div>
                   <div className="text-base sm:text-lg font-bold text-slate-900 dark:text-white font-mono">UK / EU</div>
-                  <div className="text-[11px] text-slate-500 font-mono">Cross-Border</div>
+                  <div className="text-[11px] text-slate-500 font-mono">{ap.crossBorder || 'Cross-Border Depth'}</div>
                 </div>
               </div>
             </div>
@@ -301,7 +312,6 @@ export default function AboutPage({ onNavigate, onOpenConsultation, onOpenQuote 
             {/* Right Video Showcase Column */}
             <div className="lg:col-span-5 relative">
               <div className="relative rounded-3xl overflow-hidden glass-panel border border-surface-border shadow-2xl bg-[#091F5C]/5 dark:bg-[#101E42]/40 aspect-[4/3] sm:aspect-[16/11] flex items-center justify-center group">
-                {/* Seamless Infinite Looping Video */}
                 <video
                   autoPlay
                   loop
@@ -313,17 +323,14 @@ export default function AboutPage({ onNavigate, onOpenConsultation, onOpenQuote 
                 >
                   <source src={`${import.meta.env.BASE_URL}about-video.mp4`} type="video/mp4" />
                   <source src={`${import.meta.env.BASE_URL}assets/about-video.mp4`} type="video/mp4" />
-                  {/* Fallback to existing world-map until about-video.mp4 is provided */}
                   <source src={`${import.meta.env.BASE_URL}world-map.mp4`} type="video/mp4" />
                 </video>
 
-                {/* Subtle Gradient Vignette Overlay for aesthetics */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none rounded-3xl" />
 
-                {/* Clean Live Status Tag */}
                 <div className="absolute top-3.5 left-3.5 rtl:left-auto rtl:right-3.5 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] font-mono flex items-center gap-2 pointer-events-none">
                   <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-                  <span className="font-bold">EAGLECOMPLY MOTION</span>
+                  <span className="font-bold">{ap.motionTag || 'EAGLECOMPLY MOTION'}</span>
                 </div>
               </div>
             </div>
@@ -335,48 +342,48 @@ export default function AboutPage({ onNavigate, onOpenConsultation, onOpenQuote 
       {/* 2. Purpose & Mandate */}
       <section className="py-14 lg:py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          <div className="space-y-4">
+          <div className="space-y-4 text-left rtl:text-right">
             <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#334DAF] dark:text-[#7096D1]">
-              Our Purpose
+              {ap.purposeTag || 'Our Purpose'}
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">
-              Demystifying Complex Regulatory Frameworks
+              {ap.purposeTitle || 'Demystifying Complex Regulatory Frameworks'}
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-              Regulatory compliance should not be an impediment to business innovation; it should be the solid foundation that enables sustainable, long-term growth.
+              {ap.purposeP1 || 'Regulatory compliance should not be an impediment to business innovation; it should be the solid foundation that enables sustainable, long-term growth.'}
             </p>
             <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-              EagleComply was established to bridge the divide between complex statutory directives and practical business execution. We deliver tailored AML/CFT programs, regulatory authorization support, enterprise risk frameworks, and legal compliance advisory designed to protect your institutional reputation and satisfy supervisory scrutiny.
+              {ap.purposeP2 || 'EagleComply was established to bridge the divide between complex statutory directives and practical business execution. We deliver tailored AML/CFT programs, regulatory authorization support, enterprise risk frameworks, and legal compliance advisory designed to protect your institutional reputation and satisfy supervisory scrutiny.'}
             </p>
             <div className="pt-2 flex flex-wrap gap-4 text-xs font-mono text-slate-700 dark:text-slate-300">
               <span className="flex items-center gap-1.5 font-bold">
-                <Check className="w-4 h-4 text-emerald-500" /> FATF Aligned
+                <Check className="w-4 h-4 text-emerald-500" /> {ap.fatfAligned || 'FATF Aligned'}
               </span>
               <span className="flex items-center gap-1.5 font-bold">
-                <Check className="w-4 h-4 text-emerald-500" /> International Depth
+                <Check className="w-4 h-4 text-emerald-500" /> {ap.intlDepth || 'International Depth'}
               </span>
               <span className="flex items-center gap-1.5 font-bold">
-                <Check className="w-4 h-4 text-emerald-500" /> Risk-Based Methodology
+                <Check className="w-4 h-4 text-emerald-500" /> {ap.riskMethodology || 'Risk-Based Methodology'}
               </span>
             </div>
           </div>
 
-          <div className="p-8 rounded-3xl bg-gradient-to-br from-[#091F5C] to-[#1E3778] text-white space-y-5 shadow-xl">
+          <div className="p-8 rounded-3xl bg-gradient-to-br from-[#091F5C] to-[#1E3778] text-white space-y-5 shadow-xl text-left rtl:text-right">
             <div className="text-xs font-mono uppercase tracking-widest text-blue-200">
-              The Eagle Identity
+              {ap.eagleIdentityTag || 'The Eagle Identity'}
             </div>
             <h3 className="text-xl font-bold text-white">
-              Vigilance, Oversight & Integrity
+              {ap.eagleIdentityTitle || 'Vigilance, Oversight & Integrity'}
             </h3>
             <p className="text-xs text-blue-100/85 leading-relaxed">
-              In financial regulation, the eagle represents vigilant oversight, keen discernment, and the ability to view the broader regulatory landscape.
+              {ap.eagleIdentityP1 || 'In financial regulation, the eagle represents vigilant oversight, keen discernment, and the ability to view the broader regulatory landscape.'}
             </p>
             <p className="text-xs text-blue-100/85 leading-relaxed">
-              We help institutions detect compliance risks early, navigate multi-jurisdictional hurdles with clarity, and soar with confidence into new regulated markets.
+              {ap.eagleIdentityP2 || 'We help institutions detect compliance risks early, navigate multi-jurisdictional hurdles with clarity, and soar with confidence into new regulated markets.'}
             </p>
             <div className="pt-2 border-t border-white/20 flex items-center justify-between text-xs font-mono text-blue-200">
-              <span>Brand Ethos</span>
-              <span className="font-bold">Authoritative · Practical · Trusted</span>
+              <span>{t.brand?.separated || 'Brand Ethos'}</span>
+              <span className="font-bold">{ap.brandEthos || 'Authoritative · Practical · Trusted'}</span>
             </div>
           </div>
         </div>
@@ -387,10 +394,10 @@ export default function AboutPage({ onNavigate, onOpenConsultation, onOpenQuote 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-10">
             <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#334DAF] dark:text-[#7096D1]">
-              Core Principles
+              {ap.valuesTag || 'Core Principles'}
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mt-1">
-              Our Professional Values
+              {ap.valuesTitle || 'Our Professional Values'}
             </h2>
           </div>
 
@@ -400,7 +407,7 @@ export default function AboutPage({ onNavigate, onOpenConsultation, onOpenQuote 
               return (
                 <div 
                   key={idx}
-                  className="p-6 rounded-2xl glass-panel border border-surface-border hover:border-[#334DAF] dark:hover:border-[#7096D1] transition-all space-y-2.5 shadow-sm"
+                  className="p-6 rounded-2xl glass-panel border border-surface-border hover:border-[#334DAF] dark:hover:border-[#7096D1] transition-all space-y-2.5 shadow-sm text-left rtl:text-right"
                 >
                   <div className="w-10 h-10 rounded-xl bg-[#334DAF]/10 dark:bg-[#7096D1]/15 text-[#334DAF] dark:text-[#7096D1] flex items-center justify-center">
                     <Icon className="w-5 h-5" />
@@ -422,13 +429,13 @@ export default function AboutPage({ onNavigate, onOpenConsultation, onOpenQuote 
       <section className="py-16 lg:py-24 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#334DAF] dark:text-[#7096D1]">
-            Interactive Methodology
+            {ap.methodologyTag || 'Interactive Methodology'}
           </span>
           <h2 className="text-2xl sm:text-4xl font-bold text-slate-900 dark:text-white mt-1">
-            Execution Pipeline & Delivery Architecture
+            {ap.methodologyTitle || 'Execution Pipeline & Delivery Architecture'}
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-2">
-            Click on any phase to inspect our interactive delivery stages, workflows, and tangible compliance deliverables.
+            {ap.methodologyDesc || 'Click on any phase to inspect our interactive delivery stages, workflows, and tangible compliance deliverables.'}
           </p>
         </div>
 
@@ -438,24 +445,24 @@ export default function AboutPage({ onNavigate, onOpenConsultation, onOpenQuote 
       {/* 6. Call to Action */}
       <section className="py-14 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
         <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
-          Ready to Elevate Your Institutional Compliance?
+          {ap.ctaTitle || 'Ready to Elevate Your Institutional Compliance?'}
         </h2>
         <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 max-w-xl mx-auto">
-          Contact EagleComply today to schedule a confidential discussion with our senior compliance practitioners.
+          {ap.ctaDesc || 'Contact EagleComply today to schedule a confidential discussion with our senior compliance practitioners.'}
         </p>
         <div className="pt-2 flex justify-center gap-3">
           <button
             onClick={onOpenConsultation}
-            className="px-6 py-2.5 rounded-xl bg-[#091F5C] dark:bg-[#334DAF] text-white text-xs font-bold shadow-lg hover:opacity-90 transition-all flex items-center gap-2"
+            className="px-6 py-2.5 rounded-xl bg-[#091F5C] dark:bg-[#334DAF] text-white text-xs font-bold shadow-lg hover:opacity-90 transition-all flex items-center gap-2 cursor-pointer"
           >
             <Calendar className="w-3.5 h-3.5" />
-            <span>{t.nav.bookConsultation}</span>
+            <span>{ap.bookConsultation || t.nav?.bookConsultation || 'Book a Consultation'}</span>
           </button>
           <button
             onClick={() => onNavigate('contact')}
-            className="px-6 py-2.5 rounded-xl glass-panel border border-surface-border text-slate-800 dark:text-white text-xs font-bold hover:bg-surface-subtle transition-all"
+            className="px-6 py-2.5 rounded-xl glass-panel border border-surface-border text-slate-800 dark:text-white text-xs font-bold hover:bg-surface-subtle transition-all cursor-pointer"
           >
-            Contact Us
+            {ap.contactUs || 'Contact Us'}
           </button>
         </div>
       </section>

@@ -8,7 +8,7 @@ import {
   caseStudies as rawCaseStudies, 
   experts as rawExperts, 
   careers as rawCareers 
-} from './complianceData';
+} from './complianceData.js';
 
 import localizedJson from './localizedData.json';
 
@@ -110,15 +110,33 @@ for (const [lang, names] of Object.entries(remainingServiceNames)) {
   for (const [id, name] of Object.entries(names)) projectOverrides[lang].solutions[id] = { ...projectOverrides[lang].solutions[id], name };
 }
 
+function deepMergeDict(target, source) {
+  if (!source) return target || {};
+  const output = { ...(target || {}) };
+  for (const key of Object.keys(source)) {
+    if (source[key] && typeof source[key] === 'object' && !Array.isArray(source[key])) {
+      output[key] = deepMergeDict(target ? target[key] : {}, source[key]);
+    } else {
+      output[key] = source[key];
+    }
+  }
+  return output;
+}
+
 function getLangData(lang = 'en') {
   const base = localizedJson[lang] || localizedJson.en || {};
-  const project = projectOverrides[lang] || projectOverrides.en;
+  const project = projectOverrides[lang] || projectOverrides.en || {};
   return {
     ...base,
-    solutions: { ...(base.solutions || {}), ...(project.solutions || {}) },
-    industries: { ...(base.industries || {}), ...(project.industries || {}) },
-    countries: { ...(base.countries || {}), ...(project.countries || {}) },
-    regulations: { ...(base.regulations || {}), ...(project.regulations || {}) }
+    solutions: deepMergeDict(base.solutions, project.solutions),
+    industries: deepMergeDict(base.industries, project.industries),
+    countries: deepMergeDict(base.countries, project.countries),
+    regulations: deepMergeDict(base.regulations, project.regulations),
+    caseStudies: deepMergeDict(base.caseStudies, project.caseStudies),
+    insights: deepMergeDict(base.insights, project.insights),
+    resources: deepMergeDict(base.resources, project.resources),
+    careers: deepMergeDict(base.careers, project.careers),
+    detailCommon: { ...(localizedJson.en?.detailCommon || {}), ...(base.detailCommon || {}) }
   };
 }
 
@@ -151,7 +169,9 @@ export function getLocalizedIndustries(lang = 'en') {
       ...ind,
       name: loc.name || ind.name,
       heroTag: loc.heroTag || ind.heroTag,
-      overview: loc.overview || ind.overview
+      overview: loc.overview || ind.overview,
+      challenges: loc.challenges || ind.challenges,
+      deliverables: loc.deliverables || ind.deliverables
     };
   });
 }

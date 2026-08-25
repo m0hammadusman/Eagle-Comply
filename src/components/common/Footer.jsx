@@ -56,7 +56,7 @@ export default function Footer({ onNavigate }) {
           <div className="flex items-center gap-2">
             <Globe2 className="w-4 h-4 text-sky-400 shrink-0" />
             <span className="text-xs sm:text-sm font-semibold tracking-wider text-slate-200">
-              Operational Locations & Presence:
+              {f.practiceDesks || 'Operational Locations & Presence:'}
             </span>
           </div>
           <div className="flex flex-wrap items-center gap-2 text-xs font-medium text-white">
@@ -65,21 +65,21 @@ export default function Footer({ onNavigate }) {
               className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#1E3778] hover:bg-[#28489d] border border-blue-400/30 shadow-xs transition-all text-left cursor-pointer"
             >
               <span>🇬🇧</span>
-              <span><strong>United Kingdom</strong></span>
+              <span><strong>{t.common?.uk || 'United Kingdom'}</strong></span>
             </button>
             <button 
               onClick={() => onNavigate('contact')} 
               className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#1E3778] hover:bg-[#28489d] border border-blue-400/30 shadow-xs transition-all text-left cursor-pointer"
             >
               <span>🇮🇹</span>
-              <span><strong>Italy</strong></span>
+              <span><strong>{t.common?.italy || 'Italy'}</strong></span>
             </button>
             <button 
               onClick={() => onNavigate('contact')} 
               className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#1E3778] hover:bg-[#28489d] border border-blue-400/30 shadow-xs transition-all text-left cursor-pointer"
             >
               <span>🇵🇰</span>
-              <span><strong>Pakistan</strong></span>
+              <span><strong>{t.common?.pakistan || 'Pakistan'}</strong></span>
             </button>
           </div>
         </div>
@@ -126,7 +126,7 @@ export default function Footer({ onNavigate }) {
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#1E3778] hover:bg-[#28489d] text-white text-xs font-medium border border-blue-400/30 transition-colors"
               >
                 <Mail className="w-3.5 h-3.5 text-blue-300" />
-                <span>Email Us</span>
+                <span>{f.emailDirect || 'Email Us'}</span>
               </a>
               <a
                 href="https://www.linkedin.com/company/eaglecomply/?viewAsMember=true"
@@ -140,7 +140,7 @@ export default function Footer({ onNavigate }) {
             </div>
             <div className="pt-1 text-xs text-emerald-400 flex items-center gap-1.5 font-medium">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              <span>United Kingdom • Italy • Pakistan</span>
+              <span>{t.common?.uk || 'United Kingdom'} • {t.common?.italy || 'Italy'} • {t.common?.pakistan || 'Pakistan'}</span>
             </div>
           </div>
 
@@ -150,36 +150,16 @@ export default function Footer({ onNavigate }) {
               {f.solutions || 'Our Services'}
             </h3>
             <ul className="space-y-2 text-xs text-slate-300">
-              <li>
-                <button onClick={() => onNavigate('solution-detail', { id: 'financial-crime-compliance' })} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
-                  AML & Financial Crime
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigate('solution-detail', { id: 'regulatory-compliance' })} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
-                  Regulatory Compliance
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigate('solution-detail', { id: 'risk-governance' })} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
-                  Risk & Governance
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigate('solution-detail', { id: 'legal-compliance' })} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
-                  Legal & Corporate
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigate('solution-detail', { id: 'compliance-training' })} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
-                  Compliance Training
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigate('solution-detail', { id: 'compliance-reviews' })} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
-                  Independent Reviews
-                </button>
-              </li>
+              {(solutions || []).slice(0, 6).map((s) => (
+                <li key={s.id}>
+                  <button 
+                    onClick={() => onNavigate('solution-detail', { id: s.id })} 
+                    className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer"
+                  >
+                    {s.name}
+                  </button>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -189,34 +169,19 @@ export default function Footer({ onNavigate }) {
               {f.industriesInsights || 'Industries & Insights'}
             </h3>
             <ul className="space-y-2 text-xs text-slate-300">
-              <li>
-                <button onClick={() => onNavigate('industry-detail', { id: 'banking' })} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
-                  Banking & Credit
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigate('industry-detail', { id: 'fintech' })} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
-                  FinTech & Digital
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigate('industry-detail', { id: 'payments' })} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
-                  Payment Providers
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigate('industry-detail', { id: 'remittance-msb' })} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
-                  Remittance & MSBs
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigate('industry-detail', { id: 'digital-assets' })} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
-                  Crypto & Blockchain
-                </button>
-              </li>
+              {(industries || []).slice(0, 5).map((ind) => (
+                <li key={ind.id}>
+                  <button 
+                    onClick={() => onNavigate('industry-detail', { id: ind.id })} 
+                    className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer"
+                  >
+                    {ind.name}
+                  </button>
+                </li>
+              ))}
               <li>
                 <button onClick={() => onNavigate('blogs')} className="hover:text-white transition-colors text-left truncate block max-w-full cursor-pointer">
-                  Compliance Blogs
+                  {t.nav?.insights || 'Compliance Insights'}
                 </button>
               </li>
             </ul>
@@ -225,7 +190,7 @@ export default function Footer({ onNavigate }) {
           {/* Col 4: Institutional Governance Policies (lg:col-span-3) */}
           <div className="lg:col-span-3 space-y-2.5">
             <h3 className="text-xs sm:text-sm font-semibold tracking-wider uppercase text-white">
-              Governance & Policies
+              {f.governancePolicies || 'Governance & Policies'}
             </h3>
             <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-x-2 gap-y-2 text-xs text-slate-300">
               <li>

@@ -111,8 +111,8 @@
     "book": "Sitzung Buchen"
   },
   "aboutPage": {
-    "tag": "INSTITUTIONELLES ERBE & MANDAT",
-    "title": "Über Eagle Compliance",
+    "tag": "ÜBER EAGLECOMPLY",
+    "title": "Komplexe Regulierung. Klare Lösungen. Sicheres Wachstum.",
     "subtitle": "Wir sind eine spezialisierte Regulierungsberatung, die Algorithmenforscher, ehemalige Aufsichtsbeamte und Rechtswissenschaftler vereint.",
     "dossier": "INSTITUTIONELLES DOSSIER NR. EC-2026-HERITAGE",
     "established": "GEGRÜNDET: LONDON & BRÜSSEL (2019)",
@@ -198,7 +198,82 @@
         "desc": "Verschlüsselt. Kontrolliert. Ausnahmslos geschützt."
       }
     ],
-    "certificationsTitle": "ZERTIFIZIERUNGEN & PARTNERSCHAFTEN"
+    "certificationsTitle": "ZERTIFIZIERUNGEN & PARTNERSCHAFTEN",
+    "description": "EagleComply ist ein internationales regulatorisches Beratungshaus, das Banken, FinTechs, Zahlungsdienstleister und Startups dabei unterstützt, mit vollständiger regulatorischer Sicherheit zu agieren.",
+    "bookConsultation": "Beratungsgespräch Buchen",
+    "explorePractice": "Praxisbereiche Erkunden",
+    "auditTested": "Audit-Geprüft",
+    "alignedBaselines": "FATF-Konform",
+    "crossBorder": "Internationale Tiefe",
+    "motionTag": "EAGLECOMPLY MOTION",
+    "purposeTag": "Unsere Mission",
+    "purposeTitle": "Komplexe Aufsichtsrahmenwerke Entmystifizieren",
+    "purposeP1": "Regulatorische Compliance darf keine Innovationsbremse sein, sondern muss das solide Fundament für nachhaltiges Wachstum bilden.",
+    "purposeP2": "EagleComply wurde gegründet, um die Brücke zwischen komplexen gesetzlichen Richtlinien und pragmatischer geschäftlicher Umsetzung zu schlagen. Wir liefern maßgeschneiderte AML/CFT-Programme und Lizenzierungsunterstützung.",
+    "fatfAligned": "FATF-Konform",
+    "intlDepth": "Internationale Tiefe",
+    "riskMethodology": "Risikobasierte Methodik",
+    "eagleIdentityTag": "Die Adler-Identität",
+    "eagleIdentityTitle": "Wachsamkeit, Aufsicht & Integrität",
+    "eagleIdentityP1": "In der Finanzregulierung steht der Adler für wachsame Aufsicht, scharfen Weitblick und den ganzheitlichen Blick auf das Marktumfeld.",
+    "eagleIdentityP2": "Wir unterstützen Institute dabei, Risiken frühzeitig zu erkennen, Hürden souverän zu meistern und neue regulierte Märkte zu erschließen.",
+    "brandEthos": "Autoritativ · Pragmatisch · Vertrauenswürdig",
+    "valuesTag": "Grundprinzipien",
+    "valuesTitle": "Unsere Professionellen Werte",
+    "brandValues": [
+      {
+        "title": "Berufsethik & Integrität",
+        "desc": "Wir verpflichten uns zu höchsten Standards professioneller Sorgfalt und unabhängiger Beratung."
+      },
+      {
+        "title": "Strikte Vertraulichkeit",
+        "desc": "Alle Mandantendaten und Prüfungen sind durch bilaterale Geheimhaltungsvereinbarungen (NDA) geschützt."
+      },
+      {
+        "title": "Risikobasierter Ansatz",
+        "desc": "Wir entwickeln proportionale Rahmenwerke, abgestimmt auf Ihr tatsächliches Risikoprofil."
+      },
+      {
+        "title": "Wachsamkeit & Klare Vision",
+        "desc": "Wie der Adler erkennen wir regulatorische Risiken frühzeitig und bieten klare Orientierung."
+      }
+    ],
+    "methodologyTag": "Interaktive Methodik",
+    "methodologyTitle": "Implementierungspipeline & Architektur",
+    "methodologyDesc": "Klicken Sie auf eine Phase, um unsere Umsetzungsschritte und greifbaren Compliance-Ergebnisse einzusehen.",
+    "methodologyBadge": "Methodik & Architektur",
+    "executionPipeline": "UMSETZUNGSPIPELINE:",
+    "activeStatus": "AKTIV",
+    "deliverableLabel": "ERGEBNISDOKUMENT:",
+    "pipelineData": [
+      {
+        "index": "PHASE 01 // ANALYSE",
+        "title": "Diagnose & Risikoanalyse",
+        "desc": "Detaillierte Prüfung Ihrer Produkte, Kundenströme und Prozesse anhand relevanter Aufsichtsstandards.",
+        "output": "Regulatorische Gap-Matrix & Perimeter-Karte"
+      },
+      {
+        "index": "PHASE 02 // ARCHITEKTUR",
+        "title": "Praxisnahes Kontrolldesign",
+        "desc": "Übersetzung rechtlicher Vorgaben in verständliche Richtlinien, Arbeitsanweisungen und Workflows.",
+        "output": "Maßgeschneiderte SOPs & Richtlinien-Pakete"
+      },
+      {
+        "index": "PHASE 03 // ROLLOUT",
+        "title": "Implementierung & Schulung",
+        "desc": "Verankerung der Kontrollroutinen im Tagesgeschäft und Schulung von Teams und Führungskräften.",
+        "output": "Gelebte Governance & Vorstands-Briefings"
+      },
+      {
+        "index": "PHASE 04 // ÜBERWACHUNG",
+        "title": "Laufende Qualitätssicherung",
+        "desc": "Regelmäßige Wirksamkeitsprüfungen, Stichprobentests und Aufsichts-Horizon-Scanning.",
+        "output": "Lückenlose Audit-Logs & Risiko-Radar"
+      }
+    ],
+    "ctaTitle": "Bereit, Ihre institutionelle Compliance zu stärken?",
+    "ctaDesc": "Kontaktieren Sie EagleComply noch heute für ein vertrauliches Gespräch mit unseren Senior-Beratern.",
+    "contactUs": "Kontaktieren Sie Uns"
   },
   "caseStudiesPage": {
     "tag": "ERPROBTE UNTERNEHMENSERGEBNISSE",
@@ -416,46 +491,9 @@
     "chatbotPlaceholder": "Fragen Sie nach EU AI Act, DORA, MiCA, DSGVO oder Jurisdiktionen..."
   },
   "experience": {
-    "tag": "BERATUNGSERFAHRUNG",
-    "title": "Von regulatorischer Komplexität zu praktischen Maßnahmen",
-    "subtitle": "Entdecken Sie Servicearchitektur, Vorgehensweise und häufige Compliance-Fragen für eine wirksame Zusammenarbeit.",
-    "servicesTag": "SERVICEARCHITEKTUR",
-    "servicesTitle": "Integrierte Compliance-Services",
-    "servicesSubtitle": "Wählen Sie einen Bereich, um Umfang, typische Ergebnisse und Geschäftsnutzen zu prüfen.",
-    "selected": "AUSGEWÄHLTER BEREICH",
-    "explore": "Bereich ansehen",
-    "faqTag": "COMPLIANCE-LEITFADEN",
-    "faqTitle": "Häufige Compliance-Fragen",
-    "ctaTag": "NÄCHSTER SCHRITT",
-    "ctaTitle": "Sie benötigen Orientierung bei einem Compliance-Thema?",
-    "ctaDesc": "Schildern Sie Ihre Situation und besprechen Sie praktische Optionen mit EagleComply.",
-    "ctaBtn": "Beratung buchen",
-    "steps": [
-      {
-        "title": "Bewerten",
-        "desc": "Pflichten, Risiken, Geschäftsmodell und Jurisdiktionen erfassen."
-      },
-      {
-        "title": "Entwerfen",
-        "desc": "Angemessene Richtlinien, Kontrollen, Governance und Dokumentation entwickeln."
-      },
-      {
-        "title": "Umsetzen",
-        "desc": "Anforderungen in operative Abläufe und Nachweise übertragen."
-      },
-      {
-        "title": "Sicherstellen",
-        "desc": "Kontrollen testen, Lücken erkennen und Maßnahmen priorisieren."
-      }
-    ],
-    "faq1q": "Was umfasst ein AML/CFT-Programm typischerweise?",
-    "faq1a": "Dazu können Governance, Risikobewertung, KYC/CDD/EDD, Sanktions- und PEP-Prüfungen, Transaktionsmonitoring, Eskalation, Schulungen, Reporting und unabhängige Tests gehören.",
-    "faq2q": "Kann EagleComply bei der Lizenzvorbereitung unterstützen?",
-    "faq2a": "Ja. Dazu können Gap-Analysen, Governance, Richtlinien, Kontrollrahmen, Nachweispakete und Readiness-Unterstützung gehören. Die endgültige Zulassung erteilt die zuständige Behörde.",
-    "faq3q": "Wie sollte ein Unternehmen eine neue regulatorische Anforderung angehen?",
-    "faq3a": "Anwendbarkeit bestimmen, Lücke zu bestehenden Kontrollen bewerten, wesentliche Risiken priorisieren, Maßnahmen umsetzen und Nachweise für Management und Aufsicht dokumentieren.",
-    "faq4q": "Bietet die Website jurisdiktionsspezifische Rechtsberatung?",
-    "faq4a": "Die Website enthält allgemeine Informationen. Spezifische Rechts- oder Regulierungsberatung sollte im Rahmen eines geeigneten Mandats erfolgen."
+    "tag": "INSTITUTIONELLE ERFAHRUNG",
+    "title": "Messbare Erfolge in der Regulierungspraxis",
+    "subtitle": "Bewährte Unterstützung regulierter Marktteilnehmer bei Zulassungen, Prüfungen und Systemaudits."
   },
   "chatbot": {
     "greet": "Hallo! Ich bin der EagleComply-Assistent. Fragen Sie zu AML/CFT, Lizenzen, Risiken, Governance, Recht, Branchen oder Jurisdiktionen.",
@@ -720,5 +758,35 @@
       "Drei Verteidigungslinien",
       "Grenzüberschreitende Tiefe"
     ]
+  },
+  "targetClients": {
+    "tag": "ZIELSEKTOREN",
+    "title": "Regulierte Finanz- und Technologieinstitute",
+    "subtitle": "Maßgeschneiderte Compliance-Architekturen und regulatorische Beratung für anspruchsvolle, multi-jurisdiktionelle Aufsichtsregime.",
+    "sectors": [
+      "Banken & Kreditinstitute",
+      "FinTech-Unternehmen & Digitale Herausforderer",
+      "Zahlungsdienstleister & Acquirer",
+      "Geldtransfer- & Money Service Businesses (MSB)",
+      "Krypto- & Digital-Asset-Unternehmen (CASP)",
+      "Finanzinstitute & Asset Manager",
+      "Startups in regulierten Branchen"
+    ]
+  },
+  "whyUs": {
+    "tag": "WARUM EAGLE COMPLY",
+    "title": "Regulatorische Exzellenz und Audit-Sicherheit",
+    "subtitle": "Wir verbinden tiefgreifendes Aufsichtswissen mit technischer Präzision, um Ihre Compliance-Programme rechtssicher aufzustellen.",
+    "points": [
+      "Audit-fähige Dokumentation für behördliche Prüfungen",
+      "Internationale Praxisabdeckung (UK, EU, VAE, USA)",
+      "Ehemalige Aufsichtsexperten und zertifizierte AML-Spezialisten",
+      "Strikte bilaterale Geheimhaltung und Datenschutz"
+    ]
+  },
+  "leadership": {
+    "tag": "FÜHRUNGSTEAM & PARTNER",
+    "title": "Senior Compliance- und Regulierungsexperten",
+    "subtitle": "Geleitet von erfahrenen Rechtsberatern und anerkannten Experten für Finanzkriminalität und Governance."
   }
 }

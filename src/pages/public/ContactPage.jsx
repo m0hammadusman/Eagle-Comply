@@ -74,26 +74,39 @@ export default function ContactPage({ onNavigate }) {
     }
   };
 
-  const industryOptions = [
-    'Banks & Credit Institutions',
-    'FinTech Companies',
-    'Payment Service Providers',
-    'Money Service Businesses & Remittance',
-    'Crypto & Digital Asset Businesses',
-    'Financial Institutions & Asset Managers',
-    'Startups & Regulated Entrants',
-    'Professional Service Firms',
-    'Other Regulated Entity'
-  ];
+  const industryOptions = (industries || []).length > 0 
+    ? industries.map(i => i.name) 
+    : [
+        'Banks & Credit Institutions',
+        'FinTech Companies',
+        'Payment Service Providers',
+        'Money Service Businesses & Remittance',
+        'Crypto & Digital Asset Businesses',
+        'Financial Institutions & Asset Managers',
+        'Startups & Regulated Entrants'
+      ];
 
-  const serviceOptions = [
-    'AML/CFT & Financial Crime Compliance',
-    'Regulatory Compliance & Licensing Readiness',
-    'Enterprise Risk Management & Governance',
-    'Legal & Compliance Advisory',
-    'Institutional Compliance & AML Training',
-    'Independent Reviews & Gap Assessments'
-  ];
+  const serviceOptions = (solutions || []).length > 0 
+    ? solutions.map(s => s.name) 
+    : [
+        'AML/CFT & Financial Crime Compliance',
+        'Regulatory Compliance & Licensing Readiness',
+        'Enterprise Risk Management & Governance',
+        'Legal & Compliance Advisory',
+        'Institutional Compliance & AML Training',
+        'Independent Reviews & Gap Assessments'
+      ];
+
+  const jurisdictionOptions = (countries || []).length > 0
+    ? countries.map(c => c.name)
+    : [
+        'United Kingdom',
+        'European Union',
+        'United States',
+        'United Arab Emirates',
+        'Pakistan',
+        'Australia'
+      ];
 
   return (
     <div className="w-full py-12 lg:py-16 space-y-12 animate-fade-in">
@@ -101,13 +114,13 @@ export default function ContactPage({ onNavigate }) {
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-3">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#334DAF]/10 dark:bg-[#7096D1]/15 text-[#334DAF] dark:text-[#7096D1] text-xs font-mono font-bold tracking-wider uppercase border border-[#334DAF]/20 dark:border-[#7096D1]/30">
           <Building2 className="w-3.5 h-3.5" />
-          <span>EAGLECOMPLY CONSULTATION & ADVISORY</span>
+          <span>{c.tag || 'EAGLECOMPLY CONSULTATION & ADVISORY'}</span>
         </div>
         <h1 className="font-sans tracking-tight text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white">
-          Discuss Your Compliance Requirements
+          {c.title || 'Discuss Your Compliance Requirements'}
         </h1>
         <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
-          Connect directly with our senior compliance practitioners to build, review, or scale your regulatory compliance and AML/CFT frameworks.
+          {c.subtitle || 'Connect directly with our senior compliance practitioners to build, review, or scale your regulatory compliance and AML/CFT frameworks.'}
         </p>
       </div>
 
@@ -123,17 +136,17 @@ export default function ContactPage({ onNavigate }) {
                   <ShieldCheck className="w-8 h-8" />
                 </div>
                 <h3 className="text-2xl font-bold text-slate-900 dark:text-white">
-                  Email Sent Successfully!
+                  {c.successTitle || 'Email Sent Successfully!'}
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 max-w-md mx-auto leading-relaxed">
-                  Thank you for reaching out. Your message has been received and our compliance advisory team will contact you soon.
+                  {c.successDesc || 'Thank you for reaching out. Your message has been received and our compliance advisory team will contact you soon.'}
                 </p>
 
                 <div className="p-4 rounded-2xl bg-surface-subtle border border-surface-border text-xs text-left max-w-md mx-auto space-y-1.5 font-mono">
-                  <div className="flex justify-between"><span className="text-slate-500">Sender:</span><strong>{formData.name}</strong></div>
-                  <div className="flex justify-between"><span className="text-slate-500">Email:</span><strong>{formData.email}</strong></div>
-                  <div className="flex justify-between"><span className="text-slate-500">Company:</span><strong>{formData.company || '—'}</strong></div>
-                  <div className="flex justify-between"><span className="text-slate-500">Service:</span><strong className="truncate max-w-[200px]">{formData.service}</strong></div>
+                  <div className="flex justify-between"><span className="text-slate-500">{c.fullName || 'Sender'}:</span><strong>{formData.name}</strong></div>
+                  <div className="flex justify-between"><span className="text-slate-500">{c.businessEmail || 'Email'}:</span><strong>{formData.email}</strong></div>
+                  <div className="flex justify-between"><span className="text-slate-500">{c.companyOrg || 'Company'}:</span><strong>{formData.company || '—'}</strong></div>
+                  <div className="flex justify-between"><span className="text-slate-500">{c.serviceRequired || 'Service'}:</span><strong className="truncate max-w-[200px]">{formData.service}</strong></div>
                 </div>
 
                 <div className="pt-2">
@@ -144,15 +157,15 @@ export default function ContactPage({ onNavigate }) {
                         name: '',
                         email: '',
                         company: '',
-                        jurisdiction: 'United Kingdom',
-                        industry: 'FinTech & Digital Challengers',
-                        service: 'AML/CFT & Financial Crime Compliance',
+                        jurisdiction: jurisdictionOptions[0] || 'United Kingdom',
+                        industry: industryOptions[0] || 'FinTech & Digital Challengers',
+                        service: serviceOptions[0] || 'AML/CFT & Financial Crime Compliance',
                         description: ''
                       });
                     }}
                     className="px-6 py-2.5 rounded-full bg-[#091F5C] dark:bg-[#334DAF] text-xs font-bold text-white hover:opacity-90 shadow-sm transition-all cursor-pointer"
                   >
-                    Send Another Message
+                    {c.sendAnother || 'Send Another Message'}
                   </button>
                 </div>
               </div>

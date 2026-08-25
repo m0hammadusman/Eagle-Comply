@@ -416,46 +416,9 @@
     "chatbotPlaceholder": "Chiedi informazioni su EU AI Act, DORA, MiCA, GDPR o specifiche giurisdizioni..."
   },
   "experience": {
-    "tag": "ESPERIENZA CONSULENZIALE",
-    "title": "Dalla complessità normativa all'azione pratica",
-    "subtitle": "Esplora l'architettura dei servizi, il processo di lavoro e le domande frequenti sulla compliance.",
-    "servicesTag": "ARCHITETTURA DEI SERVIZI",
-    "servicesTitle": "Servizi integrati di compliance",
-    "servicesSubtitle": "Seleziona un'area per esaminarne perimetro, deliverable tipici e valore aziendale.",
-    "selected": "AREA SELEZIONATA",
-    "explore": "Esplora area",
-    "faqTag": "GUIDA ALLA COMPLIANCE",
-    "faqTitle": "Domande frequenti sulla compliance",
-    "ctaTag": "PROSSIMO PASSO",
-    "ctaTitle": "Hai bisogno di indicazioni su un problema di compliance?",
-    "ctaDesc": "Condividi la situazione e valuta opzioni pratiche con EagleComply.",
-    "ctaBtn": "Prenota una consulenza",
-    "steps": [
-      {
-        "title": "Valutare",
-        "desc": "Mappare obblighi, rischi, modello di business e giurisdizioni."
-      },
-      {
-        "title": "Progettare",
-        "desc": "Definire policy, controlli, governance e documentazione proporzionati."
-      },
-      {
-        "title": "Implementare",
-        "desc": "Tradurre i requisiti in processi operativi ed evidenze."
-      },
-      {
-        "title": "Assicurare",
-        "desc": "Testare i controlli, individuare lacune e dare priorità alle remediation."
-      }
-    ],
-    "faq1q": "Cosa comprende normalmente un programma AML/CFT?",
-    "faq1a": "Può comprendere governance, valutazione del rischio, KYC/CDD/EDD, sanzioni e PEP, transaction monitoring, escalation, formazione, reporting e test indipendenti.",
-    "faq2q": "EagleComply può supportare la preparazione a una licenza?",
-    "faq2a": "Sì. Può includere gap assessment, governance, policy, framework di controllo, pacchetti di evidenze e supporto alla readiness. L'autorizzazione finale spetta al regolatore competente.",
-    "faq3q": "Come dovrebbe un'azienda gestire un nuovo requisito normativo?",
-    "faq3a": "Definire l'applicabilità, valutare il gap rispetto ai controlli esistenti, dare priorità ai rischi materiali, attuare azioni documentate e conservare le evidenze.",
-    "faq4q": "Il sito fornisce consulenza legale specifica per giurisdizione?",
-    "faq4a": "Il contenuto è generale. La consulenza legale o normativa specifica deve essere fornita nell'ambito di un incarico appropriato."
+    "tag": "ESPERIENZA ISTITUZIONALE",
+    "title": "Risultati Certificati e Misurabili",
+    "subtitle": "Esperienza comprovata nell'ottenimento di licenze e nel superamento di gap assessment e audit indipendenti."
   },
   "chatbot": {
     "greet": "Ciao! Sono l’assistente EagleComply. Chiedi di AML/CFT, licenze, rischi, governance, aspetti legali, settori o giurisdizioni.",
@@ -720,5 +683,35 @@
       "Tre linee di difesa",
       "Profondità transfrontaliera"
     ]
+  },
+  "targetClients": {
+    "tag": "SETTORI DI RIFERIMENTO",
+    "title": "Istituzioni Soggette a Vigilanza Finanziaria",
+    "subtitle": "Architetture di conformità e consulenza regolamentare avanzata per contesti complessi e multi-giurisdizionali.",
+    "sectors": [
+      "Banche e Istituti di Credito",
+      "Società FinTech e Operatori Digitali",
+      "Prestatori di Servizi di Pagamento (PSP)",
+      "Società di Rimessa e Money Service Business (MSB)",
+      "Imprese di Cripto-Attività e Asset Digitali (CASP)",
+      "Istituzioni Finanziarie e Gestori di Risparmio",
+      "Startup in Settori Regolamentati"
+    ]
+  },
+  "whyUs": {
+    "tag": "PERCHÉ SCEGLIERE EAGLE COMPLY",
+    "title": "Precisione Normativa e Tenuta Ispettiva",
+    "subtitle": "Uniamo una profonda conoscenza delle autorità di vigilanza e competenze tecniche all'avanguardia per proteggere il vostro business.",
+    "points": [
+      "Dossier conformi e pronti per le ispezioni delle autorità",
+      "Copertura internazionale (Regno Unito, UE, Emirati Arabi, USA)",
+      "Consulenti senior ed ex esperti di compliance bancaria",
+      "Protocolli rigorosi di riservatezza bilaterale (NDA)"
+    ]
+  },
+  "leadership": {
+    "tag": "LEADERSHIP & PARTNER",
+    "title": "Professionisti Senior in Diritto e Regolamentazione",
+    "subtitle": "Diretto da consulenti legali e professionisti certificati in antiriciclaggio e governance aziendale."
   }
 }

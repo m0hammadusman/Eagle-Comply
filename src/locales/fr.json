@@ -416,46 +416,9 @@
     "chatbotPlaceholder": "Posez vos questions sur l'AI Act, DORA, MiCA, le RGPD ou une juridiction..."
   },
   "experience": {
-    "tag": "EXPÉRIENCE CONSEIL",
-    "title": "De la complexité réglementaire à l'action concrète",
-    "subtitle": "Explorez l'architecture des services, le processus d'intervention et les questions de conformité courantes.",
-    "servicesTag": "ARCHITECTURE DES SERVICES",
-    "servicesTitle": "Services de conformité intégrés",
-    "servicesSubtitle": "Sélectionnez un domaine pour examiner son périmètre, ses livrables et sa valeur métier.",
-    "selected": "DOMAINE SÉLECTIONNÉ",
-    "explore": "Explorer le domaine",
-    "faqTag": "GUIDE DE CONFORMITÉ",
-    "faqTitle": "Questions fréquentes",
-    "ctaTag": "PROCHAINE ÉTAPE",
-    "ctaTitle": "Besoin d'aide sur un sujet de conformité ?",
-    "ctaDesc": "Présentez votre situation et échangez sur des options pratiques avec EagleComply.",
-    "ctaBtn": "Réserver une consultation",
-    "steps": [
-      {
-        "title": "Évaluer",
-        "desc": "Cartographier les obligations, risques, modèle économique et juridictions."
-      },
-      {
-        "title": "Concevoir",
-        "desc": "Construire des politiques, contrôles, gouvernance et documents proportionnés."
-      },
-      {
-        "title": "Mettre en œuvre",
-        "desc": "Transformer les exigences en processus opérationnels et preuves."
-      },
-      {
-        "title": "Assurer",
-        "desc": "Tester les contrôles, identifier les écarts et prioriser les remédiations."
-      }
-    ],
-    "faq1q": "Que couvre généralement un programme AML/CFT ?",
-    "faq1a": "Il peut couvrir la gouvernance, l'évaluation des risques, KYC/CDD/EDD, les sanctions et PEP, la surveillance des transactions, l'escalade des activités suspectes, la formation, le reporting et les tests indépendants.",
-    "faq2q": "EagleComply peut-il aider à la préparation d'une licence ?",
-    "faq2a": "Oui. L'intervention peut inclure l'analyse des écarts, la gouvernance, les politiques, les contrôles, les dossiers de preuves et l'accompagnement à la préparation. L'autorisation finale appartient au régulateur compétent.",
-    "faq3q": "Comment aborder une nouvelle exigence réglementaire ?",
-    "faq3a": "Définir le périmètre, évaluer l'écart avec les contrôles existants, prioriser les risques importants, mettre en œuvre les actions documentées et conserver les preuves.",
-    "faq4q": "Le site fournit-il des conseils juridiques propres à une juridiction ?",
-    "faq4a": "Le contenu du site est général. Les conseils juridiques ou réglementaires spécifiques doivent être fournis dans le cadre d'un mandat approprié, avec un conseil local si nécessaire."
+    "tag": "EXPÉRIENCE INSTITUTIONNELLE",
+    "title": "Des Résultats Mesurables et Vérifiés",
+    "subtitle": "Un historique d'excellence pour accompagner les acteurs financiers et technologiques vers une conformité irréprochable."
   },
   "chatbot": {
     "greet": "Bonjour ! Je suis l’assistant EagleComply. Posez vos questions sur l’AML/CFT, les licences, les risques, la gouvernance, le droit, les secteurs ou les juridictions.",
@@ -720,5 +683,35 @@
       "Trois lignes de défense",
       "Expertise transfrontalière"
     ]
+  },
+  "targetClients": {
+    "tag": "SECTEURS CLIENTS CIBLES",
+    "title": "Institutions Soumises à la Réglementation Financière",
+    "subtitle": "Architectures de conformité et conseil réglementaire sur mesure conçus pour les environnements hautement surveillés et multi-juridictionnels.",
+    "sectors": [
+      "Banques & Établissements de Crédit",
+      "Entreprises FinTech & Acteurs Numériques",
+      "Prestataires de Services de Paiement (PSP)",
+      "Sociétés de Transfert de Fonds & MSB",
+      "Entreprises de Crypto-Actifs & Web3 (PSAN/CASP)",
+      "Institutions Financières & Gestionnaires d'Actifs",
+      "Startups des Secteurs Réglementés"
+    ]
+  },
+  "whyUs": {
+    "tag": "POURQUOI CHOISIR EAGLE COMPLY",
+    "title": "Une Rigueur Réglementaire Conçue pour l'Audit",
+    "subtitle": "Nous combinons une vaste expérience prudentielle et une expertise technique de pointe pour sécuriser et accélérer vos autorisations.",
+    "points": [
+      "Dossiers prêts pour l'inspection contradictoire des autorités",
+      "Couverture transfrontalière (Royaume-Uni, UE, EAU, États-Unis)",
+      "Conseillers seniors et anciens experts d'organismes de tutelle",
+      "Protocoles de confidentialité bilatérale (NDA) stricts"
+    ]
+  },
+  "leadership": {
+    "tag": "ÉQUIPE DIRIGEANTE & ASSOCIÉS",
+    "title": "Praticiens Experts en Conformité et Réglementation",
+    "subtitle": "Nos missions sont dirigées par des juristes seniors et des spécialistes certifiés de la criminalité financière et de la gouvernance."
   }
 }

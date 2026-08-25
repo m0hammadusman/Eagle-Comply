@@ -194,7 +194,6 @@
         "capital": "Brussels",
         "overview": "The global epicenter of regulatory standard-setting. Navigating the EU requires synchronized mastery of digital resilience (DORA, NIS2), artificial intelligence (EU AI Act), privacy (GDPR), and sustainability (CSRD).",
         "status": "Active Full Jurisdiction",
-        
         "keySectors": [
           "Financial Services",
           "Technology & AI",
@@ -208,7 +207,6 @@
         "capital": "Washington, D.C.",
         "overview": "High-stakes federal and state regulatory landscape governed by aggressive SEC enforcement, FTC privacy oversight, FDA pre-market reviews, and rigorous DoD cybersecurity standards.",
         "status": "Active Full Jurisdiction",
-        
         "keySectors": [
           "Financial Markets",
           "MedTech & Biotech",
@@ -222,7 +220,6 @@
         "capital": "London",
         "overview": "Post-Brexit independent regulatory powerhouse combining high-velocity financial innovation with strict FCA Consumer Duty, UK GDPR, and emerging AI regulatory frameworks.",
         "status": "Active Full Jurisdiction",
-        
         "keySectors": [
           "FinTech & Banking",
           "Asset Management",
@@ -236,7 +233,6 @@
         "capital": "Abu Dhabi / Dubai",
         "overview": "The Middle East's premier international finance and virtual asset hub, governed by world-leading digital asset frameworks (VARA), Abu Dhabi Global Market (ADGM), and UAE Federal PDPL.",
         "status": "Active Full Jurisdiction",
-        
         "keySectors": [
           "Digital Assets & Web3",
           "Sovereign Wealth",
@@ -250,7 +246,6 @@
         "capital": "Singapore",
         "overview": "Asia-Pacific's most trusted regulatory jurisdiction, defined by MAS progressive fintech licensing, strict PDPA privacy laws, and regional ESG disclosure roadmaps.",
         "status": "Active Full Jurisdiction",
-        
         "keySectors": [
           "Wealth Management",
           "Payments & FinTech",
@@ -264,7 +259,6 @@
         "capital": "Tokyo",
         "overview": "Pioneering Asian digital asset and corporate governance market overseen by the Financial Services Agency (JFSA) and Personal Information Protection Commission (PPC).",
         "status": "Active Full Jurisdiction",
-        
         "keySectors": [
           "Banking & Insurance",
           "Robotics & AI",
@@ -713,6 +707,120 @@
         "valueProp": "Garantissez la conformité de la direction avec des protections de responsabilité personnelle sous le régime NIS2 européen.",
         "pricingTier": "Cahier des Charges Conformité & Politiques",
         "timeline": "Mission de 8 à 12 Semaines"
+      },
+      "financial-crime-compliance": {
+        "name": "Conformité AML/CFT & Criminalité Financière",
+        "category": "Criminalité Financière",
+        "badge": "Pratique Clé",
+        "shortDesc": "Programmes complets AML/CFT, dispositifs KYC/CDD/EDD, évaluation des risques, surveillance des transactions, filtrage des sanctions et Travel Rule.",
+        "valueProp": "Bâtir des cadres AML/CFT auditables et fondés sur les risques, alignés sur les standards internationaux.",
+        "challenges": [
+          "Conception d'évaluations globales des risques institutionnels ML/FT",
+          "Adaptation aux évolutions rapides des recommandations du GAFI",
+          "Réduction des taux élevés de faux positifs dans la surveillance des transactions",
+          "Garantie du filtrage des sanctions et PPE en temps réel"
+        ],
+        "deliverables": [
+          "Manuel complet des politiques et procédures AML/CFT",
+          "Méthodologie et grille d'évaluation des risques d'entreprise (EWRA)",
+          "Procédures opérationnelles KYC/CDD et Due Diligence Renforcée (EDD)",
+          "Protocoles de filtrage des sanctions, d'investigation et d'escalade"
+        ]
+      },
+      "regulatory-compliance": {
+        "name": "Conformité Réglementaire & Préparation aux Licences",
+        "category": "Conseil Réglementaire",
+        "badge": "Conseil Stratégique",
+        "shortDesc": "Cadres réglementaires, préparation aux agréments, analyses des écarts, programmes de surveillance (CMP), reporting et gestion du changement.",
+        "valueProp": "Transformer les exigences réglementaires complexes en programmes de conformité opérationnels.",
+        "challenges": [
+          "Obtention d'agréments et licences dans des délais stricts",
+          "Maintien de la conformité face aux évolutions réglementaires continues",
+          "Mise en place de programmes de contrôle de conformité proportionnés",
+          "Gestion fluide du reporting et des relations avec les autorités de tutelle"
+        ],
+        "deliverables": [
+          "Dossier complet de demande d'agrément et gouvernance",
+          "Matrice d'analyse des écarts réglementaires et plan d'action",
+          "Programme annuel de contrôle de la conformité (CMP)",
+          "Guide de gouvernance et gestion des obligations réglementaires"
+        ]
+      },
+      "risk-governance": {
+        "name": "Gestion des Risques & Gouvernance d’Entreprise",
+        "category": "Risques & Gouvernance",
+        "badge": "Gouvernance du Conseil",
+        "shortDesc": "Évaluations des risques, appétit au risque, risques opérationnels, supervision des tiers, structures de gouvernance et tests des contrôles.",
+        "valueProp": "Établir une gouvernance proportionnée favorisant une croissance maîtrisée et sécurisée.",
+        "challenges": [
+          "Alignement des objectifs de croissance sur l'appétit au risque approuvé",
+          "Déploiement effectif du modèle des Trois Lignes de Défense",
+          "Surveillance et maîtrise des risques liés aux prestataires tiers",
+          "Reporting de risques clair pour le Conseil et les comités daudit"
+        ],
+        "deliverables": [
+          "Cadre institutionnel de gestion des risques d'entreprise (ERM)",
+          "Déclaration et indicateurs clés d'appétit au risque (RAS / KRI)",
+          "Chartes de gouvernance des comités de conformité et des risques",
+          "Politique et procédure de supervision des tiers et de sous-traitance"
+        ]
+      },
+      "legal-compliance": {
+        "name": "Conseil Juridique & Conformité Spécialisée",
+        "category": "Conseil Juridique",
+        "badge": "Conseil Spécialisé",
+        "shortDesc": "Recherche réglementaire, documentation de conformité, revue de contrats et politiques, conseil crypto/fintech et confidentialité.",
+        "valueProp": "Relier les obligations légales à l’exécution opérationnelle avec un conseil clair et pragmatique.",
+        "challenges": [
+          "Interprétation des exigences légales dans des environnements transfrontaliers",
+          "Rédaction de contrats et conditions assurant une protection juridique totale",
+          "Structuration de conformité pour les actifs numériques et la FinTech",
+          "Respect des réglementations internationales sur la protection des données (RGPD)"
+        ],
+        "deliverables": [
+          "Avis juridiques et mémorandums réglementaires formels",
+          "Ensemble de contrats commerciaux et conditions conformes",
+          "Politiques de protection des données et gouvernance de la confidentialité",
+          "Matrice de conformité juridique et cartographie des obligations"
+        ]
+      },
+      "compliance-training": {
+        "name": "Formation Conformité & AML Institutionnelle",
+        "category": "Formation & Compétences",
+        "badge": "Développement des Compétences",
+        "shortDesc": "Formations ciblées en AML/CFT, sanctions, KYC, et sensibilisation aux obligations réglementaires pour équipes et dirigeants.",
+        "valueProp": "Développer les compétences pratiques de conformité des équipes opérationnelles et du Conseil.",
+        "challenges": [
+          "Sensibilisation des équipes aux typologies et signaux d’alerte émergents",
+          "Respect des exigences de formation obligatoire imposées par les autorités",
+          "Adaptation des modules aux rôles spécifiques et aux profils de risque",
+          "Évaluation de l’efficacité et conservation des preuves d’audit"
+        ],
+        "deliverables": [
+          "Modules complets de formation AML/CFT et criminalité financière",
+          "Sessions de formation et briefings pour les membres du Conseil",
+          "Évaluations des connaissances et certifications de réussite",
+          "Rapport annuel de formation prêt pour les inspecteurs et auditeurs"
+        ]
+      },
+      "compliance-reviews": {
+        "name": "Revues Indépendantes & Analyses d’Écarts",
+        "category": "Assurance Indépendante",
+        "badge": "Assurance Indépendante",
+        "shortDesc": "Audits annuels indépendants AML/CFT, tests d’efficacité des contrôles, gap assessments et feuilles de route de remédiation.",
+        "valueProp": "Obtenir une évaluation indépendante et crédible de vos dispositifs et priorités d’action.",
+        "challenges": [
+          "Satisfaction des exigences des banques partenaires et des autorités",
+          "Identification des lacunes invisibles dans les systèmes de contrôle",
+          "Réalisation de tests par échantillonnage approfondis",
+          "Formulation de plans de remédiation réalistes et prioritaires"
+        ],
+        "deliverables": [
+          "Rapport complet d’audit indépendant annuel AML/CFT",
+          "Rapport de tests d’échantillons et d’efficacité des contrôles",
+          "Feuille de route de remédiation hiérarchisée et plan d’action",
+          "Attestation indépendante pour les correspondants bancaires et régulateurs"
+        ]
       }
     },
     "industries": {
@@ -754,7 +862,6 @@
         "capital": "Bruxelles",
         "overview": "L'épicentre mondial de l'établissement des normes réglementaires. Naviguer dans l'UE nécessite une maîtrise synchronisée de la résilience numérique (DORA, NIS2), de l'intelligence artificielle (EU AI Act), de la confidentialité (RGPD) et de la durabilité (CSRD).",
         "status": "Juridiction Complète Active",
-        
         "keySectors": [
           "Services Financiers",
           "Technologie & IA",
@@ -768,7 +875,6 @@
         "capital": "Washington, D.C.",
         "overview": "Paysage réglementaire fédéral et étatique à forts enjeux, régi par une répression agressive de la SEC, la surveillance de la confidentialité par la FTC, les examens pré-marché de la FDA et les normes strictes de cybersécurité du DoD.",
         "status": "Juridiction Complète Active",
-        
         "keySectors": [
           "Marchés Financiers",
           "MedTech & Biotech",
@@ -782,7 +888,6 @@
         "capital": "Londres",
         "overview": "Puissance réglementaire indépendante post-Brexit combinant innovation financière à grande vitesse avec l'exigeant Consumer Duty de la FCA, le UK GDPR et les cadres émergents de régulation de l'IA.",
         "status": "Juridiction Complète Active",
-        
         "keySectors": [
           "FinTech & Banque",
           "Gestion d'Actifs",
@@ -796,7 +901,6 @@
         "capital": "Abou Dhabi / Dubaï",
         "overview": "Le premier pôle international de finance et d'actifs virtuels du Moyen-Orient, régi par des cadres d'actifs numériques de pointe (VARA), l'Abu Dhabi Global Market (ADGM) et la loi fédérale PDPL des EAU.",
         "status": "Juridiction Complète Active",
-        
         "keySectors": [
           "Actifs Numériques & Web3",
           "Fonds Souverains",
@@ -810,7 +914,6 @@
         "capital": "Singapour",
         "overview": "La juridiction réglementaire la plus fiable d'Asie-Pacifique, caractérisée par l'octroi progressif de licences fintech par la MAS, des lois strictes sur la protection des données (PDPA) et des feuilles de route ESG régionales.",
         "status": "Juridiction Complète Active",
-        
         "keySectors": [
           "Gestion de Fortune",
           "Paiements & FinTech",
@@ -824,7 +927,6 @@
         "capital": "Tokyo",
         "overview": "Marché asiatique pionnier des actifs numériques et de la gouvernance d'entreprise supervisé par l'Agence des services financiers (JFSA) et la Commission de protection des informations personnelles (PPC).",
         "status": "Juridiction Complète Active",
-        
         "keySectors": [
           "Banque & Assurance",
           "Robotique & IA",
@@ -1083,29 +1185,29 @@
       }
     ],
     "detailCommon": {
-      "overview": "Aperçu & Périmètre Exécutif",
+      "overview": "Vue d'Ensemble & Périmètre Exécutif",
       "challenges": "Principaux Défis Réglementaires",
       "deliverables": "Livrables Institutionnels Clés",
-      "scope": "Périmètre Détaillé de la Mission",
-      "methodology": "Méthodologie d'Implémentation",
-      "leadExpert": "Associé Responsable de la Pratique",
-      "relatedRegulations": "Cadres Juridiques Principaux",
+      "scope": "Périmètre Détaillé de la Pratique",
+      "methodology": "Méthodologie de Déploiement",
+      "leadExpert": "Associé Référent de la Pratique",
+      "relatedRegulations": "Cadres Réglementaires Clés",
       "relatedIndustries": "Secteurs d'Activité Concernés",
-      "bookConsultation": "Réserver une Consultation Associé",
+      "bookConsultation": "Réserver une Consultation Partenaire",
       "requestQuote": "Demander une Estimation SOW",
-      "inspectDossier": "Examiner le Dossier Réglementaire",
+      "inspectDossier": "Consulter le Dossier Réglementaire",
       "regulators": "Autorités de Surveillance Compétentes",
-      "residentDesk": "Jurisdiction Practice Coverage",
-      "keySectors": "Secteurs Supervisés Prioritaires",
-      "status": "Statut de Surveillance",
-      "capital": "Capitale / Centre Réglementaire",
+      "residentDesk": "Couverture Régionale de Pratique",
+      "keySectors": "Secteurs Prioritaires Surveillés",
+      "status": "Statut Prudentiel",
+      "capital": "Capital Réglementaire / Place Financière",
       "penalties": "Sanctions Légales Maximales",
-      "jurisdiction": "Juridiction Supervisée",
-      "timeline": "Calendrier d'Application Légale",
+      "jurisdiction": "Juridiction Surveillée",
+      "timeline": "Calendrier Réglementaire d'Application",
       "articles": "Articles & Analyses Réglementaires",
-      "resources": "Boîtes à Outils & Dossiers de Conformité",
+      "resources": "Kits d'Outils & Dossiês de Conformité",
       "applyRole": "Postuler à cette Opportunité",
-      "caseStudy": "Dossier d'Audit d'Entreprise Vedette"
+      "caseStudy": "Étude de Cas & Dossier d'Audit"
     },
     "modals": {
       "consultationTitle": "Réserver une Consultation de Cadrage avec un Associé",
@@ -1273,13 +1375,132 @@
         "valueProp": "Gewährleisten Sie C-Level-Compliance mit persönlichem Haftungsschutz unter dem EU NIS2-Regime.",
         "pricingTier": "Compliance & Richtlinien-SOW",
         "timeline": "8-12 Wochen Engagement"
+      },
+      "financial-crime-compliance": {
+        "name": "AML/CFT & Finanzkriminalitäts-Compliance",
+        "category": "Finanzkriminalität",
+        "badge": "Kernbereich",
+        "shortDesc": "Umfassende AML/CFT-Programme, KYC/CDD/EDD, unternehmensweite Risikobewertung, Transaktionsüberwachung, Sanktionsprüfung und Travel-Rule-Implementierung.",
+        "valueProp": "Aufbau prüfungsfähiger, risikobasierter AML/CFT-Rahmenwerke im Einklang mit internationalen Aufsichtsstandards.",
+        "challenges": [
+          "Konzeption komplexer unternehmensweiter ML/TF-Risikoanalysen (EWRA)",
+          "Schritthalten mit dynamischen FATF-Standards und regulatorischen Änderungen",
+          "Reduzierung hoher Fehlalarmquoten im Transaktionsmonitoring",
+          "Gewährleistung einer lückenlosen Echtzeit-Sanktions- und PEP-Prüfung"
+        ],
+        "deliverables": [
+          "Vollständiges AML/CFT-Handbuch für Richtlinien und Arbeitsanweisungen",
+          "Methodik und Bewertungsmatrix für Unternehmensrisiken (EWRA)",
+          "Standardarbeitsanweisungen für KYC/CDD und verstärkte Sorgfaltspflichten (EDD)",
+          "Sanktionsprüfungs-, Untersuchungs- und Eskalationsprotokolle"
+        ]
+      },
+      "regulatory-compliance": {
+        "name": "Regulatorische Compliance & Lizenzvorbereitung",
+        "category": "Regulatorische Beratung",
+        "badge": "Strategische Beratung",
+        "shortDesc": "Regulatorische Rahmenwerke, Lizenzvorbereitung, Gap-Analysen, Compliance-Monitoring-Programme (CMP), Meldewesen und Change Management.",
+        "valueProp": "Übersetzung komplexer regulatorischer Anforderungen in praxistaugliche, dokumentierte Compliance-Programme.",
+        "challenges": [
+          "Erfüllung anspruchsvoller behördlicher Zulassungskriterien in festen Fristen",
+          "Kontinuierliche Anpassung an neue aufsichtsrechtliche Vorgaben",
+          "Aufbau skalierbarer Compliance-Überwachungsprogramme (CMP)",
+          "Effiziente Steuerung der aufsichtsrechtlichen Kommunikation und Berichterstattung"
+        ],
+        "deliverables": [
+          "Vollständiges Zulassungs- und Lizenzantragsdossier nebst Governance-Statuten",
+          "Regulatorische Gap-Analyse-Matrix und Maßnahmenplan",
+          "Jährliches Compliance-Monitoring-Programm (CMP)",
+          "Handbuch für regulatorisches Change- und Pflichtenmanagement"
+        ]
+      },
+      "risk-governance": {
+        "name": "Unternehmensrisikomanagement & Governance",
+        "category": "Risiko & Governance",
+        "badge": "Board Governance",
+        "shortDesc": "Unternehmensweite Risikobewertung, Definition des Risk Appetite, operationelle Risiken, Drittparteien-Compliance und Drei-Linien-Modell.",
+        "valueProp": "Etablierung angemessener Risiko- und Governance-Strukturen für kontrolliertes und nachhaltiges Wachstum.",
+        "challenges": [
+          "Harmonisierung von Wachstumszielen mit genehmigten Risikoappetitgrenzen",
+          "Wirksame und unabhängige Verankerung des Drei-Linien-Modells",
+          "Umfassende Überwachung von Auslagerungen und Drittanbieterrisiken",
+          "Transparente Risiko- und Kontrollberichte für Vorstand und Aufsichtsgremien"
+        ],
+        "deliverables": [
+          "Enterprise Risk Management Framework (ERM-Handbuch)",
+          "Risk Appetite Statement mit definierten Kennzahlen (RAS / KRI)",
+          "Governance-Statuten für Risiko- und Compliance-Ausschüsse",
+          "Richtlinie für Auslagerungsmanagement und Drittparteienkontrolle"
+        ]
+      },
+      "legal-compliance": {
+        "name": "Rechts- & Compliance-Beratung",
+        "category": "Rechtsberatung",
+        "badge": "Spezialisierte Beratung",
+        "shortDesc": "Regulatorische Rechtsrecherchen, Compliance-Dokumentation, Vertrags- und Richtlinienprüfung, Krypto/FinTech-Beratung und Datenschutz.",
+        "valueProp": "Verbindung gesetzlicher Vorgaben mit operativer Exzellenz durch klare, praxisorientierte Beratung.",
+        "challenges": [
+          "Rechtssichere Auslegung komplexer grenzüberschreitender Vorschriften",
+          "Gestaltung lückenloser Geschäfts- und Nutzungsbedingungen",
+          "Regulatorische Strukturierung von Digital Assets und FinTech-Lösungen",
+          "Einhaltung internationaler Datenschutzstandards (DSGVO / GDPR)"
+        ],
+        "deliverables": [
+          "Formelle Rechtsgutachten und regulatorische Memoranden",
+          "Musterverträge, AGB und aufsichtskonforme Vereinbarungen",
+          "Datenschutzrichtlinien und Verfahrensverzeichnisse",
+          "Rechtliche Compliance- und Pflichtenmatrix"
+        ]
+      },
+      "compliance-training": {
+        "name": "Institutionelle Compliance- & AML-Schulungen",
+        "category": "Schulung & Qualifizierung",
+        "badge": "Kompetenzaufbau",
+        "shortDesc": "Maßgeschneiderte Schulungsprogramme für AML/CFT, Sanktionen, KYC und aufsichtsrechtliche Pflichten für Mitarbeitende und Führungskräfte.",
+        "valueProp": "Praxisnaher Aufbau robuster Compliance-Kompetenzen bei Frontline-Teams, Management und Vorständen.",
+        "challenges": [
+          "Sensibilisierung für neuartige Geldwäschetypologien und Red Flags",
+          "Erfüllung gesetzlicher Pflichtschulungsvorgaben für regulierte Institute",
+          "Rollenbasierte Anpassung der Inhalte an spezifische Risikoprofile",
+          "Nachvollziehbarer Nachweis der Lernerfolge für Aufsichtsbehörden"
+        ],
+        "deliverables": [
+          "Umfassende AML/CFT- und Finanzkriminalitäts-Schulungsmodule",
+          "Executive Briefings und Workshops für Vorstände und Aufsichtsräte",
+          "Wissensüberprüfungen und anerkannte Zertifikate",
+          "Prüfungsfester jährlicher Schulungsbericht für Auditoren und Regulierer"
+        ]
+      },
+      "compliance-reviews": {
+        "name": "Unabhängige Reviews & Gap-Assessments",
+        "category": "Unabhängige Prüfung",
+        "badge": "Independent Assurance",
+        "shortDesc": "Unabhängige jährliche AML/CFT-Prüfungen, Wirksamkeitstests der Kontrollen, Gap-Assessments und Priorisierungs-Roadmaps.",
+        "valueProp": "Erhalten Sie eine fundierte, unabhängige Bewertung Ihrer Kontrollsysteme und Sanierungsprioritäten.",
+        "challenges": [
+          "Erfüllung der Prüfvorgaben von Korrespondenzbanken und Behörden",
+          "Aufdeckung verborgener Kontrollschwächen im Präventionssystem",
+          "Durchführung repräsentativer Stichprobentests von Kundendossiers",
+          "Erarbeitung pragmatischer, umsetzbarer Sanierungspläne"
+        ],
+        "deliverables": [
+          "Umfassender jährlicher unabhängiger AML/CFT-Prüfbericht",
+          "Dokumentation der Stichprobentests und Kontrollprüfungen",
+          "Priorisierter Maßnahmen- und Sanierungsplan (Remediation Roadmap)",
+          "Unabhängige Bestätigung für Korrespondenzbanken und Aufsichtsbehörden"
+        ]
       }
     },
     "industries": {
       "financial-services": {
-        "name": "Finanzdienstleistungen & Bankwesen",
-        "heroTag": "Kapitalmärkte & Aufsichtsrechtliche Governance",
-        "overview": "In einer Zeit intensivierter aufsichtsrechtlicher Kontrollen und systemischer digitaler Transformation bietet Eagle Compliance praxiserprobte Beratung für globale Investmentbanken, Vermögensverwalter und Versicherungsunternehmen."
+        "name": "Finanzinstitute & Asset Manager",
+        "overview": "Compliance-Rahmenwerke für Fonds und Vermögensverwalter mit Mittelherkunftsnachweisen (SoW/SoF) und Marktverhaltensregeln.",
+        "challenges": [
+          "Investoren-Due-Diligence, Mittelherkunfts- und Vermögensnachweis (SoW/SoF)",
+          "Überwachung von Marktmissbrauch, Interessenkonflikten und Best Execution",
+          "Definition des Risikoappetits und Steuerung operationeller Risiken",
+          "Einhaltung grenzüberschreitender Vertriebs- und Marketingvorschriften"
+        ]
       },
       "technology-and-software": {
         "name": "Technologie, Cloud & Unternehmenssoftware",
@@ -1305,50 +1526,80 @@
         "name": "Luft- und Raumfahrt, Verteidigung & Öffentliche Aufträge",
         "heroTag": "Null-Toleranz-Sicherheitsstandards",
         "overview": "Schutz von Verteidigungsunternehmen, Luftfahrtzulieferern und Regierungsauftragnehmern durch CMMC-Zertifizierung, ITAR/EAR-Exportkontrollen und lückenlose Lieferkettenintegrität."
+      },
+      "banking": {
+        "name": "Banken & Kreditinstitute",
+        "overview": "Ganzheitliche aufsichtsrechtliche Compliance-Rahmenwerke für Geschäfts- und Investmentbanken zur Erfüllung von MaRisk, AML/CFT und EZB/BaFin-Standards.",
+        "challenges": [
+          "Komplexe Customer Due Diligence über nationale und internationale Konten",
+          "Großvolumiges Transaktionsmonitoring und Senkung der False-Positive-Rate",
+          "Prudenzielle Eigenmittelberichte und Risikoverantwortung des Vorstands",
+          "Lückenlose Sanktionsprüfungen bei grenzüberschreitenden Echtzeitzahlungen"
+        ]
+      },
+      "fintech": {
+        "name": "FinTech & Digitale Herausforderer",
+        "overview": "Skalierbare Compliance-Architekturen zur Beschleunigung von BaFin/FCA-Zulassungsverfahren und Automatisierung digitaler Onboarding-Prozesse.",
+        "challenges": [
+          "Skalierung der Compliance-Prozesse bei rasantem digitalem Kundenwachstum",
+          "Erfüllung aufsichtsrechtlicher Lizenzvorgaben ohne Innovationsverlust",
+          "Sicherstellung von Partnerbank-Compliance und Auslagerungsaufsicht",
+          "Automatisierung von KYC- und kontinuierlichen Risikomonitoring-Workflows"
+        ]
+      },
+      "payments": {
+        "name": "Zahlungsdienstleister & Acquirer (PSPs)",
+        "overview": "Aufsichtskonforme Zahlungs-Compliance nach ZAG / PSD2 / PSD3 zur Absicherung von Kundengeldern und Einhaltung von Abrechnungsvorschriften.",
+        "challenges": [
+          "Händler-Onboarding-Prüfungen und risikobasierte Underwriting-Einstufung",
+          "Echtzeit-Betrugsprävention, Transaktionsüberwachung und Chargeback-Kontrolle",
+          "Absicherung von Treuhandgeldern und regulatorische Eigenmittelberechnung",
+          "Compliance mit PSD2/PSD3, Open Banking und grenzüberschreitendem Clearing"
+        ]
+      },
+      "remittance-msb": {
+        "name": "Geldtransfer- & Money Service Businesses (MSB)",
+        "overview": "Spezialisierte AML-Programme für Transferdienstleister zur Gewährleistung von Korridortransparenz und Erhalt von Korrespondenzkonten.",
+        "challenges": [
+          "Korridorbezogene ML/TF-Risikoprofilierung und grenzüberschreitende Transparenz",
+          "Überwachung, Schulung und Auditierung von Agentennetzwerken",
+          "Sicherung und Pflege von Korrespondenzbankbeziehungen (Anti De-risking)",
+          "Durchführung der gesetzlich vorgeschriebenen jährlichen unabhängigen AML-Audits"
+        ]
+      },
+      "digital-assets": {
+        "name": "Krypto- & Digital-Asset-Unternehmen (CASP)",
+        "overview": "Lizenzierungsvorbereitung nach EU MiCA und VARA, Travel-Rule-Integration und Blockchain-Compliance.",
+        "challenges": [
+          "Erfüllung der FATF Travel Rule und Integration von On-Chain-Analysen",
+          "Vorbereitung auf Krypto-Zulassungen (z. B. EU MiCA, BaFin, UAE VARA)",
+          "Rechtliche Token-Klassifizierung und Prüfung von Whitepapern",
+          "Risikomanagement für unhosted Wallets und dezentrale Protokolle"
+        ]
+      },
+      "startups": {
+        "name": "Startups in regulierten Branchen",
+        "overview": "Schlanke Compliance-Startpakete für Neugründungen zur regulatorischen Absicherung und Überzeugung von Investoren.",
+        "challenges": [
+          "Aufbau erster Compliance-Richtlinien ohne übermäßigen Verwaltungsaufwand",
+          "Erstellung überzeugender Compliance-Dossiers für Partner und Banken",
+          "Präzises Verständnis von Lizenzschwellen und aufsichtsrechtlichen Pflichten",
+          "Aufbau solider Basissysteme für Kundenverifikation, AML und Datenschutz"
+        ]
       }
     },
     "countries": {
       "european-union": {
         "name": "Europäische Union",
-        "region": "Europa",
-        "capital": "Brüssel",
-        "overview": "Das weltweite Epizentrum für regulatorische Standardsetzung. Die Navigation in der EU erfordert synchrone Beherrschung digitaler Resilienz (DORA, NIS2), künstlicher Intelligenz (EU AI Act), Datenschutz (DSGVO) und Nachhaltigkeit (CSRD).",
-        "status": "Aktive Vollständige Jurisdiktion",
-        
-        "keySectors": [
-          "Finanzdienstleistungen",
-          "Technologie & KI",
-          "Biowissenschaften",
-          "Energie & Industrie"
-        ]
+        "overview": "Grenzüberschreitende Compliance mit der 6AMLD Richtlinie, der MiCA Krypto-Verordnung, DORA und den PSD2/PSD3 Richtlinien."
       },
       "united-states": {
         "name": "Vereinigte Staaten",
-        "region": "Nordamerika",
-        "capital": "Washington, D.C.",
-        "overview": "Anspruchsvolle bundesstaatliche und staatliche Regulierungslandschaft, geprägt von aggressiver SEC-Durchsetzung, FTC-Datenschutzaufsicht, FDA-Zulassungsprüfungen und strengen DoD-Cybersicherheitsstandards.",
-        "status": "Aktive Vollständige Jurisdiktion",
-        
-        "keySectors": [
-          "Finanzmärkte",
-          "MedTech & Biotech",
-          "Verteidigung & GovTech",
-          "Enterprise Cloud"
-        ]
+        "overview": "Einhaltung der Bundesstandards unter FinCEN BSA/AML, OFAC-Sanktionen und bundesstaatlichen Money-Transmitter-Lizenzen (MTL)."
       },
       "united-kingdom": {
         "name": "Vereinigtes Königreich",
-        "region": "Europa",
-        "capital": "London",
-        "overview": "Unabhängiges regulatorisches Kraftzentrum nach dem Brexit, das schnelle Finanzinnovation mit strenger FCA Consumer Duty, UK GDPR und aufstrebenden KI-Regulierungsrahmen vereint.",
-        "status": "Aktive Vollständige Jurisdiktion",
-        
-        "keySectors": [
-          "FinTech & Banken",
-          "Vermögensverwaltung",
-          "Biowissenschaften",
-          "Welthandel"
-        ]
+        "overview": "Umfassende Compliance mit den Standards der UK FCA, den MLR 2017 Geldwäschevorschriften und dem SM&CR Governance-Regime."
       },
       "uae-gcc": {
         "name": "Vereinigte Arabische Emirate & GCC",
@@ -1356,7 +1607,6 @@
         "capital": "Abu Dhabi / Dubai",
         "overview": "Das führende internationale Finanz- und Krypto-Zentrum des Nahen Ostens, reguliert durch weltweit führende Digital-Asset-Frameworks (VARA), Abu Dhabi Global Market (ADGM) und VAE PDPL.",
         "status": "Aktive Vollständige Jurisdiktion",
-        
         "keySectors": [
           "Digitale Assets & Web3",
           "Staatsfonds",
@@ -1370,7 +1620,6 @@
         "capital": "Singapur",
         "overview": "Die vertrauenswürdigste Aufsichtsjurisdiktion im asiatisch-pazifischen Raum, definiert durch progressive MAS-Fintech-Lizenzen, strenge PDPA-Datenschutzgesetze und regionale ESG-Offenlegungspläne.",
         "status": "Aktive Vollständige Jurisdiktion",
-        
         "keySectors": [
           "Vermögensverwaltung",
           "Zahlungen & FinTech",
@@ -1384,13 +1633,24 @@
         "capital": "Tokio",
         "overview": "Wegweisender asiatischer Markt für digitale Vermögenswerte und Corporate Governance unter der Aufsicht der Finanzdienstleistungsbehörde (JFSA) und der Datenschutzkommission (PPC).",
         "status": "Aktive Vollständige Jurisdiktion",
-        
         "keySectors": [
           "Banken & Versicherungen",
           "Robotik & KI",
           "Pharmazeutika",
           "Web3 Gaming"
         ]
+      },
+      "united-arab-emirates": {
+        "name": "Vereinigte Arabische Emirate (ADGM / DIFC / VARA)",
+        "overview": "Spezialisierte Compliance nach Vorgaben der DFSA (DIFC), FSRA (ADGM), der VAE-Zentralbank und der Dubai VARA."
+      },
+      "pakistan": {
+        "name": "Pakistan",
+        "overview": "Regulatorische Vorgaben der State Bank of Pakistan (SBP), SECP-Rahmenwerke und nationale AML/CFT-Pflichten."
+      },
+      "australia": {
+        "name": "Australien",
+        "overview": "Einhaltung der AUSTRAC-Meldepflichten, ASIC-Lizenzierungsvorgaben und APRA-Aufsichtsstandards."
       }
     },
     "regulations": {
@@ -1409,11 +1669,8 @@
         "penalties": "Zwangsgelder von bis zu 1% des durchschnittlichen weltweiten Tagesumsatzes"
       },
       "gdpr": {
-        "name": "Datenschutz-Grundverordnung (DSGVO - Verordnung 2016/679)",
-        "jurisdiction": "Europäische Union / EWR",
-        "status": "Vollständig Durchgesetzt",
-        "shortDesc": "Der weltweite Maßstab für Datenschutz, Rechenschaftspflicht, Beschränkungen grenzüberschreitender Transfers und Schutz vor automatisierten Entscheidungen.",
-        "penalties": "Bis zu 20.000.000 € oder 4% des weltweiten Jahresumsatzes"
+        "name": "Datenschutz-Grundverordnung (DSGVO / GDPR)",
+        "shortDesc": "Umfassender Rechtsrahmen zum Schutz personenbezogener Daten, zu internationalen Datentransfers und Betroffenenrechten."
       },
       "mica": {
         "name": "Verordnung über Märkte für Krypto-Assets (MiCA - Verordnung 2023/1114)",
@@ -1421,6 +1678,26 @@
         "status": "Aktiv / Vollständige Umsetzung",
         "shortDesc": "Harmonisiertes Regelwerk für Krypto-Asset-Emittenten, Dienstleister (CASP), vermögenswertreferenzierte Token (ART) und E-Geld-Token (EMT).",
         "penalties": "Bis zu 12.500.000 € oder 12,5% des Jahresumsatzes"
+      },
+      "fatf-standards": {
+        "name": "FATF-Empfehlungen & Standards",
+        "shortDesc": "Die 40 internationalen Empfehlungen zur Bekämpfung von Geldwäsche, Terrorismusfinanzierung und Proliferation."
+      },
+      "eu-6amld": {
+        "name": "6. EU-Geldwäscherichtlinie (6AMLD)",
+        "shortDesc": "EU-Richtlinie zur Harmonisierung von Straftatbeständen und Verschärfung der strafrechtlichen Haftung von Unternehmen."
+      },
+      "uk-mlr-2017": {
+        "name": "UK Money Laundering Regulations 2017",
+        "shortDesc": "Verbindlicher Rechtsrahmen im Vereinigten Königreich für Risikobewertungen, Sorgfaltspflichten und MLRO-Governance."
+      },
+      "us-bsa-aml": {
+        "name": "US Bank Secrecy Act & AML (BSA/AML)",
+        "shortDesc": "US-Bundesstandards zur Einhaltung von Compliance-Programmen, CTR-Meldungen und Verdachtsmeldungen (SAR)."
+      },
+      "eu-mica": {
+        "name": "EU-Verordnung über Märkte für Krypto-Assets (MiCA)",
+        "shortDesc": "Einheitlicher Rechtsrahmen der EU für die Zulassung von Krypto-Dienstleistern (CASP) und Stablecoin-Emittenten."
       }
     },
     "experts": {
@@ -1453,8 +1730,8 @@
         "bio": "Wirtschaftsprüfer und internationaler Unternehmensanwalt mit zwei Jahrzehnten Erfahrung in der Beratung multinationaler Vorstände zu europäischen Nachhaltigkeitsberichtsstandards (ESRS)."
       }
     },
-    "caseStudies": [
-      {
+    "caseStudies": {
+      "0": {
         "id": "dora-banking",
         "category": "Finanzdienstleistungen",
         "categoryTag": "FINANZDIENSTLEISTUNGEN & BANKEN",
@@ -1466,7 +1743,7 @@
         "image": "/assets/images/case-banking.jpg",
         "iconType": "bank"
       },
-      {
+      "1": {
         "id": "ai-act-llm",
         "category": "Technologie",
         "categoryTag": "TECHNOLOGIE & SOFTWARE",
@@ -1478,7 +1755,7 @@
         "image": "/assets/images/case-ai.jpg",
         "iconType": "ai"
       },
-      {
+      "2": {
         "id": "mica-vara-exchange",
         "category": "Digitale Assets",
         "categoryTag": "DIGITALE ASSETS & WEB3",
@@ -1489,8 +1766,20 @@
         "outcome": "Vollständige VARA-Lizenz gesichert und MiCA-CASP-Passporting für alle 27 EU-Mitgliedstaaten genehmigt.",
         "image": "/assets/images/case-crypto.jpg",
         "iconType": "crypto"
+      },
+      "fintech-psp-licensing-readiness": {
+        "title": "Zulassungsvorbereitung und AML-Programmaufbau für Zahlungsinstitut",
+        "challenge": "Der Kunde benötigte innerhalb einer 90-tägigen behördlichen Frist ein prüfungsfestes AML/CFT-Programm und Zulassungsdossier.",
+        "solution": "EagleComply erstellte die Richtlinien, kalibrierte die Echtzeit-Überwachung und strukturierte die Führungsdokumentation.",
+        "outcome": "Erfolgreiche behördliche Zulassung ohne jegliche Beanstandungen bei der ersten aufsichtsrechtlichen Inspektion."
+      },
+      "remittance-msb-independent-aml-review": {
+        "title": "Umfassende unabhängige AML/CFT-Prüfung für internationalen Geldtransferanbieter",
+        "challenge": "Der Kunde benötigte ein unabhängiges Audit seines Geldwäsche- und Sanktionssystems zur Sicherung seiner Korrespondenzbankkonten.",
+        "solution": "Durchführung von Stichprobentests, Korridorrisikoanalysen und Erstellung einer priorisierten Sanierungs-Roadmap.",
+        "outcome": "Vollständiger Erhalt aller Korrespondenzbankverbindungen und erfolgreiche Expansion in zwei neue internationale Märkte."
       }
-    ],
+    },
     "insights": {
       "eu-ai-act-high-risk-guidance": {
         "title": "Navigation im EU AI Act: Technischer Leitfaden für Vorprüfungen von Hochrisiko-KI-Modellen",
@@ -1643,28 +1932,28 @@
       }
     ],
     "detailCommon": {
-      "overview": "Überblick & Exekutiver Umfang",
-      "challenges": "Hauptsächliche Regulatorische Herausforderungen",
-      "deliverables": "Wichtigste Institutionelle Ergebnisse",
-      "scope": "Detaillierter Praxisumfang",
+      "overview": "Übersicht & Regulatorischer Geltungsbereich",
+      "challenges": "Wesentliche Regulatorische Herausforderungen",
+      "deliverables": "Zentrale Institutionelle Liefergegenstände",
+      "scope": "Detaillierter Leistungsumfang",
       "methodology": "Implementierungsmethodik",
       "leadExpert": "Leitender Praxispartner",
-      "relatedRegulations": "Wichtigste Gesetzliche Rahmenwerke",
-      "relatedIndustries": "Anwendbare Branchen",
-      "bookConsultation": "Partnerberatung Buchen",
+      "relatedRegulations": "Relevante Regulatorische Rahmenwerke",
+      "relatedIndustries": "Anwendbare Branchenvertikalen",
+      "bookConsultation": "Partner-Konsultation Buchen",
       "requestQuote": "SOW-Kostenschätzung Anfordern",
-      "inspectDossier": "Behördendossier Prüfen",
+      "inspectDossier": "Regulatorisches Dossier Einsehen",
       "regulators": "Zuständige Aufsichtsbehörden",
-      "residentDesk": "Jurisdiction Practice Coverage",
-      "keySectors": "Prioritäre Aufsichtssektoren",
+      "residentDesk": "Regionale Praxisabdeckung",
+      "keySectors": "Prioritäre Beaufsichtigte Sektoren",
       "status": "Aufsichtsstatus",
-      "capital": "Regulatorische Hauptstadt / Zentrum",
-      "penalties": "Gesetzliche Höchststrafen",
+      "capital": "Regulatorisches Kapital / Finanzzentrum",
+      "penalties": "Maximale Gesetzliche Sanktionen",
       "jurisdiction": "Beaufsichtigte Jurisdiktion",
-      "timeline": "Gesetzlicher Umsetzungszeitplan",
-      "articles": "Regulatorische Fachartikel & Analysen",
+      "timeline": "Gesetzlicher Implementierungszeitplan",
+      "articles": "Fachartikel & Regulatorische Analysen",
       "resources": "Compliance-Toolkits & Dossiers",
-      "applyRole": "Auf Diese Stelle Bewerben",
+      "applyRole": "Auf Diese Position Bewerben",
       "caseStudy": "Hervorgehobenes Audit-Projekt"
     },
     "modals": {
@@ -1833,13 +2122,132 @@
         "valueProp": "Garantice el cumplimiento ejecutivo con protecciones de responsabilidad personal bajo el régimen NIS2 de la UE.",
         "pricingTier": "Alcance de Políticas y Cumplimiento",
         "timeline": "8-12 Semanas de Proyecto"
+      },
+      "financial-crime-compliance": {
+        "name": "Cumplimiento AML/CFT y Delitos Financieros",
+        "category": "Delitos Financieros",
+        "badge": "Práctica Principal",
+        "shortDesc": "Programas integrales de prevención de blanqueo y financiación del terrorismo, KYC/CDD/EDD, evaluación de riesgos, monitoreo de operaciones, sanciones y Travel Rule.",
+        "valueProp": "Construir marcos AML/CFT auditables y basados en riesgos, alineados con los estándares internacionales más exigentes.",
+        "challenges": [
+          "Diseño de evaluaciones globales del riesgo institucional de blanqueo (EWRA)",
+          "Adaptación ágil a las recomendaciones del GAFI y cambios regulatorios",
+          "Reducción de altas tasas de falsos positivos en el monitoreo de transacciones",
+          "Garantía de cribado de sanciones y PEPs en tiempo real"
+        ],
+        "deliverables": [
+          "Manual integral de políticas y procedimientos AML/CFT",
+          "Metodología y matriz de evaluación del riesgo empresarial (EWRA)",
+          "Procedimientos operativos KYC/CDD y diligencia debida reforzada (EDD)",
+          "Protocolos de detección de sanciones, investigación y escalado"
+        ]
+      },
+      "regulatory-compliance": {
+        "name": "Cumplimiento Regulatorio y Preparación de Licencias",
+        "category": "Asesoría Regulatoria",
+        "badge": "Asesoría Estratégica",
+        "shortDesc": "Marcos regulatorios, preparación de licencias, análisis de brechas, programas de monitorización (CMP), reporting y gestión del cambio.",
+        "valueProp": "Traducir requisitos regulatorios complejos en programas de cumplimiento operativos y documentados.",
+        "challenges": [
+          "Obtención de licencias y autorizaciones regulatorias en plazos estrictos",
+          "Adaptación continua a directivas supervisoras en constante evolución",
+          "Implantación de programas de monitorización de cumplimiento (CMP) eficaces",
+          "Gestión fluida de la comunicación y reporting ante los reguladores"
+        ],
+        "deliverables": [
+          "Expediente completo de solicitud de licencia y gobierno corporativo",
+          "Matriz de análisis de brechas regulatorias y plan de acción",
+          "Programa anual de monitorización del cumplimiento (CMP)",
+          "Manual de gestión de obligaciones regulatorias y cambio normativo"
+        ]
+      },
+      "risk-governance": {
+        "name": "Gestión de Riesgos Empresariales y Gobierno",
+        "category": "Riesgo y Gobierno",
+        "badge": "Gobierno del Consejo",
+        "shortDesc": "Evaluaciones de riesgo, declaración de apetito de riesgo, riesgo operacional, supervisión de terceros y modelo de tres líneas de defensa.",
+        "valueProp": "Establecer marcos proporcionales de riesgo y gobernanza que impulsen un crecimiento controlado y sostenible.",
+        "challenges": [
+          "Alineación de objetivos de negocio con los límites de apetito de riesgo aprobados",
+          "Implantación efectiva e independiente del modelo de Tres Líneas de Defensa",
+          "Supervisión y control de riesgos de proveedores externos y subcontrataciones",
+          "Generación de informes de riesgo claros para el Consejo y comités de auditoría"
+        ],
+        "deliverables": [
+          "Marco integral de gestión de riesgos empresariales (ERM)",
+          "Declaración e indicadores clave de apetito de riesgo (RAS / KRI)",
+          "Estatutos de gobernanza de comités de cumplimiento y riesgos",
+          "Política y procedimiento de supervisión de proveedores y terceros"
+        ]
+      },
+      "legal-compliance": {
+        "name": "Asesoría Legal y de Cumplimiento Especializada",
+        "category": "Asesoría Legal",
+        "badge": "Asesoría Especializada",
+        "shortDesc": "Investigación jurídica regulatoria, documentación de cumplimiento, revisión contractual y de políticas, asesoría cripto/fintech y privacidad.",
+        "valueProp": "Conectar las obligaciones normativas con la ejecución operativa mediante un asesoramiento riguroso y práctico.",
+        "challenges": [
+          "Interpretación de leyes complejas en entornos transfronterizos",
+          "Redacción de contratos y términos que aseguren una sólida protección jurídica",
+          "Estructuración regulatoria para activos digitales y servicios FinTech",
+          "Cumplimiento de normativas internacionales de protección de datos (RGPD)"
+        ],
+        "deliverables": [
+          "Dictámenes jurídicos y memorandos regulatorios formales",
+          "Conjunto de contratos comerciales y condiciones de uso conformes",
+          "Políticas de privacidad y gobernanza de protección de datos",
+          "Matriz de cumplimiento legal y mapa de obligaciones normativas"
+        ]
+      },
+      "compliance-training": {
+        "name": "Formación Institucional en Cumplimiento y AML",
+        "category": "Formación y Capacitación",
+        "badge": "Desarrollo de Capacidades",
+        "shortDesc": "Programas formativos especializados en AML/CFT, sanciones, KYC y deberes regulatorios para directivos y equipos operativos.",
+        "valueProp": "Desarrollar capacidades prácticas de cumplimiento en toda la organización y en los órganos de gobierno.",
+        "challenges": [
+          "Capacitación en tipologías emergentes de fraude y señales de alerta",
+          "Cumplimiento de los requisitos de formación obligatoria de los supervisores",
+          "Personalización de contenidos según perfiles de puesto y niveles de riesgo",
+          "Medición de la eficacia formativa y custodia de evidencias de auditoría"
+        ],
+        "deliverables": [
+          "Módulos formativos completos en AML/CFT y prevención de delitos",
+          "Sesiones ejecutivas y briefings para miembros del Consejo de Administración",
+          "Evaluaciones de conocimiento y certificaciones de aprovechamiento",
+          "Informe anual de formación listo para auditores y autoridades supervisoras"
+        ]
+      },
+      "compliance-reviews": {
+        "name": "Revisiones Independientes y Evaluación de Brechas",
+        "category": "Aseguramiento Independiente",
+        "badge": "Aseguramiento Independiente",
+        "shortDesc": "Auditorías anuales independientes en AML/CFT, pruebas de eficacia de controles, gap assessments y hojas de ruta de remediación.",
+        "valueProp": "Obtenga una visión objetiva e independiente de la solidez de sus controles y prioridades de mejora.",
+        "challenges": [
+          "Respuesta a las exigencias de bancos corresponsales y reguladores",
+          "Identificación de debilidades ocultas en los sistemas de prevención",
+          "Ejecución de pruebas de muestreo rigurosas en expedientes y operaciones",
+          "Elaboración de planes de acción realistas y ordenados por prioridad"
+        ],
+        "deliverables": [
+          "Informe completo de auditoría y revisión independiente anual AML/CFT",
+          "Informe de pruebas de muestreo y eficacia de controles",
+          "Hoja de ruta priorizada de remediación y plan de trabajo",
+          "Certificado de aseguramiento independiente para corresponsales y supervisores"
+        ]
       }
     },
     "industries": {
       "financial-services": {
-        "name": "Servicios Financieros y Banca",
-        "heroTag": "Mercados de Capitales y Gobernanza Prudencial",
-        "overview": "En una era de supervisión prudencial intensificada y transformación digital sistémica, Eagle Compliance ofrece asesoramiento probado para bancos de inversión globales, gestores de activos y aseguradoras."
+        "name": "Instituciones Financieras y Gestoras de Activos",
+        "overview": "Marcos de cumplimiento para fondos de inversión y gestoras, asegurando verificación de origen de fondos y conducta de mercado.",
+        "challenges": [
+          "Diligencia debida a inversores y acreditación del origen del patrimonio (SoW/SoF)",
+          "Control de abuso de mercado, conflictos de interés y mejor ejecución",
+          "Definición de apetito de riesgo y control del riesgo operacional",
+          "Cumplimiento de normas de distribución y comercialización transfronteriza"
+        ]
       },
       "technology-and-software": {
         "name": "Tecnología, Cloud y Software Empresarial",
@@ -1865,50 +2273,80 @@
         "name": "Aeroespacial, Defensa y Contratación Pública",
         "heroTag": "Estándares de Seguridad Nacional de Tolerancia Cero",
         "overview": "Protegiendo a contratistas de defensa, proveedores aeroespaciales y empresas gubernamentales mediante certificación CMMC, controles de exportación ITAR/EAR e integridad inquebrantable de la cadena de suministro."
+      },
+      "banking": {
+        "name": "Banca e Instituciones de Crédito",
+        "overview": "Marcos integrales de cumplimiento para banca comercial y de inversión para cumplir con supervisión prudencial y prevención de blanqueo.",
+        "challenges": [
+          "Diligencia debida compleja en cuentas nacionales e internacionales diversificadas",
+          "Monitoreo transaccional de alto volumen y reducción de falsos positivos",
+          "Informes de capital prudencial, gobernanza y supervisión de riesgos del Consejo",
+          "Cribado estricto de sanciones en transferencias y pagos instantáneos"
+        ]
+      },
+      "fintech": {
+        "name": "FinTech y Neobancos",
+        "overview": "Arquitecturas ágiles de cumplimiento diseñadas para acelerar licencias regulatorias y automatizar el alta digital de clientes.",
+        "challenges": [
+          "Escalar las operaciones de cumplimiento al ritmo del crecimiento de usuarios digitales",
+          "Cumplir los requisitos de autorización sin frenar la innovación de producto",
+          "Gestión de las exigencias de cumplimiento de bancos colaboradores y socios",
+          "Automatización de KYC y monitorización continua del riesgo"
+        ]
+      },
+      "payments": {
+        "name": "Proveedores de Servicios de Pago (PSP)",
+        "overview": "Cumplimiento normativo para entidades de pago y adquirentes, garantizando salvaguarda de fondos y alineación PSD2/PSD3.",
+        "challenges": [
+          "Diligencia debida de comercios y gestión de riesgos de admisión",
+          "Prevención de fraude en tiempo real, monitorización y control de devoluciones",
+          "Salvaguarda de fondos de clientes y cálculo de capital regulatorio",
+          "Cumplimiento de normativas de pagos PSD2/PSD3 y Open Banking"
+        ]
+      },
+      "remittance-msb": {
+        "name": "Empresas de Remesas y Servicios Monetarios (MSB)",
+        "overview": "Programas especializados de prevención de blanqueo para operadores de remesas que garantizan transparencia en corredores de pago.",
+        "challenges": [
+          "Perfilado de riesgo por corredor de pago y transparencia en transacciones",
+          "Monitorización, formación y auditoría de redes de agentes",
+          "Mantenimiento de cuentas en bancos corresponsales (anti de-risking)",
+          "Ejecución de auditorías independientes anuales obligatorias en AML/CFT"
+        ]
+      },
+      "digital-assets": {
+        "name": "Empresas de Criptoactivos y Activos Digitales (CASP)",
+        "overview": "Asesoría para autorizaciones MiCA en la UE y licencias VARA, integración de Travel Rule y cumplimiento en blockchain.",
+        "challenges": [
+          "Cumplimiento de la Travel Rule del GAFI e integración de analítica on-chain",
+          "Preparación de licencias de criptoactivos (ej. MiCA UE, VARA Dubái, FCA)",
+          "Dictamen legal de clasificación de tokens y revisión de whitepapers",
+          "Gestión del riesgo en monederos no custodiados y protocolos descentralizados"
+        ]
+      },
+      "startups": {
+        "name": "Startups en Sectores Regulados",
+        "overview": "Paquetes de cumplimiento fundacionales para lanzar actividades reguladas con rapidez y generar confianza en inversores.",
+        "challenges": [
+          "Establecimiento de políticas iniciales sin sobrecargas operativas innecesarias",
+          "Elaboración de dossieres de cumplimiento sólidos para bancos y socios",
+          "Comprensión precisa de umbrales regulatorios y requisitos de licencia",
+          "Creación de procesos base de verificación de clientes, AML y privacidad"
+        ]
       }
     },
     "countries": {
       "european-union": {
         "name": "Unión Europea",
-        "region": "Europa",
-        "capital": "Bruselas",
-        "overview": "El epicentro global del establecimiento de normas regulatorias. Navegar por la UE requiere un dominio sincronizado de la resiliencia digital (DORA, NIS2), inteligencia artificial (EU AI Act), privacidad (GDPR) y sostenibilidad (CSRD).",
-        "status": "Jurisdicción Completa Activa",
-        
-        "keySectors": [
-          "Servicios Financieros",
-          "Tecnología e IA",
-          "Ciencias de la Vida",
-          "Energía e Industria"
-        ]
+        "overview": "Cumplimiento transfronterizo con la directiva 6AMLD, el reglamento MiCA sobre criptoactivos, DORA y las directivas PSD2/PSD3."
       },
       "united-states": {
         "name": "Estados Unidos",
-        "region": "América del Norte",
-        "capital": "Washington, D.C.",
-        "overview": "Panorama regulatorio federal y estatal de alto impacto gobernado por la estricta aplicación de la SEC, supervisión de privacidad de la FTC, revisiones pre-mercado de la FDA y rigurosos estándares de ciberseguridad del DoD.",
-        "status": "Jurisdicción Completa Activa",
-        
-        "keySectors": [
-          "Mercados Financieros",
-          "MedTech y Biotecnología",
-          "Defensa y GovTech",
-          "Nube Empresarial"
-        ]
+        "overview": "Cumplimiento con normativas federales de FinCEN BSA/AML, sanciones de la OFAC y licencias estatales de Money Transmitter (MTL)."
       },
       "united-kingdom": {
         "name": "Reino Unido",
-        "region": "Europa",
-        "capital": "Londres",
-        "overview": "Potencia regulatoria independiente post-Brexit que combina innovación financiera ágil con el estricto Consumer Duty de la FCA, UK GDPR y marcos emergentes de regulación de IA.",
-        "status": "Jurisdicción Completa Activa",
-        
-        "keySectors": [
-          "FinTech y Banca",
-          "Gestión de Activos",
-          "Ciencias de la Vida",
-          "Comercio Global"
-        ]
+        "overview": "Cumplimiento integral con los estándares de la FCA británica, el reglamento MLR 2017 y el régimen de altos directivos SM&CR."
       },
       "uae-gcc": {
         "name": "Emiratos Árabes Unidos y CCG",
@@ -1916,7 +2354,6 @@
         "capital": "Abu Dabi / Dubái",
         "overview": "El principal centro financiero internacional y de activos virtuales de Oriente Medio, regido por marcos de activos digitales líderes (VARA), Abu Dhabi Global Market (ADGM) y la ley federal de privacidad de los EAU.",
         "status": "Jurisdicción Completa Activa",
-        
         "keySectors": [
           "Activos Digitales y Web3",
           "Fondos Soberanos",
@@ -1930,7 +2367,6 @@
         "capital": "Singapur",
         "overview": "La jurisdicción regulatoria más confiable de Asia-Pacífico, caracterizada por licencias fintech progresivas de la MAS, estrictas leyes de privacidad PDPA y planes regionales de divulgación ESG.",
         "status": "Jurisdicción Completa Activa",
-        
         "keySectors": [
           "Gestión de Patrimonios",
           "Pagos y FinTech",
@@ -1944,13 +2380,24 @@
         "capital": "Tokio",
         "overview": "Mercado asiático pionero en activos digitales y gobernanza corporativa supervisado por la Agencia de Servicios Financieros (JFSA) y la Comisión de Protección de Información Personal (PPC).",
         "status": "Jurisdicción Completa Activa",
-        
         "keySectors": [
           "Banca y Seguros",
           "Robótica e IA",
           "Farmacéutica",
           "Juegos Web3"
         ]
+      },
+      "united-arab-emirates": {
+        "name": "Emiratos Árabes Unidos (ADGM / DIFC / VARA)",
+        "overview": "Cumplimiento normativo especializado bajo DFSA (DIFC), FSRA (ADGM), Banco Central de los EAU y la autoridad de activos virtuales VARA."
+      },
+      "pakistan": {
+        "name": "Pakistán",
+        "overview": "Directivas del Banco Estatal de Pakistán (SBP), marcos de cumplimiento de la SECP y obligaciones legales nacionales en AML/CFT."
+      },
+      "australia": {
+        "name": "Australia",
+        "overview": "Cumplimiento de obligaciones de reporte ante AUSTRAC, requisitos de licencia ASIC y normas prudenciales de APRA."
       }
     },
     "regulations": {
@@ -1969,11 +2416,8 @@
         "penalties": "Multas coercitivas periódicas de hasta el 1% de la facturación diaria global media"
       },
       "gdpr": {
-        "name": "Reglamento General de Protección de Datos (RGPD - Reglamento 2016/679)",
-        "jurisdiction": "Unión Europea / EEE",
-        "status": "Plenamente Aplicado",
-        "shortDesc": "El estándar global de referencia para la privacidad de datos, responsabilidad del tratamiento, restricciones de transferencias transfronterizas y protección contra decisiones automatizadas.",
-        "penalties": "Hasta 20.000.000 € o el 4% de la facturación anual global"
+        "name": "Reglamento General de Protección de Datos (RGPD / GDPR)",
+        "shortDesc": "Marco integral sobre protección y privacidad de datos personales, transferencias internacionales y derechos de los usuarios."
       },
       "mica": {
         "name": "Reglamento sobre Mercados de Criptoactivos (MiCA - Reglamento 2023/1114)",
@@ -1981,6 +2425,26 @@
         "status": "Activo / Transposición Completa",
         "shortDesc": "Régimen regulatorio armonizado que rige a emisores de criptoactivos, proveedores de servicios (CASP), tokens referenciados a activos (ART) y tokens de dinero electrónico (EMT).",
         "penalties": "Hasta 12.500.000 € o el 12.5% de la facturación anual"
+      },
+      "fatf-standards": {
+        "name": "Recomendaciones y Estándares del GAFI/FATF",
+        "shortDesc": "Las 40 recomendaciones internacionales para la prevención del blanqueo de capitales y la financiación del terrorismo."
+      },
+      "eu-6amld": {
+        "name": "6ª Directiva Europea contra el Blanqueo (6AMLD)",
+        "shortDesc": "Directiva que refuerza la responsabilidad penal corporativa y unifica las infracciones subyacentes en la UE."
+      },
+      "uk-mlr-2017": {
+        "name": "Reglamento Británico sobre Blanqueo 2017 (UK MLR)",
+        "shortDesc": "Marco legal obligatorio en el Reino Unido para evaluación de riesgos, diligencia debida y nombramiento de MLRO."
+      },
+      "us-bsa-aml": {
+        "name": "Ley de Secreto Bancario y AML de EE. UU. (BSA/AML)",
+        "shortDesc": "Normativa federal estadounidense sobre programas de cumplimiento, reportes CTR y comunicaciones de operaciones sospechosas (SAR)."
+      },
+      "eu-mica": {
+        "name": "Reglamento de Mercados de Criptoactivos de la UE (MiCA)",
+        "shortDesc": "Marco normativo unificado de la UE para la autorización de proveedores de criptoactivos (CASP) y emisores de stablecoins."
       }
     },
     "experts": {
@@ -2013,8 +2477,8 @@
         "bio": "Wirtschaftsprüfer und internationaler Unternehmensanwalt mit zwei Jahrzehnten Erfahrung in der Beratung multinationaler Vorstände zu europäischen Nachhaltigkeitsberichtsstandards (ESRS)."
       }
     },
-    "caseStudies": [
-      {
+    "caseStudies": {
+      "0": {
         "id": "dora-banking",
         "category": "Servicios Financieros",
         "categoryTag": "SERVICIOS FINANCIEROS Y BANCA",
@@ -2026,7 +2490,7 @@
         "image": "/assets/images/case-banking.jpg",
         "iconType": "bank"
       },
-      {
+      "1": {
         "id": "ai-act-llm",
         "category": "Tecnología",
         "categoryTag": "TECNOLOGÍA Y SOFTWARE",
@@ -2038,7 +2502,7 @@
         "image": "/assets/images/case-ai.jpg",
         "iconType": "ai"
       },
-      {
+      "2": {
         "id": "mica-vara-exchange",
         "category": "Activos Digitales",
         "categoryTag": "ACTIVOS DIGITALES Y WEB3",
@@ -2049,8 +2513,20 @@
         "outcome": "Licencia completa VARA asegurada y pasaporteado MiCA CASP en los 27 Estados miembros de la UE.",
         "image": "/assets/images/case-crypto.jpg",
         "iconType": "crypto"
+      },
+      "fintech-psp-licensing-readiness": {
+        "title": "Preparación de Licencia de Entidad de Pago y Marco AML Integral",
+        "challenge": "El cliente necesitaba estructurar su programa de prevención y presentar su expediente de autorización en 90 días.",
+        "solution": "EagleComply redactó las políticas institucionales, calibró el monitoreo transaccional y ordenó los órganos de gobierno.",
+        "outcome": "Obtención de la licencia regulatoria con cero deficiencias detectadas durante la primera inspección formal del supervisor."
+      },
+      "remittance-msb-independent-aml-review": {
+        "title": "Auditoría Independiente Anual AML/CFT para Operador Internacional de Remesas",
+        "challenge": "El cliente requería una revisión externa de sus sistemas AML y sanciones para conservar sus cuentas de corresponsalía bancaria.",
+        "solution": "Realización de pruebas de muestreo, análisis de riesgo por corredor de pago y entrega de una hoja de ruta de remediación.",
+        "outcome": "Mantenimiento de todas las cuentas bancarias de corresponsalía y expansión exitosa a dos nuevos corredores internacionales."
       }
-    ],
+    },
     "insights": {
       "eu-ai-act-high-risk-guidance": {
         "title": "Navigation im EU AI Act: Technischer Leitfaden für Vorprüfungen von Hochrisiko-KI-Modellen",
@@ -2203,29 +2679,29 @@
       }
     ],
     "detailCommon": {
-      "overview": "Resumen y Alcance Ejecutivo",
-      "challenges": "Principales Retos Regulatorios",
+      "overview": "Descripción General y Alcance Ejecutivo",
+      "challenges": "Principales Desafíos Regulatorios",
       "deliverables": "Entregables Institucionales Clave",
       "scope": "Alcance Detallado de la Práctica",
       "methodology": "Metodología de Implementación",
-      "leadExpert": "Socio Líder de la Práctica",
-      "relatedRegulations": "Marcos Estatutarios Principales",
+      "leadExpert": "Socio Principal de la Práctica",
+      "relatedRegulations": "Marcos Regulatorios Primarios",
       "relatedIndustries": "Sectores Industriales Aplicables",
-      "bookConsultation": "Reservar Consulta con un Socio",
+      "bookConsultation": "Reservar Consulta con Socio",
       "requestQuote": "Solicitar Estimación SOW",
-      "inspectDossier": "Examinar Expediente Regulatorio",
+      "inspectDossier": "Inspeccionar Dossier Regulatorio",
       "regulators": "Autoridades Supervisoras Competentes",
-      "residentDesk": "Jurisdiction Practice Coverage",
+      "residentDesk": "Cobertura de Práctica Jurisdiccional",
       "keySectors": "Sectores Supervisados Prioritarios",
       "status": "Estado de Supervisión",
-      "capital": "Centro / Capital Regulatoria",
-      "penalties": "Sanciones Estatutarias Máximas",
+      "capital": "Capital Regulatorio / Centro Financiero",
+      "penalties": "Sanciones Legales Máximas",
       "jurisdiction": "Jurisdicción Supervisada",
-      "timeline": "Cronograma de Implementación Legal",
-      "articles": "Artículos y Editoriales Regulatorios",
-      "resources": "Herramientas y Expedientes de Cumplimiento",
+      "timeline": "Calendario de Implementación Legal",
+      "articles": "Artículos y Análisis Regulatorios",
+      "resources": "Herramientas y Dossiers de Cumplimiento",
       "applyRole": "Postular a este Puesto",
-      "caseStudy": "Expediente de Auditoría Destacado"
+      "caseStudy": "Caso de Estudio y Registro de Auditoría"
     },
     "modals": {
       "consultationTitle": "Reservar Consulta de Alcance con un Socio",
@@ -2393,6 +2869,120 @@
         "valueProp": "Garantice el cumplimiento ejecutivo con protecciones de responsabilidad personal bajo el régimen NIS2 de la UE.",
         "pricingTier": "Alcance de Políticas y Cumplimiento",
         "timeline": "8-12 Semanas de Proyecto"
+      },
+      "financial-crime-compliance": {
+        "name": "Conformità AML/CFT e Contrasto ai Reati Finanziari",
+        "category": "Reati Finanziari",
+        "badge": "Practice Principale",
+        "shortDesc": "Programmi antiriciclaggio completi, adeguata verifica (KYC/CDD/EDD), valutazione dei rischi aziendali, monitoraggio transazioni e Travel Rule.",
+        "valueProp": "Costruire quadri di conformità antiriciclaggio basati sul rischio e verificabili secondo i più elevati standard internazionali.",
+        "challenges": [
+          "Progettazione di complesse valutazioni del rischio di riciclaggio aziendale (EWRA)",
+          "Adeguamento rapido alle evoluzioni delle raccomandazioni GAFI/FATF",
+          "Riduzione dell’elevato tasso di falsi positivi nel monitoraggio delle transazioni",
+          "Garantire lo screening in tempo reale per sanzioni e persone politicamente esposte (PEP)"
+        ],
+        "deliverables": [
+          "Manuale completo delle politiche e procedure AML/CFT aziendali",
+          "Metodologia e matrice di valutazione del rischio d’impresa (EWRA)",
+          "Procedure operative per adeguata verifica ordinaria e rafforzata (CDD/EDD)",
+          "Protocolli di screening delle sanzioni, investigazione e segnalazione interna"
+        ]
+      },
+      "regulatory-compliance": {
+        "name": "Conformità Regolamentare e Preparazione alle Licenze",
+        "category": "Consulenza Regolamentare",
+        "badge": "Consulenza Strategica",
+        "shortDesc": "Quadri regolamentari, autorizzazioni all’albo, gap analysis, programmi di monitoraggio della conformità (CMP), reporting e change management.",
+        "valueProp": "Trasformare complessi requisiti di vigilanza in programmi di conformità operativi e formalizzati.",
+        "challenges": [
+          "Conseguimento di autorizzazioni e licenze nei tempi stabiliti dalle autorità",
+          "Adeguamento continuo a direttive di vigilanza in costante evoluzione",
+          "Strutturazione di programmi di controllo della conformità (CMP) efficaci",
+          "Gestione fluida delle relazioni e delle comunicazioni con i regolatori"
+        ],
+        "deliverables": [
+          "Dossier completo per istanze di autorizzazione e statuti di governance",
+          "Matrice di gap analysis regolamentare e piano di adeguamento",
+          "Programma annuale di monitoraggio della conformità (CMP)",
+          "Manuale di gestione degli obblighi regolamentari e presidio normativo"
+        ]
+      },
+      "risk-governance": {
+        "name": "Gestione dei Rischi Aziendali e Governance",
+        "category": "Rischio e Governance",
+        "badge": "Governance Consiliare",
+        "shortDesc": "Valutazione dei rischi d’impresa, formulazione del Risk Appetite, rischi operativi, presidio delle terze parti e modello a tre linee di difesa.",
+        "valueProp": "Istituire modelli di governance e gestione del rischio proporzionati a supporto di una crescita solida e sostenibile.",
+        "challenges": [
+          "Allineamento degli obiettivi di business ai limiti approvati di propensione al rischio",
+          "Implementazione efficace e indipendente del modello delle Tre Linee di Difesa",
+          "Monitoraggio e controllo dei rischi connessi all’esternalizzazione e fornitori terzi",
+          "Elaborazione di un reporting tempestivo per il Consiglio di Amministrazione"
+        ],
+        "deliverables": [
+          "Quadro complessivo di gestione del rischio aziendale (Enterprise Risk Framework)",
+          "Dichiarazione e indicatori chiave di propensione al rischio (RAS / KRI)",
+          "Regolamenti e statuti per i comitati rischi e conformità",
+          "Policy e procedure di presidio e monitoraggio delle terze parti"
+        ]
+      },
+      "legal-compliance": {
+        "name": "Consulenza Legale e di Conformità Specialistica",
+        "category": "Consulenza Legale",
+        "badge": "Consulenza Specialistica",
+        "shortDesc": "Ricerca giuridica regolamentare, documentazione contrattuale di compliance, pareri su asset digitali, fintech e privacy (GDPR).",
+        "valueProp": "Colmare il divario tra obblighi di legge ed esecuzione operativa con un supporto chiaro, autorevole e concreto.",
+        "challenges": [
+          "Interpretazione di normative complesse in contesti transfrontalieri",
+          "Redazione di contratti e condizioni d’uso che assicurino massima tutela",
+          "Inquadramento normativo per emissioni di token e soluzioni FinTech",
+          "Conformità alle normative internazionali sulla protezione dei dati (GDPR)"
+        ],
+        "deliverables": [
+          "Pareri legali e pareri regolamentari formali",
+          "Set contrattuale commerciale e condizioni d’uso conformi",
+          "Politiche di protezione dei dati e modello di governance privacy",
+          "Matrice di conformità legale e mappatura delle obbligazioni"
+        ]
+      },
+      "compliance-training": {
+        "name": "Formazione Istituzionale in Compliance e Antiriciclaggio",
+        "category": "Formazione e Competenze",
+        "badge": "Sviluppo Competenze",
+        "shortDesc": "Piani formativi su misura in materia di AML/CFT, sanzioni internazionali, KYC e doveri di vigilanza per organi direttivi e personale operativo.",
+        "valueProp": "Accrescere le competenze pratiche di compliance di team operativi, quadri e membri del Consiglio di Amministrazione.",
+        "challenges": [
+          "Sensibilizzazione del personale sulle nuove tipologie di reato e red flags",
+          "Adempimento degli obblighi normativi di formazione periodica obbligatoria",
+          "Personalizzazione dei percorsi formativi per ruoli e livelli di rischio",
+          "Tracciabilità della formazione ed evidenze conformi per gli ispettori"
+        ],
+        "deliverables": [
+          "Moduli formativi completi in materia di AML/CFT e contrasto ai reati finanziari",
+          "Briefing e workshop dedicati per i membri del Consiglio di Amministrazione",
+          "Test di verifica dell’apprendimento e attestati certificati",
+          "Relazione annuale sulla formazione svolta pronta per auditor e autorità"
+        ]
+      },
+      "compliance-reviews": {
+        "name": "Audit Indipendenti e Valutazione dei Gap",
+        "category": "Assurance Indipendente",
+        "badge": "Assurance Indipendente",
+        "shortDesc": "Audit annuali indipendenti AML/CFT, verifiche di efficacia dei controlli, gap analysis e piani d’azione per il rimedio.",
+        "valueProp": "Ottenere una valutazione terza e autorevole sull’adeguatezza dei vostri presidi e sulle priorità di intervento.",
+        "challenges": [
+          "Riscontro ai requisiti richiesti da banche corrispondenti e organi di vigilanza",
+          "Individuazione delle carenze latenti nei sistemi di controllo interno",
+          "Esecuzione di verifiche a campione rigorose sui fascicoli dei clienti",
+          "Definizione di piani correttivi realistici e prioritari"
+        ],
+        "deliverables": [
+          "Relazione completa di audit e revisione indipendente annuale AML/CFT",
+          "Reportistica di dettaglio sulle verifiche a campione e controlli eseguiti",
+          "Piano di rimedio prioritario (Remediation Roadmap)",
+          "Attestazione di conformità indipendente per corrispondenti bancari e autorità"
+        ]
       }
     },
     "industries": {
@@ -2434,7 +3024,6 @@
         "capital": "Bruselas",
         "overview": "El epicentro global del establecimiento de normas regulatorias. Navegar por la UE requiere un dominio sincronizado de la resiliencia digital (DORA, NIS2), inteligencia artificial (EU AI Act), privacidad (GDPR) y sostenibilidad (CSRD).",
         "status": "Jurisdicción Completa Activa",
-        
         "keySectors": [
           "Servicios Financieros",
           "Tecnología e IA",
@@ -2448,7 +3037,6 @@
         "capital": "Washington, D.C.",
         "overview": "Panorama regulatorio federal y estatal de alto impacto gobernado por la estricta aplicación de la SEC, supervisión de privacidad de la FTC, revisiones pre-mercado de la FDA y rigurosos estándares de ciberseguridad del DoD.",
         "status": "Jurisdicción Completa Activa",
-        
         "keySectors": [
           "Mercados Financieros",
           "MedTech y Biotecnología",
@@ -2462,7 +3050,6 @@
         "capital": "Londres",
         "overview": "Potencia regulatoria independiente post-Brexit que combina innovación financiera ágil con el estricto Consumer Duty de la FCA, UK GDPR y marcos emergentes de regulación de IA.",
         "status": "Jurisdicción Completa Activa",
-        
         "keySectors": [
           "FinTech y Banca",
           "Gestión de Activos",
@@ -2476,7 +3063,6 @@
         "capital": "Abu Dabi / Dubái",
         "overview": "El principal centro financiero internacional y de activos virtuales de Oriente Medio, regido por marcos de activos digitales líderes (VARA), Abu Dhabi Global Market (ADGM) y la ley federal de privacidad de los EAU.",
         "status": "Jurisdicción Completa Activa",
-        
         "keySectors": [
           "Activos Digitales y Web3",
           "Fondos Soberanos",
@@ -2490,7 +3076,6 @@
         "capital": "Singapur",
         "overview": "La jurisdicción regulatoria más confiable de Asia-Pacífico, caracterizada por licencias fintech progresivas de la MAS, estrictas leyes de privacidad PDPA y planes regionales de divulgación ESG.",
         "status": "Jurisdicción Completa Activa",
-        
         "keySectors": [
           "Gestión de Patrimonios",
           "Pagos y FinTech",
@@ -2504,7 +3089,6 @@
         "capital": "Tokio",
         "overview": "Mercado asiático pionero en activos digitales y gobernanza corporativa supervisado por la Agencia de Servicios Financieros (JFSA) y la Comisión de Protección de Información Personal (PPC).",
         "status": "Jurisdicción Completa Activa",
-        
         "keySectors": [
           "Banca y Seguros",
           "Robótica e IA",
@@ -2763,29 +3347,29 @@
       }
     ],
     "detailCommon": {
-      "overview": "Resumen y Alcance Ejecutivo",
-      "challenges": "Principales Retos Regulatorios",
-      "deliverables": "Entregables Institucionales Clave",
-      "scope": "Alcance Detallado de la Práctica",
-      "methodology": "Metodología de Implementación",
-      "leadExpert": "Socio Líder de la Práctica",
-      "relatedRegulations": "Marcos Estatutarios Principales",
-      "relatedIndustries": "Sectores Industriales Aplicables",
-      "bookConsultation": "Reservar Consulta con un Socio",
+      "overview": "Panoramica e Ambito Esecutivo",
+      "challenges": "Principali Sfide Regolamentari",
+      "deliverables": "Deliverable Istituzionali Chiave",
+      "scope": "Ambito Dettagliato di Intervento",
+      "methodology": "Metodologia di Attuazione",
+      "leadExpert": "Partner Responsabile della Practice",
+      "relatedRegulations": "Quadri Normativi Principali",
+      "relatedIndustries": "Settori Industriali Applicabili",
+      "bookConsultation": "Prenota una Consulenza",
       "requestQuote": "Solicitar Estimación SOW",
-      "inspectDossier": "Examinar Expediente Regulatorio",
-      "regulators": "Autoridades Supervisoras Competentes",
-      "residentDesk": "Jurisdiction Practice Coverage",
-      "keySectors": "Sectores Supervisados Prioritarios",
-      "status": "Estado de Supervisión",
-      "capital": "Centro / Capital Regulatoria",
-      "penalties": "Sanciones Estatutarias Máximas",
-      "jurisdiction": "Jurisdicción Supervisada",
-      "timeline": "Cronograma de Implementación Legal",
-      "articles": "Artículos y Editoriales Regulatorios",
-      "resources": "Herramientas y Expedientes de Cumplimiento",
-      "applyRole": "Postular a este Puesto",
-      "caseStudy": "Expediente de Auditoría Destacado"
+      "inspectDossier": "Ispeziona il Dossier Normativo",
+      "regulators": "Autorità di Vigilanza Competenti",
+      "residentDesk": "Copertura della Practice Territoriale",
+      "keySectors": "Settori Prioritari Sottoposti a Vigilanza",
+      "status": "Stato di Vigilanza",
+      "capital": "Capitale Regolamentare / Centro Finanziario",
+      "penalties": "Sanzioni Statutarie Massime",
+      "jurisdiction": "Giurisdizione Vigilata",
+      "timeline": "Cronoprogramma Normativo",
+      "articles": "Articoli e Analisi Giuridiche",
+      "resources": "Toolkit e Dossier di Compliance",
+      "applyRole": "Candidati per questa Posizione",
+      "caseStudy": "Caso di Studio e Audit di Successo"
     },
     "modals": {
       "consultationTitle": "Reservar Consulta de Alcance con un Socio",
@@ -2953,6 +3537,120 @@
         "valueProp": "Garantice el cumplimiento ejecutivo con protecciones de responsabilidad personal bajo el régimen NIS2 de la UE.",
         "pricingTier": "Alcance de Políticas y Cumplimiento",
         "timeline": "8-12 Semanas de Proyecto"
+      },
+      "financial-crime-compliance": {
+        "name": "Conformidade AML/CFT e Combate a Crimes Financeiros",
+        "category": "Crimes Financeiros",
+        "badge": "Prática Principal",
+        "shortDesc": "Programas completos de prevenção à lavagem de dinheiro, KYC/CDD/EDD, avaliação de risco institucional, monitoramento de transações e Travel Rule.",
+        "valueProp": "Construir estruturas de conformidade AML/CFT auditáveis e baseadas em risco, alinhadas aos mais rigorosos padrões globais.",
+        "challenges": [
+          "Elaboração de avaliações globais de risco de lavagem de dinheiro (EWRA)",
+          "Adaptação dinâmica aos padrões do GAFI/FATF e mudanças regulatórias",
+          "Redução de falsos positivos no monitoramento de transações em tempo real",
+          "Garantia de triagem eficaz de sanções e pessoas expostas politicamente (PEP)"
+        ],
+        "deliverables": [
+          "Manual completo de políticas e procedimentos de AML/CFT",
+          "Metodologia e matriz de avaliação de risco empresarial (EWRA)",
+          "Procedimentos operacionais para due diligence ordinária e reforçada (CDD/EDD)",
+          "Protocolos de triagem de sanções, investigação e reporte interno"
+        ]
+      },
+      "regulatory-compliance": {
+        "name": "Conformidade Regulatória e Prontidão para Licenças",
+        "category": "Consultoria Regulatória",
+        "badge": "Consultoria Estratégica",
+        "shortDesc": "Marcos regulatórios, processos de autorização e licença, gap assessments, programas de monitoramento de conformidade (CMP) e gestão de mudanças.",
+        "valueProp": "Transformar exigências regulatórias complexas em programas de conformidade operacionais e comprováveis.",
+        "challenges": [
+          "Obtenção de licenças e autorizações regulatórias em prazos definidos",
+          "Acompanhamento contínuo de atualizações e resoluções das autoridades",
+          "Estruturação de programas de monitoramento de conformidade (CMP) escaláveis",
+          "Gestão eficiente da comunicação e reporte aos órgãos reguladores"
+        ],
+        "deliverables": [
+          "Dossiê completo para solicitação de licenças e estatutos de governança",
+          "Matriz de gap assessment regulatório e plano de ação corretivo",
+          "Programa anual de monitoramento de conformidade (CMP)",
+          "Manual de gestão de obrigações regulatórias e gestão de mudanças"
+        ]
+      },
+      "risk-governance": {
+        "name": "Gestão de Riscos Corporativos e Governança",
+        "category": "Risco e Governança",
+        "badge": "Governança do Conselho",
+        "shortDesc": "Avaliações de risco, definição de Risk Appetite, risco operacional, supervisão de terceiros e modelo de três linhas de defesa.",
+        "valueProp": "Estabelecer estruturas proporcionais de risco e governança que viabilizem um crescimento sustentável e seguro.",
+        "challenges": [
+          "Alinhamento das estratégias de expansão aos limites de apetite a risco aprovados",
+          "Implementação efetiva e independente do modelo de Três Linhas de Defesa",
+          "Supervisão e mitigação de riscos decorrentes de terceiros e fornecedores",
+          "Elaboração de reportes claros para o Conselho de Administração e comitês"
+        ],
+        "deliverables": [
+          "Estrutura integrada de gestão de riscos corporativos (ERM Framework)",
+          "Declaração e indicadores-chave de apetite a risco (RAS / KRI)",
+          "Regimentos de comitês de risco e conformidade",
+          "Política e procedimento de supervisão e homologação de terceiros"
+        ]
+      },
+      "legal-compliance": {
+        "name": "Consultoria Jurídica e Regulatória Especializada",
+        "category": "Consultoria Jurídica",
+        "badge": "Consultoria Especializada",
+        "shortDesc": "Pesquisa jurídica regulatória, documentação contratual de compliance, pareceres sobre criptoativos, fintechs e privacidade (LGPD/GDPR).",
+        "valueProp": "Conectar exigências legais à execução prática com assessoria técnica clara, rigorosa e pragmática.",
+        "challenges": [
+          "Interpretação de normas complexas em operações transfronteiriças",
+          "Redação de termos e contratos com sólido respaldo jurídico",
+          "Estruturação de conformidade para ativos digitais e soluções FinTech",
+          "Conformidade com regulamentos internacionais de privacidade e dados"
+        ],
+        "deliverables": [
+          "Pareceres jurídicos e memorandos regulatórios formais",
+          "Conjunto de contratos comerciais e termos de serviço em conformidade",
+          "Políticas de proteção de dados e governança de privacidade",
+          "Matriz de conformidade jurídica e mapa de obrigações legais"
+        ]
+      },
+      "compliance-training": {
+        "name": "Capacitação Institucional em Conformidade e AML",
+        "category": "Treinamento e Capacitação",
+        "badge": "Desenvolvimento de Competências",
+        "shortDesc": "Treinamentos especializados em AML/CFT, sanções, KYC e responsabilidades regulatórias para conselheiros, executivos e equipes.",
+        "valueProp": "Construir competências práticas de conformidade em todos os níveis da instituição.",
+        "challenges": [
+          "Capacitação contínua sobre tipologias emergentes de fraude e red flags",
+          "Cumprimento das exigências de treinamento obrigatório das autoridades",
+          "Customização de conteúdos para diferentes funções e perfis de risco",
+          "Comprovação auditável de participação e aproveitamento para reguladores"
+        ],
+        "deliverables": [
+          "Módulos de treinamento em AML/CFT e combate a crimes financeiros",
+          "Sessões executivas para membros do Conselho de Administração",
+          "Testes de assimilação de conhecimento e certificados emitidos",
+          "Relatório anual de treinamentos estruturado para auditorias e inspeções"
+        ]
+      },
+      "compliance-reviews": {
+        "name": "Revisões Independentes e Avaliação de Lacunas",
+        "category": "Garantia Independente",
+        "badge": "Garantia Independente",
+        "shortDesc": "Auditorias anuais independentes de AML/CFT, testes de eficácia de controles, gap assessments e planos de remediação.",
+        "valueProp": "Obtenha uma avaliação independente e respeitada sobre a maturidade dos seus controles e prioridades de ajuste.",
+        "challenges": [
+          "Atendimento às exigências de bancos correspondentes e supervisores",
+          "Identificação de fragilidades não detectadas nos sistemas internos",
+          "Execução de testes de amostragem rigorosos em cadastros e transações",
+          "Elaboração de planos de ação práticos e ordenados por prioridade"
+        ],
+        "deliverables": [
+          "Relatório abrangente de auditoria e revisão independente anual de AML/CFT",
+          "Relatório de testes de amostragem e eficácia dos controles internos",
+          "Plano de ação corretiva e roteiro de remediação priorizado",
+          "Declaração independente para bancos correspondentes e órgãos reguladores"
+        ]
       }
     },
     "industries": {
@@ -2994,7 +3692,6 @@
         "capital": "Bruselas",
         "overview": "El epicentro global del establecimiento de normas regulatorias. Navegar por la UE requiere un dominio sincronizado de la resiliencia digital (DORA, NIS2), inteligencia artificial (EU AI Act), privacidad (GDPR) y sostenibilidad (CSRD).",
         "status": "Jurisdicción Completa Activa",
-        
         "keySectors": [
           "Servicios Financieros",
           "Tecnología e IA",
@@ -3008,7 +3705,6 @@
         "capital": "Washington, D.C.",
         "overview": "Panorama regulatorio federal y estatal de alto impacto gobernado por la estricta aplicación de la SEC, supervisión de privacidad de la FTC, revisiones pre-mercado de la FDA y rigurosos estándares de ciberseguridad del DoD.",
         "status": "Jurisdicción Completa Activa",
-        
         "keySectors": [
           "Mercados Financieros",
           "MedTech y Biotecnología",
@@ -3022,7 +3718,6 @@
         "capital": "Londres",
         "overview": "Potencia regulatoria independiente post-Brexit que combina innovación financiera ágil con el estricto Consumer Duty de la FCA, UK GDPR y marcos emergentes de regulación de IA.",
         "status": "Jurisdicción Completa Activa",
-        
         "keySectors": [
           "FinTech y Banca",
           "Gestión de Activos",
@@ -3036,7 +3731,6 @@
         "capital": "Abu Dabi / Dubái",
         "overview": "El principal centro financiero internacional y de activos virtuales de Oriente Medio, regido por marcos de activos digitales líderes (VARA), Abu Dhabi Global Market (ADGM) y la ley federal de privacidad de los EAU.",
         "status": "Jurisdicción Completa Activa",
-        
         "keySectors": [
           "Activos Digitales y Web3",
           "Fondos Soberanos",
@@ -3050,7 +3744,6 @@
         "capital": "Singapur",
         "overview": "La jurisdicción regulatoria más confiable de Asia-Pacífico, caracterizada por licencias fintech progresivas de la MAS, estrictas leyes de privacidad PDPA y planes regionales de divulgación ESG.",
         "status": "Jurisdicción Completa Activa",
-        
         "keySectors": [
           "Gestión de Patrimonios",
           "Pagos y FinTech",
@@ -3064,7 +3757,6 @@
         "capital": "Tokio",
         "overview": "Mercado asiático pionero en activos digitales y gobernanza corporativa supervisado por la Agencia de Servicios Financieros (JFSA) y la Comisión de Protección de Información Personal (PPC).",
         "status": "Jurisdicción Completa Activa",
-        
         "keySectors": [
           "Banca y Seguros",
           "Robótica e IA",
@@ -3323,29 +4015,29 @@
       }
     ],
     "detailCommon": {
-      "overview": "Resumen y Alcance Ejecutivo",
-      "challenges": "Principales Retos Regulatorios",
-      "deliverables": "Entregables Institucionales Clave",
-      "scope": "Alcance Detallado de la Práctica",
-      "methodology": "Metodología de Implementación",
-      "leadExpert": "Socio Líder de la Práctica",
-      "relatedRegulations": "Marcos Estatutarios Principales",
-      "relatedIndustries": "Sectores Industriales Aplicables",
-      "bookConsultation": "Reservar Consulta con un Socio",
+      "overview": "Visão Geral e Escopo Executivo",
+      "challenges": "Principais Desafios Regulatórios",
+      "deliverables": "Entregáveis Institucionais Centrais",
+      "scope": "Escopo Detalhado de Atuação",
+      "methodology": "Metodologia de Implementação",
+      "leadExpert": "Sócio Líder da Prática",
+      "relatedRegulations": "Principais Marcos Regulatórios",
+      "relatedIndustries": "Setores Industriais Aplicáveis",
+      "bookConsultation": "Agendar Consulta com Sócio",
       "requestQuote": "Solicitar Estimación SOW",
-      "inspectDossier": "Examinar Expediente Regulatorio",
+      "inspectDossier": "Inspecionar Dossiê Regulatório",
       "regulators": "Autoridades Supervisoras Competentes",
-      "residentDesk": "Jurisdiction Practice Coverage",
-      "keySectors": "Sectores Supervisados Prioritarios",
-      "status": "Estado de Supervisión",
-      "capital": "Centro / Capital Regulatoria",
-      "penalties": "Sanciones Estatutarias Máximas",
-      "jurisdiction": "Jurisdicción Supervisada",
-      "timeline": "Cronograma de Implementación Legal",
-      "articles": "Artículos y Editoriales Regulatorios",
-      "resources": "Herramientas y Expedientes de Cumplimiento",
-      "applyRole": "Postular a este Puesto",
-      "caseStudy": "Expediente de Auditoría Destacado"
+      "residentDesk": "Cobertura de Prática Regional",
+      "keySectors": "Setores Prioritários Supervisionados",
+      "status": "Status de Supervisão",
+      "capital": "Capital Regulatório / Centro Financeiro",
+      "penalties": "Penalidades Legais Máximas",
+      "jurisdiction": "Jurisdição Supervisionada",
+      "timeline": "Cronograma de Implementação Legal",
+      "articles": "Artigos e Análises Regulatórias",
+      "resources": "Toolkits e Dossiês de Conformidade",
+      "applyRole": "Candidatar-se a esta Vaga",
+      "caseStudy": "Estudo de Caso e Registro de Auditoria"
     },
     "modals": {
       "consultationTitle": "Reservar Consulta de Alcance con un Socio",
@@ -3513,6 +4205,120 @@
         "valueProp": "ضمان امتثال الإدارة التنفيذية وحمايتها من المسؤولية الشخصية تحت مظلة NIS2.",
         "pricingTier": "نطاق عمل السياسات والامتثال",
         "timeline": "مهمة من 8 إلى 12 أسبوعاً"
+      },
+      "financial-crime-compliance": {
+        "name": "الامتثال لمكافحة غسل الأموال وتمويل الإرهاب والجرائم المالية",
+        "category": "الجرائم المالية",
+        "badge": "الممارسة الأساسية",
+        "shortDesc": "برامج متكاملة لمكافحة غسل الأموال وتمويل الإرهاب، التحقق من هوية العملاء (KYC/CDD/EDD)، تقييم المخاطر، مراقبة المعاملات، فحص العقوبات وتطبيق قاعدة السفر.",
+        "valueProp": "بناء أطر امتثال قابلة للتدقيق وقائمة على تقييم المخاطر ومتوافقة مع المعايير الدولية المعمول بها.",
+        "challenges": [
+          "تصميم تقييمات مخاطر غسل الأموال وتمويل الإرهاب المؤسسية المعقدة",
+          "التكيف مع اللوائح الرقابية المتسارعة ومعايير مجموعة العمل المالي (FATF)",
+          "معالجة المعدلات المرتفعة للتنبيهات الإيجابية الخاطئة في مراقبة المعاملات",
+          "ضمان فحص العقوبات الصارم وفحص الأشخاص المعرضين سياسياً في الوقت الفعلي"
+        ],
+        "deliverables": [
+          "دليل سياسات وإجراءات مكافحة غسل الأموال وتمويل الإرهاب الشامل",
+          "منهجية ونموذج تقييم المخاطر المؤسسية (EWRA)",
+          "إجراءات العناية الواجبة بالعملاء والعناية المشددة (CDD/EDD)",
+          "بروتوكولات فحص العقوبات وإجراءات التحقيق والتصعيد"
+        ]
+      },
+      "regulatory-compliance": {
+        "name": "الامتثال التنظيمي والاستعداد للترخيص",
+        "category": "الاستشارات التنظيمية",
+        "badge": "استشارات استراتيجية",
+        "shortDesc": "بناء الأطر التنظيمية، الاستعداد للحصول على التراخيص، تقييم الفجوات، برامج المراقبة، وتقديم التقارير وإدارة التغيير الرقابي.",
+        "valueProp": "تحويل المتطلبات التنظيمية المعقدة إلى برامج امتثال عملية وموثقة.",
+        "challenges": [
+          "استيفاء متطلبات التراخيص الرقابية الصارمة ضمن جداول زمنية محددة",
+          "مواكبة التحديثات المستمرة في القوانين والتوجيهات الإشرافية",
+          "بناء برامج مراقبة الامتثال (CMP) المتوافقة مع حجم وطبيعة الأعمال",
+          "إدارة التواصل وتقديم التقارير الدورية للسلطات الرقابية بكفاءة"
+        ],
+        "deliverables": [
+          "ملف طلب الترخيص التنظيمي الشامل ووثائق الحوكمة",
+          "مصفوفة تقييم الفجوات التنظيمية وخطة المعالجة",
+          "برنامج مراقبة الامتثال السنوي (CMP)",
+          "دليل إدارة التغيير والالتزامات الرقابية"
+        ]
+      },
+      "risk-governance": {
+        "name": "إدارة المخاطر المؤسسية والحوكمة",
+        "category": "المخاطر والحوكمة",
+        "badge": "حوكمة مجلس الإدارة",
+        "shortDesc": "تقييمات المخاطر المؤسسية، صياغة شهية المخاطر، المخاطر التشغيلية، الإشراف على الأطراف الثالثة، وهياكل الحوكمة واختبار الضوابط.",
+        "valueProp": "تأسيس أطر حوكمة ومخاطر متناسبة تدعم النمو المنضبط والمستدام.",
+        "challenges": [
+          "مواءمة استراتيجيات النمو مع حدود شهية المخاطر المعتمدة",
+          "تطبيق نموذج خطوط الدفاع الثلاثة بفاعلية واستقلالية تامة",
+          "إدارة ومراقبة مخاطر الاعتماد على مزودي الخدمات والأطراف الثالثة",
+          "توفير تقارير مخاطر تنفيذية دقيقة لمجلس الإدارة ولجان التدقيق"
+        ],
+        "deliverables": [
+          "إطار عمل إدارة المخاطر المؤسسية (ERM)",
+          "بيان ومؤشرات شهية المخاطر (RAS & KRIs)",
+          "ميثاق حوكمة الامتثال ولجان المخاطر",
+          "سياسة وإجراءات الإشراف على الأطراف الثالثة والتعاقدات الخارجية"
+        ]
+      },
+      "legal-compliance": {
+        "name": "الاستشارات القانونية والتنظيمية المتخصصة",
+        "category": "الاستشارات القانونية",
+        "badge": "استشارات متخصصة",
+        "shortDesc": "البحوث القانونية الرقابية، صياغة وثائق الامتثال، مراجعة العقود والسياسات، استشارات الأصول المشفرة والامتثال للخصوصية.",
+        "valueProp": "سد الفجوة بين الالتزامات القانونية والتنفيذ التشغيلي بدعم استشاري عملي وواضح.",
+        "challenges": [
+          "تفسير اللوائح القانونية المعقدة في البيئات العابرة للحدود",
+          "صياغة عقود تجارية وسياسات امتثال تضمن الحماية القانونية الكاملة",
+          "التكيف مع تشريعات الأصول الرقمية والتكنولوجيا المالية الحديثة",
+          "الامتثال لقوانين حماية البيانات والخصوصية الدولية (مثل GDPR)"
+        ],
+        "deliverables": [
+          "الآراء القانونية والاستشارات الرقابية المكتوبة",
+          "حزمة العقود والاتفاقيات والشروط التجارية المتوافقة",
+          "أدلة وسياسات حماية البيانات والخصوصية",
+          "مصفوفة الامتثال القانوني والالتزامات التعاقدية"
+        ]
+      },
+      "compliance-training": {
+        "name": "التدريب المؤسسي على الامتثال ومكافحة غسل الأموال",
+        "category": "بناء القدرات والتدريب",
+        "badge": "تطوير الكفاءات",
+        "shortDesc": "برامج تدريبية متخصصة في مكافحة غسل الأموال، العقوبات، العناية بالعملاء، والتوعية بالمسؤوليات الرقابية لمجلس الإدارة والموظفين.",
+        "valueProp": "بناء قدرات ومهارات امتثال عملية لدى فرق العمل والإدارة العليا ومجالس الإدارة.",
+        "challenges": [
+          "ضمان استيعاب الموظفين للمؤشرات الحمراء والمخاطر الرقابية المستجدة",
+          "تلبية متطلبات التدريب الإلزامي السنوي المفروضة من السلطات الإشرافية",
+          "تقديم تدريب مخصص يتناسب مع الأدوار الوظيفية والمخاطر المحددة",
+          "قياس وتقييم فاعلية التدريب والاحتفاظ بسجلات تدقيق مكتملة"
+        ],
+        "deliverables": [
+          "حقائب تدريبية متكاملة لمكافحة غسل الأموال ومكافحة الجرائم المالية",
+          "جلسات توعية وتوجيه مخصصة لأعضاء مجلس الإدارة والإدارة التنفيذية",
+          "اختبارات تقييم المعرفة وشهادات الإنجاز المعتمدة",
+          "سجل وتقرير التدريب السنوي الجاهز لتقديمه للمراجعين والجهات الرقابية"
+        ]
+      },
+      "compliance-reviews": {
+        "name": "المراجعات المستقلة وتقييمات الفجوات التنظيمية",
+        "category": "التأكيد المستقل",
+        "badge": "ضمان مستقل",
+        "shortDesc": "مراجعات سنوية مستقلة لأنظمة مكافحة غسل الأموال، اختبار فعالية الضوابط، تقييم الفجوات، ووضع خرائط طريق المعالجة.",
+        "valueProp": "الحصول على رؤية مستقلة وموثوقة لفعالية الضوابط الرقابية وأولويات المعالجة.",
+        "challenges": [
+          "تلبية اشتراطات البنوك المراسلة والجهات الإشرافية للمراجعة المستقلة",
+          "تحديد الفجوات غير المرئية في أنظمة الرقابة وضوابط منع الجرائم المالية",
+          "إجراء اختبارات عينات شاملة للعمليات وملفات العملاء",
+          "صياغة خطط علاجية عملية وقابلة للتطبيق لمعالجة الملاحظات"
+        ],
+        "deliverables": [
+          "تقرير التدقيق والمراجعة المستقلة السنوي الشامل (AML/CFT Review)",
+          "تقرير اختبار فعالية الضوابط وعينات العمليات",
+          "خريطة طريق معالجة الفجوات محددة الأولويات والمسؤوليات",
+          "خطاب التأكيد المستقل الموجه للشركاء المصرفيين والجهات الرقابية"
+        ]
       }
     },
     "industries": {
@@ -3554,7 +4360,6 @@
         "capital": "بروكسل",
         "overview": "المركز العالمي الرائد في وضع المعايير التنظيمية. يتطلب العمل في الاتحاد الأوروبي إتقاناً متزامناً للصمود الرقمي والذكاء الاصطناعي والخصوصية والاستدامة.",
         "status": "ولاية قضائية كاملة نشطة",
-        
         "keySectors": [
           "الخدمات المالية",
           "التكنولوجيا والذكاء الاصطناعي",
@@ -3568,7 +4373,6 @@
         "capital": "واشنطن العاصمة",
         "overview": "بيئة تنظيمية فيدرالية ومحلية عالية الأهمية تخضع لرقابة صارمة من هيئة الأوراق المالية ولجنة التجارة الفيدرالية وإدارة الغذاء والدواء.",
         "status": "ولاية قضائية كاملة نشطة",
-        
         "keySectors": [
           "الأسواق المالية",
           "التكنولوجيا الطبية",
@@ -3582,7 +4386,6 @@
         "capital": "لندن",
         "overview": "قوة تنظيمية مستقلة تجمع بين الابتكار المالي السريع والرقابة الصارمة من هيئة السلوك المالي FCA وقوانين حماية البيانات البريطانية.",
         "status": "ولاية قضائية كاملة نشطة",
-        
         "keySectors": [
           "التقنية المالية والمصارف",
           "إدارة الأصول",
@@ -3596,7 +4399,6 @@
         "capital": "أبوظبي / دبي",
         "overview": "المركز الدولي الرائد للمال والأصول الافتراضية في الشرق الأوسط، تحكمه أطر رائدة للأصول الرقمية (VARA) وسوق أبوظبي العالمي (ADGM).",
         "status": "ولاية قضائية كاملة نشطة",
-        
         "keySectors": [
           "الأصول الرقمية وويب 3",
           "الصناديق السيادية",
@@ -3610,7 +4412,6 @@
         "capital": "سنغافورة",
         "overview": "أكثر الولايات القضائية موثوقية في آسيا، وتتميز بتراخيص التقنية المالية المتقدمة من سلطة النقد السنغافورية MAS وقوانين الخصوصية الصارمة.",
         "status": "ولاية قضائية كاملة نشطة",
-        
         "keySectors": [
           "إدارة الثروات",
           "المدفوعات والتقنية المالية",
@@ -3624,7 +4425,6 @@
         "capital": "طوكيو",
         "overview": "سوق رائد في آسيا للأصول الرقمية وحوكمة الشركات تحت إشراف وكالة الخدمات المالية JFSA ولجنة حماية المعلومات الشخصية PPC.",
         "status": "ولاية قضائية كاملة نشطة",
-        
         "keySectors": [
           "المصارف والتأمين",
           "الروبوتات والذكاء الاصطناعي",
@@ -3883,29 +4683,29 @@
       }
     ],
     "detailCommon": {
-      "overview": "نظرة عامة ونطاق العمل التنفيذي",
-      "challenges": "التحديات التنظيمية الرئيسية",
-      "deliverables": "المخرجات المؤسسية الأساسية",
-      "scope": "النطاق التفصيلي للممارسة",
-      "methodology": "منهجية التنفيذ والعمل",
-      "leadExpert": "الشريك المسؤول عن الممارسة",
-      "relatedRegulations": "الأطر التشريعية الرئيسية ذات الصلة",
-      "relatedIndustries": "القطاعات الصناعية المطبقة",
-      "bookConsultation": "حجز استشارة شريك",
+      "overview": "نظرة عامة ونطاق الممارسة",
+      "challenges": "أبرز التحديات التنظيمية والرقابية",
+      "deliverables": "المخرجات المؤسسية الرئيسية",
+      "scope": "نطاق العمل التفصيلي",
+      "methodology": "منهجية التنفيذ والامتثال",
+      "leadExpert": "الشريك الاستشاري المسؤول",
+      "relatedRegulations": "الأطر واللوائح التنظيمية ذات الصلة",
+      "relatedIndustries": "القطاعات والصناعات المعنية",
+      "bookConsultation": "حجز جلسة استشارية متخصصة",
       "requestQuote": "طلب تقدير نطاق العمل",
-      "inspectDossier": "فحص الملف التنظيمي",
-      "regulators": "السلطات الرقابية المختصة",
-      "residentDesk": "Jurisdiction Practice Coverage",
+      "inspectDossier": "معاينة الملف التنظيمي",
+      "regulators": "السلطات الإشرافية والرقابية المختصة",
+      "residentDesk": "تغطية الممارسة الرقابية",
       "keySectors": "القطاعات الخاضعة للرقابة ذات الأولوية",
-      "status": "الحالة التنظيمية والرقابية",
-      "capital": "العاصمة / المركز التنظيمي",
-      "penalties": "الحد الأقصى للعقوبات القانونية",
+      "status": "الحالة الرقابية والإشرافية",
+      "capital": "رأس المال الرقابي / المركز المالي",
+      "penalties": "أقصى العقوبات والغرامات القانونية",
       "jurisdiction": "الولاية القضائية الخاضعة للرقابة",
-      "timeline": "الجدول الزمني للتنفيذ القانوني",
-      "articles": "المقالات والتحليلات التنظيمية",
-      "resources": "أدوات ونماذج الامتثال",
-      "applyRole": "التقدم لهذه الوظيفة",
-      "caseStudy": "سجل تدقيق مؤسسي بارز"
+      "timeline": "الجدول الزمني للتطبيق والامتثال",
+      "articles": "المقالات والتحليلات الرقابية",
+      "resources": "أدلة وملفات أدوات الامتثال",
+      "applyRole": "التقديم على هذه الوظيفة الاستشارية",
+      "caseStudy": "دراسة حالة وسجل تدقيق مميز"
     },
     "modals": {
       "consultationTitle": "حجز استشارة لتحديد النطاق التنظيمي مع شريك",
@@ -4073,13 +4873,132 @@
         "valueProp": "Ensure C-suite compliance with personal liability protections under the EU NIS2 regime.",
         "pricingTier": "Compliance & Policy SOW",
         "timeline": "8-12 Weeks Engagement"
+      },
+      "financial-crime-compliance": {
+        "name": "AML/CFT（マネーロンダリング防止）および金融犯罪対策",
+        "category": "金融犯罪対策",
+        "badge": "中核プラクティス",
+        "shortDesc": "包括的なAML/CFT体制構築、KYC/CDD/EDD（顧客デューデリジェンス）、全社リスク評価、取引モニタリング、制裁スクリーニング、トラベルルール導入支援。",
+        "valueProp": "国際基準（FATF）に適合した、監査・監督検査に耐えうるリスクベースのコンプライアンス態勢を構築します。",
+        "challenges": [
+          "複雑な全社的マネーロンダリング・テロ資金供与リスク評価（EWRA）の策定",
+          "進化を続けるFATF勧告および各法域の規制要件への迅速な適合",
+          "取引モニタリングにおける高頻度なフォルスポジティブ（誤検知）の削減",
+          "制裁対象者およびPEP（要人）の確実なリアルタイムスクリーニングの確保"
+        ],
+        "deliverables": [
+          "包括的なAML/CFT基本規程および業務運用手順書（SOP）",
+          "全社リスク評価（EWRA）メソドロジーおよび評価マトリクス",
+          "顧客デューデリジェンス（KYC/CDD/EDD）運用マニュアル",
+          "制裁スクリーニング・アラート調査・エスカレーション手順書"
+        ]
+      },
+      "regulatory-compliance": {
+        "name": "規制コンプライアンスおよびライセンス取得準備",
+        "category": "規制アドバイザリー",
+        "badge": "戦略アドバイザリー",
+        "shortDesc": "規制フレームワーク構築、ライセンス申請準備、ギャップ分析、コンプライアンス・モニタリング・プログラム（CMP）、報告体制整備。",
+        "valueProp": "複雑な規制要件を、実行可能で監査可能なコンプライアンス運用体制へと具現化します。",
+        "challenges": [
+          "設定された期間内における規制認可・ライセンス要件の確実な充足",
+          "頻繁に改定される監督指針および法定要件への継続的対応",
+          "事業規模とリスク特性に応じたコンプライアンス監視計画（CMP）の策定",
+          "規制監督当局との円滑な対話および法定報告の確実な運用"
+        ],
+        "deliverables": [
+          "ライセンス申請用規制ドシエおよびガバナンス関連規程一式",
+          "規制ギャップ分析マトリクスおよび是正アクションプラン",
+          "年間コンプライアンス・モニタリング・プログラム（CMP）",
+          "規制義務管理および変更管理（チェンジマネジメント）マニュアル"
+        ]
+      },
+      "risk-governance": {
+        "name": "全社的リスクマネジメント（ERM）およびガバナンス",
+        "category": "リスク＆ガバナンス",
+        "badge": "取締役会ガバナンス",
+        "shortDesc": "全社リスク評価、リスクアペタイトの策定、オペレーショナルリスク管理、外部委託先（サードパーティ）監督、3線の防衛体制構築。",
+        "valueProp": "持続可能で統制の取れた成長を支える、実効性のあるリスク管理およびガバナンス構造を確立します。",
+        "challenges": [
+          "事業成長戦略と承認されたリスクアペタイト（リスク許容度）の整合性確保",
+          "「3線の防衛（Three Lines of Defense）」モデルの実効的な定着と機能分担",
+          "外部委託先およびベンダーに起因するサードパーティリスクの網羅的監視",
+          "取締役会および監査委員会に向けた的確なリスク報告体制の構築"
+        ],
+        "deliverables": [
+          "エンタープライズ・リスクマネジメント（ERM）基本規程",
+          "リスクアペタイト・ステートメントおよび主要リスク指標（RAS / KRI）",
+          "リスクおよびコンプライアンス委員会の運営規程（チャーター）",
+          "サードパーティ（外部委託先）監督および委託管理手順書"
+        ]
+      },
+      "legal-compliance": {
+        "name": "専門法務および規制コンプライアンス・アドバイザリー",
+        "category": "法務アドバイザリー",
+        "badge": "専門アドバイザリー",
+        "shortDesc": "規制関連の法的調査、コンプライアンス文書作成、契約・利用規約レビュー、暗号資産・FinTech助言、プライバシー（GDPR等）対応。",
+        "valueProp": "法的義務と実務運用を結びつけ、明快で実践的なアドバイザリーを提供します。",
+        "challenges": [
+          "越境（クロスボーダー）取引における複雑な規制法令の正確な解釈",
+          "十分な法的保護を備えた商業契約および利用規約の整備",
+          "暗号資産（トークン）およびFinTechビジネスモデルの法的適格性整理",
+          "グローバルなデータ保護およびプライバシー規制（GDPR等）の遵守"
+        ],
+        "deliverables": [
+          "正式な法的意見書（リーガルオピニオン）および規制分析メモ",
+          "規制要件に準拠した契約書・利用規約パッケージ",
+          "データ保護方針およびプライバシーガバナンス文書",
+          "法的コンプライアンス・マトリクスおよび規制義務マッピング"
+        ]
+      },
+      "compliance-training": {
+        "name": "機関向けコンプライアンスおよびAML研修プログラム",
+        "category": "研修・人材育成",
+        "badge": "ケイパビリティ開発",
+        "shortDesc": "役員および全従業員を対象とする、AML/CFT、制裁、KYC、規制義務に関する実践的なカスタム研修プログラム。",
+        "valueProp": "現場チームから経営陣・取締役会に至るまで、実践的なコンプライアンス遂行能力を培います。",
+        "challenges": [
+          "新たに台頭する不正手口およびレッドフラッグに対する職員の感度向上",
+          "監督当局が義務付ける法定定期研修要件の確実な履行",
+          "業務役割およびリスクレベルに応じた実践的カリキュラムの提供",
+          "研修受講実績および理解度テストの監査証跡の確実な保存"
+        ],
+        "deliverables": [
+          "実践的AML/CFTおよび金融犯罪防止トレーニングモジュール一式",
+          "取締役および経営幹部向けエグゼクティブ・ブリーフィング",
+          "理解度測定テストおよび修了証明書の発行",
+          "外部監査および規制当局提出用の年間研修実施報告書"
+        ]
+      },
+      "compliance-reviews": {
+        "name": "独立検証（外部監査）およびギャップ評価",
+        "category": "独立アシュアランス",
+        "badge": "独立アシュアランス",
+        "shortDesc": "年次の独立したAML/CFT態勢監査、内部統制の有効性検証、ギャップ評価、および優先是正ロードマップの策定。",
+        "valueProp": "貴社の統制環境の実効性と改善優先度について、客観的で信頼性の高い独立評価を提供します。",
+        "challenges": [
+          "コルレス銀行および監督当局からの独立監査要求への適合",
+          "既存の管理体制に潜む潜在的な脆弱性や不備の網羅的洗い出し",
+          "顧客ファイルおよび取引データに対する厳密なサンプル検証の実施",
+          "実効性があり優先順位が明確な是正アクションプランの策定"
+        ],
+        "deliverables": [
+          "包括的な年次独立AML/CFT検証報告書（監査レポート）",
+          "サンプルテストおよび内部統制有効性評価レポート",
+          "優先順位付き是正ロードマップ（Remediation Roadmap）",
+          "コルレス先および規制当局向けの独立検証証明書"
+        ]
       }
     },
     "industries": {
       "financial-services": {
-        "name": "Financial Services & Banking",
-        "heroTag": "Capital Markets & Prudential Governance",
-        "overview": "In an era of intensified prudential supervision and systemic digital transformation, Eagle Compliance delivers battle-tested advisory for global investment banks, asset managers, and insurance institutions."
+        "name": "金融機関および資産運用会社",
+        "overview": "投資家デューデリジェンス、資金源泉（SoW/SoF）確認、および最良執行管理を網羅する資産運用会社向けコンプライアンス。",
+        "challenges": [
+          "投資家デューデリジェンス、富の源泉（SoW）および資金源泉（SoF）の厳格な検証",
+          "市場不正行為、利益相反、および最良執行義務の監視",
+          "機関リスクアペタイトの策定およびオペレーショナルリスクの統制",
+          "越境（クロスボーダー）マーケティングおよび募集販売規制の遵守"
+        ]
       },
       "technology-and-software": {
         "name": "Technology, Cloud & Enterprise Software",
@@ -4105,50 +5024,80 @@
         "name": "Aerospace, Defense & Government Contracting",
         "heroTag": "Zero-Tolerance National Security Standards",
         "overview": "Protecting defense primes, aerospace tier-suppliers, and government contractors through CMMC certification, ITAR/EAR trade controls, and unassailable supply chain integrity."
+      },
+      "banking": {
+        "name": "銀行および信用機関",
+        "overview": "健全性監督基準、AML/CFT規制、および全社的ガバナンス要件に対応する、商業銀行・投資銀行向け包括的コンプライアンス態勢。",
+        "challenges": [
+          "多様な国内外口座における複雑な顧客デューデリジェンス（CDD）の実施",
+          "膨大な取引データに対するモニタリングと誤検知（False Positive）の抑制",
+          "健全性自己資本規制への対応および取締役会レベルのリスクガバナンス",
+          "リアルタイム決済ネットワークにおける厳格な国際制裁スクリーニング"
+        ]
+      },
+      "fintech": {
+        "name": "FinTechおよびデジタルチャレンジャー企業",
+        "overview": "急速なデジタルユーザー拡大と規制認可のスピード取得を両立する、俊敏かつ強固なコンプライアンス設計。",
+        "challenges": [
+          "急増するデジタル顧客獲得ペースに合わせたコンプライアンス運用の拡張",
+          "プロダクトの革新性を損なうことなく規制ライセンス要件を充足",
+          "提携銀行のコンプライアンス要件への適合および外部委託先管理",
+          "デジタルKYCおよび継続的リスクモニタリングの自動化"
+        ]
+      },
+      "payments": {
+        "name": "決済サービスプロバイダー（PSP）",
+        "overview": "資金保全要件、決済指令（PSD2/PSD3）、および加盟店引受審査に対応する決済機関向けコンプライアンス。",
+        "challenges": [
+          "加盟店オンボーディング時のデューデリジェンスおよび引受リスク評価",
+          "リアルタイム不正検知、取引モニタリング、およびチャージバック統制",
+          "顧客資金の分別管理（保全措置）および規制自己資本の算出",
+          "決済サービス指令（PSD2/PSD3）およびオープンバンキング要件への適合"
+        ]
+      },
+      "remittance-msb": {
+        "name": "送金・資金移動業者（MSB）",
+        "overview": "送金コリドーごとの透明性確保とコルレス銀行口座の維持を実現する、資金移動業者向け特化型AMLプログラム。",
+        "challenges": [
+          "送金コリドー別のML/TFリスクプロファイリングと送金の透明性確保",
+          "代理店・サブエージェント網のモニタリング、研修、および監査",
+          "コルレス銀行関係の維持・確保（ディリスキング防止対応）",
+          "法定義務である年次の独立した外部AML/CFT監査の実施"
+        ]
+      },
+      "digital-assets": {
+        "name": "暗号資産・デジタルアセット事業者（CASP）",
+        "overview": "EU MiCAやUAE VARAのライセンス取得、FATFトラベルルール対応、およびブロックチェーン分析ツールの導入支援。",
+        "challenges": [
+          "FATFトラベルルール要件の遵守およびオンチェーン分析ツールの統合",
+          "主要法域での暗号資産ライセンス取得（EU MiCA、UAE VARA、英国FCA等）",
+          "トークンの法的分類（リーガルオピニオン）およびホワイトペーパー審査",
+          "ノンカストディアルウォレットおよびDeFi取引におけるリスク管理"
+        ]
+      },
+      "startups": {
+        "name": "規制対象分野のスタートアップ",
+        "overview": "過度な負荷をかけずに規制要件をクリアし、投資家や提携銀行からの信頼を確立する初期コンプライアンスパッケージ。",
+        "challenges": [
+          "過大な間接コストをかけずに初期のコンプライアンス基本規程を策定",
+          "投資家、提携先、および監督官庁向けに説得力のあるコンプライアンス資料を作成",
+          "ライセンス取得が必要となる法的な閾値（トリガー）を正確に把握",
+          "顧客確認、AML、およびプライバシー保護の強固な初期体制を構築"
+        ]
       }
     },
     "countries": {
       "european-union": {
-        "name": "European Union",
-        "region": "Europe",
-        "capital": "Brussels",
-        "overview": "The global epicenter of regulatory standard-setting. Navigating the EU requires synchronized mastery of digital resilience (DORA, NIS2), artificial intelligence (EU AI Act), privacy (GDPR), and sustainability (CSRD).",
-        "status": "Active Full Jurisdiction",
-        
-        "keySectors": [
-          "Financial Services",
-          "Technology & AI",
-          "Life Sciences",
-          "Energy & Industrial"
-        ]
+        "name": "欧州連合（EU）",
+        "overview": "第6次EUマネーロンダリング指令（6AMLD）、MiCA暗号資産市場規制、DORAデジタルオペレーショナル・レジリエンス、PSD2/PSD3への適合。"
       },
       "united-states": {
-        "name": "United States",
-        "region": "North America",
-        "capital": "Washington, D.C.",
-        "overview": "High-stakes federal and state regulatory landscape governed by aggressive SEC enforcement, FTC privacy oversight, FDA pre-market reviews, and rigorous DoD cybersecurity standards.",
-        "status": "Active Full Jurisdiction",
-        
-        "keySectors": [
-          "Financial Markets",
-          "MedTech & Biotech",
-          "Defense & GovTech",
-          "Enterprise Cloud"
-        ]
+        "name": "アメリカ合衆国（米国）",
+        "overview": "FinCEN銀行秘密保護法（BSA/AML）、OFAC経済制裁、SEC/CFTC開示、および各州の送金業者ライセンス（MTL）への適合。"
       },
       "united-kingdom": {
-        "name": "United Kingdom",
-        "region": "Europe",
-        "capital": "London",
-        "overview": "Post-Brexit independent regulatory powerhouse combining high-velocity financial innovation with strict FCA Consumer Duty, UK GDPR, and emerging AI regulatory frameworks.",
-        "status": "Active Full Jurisdiction",
-        
-        "keySectors": [
-          "FinTech & Banking",
-          "Asset Management",
-          "Life Sciences",
-          "Global Trade"
-        ]
+        "name": "イギリス（英国）",
+        "overview": "英国金融行動監視機構（FCA）の法定基準、MLR 2017マネーロンダリング規則、および上級管理職・認証制度（SM&CR）への完全適合。"
       },
       "uae-gcc": {
         "name": "United Arab Emirates & GCC",
@@ -4156,7 +5105,6 @@
         "capital": "Abu Dhabi / Dubai",
         "overview": "The Middle East's premier international finance and virtual asset hub, governed by world-leading digital asset frameworks (VARA), Abu Dhabi Global Market (ADGM), and UAE Federal PDPL.",
         "status": "Active Full Jurisdiction",
-        
         "keySectors": [
           "Digital Assets & Web3",
           "Sovereign Wealth",
@@ -4170,7 +5118,6 @@
         "capital": "Singapore",
         "overview": "Asia-Pacific's most trusted regulatory jurisdiction, defined by MAS progressive fintech licensing, strict PDPA privacy laws, and regional ESG disclosure roadmaps.",
         "status": "Active Full Jurisdiction",
-        
         "keySectors": [
           "Wealth Management",
           "Payments & FinTech",
@@ -4184,13 +5131,24 @@
         "capital": "Tokyo",
         "overview": "Pioneering Asian digital asset and corporate governance market overseen by the Financial Services Agency (JFSA) and Personal Information Protection Commission (PPC).",
         "status": "Active Full Jurisdiction",
-        
         "keySectors": [
           "Banking & Insurance",
           "Robotics & AI",
           "Pharmaceuticals",
           "Web3 Gaming"
         ]
+      },
+      "united-arab-emirates": {
+        "name": "アラブ首長国連邦（ADGM / DIFC / VARA）",
+        "overview": "ドバイ金融サービス機構（DFSA/DIFC）、アブダビFSRA（ADGM）、UAE中央銀行規則、およびドバイ仮想資産規制局（VARA）への適合。"
+      },
+      "pakistan": {
+        "name": "パキスタン",
+        "overview": "パキスタン国立銀行（SBP）の規制指針、SECPコンプライアンスフレームワーク、および国家AML/CFT法定要件への適合。"
+      },
+      "australia": {
+        "name": "オーストラリア",
+        "overview": "AUSTRACマネーロンダリング報告義務、ASIC金融サービスライセンス要件、およびAPRA健全性基準への適合。"
       }
     },
     "regulations": {
@@ -4209,11 +5167,8 @@
         "penalties": "Periodic penalty payments up to 1% of average daily global turnover"
       },
       "gdpr": {
-        "name": "General Data Protection Regulation (GDPR - Regulation 2016/679)",
-        "jurisdiction": "European Union / EEA",
-        "status": "Fully Enforced",
-        "shortDesc": "The benchmark global standard for data privacy, processing accountability, cross-border transfer limitations, and automated decision-making protections.",
-        "penalties": "Up to €20,000,000 or 4% of global annual turnover"
+        "name": "EU一般データ保護規則（GDPR & プライバシー）",
+        "shortDesc": "個人データの保護、越境移転の制限、およびデータ主体の権利を規定する国際的プライバシー法制。"
       },
       "mica": {
         "name": "Markets in Crypto-Assets Regulation (MiCA - Regulation 2023/1114)",
@@ -4221,6 +5176,26 @@
         "status": "Active / Full Transposition",
         "shortDesc": "Harmonized regulatory regime governing crypto-asset issuers, service providers (CASPs), asset-referenced tokens (ARTs), and electronic money tokens (EMTs).",
         "penalties": "Up to €12,500,000 or 12.5% of annual turnover"
+      },
+      "fatf-standards": {
+        "name": "FATF（金融活動作業部会）勧告および国際基準",
+        "shortDesc": "マネーロンダリング、テロ資金供与、および拡散金融に対抗するための40の国際勧告とリスク評価基準。"
+      },
+      "eu-6amld": {
+        "name": "第6次EUマネーロンダリング防止指令（6AMLD）",
+        "shortDesc": "法人の刑事責任を明確化し、EU全域で前提犯罪を統一して司法協力を強化する欧州指令。"
+      },
+      "uk-mlr-2017": {
+        "name": "英国マネーロンダリング規則2017（UK MLR）",
+        "shortDesc": "全社リスク評価、顧客デューデリジェンス、およびMLRO（責任者）任命を義務付ける英国の法定枠組み。"
+      },
+      "us-bsa-aml": {
+        "name": "米国銀行秘密保護法およびAML規制（BSA/AML）",
+        "shortDesc": "コンプライアンスプログラムの設置、大口現金取引報告（CTR）、および疑わしい取引報告（SAR）を義務付ける米連邦基準。"
+      },
+      "eu-mica": {
+        "name": "EU暗号資産市場規制（MiCA規則）",
+        "shortDesc": "暗号資産サービスプロバイダー（CASP）の認可およびステーブルコイン発行を統一的に律する欧州包括規制。"
       }
     },
     "experts": {
@@ -4253,8 +5228,8 @@
         "bio": "Wirtschaftsprüfer und internationaler Unternehmensanwalt mit zwei Jahrzehnten Erfahrung in der Beratung multinationaler Vorstände zu europäischen Nachhaltigkeitsberichtsstandards (ESRS)."
       }
     },
-    "caseStudies": [
-      {
+    "caseStudies": {
+      "0": {
         "id": "dora-banking",
         "category": "金融サービス",
         "categoryTag": "金融サービス＆銀行",
@@ -4266,7 +5241,7 @@
         "image": "/assets/images/case-banking.jpg",
         "iconType": "bank"
       },
-      {
+      "1": {
         "id": "ai-act-llm",
         "category": "テクノロジー",
         "categoryTag": "テクノロジー＆ソフトウェア",
@@ -4278,7 +5253,7 @@
         "image": "/assets/images/case-ai.jpg",
         "iconType": "ai"
       },
-      {
+      "2": {
         "id": "mica-vara-exchange",
         "category": "デジタル資産",
         "categoryTag": "デジタル資産＆WEB3",
@@ -4289,8 +5264,20 @@
         "outcome": "完全なVARAライセンスを確保し、EU全27加盟国でのMiCA CASPパスポート認可を獲得。",
         "image": "/assets/images/case-crypto.jpg",
         "iconType": "crypto"
+      },
+      "fintech-psp-licensing-readiness": {
+        "title": "大手決済機関の規制ライセンス取得準備およびAMLプログラム構築",
+        "challenge": "クライアントは90日間の監督タイムライン内で包括的なAML/CFT体制とライセンス申請書類を整備する必要がありました。",
+        "solution": "イーグル・コンプライが各種規程を策定し、取引監視モデルを最適化し、経営ガバナンス体制を体系化しました。",
+        "outcome": "監督当局の初回検査において指摘事項ゼロ（欠陥なし）で無事に規制認可を取得しました。"
+      },
+      "remittance-msb-independent-aml-review": {
+        "title": "国際送金事業者に対する包括的独立AML/CFT検証（外部監査）",
+        "challenge": "提携コルレス銀行からの口座維持要件を満たすため、マネロン・制裁管理体制の独立監査が必要でした。",
+        "solution": "厳格なサンプル検証、送金コリドー別のリスク評価を実施し、優先順位付きの是正ロードマップを納品しました。",
+        "outcome": "すべてのコルレス銀行関係を維持・保全し、新たに2つの国際送金コリドーへの事業拡大を達成しました。"
       }
-    ],
+    },
     "insights": {
       "eu-ai-act-high-risk-guidance": {
         "title": "Navigation im EU AI Act: Technischer Leitfaden für Vorprüfungen von Hochrisiko-KI-Modellen",
@@ -4443,29 +5430,29 @@
       }
     ],
     "detailCommon": {
-      "overview": "Overview & Executive Scope",
-      "challenges": "Primary Regulatory Challenges",
-      "deliverables": "Core Institutional Deliverables",
-      "scope": "Detailed Practice Scope",
-      "methodology": "Implementation Methodology",
-      "leadExpert": "Lead Practice Partner",
-      "relatedRegulations": "Primary Statutory Frameworks",
-      "relatedIndustries": "Applicable Industry Verticals",
-      "bookConsultation": "Book Partner Consultation",
+      "overview": "概要およびエグゼクティブスコープ",
+      "challenges": "主要な規制・コンプライアンス課題",
+      "deliverables": "主要な制度的成果物",
+      "scope": "詳細な業務範囲",
+      "methodology": "実装・導入メソドロジー",
+      "leadExpert": "統括プラクティスパートナー",
+      "relatedRegulations": "関連する主要法規制枠組み",
+      "relatedIndustries": "適用対象の業界セクター",
+      "bookConsultation": "専門パートナー相談の予約",
       "requestQuote": "Request SOW Estimate",
-      "inspectDossier": "Inspect Regulatory Dossier",
-      "regulators": "Competent Supervisory Authorities",
-      "residentDesk": "Jurisdiction Practice Coverage",
-      "keySectors": "Priority Supervised Sectors",
-      "status": "Supervisory Status",
-      "capital": "Regulatory Capital / Center",
-      "penalties": "Maximum Statutory Penalties",
-      "jurisdiction": "Supervised Jurisdiction",
-      "timeline": "Statutory Implementation Timeline",
-      "articles": "Regulatory Articles & Editorials",
-      "resources": "Compliance Toolkits & Dossiers",
-      "applyRole": "Apply for This Practice Role",
-      "caseStudy": "Featured Enterprise Audit Record"
+      "inspectDossier": "規制ドシエ（報告書）の閲覧",
+      "regulators": "所轄監督官庁・規制当局",
+      "residentDesk": "法域プラクティスカバレッジ",
+      "keySectors": "主要監督対象セクター",
+      "status": "監督・ライセンス状況",
+      "capital": "自己資本要件 / 金融センター",
+      "penalties": "法定最高罰則・制裁金",
+      "jurisdiction": "監督対象法域",
+      "timeline": "法定施行・適合タイムライン",
+      "articles": "規制解説記事・専門レポート",
+      "resources": "コンプライアンスツールキット・資料",
+      "applyRole": "このポジションに応募する",
+      "caseStudy": "主要エンタープライズ監査実績"
     },
     "modals": {
       "consultationTitle": "Book Partner Scoping Consultation",
@@ -4633,13 +5620,132 @@
         "valueProp": "Ensure C-suite compliance with personal liability protections under the EU NIS2 regime.",
         "pricingTier": "Compliance & Policy SOW",
         "timeline": "8-12 Weeks Engagement"
+      },
+      "financial-crime-compliance": {
+        "name": "反洗钱（AML/CFT）与打击金融犯罪合规",
+        "category": "打击金融犯罪",
+        "badge": "核心业务",
+        "shortDesc": "企业级全方位AML/CFT反洗钱框架、KYC/CDD/EDD客户尽职调查、全行洗钱风险评估（EWRA）、交易监控模型校准、制裁名单实时筛查及Travel Rule落地。",
+        "valueProp": "依据国际反洗钱金融行动特别工作组（FATF）最高标准，构建经得起监管机构与外部审计严格审查的风险导向合规防线。",
+        "challenges": [
+          "设计并落地复杂的全机构固有与剩余洗钱风险评估（EWRA）",
+          "快速适应FATF国际标准及多司法管辖区高频变动的监管要求",
+          "有效压降交易监控系统中过高且消耗资源的误报率（False Positives）",
+          "确保制裁名单、政治公众人物（PEP）及负面媒体信息的实时精准筛查"
+        ],
+        "deliverables": [
+          "全套企业级AML/CFT合规政策与标准作业程序（SOP）手册",
+          "全机构洗钱风险评估（EWRA）方法论、模型及评级矩阵",
+          "普通及强化尽职调查（CDD/EDD）操作指南及审查清单",
+          "制裁名单筛查、可疑交易预警排查与法定升级报告规程"
+        ]
+      },
+      "regulatory-compliance": {
+        "name": "监管合规架构与牌照申请筹备",
+        "category": "监管咨询",
+        "badge": "战略合规咨询",
+        "shortDesc": "监管合规框架设计、金融与科技牌照申请筹备、合规差距分析、合规监测方案（CMP）、监管沟通及法规变更管理。",
+        "valueProp": "将繁复晦涩的法定监管条文转化为清晰、可落地且具备完备证据链的业务合规运行机制。",
+        "challenges": [
+          "在既定监管时间表内严密满足牌照设立与业务准入要求",
+          "建立敏捷机制持续跟踪并落实主管当局的最新监管通函与指引",
+          "搭建与机构业务体量及风险敞口相匹配的合规监测方案（CMP）",
+          "规范高效管理与监管机构的日常互动、问询回复及法定报送"
+        ],
+        "deliverables": [
+          "完备的监管牌照申请卷宗、商业计划及法定治理章程",
+          "监管差距评估矩阵及分阶段整改行动路线图",
+          "年度合规监测方案（CMP）与执行时间表",
+          "监管合规义务追踪与法规变更管理指引"
+        ]
+      },
+      "risk-governance": {
+        "name": "全面风险管理（ERM）与董事会治理",
+        "category": "风险与治理",
+        "badge": "董事会治理",
+        "shortDesc": "全面风险评估、风险偏好声明（RAS）制定、操作风险管理、第三方外包合规监督以及三道防线治理架构搭建。",
+        "valueProp": "确立健全相称的风险与治理防线，为机构稳健、合规且可持续的商业增长提供坚实后盾。",
+        "challenges": [
+          "确保业务拓展战略严格运行于董事会核准的风险偏好限额内",
+          "有效落实“三道防线”治理模型并确保合规与风控职能的独立性",
+          "全面识别与监控外包服务商及关键第三方合作方的衍生风险",
+          "向董事会及审计委员会提供及时、准确、穿透性的风险管理报告"
+        ],
+        "deliverables": [
+          "企业全面风险管理框架手册（ERM Framework）",
+          "风险偏好声明及关键风险指标体系（RAS / KRIs）",
+          "合规管理委员会及风险委员会章程与治理机制",
+          "第三方外包风险尽职调查、准入与持续监督管理制度"
+        ]
+      },
+      "legal-compliance": {
+        "name": "专业法律合规与监管专项咨询",
+        "category": "法律合规咨询",
+        "badge": "专项顾问",
+        "shortDesc": "监管法律专项研究、合规制度文本起草、商业合同与政策合规审查、加密资产/金融科技专项顾问及数据隐私（GDPR）合规。",
+        "valueProp": "架起法定法条与实际商业运营之间的桥梁，提供务实、精准、具操作性的专业法律合规支持。",
+        "challenges": [
+          "精准研判跨国展业场景下多国法律法规的竞合与适用边界",
+          "起草严谨完备的商业协议与用户协议以实现最高级别法律风险隔离",
+          "为数字资产发行、代币属性分类及FinTech架构提供合规论证",
+          "全面遵守境内外严苛的数据隐私与个人信息保护法案（如GDPR）"
+        ],
+        "deliverables": [
+          "正式监管法律意见书（Legal Opinion）及合规备忘录",
+          "全套符合监管标准的商业合同、合作协议及服务条款",
+          "数据合规与个人隐私保护管理制度及数据流转图谱",
+          "法定合规义务矩阵及合同合规履行监督清单"
+        ]
+      },
+      "compliance-training": {
+        "name": "机构合规文化与反洗钱专业培训",
+        "category": "培训与能力建设",
+        "badge": "专业赋能",
+        "shortDesc": "面向董事会、高管层及一线业务人员定制的AML/CFT、制裁防范、尽职调查及法定合规职责实战培训体系。",
+        "valueProp": "在全机构范围内系统化筑牢合规意识，强化一线与管理层的主动防线能力。",
+        "challenges": [
+          "提升一线员工对新型洗钱手法、欺诈特征及可疑红旗的敏锐识别力",
+          "刚性满足监管部门对持牌金融机构全员年度法定合规培训的要求",
+          "根据不同业务条线与风险岗位定制差异化的专业培训内容",
+          "完整沉淀培训记录、考试成绩与留痕档案以供监管检验"
+        ],
+        "deliverables": [
+          "系统化AML/CFT与反金融犯罪多媒体培训课件",
+          "针对董事会成员与高级管理层的高管合规专题研讨",
+          "全员知识考核题库、通关测试与结业认证",
+          "可直接提交监管机构与外部审计师备查的年度培训实施报告"
+        ]
+      },
+      "compliance-reviews": {
+        "name": "独立外部审计与合规差距专项评估",
+        "category": "独立鉴证",
+        "badge": "独立第三方鉴证",
+        "shortDesc": "年度独立AML/CFT反洗钱专项审计、内部控制有效性穿行测试、监管差距评估及优先整改行动方案。",
+        "valueProp": "获得对合规内控体系健全性及整改优先级的权威、客观、第三方专业评估背书。",
+        "challenges": [
+          "完全满足清算行/代理行及监管主管当局对年度独立审计的刚性要求",
+          "穿透发现日常运营中隐藏的合规漏洞与内控薄弱环节",
+          "对海量客户档案及交易执行高标准、统计学严谨的抽样核查",
+          "制定具备可操作性、明确责任人与完成时限的系统性整改方案"
+        ],
+        "deliverables": [
+          "权威年度独立AML/CFT合规审计与评估正式报告",
+          "交易抽样测试、控制点穿行测试及缺陷分析报告",
+          "优先整改路线图（Remediation Roadmap）及执行跟踪表",
+          "致代理银行、合作伙伴及监管当局的独立合规鉴证函件"
+        ]
       }
     },
     "industries": {
       "financial-services": {
-        "name": "Financial Services & Banking",
-        "heroTag": "Capital Markets & Prudential Governance",
-        "overview": "In an era of intensified prudential supervision and systemic digital transformation, Eagle Compliance delivers battle-tested advisory for global investment banks, asset managers, and insurance institutions."
+        "name": "金融机构与资产管理公司",
+        "overview": "覆盖私募基金、资管机构及券商的合规架构，严密执行财富来源核验（SoW/SoF）及市场行为规范。",
+        "challenges": [
+          "穿透核验高净值投资人身份、财富合法来源（SoW）及资金来源（SoF）",
+          "市场行为合规、利益冲突防范与最佳执行（Best Execution）监控",
+          "建立机构全面风险偏好体系并有效防范操作风险",
+          "遵守跨境基金推介、募集与金融产品境外分销法规"
+        ]
       },
       "technology-and-software": {
         "name": "Technology, Cloud & Enterprise Software",
@@ -4665,50 +5771,80 @@
         "name": "Aerospace, Defense & Government Contracting",
         "heroTag": "Zero-Tolerance National Security Standards",
         "overview": "Protecting defense primes, aerospace tier-suppliers, and government contractors through CMMC certification, ITAR/EAR trade controls, and unassailable supply chain integrity."
+      },
+      "banking": {
+        "name": "银行与信贷机构",
+        "overview": "专为商业银行与投资银行量身定制的审慎监管与反洗钱合规框架，全面满足央行、巴塞尔协议与监管当局的高阶要求。",
+        "challenges": [
+          "在多元化境内外账户网络中执行复杂的客户尽职调查（CDD）",
+          "海量交易数据的高效监控与误报率（False Positive）的实质性压降",
+          "审慎资本充足率计算、监管报送与董事会风险治理监督",
+          "在跨国实时清算网络中实施严密、无延迟的国际制裁筛查"
+        ]
+      },
+      "fintech": {
+        "name": "金融科技与数字化创新企业",
+        "overview": "敏捷且高度可扩展的合规架构，助力FinTech领军企业在高速获客的同时快速通过法定牌照审批并实现数字化入驻合规。",
+        "challenges": [
+          "使合规运营能力与数字化用户指数级增长保持同步扩展",
+          "在不牺牲产品极致创新与用户体验的前提下满足牌照监管要求",
+          "全面满足合作银行与清算渠道的合规审计与外包监督要求",
+          "实现数字身份认证（e-KYC）与持续风险监控的自动化"
+        ]
+      },
+      "payments": {
+        "name": "支付服务提供商（PSP）及收单机构",
+        "overview": "严格遵循客户资金备付金存管、支付服务指令（PSD2/PSD3）及收单风控标准的支付机构合规体系。",
+        "challenges": [
+          "商户入驻尽职调查、核保风控与商户风险分级管理",
+          "毫秒级欺诈拦截、交易实时监控与拒付争议防范",
+          "客户备付金法定隔离存管与监管资本充足率测算",
+          "全面对标PSD2/PSD3支付指令、开放银行与跨境清结算规则"
+        ]
+      },
+      "remittance-msb": {
+        "name": "汇款与货币服务企业（MSB）",
+        "overview": "为跨国汇款与外币兑换机构量身打造的反洗钱合规体系，确保资金走廊透明合规并守护代理行清算账户。",
+        "challenges": [
+          "特定跨境汇款走廊的ML/TF风险画像与资金流向穿透透明度",
+          "庞大代理商与子代理网络的合规监控、日常培训与定期审计",
+          "维护并加固代理行（Correspondent Banking）清算通道，防范去风险化切断",
+          "严密执行监管法定的年度独立第三方反洗钱（AML/CFT）专项审计"
+        ]
+      },
+      "digital-assets": {
+        "name": "加密资产与Web3数字资产服务商（CASP）",
+        "overview": "覆盖欧盟MiCA、阿联酋VARA及英国FCA牌照申请、FATF Travel Rule协议落地与链上数据合规分析。",
+        "challenges": [
+          "严格落实FATF Travel Rule协议要求并集成链上反洗钱图谱分析",
+          "筹备并申请全球主流加密资产牌照（如EU MiCA、UAE VARA、UK FCA）",
+          "代币法律属性定性审查（Legal Opinion）与项目白皮书合规把关",
+          "非托管钱包（Unhosted Wallets）与去中心化DeFi交互的合规风险控制"
+        ]
+      },
+      "startups": {
+        "name": "受监管行业的初创企业",
+        "overview": "轻量化、高性价比的合规启动包，帮助初创企业快速筑牢合规基石，赢得投资人、银行与监管方的首轮认可。",
+        "challenges": [
+          "在避免过度行政成本的前提下建立第一套合规政策与作业指引",
+          "起草具备专业说服力的合规卷宗，顺利获取银行账户与合作准入",
+          "精准识别法定监管红线、牌照准入触发点与豁免条件",
+          "搭建高效的客户身份核验、反洗钱与个人数据隐私保护基础设施"
+        ]
       }
     },
     "countries": {
       "european-union": {
-        "name": "European Union",
-        "region": "Europe",
-        "capital": "Brussels",
-        "overview": "The global epicenter of regulatory standard-setting. Navigating the EU requires synchronized mastery of digital resilience (DORA, NIS2), artificial intelligence (EU AI Act), privacy (GDPR), and sustainability (CSRD).",
-        "status": "Active Full Jurisdiction",
-        
-        "keySectors": [
-          "Financial Services",
-          "Technology & AI",
-          "Life Sciences",
-          "Energy & Industrial"
-        ]
+        "name": "欧盟（European Union）",
+        "overview": "跨境对标欧盟第6号反洗钱指令（6AMLD）、MiCA加密资产市场法规、DORA数字运营韧性法案及PSD2/PSD3支付指令。"
       },
       "united-states": {
-        "name": "United States",
-        "region": "North America",
-        "capital": "Washington, D.C.",
-        "overview": "High-stakes federal and state regulatory landscape governed by aggressive SEC enforcement, FTC privacy oversight, FDA pre-market reviews, and rigorous DoD cybersecurity standards.",
-        "status": "Active Full Jurisdiction",
-        
-        "keySectors": [
-          "Financial Markets",
-          "MedTech & Biotech",
-          "Defense & GovTech",
-          "Enterprise Cloud"
-        ]
+        "name": "美国（United States）",
+        "overview": "全面符合美国金融犯罪执法局（FinCEN BSA/AML）联邦要求、OFAC制裁清单以及各州资金转移牌照（MTL）监管。"
       },
       "united-kingdom": {
-        "name": "United Kingdom",
-        "region": "Europe",
-        "capital": "London",
-        "overview": "Post-Brexit independent regulatory powerhouse combining high-velocity financial innovation with strict FCA Consumer Duty, UK GDPR, and emerging AI regulatory frameworks.",
-        "status": "Active Full Jurisdiction",
-        
-        "keySectors": [
-          "FinTech & Banking",
-          "Asset Management",
-          "Life Sciences",
-          "Global Trade"
-        ]
+        "name": "英国（United Kingdom）",
+        "overview": "全面对标英国金融行为监管局（FCA）法定标准、MLR 2017反洗钱条例以及高级管理人员与认证制度（SM&CR）。"
       },
       "uae-gcc": {
         "name": "United Arab Emirates & GCC",
@@ -4716,7 +5852,6 @@
         "capital": "Abu Dhabi / Dubai",
         "overview": "The Middle East's premier international finance and virtual asset hub, governed by world-leading digital asset frameworks (VARA), Abu Dhabi Global Market (ADGM), and UAE Federal PDPL.",
         "status": "Active Full Jurisdiction",
-        
         "keySectors": [
           "Digital Assets & Web3",
           "Sovereign Wealth",
@@ -4730,7 +5865,6 @@
         "capital": "Singapore",
         "overview": "Asia-Pacific's most trusted regulatory jurisdiction, defined by MAS progressive fintech licensing, strict PDPA privacy laws, and regional ESG disclosure roadmaps.",
         "status": "Active Full Jurisdiction",
-        
         "keySectors": [
           "Wealth Management",
           "Payments & FinTech",
@@ -4744,13 +5878,24 @@
         "capital": "Tokyo",
         "overview": "Pioneering Asian digital asset and corporate governance market overseen by the Financial Services Agency (JFSA) and Personal Information Protection Commission (PPC).",
         "status": "Active Full Jurisdiction",
-        
         "keySectors": [
           "Banking & Insurance",
           "Robotics & AI",
           "Pharmaceuticals",
           "Web3 Gaming"
         ]
+      },
+      "united-arab-emirates": {
+        "name": "阿联酋（ADGM / DIFC / VARA）",
+        "overview": "专精对标迪拜金融服务局（DFSA/DIFC）、阿布扎比金融服务监管局（FSRA/ADGM）、阿联酋央行及迪拜虚拟资产管理局（VARA）。"
+      },
+      "pakistan": {
+        "name": "巴基斯坦（Pakistan）",
+        "overview": "严格遵循巴基斯坦国家银行（SBP）监管通函、证券交易委员会（SECP）合规框架以及国家法定AML/CFT义务。"
+      },
+      "australia": {
+        "name": "澳大利亚（Australia）",
+        "overview": "全面符合澳大利亚交易报告与分析中心（AUSTRAC）反洗钱申报、ASIC金融服务牌照（AFSL）及APRA审慎监管标准。"
       }
     },
     "regulations": {
@@ -4769,11 +5914,8 @@
         "penalties": "Periodic penalty payments up to 1% of average daily global turnover"
       },
       "gdpr": {
-        "name": "General Data Protection Regulation (GDPR - Regulation 2016/679)",
-        "jurisdiction": "European Union / EEA",
-        "status": "Fully Enforced",
-        "shortDesc": "The benchmark global standard for data privacy, processing accountability, cross-border transfer limitations, and automated decision-making protections.",
-        "penalties": "Up to €20,000,000 or 4% of global annual turnover"
+        "name": "通用数据保护条例（GDPR）与数据隐私合规",
+        "shortDesc": "全球最严格的个人信息与数据保护法规，规范数据跨国流转、处理原则及数据主体法定权利。"
       },
       "mica": {
         "name": "Markets in Crypto-Assets Regulation (MiCA - Regulation 2023/1114)",
@@ -4781,6 +5923,26 @@
         "status": "Active / Full Transposition",
         "shortDesc": "Harmonized regulatory regime governing crypto-asset issuers, service providers (CASPs), asset-referenced tokens (ARTs), and electronic money tokens (EMTs).",
         "penalties": "Up to €12,500,000 or 12.5% of annual turnover"
+      },
+      "fatf-standards": {
+        "name": "FATF（金融行动特别工作组）国际建议与标准",
+        "shortDesc": "全球公认的40项反洗钱、打击恐怖融资及防扩散融资的国际最高监管基准与国家评估标准。"
+      },
+      "eu-6amld": {
+        "name": "欧盟第6号反洗钱指令（EU 6AMLD）",
+        "shortDesc": "明确法人机构及高级管理人员的刑事责任，统一欧盟27国洗钱上游犯罪定义的强制性指令。"
+      },
+      "uk-mlr-2017": {
+        "name": "英国2017年反洗钱条例（UK MLR 2017）",
+        "shortDesc": "英国强制性法定框架，要求机构实施全行风险评估、客户尽职调查并设立法定洗钱报告官（MLRO）。"
+      },
+      "us-bsa-aml": {
+        "name": "美国银行保密法与反洗钱监管（BSA/AML）",
+        "shortDesc": "美国联邦法规基石，强制建立反洗钱计划、大额现金交易申报（CTR）及可疑交易报告（SAR）。"
+      },
+      "eu-mica": {
+        "name": "欧盟加密资产市场法规（MiCA）",
+        "shortDesc": "欧盟统一落地的里程碑式加密监管法规，规范加密资产服务商（CASP）牌照准入与稳定币发行。"
       }
     },
     "experts": {
@@ -4813,8 +5975,8 @@
         "bio": "Wirtschaftsprüfer und internationaler Unternehmensanwalt mit zwei Jahrzehnten Erfahrung in der Beratung multinationaler Vorstände zu europäischen Nachhaltigkeitsberichtsstandards (ESRS)."
       }
     },
-    "caseStudies": [
-      {
+    "caseStudies": {
+      "0": {
         "id": "dora-banking",
         "category": "金融服务",
         "categoryTag": "金融服务与大型银行",
@@ -4826,7 +5988,7 @@
         "image": "/assets/images/case-banking.jpg",
         "iconType": "bank"
       },
-      {
+      "1": {
         "id": "ai-act-llm",
         "category": "科技软件",
         "categoryTag": "科技与企业级软件",
@@ -4838,7 +6000,7 @@
         "image": "/assets/images/case-ai.jpg",
         "iconType": "ai"
       },
-      {
+      "2": {
         "id": "mica-vara-exchange",
         "category": "数字资产",
         "categoryTag": "数字资产与WEB3",
@@ -4849,8 +6011,20 @@
         "outcome": "成功获得迪拜 VARA 完整市场服务牌照，并在欧盟27个成员国实现 MiCA CASP 展业通行权。",
         "image": "/assets/images/case-crypto.jpg",
         "iconType": "crypto"
+      },
+      "fintech-psp-licensing-readiness": {
+        "title": "头部支付机构监管牌照申请筹备与企业级AML体系搭建",
+        "challenge": "客户面临主管监管部门90天法定答辩时限，急需构建完备的AML/CFT体系并起草全套牌照申请卷宗。",
+        "solution": "鹰合规专家团队全面起草机构政策，精准校准实时交易监控模型，并规范构建董事会治理与三道防线。",
+        "outcome": "成功获得监管牌照正式批复，且在主管当局首次现场检查中录得“零缺陷”优异记录。"
+      },
+      "remittance-msb-independent-aml-review": {
+        "title": "跨国汇款运营商年度独立AML/CFT专项审计与整改",
+        "challenge": "客户需应对国际代理清算行的严苛合规尽调，急需独立的第三方AML与制裁合规审计报告以确保清算账户安全。",
+        "solution": "执行穿透式交易抽样核查、跨境走廊洗钱风险评估，并输出具备清晰执行路径的优先整改路线图。",
+        "outcome": "全量保全所有国际代理行清算通道，并顺利协助客户拓展获批两条全新国际汇款走廊。"
       }
-    ],
+    },
     "insights": {
       "eu-ai-act-high-risk-guidance": {
         "title": "Navigation im EU AI Act: Technischer Leitfaden für Vorprüfungen von Hochrisiko-KI-Modellen",
@@ -5003,29 +6177,29 @@
       }
     ],
     "detailCommon": {
-      "overview": "Overview & Executive Scope",
-      "challenges": "Primary Regulatory Challenges",
-      "deliverables": "Core Institutional Deliverables",
-      "scope": "Detailed Practice Scope",
-      "methodology": "Implementation Methodology",
-      "leadExpert": "Lead Practice Partner",
-      "relatedRegulations": "Primary Statutory Frameworks",
-      "relatedIndustries": "Applicable Industry Verticals",
-      "bookConsultation": "Book Partner Consultation",
+      "overview": "概述与执行范围",
+      "challenges": "主要合规与监管挑战",
+      "deliverables": "核心机构交付成果",
+      "scope": "详细业务范围",
+      "methodology": "实施与落地方法论",
+      "leadExpert": "首席业务合伙人",
+      "relatedRegulations": "核心法定监管框架",
+      "relatedIndustries": "适用行业领域",
+      "bookConsultation": "预约合伙人专家咨询",
       "requestQuote": "Request SOW Estimate",
-      "inspectDossier": "Inspect Regulatory Dossier",
-      "regulators": "Competent Supervisory Authorities",
-      "residentDesk": "Jurisdiction Practice Coverage",
-      "keySectors": "Priority Supervised Sectors",
-      "status": "Supervisory Status",
-      "capital": "Regulatory Capital / Center",
-      "penalties": "Maximum Statutory Penalties",
-      "jurisdiction": "Supervised Jurisdiction",
-      "timeline": "Statutory Implementation Timeline",
-      "articles": "Regulatory Articles & Editorials",
-      "resources": "Compliance Toolkits & Dossiers",
-      "applyRole": "Apply for This Practice Role",
-      "caseStudy": "Featured Enterprise Audit Record"
+      "inspectDossier": "审阅监管合规卷宗",
+      "regulators": "主管国家与行业监管机构",
+      "residentDesk": "管辖区业务覆盖",
+      "keySectors": "重点监管行业板块",
+      "status": "监管与牌照资质状态",
+      "capital": "法定最低资本 / 国际金融中心",
+      "penalties": "法定最高处罚与罚金上限",
+      "jurisdiction": "受监管司法管辖区",
+      "timeline": "法定实施与合规时间表",
+      "articles": "合规专题文章与监管洞察",
+      "resources": "合规工具包与标准卷宗",
+      "applyRole": "申请该咨询专家职位",
+      "caseStudy": "精选企业合规审计实绩"
     },
     "modals": {
       "consultationTitle": "Book Partner Scoping Consultation",
@@ -5193,13 +6367,132 @@
         "valueProp": "Ensure C-suite compliance with personal liability protections under the EU NIS2 regime.",
         "pricingTier": "Compliance & Policy SOW",
         "timeline": "8-12 Weeks Engagement"
+      },
+      "financial-crime-compliance": {
+        "name": "AML/CFT(자금세탁방지) 및 금융범죄 대응 컴플라이언스",
+        "category": "금융범죄 대응",
+        "badge": "핵심 실무",
+        "shortDesc": "포괄적 AML/CFT 체계 구축, 고객확인제도(KYC/CDD/EDD), 전사 위험평가(EWRA), 거래 모니터링 모델 튜닝, 제재 스크리닝 및 트래블룰(Travel Rule) 구축.",
+        "valueProp": "국제자금세탁방지기구(FATF) 기준에 완벽히 부합하며, 감독 당국의 검사에 검증된 리스크 기반 체계를 구축합니다.",
+        "challenges": [
+          "기관의 복잡한 전사 자금세탁·테러자금조달 위험평가(EWRA) 모델 수립",
+          "급변하는 FATF 국제 기준 및 각국 규제 요건에 맞춘 체계 개선",
+          "거래 모니터링 시스템의 오탐률(False Positive)을 대폭 감축",
+          "제재 대상자 및 정치적 주요인물(PEP)에 대한 완벽한 실시간 스크리닝 보장"
+        ],
+        "deliverables": [
+          "포괄적 AML/CFT 내부통제 규정집 및 표준업무지침서(SOP)",
+          "전사 자금세탁위험평가(EWRA) 방법론 및 위험도 평가 매트릭스",
+          "고객확인(KYC/CDD) 및 강화된 고객확인(EDD) 실무 매뉴얼",
+          "제재 스크리닝, 이상거래 조사 및 단계별 보고 프로토콜"
+        ]
+      },
+      "regulatory-compliance": {
+        "name": "규제 컴플라이언스 및 인허가 준비 자문",
+        "category": "규제 자문",
+        "badge": "전략 자문",
+        "shortDesc": "규제 프레임워크 설계, 금융 및 핀테크 라이선스 인허가 준비, 갭(Gap) 분석, 컴플라이언스 모니터링 프로그램(CMP), 규제 변경 관리.",
+        "valueProp": "복잡한 법적 규제 요건을 실무에서 즉시 이행 가능한 실질적이고 감사 가능한 업무 프로세스로 전환합니다.",
+        "challenges": [
+          "정해진 일정 내에 엄격한 규제 기관의 인허가 요건 완벽 충족",
+          "지속적으로 개정되는 감독 지침 및 법정 의무 사항의 능동적 반영",
+          "비즈니스 규모에 최적화된 확장 가능한 컴플라이언스 감시 체계(CMP) 수립",
+          "규제 당국과의 원활한 소통 및 정기 법정 보고의 체계적 관리"
+        ],
+        "deliverables": [
+          "인허가 신청용 정식 규제 문서집(Dossier) 및 거버넌스 규정",
+          "규제 갭(Gap) 분석 매트릭스 및 단계별 개선 로드맵",
+          "연간 컴플라이언스 모니터링 프로그램(CMP)",
+          "규제 의무 관리 및 규정 개정 관리(Change Management) 지침서"
+        ]
+      },
+      "risk-governance": {
+        "name": "전사적 리스크 관리(ERM) 및 이사회 거버넌스",
+        "category": "리스크 및 거버넌스",
+        "badge": "이사회 거버넌스",
+        "shortDesc": "전사 리스크 평가, 리스크 수용성(Risk Appetite) 설정, 운영 리스크 관리, 제3자 위탁 감독, 3선 방어 거버넌스 구축.",
+        "valueProp": "안정적이고 통제된 지속 가능한 성장을 뒷받침하는 강력한 리스크 및 지배구조 체계를 확립합니다.",
+        "challenges": [
+          "사업 확장 목표와 이사회 승인 리스크 수용 한도(Risk Appetite)의 일치",
+          "「3선 방어선(Three Lines of Defense)」 모델의 실질적 정착 및 독립성 보장",
+          "외부 위탁사 및 핀테크 파트너십에서 발생하는 제3자 리스크의 빈틈없는 관리",
+          "이사회 및 감사위원회에 대한 명확하고 적시성 있는 리스크 보고 체계 수립"
+        ],
+        "deliverables": [
+          "전사적 리스크 관리 프레임워크(ERM Handbook)",
+          "리스크 수용성 선언서 및 핵심 리스크 지표(RAS / KRI)",
+          "리스크 및 컴플라이언스 위원회 운영 규정(Charter)",
+          "제3자 외주 위탁사 실사, 평가 및 지속적 감독 지침서"
+        ]
+      },
+      "legal-compliance": {
+        "name": "전문 법률 및 규제 컴플라이언스 자문",
+        "category": "법률 자문",
+        "badge": "전문 자문",
+        "shortDesc": "규제 법률 심층 리서치, 컴플라이언스 계약 문서 작성, 약관 및 정책 검토, 가상자산/핀테크 자문, 개인정보보호(GDPR 등) 대응.",
+        "valueProp": "법적 의무와 실무 운영 간의 격차를 해소하며 명확하고 실질적인 전문 법률 자문을 제공합니다.",
+        "challenges": [
+          "크로스보더(Cross-Border) 다중 관할권 환경에서의 복잡한 법령 해석",
+          "법적 리스크를 완벽히 방어할 수 있는 상업 계약서 및 서비스 약관 수립",
+          "가상자산(토큰) 발행 및 핀테크 신규 비즈니스 모델에 대한 규제 적격성 분석",
+          "글로벌 개인정보보호 규정(GDPR 등) 준수 체계 마련"
+        ],
+        "deliverables": [
+          "공식 규제 법률 의견서(Legal Opinion) 및 컴플라이언스 메모",
+          "규제 표준에 맞춘 표준 상업 계약서 및 이용약관 패키지",
+          "개인정보보호 및 데이터 거버넌스 규정집",
+          "법률 컴플라이언스 매트릭스 및 의무 이행 추적표"
+        ]
+      },
+      "compliance-training": {
+        "name": "기관 맞춤형 컴플라이언스 및 AML 교육",
+        "category": "교육 및 역량 강화",
+        "badge": "전문 역량 개발",
+        "shortDesc": "이사회, 임원진 및 현업 실무진을 위한 AML/CFT, 제재, 고객확인, 규제 의무에 관한 맞춤형 실무 교육 프로그램.",
+        "valueProp": "실무 팀부터 경영진 및 이사회에 이르기까지 전사적 컴플라이언스 실행 역량을 확립합니다.",
+        "challenges": [
+          "신종 금융범죄 수법 및 의심거래 징후(Red Flags)에 대한 임직원 인식 강화",
+          "규제 감독 기관이 요구하는 연간 법정 필수 교육 요건의 완벽한 충족",
+          "업무 역할과 위험 수준에 따른 차별화된 실무 교육 콘텐츠 제공",
+          "검사 대비 교육 이수 기록 및 평가 증적의 철저한 관리"
+        ],
+        "deliverables": [
+          "실무형 AML/CFT 및 금융범죄 예방 교육 모듈 일체",
+          "이사회 및 최고경영진을 위한 맞춤형 익스큐티브 브리핑",
+          "이해도 평가 테스트 및 공인 수료증 발급",
+          "감독 기관 및 외부 감사인 제출용 연간 교육 결과 보고서"
+        ]
+      },
+      "compliance-reviews": {
+        "name": "독립 감사(외부 점검) 및 갭(Gap) 평가",
+        "category": "독립 감사",
+        "badge": "독립 감사 및 확증",
+        "shortDesc": "연례 독립 AML/CFT 체계 감사, 내부통제 효과성 테스트, 규제 갭 분석 및 우선순위 개선 로드맵 수립.",
+        "valueProp": "내부통제 체계의 적정성과 개선 과제에 대해 신뢰할 수 있는 객관적 독립 평가를 제공합니다.",
+        "challenges": [
+          "환거래은행 및 금융 규제 당국의 정기 독립 감사 요구사항 완벽 충족",
+          "기존 관리 체계에 숨겨진 내부통제 취약점 및 결함의 정밀 진단",
+          "고객 파일 및 거래 내역에 대한 엄격한 표본(Sample) 검증 수행",
+          "실행 가능하고 우선순위가 명확한 실질적 개선 조치 계획 수립"
+        ],
+        "deliverables": [
+          "공식 연례 독립 AML/CFT 감사 및 평가 종합 보고서",
+          "표본 점검 및 통제 효과성 검증 상세 보고서",
+          "우선순위 개선 로드맵(Remediation Roadmap)",
+          "거래은행 및 감독 당국 제출용 독립 감사 확인서"
+        ]
       }
     },
     "industries": {
       "financial-services": {
-        "name": "Financial Services & Banking",
-        "heroTag": "Capital Markets & Prudential Governance",
-        "overview": "In an era of intensified prudential supervision and systemic digital transformation, Eagle Compliance delivers battle-tested advisory for global investment banks, asset managers, and insurance institutions."
+        "name": "금융기관 및 자산운용사",
+        "overview": "사모펀드, 자산운용사 및 증권사를 위한 컴플라이언스 체계로 투자자 자금 출처(SoW/SoF) 확인 및 시장 건전성 확보.",
+        "challenges": [
+          "투자자 실사 및 자산 형성 과정(SoW), 자금 출처(SoF)의 정밀한 소명",
+          "불공정 거래 행위 감시, 이해상충 방지 및 최선 집행(Best Execution) 통제",
+          "기관 리스크 수용성(Risk Appetite) 수립 및 운영 리스크 통제",
+          "국경 간(Cross-Border) 펀드 마케팅 및 상품 판매 규제 준수"
+        ]
       },
       "technology-and-software": {
         "name": "Technology, Cloud & Enterprise Software",
@@ -5225,50 +6518,80 @@
         "name": "Aerospace, Defense & Government Contracting",
         "heroTag": "Zero-Tolerance National Security Standards",
         "overview": "Protecting defense primes, aerospace tier-suppliers, and government contractors through CMMC certification, ITAR/EAR trade controls, and unassailable supply chain integrity."
+      },
+      "banking": {
+        "name": "은행 및 신용기관",
+        "overview": "건전성 감독 기준, AML/CFT 규제 및 전사적 거버넌스 요건을 충족하도록 설계된 상업 및 투자은행을 위한 포괄적 컴플라이언스 체계.",
+        "challenges": [
+          "다양한 국내외 계좌 네트워크에 걸친 복잡한 고객확인(CDD) 수행",
+          "대규모 거래 데이터에 대한 실시간 모니터링 및 오탐률(False Positive)의 획기적 감축",
+          "건전성 자본비율 산출, 감독 보고 및 이사회 차원의 리스크 거버넌스 확립",
+          "글로벌 실시간 결제망에 걸친 빈틈없는 제재 및 위험인물 스크리닝"
+        ]
+      },
+      "fintech": {
+        "name": "핀테크 및 디지털 혁신 기업",
+        "overview": "디지털 고객의 폭발적인 유입 속도에 발맞추어 신속한 인허가 취득과 비대면 온보딩 자동화를 지원하는 민첩한 컴플라이언스 설계.",
+        "challenges": [
+          "급증하는 디지털 사용자 규모에 최적화된 컴플라이언스 운영의 확장",
+          "혁신적인 제품 개발 및 사용자 경험을 저해하지 않는 인허가 요건 충족",
+          "제휴 은행 및 파트너사의 까다로운 컴플라이언스 기준 충족 및 외주 관리",
+          "비대면 고객확인(e-KYC) 및 상시 리스크 모니터링의 자동화"
+        ]
+      },
+      "payments": {
+        "name": "결제 서비스 제공업체(PSP) 및 전자금융업자",
+        "overview": "고객 예치금 분리 보관, 결제서비스 지침(PSD2/PSD3) 및 가맹점 인수 심사 기준을 완벽히 충족하는 결제 컴플라이언스.",
+        "challenges": [
+          "가맹점 온보딩 실사 및 리스크 등급 기반의 인수(Underwriting) 관리",
+          "실시간 이상금융거래탐지(FDS), 거래 감시 및 분쟁·환불(Chargeback) 통제",
+          "고객 결제 대금의 안전한 분리 보관 및 규제 자본금 계산",
+          "유럽 결제지침(PSD2/PSD3), 오픈뱅킹 및 국경 간 결제 규제 대응"
+        ]
+      },
+      "remittance-msb": {
+        "name": "해외 송금 및 소액송금업자(MSB)",
+        "overview": "국가 간 송금 경로의 투명성을 확보하고 환거래은행 계좌를 안전하게 유지하도록 지원하는 송금업 특화 AML 프로그램.",
+        "challenges": [
+          "송금 국가(Corridor)별 ML/TF 리스크 프로파일링 및 해외 송금 투명성 확보",
+          "송금 대리점 및 제휴 네트워크에 대한 상시 모니터링, 교육 및 점검",
+          "환거래은행 계좌의 유지 및 디리스킹(De-risking) 차단 조치",
+          "법정 의무 사항인 연례 독립 AML/CFT 외부 점검(감사) 수행"
+        ]
+      },
+      "digital-assets": {
+        "name": "가상자산 및 디지털 자산 사업자(CASP)",
+        "overview": "EU MiCA, UAE VARA 및 국내외 가상자산 인허가 취득, FATF 트래블룰 연동 및 온체인 블록체인 분석 솔루션 도입 지원.",
+        "challenges": [
+          "FATF 트래블룰(Travel Rule) 규정 준수 및 온체인 이상거래 분석 도구 결합",
+          "글로벌 주요 관할권 가상자산 라이선스 획득(EU MiCA, UAE VARA 등)",
+          "가상자산(토큰) 법적 성격 규명 및 프로젝트 백서(Whitepaper) 검토",
+          "개인 지갑(Unhosted Wallets) 및 탈중앙화 프로토콜(DeFi) 거래 리스크 관리"
+        ]
+      },
+      "startups": {
+        "name": "규제 산업 분야 스타트업",
+        "overview": "과도한 비용 부담 없이 규제 장벽을 넘고 투자자와 제휴 은행의 신뢰를 확보할 수 있는 스타트업 맞춤형 컴플라이언스 팩.",
+        "challenges": [
+          "과중한 관리 비용 없이 핵심 컴플라이언스 규정 및 업무 지침 수립",
+          "파트너 은행 및 투자자 실사를 통과할 수 있는 검증된 컴플라이언스 문서 작성",
+          "인허가 등록이 요구되는 법적 임계점(Trigger) 및 규제 범위의 정확한 파악",
+          "고객확인, 자금세탁방지 및 개인정보보호의 탄탄한 기초 인프라 구축"
+        ]
       }
     },
     "countries": {
       "european-union": {
-        "name": "European Union",
-        "region": "Europe",
-        "capital": "Brussels",
-        "overview": "The global epicenter of regulatory standard-setting. Navigating the EU requires synchronized mastery of digital resilience (DORA, NIS2), artificial intelligence (EU AI Act), privacy (GDPR), and sustainability (CSRD).",
-        "status": "Active Full Jurisdiction",
-        
-        "keySectors": [
-          "Financial Services",
-          "Technology & AI",
-          "Life Sciences",
-          "Energy & Industrial"
-        ]
+        "name": "유럽연합 (European Union)",
+        "overview": "제6차 EU 자금세탁방지지침(6AMLD), 가상자산시장법(MiCA), 디지털운영탄력성법(DORA) 및 결제지침(PSD2/PSD3) 준수."
       },
       "united-states": {
-        "name": "United States",
-        "region": "North America",
-        "capital": "Washington, D.C.",
-        "overview": "High-stakes federal and state regulatory landscape governed by aggressive SEC enforcement, FTC privacy oversight, FDA pre-market reviews, and rigorous DoD cybersecurity standards.",
-        "status": "Active Full Jurisdiction",
-        
-        "keySectors": [
-          "Financial Markets",
-          "MedTech & Biotech",
-          "Defense & GovTech",
-          "Enterprise Cloud"
-        ]
+        "name": "미국 (United States)",
+        "overview": "미국 금융범죄단속네트워크(FinCEN BSA/AML) 연방 기준, OFAC 경제 제재 및 각 주별 송금업자 라이선스(MTL) 규정 준수."
       },
       "united-kingdom": {
-        "name": "United Kingdom",
-        "region": "Europe",
-        "capital": "London",
-        "overview": "Post-Brexit independent regulatory powerhouse combining high-velocity financial innovation with strict FCA Consumer Duty, UK GDPR, and emerging AI regulatory frameworks.",
-        "status": "Active Full Jurisdiction",
-        
-        "keySectors": [
-          "FinTech & Banking",
-          "Asset Management",
-          "Life Sciences",
-          "Global Trade"
-        ]
+        "name": "영국 (United Kingdom)",
+        "overview": "영국 금융행위감독청(FCA) 법정 기준, MLR 2017 자금세탁방지 규정 및 고위관리자 인증제도(SM&CR)에 대한 완벽한 준수."
       },
       "uae-gcc": {
         "name": "United Arab Emirates & GCC",
@@ -5276,7 +6599,6 @@
         "capital": "Abu Dhabi / Dubai",
         "overview": "The Middle East's premier international finance and virtual asset hub, governed by world-leading digital asset frameworks (VARA), Abu Dhabi Global Market (ADGM), and UAE Federal PDPL.",
         "status": "Active Full Jurisdiction",
-        
         "keySectors": [
           "Digital Assets & Web3",
           "Sovereign Wealth",
@@ -5290,7 +6612,6 @@
         "capital": "Singapore",
         "overview": "Asia-Pacific's most trusted regulatory jurisdiction, defined by MAS progressive fintech licensing, strict PDPA privacy laws, and regional ESG disclosure roadmaps.",
         "status": "Active Full Jurisdiction",
-        
         "keySectors": [
           "Wealth Management",
           "Payments & FinTech",
@@ -5304,13 +6625,24 @@
         "capital": "Tokyo",
         "overview": "Pioneering Asian digital asset and corporate governance market overseen by the Financial Services Agency (JFSA) and Personal Information Protection Commission (PPC).",
         "status": "Active Full Jurisdiction",
-        
         "keySectors": [
           "Banking & Insurance",
           "Robotics & AI",
           "Pharmaceuticals",
           "Web3 Gaming"
         ]
+      },
+      "united-arab-emirates": {
+        "name": "아랍에미리트 (ADGM / DIFC / VARA)",
+        "overview": "두바이 금융서비스국(DFSA/DIFC), 아부다비 FSRA(ADGM), UAE 중앙은행 규정 및 두바이 가상자산규제청(VARA) 전문 자문."
+      },
+      "pakistan": {
+        "name": "파키스탄 (Pakistan)",
+        "overview": "파키스탄 중앙은행(SBP) 규제 지침, 증권거래위원회(SECP) 컴플라이언스 프레임워크 및 국가 AML/CFT 법정 의무 준수."
+      },
+      "australia": {
+        "name": "호주 (Australia)",
+        "overview": "호주 금융정보분석센터(AUSTRAC) 보고 의무, 호주증권투자위원회(ASIC) 라이선스 기준 및 APRA 건전성 감독 기준 준수."
       }
     },
     "regulations": {
@@ -5329,11 +6661,8 @@
         "penalties": "Periodic penalty payments up to 1% of average daily global turnover"
       },
       "gdpr": {
-        "name": "General Data Protection Regulation (GDPR - Regulation 2016/679)",
-        "jurisdiction": "European Union / EEA",
-        "status": "Fully Enforced",
-        "shortDesc": "The benchmark global standard for data privacy, processing accountability, cross-border transfer limitations, and automated decision-making protections.",
-        "penalties": "Up to €20,000,000 or 4% of global annual turnover"
+        "name": "일반개인정보보호규정 (GDPR) 및 데이터 프라이버시",
+        "shortDesc": "개인정보의 처리 원칙, 국경 간 데이터 이전 제한 및 정보주체의 권리를 보장하는 글로벌 최고 수준의 데이터 보호법."
       },
       "mica": {
         "name": "Markets in Crypto-Assets Regulation (MiCA - Regulation 2023/1114)",
@@ -5341,6 +6670,26 @@
         "status": "Active / Full Transposition",
         "shortDesc": "Harmonized regulatory regime governing crypto-asset issuers, service providers (CASPs), asset-referenced tokens (ARTs), and electronic money tokens (EMTs).",
         "penalties": "Up to €12,500,000 or 12.5% of annual turnover"
+      },
+      "fatf-standards": {
+        "name": "FATF(국제자금세탁방지기구) 권고사항 및 국제 기준",
+        "shortDesc": "자금세탁, 테러자금조달 및 대량살상무기 확산 금융을 방지하기 위한 40개 국제 권고사항 및 전사 위험평가 기준."
+      },
+      "eu-6amld": {
+        "name": "제6차 EU 자금세탁방지지침 (EU 6AMLD)",
+        "shortDesc": "법인의 형사책임을 명문화하고 EU 역내 전제범죄를 통일하여 사법 공조를 대폭 강화한 유럽 핵심 지침."
+      },
+      "uk-mlr-2017": {
+        "name": "영국 자금세탁 규정 2017 (UK MLR 2017)",
+        "shortDesc": "전사 리스크 평가, 고객확인제도 및 자금세탁보고책임자(MLRO) 지정을 의무화한 영국의 법적 프레임워크."
+      },
+      "us-bsa-aml": {
+        "name": "미국 은행비밀보호법 및 자금세탁방지법 (BSA/AML)",
+        "shortDesc": "컴플라이언스 프로그램 수립, 고액현금거래보고(CTR) 및 의심거래보고(SAR)를 의무화한 미 연방 법률 기준."
+      },
+      "eu-mica": {
+        "name": "EU 가상자산시장법 (MiCA 규정)",
+        "shortDesc": "가상자산 서비스 제공자(CASP)의 인허가 및 스테이블코인 발행을 포괄적으로 규율하는 유럽연합 통일 법률."
       }
     },
     "experts": {
@@ -5373,8 +6722,8 @@
         "bio": "Wirtschaftsprüfer und internationaler Unternehmensanwalt mit zwei Jahrzehnten Erfahrung in der Beratung multinationaler Vorstände zu europäischen Nachhaltigkeitsberichtsstandards (ESRS)."
       }
     },
-    "caseStudies": [
-      {
+    "caseStudies": {
+      "0": {
         "id": "dora-banking",
         "category": "금융 서비스",
         "categoryTag": "금융 서비스 및 은행",
@@ -5386,7 +6735,7 @@
         "image": "/assets/images/case-banking.jpg",
         "iconType": "bank"
       },
-      {
+      "1": {
         "id": "ai-act-llm",
         "category": "기술 소프트웨어",
         "categoryTag": "기술 및 엔터프라이즈 소프트웨어",
@@ -5398,7 +6747,7 @@
         "image": "/assets/images/case-ai.jpg",
         "iconType": "ai"
       },
-      {
+      "2": {
         "id": "mica-vara-exchange",
         "category": "가상자산",
         "categoryTag": "가상자산 및 WEB3",
@@ -5409,8 +6758,20 @@
         "outcome": "두바이 VARA 전면 라이선스 취득 및 EU 27개 회원국 전역에 대한 MiCA CASP 패스포팅 권한 확보.",
         "image": "/assets/images/case-crypto.jpg",
         "iconType": "crypto"
+      },
+      "fintech-psp-licensing-readiness": {
+        "title": "대형 결제기관 규제 인허가 준비 및 전사 AML 체계 구축",
+        "challenge": "고객사는 90일의 촉박한 감독 일정 내에 포괄적인 AML/CFT 체계를 구축하고 정식 인허가 신청 문서를 완성해야 했습니다.",
+        "solution": "이글 컴플라이가 기관 내부통제 규정을 제정하고 실시간 거래 감시 모델을 최적화하며 거버넌스 체계를 구조화했습니다.",
+        "outcome": "감독 당국의 최초 실사 검사에서 지적사항 제로(무결함)를 기록하며 규제 기관의 정식 인허가를 성공적으로 획득했습니다."
+      },
+      "remittance-msb-independent-aml-review": {
+        "title": "국제 송금 사업자를 위한 포괄적 독립 AML/CFT 점검(외부 감사)",
+        "challenge": "거래은행의 디리스킹(계좌 해지) 압박에 대응하기 위해 공신력 있는 독립 자금세탁 및 제재 점검 보고서가 시급했습니다.",
+        "solution": "엄격한 거래 표본 검증 및 국가별 송금 위험 평가를 수행하고 실행 가능한 우선순위 개선 로드맵을 제공했습니다.",
+        "outcome": "모든 환거래은행 계좌를 안전하게 유지 및 방어하고 2개의 신규 해외 송금 경로로 비즈니스를 성공적으로 확장했습니다."
       }
-    ],
+    },
     "insights": {
       "eu-ai-act-high-risk-guidance": {
         "title": "Navigation im EU AI Act: Technischer Leitfaden für Vorprüfungen von Hochrisiko-KI-Modellen",
@@ -5563,29 +6924,29 @@
       }
     ],
     "detailCommon": {
-      "overview": "Overview & Executive Scope",
-      "challenges": "Primary Regulatory Challenges",
-      "deliverables": "Core Institutional Deliverables",
-      "scope": "Detailed Practice Scope",
-      "methodology": "Implementation Methodology",
-      "leadExpert": "Lead Practice Partner",
-      "relatedRegulations": "Primary Statutory Frameworks",
-      "relatedIndustries": "Applicable Industry Verticals",
-      "bookConsultation": "Book Partner Consultation",
+      "overview": "개요 및 핵심 실행 범위",
+      "challenges": "주요 규제 및 컴플라이언스 당면과제",
+      "deliverables": "핵심 기관 산출물",
+      "scope": "상세 자문 및 업무 범위",
+      "methodology": "구축 및 실행 방법론",
+      "leadExpert": "수석 실무 파트너",
+      "relatedRegulations": "관련 주요 법률 및 규제 프레임워크",
+      "relatedIndustries": "적용 대상 산업군",
+      "bookConsultation": "파트너 전문가 상담 예약",
       "requestQuote": "Request SOW Estimate",
-      "inspectDossier": "Inspect Regulatory Dossier",
-      "regulators": "Competent Supervisory Authorities",
-      "residentDesk": "Jurisdiction Practice Coverage",
-      "keySectors": "Priority Supervised Sectors",
-      "status": "Supervisory Status",
-      "capital": "Regulatory Capital / Center",
-      "penalties": "Maximum Statutory Penalties",
-      "jurisdiction": "Supervised Jurisdiction",
-      "timeline": "Statutory Implementation Timeline",
-      "articles": "Regulatory Articles & Editorials",
-      "resources": "Compliance Toolkits & Dossiers",
-      "applyRole": "Apply for This Practice Role",
-      "caseStudy": "Featured Enterprise Audit Record"
+      "inspectDossier": "규제 감사 문서(Dossier) 검토",
+      "regulators": "관할 금융 및 규제 감독 기관",
+      "residentDesk": "관할권 실무 지원 체계",
+      "keySectors": "우선 감독 대상 산업 부문",
+      "status": "규제 및 감독 상태",
+      "capital": "규제 자본금 요건 / 금융 허브",
+      "penalties": "법정 최고 과징금 및 처벌 규정",
+      "jurisdiction": "감독 대상 관할권",
+      "timeline": "법정 시행 및 준수 일정",
+      "articles": "규제 분석 기사 및 인사이트",
+      "resources": "컴플라이언스 툴킷 및 자료집",
+      "applyRole": "전문가 채용 지원하기",
+      "caseStudy": "주요 기업 규제 감사 실적"
     },
     "modals": {
       "consultationTitle": "Book Partner Scoping Consultation",

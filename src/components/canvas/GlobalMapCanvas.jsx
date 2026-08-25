@@ -133,9 +133,9 @@ export default function GlobalMapCanvas({ onSelectCountry }) {
           <div className="absolute bottom-3 left-4 right-4 z-20 flex items-center justify-between text-xs font-mono text-cyan-200/90 bg-[#091F5C]/75 backdrop-blur-md px-3.5 py-2 rounded-xl border border-white/10">
             <div className="flex items-center gap-2">
               <Crosshair className="w-3.5 h-3.5 text-cyan-400 animate-spin" style={{ animationDuration: '6s' }} />
-              <span>Target Jurisdiction: <strong>{activeCountry?.name}</strong></span>
+              <span>{radar?.targetJurisdiction || 'Target Jurisdiction'}: <strong>{activeCountry?.name}</strong></span>
             </div>
-            <span className="hidden sm:inline-block text-emerald-400 font-bold">● Radar Locked</span>
+            <span className="hidden sm:inline-block text-emerald-400 font-bold">● {radar?.radarLocked || 'Radar Locked'}</span>
           </div>
         </div>
 

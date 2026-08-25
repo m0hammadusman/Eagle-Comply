@@ -416,46 +416,9 @@
     "chatbotPlaceholder": "Pergunte sobre a Lei de IA da UE, DORA, MiCA, GDPR ou jurisdições específicas..."
   },
   "experience": {
-    "tag": "EXPERIÊNCIA DE CONSULTORIA",
-    "title": "Da complexidade regulatória à ação prática",
-    "subtitle": "Explore a arquitetura dos serviços, o processo de trabalho e as perguntas comuns de compliance.",
-    "servicesTag": "ARQUITETURA DE SERVIÇOS",
-    "servicesTitle": "Serviços integrados de compliance",
-    "servicesSubtitle": "Selecione uma área para consultar escopo, entregáveis típicos e valor para o negócio.",
-    "selected": "ÁREA SELECIONADA",
-    "explore": "Explorar área",
-    "faqTag": "GUIA DE COMPLIANCE",
-    "faqTitle": "Perguntas frequentes de compliance",
-    "ctaTag": "PRÓXIMO PASSO",
-    "ctaTitle": "Precisa de orientação sobre um problema de compliance?",
-    "ctaDesc": "Partilhe a sua situação e discuta opções práticas com a EagleComply.",
-    "ctaBtn": "Agendar consulta",
-    "steps": [
-      {
-        "title": "Avaliar",
-        "desc": "Mapear obrigações, riscos, modelo de negócio e jurisdições."
-      },
-      {
-        "title": "Projetar",
-        "desc": "Criar políticas, controles, governança e documentação proporcionais."
-      },
-      {
-        "title": "Implementar",
-        "desc": "Transformar requisitos em processos operacionais e evidências."
-      },
-      {
-        "title": "Assegurar",
-        "desc": "Testar controles, identificar lacunas e priorizar remediações."
-      }
-    ],
-    "faq1q": "O que normalmente inclui um programa AML/CFT?",
-    "faq1a": "Pode incluir governança, avaliação de riscos, KYC/CDD/EDD, sanções e PEP, monitoramento de transações, escalonamento, treinamento, relatórios e testes independentes.",
-    "faq2q": "A EagleComply pode ajudar na preparação para licenciamento?",
-    "faq2a": "Sim. Pode incluir gap assessment, governança, políticas, controles, pacotes de evidências e apoio à preparação. A autorização final cabe ao regulador competente.",
-    "faq3q": "Como uma empresa deve tratar um novo requisito regulatório?",
-    "faq3a": "Defina o escopo, avalie lacunas nos controles atuais, priorize riscos relevantes, implemente ações documentadas e mantenha evidências.",
-    "faq4q": "O site oferece aconselhamento jurídico específico por jurisdição?",
-    "faq4a": "O conteúdo é geral. A assessoria jurídica ou regulatória específica deve ocorrer sob um mandato adequado."
+    "tag": "EXPERIÊNCIA INSTITUCIONAL",
+    "title": "Resultados Comprovados e Mensuráveis",
+    "subtitle": "Amplo histórico de sucesso em autorizações regulatórias, revisões independentes e mitigação de riscos."
   },
   "chatbot": {
     "greet": "Olá! Sou o assistente EagleComply. Pergunte sobre AML/CFT, licenciamento, riscos, governança, jurídico, setores ou jurisdições.",
@@ -720,5 +683,35 @@
       "Três linhas de defesa",
       "Profundidade transfronteiriça"
     ]
+  },
+  "targetClients": {
+    "tag": "SETORES-ALVO",
+    "title": "Entidades Sujeitas a Supervisão Financeira",
+    "subtitle": "Arquiteturas de conformidade e consultoria regulatória sob medida para ecossistemas altamente regulados e transfronteiriços.",
+    "sectors": [
+      "Bancos e Instituições de Crédito",
+      "Empresas FinTech e Desafiadores Digitais",
+      "Prestadores de Serviços de Pagamento (PSP)",
+      "Empresas de Remessas e Money Service Businesses (MSB)",
+      "Empresas de Criptoativos e Ativos Digitais (CASP)",
+      "Instituições Financeiras e Gestoras de Recursos",
+      "Startups em Setores Regulados"
+    ]
+  },
+  "whyUs": {
+    "tag": "POR QUE EAGLE COMPLY",
+    "title": "Rigor Regulatório Pronto para Auditorias",
+    "subtitle": "Aliamos visão institucional de supervisão e rigor técnico para blindar e acelerar a maturidade de conformidade da sua empresa.",
+    "points": [
+      "Dossiês estruturados para inspeção formal de autoridades",
+      "Atuação multijurisdicional (Reino Unido, UE, EAU, EUA)",
+      "Consultores seniores e especialistas certificados em AML/CFT",
+      "Acordos rigorosos de confidencialidade mútua (NDA)"
+    ]
+  },
+  "leadership": {
+    "tag": "LIDERANÇA & SÓCIOS",
+    "title": "Especialistas em Direito Regulatório e Compliance",
+    "subtitle": "Liderado por advogados seniores e especialistas em combate a crimes financeiros e governança corporativa."
   }
 }
