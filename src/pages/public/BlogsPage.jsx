@@ -5,6 +5,7 @@ import { useLanguage } from '../../context/LanguageContext';
 
 export default function BlogsPage({ onNavigate }) {
   const { t } = useLanguage();
+  const bp = t.blogsPage || {};
   const { posts, loading, isContentfulConfigured } = useBlogPosts();
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -40,18 +41,18 @@ export default function BlogsPage({ onNavigate }) {
   }, [filteredPosts, featuredPost]);
 
   return (
-    <div className="w-full py-12 sm:py-16 lg:py-20 space-y-12 animate-fade-in">
+    <div className="w-full py-12 sm:py-16 lg:py-20 space-y-12 animate-fade-in text-left rtl:text-right">
       {/* Header Banner */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#334DAF]/10 dark:bg-[#7096D1]/15 text-[#334DAF] dark:text-[#7096D1] text-xs font-mono font-bold tracking-wider uppercase border border-[#334DAF]/20 dark:border-[#7096D1]/30">
           <BookOpen className="w-3.5 h-3.5" />
-          <span>EAGLECOMPLY EDITORIAL & BLOGS</span>
+          <span>{bp.tag || 'EAGLECOMPLY EDITORIAL & BLOGS'}</span>
         </div>
         <h1 className="font-sans tracking-tight text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white">
-          Compliance Insights & Practice Blogs
+          {bp.title || 'Compliance Insights & Practice Blogs'}
         </h1>
         <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
-          In-depth commentary, technical blueprints, and regulatory analysis from resident directors and advisors.
+          {bp.subtitle || 'In-depth commentary, technical blueprints, and regulatory analysis from resident directors and advisors.'}
         </p>
 
         {/* Contentful Connection Pill */}
@@ -76,20 +77,20 @@ export default function BlogsPage({ onNavigate }) {
                     : 'bg-surface-base text-slate-600 dark:text-slate-300 hover:text-[#334DAF] border border-surface-border'
                 }`}
               >
-                {cat}
+                {cat === 'All' ? (bp.allCategories || 'All') : cat}
               </button>
             ))}
           </div>
 
           {/* Search Box */}
           <div className="relative w-full md:w-72">
-            <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
+            <Search className="w-4 h-4 absolute left-3 rtl:left-auto rtl:right-3 top-1/2 -translate-y-1/2 text-slate-400" />
             <input
               type="text"
               value={searchQuery}
               onChange={e => setSearchQuery(e.target.value)}
-              placeholder="Search blogs, topics, authors…"
-              className="w-full pl-9 pr-4 py-1.5 rounded-xl bg-surface-base border border-surface-border text-xs text-slate-900 dark:text-white outline-none focus:border-[#334DAF]"
+              placeholder={bp.searchPlaceholder || "Search blogs, topics, authors…"}
+              className="w-full pl-9 pr-4 rtl:pl-4 rtl:pr-9 py-1.5 rounded-xl bg-surface-base border border-surface-border text-xs text-slate-900 dark:text-white outline-none focus:border-[#334DAF]"
             />
           </div>
         </div>
@@ -111,7 +112,7 @@ export default function BlogsPage({ onNavigate }) {
           {featuredPost && (
             <div 
               onClick={() => onNavigate('article-detail', { id: featuredPost.slug || featuredPost.id })}
-              className="group relative rounded-3xl bg-surface-raised border border-surface-border shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden cursor-pointer grid grid-cols-1 lg:grid-cols-12 gap-0"
+              className="group relative rounded-3xl bg-surface-raised border border-surface-border shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden cursor-pointer grid grid-cols-1 lg:grid-cols-12 gap-0 text-left rtl:text-right"
             >
               <div className="lg:col-span-5 h-52 sm:h-64 lg:h-full min-h-[220px] max-h-[300px] lg:max-h-none relative overflow-hidden bg-slate-950">
                 <img
@@ -119,9 +120,9 @@ export default function BlogsPage({ onNavigate }) {
                   alt={featuredPost.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100"
                 />
-                <div className="absolute top-3.5 left-3.5">
+                <div className="absolute top-3.5 left-3.5 rtl:left-auto rtl:right-3.5">
                   <span className="px-2.5 py-1 rounded-lg text-[11px] font-mono font-bold uppercase tracking-wider bg-amber-500 text-slate-950 shadow-sm">
-                    Featured Analysis
+                    {bp.featuredTag || 'Featured Analysis'}
                   </span>
                 </div>
               </div>
@@ -166,7 +167,7 @@ export default function BlogsPage({ onNavigate }) {
                   </div>
 
                   <span className="text-xs font-bold text-[#334DAF] dark:text-[#7096D1] flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-                    Read Article <ArrowRight className="w-3.5 h-3.5" />
+                    {bp.readArticle || 'Read Article'} <ArrowRight className="w-3.5 h-3.5 rtl:rotate-180" />
                   </span>
                 </div>
               </div>
@@ -180,7 +181,7 @@ export default function BlogsPage({ onNavigate }) {
                 <div
                   key={post.id}
                   onClick={() => onNavigate('article-detail', { id: post.slug || post.id })}
-                  className="group rounded-3xl bg-surface-raised border border-surface-border shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer flex flex-col justify-between h-full"
+                  className="group rounded-3xl bg-surface-raised border border-surface-border shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer flex flex-col justify-between h-full text-left rtl:text-right"
                 >
                   <div className="relative h-40 sm:h-44 w-full overflow-hidden bg-slate-950 shrink-0">
                     <img
@@ -188,7 +189,7 @@ export default function BlogsPage({ onNavigate }) {
                       alt={post.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100"
                     />
-                    <div className="absolute top-3 left-3">
+                    <div className="absolute top-3 left-3 rtl:left-auto rtl:right-3">
                       <span className="px-2.5 py-0.5 rounded-lg text-[10px] font-mono font-bold uppercase bg-black/60 backdrop-blur-sm text-white border border-white/20">
                         {post.category}
                       </span>
@@ -231,7 +232,7 @@ export default function BlogsPage({ onNavigate }) {
                       </div>
 
                       <span className="text-xs font-bold text-[#334DAF] dark:text-[#7096D1] flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-                        Read <ArrowRight className="w-3 h-3" />
+                        {bp.read || 'Read'} <ArrowRight className="w-3.5 h-3.5 rtl:rotate-180" />
                       </span>
                     </div>
                   </div>
@@ -244,15 +245,15 @@ export default function BlogsPage({ onNavigate }) {
           {filteredPosts.length === 0 && (
             <div className="p-12 rounded-3xl glass-panel border border-surface-border text-center space-y-3">
               <Search className="w-8 h-8 text-slate-400 mx-auto" />
-              <h3 className="text-base font-bold text-slate-900 dark:text-white">No blog posts found</h3>
+              <h3 className="text-base font-bold text-slate-900 dark:text-white">{bp.noPosts || 'No blog posts found'}</h3>
               <p className="text-xs text-slate-500 max-w-sm mx-auto">
-                No articles matched your filter "{searchQuery || selectedCategory}". Try clearing your search query.
+                {bp.noPostsDesc || 'No articles matched your filter. Try clearing your search query.'}
               </p>
               <button
                 onClick={() => { setSearchQuery(''); setSelectedCategory('All'); }}
                 className="px-4 py-2 rounded-xl bg-[#334DAF] text-white text-xs font-bold hover:bg-[#253982] transition-colors cursor-pointer"
               >
-                Reset Filters
+                {bp.resetFilters || 'Reset Filters'}
               </button>
             </div>
           )}

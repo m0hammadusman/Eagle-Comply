@@ -63,18 +63,28 @@
     "quoteBtn": "即时生成工作范围SOW估算"
   },
   "solutionsPage": {
-    "tag": "全方位监管鉴证",
-    "title": "机构级业务实践领域",
-    "subtitle": "从前沿AI风险档案到DORA韧性压力测试及MiCA牌照申请，Eagle Compliance交付经得起司法考验的审计卷宗。",
-    "all": "全部6大业务",
-    "inspect": "查看业务详情"
+    "tag": "鹰合规业务板块",
+    "title": "全流程监管合规与专业咨询服务",
+    "subtitle": "从全套反洗钱（AML/CFT）体系构建与牌照申请筹备，到独立穿行审计与法律事务咨询，全方位覆盖。",
+    "coreDeliverables": "核心交付成果：",
+    "explorePractice": "探索该业务板块",
+    "tailoredTag": "定制化专项服务",
+    "tailoredTitle": "需要跨司法管辖区合规咨询或专项监管支持？",
+    "tailoredDesc": "我们的资深合规总监与法律顾问为您量身定制反洗钱、牌照准入与全面风险管理架构。",
+    "bookConsultation": "预约合伙人咨询",
+    "compareTitle": "服务横向对比",
+    "compareSubtitle": "各业务板块实体合规交付成果一览",
+    "thPractice": "业务板块",
+    "thStandards": "对标监管标准",
+    "thDeliverables": "核心交付成果",
+    "thTimeline": "标准交付周期"
   },
   "industriesPage": {
-    "tag": "行业监管纵深",
-    "title": "重点行业监管垂直领域",
-    "subtitle": "专为面临严苛跨国监管审查的高影响产业量身定制的合规架构。",
-    "desk": "咨询台",
-    "explore": "探索行业"
+    "tag": "受监管行业垂直领域",
+    "title": "量身定制的行业合规解决方案",
+    "subtitle": "从传统银行机构合规架构到敏捷金融科技牌照及数字资产合规，探索各行业专项合规底座。",
+    "challengesTitle": "核心合规挑战：",
+    "exploreSector": "查看行业合规框架"
   },
   "globalPage": {
     "tag": "跨国监管监督名录",
@@ -368,14 +378,24 @@
     }
   },
   "legalPage": {
-    "tag": "法定治理",
-    "title": "法律条款、隐私政策与监管披露",
-    "sec1Title": "1. 监管地位与咨询范围",
-    "sec1Text": "Eagle Compliance 作为一家独立的监管鉴证与技术风险咨询机构运营。所有卷宗与审计准备报告均严格遵循 ISO/IEC 42001、ISO/IEC 27001 等国际标准及相关法定指令编制。",
-    "sec2Title": "2. 保密机制与数据隔离",
-    "sec2Text": "客户技术文档、源码审查及第三方供应商登记册均隔离保存在遵循静态 AES-256 和传输中 TLS 1.3 的高强度加密多租户仓库中。",
-    "sec3Title": "3. 免责声明",
-    "sec3Text": "本站发布的信息仅供战略情报参考，在未签署正式业务委托协议前不构成正式法律意见。"
+    "tag": "机构治理与法定框架",
+    "title": "合规政策、治理架构与免责声明",
+    "subtitle": "鹰合规严守机构级数据隐私、网络韧性与公司治理政策，全面对标英国GDPR、欧盟GDPR及国际标准。",
+    "disclaimersTitle": "法定免责声明与执业范围",
+    "disclaimer1Title": "不提供金融推广服务",
+    "disclaimer1Desc": "我们不在英国开展任何金融推广活动。本网站内容均不构成从事投资活动的要约或引诱。",
+    "disclaimer2Title": "不提供会计与税务咨询",
+    "disclaimer2Desc": "我们不提供会计记账或税务申报服务。鹰合规专注于监管合规、反洗钱风控与法律顾问服务。",
+    "disclaimer3Title": "专业服务须知：",
+    "disclaimer3Desc": "本网站材料仅供一般参考与教育用途，在未签署正式双边委托协议前不构成正式法律意见。",
+    "allPolicies": "全部政策条款",
+    "activePolicy": "当前查看政策",
+    "standardBaseline": "对标基准：ISO 27001 / GDPR",
+    "requestCopy": "索取正式文本",
+    "ndaTag": "双向保密与机构治理",
+    "ndaTitle": "在业务开展前签署双向保密协议（NDA）",
+    "ndaDesc": "所有业务沟通与合规摸底均受严格的双向保密协议保护。可索取我们的标准保密协议或提供贵司版本。",
+    "ndaBtn": "索取标准双向保密协议"
   },
   "footer": {
     "desc": "Eagle Compliance 是一家独立的全球监管咨询机构。我们编制经核实的审计档案、CE标记符合性文件并协助获取跨国合规准入。",
@@ -788,5 +808,95 @@
     "tag": "领导团队与合伙人",
     "title": "国际监管合规与金融法务资深专家",
     "subtitle": "由在反洗钱、牌照申请、风险治理领域拥有深厚声誉的资深法务与合规专家共同领导。"
+  },
+  "teamPage": {
+    "tag": "我们的合规领导团队",
+    "title": "资深业务总监与监管法律顾问",
+    "subtitle": "主导跨国反洗钱（AML/CFT）框架搭建、法定牌照申请、公司治理结构及审慎监管审计。",
+    "dossierTag": "高管档案",
+    "dossierTitle": "合规顾问专业档案",
+    "dossierSubtitle": "点击任一总监查看其履历、执业资质与专业学术出版物。",
+    "directorLabel": "业务总监",
+    "disciplinesLabel": "核心专长领域",
+    "viewProfile": "查看档案",
+    "bookSession": "预约会议",
+    "ctaTag": "机构级顾问服务",
+    "ctaTitle": "聘请资深合规总监担任董事会顾问",
+    "ctaDesc": "委托资深合规专家开展独立反洗钱审计、监管牌照申请卷宗编制及持续合规监督。",
+    "ctaBtn": "预约首次咨询"
+  },
+  "teamDetail": {
+    "backBtn": "返回所有业务总监",
+    "bookConsultation": "预约咨询会议",
+    "viewLinkedIn": "查看领英主页",
+    "jurisdictionalCoverage": "管辖区覆盖范围",
+    "workingLanguages": "工作语言",
+    "aboutTitle": "高管背景与简介",
+    "specialismsTitle": "核心业务领域与专业特长",
+    "ctaTag": "直接咨询与专业指导",
+    "ctaDesc": "聘请资深业务总监为您开展合规差距分析、牌照筹备与独立审计鉴证。",
+    "ctaBtn": "预约业务沟通"
+  },
+  "faqPage": {
+    "tag": "合规知识库",
+    "title": "常见问题解答（FAQ）",
+    "subtitle": "关于监管准入、反洗钱合规、牌照申请、业务连续性与机构咨询的详尽解答。",
+    "searchPlaceholder": "按关键词、监管机构或主题搜索...",
+    "allCategories": "全部主题",
+    "noResults": "未找到匹配的问题",
+    "noResultsDesc": "请尝试其他关键词或查看所有分类。",
+    "inquiryTag": "直接问询与支持",
+    "inquiryTitle": "如您有其他疑问，请随时向我们提交咨询。",
+    "inquiryDesc": "业务总监与法律顾问已准备就绪，随时为您评估特定监管难题与牌照申请需求。",
+    "sendQuery": "提交问询并预约会议",
+    "sendEmail": "发送电子邮件",
+    "contactPage": "联系我们页面"
+  },
+  "blogsPage": {
+    "tag": "鹰合规专栏与博客",
+    "title": "合规前瞻与行业洞察",
+    "subtitle": "由常驻合规总监与法律顾问撰写的深度评论、技术蓝图与监管动态解读。",
+    "featured": "精选深度分析",
+    "readArticle": "阅读全文",
+    "read": "阅读",
+    "noPosts": "暂无相关文章",
+    "resetFilters": "重置筛选"
+  },
+  "newsPage": {
+    "tag": "监管动态新闻中心",
+    "title": "监管新闻与执法动态追踪",
+    "subtitle": "实时追踪法定截止日期、监管执法行动与国际金融犯罪情报。",
+    "dispatch": "监管简报快讯",
+    "readDispatch": "查看简报",
+    "noUpdates": "暂无最新监管通报",
+    "resetFilters": "重置筛选"
+  },
+  "knowledgeCenter": {
+    "tag": "鹰合规专业资源中心",
+    "title": "合规实操工具包与指南",
+    "subtitle": "下载由资深合规专家编制的合规自查清单、制度模板与监管就绪度指南。",
+    "downloadResource": "下载资源",
+    "requestAdvisory": "申请顾问指导",
+    "modalTitle": "下载专业资料",
+    "modalDesc": "请输入您的企业邮箱以获取直接下载链接及后续监管更新通知。",
+    "privacyNote": "我们尊重您的数据隐私。拒绝垃圾邮件，可随时退订。",
+    "instantDownload": "立即下载"
+  },
+  "contactPageSide": {
+    "confidentialNote": "受双向保密协议与反垃圾邮件安全验证保护。",
+    "sending": "正在发送问询...",
+    "protocolTag": "业务合作流程",
+    "protocolTitle": "我们的业务对接流程",
+    "step1Title": "初步摸底沟通：",
+    "step1Desc": "保密探讨，评估您机构的特定监管范围与风险敞口。",
+    "step2Title": "签署双向NDA：",
+    "step2Desc": "在审阅详细技术文档与业务数据前提供充分保密防护。",
+    "step3Title": "定制工作说明书（SOW）：",
+    "step3Desc": "明确清晰的服务范围、里程碑时间表与具体交付成果。",
+    "reachDirect": "您也可以通过以下渠道直接联系我们的合规团队：",
+    "whatsappUK": "WhatsApp（英国）",
+    "whatsappIT": "WhatsApp（意大利）",
+    "linkedin": "领英：EagleComply",
+    "locationsTitle": "主要办公地点与业务枢纽："
   }
 }

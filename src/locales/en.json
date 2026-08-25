@@ -59,18 +59,66 @@
     "quoteBtn": "Request a Proposal"
   },
   "solutionsPage": {
-    "tag": "Full-Scope Regulatory Assurance",
-    "title": "Institutional Practice Areas",
-    "subtitle": "From frontier artificial intelligence risk files to DORA resilience testing and MiCA licensing, Eagle Compliance delivers verified legal-grade audit dossiers.",
-    "all": "All 6 Practices",
-    "inspect": "Inspect Practice"
+    "tag": "EAGLECOMPLY PRACTICE AREAS",
+    "title": "End-to-End Compliance & Advisory Services",
+    "subtitle": "From full AML/CFT program builds and licensing readiness dossiers to independent reviews and legal advisory, explore our structured practice areas.",
+    "coreDeliverables": "Core Deliverables:",
+    "explorePractice": "Explore Practice Area",
+    "tailoredTag": "TAILORED PRACTICE ENGAGEMENT",
+    "tailoredTitle": "Require a Multi-Jurisdiction Compliance Consultation or Practice Advisory?",
+    "tailoredDesc": "Our Senior Directors and Compliance Counsel structure customized compliance architectures across AML, licensing, risk governance, and regulatory legal defense.",
+    "bookConsultation": "Book Partner Consultation",
+    "compareTitle": "Service Comparison",
+    "compareSubtitle": "Institutional Deliverables by Practice Area",
+    "thPractice": "Practice Area",
+    "thStandards": "Target Regulatory Standards",
+    "thDeliverables": "Key Deliverables",
+    "thTimeline": "Typical Lead Time",
+    "rows": [
+      {
+        "name": "AML & Financial Crime",
+        "standards": "FATF, EU 6AMLD, UK MLR 2017, US BSA",
+        "deliverables": "Institutional AML Manuals, EWRA Matrices, CDD/EDD Workflows, SAR Protocols",
+        "timeline": "2 – 4 Weeks"
+      },
+      {
+        "name": "Regulatory Licensing",
+        "standards": "FCA, BaFin, VARA, DFSA, SEC, MAS",
+        "deliverables": "Regulatory Business Plans, Compliance Monitoring Programmes, Authorisation Dossiers",
+        "timeline": "6 – 12 Weeks"
+      },
+      {
+        "name": "Enterprise Risk & Governance",
+        "standards": "Three Lines Model, ISO 31000, COSO ERM",
+        "deliverables": "Enterprise Risk Frameworks, Board Charters, Risk Appetite Statements (RAS)",
+        "timeline": "3 – 6 Weeks"
+      },
+      {
+        "name": "Legal & Corporate Advisory",
+        "standards": "Cross-Border Company Law, GDPR / DPA, Contract Law",
+        "deliverables": "Statutory Legal Opinions, Cross-Border Commercial Contracts, DPA Schedules",
+        "timeline": "1 – 3 Weeks"
+      },
+      {
+        "name": "Compliance Training",
+        "standards": "Mandatory Regulatory Training Mandates (MLR / FCA)",
+        "deliverables": "Tailored Training Modules, Comprehension Assessments, Compliance Certificates",
+        "timeline": "1 – 2 Weeks"
+      },
+      {
+        "name": "Independent Reviews & Audits",
+        "standards": "Annual Supervisory Compliance Audit Requirements",
+        "deliverables": "Independent Review Reports, Remediation Roadmaps, Board Presentation",
+        "timeline": "2 – 4 Weeks"
+      }
+    ]
   },
   "industriesPage": {
-    "tag": "Sector-Specific Regulatory Depth",
-    "title": "Industry Regulatory Verticals",
-    "subtitle": "Tailored supervisory compliance architectures engineered for high-consequence industries subject to strict multi-jurisdictional scrutiny.",
-    "desk": "Advisory Practice",
-    "explore": "Explore Vertical"
+    "tag": "REGULATED INDUSTRY VERTICALS",
+    "title": "Tailored Compliance Across Industry Sectors",
+    "subtitle": "From institutional banking frameworks to agile fintech licensing and digital asset compliance, explore our sector-specific regulatory architectures.",
+    "challengesTitle": "Key Compliance Challenges:",
+    "exploreSector": "Explore Sector Framework"
   },
   "globalPage": {
     "tag": "Cross-Border Supervisory Directory",
@@ -289,14 +337,24 @@
     }
   },
   "legalPage": {
-    "tag": "Statutory Governance",
-    "title": "Legal Terms, Privacy Notice & Regulatory Disclosures",
-    "sec1Title": "1. Regulatory Status & Advisory Scope",
-    "sec1Text": "Eagle Compliance operates as an independent regulatory assurance and technology risk advisory firm. All regulatory dossiers, model cards, and audit readiness reports are prepared in strict adherence to international standards including ISO/IEC 42001, ISO/IEC 27001, and applicable statutory directives.",
-    "sec2Title": "2. Confidentiality & Data Isolation",
-    "sec2Text": "Client technical files, source code reviews, and third-party vendor registers are isolated in encrypted tenant repositories adhering to AES-256 encryption at rest and TLS 1.3 in transit.",
-    "sec3Title": "3. Disclaimers",
-    "sec3Text": "Information published within the Eagle Compliance Knowledge Center, regulatory radar, and whitepapers is provided for strategic intelligence purposes and does not constitute formal legal counsel outside executed engagement agreements."
+    "tag": "INSTITUTIONAL GOVERNANCE & STATUTORY FRAMEWORK",
+    "title": "Policies, Governance Architecture & Disclaimers",
+    "subtitle": "EagleComply maintains institutional-grade data privacy, cyber resilience, and governance policies aligned with UK GDPR, EU GDPR, and global regulatory standards.",
+    "disclaimersTitle": "Statutory Disclaimers & Professional Mandate",
+    "disclaimer1Title": "No Financial Promotions",
+    "disclaimer1Desc": "We do not provide financial promotions in the UK. Nothing on eaglecomply.com or in our advisory services constitutes an invitation or inducement to engage in investment activity.",
+    "disclaimer2Title": "No Accountancy & Tax Advisory",
+    "disclaimer2Desc": "We do not provide accountancy and tax services. EagleComply focuses exclusively on regulatory compliance, AML/CFT risk management, licensing readiness, and legal compliance advisory.",
+    "disclaimer3Title": "Professional Services Notice:",
+    "disclaimer3Desc": "The materials, checklists, guides, and commentary on this website are provided for general informational and educational purposes only and do not constitute formal legal or statutory financial advice without an executed bilateral engagement agreement.",
+    "allPolicies": "All Policies",
+    "activePolicy": "Active Policy",
+    "standardBaseline": "Standard Baseline: ISO 27001 / GDPR",
+    "requestCopy": "Request Copy",
+    "ndaTag": "BILATERAL CONFIDENTIALITY & GOVERNANCE",
+    "ndaTitle": "Execute a Mutual Bilateral NDA Before Engagement",
+    "ndaDesc": "All prospective client consultations and compliance scoping sessions are protected by standard mutual confidentiality protocols. Request our standard bilateral NDA or provide your institutional format.",
+    "ndaBtn": "Request Standard Mutual NDA"
   },
   "footer": {
     "desc": "Eagle Compliance is an independent global regulatory advisory practice. We engineer verified audit dossiers, CE-marking conformity files, and cross-border authorizations.",
@@ -783,5 +841,95 @@
       "3 Lines of Defense",
       "Cross-Border Depth"
     ]
+  },
+  "teamPage": {
+    "tag": "OUR COMPLIANCE LEADERSHIP",
+    "title": "Senior Practice Directors & Regulatory Counsel",
+    "subtitle": "Directing multi-jurisdictional AML/CFT frameworks, regulatory licensing, statutory governance, corporate legal opinions, and prudential financial assurance.",
+    "dossierTag": "Executive Dossiers",
+    "dossierTitle": "Comprehensive Practice Profiles",
+    "dossierSubtitle": "Select any director to view their detailed work experience, certifications, and research publications.",
+    "directorLabel": "DIRECTOR",
+    "disciplinesLabel": "Primary Disciplines",
+    "viewProfile": "View Profile",
+    "bookSession": "Book Session",
+    "ctaTag": "Institutional Advisory",
+    "ctaTitle": "Retain Senior Compliance Directors for Your Board",
+    "ctaDesc": "Engage our senior practitioners for independent AML/CFT audits, regulatory authorization dossiers, and ongoing compliance oversight.",
+    "ctaBtn": "Schedule Initial Consultation"
+  },
+  "teamDetail": {
+    "backBtn": "Back to All Practice Directors",
+    "bookConsultation": "Book Consultation Session",
+    "viewLinkedIn": "View LinkedIn Profile",
+    "jurisdictionalCoverage": "Jurisdictional Coverage",
+    "workingLanguages": "Working Languages",
+    "aboutTitle": "EXECUTIVE PROFILE & ABOUT",
+    "specialismsTitle": "Core Practice Areas & Specialisms",
+    "ctaTag": "DIRECT ADVISORY & CONSULTATION",
+    "ctaDesc": "Engage our senior practice directors for custom statutory gap analyses, licensing dossiers, and independent audit assurance.",
+    "ctaBtn": "Schedule Advisory Discussion"
+  },
+  "faqPage": {
+    "tag": "COMPLIANCE KNOWLEDGEBASE",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Comprehensive answers to common regulatory, AML/CFT, statutory licensing, operational resilience, and institutional advisory questions.",
+    "searchPlaceholder": "Search FAQ by keyword, regulator, or topic...",
+    "allCategories": "All Topics",
+    "noResults": "No matching questions found",
+    "noResultsDesc": "Try searching for a different keyword or view all categories.",
+    "inquiryTag": "DIRECT INQUIRY & SUPPORT",
+    "inquiryTitle": "If you have any other questions, send us your query.",
+    "inquiryDesc": "Our practice directors and regulatory counsel are ready to review your firm's specific regulatory challenges, audit requirements, or license applications.",
+    "sendQuery": "Send Query & Book Session",
+    "sendEmail": "Send Us an Email",
+    "contactPage": "Contact Page"
+  },
+  "blogsPage": {
+    "tag": "EAGLECOMPLY EDITORIAL & BLOGS",
+    "title": "Compliance Insights & Practice Blogs",
+    "subtitle": "In-depth commentary, technical blueprints, and regulatory analysis from resident directors and advisors.",
+    "featured": "Featured Analysis",
+    "readArticle": "Read Article",
+    "read": "Read",
+    "noPosts": "No blog posts found",
+    "resetFilters": "Reset Filters"
+  },
+  "newsPage": {
+    "tag": "EAGLECOMPLY REGULATORY NEWSROOM",
+    "title": "Regulatory News & Supervisory Updates",
+    "subtitle": "Real-time tracking of statutory deadlines, regulatory enforcement actions, and international financial crime intelligence.",
+    "dispatch": "SUPERVISORY DISPATCH",
+    "readDispatch": "Read Dispatch",
+    "noUpdates": "No regulatory updates found",
+    "resetFilters": "Reset Filters"
+  },
+  "knowledgeCenter": {
+    "tag": "EAGLECOMPLY RESOURCE CENTRE",
+    "title": "Practical Compliance Toolkits & Guides",
+    "subtitle": "Download our expert checklists, policy templates, and regulatory readiness guides developed by experienced compliance practitioners.",
+    "downloadResource": "Download Resource",
+    "requestAdvisory": "Request Advisory",
+    "modalTitle": "Download Resource",
+    "modalDesc": "Please enter your business email to receive the direct download link and periodic regulatory updates.",
+    "privacyNote": "We respect your privacy. No spam. Unsubscribe anytime.",
+    "instantDownload": "Get Instant Download"
+  },
+  "contactPageSide": {
+    "confidentialNote": "Protected by bilateral mutual confidentiality and anti-spam verification.",
+    "sending": "Sending Message...",
+    "protocolTag": "Advisory Protocol",
+    "protocolTitle": "How Our Engagement Works",
+    "step1Title": "Initial Scoping:",
+    "step1Desc": "Confidential discussion to assess your specific regulatory and risk perimeter.",
+    "step2Title": "Bilateral NDA:",
+    "step2Desc": "Mutual confidentiality protection before detailed documentation review.",
+    "step3Title": "Tailored SOW:",
+    "step3Desc": "Transparent scope of work, milestone timelines, and actionable deliverables.",
+    "reachDirect": "You may also reach our global compliance practice directly:",
+    "whatsappUK": "WhatsApp (UK)",
+    "whatsappIT": "WhatsApp (Italy)",
+    "linkedin": "LinkedIn: EagleComply",
+    "locationsTitle": "Operational Hubs & Locations:"
   }
 }

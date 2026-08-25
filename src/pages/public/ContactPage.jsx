@@ -288,11 +288,10 @@ export default function ContactPage({ onNavigate }) {
                     className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#334DAF]"
                     placeholder={c.placeholders?.description || "Please outline your entity's compliance scope, target regulatory objectives, licensing timelines, or specific financial crime challenges..."}
                   />
-                </div>
-
-                <div className="flex items-center gap-2 text-[11px] text-slate-500 dark:text-slate-400">
-                  <Lock className="w-3.5 h-3.5 text-[#334DAF] dark:text-[#7096D1]" />
-                  <span>Protected by bilateral mutual confidentiality and anti-spam verification.</span>
+                  <div className="flex items-center gap-2 text-[11px] text-slate-500 dark:text-slate-400 mt-2">
+                    <Lock className="w-3.5 h-3.5 text-[#334DAF] dark:text-[#7096D1]" />
+                    <span>{t.contactPageSide?.confidentialNote || 'Protected by bilateral mutual confidentiality and anti-spam verification.'}</span>
+                  </div>
                 </div>
 
                 <button
@@ -303,7 +302,7 @@ export default function ContactPage({ onNavigate }) {
                   {isSubmitting ? (
                     <>
                       <Loader2 className="w-4 h-4 animate-spin" />
-                      <span>Sending Message...</span>
+                      <span>{t.contactPageSide?.sending || 'Sending Message...'}</span>
                     </>
                   ) : (
                     <>
@@ -317,26 +316,26 @@ export default function ContactPage({ onNavigate }) {
           </div>
 
           {/* Direct Engagement & Advisory Protocols */}
-          <div className="lg:col-span-4 space-y-6">
+          <div className="lg:col-span-4 space-y-6 text-left rtl:text-right">
             <div className="p-6 rounded-3xl bg-[#091F5C] text-white space-y-4 shadow-xl">
               <div className="text-xs font-mono font-bold uppercase tracking-wider text-blue-200">
-                Advisory Protocol
+                {t.contactPageSide?.protocolTag || 'Advisory Protocol'}
               </div>
               <h3 className="text-base font-bold text-white">
-                How Our Engagement Works
+                {t.contactPageSide?.protocolTitle || 'How Our Engagement Works'}
               </h3>
               <ul className="space-y-2.5 text-xs text-blue-100/90 leading-relaxed">
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                  <span><strong>Initial Scoping:</strong> Confidential discussion to assess your specific regulatory and risk perimeter.</span>
+                  <span><strong>{t.contactPageSide?.step1Title || 'Initial Scoping:'}</strong> {t.contactPageSide?.step1Desc || 'Confidential discussion to assess your specific regulatory and risk perimeter.'}</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                  <span><strong>Bilateral NDA:</strong> Mutual confidentiality protection before detailed documentation review.</span>
+                  <span><strong>{t.contactPageSide?.step2Title || 'Bilateral NDA:'}</strong> {t.contactPageSide?.step2Desc || 'Mutual confidentiality protection before detailed documentation review.'}</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                  <span><strong>Tailored SOW:</strong> Transparent scope of work, milestone timelines, and actionable deliverables.</span>
+                  <span><strong>{t.contactPageSide?.step3Title || 'Tailored SOW:'}</strong> {t.contactPageSide?.step3Desc || 'Transparent scope of work, milestone timelines, and actionable deliverables.'}</span>
                 </li>
               </ul>
             </div>
@@ -346,7 +345,7 @@ export default function ContactPage({ onNavigate }) {
                 {c.directContacts || "Direct Contacts"}
               </div>
               <p className="text-xs text-slate-600 dark:text-slate-300">
-                You may also reach our global compliance practice directly:
+                {t.contactPageSide?.reachDirect || 'You may also reach our global compliance practice directly:'}
               </p>
               
               <div className="space-y-3 text-xs font-mono text-slate-700 dark:text-slate-300 pt-1">
@@ -355,14 +354,14 @@ export default function ContactPage({ onNavigate }) {
                   href="https://wa.me/447706413233"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-between px-4 py-3 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white shadow-md hover:scale-[1.01] transition-all group"
+                  className="flex items-center justify-between px-4 py-3 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white shadow-md hover:scale-[1.01] transition-all group cursor-pointer"
                   title="Direct WhatsApp Contact UK"
                 >
                   <div className="flex items-center gap-2.5">
                     <WhatsAppIcon className="w-4 h-4 fill-white" />
-                    <span>WhatsApp (UK) <strong></strong></span>
+                    <span>{t.contactPageSide?.whatsappUK || 'WhatsApp (UK)'}</span>
                   </div>
-                  <ExternalLink className="w-3.5 h-3.5 opacity-80 group-hover:translate-x-0.5 transition-transform" />
+                  <ExternalLink className="w-3.5 h-3.5 opacity-80 group-hover:translate-x-0.5 transition-transform rtl:rotate-180" />
                 </a>
 
                 {/* WhatsApp Italy */}
@@ -370,14 +369,14 @@ export default function ContactPage({ onNavigate }) {
                   href="https://wa.me/393488184787"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-between px-4 py-3 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white shadow-md hover:scale-[1.01] transition-all group"
+                  className="flex items-center justify-between px-4 py-3 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white shadow-md hover:scale-[1.01] transition-all group cursor-pointer"
                   title="Direct WhatsApp Contact Italy"
                 >
                   <div className="flex items-center gap-2.5">
                     <WhatsAppIcon className="w-4 h-4 fill-white" />
-                    <span>WhatsApp (Italy) <strong></strong></span>
+                    <span>{t.contactPageSide?.whatsappIT || 'WhatsApp (Italy)'}</span>
                   </div>
-                  <ExternalLink className="w-3.5 h-3.5 opacity-80 group-hover:translate-x-0.5 transition-transform" />
+                  <ExternalLink className="w-3.5 h-3.5 opacity-80 group-hover:translate-x-0.5 transition-transform rtl:rotate-180" />
                 </a>
 
                 {/* Email */}
@@ -389,26 +388,20 @@ export default function ContactPage({ onNavigate }) {
                 {/* LinkedIn */}
                 <div className="flex items-center gap-2 px-1">
                   <LinkedInIcon className="w-3.5 h-3.5 text-[#334DAF] dark:text-[#7096D1]" />
-                  <a href="https://www.linkedin.com/company/eaglecomply/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="hover:underline font-bold">LinkedIn: EagleComply</a>
+                  <a href="https://www.linkedin.com/company/eaglecomply/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="hover:underline font-bold">{t.contactPageSide?.linkedin || 'LinkedIn: EagleComply'}</a>
                 </div>
               </div>
 
               {/* Locations summary list */}
               <div className="pt-3 border-t border-surface-border text-xs text-slate-600 dark:text-slate-400 space-y-1.5">
-                <div className="text-[11px] font-mono uppercase tracking-wider text-slate-500 font-bold">
-                  Operational Hubs & Locations:
+                <div className="text-[11px] font-mono uppercase tracking-wider text-slate-500 font-bold mb-2">
+                  {t.contactPageSide?.locationsTitle || 'Operational Hubs & Locations:'}
                 </div>
-                <div className="flex items-center gap-2">
-                  <span>🇬🇧</span>
-                  <span className="font-bold text-slate-800 dark:text-slate-200">United Kingdom</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span>🇮🇹</span>
-                  <span className="font-bold text-slate-800 dark:text-slate-200">Italy</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span>🇵🇰</span>
-                  <span className="font-bold text-slate-800 dark:text-slate-200">Pakistan</span>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 text-xs font-semibold text-slate-800 dark:text-slate-200">
+                  <div className="flex items-center gap-1.5"><span>🇬🇧</span> {t.common?.uk || 'United Kingdom'}</div>
+                  <div className="flex items-center gap-1.5"><span>🇮🇹</span> {t.common?.italy || 'Italy'}</div>
+                  <div className="flex items-center gap-1.5"><span>🇵🇰</span> {t.common?.pakistan || 'Pakistan'}</div>
+                  <div className="flex items-center gap-1.5"><span>🇪🇺</span> {t.common?.eu || 'European Union'}</div>
                 </div>
               </div>
 

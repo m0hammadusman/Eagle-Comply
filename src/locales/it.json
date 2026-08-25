@@ -63,18 +63,28 @@
     "quoteBtn": "Genera Stima SOW Istantanea"
   },
   "solutionsPage": {
-    "tag": "Garanzia Normativa Completa",
-    "title": "Aree di Pratica Istituzionali",
-    "subtitle": "Dagli audit per i modelli di IA ai test di resilienza DORA e licenze MiCA, forniamo dossier verificati di livello legale.",
-    "all": "Tutte le 6 Pratiche",
-    "inspect": "Ispeziona Pratica"
+    "tag": "ÁREAS DE PRÁCTICA EAGLECOMPLY",
+    "title": "Servicios Integrales de Asesoría y Cumplimiento Normativo",
+    "subtitle": "Desde programas integrales de AML/CFT y licencias regulatorias hasta auditorías independientes y asesoría jurídica corporativa.",
+    "coreDeliverables": "Entregables Principales:",
+    "explorePractice": "Explorar Área",
+    "tailoredTag": "ASESORÍA A MEDIDA",
+    "tailoredTitle": "¿Requiere una Consulta Multijurisdiccional o Asesoría Dedicada?",
+    "tailoredDesc": "Nuestros Directores y Asesores Jurídicos estructuran arquitecturas de cumplimiento a medida en AML, licencias y gobernanza.",
+    "bookConsultation": "Reservar Consulta de Socios",
+    "compareTitle": "Comparativa de Servicios",
+    "compareSubtitle": "Entregables Institucionales por Área de Práctica",
+    "thPractice": "Área de Práctica",
+    "thStandards": "Estándares Regulatorios Objetivo",
+    "thDeliverables": "Entregables Clave",
+    "thTimeline": "Plazo de Ejecución Típico"
   },
   "industriesPage": {
-    "tag": "Profondità Regolatoria di Settore",
-    "title": "Verticali Normative per Settore",
-    "subtitle": "Architetture di conformità su misura per industrie ad alto impatto soggette a rigorosa supervisione multinazionale.",
-    "desk": "Consulenza Normativa",
-    "explore": "Esplora Settore"
+    "tag": "SECTORES REGULADOS",
+    "title": "Cumplimiento Adaptado a Cada Sector Industrial",
+    "subtitle": "Desde marcos bancarios institucionales hasta licencias fintech y cumplimiento cripto.",
+    "challengesTitle": "Principales Desafíos Normativos:",
+    "exploreSector": "Explorar Marco Sectorial"
   },
   "globalPage": {
     "tag": "Directory di Vigilanza Transfrontaliera",
@@ -293,14 +303,24 @@
     }
   },
   "legalPage": {
-    "tag": "Governance Statutaria",
-    "title": "Termini Legali, Privacy & Informative",
-    "sec1Title": "1. Stato Regolatorio & Ambito di Consulenza",
-    "sec1Text": "Eagle Compliance opera come studio indipendente di consulenza per il rischio tecnologico e la conformità. Tutti i dossier rispettano rigorosamente gli standard ISO/IEC 42001, ISO/IEC 27001 e le direttive vigenti.",
-    "sec2Title": "2. Riservatezza & Isolamento dei Dati",
-    "sec2Text": "I file tecnici e i registri dei fornitori sono isolati in repository dedicati cifrati con standard AES-256 a riposo e TLS 1.3 in transito.",
-    "sec3Title": "3. Disclaimer",
-    "sec3Text": "Le informazioni fornite hanno finalità di intelligence strategica e non sostituiscono un parere legale formale al di fuori di un contratto sottoscritto."
+    "tag": "GOBERNANZA INSTITUCIONAL & MARCO LEGAL",
+    "title": "Políticas, Gobernanza y Avisos Legales",
+    "subtitle": "EagleComply mantiene estándares de privacidad y gobernanza alineados con UK GDPR, EU GDPR y normativas globales.",
+    "disclaimersTitle": "Avisos Legales y Alcance Profesional",
+    "disclaimer1Title": "Sin Promociones Financieras",
+    "disclaimer1Desc": "No realizamos promociones financieras en el Reino Unido. Ningún contenido constituye una invitación a invertir.",
+    "disclaimer2Title": "Sin Asesoría Contable ni Fiscal",
+    "disclaimer2Desc": "No prestamos servicios contables ni fiscales. Nos enfocamos exclusivamente en cumplimiento normativo y AML/CFT.",
+    "disclaimer3Title": "Aviso de Servicios Profesionales:",
+    "disclaimer3Desc": "Los materiales de esta web son informativos y no constituyen asesoramiento legal formal sin contrato bilateral.",
+    "allPolicies": "Todas las Políticas",
+    "activePolicy": "Política Activa",
+    "standardBaseline": "Estándar: ISO 27001 / GDPR",
+    "requestCopy": "Solicitar Copia",
+    "ndaTag": "CONFIDENCIALIDAD BILATERAL",
+    "ndaTitle": "Firma de Acuerdo de Confidencialidad (NDA) Previo",
+    "ndaDesc": "Todas las consultas están protegidas por protocolos de confidencialidad recíproca.",
+    "ndaBtn": "Solicitar Modelo de NDA"
   },
   "footer": {
     "desc": "Eagle Compliance è uno studio indipendente di consulenza regolatoria globale. Realizziamo dossier d'audit certificati, marcatura CE e autorizzazioni internazionali.",
@@ -713,5 +733,95 @@
     "tag": "LEADERSHIP & PARTNER",
     "title": "Professionisti Senior in Diritto e Regolamentazione",
     "subtitle": "Diretto da consulenti legali e professionisti certificati in antiriciclaggio e governance aziendale."
+  },
+  "teamPage": {
+    "tag": "LIDERAZGO INSTITUCIONAL",
+    "title": "Directores de Práctica y Asesores Regulatorios",
+    "subtitle": "Dirección de marcos transfronterizos de AML/CFT, licencias de supervisión, gobernanza y opiniones jurídicas.",
+    "dossierTag": "Dossiers Ejecutivos",
+    "dossierTitle": "Perfiles Profesionales Completos",
+    "dossierSubtitle": "Seleccione cualquier director para ver su trayectoria, certificaciones y publicaciones.",
+    "directorLabel": "DIRECTOR",
+    "disciplinesLabel": "Disciplinas Principales",
+    "viewProfile": "Ver Perfil",
+    "bookSession": "Reservar Sesión",
+    "ctaTag": "Asesoría Institucional",
+    "ctaTitle": "Incorpore Directores de Cumplimiento a su Consejo",
+    "ctaDesc": "Contrate a nuestros socios para auditorías independientes de AML/CFT y expedientes de licencias.",
+    "ctaBtn": "Programar Consulta Inicial"
+  },
+  "teamDetail": {
+    "backBtn": "Volver a Todos los Directores",
+    "bookConsultation": "Reservar Sesión de Asesoría",
+    "viewLinkedIn": "Perfil de LinkedIn",
+    "jurisdictionalCoverage": "Cobertura Jurisdiccional",
+    "workingLanguages": "Idiomas de Trabajo",
+    "aboutTitle": "PERFIL EJECUTIVO & RESUMEN",
+    "specialismsTitle": "Áreas de Especialización",
+    "ctaTag": "ASESORÍA DIRECTA",
+    "ctaDesc": "Contrate a nuestros directores para análisis de brechas regulatorias y expedientes de licencias.",
+    "ctaBtn": "Agendar Discusión de Asesoría"
+  },
+  "faqPage": {
+    "tag": "BASE DE CONOCIMIENTO REGULATORIO",
+    "title": "Preguntas Frecuentes (FAQ)",
+    "subtitle": "Respuestas a dudas comunes sobre regulación, AML/CFT, licencias y resiliencia operativa.",
+    "searchPlaceholder": "Buscar por palabra clave o regulador...",
+    "allCategories": "Todos los Temas",
+    "noResults": "No se encontraron preguntas",
+    "noResultsDesc": "Pruebe con otro término o explore todas las categorías.",
+    "inquiryTag": "CONSULTA DIRECTA",
+    "inquiryTitle": "¿Tiene otra pregunta? Envíenos su consulta.",
+    "inquiryDesc": "Nuestros directores están listos para revisar sus desafíos regulatorios y solicitudes de licencia.",
+    "sendQuery": "Enviar Consulta y Reservar",
+    "sendEmail": "Enviar Correo",
+    "contactPage": "Página de Contacto"
+  },
+  "blogsPage": {
+    "tag": "EDITORIAL Y BLOGS DE EAGLECOMPLY",
+    "title": "Perspectivas de Cumplimiento y Artículos Técnicos",
+    "subtitle": "Análisis en profundidad y guías técnicas redactadas por nuestros directores.",
+    "featured": "Análisis Destacado",
+    "readArticle": "Leer Artículo",
+    "read": "Leer",
+    "noPosts": "No se encontraron publicaciones",
+    "resetFilters": "Restablecer Filtros"
+  },
+  "newsPage": {
+    "tag": "SALA DE PRENSA REGULATORIA",
+    "title": "Noticias Regulatorias y Alertas de Supervisión",
+    "subtitle": "Seguimiento en tiempo real de plazos legales y medidas sancionadoras.",
+    "dispatch": "COMUNICADO DE SUPERVISIÓN",
+    "readDispatch": "Leer Comunicado",
+    "noUpdates": "No hay noticias recientes",
+    "resetFilters": "Restablecer Filtros"
+  },
+  "knowledgeCenter": {
+    "tag": "CENTRO DE RECURSOS EAGLECOMPLY",
+    "title": "Guías Prácticas y Plantillas de Cumplimiento",
+    "subtitle": "Descargue listas de verificación y modelos de políticas desarrollados por expertos.",
+    "downloadResource": "Descargar Recurso",
+    "requestAdvisory": "Solicitar Asesoría",
+    "modalTitle": "Descargar Recurso",
+    "modalDesc": "Introduzca su correo corporativo para recibir el enlace de descarga.",
+    "privacyNote": "Respetamos su privacidad. Sin spam. Cancele su suscripción cuando desee.",
+    "instantDownload": "Descargar Ahora"
+  },
+  "contactPageSide": {
+    "confidentialNote": "Protegido por acuerdo de confidencialidad recíproca y verificación antispam.",
+    "sending": "Enviando mensaje...",
+    "protocolTag": "Protocolo de Asesoría",
+    "protocolTitle": "Cómo Trabajamos con su Entidad",
+    "step1Title": "Evaluación Inicial:",
+    "step1Desc": "Discusión confidencial para definir su perímetro regulatorio y de riesgos.",
+    "step2Title": "NDA Bilateral:",
+    "step2Desc": "Protección de confidencialidad antes de revisar documentación técnica.",
+    "step3Title": "Propuesta Dedicada (SOW):",
+    "step3Desc": "Alcance transparente, cronograma de trabajo y entregables tangibles.",
+    "reachDirect": "También puede contactar directamente con nuestro despacho:",
+    "whatsappUK": "WhatsApp (UK)",
+    "whatsappIT": "WhatsApp (Italia)",
+    "linkedin": "LinkedIn: EagleComply",
+    "locationsTitle": "Sedes y Presencia Operativa:"
   }
 }

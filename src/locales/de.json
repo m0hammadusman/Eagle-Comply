@@ -63,18 +63,28 @@
     "quoteBtn": "Sofortige SOW-Schätzung Berechnen"
   },
   "solutionsPage": {
-    "tag": "Umfassende Regulatorische Sicherheit",
-    "title": "Institutionelle Praxisbereiche",
-    "subtitle": "Von KI-Risikoanalysen bis zu DORA-Stresstests und MiCA-Lizenzierungen liefert Eagle Compliance verifizierte Prüfdossiers.",
-    "all": "Alle 6 Praxen",
-    "inspect": "Praxis Prüfen"
+    "tag": "EAGLECOMPLY PRAXISBEREICHE",
+    "title": "Ganzheitliche Compliance- und Beratungsdienstleistungen",
+    "subtitle": "Vom vollständigen Aufbau von AML/CFT-Programmen über Lizenzierungsanträge bis hin zu unabhängigen Audits und Rechtsberatung.",
+    "coreDeliverables": "Zentrale Projektergebnisse:",
+    "explorePractice": "Praxisbereich Erkunden",
+    "tailoredTag": "MASSGESCHNEIDERTE BERATUNG",
+    "tailoredTitle": "Benötigen Sie eine grenzüberschreitende regulatorische Beratung?",
+    "tailoredDesc": "Unsere Praxisdirektoren und Compliance-Juristen entwickeln maßgeschneiderte Compliance-Architekturen.",
+    "bookConsultation": "Partner-Beratung Buchen",
+    "compareTitle": "Leistungsvergleich",
+    "compareSubtitle": "Institutionelle Projektergebnisse nach Praxisbereich",
+    "thPractice": "Praxisbereich",
+    "thStandards": "Regulatorische Zielstandards",
+    "thDeliverables": "Wesentliche Ergebnisse",
+    "thTimeline": "Typische Bearbeitungszeit"
   },
   "industriesPage": {
-    "tag": "Sektorspezifische Regulierungstiefe",
-    "title": "Regulatorische Branchenvertikalen",
-    "subtitle": "Maßgeschneiderte Aufsichtsarchitekturen für sicherheitskritische Industrien unter strenger internationaler Aufsicht.",
-    "desk": "Beratungsdesk",
-    "explore": "Branche Erkunden"
+    "tag": "REGULIERTE BRANCHEN",
+    "title": "Maßgeschneiderte Compliance für Ihre Branche",
+    "subtitle": "Von institutionellen Bankenrahmenwerken bis hin zu agiler FinTech-Lizenzierung und Krypto-Compliance.",
+    "challengesTitle": "Wesentliche Aufsichtsherausforderungen:",
+    "exploreSector": "Branchenrahmen Erkunden"
   },
   "globalPage": {
     "tag": "Grenzüberschreitendes Aufsichtsverzeichnis",
@@ -368,14 +378,24 @@
     }
   },
   "legalPage": {
-    "tag": "Gesetzliche Governance",
-    "title": "Rechtliche Hinweise, Datenschutz & Offenlegungen",
-    "sec1Title": "1. Regulatorischer Status & Beratungsumfang",
-    "sec1Text": "Eagle Compliance ist eine unabhängige Beratungsgesellschaft für regulatorische Sicherheit und Technologierisiken. Alle Dossiers und Auditberichte entsprechen internationalen Standards wie ISO/IEC 42001, ISO/IEC 27001 und geltenden Gesetzen.",
-    "sec2Title": "2. Vertraulichkeit & Datenisolierung",
-    "sec2Text": "Mandantendaten, Quellcode-Audits und IKT-Register werden in verschlüsselten Repositorien gemäß AES-256 (Ruhezustand) und TLS 1.3 (Übertragung) isoliert.",
-    "sec3Title": "3. Haftungsausschluss",
-    "sec3Text": "Veröffentlichte Informationen dienen der strategischen Orientierung und stellen ohne formellen Beratungsvertrag keine Rechtsberatung dar."
+    "tag": "INSTITUTIONELLE GOVERNANCE & RECHTSRAHMEN",
+    "title": "Richtlinien, Governance-Architektur & Disclaimer",
+    "subtitle": "EagleComply erfüllt höchste Standards für Datenschutz, Cyber-Resilienz und Governance gemäß UK/EU DSGVO.",
+    "disclaimersTitle": "Gesetzliche Hinweise & Mandatsumfang",
+    "disclaimer1Title": "Keine Finanzpromotion",
+    "disclaimer1Desc": "Wir betreiben keine Finanzpromotion im Vereinigten Königreich. Keine Inhalte stellen ein Angebot zur Kapitalanlage dar.",
+    "disclaimer2Title": "Keine Steuer- und Wirtschaftsprüfungsberatung",
+    "disclaimer2Desc": "Wir erbringen keine Steuerberatungs- oder Buchhaltungsdienstleistungen. Unser Fokus liegt rein auf regulatorischer Compliance.",
+    "disclaimer3Title": "Hinweis zu professionellen Dienstleistungen:",
+    "disclaimer3Desc": "Die Inhalte dieser Website dienen der Information und stellen keine Rechts- oder Finanzberatung dar.",
+    "allPolicies": "Alle Richtlinien",
+    "activePolicy": "Aktive Richtlinie",
+    "standardBaseline": "Standard: ISO 27001 / DSGVO",
+    "requestCopy": "Exemplar Anfordern",
+    "ndaTag": "VERTRAULICHKEIT & GOVERNANCE",
+    "ndaTitle": "Abschluss einer gegenseitigen Geheimhaltungsvereinbarung (NDA)",
+    "ndaDesc": "Alle Vorgespräche sind durch strikte bilaterale Vertraulichkeitsprotokolle geschützt.",
+    "ndaBtn": "Standard-NDA Anfordern"
   },
   "footer": {
     "desc": "Eagle Compliance ist eine unabhängige globale Regulierungsberatung. Wir erstellen verifizierte Audit-Dossiers, CE-Kennzeichnungen und grenzüberschreitende Zulassungen.",
@@ -788,5 +808,95 @@
     "tag": "FÜHRUNGSTEAM & PARTNER",
     "title": "Senior Compliance- und Regulierungsexperten",
     "subtitle": "Geleitet von erfahrenen Rechtsberatern und anerkannten Experten für Finanzkriminalität und Governance."
+  },
+  "teamPage": {
+    "tag": "UNSERE FÜHRUNGSMANNSCHAFT",
+    "title": "Senior Practice Directors & Regulatory Counsel",
+    "subtitle": "Leitung internationaler AML/CFT-Systeme, Aufsichtslizenzen, Governance-Strukturen und Rechtsgutachten.",
+    "dossierTag": "Führungsprofile",
+    "dossierTitle": "Umfassende Beraterprofile",
+    "dossierSubtitle": "Wählen Sie einen Direktor, um beruflichen Werdegang, Zertifizierungen und Publikationen einzusehen.",
+    "directorLabel": "DIREKTOR",
+    "disciplinesLabel": "Schwerpunkte",
+    "viewProfile": "Profil Ansehen",
+    "bookSession": "Termin Vereinbaren",
+    "ctaTag": "Institutionelle Beratung",
+    "ctaTitle": "Sichern Sie sich erfahrene Compliance-Direktoren für Ihr Board",
+    "ctaDesc": "Beauftragen Sie unsere Senior-Berater für unabhängige AML/CFT-Prüfungen und Lizenzierungsdossiers.",
+    "ctaBtn": "Erstgespräch Vereinbaren"
+  },
+  "teamDetail": {
+    "backBtn": "Zurück zur Übersicht",
+    "bookConsultation": "Beratungstermin Buchen",
+    "viewLinkedIn": "LinkedIn-Profil",
+    "jurisdictionalCoverage": "Regulatorische Jurisdiktionen",
+    "workingLanguages": "Arbeitssprachen",
+    "aboutTitle": "FÜHRUNGSPROFIL & VITA",
+    "specialismsTitle": "Kernkompetenzen & Spezialgebiete",
+    "ctaTag": "DIREKTE BERATUNG",
+    "ctaDesc": "Beauftragen Sie unsere Praxisdirektoren für regulatorische Gap-Analysen und Audits.",
+    "ctaBtn": "Beratungsgespräch Planen"
+  },
+  "faqPage": {
+    "tag": "COMPLIANCE-WISSENSDATENBANK",
+    "title": "Häufig Gestellte Fragen (FAQ)",
+    "subtitle": "Antworten auf häufige Fragen zu Regulierung, Geldwäscheprävention, Lizenzen und Resilienz.",
+    "searchPlaceholder": "Nach Stichwort, Aufsichtsbehörde oder Thema suchen...",
+    "allCategories": "Alle Themen",
+    "noResults": "Keine passenden Fragen gefunden",
+    "noResultsDesc": "Versuchen Sie es mit einem anderen Begriff oder wählen Sie alle Kategorien.",
+    "inquiryTag": "DIREKTANFRAGE & UNTERSTÜTZUNG",
+    "inquiryTitle": "Haben Sie weitere Fragen? Kontaktieren Sie uns direkt.",
+    "inquiryDesc": "Unsere Praxisdirektoren stehen für die Prüfung Ihrer aufsichtsrechtlichen Herausforderungen bereit.",
+    "sendQuery": "Anfrage Senden & Termin Buchen",
+    "sendEmail": "E-Mail Senden",
+    "contactPage": "Kontaktseite"
+  },
+  "blogsPage": {
+    "tag": "EAGLECOMPLY REDAKTION & BLOGS",
+    "title": "Compliance-Analysen & Fachbeiträge",
+    "subtitle": "Fundierte Kommentare, technische Leitfäden und regulatorische Analysen unserer Direktoren.",
+    "featured": "Top-Analyse",
+    "readArticle": "Artikel Lesen",
+    "read": "Lesen",
+    "noPosts": "Keine Beiträge gefunden",
+    "resetFilters": "Filter Zurücksetzen"
+  },
+  "newsPage": {
+    "tag": "REGULATORISCHER NEWSROOM",
+    "title": "Regulatorische Nachrichten & Aufsichts-Updates",
+    "subtitle": "Echtzeit-Tracking von gesetzlichen Fristen, Durchsetzungsmaßnahmen und Finanzkriminalitätsanalysen.",
+    "dispatch": "AUFSICHTSBERICHT",
+    "readDispatch": "Bericht Lesen",
+    "noUpdates": "Keine aktuellen Meldungen",
+    "resetFilters": "Filter Zurücksetzen"
+  },
+  "knowledgeCenter": {
+    "tag": "EAGLECOMPLY RESSOURCEN-ZENTRUM",
+    "title": "Praxis-Toolkits & Compliance-Leitfäden",
+    "subtitle": "Laden Sie Prüflisten, Vorlagen und Leitfäden unserer erfahrenen Berater herunter.",
+    "downloadResource": "Ressource Herunterladen",
+    "requestAdvisory": "Beratung Anfragen",
+    "modalTitle": "Ressource Herunterladen",
+    "modalDesc": "Bitte geben Sie Ihre geschäftliche E-Mail-Adresse für den Download-Link ein.",
+    "privacyNote": "Wir respektieren Ihre Privatsphäre. Kein Spam. Jederzeit abbestellbar.",
+    "instantDownload": "Direkt Herunterladen"
+  },
+  "contactPageSide": {
+    "confidentialNote": "Geschützt durch gegenseitige Vertraulichkeitsvereinbarung und Anti-Spam-Prüfung.",
+    "sending": "Nachricht wird übermittelt...",
+    "protocolTag": "Beratungsprotokoll",
+    "protocolTitle": "So Funktioniert Unsere Zusammenarbeit",
+    "step1Title": "Erstgespräch & Scoping:",
+    "step1Desc": "Vertrauliche Besprechung zur Bestimmung Ihres regulatorischen Rahmens.",
+    "step2Title": "Bilaterale NDA:",
+    "step2Desc": "Gegenseitiger Vertraulichkeitsschutz vor Sichtung detaillierter Dokumente.",
+    "step3Title": "Individuelles SOW:",
+    "step3Desc": "Transparenter Leistungsumfang, Meilensteine und konkrete Ergebnisse.",
+    "reachDirect": "Sie erreichen unsere Praxis auch direkt über folgende Kanäle:",
+    "whatsappUK": "WhatsApp (UK)",
+    "whatsappIT": "WhatsApp (Italien)",
+    "linkedin": "LinkedIn: EagleComply",
+    "locationsTitle": "Standorte & Präsenz:"
   }
 }

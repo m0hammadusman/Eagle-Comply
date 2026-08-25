@@ -28,9 +28,10 @@ export function LinkedInIcon({ className = "w-4 h-4", ...props }) {
 }
 
 export default function TeamMemberDetailPage({ params, onNavigate, onOpenConsultation }) {
-  const { t } = useLanguage();
+  const { t, experts } = useLanguage();
+  const td = t.teamDetail || {};
   const memberId = params?.id || 'syed-anvar-hussain';
-  const member = experts.find(e => e.id === memberId) || experts[0];
+  const member = (experts || []).find(e => e.id === memberId) || (experts || [])[0] || {};
 
   const photoSrc = `${import.meta.env.BASE_URL}${(member.photo || '').replace(import.meta.env.BASE_URL, '').replace(/^\/+/, '')}`;
 
@@ -42,17 +43,17 @@ export default function TeamMemberDetailPage({ params, onNavigate, onOpenConsult
         <div className="flex items-center justify-between gap-4 pb-6 border-b border-surface-border">
           <button
             onClick={() => onNavigate('team')}
-            className="inline-flex items-center gap-2 text-xs font-mono font-bold text-[#334DAF] dark:text-[#7096D1] hover:underline"
+            className="inline-flex items-center gap-2 text-xs font-mono font-bold text-[#334DAF] dark:text-[#7096D1] hover:underline cursor-pointer"
           >
             <ArrowLeft className="w-4 h-4 rtl:rotate-180" />
-            <span>Back to All Practice Directors</span>
+            <span>{td.backBtn || 'Back to All Practice Directors'}</span>
           </button>
           
           <div className="flex items-center gap-2 text-xs font-mono text-slate-500">
-            <span className="cursor-pointer hover:text-[#334DAF]" onClick={() => onNavigate('home')}>Home</span>
-            <ChevronRight className="w-3.5 h-3.5" />
-            <span className="cursor-pointer hover:text-[#334DAF]" onClick={() => onNavigate('team')}>Team</span>
-            <ChevronRight className="w-3.5 h-3.5" />
+            <span className="cursor-pointer hover:text-[#334DAF]" onClick={() => onNavigate('home')}>{t.nav?.home || 'Home'}</span>
+            <ChevronRight className="w-3.5 h-3.5 rtl:rotate-180" />
+            <span className="cursor-pointer hover:text-[#334DAF]" onClick={() => onNavigate('team')}>{t.nav?.leadership || 'Team'}</span>
+            <ChevronRight className="w-3.5 h-3.5 rtl:rotate-180" />
             <span className="text-slate-900 dark:text-white font-bold">{member.name}</span>
           </div>
         </div>
@@ -71,7 +72,7 @@ export default function TeamMemberDetailPage({ params, onNavigate, onOpenConsult
                   alt={member.name}
                   className="w-full h-full object-cover object-top filter contrast-105"
                 />
-                <div className="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-surface-raised/90 backdrop-blur-md text-[10px] font-mono font-bold text-[#334DAF] dark:text-[#7096D1] border border-surface-border">
+                <div className="absolute top-3 right-3 rtl:right-auto rtl:left-3 px-2.5 py-1 rounded-full bg-surface-raised/90 backdrop-blur-md text-[10px] font-mono font-bold text-[#334DAF] dark:text-[#7096D1] border border-surface-border">
                   {member.department || 'Executive Advisory'}
                 </div>
               </div>
@@ -85,10 +86,10 @@ export default function TeamMemberDetailPage({ params, onNavigate, onOpenConsult
               <div className="space-y-2 pt-2">
                 <button
                   onClick={() => onOpenConsultation?.()}
-                  className="w-full py-3 rounded-xl bg-gradient-to-r from-[#091F5C] to-[#334DAF] dark:from-[#334DAF] dark:to-[#7096D1] text-white dark:text-[#101E42] font-bold text-xs shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2"
+                  className="w-full py-3 rounded-xl bg-gradient-to-r from-[#091F5C] to-[#334DAF] dark:from-[#334DAF] dark:to-[#7096D1] text-white dark:text-[#101E42] font-bold text-xs shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2 cursor-pointer"
                 >
                   <Calendar className="w-4 h-4" />
-                  <span>Book Consultation Session</span>
+                  <span>{td.bookConsultation || 'Book Consultation Session'}</span>
                 </button>
 
                 {member.linkedin && (
@@ -99,7 +100,7 @@ export default function TeamMemberDetailPage({ params, onNavigate, onOpenConsult
                     className="w-full py-2.5 rounded-xl bg-[#0077B5]/10 hover:bg-[#0077B5]/20 text-[#0077B5] border border-[#0077B5]/30 font-bold text-xs transition-all flex items-center justify-center gap-2"
                   >
                     <LinkedInIcon className="w-4 h-4" />
-                    <span>View LinkedIn Profile</span>
+                    <span>{td.viewLinkedIn || 'View LinkedIn Profile'}</span>
                     <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 )}
@@ -113,9 +114,9 @@ export default function TeamMemberDetailPage({ params, onNavigate, onOpenConsult
             </div>
 
             {/* Jurisdictional & Language Footprint */}
-            <div className="p-6 rounded-3xl glass-panel border border-surface-border space-y-4 shadow-sm">
+            <div className="p-6 rounded-3xl glass-panel border border-surface-border space-y-4 shadow-sm text-left rtl:text-right">
               <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#334DAF] dark:text-[#7096D1] block">
-                Jurisdictional Coverage
+                {td.jurisdictionalCoverage || 'Jurisdictional Coverage'}
               </span>
               <div className="flex flex-wrap gap-2">
                 {(member.countries || []).map((c, i) => (
@@ -127,7 +128,7 @@ export default function TeamMemberDetailPage({ params, onNavigate, onOpenConsult
 
               <div className="pt-3 border-t border-surface-border space-y-2">
                 <span className="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500 block">
-                  Working Languages
+                  {td.workingLanguages || 'Working Languages'}
                 </span>
                 <div className="flex items-center gap-2">
                   {(member.languages || ['English']).map((lang, i) => (
@@ -141,13 +142,13 @@ export default function TeamMemberDetailPage({ params, onNavigate, onOpenConsult
           </div>
 
           {/* Right Column: Clean, Structured Executive About & Core Disciplines */}
-          <div className="lg:col-span-8 space-y-8">
+          <div className="lg:col-span-8 space-y-8 text-left rtl:text-right">
             
             {/* About / Executive Profile & Practice Mandate */}
             <div className="p-8 sm:p-10 rounded-3xl glass-panel border border-surface-border shadow-md space-y-6">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#334DAF]/10 dark:bg-[#7096D1]/15 text-[#334DAF] dark:text-[#7096D1] text-xs font-mono font-bold uppercase">
                 <Sparkles className="w-3.5 h-3.5" />
-                <span>EXECUTIVE PROFILE & ABOUT</span>
+                <span>{td.aboutTitle || 'EXECUTIVE PROFILE & ABOUT'}</span>
               </div>
               
               <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">
@@ -178,7 +179,7 @@ export default function TeamMemberDetailPage({ params, onNavigate, onOpenConsult
               {/* Core Specialisms Grid */}
               <div className="pt-6 border-t border-surface-border space-y-4">
                 <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#334DAF] dark:text-[#7096D1] block">
-                  Core Practice Areas & Specialisms
+                  {td.specialismsTitle || 'Core Practice Areas & Specialisms'}
                 </span>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {(member.specialisms || []).map((spec, i) => (
@@ -193,22 +194,22 @@ export default function TeamMemberDetailPage({ params, onNavigate, onOpenConsult
 
             {/* Direct Consultation Card */}
             <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-[#091F5C] via-[#16295C] to-[#334DAF] text-white shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6">
-              <div className="space-y-2 text-center md:text-left">
+              <div className="space-y-2 text-center md:text-left rtl:md:text-right">
                 <span className="text-xs font-mono uppercase tracking-widest text-blue-200 font-bold inline-block px-3 py-1 rounded-full bg-white/10 border border-white/20">
-                  DIRECT ADVISORY & CONSULTATION
+                  {td.ctaTag || 'DIRECT ADVISORY & CONSULTATION'}
                 </span>
                 <h3 className="text-2xl font-bold text-white">
                   Consult with {member.name}
                 </h3>
                 <p className="text-xs sm:text-sm text-blue-100/85 max-w-xl leading-relaxed">
-                  Engage our senior practice directors for custom statutory gap analyses, licensing dossiers, and independent audit assurance.
+                  {td.ctaDesc || 'Engage our senior practice directors for custom statutory gap analyses, licensing dossiers, and independent audit assurance.'}
                 </p>
               </div>
               <button
                 onClick={() => onOpenConsultation?.()}
-                className="px-6 py-3.5 rounded-xl bg-white text-[#091F5C] font-bold text-xs shadow-xl hover:bg-blue-50 transition-all shrink-0 hover:scale-[1.02] active:scale-[0.98]"
+                className="px-6 py-3.5 rounded-xl bg-white text-[#091F5C] font-bold text-xs shadow-xl hover:bg-blue-50 transition-all shrink-0 hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
               >
-                Schedule Advisory Discussion
+                {td.ctaBtn || 'Schedule Advisory Discussion'}
               </button>
             </div>
 

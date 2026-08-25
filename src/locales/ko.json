@@ -63,18 +63,28 @@
     "quoteBtn": "즉시 SOW 견적 산출"
   },
   "solutionsPage": {
-    "tag": "포괄적 규제 보증",
-    "title": "기관급 실무 전문 영역",
-    "subtitle": "최첨단 AI 위험 분석부터 DORA 복원력 스트레스 테스트 및 MiCA 라이선스 인허가까지, 검증된 감사 조서를 제공합니다.",
-    "all": "6대 전문 실무",
-    "inspect": "실무 영역 확인"
+    "tag": "이글 컴플라이 업무 분야",
+    "title": "엔드투엔드 규제 컴플라이언스 및 자문 서비스",
+    "subtitle": "AML/CFT 전사 프로그램 구축 및 인허가 신청 서류 준비부터 독립 감사 및 법률 자문까지 완벽 지원합니다.",
+    "coreDeliverables": "핵심 산출물:",
+    "explorePractice": "업무 분야 자세히 보기",
+    "tailoredTag": "맞춤형 전문 자문",
+    "tailoredTitle": "다중 관할권 규제 자문 또는 전문 지원이 필요하십니까?",
+    "tailoredDesc": "시니어 디렉터 및 규제 전문 변호사진이 맞춤형 내부통제 및 리스크 거버넌스 체계를 설계합니다.",
+    "bookConsultation": "파트너 상담 예약",
+    "compareTitle": "서비스 비교",
+    "compareSubtitle": "업무 분야별 제도적 산출물 일람",
+    "thPractice": "업무 분야",
+    "thStandards": "목표 규제 표준",
+    "thDeliverables": "핵심 산출물",
+    "thTimeline": "표준 소요 기간"
   },
   "industriesPage": {
-    "tag": "산업별 규제 전문성",
-    "title": "산업별 규제 버티컬",
-    "subtitle": "엄격한 다국적 규제 감독을 받는 핵심 산업군을 위해 맞춤 설계된 컴플라이언스 아키텍처.",
-    "desk": "자문 데스크",
-    "explore": "산업 분야 탐색"
+    "tag": "규제 대상 산업 부문",
+    "title": "산업별 맞춤형 컴플라이언스 아키텍처",
+    "subtitle": "기관 은행 규제 체계부터 핀테크 인허가 및 가상자산 규제까지 업종별 최적화된 프레임워크를 제공합니다.",
+    "challengesTitle": "핵심 규제 과제:",
+    "exploreSector": "산업별 프레임워크 보기"
   },
   "globalPage": {
     "tag": "국경 간 규제 감독 디렉토리",
@@ -368,14 +378,24 @@
     }
   },
   "legalPage": {
-    "tag": "법정 거버넌스",
-    "title": "이용약관, 개인정보 처리방침 및 법적 고지",
-    "sec1Title": "1. 규제적 지위 및 자문 범위",
-    "sec1Text": "Eagle Compliance는 독립적인 규제 보증 및 기술 리스크 자문 기관으로 운영됩니다. 모든 조서와 감사 준비 보고서는 ISO/IEC 42001, ISO/IEC 27001 등 국제 표준 및 관련 법령을 엄격히 준수하여 작성됩니다.",
-    "sec2Title": "2. 기밀 유지 및 데이터 격리",
-    "sec2Text": "고객 기술 문서, 소스 코드 검토 및 벤더 대장은 저장 시 AES-256 및 전송 시 TLS 1.3 암호화를 준수하는 전용 테넌트 저장소에 엄격히 격리됩니다.",
-    "sec3Title": "3. 면책 고지",
-    "sec3Text": "본 사이트에 게시된 정보는 전략적 인텔리전스를 목적으로 하며, 체결된 정식 자문 계약 범위 외의 법적 조언을 구성하지 않습니다."
+    "tag": "기관 거버넌스 및 법정 프레임워크",
+    "title": "규정집, 거버넌스 구조 및 면책 조항",
+    "subtitle": "영국 GDPR, EU GDPR 및 글로벌 표준에 부합하는 데이터 보호 및 운영 회복력 규정을 준수합니다.",
+    "disclaimersTitle": "법정 면책 고지 및 업무 범위",
+    "disclaimer1Title": "금융 판촉 미제공 고지",
+    "disclaimer1Desc": "당사는 영국 내에서 금융 프로모션을 수행하지 않으며, 투자 활동을 권유하지 않습니다.",
+    "disclaimer2Title": "회계 및 세무 자문 미제공",
+    "disclaimer2Desc": "당사는 회계 및 세무 서비스를 제공하지 않으며, 규제 컴플라이언스 및 법률 자문에 전념합니다.",
+    "disclaimer3Title": "전문 서비스 안내:",
+    "disclaimer3Desc": "본 사이트의 자료는 일반적인 정보 제공용이며, 정식 계약 체결 전 법적 조언을 구성하지 않습니다.",
+    "allPolicies": "전체 정책 규정",
+    "activePolicy": "선택된 정책",
+    "standardBaseline": "적용 기준: ISO 27001 / GDPR",
+    "requestCopy": "사본 요청",
+    "ndaTag": "상호 비밀유지 및 거버넌스",
+    "ndaTitle": "업무 착수 전 상호 비밀유지협약(NDA) 체결",
+    "ndaDesc": "모든 사전 상담은 엄격한 상호 비밀유지 프로토콜에 따라 철저히 보호됩니다.",
+    "ndaBtn": "표준 NDA 요청"
   },
   "footer": {
     "desc": "Eagle Compliance는 독립 글로벌 규제 자문 기관입니다. 공인 감사 조서, CE 마킹 적합성 파일 및 국경 간 규제 인허가를 수행합니다.",
@@ -788,5 +808,95 @@
     "tag": "리더십 및 시니어 파트너",
     "title": "국제 규제 컴플라이언스 및 법률 전문가",
     "subtitle": "금융 범죄 방지, 인허가 준비, 리스크 거버넌스 분야의 최고 전문가 그룹이 직접 자문을 이끕니다."
+  },
+  "teamPage": {
+    "tag": "컴플라이언스 리더십",
+    "title": "시니어 실무 디렉터 및 규제 법률 고문",
+    "subtitle": "다국적 AML/CFT 체계, 규제 인허가, 법정 거버넌스, 기업 법률 의견서 및 건전성 감사를 총괄합니다.",
+    "dossierTag": "경영진 프로필",
+    "dossierTitle": "전문가 상세 이력",
+    "dossierSubtitle": "디렉터를 선택하여 경력, 자격증, 연구 출판물을 확인하십시오.",
+    "directorLabel": "디렉터",
+    "disciplinesLabel": "주요 전문 분야",
+    "viewProfile": "프로필 보기",
+    "bookSession": "상담 예약",
+    "ctaTag": "기관 자문",
+    "ctaTitle": "이사회에 시니어 컴플라이언스 전문가를 영입하십시오",
+    "ctaDesc": "독립 AML/CFT 감사, 인허가 서류 작성 및 상시 컴플라이언스 감독을 의뢰하십시오.",
+    "ctaBtn": "초기 상담 예약"
+  },
+  "teamDetail": {
+    "backBtn": "전체 디렉터 목록으로",
+    "bookConsultation": "상담 세션 예약",
+    "viewLinkedIn": "링크드인 프로필",
+    "jurisdictionalCoverage": "관할권 적용 범위",
+    "workingLanguages": "업무 언어",
+    "aboutTitle": "임원 프로필 및 약력",
+    "specialismsTitle": "핵심 업무 분야 및 세부 전문성",
+    "ctaTag": "직접 자문 및 컨설팅",
+    "ctaDesc": "규제 갭 분석, 인허가 서류 준비, 독립 감사 확증을 문의하십시오.",
+    "ctaBtn": "자문 미팅 예약"
+  },
+  "faqPage": {
+    "tag": "컴플라이언스 지식창고",
+    "title": "자주 묻는 질문 (FAQ)",
+    "subtitle": "인허가, 자금세탁방지, 운영 탄력성 및 전문 자문에 대한 종합 답변을 제공합니다.",
+    "searchPlaceholder": "키워드, 감독 당국, 주제 검색...",
+    "allCategories": "전체 주제",
+    "noResults": "일치하는 질문이 없습니다",
+    "noResultsDesc": "다른 키워드로 검색하거나 전체 범주를 확인하십시오.",
+    "inquiryTag": "직접 문의 및 지원",
+    "inquiryTitle": "추가 문의 사항이 있으시면 언제든지 문의해 주십시오.",
+    "inquiryDesc": "디렉터 및 법률 고문진이 귀사의 규제 당면 과제와 라이선스 요건을 검토합니다.",
+    "sendQuery": "문의 접수 및 세션 예약",
+    "sendEmail": "이메일 보내기",
+    "contactPage": "문의 페이지"
+  },
+  "blogsPage": {
+    "tag": "이글 컴플라이 사설 및 블로그",
+    "title": "컴플라이언스 인사이트 및 전문 블로그",
+    "subtitle": "상주 디렉터 및 고문진이 집필한 심층 분석, 기술 청사진 및 규제 동향 해설.",
+    "featured": "주목할 분석",
+    "readArticle": "기사 읽기",
+    "read": "읽기",
+    "noPosts": "게시글이 없습니다",
+    "resetFilters": "필터 초기화"
+  },
+  "newsPage": {
+    "tag": "규제 뉴스룸",
+    "title": "규제 뉴스 및 감독 당국 동향",
+    "subtitle": "법정 마감일, 규제 제재 조치 및 국제 금융 범죄 정보 실시간 추적.",
+    "dispatch": "감독 당국 속보",
+    "readDispatch": "속보 읽기",
+    "noUpdates": "새로운 소식이 없습니다",
+    "resetFilters": "필터 초기화"
+  },
+  "knowledgeCenter": {
+    "tag": "이글 컴플라이 리소스 센터",
+    "title": "실무 툴킷 및 규제 가이드",
+    "subtitle": "전문가들이 제작한 체크리스트, 사규 템플릿 및 라이선스 준비 가이드를 다운로드하십시오.",
+    "downloadResource": "자료 다운로드",
+    "requestAdvisory": "자문 요청",
+    "modalTitle": "자료 다운로드",
+    "modalDesc": "다운로드 링크 수신을 위해 회사 이메일을 입력해 주십시오.",
+    "privacyNote": "개인정보는 철저히 보호되며 스팸은 발송되지 않습니다. 언제든 수신 거부 가능합니다.",
+    "instantDownload": "즉시 다운로드"
+  },
+  "contactPageSide": {
+    "confidentialNote": "상호 비밀유지협약 및 스팸 방지 인증으로 안전하게 보호됩니다.",
+    "sending": "메시지 전송 중...",
+    "protocolTag": "자문 진행 프로토콜",
+    "protocolTitle": "업무 협력 진행 절차",
+    "step1Title": "초기 스코핑 미팅:",
+    "step1Desc": "귀사의 규제 범위 및 위험 노출도를 파악하기 위한 비밀 협의.",
+    "step2Title": "상호 NDA 체결:",
+    "step2Desc": "세부 문서 검토 전 상호 기밀 완벽 보호.",
+    "step3Title": "맞춤형 작업명세서(SOW):",
+    "step3Desc": "투명한 업무 범위, 마일스톤 일정 및 구체적 산출물 확정.",
+    "reachDirect": "다음 채널을 통해 당사에 직접 연락하실 수도 있습니다:",
+    "whatsappUK": "WhatsApp (영국)",
+    "whatsappIT": "WhatsApp (이탈리아)",
+    "linkedin": "링크드인: EagleComply",
+    "locationsTitle": "주요 운영 거점 및 사무소:"
   }
 }

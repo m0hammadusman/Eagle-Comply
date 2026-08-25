@@ -25,7 +25,8 @@ export function LinkedInIcon({ className = "w-3.5 h-3.5", ...props }) {
 }
 
 export default function TeamPage({ onNavigate, onOpenConsultation }) {
-  const { t } = useLanguage();
+  const { t, experts } = useLanguage();
+  const tp = t.teamPage || {};
 
   return (
     <div className="w-full space-y-16 animate-fade-in">
@@ -49,15 +50,15 @@ export default function TeamPage({ onNavigate, onOpenConsultation }) {
           
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/20 backdrop-blur-md text-white text-xs font-mono font-bold tracking-wider uppercase border border-white/30 shadow-lg">
             <Users className="w-3.5 h-3.5 text-sky-300" />
-            <span>OUR COMPLIANCE LEADERSHIP</span>
+            <span>{tp.tag || 'OUR COMPLIANCE LEADERSHIP'}</span>
           </div>
 
           <h1 className="font-sans tracking-tight text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight drop-shadow-lg">
-            Senior Practice Directors & Regulatory Counsel
+            {tp.title || 'Senior Practice Directors & Regulatory Counsel'}
           </h1>
 
           <p className="text-sm sm:text-base lg:text-lg text-blue-50 font-medium leading-relaxed max-w-2xl mx-auto drop-shadow-md">
-            Directing multi-jurisdictional AML/CFT frameworks, regulatory licensing, statutory governance, corporate legal opinions, and prudential financial assurance.
+            {tp.subtitle || 'Directing multi-jurisdictional AML/CFT frameworks, regulatory licensing, statutory governance, corporate legal opinions, and prudential financial assurance.'}
           </p>
 
         </div>
@@ -66,8 +67,8 @@ export default function TeamPage({ onNavigate, onOpenConsultation }) {
       {/* Interactive Physical Badges Section */}
       <section className="py-4 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <TeamBadges 
-          title="Senior Practice Directors" 
-          subtitle="Click any executive pass to inspect their complete career history, publications, and certifications" 
+          title={tp.title || "Senior Practice Directors"} 
+          subtitle={tp.dossierSubtitle || "Click any executive pass to inspect their complete career history, publications, and certifications"} 
           onNavigate={onNavigate}
         />
       </section>
@@ -76,13 +77,13 @@ export default function TeamPage({ onNavigate, onOpenConsultation }) {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         <div className="text-center max-w-2xl mx-auto space-y-2">
           <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#334DAF] dark:text-[#7096D1]">
-            Executive Dossiers
+            {tp.dossierTag || 'Executive Dossiers'}
           </span>
           <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">
-            Comprehensive Practice Profiles
+            {tp.dossierTitle || 'Comprehensive Practice Profiles'}
           </h2>
           <p className="text-xs text-slate-500">
-            Select any director to view their detailed work experience, certifications, and research publications.
+            {tp.dossierSubtitle || 'Select any director to view their detailed work experience, certifications, and research publications.'}
           </p>
         </div>
 
@@ -93,7 +94,7 @@ export default function TeamPage({ onNavigate, onOpenConsultation }) {
             return (
               <div
                 key={exp.id}
-                className="p-8 rounded-3xl glass-panel border border-surface-border shadow-lg space-y-6 flex flex-col justify-between hover:border-[#334DAF] dark:hover:border-[#7096D1] transition-all group"
+                className="p-8 rounded-3xl glass-panel border border-surface-border shadow-lg space-y-6 flex flex-col justify-between hover:border-[#334DAF] dark:hover:border-[#7096D1] transition-all group text-left rtl:text-right"
               >
                 <div className="space-y-4">
                   
@@ -105,8 +106,8 @@ export default function TeamPage({ onNavigate, onOpenConsultation }) {
                         alt={exp.name}
                         className="w-20 h-20 rounded-2xl object-cover object-top shadow-md border-2 border-[#334DAF]/20 dark:border-[#7096D1]/20 bg-surface-subtle"
                       />
-                      <span className="absolute -bottom-2 -right-1 px-2 py-0.5 rounded-full bg-[#334DAF] text-white text-[9px] font-mono font-bold">
-                        DIRECTOR
+                      <span className="absolute -bottom-2 -right-1 rtl:-right-auto rtl:-left-1 px-2 py-0.5 rounded-full bg-[#334DAF] text-white text-[9px] font-mono font-bold">
+                        {tp.directorLabel || 'DIRECTOR'}
                       </span>
                     </div>
 
@@ -132,7 +133,7 @@ export default function TeamPage({ onNavigate, onOpenConsultation }) {
                   {/* Core Specialisms */}
                   <div className="space-y-1.5 pt-2 border-t border-surface-border/60">
                     <span className="text-[10px] font-mono font-bold uppercase text-slate-400">
-                      Primary Disciplines
+                      {tp.disciplinesLabel || 'Primary Disciplines'}
                     </span>
                     <div className="flex flex-wrap gap-1.5">
                       {(exp.specialisms || []).slice(0, 3).map((s, i) => (
@@ -154,9 +155,9 @@ export default function TeamPage({ onNavigate, onOpenConsultation }) {
                 <div className="pt-4 border-t border-surface-border flex items-center justify-between gap-3">
                   <button
                     onClick={() => onNavigate('team-detail', { id: exp.id })}
-                    className="inline-flex items-center gap-2 text-xs font-bold text-[#334DAF] dark:text-[#7096D1] hover:underline"
+                    className="inline-flex items-center gap-2 text-xs font-bold text-[#334DAF] dark:text-[#7096D1] hover:underline cursor-pointer"
                   >
-                    <span>View Profile</span>
+                    <span>{tp.viewProfile || 'View Profile'}</span>
                     <ArrowRight className="w-3.5 h-3.5 rtl:rotate-180" />
                   </button>
 
@@ -174,9 +175,9 @@ export default function TeamPage({ onNavigate, onOpenConsultation }) {
                     )}
                     <button
                       onClick={onOpenConsultation}
-                      className="px-3 py-2 rounded-xl bg-[#334DAF] hover:bg-[#253B8A] text-white dark:bg-[#7096D1] dark:text-[#101E42] text-xs font-bold shadow-sm transition-all"
+                      className="px-3 py-2 rounded-xl bg-[#334DAF] hover:bg-[#253B8A] text-white dark:bg-[#7096D1] dark:text-[#101E42] text-xs font-bold shadow-sm transition-all cursor-pointer"
                     >
-                      Book Session
+                      {tp.bookSession || 'Book Session'}
                     </button>
                   </div>
                 </div>
@@ -191,21 +192,21 @@ export default function TeamPage({ onNavigate, onOpenConsultation }) {
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-[#091F5C] via-[#16295C] to-[#334DAF] text-white shadow-2xl text-center space-y-4">
           <span className="text-xs font-mono uppercase tracking-widest text-blue-200 font-bold inline-block px-3 py-1 rounded-full bg-white/10 border border-white/20">
-            Institutional Advisory
+            {tp.ctaTag || 'Institutional Advisory'}
           </span>
           <h2 className="text-2xl sm:text-3xl font-bold">
-            Retain Senior Compliance Directors for Your Board
+            {tp.ctaTitle || 'Retain Senior Compliance Directors for Your Board'}
           </h2>
           <p className="text-xs sm:text-sm text-blue-100/80 max-w-xl mx-auto">
-            Engage our senior practitioners for independent AML/CFT audits, regulatory authorization dossiers, and ongoing compliance oversight.
+            {tp.ctaDesc || 'Engage our senior practitioners for independent AML/CFT audits, regulatory authorization dossiers, and ongoing compliance oversight.'}
           </p>
           <div className="pt-2">
             <button
               onClick={onOpenConsultation}
-              className="px-8 py-3.5 rounded-xl bg-white text-[#091F5C] font-bold text-xs shadow-xl hover:bg-blue-50 transition-all inline-flex items-center gap-2"
+              className="px-8 py-3.5 rounded-xl bg-white text-[#091F5C] font-bold text-xs shadow-xl hover:bg-blue-50 transition-all inline-flex items-center gap-2 cursor-pointer"
             >
               <Calendar className="w-4 h-4" />
-              <span>Schedule Initial Consultation</span>
+              <span>{tp.ctaBtn || 'Schedule Initial Consultation'}</span>
             </button>
           </div>
         </div>

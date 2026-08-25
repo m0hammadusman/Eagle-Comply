@@ -81,7 +81,10 @@ export default function ConsultationModal({ isOpen, onClose }) {
         {/* ======================================================== */}
         {/* HEADER (~55px high with always-visible Close button)      */}
         {/* ======================================================== */}
-        <div className="shrink-0 px-4 sm:px-6 py-3 sm:py-3.5 bg-slate-50/90 dark:bg-[#0F1C36] border-b border-slate-200/80 dark:border-[#1E3778]/50 flex items-center justify-between z-10">
+        {/* ======================================================== */}
+        {/* HEADER (~55px high with always-visible Close button)      */}
+        {/* ======================================================== */}
+        <div className="shrink-0 px-4 sm:px-6 py-3 sm:py-3.5 bg-slate-50/90 dark:bg-[#0F1C36] border-b border-slate-200/80 dark:border-[#1E3778]/50 flex items-center justify-between z-10 text-left rtl:text-right">
           <div className="flex items-center gap-3 min-w-0">
             <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-[#334DAF]/10 dark:bg-[#7096D1]/15 text-[#334DAF] dark:text-[#7096D1] border border-[#334DAF]/20 dark:border-[#7096D1]/30 flex items-center justify-center shrink-0">
               <CalendarDays className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -89,28 +92,28 @@ export default function ConsultationModal({ isOpen, onClose }) {
             <div className="min-w-0">
               <div className="flex items-center gap-2">
                 <h2 className="font-bold text-sm sm:text-base text-slate-900 dark:text-white truncate">
-                  Book Partner Scoping Consultation
+                  {t.modals?.bookConsultation || 'Book Partner Scoping Consultation'}
                 </h2>
                 <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/25 font-bold shrink-0">
-                  Live Calendar
+                  {t.modals?.liveCalendar || 'Live Calendar'}
                 </span>
               </div>
               <p className="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 truncate">
-                Direct consultation with EagleComply Senior Compliance Directors.
+                {t.modals?.consultationDesc || 'Direct consultation with EagleComply Senior Compliance Directors.'}
               </p>
             </div>
           </div>
 
-          <div className="flex items-center gap-2 shrink-0 ml-2">
+          <div className="flex items-center gap-2 shrink-0 ml-2 rtl:ml-0 rtl:mr-2">
             <a
               href={`https://app.cal.com/${calLink}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs font-mono text-[#334DAF] dark:text-[#7096D1] hover:underline hidden sm:flex items-center gap-1 mr-1"
+              className="text-xs font-mono text-[#334DAF] dark:text-[#7096D1] hover:underline hidden sm:flex items-center gap-1 mr-1 rtl:mr-0 rtl:ml-1"
               title="Open full page in new tab"
             >
-              <span>New Window</span>
-              <ExternalLink className="w-3 h-3" />
+              <span>{t.modals?.newWindow || 'New Window'}</span>
+              <ExternalLink className="w-3 h-3 rtl:rotate-180" />
             </a>
             <button 
               onClick={onClose} 
@@ -147,10 +150,10 @@ export default function ConsultationModal({ isOpen, onClose }) {
         <div className="shrink-0 px-4 sm:px-6 py-2.5 sm:py-3 bg-slate-50/80 dark:bg-[#0F1C36]/80 border-t border-slate-200/80 dark:border-[#1E3778]/50 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500 dark:text-slate-400 font-mono">
           <div className="flex items-center gap-1.5">
             <ShieldCheck className="w-4 h-4 text-emerald-500 shrink-0" />
-            <span>Automated calendar invites with Google Meet / Zoom links dispatched immediately.</span>
+            <span>{t.modals?.calendarNotice || 'Automated calendar invites with Google Meet / Zoom links dispatched immediately.'}</span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="text-[11px] text-slate-400">Bilateral NDA Safeguards Active</span>
+            <span className="text-[11px] text-slate-400">{t.modals?.ndaActive || 'Bilateral NDA Safeguards Active'}</span>
           </div>
         </div>
 

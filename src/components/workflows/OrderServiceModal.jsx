@@ -124,6 +124,7 @@ export default function OrderServiceModal({ isOpen, onClose, preselectedResource
                   required
                   value={orderDetails.email}
                   onChange={e => setOrderDetails({ ...orderDetails, email: e.target.value })}
+                  placeholder="name@company.com"
                   className="w-full p-3 rounded-xl bg-surface-subtle border border-surface-border text-xs text-slate-900 dark:text-white outline-none focus:border-[#334DAF]"
                 />
               </div>
@@ -131,12 +132,12 @@ export default function OrderServiceModal({ isOpen, onClose, preselectedResource
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#091F5C] to-[#334DAF] dark:from-[#334DAF] dark:to-[#7096D1] text-white dark:text-[#101E42] font-bold text-xs shadow-md flex items-center justify-center gap-2 disabled:opacity-50 transition-all"
+                className="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#091F5C] to-[#334DAF] dark:from-[#334DAF] dark:to-[#7096D1] text-white dark:text-[#101E42] font-bold text-xs shadow-md flex items-center justify-center gap-2 disabled:opacity-50 transition-all cursor-pointer"
               >
                 {isSubmitting ? (
                   <>
                     <Loader2 className="w-4 h-4 animate-spin" />
-                    <span>Transmitting Order to Counsel...</span>
+                    <span>{t.contactPageSide?.sending || 'Transmitting Order to Counsel...'}</span>
                   </>
                 ) : (
                   <span>{comm.confirm || 'Authorize & Dispatch Package'}</span>

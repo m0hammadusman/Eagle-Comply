@@ -63,18 +63,28 @@
     "quoteBtn": "即時SOW試算を生成"
   },
   "solutionsPage": {
-    "tag": "包括的規制アシュアランス",
-    "title": "機関向けプラクティス領域",
-    "subtitle": "先端AIリスク評価からDORA耐障害性テスト、MiCAライセンス取得まで、法的基準を満たした検証済み監査調書を提供します。",
-    "all": "全6プラクティス",
-    "inspect": "プラクティス詳細"
+    "tag": "イーグル・コンプライ業務分野",
+    "title": "包括的コンプライアンス＆アドバイザリーサービス",
+    "subtitle": "AML/CFT態勢のフル構築、ライセンス取得申請支援、独立監査から法務助言まで網羅します。",
+    "coreDeliverables": "主要成果物：",
+    "explorePractice": "業務分野を詳しく見る",
+    "tailoredTag": "テーラーメイド契約",
+    "tailoredTitle": "複数法域にわたるコンプライアンス相談や専門助言が必要ですか？",
+    "tailoredDesc": "シニアディレクターと規制法弁護士がAML、ライセンス、リスク管理の最適態勢を設計します。",
+    "bookConsultation": "パートナー相談を予約",
+    "compareTitle": "サービス比較一覧",
+    "compareSubtitle": "業務分野別の具体的成果物",
+    "thPractice": "業務分野",
+    "thStandards": "準拠規制基準",
+    "thDeliverables": "主要成果物",
+    "thTimeline": "標準所要期間"
   },
   "industriesPage": {
-    "tag": "業界別規制専門性",
-    "title": "産業別規制バーティカル",
-    "subtitle": "厳格な国際規制監督下に置かれる重要産業向けに特別設計されたコンプライアンス構造。",
-    "desk": "アドバイザリーデスク",
-    "explore": "業界を探索"
+    "tag": "規制対象業界",
+    "title": "業界セクター別コンプライアンス設計",
+    "subtitle": "銀行向け態勢からフィンテックライセンス、暗号資産規制まで、業種別のフレームワークを網羅。",
+    "challengesTitle": "主要な規制上の課題：",
+    "exploreSector": "業界フレームワークを見る"
   },
   "globalPage": {
     "tag": "クロスボーダー監督ディレクトリ",
@@ -368,14 +378,24 @@
     }
   },
   "legalPage": {
-    "tag": "法定ガバナンス",
-    "title": "利用規約、プライバシーポリシーおよび法的開示",
-    "sec1Title": "1. 規制上の位置づけと助言範囲",
-    "sec1Text": "Eagle Complianceは独立系規制アシュアランスおよびテクノロジーリスク助言機関として運営されています。すべての調書および監査文書はISO/IEC 42001、ISO/IEC 27001等の国際基準に準拠して作成されます。",
-    "sec2Title": "2. 機密保持とデータの完全隔離",
-    "sec2Text": "クライアントの技術文書、ソースコードレビュー、およびベンダー台帳は、保存時AES-256および通信時TLS 1.3により暗号化された専用リポジトリに厳格に隔離されます。",
-    "sec3Title": "3. 免責事項",
-    "sec3Text": "当サイトで提供される情報は戦略的インテリジェンスを目的としており、正式な契約に基づく業務範囲外の法的助言を構成するものではありません。"
+    "tag": "ガバナンス＆法定フレームワーク",
+    "title": "規程集、ガバナンス構造＆免責事項",
+    "subtitle": "UK GDPR、EU GDPR、グローバル基準に適合したデータ保護、サイバーレジリエンス規程を維持しています。",
+    "disclaimersTitle": "法定免責事項および業務範囲",
+    "disclaimer1Title": "金融プロモーションの非提供",
+    "disclaimer1Desc": "当社は英国において金融プロモーションを行いません。投資勧誘を構成するものではありません。",
+    "disclaimer2Title": "会計・税務業務の非提供",
+    "disclaimer2Desc": "当社は会計や税務業務を行いません。規制コンプライアンスと法務助言に特化しています。",
+    "disclaimer3Title": "専門サービスに関する注記：",
+    "disclaimer3Desc": "本サイトの資料は情報提供のみを目的としており、個別契約前の正式な法的助言ではありません。",
+    "allPolicies": "すべての規程",
+    "activePolicy": "選択中の規程",
+    "standardBaseline": "準拠基準: ISO 27001 / GDPR",
+    "requestCopy": "写しを請求",
+    "ndaTag": "秘密保持契約（NDA）",
+    "ndaTitle": "ご契約前の双方向秘密保持契約（NDA）締結",
+    "ndaDesc": "すべての事前相談は厳格な秘密保持プロトコルのもと保護されます。",
+    "ndaBtn": "標準秘密保持契約を請求"
   },
   "footer": {
     "desc": "Eagle Complianceは独立系グローバル規制アドバイザリー機関です。検証済み監査調書、CEマーキング適合性ファイル、クロスボーダー許認可取得を支援します。",
@@ -788,5 +808,95 @@
     "tag": "リーダーシップ＆パートナー",
     "title": "国際規制・法務コンプライアンス専門家",
     "subtitle": "金融犯罪対策、規制認可、リスクガバナンスにおいて国際的な実績を持つシニアカウンセルが率いています。"
+  },
+  "teamPage": {
+    "tag": "リーダーシップ＆専門家",
+    "title": "シニアディレクター＆規制法カウンセル",
+    "subtitle": "多国間AML/CFT態勢、許認可申請、コーポレートガバナンス、法的意見書の作成を指揮します。",
+    "dossierTag": "役員・専門家名簿",
+    "dossierTitle": "専門プラクティショナーの経歴",
+    "dossierSubtitle": "ディレクターを選択して、実務経験、保有資格、論文等をご確認いただけます。",
+    "directorLabel": "ディレクター",
+    "disciplinesLabel": "主要専門分野",
+    "viewProfile": "プロフィールを見る",
+    "bookSession": "相談を予約",
+    "ctaTag": "機関向けアドバイザリー",
+    "ctaTitle": "貴社取締役にシニアコンプライアンスディレクターを招聘",
+    "ctaDesc": "独立AML/CFT監査、許認可申請書類作成、継続的コンプライアンス監督をご相談ください。",
+    "ctaBtn": "初回相談を予約"
+  },
+  "teamDetail": {
+    "backBtn": "専門家一覧に戻る",
+    "bookConsultation": "相談セッションを予約",
+    "viewLinkedIn": "LinkedInプロフィール",
+    "jurisdictionalCoverage": "対応管轄区域",
+    "workingLanguages": "対応言語",
+    "aboutTitle": "役員略歴・概要",
+    "specialismsTitle": "中核業務分野と専門性",
+    "ctaTag": "直接相談・アドバイザリー",
+    "ctaDesc": "規制ギャップ分析、ライセンス申請支援、独立監査保証をお任せください。",
+    "ctaBtn": "専門相談を予約"
+  },
+  "faqPage": {
+    "tag": "コンプライアンスナレッジベース",
+    "title": "よくあるご質問（FAQ）",
+    "subtitle": "許認可、AML/CFT、オペレーショナルレジリエンス、専門助言に関する回答を掲載しています。",
+    "searchPlaceholder": "キーワードや監督機関名で検索...",
+    "allCategories": "すべてのトピック",
+    "noResults": "該当する質問が見つかりません",
+    "noResultsDesc": "別のキーワードで検索するか、すべてのトピックをご覧ください。",
+    "inquiryTag": "お問い合わせ＆サポート",
+    "inquiryTitle": "その他のご質問はお気軽にお問い合わせください。",
+    "inquiryDesc": "ディレクターが貴社特有の規制課題や申請要件を検討いたします。",
+    "sendQuery": "問い合わせて相談を予約",
+    "sendEmail": "メールを送信",
+    "contactPage": "お問い合わせページ"
+  },
+  "blogsPage": {
+    "tag": "イーグル・コンプライ論考・ブログ",
+    "title": "コンプライアンスインサイト＆専門ブログ",
+    "subtitle": "常駐ディレクターによる詳細な解説、技術ブループリント、規制動向分析。",
+    "featured": "注目分析記事",
+    "readArticle": "記事を読む",
+    "read": "読む",
+    "noPosts": "記事が見つかりません",
+    "resetFilters": "フィルター解除"
+  },
+  "newsPage": {
+    "tag": "規制ニュースルーム",
+    "title": "規制ニュース＆監督機関アップデート",
+    "subtitle": "法定遵守期限、監督執行措置、国際金融犯罪情報のリアルタイム追跡。",
+    "dispatch": "監督速報",
+    "readDispatch": "速報を読む",
+    "noUpdates": "現在アップデートはありません",
+    "resetFilters": "フィルター解除"
+  },
+  "knowledgeCenter": {
+    "tag": "リソースセンター",
+    "title": "実務ツールキット＆ガイドライン",
+    "subtitle": "専門家が作成したチェックリスト、規程雛形、ライセンス準備ガイドをダウンロードできます。",
+    "downloadResource": "リソースをダウンロード",
+    "requestAdvisory": "専門助言を依頼",
+    "modalTitle": "資料ダウンロード",
+    "modalDesc": "ダウンロードリンク送付のため、会社メールアドレスをご入力ください。",
+    "privacyNote": "個人情報は厳重に管理されます。いつでも配信解除可能です。",
+    "instantDownload": "今すぐダウンロード"
+  },
+  "contactPageSide": {
+    "confidentialNote": "双方向秘密保持契約およびスパム防止機能により保護されています。",
+    "sending": "メッセージ送信中...",
+    "protocolTag": "アドバイザリー手順",
+    "protocolTitle": "ご契約・業務の流れ",
+    "step1Title": "初回スコーピング：",
+    "step1Desc": "貴社の規制範囲とリスクを特定するための機密面談。",
+    "step2Title": "双方向NDA締結：",
+    "step2Desc": "詳細書類の開示前に機密を厳格に保護。",
+    "step3Title": "個別業務仕様書（SOW）：",
+    "step3Desc": "透明な業務範囲、マイルストーン、具体的成果物を明記。",
+    "reachDirect": "以下の窓口からも直接ご連絡いただけます：",
+    "whatsappUK": "WhatsApp（英国）",
+    "whatsappIT": "WhatsApp（イタリア）",
+    "linkedin": "LinkedIn: EagleComply",
+    "locationsTitle": "主要拠点・オフィス："
   }
 }

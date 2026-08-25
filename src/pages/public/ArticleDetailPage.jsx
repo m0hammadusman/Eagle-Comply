@@ -183,10 +183,10 @@ export default function ArticleDetailPage({ params, onNavigate, onOpenConsultati
   };
 
   const backRoute = article.type === 'news' ? 'news' : 'blogs';
-  const backLabel = article.type === 'news' ? 'Regulatory Newsroom' : 'Compliance Blogs';
+  const backLabel = article.type === 'news' ? (t.nav?.news || 'Regulatory Newsroom') : (t.nav?.blogs || 'Compliance Blogs');
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 space-y-8 animate-fade-in">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 space-y-8 animate-fade-in text-left rtl:text-right">
       {/* Breadcrumbs */}
       <Breadcrumbs 
         items={[
@@ -202,7 +202,7 @@ export default function ArticleDetailPage({ params, onNavigate, onOpenConsultati
           onClick={() => onNavigate(backRoute)}
           className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 hover:text-[#334DAF] dark:hover:text-[#7096D1] transition-colors cursor-pointer"
         >
-          <ArrowLeft className="w-4 h-4 rtl:rotate-180" /> Back to {backLabel}
+          <ArrowLeft className="w-4 h-4 rtl:rotate-180" /> {t.teamDetail?.backBtn || 'Back to'} {backLabel}
         </button>
       </div>
 
@@ -318,8 +318,8 @@ export default function ArticleDetailPage({ params, onNavigate, onOpenConsultati
                   <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
                     <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
                   </svg>
-                  <span>Connect with Author</span>
-                  <ExternalLink className="w-3 h-3 ml-0.5 opacity-70" />
+                  <span>{t.teamDetail?.viewLinkedIn || 'Connect with Author'}</span>
+                  <ExternalLink className="w-3 h-3 ml-0.5 opacity-70 rtl:rotate-180" />
                 </a>
               </div>
             )}
@@ -333,7 +333,9 @@ export default function ArticleDetailPage({ params, onNavigate, onOpenConsultati
           {/* Tags */}
           {article.tags && article.tags.length > 0 && (
             <div className="pt-6 border-t border-surface-border space-y-2">
-              <span className="text-xs font-mono font-bold uppercase text-slate-400">Related Regulatory Topics:</span>
+              <span className="text-xs font-mono font-bold uppercase text-slate-400">
+                {t.detailCommon?.relatedRegulations || 'Related Regulatory Topics:'}
+              </span>
               <div className="flex flex-wrap gap-2">
                 {article.tags.map(tag => (
                   <span
@@ -349,7 +351,7 @@ export default function ArticleDetailPage({ params, onNavigate, onOpenConsultati
 
           {/* Author CTA Card */}
           <div className="p-6 sm:p-8 rounded-3xl bg-surface-raised border border-surface-border shadow-xl flex flex-col sm:flex-row items-center justify-between gap-6">
-            <div className="flex items-center gap-4 text-center sm:text-left flex-col sm:flex-row">
+            <div className="flex items-center gap-4 text-center sm:text-left rtl:sm:text-right flex-col sm:flex-row">
               {article.author?.avatar && (
                 <img
                   src={article.author.avatar}
@@ -359,10 +361,10 @@ export default function ArticleDetailPage({ params, onNavigate, onOpenConsultati
               )}
               <div>
                 <h4 className="text-base font-bold text-slate-900 dark:text-white">
-                  Discuss this analysis with {article.author?.name || 'EagleComply'}
+                  {t.teamDetail?.ctaTag ? `${t.teamDetail.ctaTag}: ${article.author?.name || 'EagleComply'}` : `Discuss this analysis with ${article.author?.name || 'EagleComply'}`}
                 </h4>
                 <p className="text-xs text-slate-500 font-mono mt-0.5">
-                  Direct consultation and supervisory advisory for your institution.
+                  {t.teamDetail?.ctaDesc || 'Direct consultation and supervisory advisory for your institution.'}
                 </p>
               </div>
             </div>
@@ -371,7 +373,7 @@ export default function ArticleDetailPage({ params, onNavigate, onOpenConsultati
               onClick={() => onOpenConsultation?.()}
               className="px-5 py-2.5 rounded-xl bg-[#091F5C] dark:bg-[#334DAF] hover:bg-[#1E3778] dark:hover:bg-[#253982] text-white font-bold text-xs shadow-md hover:shadow-lg transition-all cursor-pointer whitespace-nowrap"
             >
-              Book a Consultation
+              {t.teamDetail?.bookConsultation || 'Book a Consultation'}
             </button>
           </div>
         </article>

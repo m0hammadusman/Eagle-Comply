@@ -45,9 +45,19 @@ function LinkedInIcon({ className = "w-3.5 h-3.5" }) {
 }
 
 export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }) {
-  const { t, solutions, industries, experts, insights, resources, caseStudies } = useLanguage();
-  const hx = t.homeExtended;
+  const { t, solutions, industries, experts, insights, resources, caseStudies, badges } = useLanguage();
+  const hx = t.homeExtended || {};
   const dx = hx.diagOptions || {};
+
+  const badgeIcons = [
+    ShieldCheck, Scale, Building2, Lock, Landmark, Award, 
+    Cpu, Layers, Sliders, FileText, CheckCircle2, Activity
+  ];
+  const dynamicBadges = (badges || []).map((b, i) => ({
+    ...b,
+    icon: badgeIcons[i % badgeIcons.length] || ShieldCheck
+  }));
+  const displayBadges = [...dynamicBadges, ...dynamicBadges];
 
   // Diagnostic Calculator State
   const [diagSector, setDiagSector] = useState('fintech');
@@ -143,34 +153,8 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
             <div className="absolute right-0 top-0 bottom-0 w-8 sm:w-20 bg-gradient-to-l from-surface-base to-transparent z-10 pointer-events-none" />
 
             <div className="animate-marquee-ltr flex items-center gap-3 sm:gap-4 py-2">
-              {[
-                { title: "FATF Standards", sub: "Global Baseline", icon: ShieldCheck },
-                { title: "Risk-Based", sub: "Tailored Controls", icon: Scale },
-                { title: "Licensing Ready", sub: "Regulator Dossiers", icon: Building2 },
-                { title: "Bilateral NDA", sub: "Confidential Advisory", icon: Lock },
-                { title: "EU 6AMLD & AMLA", sub: "European Directives", icon: Landmark },
-                { title: "FinCEN BSA/AML", sub: "Federal Standards", icon: Award },
-                { title: "Travel Rule (CASP)", sub: "Virtual Asset Protocol", icon: Cpu },
-                { title: "Three Lines Model", sub: "Enterprise Governance", icon: Layers },
-                { title: "ISO 31000 & COSO", sub: "Institutional Risk", icon: Sliders },
-                { title: "GDPR & Privacy", sub: "Statutory Protection", icon: FileText },
-                { title: "CMP Attestation", sub: "Supervisory Monitoring", icon: CheckCircle2 },
-                { title: "Screening & Sanctions", sub: "Real-time PEP Checks", icon: Activity },
-                // Duplicated for seamless loop
-                { title: "FATF Standards", sub: "Global Baseline", icon: ShieldCheck },
-                { title: "Risk-Based", sub: "Tailored Controls", icon: Scale },
-                { title: "Licensing Ready", sub: "Regulator Dossiers", icon: Building2 },
-                { title: "Bilateral NDA", sub: "Confidential Advisory", icon: Lock },
-                { title: "EU 6AMLD & AMLA", sub: "European Directives", icon: Landmark },
-                { title: "FinCEN BSA/AML", sub: "Federal Standards", icon: Award },
-                { title: "Travel Rule (CASP)", sub: "Virtual Asset Protocol", icon: Cpu },
-                { title: "Three Lines Model", sub: "Enterprise Governance", icon: Layers },
-                { title: "ISO 31000 & COSO", sub: "Institutional Risk", icon: Sliders },
-                { title: "GDPR & Privacy", sub: "Statutory Protection", icon: FileText },
-                { title: "CMP Attestation", sub: "Supervisory Monitoring", icon: CheckCircle2 },
-                { title: "Screening & Sanctions", sub: "Real-time PEP Checks", icon: Activity }
-              ].map((badge, bIdx) => {
-                const BadgeIcon = badge.icon;
+              {displayBadges.map((badge, bIdx) => {
+                const BadgeIcon = badge.icon || ShieldCheck;
                 return (
                   <div
                     key={bIdx}
@@ -179,7 +163,7 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
                     <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl bg-[#334DAF]/10 dark:bg-cyan-500/15 border border-[#334DAF]/20 dark:border-cyan-500/30 text-[#334DAF] dark:text-cyan-400 flex items-center justify-center shrink-0">
                       <BadgeIcon className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                     </div>
-                    <div className="text-left">
+                    <div className="text-left rtl:text-right">
                       <div className="text-[11px] sm:text-xs font-bold text-slate-900 dark:text-white whitespace-nowrap">
                         {badge.title}
                       </div>
@@ -198,7 +182,7 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
       {/* 2. Interactive 3D Shield & Core 4 Pillars */}
       <section className="py-12 sm:py-16 lg:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center mb-10 sm:mb-16">
-          <div className="lg:col-span-7 space-y-3 sm:space-y-4 text-center lg:text-left">
+          <div className="lg:col-span-7 space-y-3 sm:space-y-4 text-center lg:text-left rtl:lg:text-right">
             <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#334DAF] dark:text-[#7096D1]">
               {t.pillars.tag}
             </span>
@@ -225,7 +209,7 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
               <div className="text-center pt-2.5 sm:pt-3">
                 <span className="text-[9px] sm:text-[10px] font-mono font-bold uppercase tracking-wider text-[#334DAF] dark:text-[#7096D1] flex items-center justify-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping inline-block" />
-                  EagleComply Governance Overview
+                  {t.pillars?.videoTag || 'EagleComply Governance Overview'}
                 </span>
               </div>
             </div>

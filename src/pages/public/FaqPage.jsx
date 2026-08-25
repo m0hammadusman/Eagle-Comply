@@ -108,6 +108,7 @@ const ALL_FAQS = [
 
 export default function FaqPage({ onNavigate, onOpenConsultation }) {
   const { t } = useLanguage();
+  const fq = t.faqPage || {};
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [openItems, setOpenItems] = useState({});
@@ -150,13 +151,13 @@ export default function FaqPage({ onNavigate, onOpenConsultation }) {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#334DAF]/10 dark:bg-[#7096D1]/15 text-[#334DAF] dark:text-[#7096D1] text-xs font-mono font-bold tracking-wider uppercase border border-[#334DAF]/20 dark:border-[#7096D1]/30">
           <HelpCircle className="w-3.5 h-3.5" />
-          <span>COMPLIANCE KNOWLEDGEBASE</span>
+          <span>{fq.tag || 'COMPLIANCE KNOWLEDGEBASE'}</span>
         </div>
-        <h1 className="font-sans tracking-tight text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white">
-          Frequently Asked Questions
+        <h1 className="font-sans tracking-tight text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white">
+          {fq.title || 'Frequently Asked Questions'}
         </h1>
         <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
-          Comprehensive answers to common regulatory, AML/CFT, statutory licensing, operational resilience, and institutional advisory questions.
+          {fq.subtitle || 'Comprehensive answers to common regulatory, AML/CFT, statutory licensing, operational resilience, and institutional advisory questions.'}
         </p>
 
         {/* Search Input */}
@@ -166,7 +167,7 @@ export default function FaqPage({ onNavigate, onOpenConsultation }) {
             type="text"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            placeholder="Search compliance topics, AML, MiCA, Licensing, DORA..."
+            placeholder={fq.searchPlaceholder || "Search compliance topics, AML, MiCA, Licensing, DORA..."}
             className="w-full pl-11 pr-4 rtl:pl-4 rtl:pr-11 py-3 rounded-2xl bg-surface-subtle border border-surface-border text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-[#334DAF] transition-all shadow-sm"
           />
         </div>
@@ -177,13 +178,13 @@ export default function FaqPage({ onNavigate, onOpenConsultation }) {
             <button
               key={cat}
               onClick={() => setSelectedCategory(cat)}
-              className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all ${
+              className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
                 selectedCategory === cat
                   ? 'bg-[#334DAF] text-white dark:bg-[#7096D1] dark:text-[#101E42] shadow-sm'
                   : 'bg-surface-subtle text-slate-600 dark:text-slate-300 hover:bg-surface-raised border border-surface-border'
               }`}
             >
-              {cat}
+              {cat === 'All' ? (fq.allCategories || 'All') : cat}
             </button>
           ))}
         </div>
@@ -194,8 +195,8 @@ export default function FaqPage({ onNavigate, onOpenConsultation }) {
         {filteredCategories.length === 0 ? (
           <div className="p-12 text-center rounded-3xl glass-panel border border-surface-border space-y-3">
             <HelpCircle className="w-8 h-8 text-slate-400 mx-auto" />
-            <p className="text-sm font-bold text-slate-900 dark:text-white">No matching questions found</p>
-            <p className="text-xs text-slate-500">Try searching for a different keyword or view all categories.</p>
+            <p className="text-sm font-bold text-slate-900 dark:text-white">{fq.noResults || 'No matching questions found'}</p>
+            <p className="text-xs text-slate-500">{fq.noResultsDesc || 'Try searching for a different keyword or view all categories.'}</p>
           </div>
         ) : (
           filteredCategories.map((catSection, cIndex) => (
@@ -219,7 +220,7 @@ export default function FaqPage({ onNavigate, onOpenConsultation }) {
                     >
                       <button
                         onClick={() => toggleItem(catSection.catIdx, itemIdx)}
-                        className="w-full p-5 text-left rtl:text-right flex items-center justify-between gap-4 focus:outline-none"
+                        className="w-full p-5 text-left rtl:text-right flex items-center justify-between gap-4 focus:outline-none cursor-pointer"
                       >
                         <span className="font-bold text-sm text-slate-900 dark:text-white">
                           {item.q}
@@ -232,7 +233,7 @@ export default function FaqPage({ onNavigate, onOpenConsultation }) {
                       </button>
                       
                       {isOpen && (
-                        <div className="px-5 pb-5 pt-1 text-xs sm:text-sm leading-relaxed text-slate-600 dark:text-slate-300 border-t border-surface-border/50 bg-surface-subtle/30">
+                        <div className="px-5 pb-5 pt-1 text-xs sm:text-sm leading-relaxed text-slate-600 dark:text-slate-300 border-t border-surface-border/50 bg-surface-subtle/30 text-left rtl:text-right">
                           {item.a}
                         </div>
                       )}
@@ -250,39 +251,39 @@ export default function FaqPage({ onNavigate, onOpenConsultation }) {
         <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-[#091F5C] via-[#16295C] to-[#334DAF] text-white shadow-2xl text-center space-y-5">
           <div className="space-y-2">
             <span className="text-xs font-mono uppercase tracking-widest text-blue-200 font-bold inline-block px-3 py-1 rounded-full bg-white/10 border border-white/20">
-              DIRECT INQUIRY & SUPPORT
+              {fq.inquiryTag || 'DIRECT INQUIRY & SUPPORT'}
             </span>
             <h3 className="text-2xl sm:text-3xl font-bold">
-              If you have any other questions, send us your query.
+              {fq.inquiryTitle || 'If you have any other questions, send us your query.'}
             </h3>
             <p className="text-xs sm:text-sm text-blue-100/85 max-w-xl mx-auto leading-relaxed">
-              Our practice directors and regulatory counsel are ready to review your firm's specific regulatory challenges, audit requirements, or license applications.
+              {fq.inquiryDesc || "Our practice directors and regulatory counsel are ready to review your firm's specific regulatory challenges, audit requirements, or license applications."}
             </p>
           </div>
 
           <div className="pt-2 flex flex-wrap items-center justify-center gap-3.5">
             <button
               onClick={onOpenConsultation}
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white text-[#091F5C] hover:bg-blue-50 font-bold text-xs shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all"
+              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white text-[#091F5C] hover:bg-blue-50 font-bold text-xs shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer"
             >
               <Calendar className="w-4 h-4" />
-              <span>Send Query & Book Session</span>
+              <span>{fq.sendQuery || 'Send Query & Book Session'}</span>
             </button>
 
             <a
-              href="mailto:info@eaglecompliance.co.uk"
+              href="mailto:info@eaglecomply.com"
               className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white/15 backdrop-blur-md border border-white/30 text-white hover:bg-white/25 font-bold text-xs transition-all shadow-md"
             >
               <Mail className="w-4 h-4" />
-              <span>Send Us an Email</span>
+              <span>{fq.sendEmail || 'Send Us an Email'}</span>
             </a>
 
             <button
               onClick={() => onNavigate('contact')}
-              className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl bg-black/40 backdrop-blur-md border border-white/20 text-white hover:bg-black/60 font-bold text-xs transition-all"
+              className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl bg-black/40 backdrop-blur-md border border-white/20 text-white hover:bg-black/60 font-bold text-xs transition-all cursor-pointer"
             >
               <MessageSquare className="w-4 h-4" />
-              <span>Contact Page</span>
+              <span>{fq.contactPage || 'Contact Page'}</span>
             </button>
           </div>
         </div>

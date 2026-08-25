@@ -5,6 +5,7 @@ import Breadcrumbs from '../../components/common/Breadcrumbs';
 
 export default function LegalPage({ onNavigate, params }) {
   const { t } = useLanguage();
+  const lp = t.legalPage || {};
   const [activeTab, setActiveTab] = useState(params?.section || 'all');
 
   const policies = [
@@ -131,19 +132,19 @@ export default function LegalPage({ onNavigate, params }) {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10 animate-fade-in">
-      <Breadcrumbs items={[{ label: 'Institutional Governance & Legal Disclaimers' }]} onNavigate={onNavigate} />
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10 animate-fade-in text-left rtl:text-right">
+      <Breadcrumbs items={[{ label: lp.title || 'Institutional Governance & Legal Disclaimers' }]} onNavigate={onNavigate} />
 
       {/* Header Banner */}
       <div className="py-6 border-b border-surface-border space-y-3">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#334DAF]/10 dark:bg-[#7096D1]/15 text-[#334DAF] dark:text-[#7096D1] text-xs font-mono font-bold uppercase tracking-widest border border-[#334DAF]/20 dark:border-[#7096D1]/30">
-          INSTITUTIONAL GOVERNANCE & STATUTORY FRAMEWORK
+          {lp.tag || 'INSTITUTIONAL GOVERNANCE & STATUTORY FRAMEWORK'}
         </div>
         <h1 className="font-sans tracking-tight text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
-          Policies, Governance Architecture & Disclaimers
+          {lp.title || 'Policies, Governance Architecture & Disclaimers'}
         </h1>
         <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 max-w-3xl leading-relaxed">
-          EagleComply maintains institutional-grade data privacy, cyber resilience, and governance policies aligned with UK GDPR, EU GDPR, and global regulatory standards.
+          {lp.subtitle || 'EagleComply maintains institutional-grade data privacy, cyber resilience, and governance policies aligned with UK GDPR, EU GDPR, and global regulatory standards.'}
         </p>
       </div>
 
@@ -151,24 +152,24 @@ export default function LegalPage({ onNavigate, params }) {
       <div className="p-6 rounded-3xl bg-amber-500/10 dark:bg-amber-500/15 border border-amber-500/30 text-amber-950 dark:text-amber-200 space-y-3 shadow-md">
         <div className="flex items-center gap-2.5 font-bold text-sm sm:text-base text-amber-900 dark:text-amber-300">
           <AlertTriangle className="w-5 h-5 text-amber-600 dark:text-amber-400 shrink-0" />
-          <span>Statutory Disclaimers & Professional Mandate</span>
+          <span>{lp.disclaimersTitle || 'Statutory Disclaimers & Professional Mandate'}</span>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm pt-1">
           <div className="p-3.5 rounded-2xl bg-white/60 dark:bg-slate-900/60 border border-amber-500/20 space-y-1">
-            <strong className="block text-slate-900 dark:text-white">1. UK Financial Promotions:</strong>
+            <strong className="block text-slate-900 dark:text-white">1. {lp.disclaimer1Title || 'UK Financial Promotions'}:</strong>
             <p className="text-slate-700 dark:text-slate-300 text-xs leading-relaxed">
-              We do not provide financial promotions in the UK. Nothing on eaglecomply.com or in our advisory services constitutes an invitation or inducement to engage in investment activity.
+              {lp.disclaimer1Desc || 'We do not provide financial promotions in the UK. Nothing on eaglecomply.com or in our advisory services constitutes an invitation or inducement to engage in investment activity.'}
             </p>
           </div>
           <div className="p-3.5 rounded-2xl bg-white/60 dark:bg-slate-900/60 border border-amber-500/20 space-y-1">
-            <strong className="block text-slate-900 dark:text-white">2. Accountancy & Tax Services:</strong>
+            <strong className="block text-slate-900 dark:text-white">2. {lp.disclaimer2Title || 'Accountancy & Tax Services'}:</strong>
             <p className="text-slate-700 dark:text-slate-300 text-xs leading-relaxed">
-              We do not provide accountancy and tax services. EagleComply focuses exclusively on regulatory compliance, AML/CFT risk management, licensing readiness, and legal compliance advisory.
+              {lp.disclaimer2Desc || 'We do not provide accountancy and tax services. EagleComply focuses exclusively on regulatory compliance, AML/CFT risk management, licensing readiness, and legal compliance advisory.'}
             </p>
           </div>
         </div>
         <p className="text-[11px] text-slate-600 dark:text-slate-400 pt-1 leading-relaxed">
-          <strong>Professional Services Notice:</strong> The materials, checklists, guides, and commentary on this website are provided for general informational and educational purposes only and do not constitute formal legal or statutory financial advice without an executed bilateral engagement agreement.
+          <strong>{lp.disclaimer3Title || 'Professional Services Notice:'}</strong> {lp.disclaimer3Desc || 'The materials, checklists, guides, and commentary on this website are provided for general informational and educational purposes only and do not constitute formal legal or statutory financial advice without an executed bilateral engagement agreement.'}
         </p>
       </div>
 
@@ -176,19 +177,19 @@ export default function LegalPage({ onNavigate, params }) {
       <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
         <button
           onClick={() => setActiveTab('all')}
-          className={`px-4 py-2 rounded-xl text-xs font-bold transition-all whitespace-nowrap ${
+          className={`px-4 py-2 rounded-xl text-xs font-bold transition-all whitespace-nowrap cursor-pointer ${
             activeTab === 'all'
               ? 'bg-[#334DAF] text-white dark:bg-[#7096D1] dark:text-[#101E42] shadow-md'
               : 'bg-surface-subtle hover:bg-surface-raised text-slate-700 dark:text-slate-300 border border-surface-border'
           }`}
         >
-          All Policies (10)
+          {lp.allPolicies || 'All Policies'} ({policies.length})
         </button>
         {policies.map((p) => (
           <button
             key={p.id}
             onClick={() => setActiveTab(p.id)}
-            className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all whitespace-nowrap flex items-center gap-1.5 ${
+            className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all whitespace-nowrap flex items-center gap-1.5 cursor-pointer ${
               activeTab === p.id
                 ? 'bg-[#334DAF] text-white dark:bg-[#7096D1] dark:text-[#101E42] shadow-md'
                 : 'bg-surface-subtle hover:bg-surface-raised text-slate-700 dark:text-slate-300 border border-surface-border'
@@ -218,7 +219,7 @@ export default function LegalPage({ onNavigate, params }) {
                       {p.category}
                     </span>
                     <span className="text-[10px] font-mono text-emerald-500 font-bold flex items-center gap-1">
-                      <CheckCircle2 className="w-3 h-3" /> Active Policy
+                      <CheckCircle2 className="w-3 h-3" /> {lp.activePolicy || 'Active Policy'}
                     </span>
                   </div>
 
@@ -239,7 +240,7 @@ export default function LegalPage({ onNavigate, params }) {
                   <div className="space-y-2 pt-2 border-t border-surface-border">
                     {p.content.map((point, i) => (
                       <div key={i} className="flex items-start gap-2 text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
-                        <ChevronRight className="w-3.5 h-3.5 text-[#334DAF] dark:text-[#7096D1] shrink-0 mt-0.5" />
+                        <ChevronRight className="w-3.5 h-3.5 text-[#334DAF] dark:text-[#7096D1] shrink-0 mt-0.5 rtl:rotate-180" />
                         <span>{point}</span>
                       </div>
                     ))}
@@ -247,13 +248,13 @@ export default function LegalPage({ onNavigate, params }) {
                 </div>
 
                 <div className="pt-4 border-t border-surface-border flex items-center justify-between text-xs">
-                  <span className="text-[11px] font-mono text-slate-400">Standard Baseline: ISO 27001 / GDPR</span>
+                  <span className="text-[11px] font-mono text-slate-400">{lp.standardBaseline || 'Standard Baseline: ISO 27001 / GDPR'}</span>
                   <button 
                     onClick={() => onNavigate('contact')}
-                    className="inline-flex items-center gap-1 text-[#334DAF] dark:text-[#7096D1] font-bold hover:underline"
+                    className="inline-flex items-center gap-1 text-[#334DAF] dark:text-[#7096D1] font-bold hover:underline cursor-pointer"
                   >
-                    <span>Request Copy</span>
-                    <ArrowRight className="w-3 h-3" />
+                    <span>{lp.requestCopy || 'Request Copy'}</span>
+                    <ArrowRight className="w-3 h-3 rtl:rotate-180" />
                   </button>
                 </div>
               </div>
@@ -263,22 +264,22 @@ export default function LegalPage({ onNavigate, params }) {
 
       {/* Engagement & Mutual NDA Desk */}
       <div className="p-8 rounded-3xl bg-gradient-to-br from-[#091F5C] to-[#132759] text-white border border-[#1E3778] space-y-4 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
-        <div className="space-y-2">
+        <div className="space-y-2 text-left rtl:text-right">
           <span className="text-xs font-mono font-bold tracking-wider text-cyan-300 uppercase">
-            BILATERAL CONFIDENTIALITY & GOVERNANCE
+            {lp.ndaTag || 'BILATERAL CONFIDENTIALITY & GOVERNANCE'}
           </span>
           <h2 className="text-xl sm:text-2xl font-bold">
-            Execute a Mutual Bilateral NDA Before Engagement
+            {lp.ndaTitle || 'Execute a Mutual Bilateral NDA Before Engagement'}
           </h2>
           <p className="text-xs sm:text-sm text-blue-100/90 max-w-2xl leading-relaxed">
-            All prospective client consultations and compliance scoping sessions are protected by standard mutual confidentiality protocols. Request our standard bilateral NDA or provide your institutional format.
+            {lp.ndaDesc || 'All prospective client consultations and compliance scoping sessions are protected by standard mutual confidentiality protocols. Request our standard bilateral NDA or provide your institutional format.'}
           </p>
         </div>
         <button
           onClick={() => onNavigate('contact')}
-          className="px-6 py-3 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-lg hover:scale-105 transition-all whitespace-nowrap shrink-0"
+          className="px-6 py-3 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-lg hover:scale-105 transition-all whitespace-nowrap shrink-0 cursor-pointer"
         >
-          Request Bilateral NDA & Scope
+          {lp.ndaBtn || 'Request Bilateral NDA & Scope'}
         </button>
       </div>
 

@@ -63,18 +63,28 @@
     "quoteBtn": "Générer une Estimation SOW Instantanée"
   },
   "solutionsPage": {
-    "tag": "Assurance Réglementaire Complète",
-    "title": "Domaines de Pratique Institutionnels",
-    "subtitle": "Des dossiers de risque pour l'IA aux tests de résilience DORA et licences MiCA, Eagle Compliance fournit des dossiers d'audit vérifiés de niveau juridique.",
-    "all": "Toutes les 6 Pratiques",
-    "inspect": "Examiner la Pratique"
+    "tag": "DOMAINES D'EXPERTISE EAGLECOMPLY",
+    "title": "Services de Conseil et Conformité de Bout en Bout",
+    "subtitle": "De la création intégrale de programmes AML/CFT aux dossiers d'agrément, revues indépendantes et conseil juridique, explorez nos pratiques structurées.",
+    "coreDeliverables": "Livrables Principaux :",
+    "explorePractice": "Explorer ce Domaine",
+    "tailoredTag": "ENGAGEMENT SUR MESURE",
+    "tailoredTitle": "Besoin d'une Consultation Multi-Juridictionnelle ou d'un Conseil Dédié ?",
+    "tailoredDesc": "Nos Associés Directeurs et Juristes structurent des architectures de conformité sur mesure en matière de lutte contre le blanchiment, licences et gouvernance des risques.",
+    "bookConsultation": "Réserver une Consultation Associé",
+    "compareTitle": "Comparatif des Services",
+    "compareSubtitle": "Livrables Institutionnels par Domaine d'Expertise",
+    "thPractice": "Domaine de Pratique",
+    "thStandards": "Normes Prudentielles Visées",
+    "thDeliverables": "Livrables Clés",
+    "thTimeline": "Délai d'Exécution Moyen"
   },
   "industriesPage": {
-    "tag": "Profondeur Réglementaire Sectorielle",
-    "title": "Pôles Réglementaires Industriels",
-    "subtitle": "Architectures de conformité sur mesure conçues pour les industries à fort impact soumises à un contrôle multi-juridictionnel rigoureux.",
-    "desk": "Bureau de Conseil",
-    "explore": "Explorer le Secteur"
+    "tag": "SECTEURS RÉGLEMENTÉS",
+    "title": "Conformité Sur Mesure par Secteur d'Activité",
+    "subtitle": "Des cadres bancaires institutionnels aux agréments fintech et crypto, découvrez nos architectures réglementaires adaptées.",
+    "challengesTitle": "Défis Réglementaires Majeurs :",
+    "exploreSector": "Explorer le Cadre Sectoriel"
   },
   "globalPage": {
     "tag": "Répertoire de Supervision Transfrontalière",
@@ -293,14 +303,24 @@
     }
   },
   "legalPage": {
-    "tag": "Gouvernance Statutaire",
-    "title": "Conditions Juridiques, Confidentialité & Divulgations",
-    "sec1Title": "1. Statut Réglementaire & Périmètre de Conseil",
-    "sec1Text": "Eagle Compliance opère en tant que cabinet indépendant d'assurance réglementaire et de conseil en risques technologiques. Tous les dossiers réglementaires, fiches de modèles et rapports d'audit sont préparés dans le respect strict des normes internationales dont ISO/CEI 42001, ISO/CEI 27001 et des directives applicables.",
-    "sec2Title": "2. Confidentialité & Isolation des Données",
-    "sec2Text": "Les dossiers techniques, revues de code source et registres fournisseurs des clients sont isolés dans des référentiels locataires chiffrés selon les normes AES-256 au repos et TLS 1.3 en transit.",
-    "sec3Title": "3. Avertissement Légal",
-    "sec3Text": "Les informations publiées sur le centre de connaissances, le radar réglementaire et les livres blancs sont fournies à des fins de veille stratégique et ne constituent pas un conseil juridique formel hors contrat d'engagement signé."
+    "tag": "GOUVERNANCE INSTITUTIONNELLE & CADRE LÉGAL",
+    "title": "Politiques, Architecture de Gouvernance & Mentions Légales",
+    "subtitle": "EagleComply maintient des politiques de confidentialité, de cyber-résilience et de gouvernance alignées sur le RGPD britannique, le RGPD européen et les standards internationaux.",
+    "disclaimersTitle": "Avertissements Statutaires & Mandat Professionnel",
+    "disclaimer1Title": "Absence de Promotion Financière",
+    "disclaimer1Desc": "Nous n'effectuons aucune promotion financière au Royaume-Uni. Rien sur ce site ne constitue une invitation ou une incitation à des activités d'investissement.",
+    "disclaimer2Title": "Absence de Conseil Comptable et Fiscal",
+    "disclaimer2Desc": "Nous ne fournissons pas de services comptables ou fiscaux. EagleComply se consacre exclusivement à la conformité réglementaire, à la gestion du risque LCB-FT et au conseil juridique.",
+    "disclaimer3Title": "Notice de Services Professionnels :",
+    "disclaimer3Desc": "Les contenus, checklists et guides publiés sur ce site sont fournis à titre informatif et éducatif uniquement et ne constituent pas un conseil juridique formel sans accord bilatéral.",
+    "allPolicies": "Toutes les Politiques",
+    "activePolicy": "Politique Active",
+    "standardBaseline": "Référentiel : ISO 27001 / RGPD",
+    "requestCopy": "Demander une Copie",
+    "ndaTag": "CONFIDENTIALITÉ BILATÉRALE",
+    "ndaTitle": "Signature d'un Accord de Confidentialité (NDA) Préalable",
+    "ndaDesc": "Toutes les consultations et cadrages sont protégés par nos protocoles stricts de confidentialité. Demandez notre modèle d'accord ou transmettez le vôtre.",
+    "ndaBtn": "Demander le Modèle de NDA Bilatéral"
   },
   "footer": {
     "desc": "Eagle Compliance est un cabinet indépendant de conseil réglementaire mondial. Nous concevons des dossiers d'audit certifiés, des fichiers de marquage CE et des autorisations transfrontalières.",
@@ -713,5 +733,95 @@
     "tag": "ÉQUIPE DIRIGEANTE & ASSOCIÉS",
     "title": "Praticiens Experts en Conformité et Réglementation",
     "subtitle": "Nos missions sont dirigées par des juristes seniors et des spécialistes certifiés de la criminalité financière et de la gouvernance."
+  },
+  "teamPage": {
+    "tag": "NOTRE DIRECTION DU CONSEIL",
+    "title": "Directeurs Associés & Juristes Réglementaires",
+    "subtitle": "Direction des cadres AML/CFT transfrontaliers, agréments prudentiels, gouvernance statutaire et avis juridiques d'entreprise.",
+    "dossierTag": "Dossiers Dirigeants",
+    "dossierTitle": "Profils Professionnels Complets",
+    "dossierSubtitle": "Sélectionnez un directeur pour consulter son parcours, ses certifications et ses publications.",
+    "directorLabel": "DIRECTEUR ASSOCIÉ",
+    "disciplinesLabel": "Disciplines Principales",
+    "viewProfile": "Voir le Profil",
+    "bookSession": "Réserver un Échange",
+    "ctaTag": "Conseil Institutionnel",
+    "ctaTitle": "Adjoignez des Experts Réglementaires à Votre Conseil",
+    "ctaDesc": "Faites appel à nos directeurs pour vos audits AML/CFT indépendants, dossiers d'agrément et gouvernance continue.",
+    "ctaBtn": "Planifier une Consultation Initiale"
+  },
+  "teamDetail": {
+    "backBtn": "Retour à Tous les Directeurs",
+    "bookConsultation": "Réserver une Session de Conseil",
+    "viewLinkedIn": "Profil LinkedIn",
+    "jurisdictionalCoverage": "Couverture Juridictionnelle",
+    "workingLanguages": "Langues de Travail",
+    "aboutTitle": "PROFIL EXÉCUTIF & PRÉSENTATION",
+    "specialismsTitle": "Domaines de Spécialisation Clés",
+    "ctaTag": "CONSEIL DIRECT & EXPERTISE",
+    "ctaDesc": "Mobilisez nos directeurs pour vos analyses d'écarts réglementaires, dossiers de licence et revues indépendantes.",
+    "ctaBtn": "Planifier un Entretien Dédié"
+  },
+  "faqPage": {
+    "tag": "BASE DE CONNAISSANCES DE CONFORMITÉ",
+    "title": "Foire Aux Questions",
+    "subtitle": "Réponses complètes aux questions courantes sur la réglementation, le blanchiment, les licences et la gouvernance.",
+    "searchPlaceholder": "Rechercher par mot-clé, régulateur ou thème...",
+    "allCategories": "Tous les Sujets",
+    "noResults": "Aucune question correspondante trouvée",
+    "noResultsDesc": "Essayez avec un autre mot-clé ou parcourez toutes les catégories.",
+    "inquiryTag": "DEMANDE DIRECTE & SUPPORT",
+    "inquiryTitle": "Vous avez une autre question ? Envoyez-nous votre demande.",
+    "inquiryDesc": "Nos directeurs associés et juristes sont à votre disposition pour analyser vos défis spécifiques et vos demandes d'agrément.",
+    "sendQuery": "Envoyer la Demande & Réserver",
+    "sendEmail": "Nous Écrire par Email",
+    "contactPage": "Page de Contact"
+  },
+  "blogsPage": {
+    "tag": "ÉDITORIAL & BLOGS EAGLECOMPLY",
+    "title": "Analyses de Conformité & Articles d'Experts",
+    "subtitle": "Décryptages approfondis, schémas techniques et analyses réglementaires rédigés par nos directeurs et consultants.",
+    "featured": "Analyse à la Une",
+    "readArticle": "Lire l'Article",
+    "read": "Lire",
+    "noPosts": "Aucun article trouvé",
+    "resetFilters": "Réinitialiser les Filtres"
+  },
+  "newsPage": {
+    "tag": "SALLE DE PRESSE RÉGLEMENTAIRE",
+    "title": "Actualités Réglementaires & Veille Prudentielle",
+    "subtitle": "Suivi en temps réel des échéances légales, mesures de sanctions et actualités de criminalité financière.",
+    "dispatch": "COMMUNIQUÉ PRUDENTIEL",
+    "readDispatch": "Lire le Communiqué",
+    "noUpdates": "Aucune actualité disponible",
+    "resetFilters": "Réinitialiser les Filtres"
+  },
+  "knowledgeCenter": {
+    "tag": "CENTRE DE RESSOURCES EAGLECOMPLY",
+    "title": "Boîtes à Outils & Guides Pratiques de Conformité",
+    "subtitle": "Téléchargez nos checklists, modèles de politiques et guides rédigés par des praticiens chevronnés.",
+    "downloadResource": "Télécharger la Ressource",
+    "requestAdvisory": "Demander un Conseil",
+    "modalTitle": "Télécharger la Ressource",
+    "modalDesc": "Veuillez renseigner votre email professionnel pour recevoir le lien de téléchargement direct.",
+    "privacyNote": "Nous respectons votre vie privée. Zéro spam. Désabonnement à tout moment.",
+    "instantDownload": "Obtenir le Téléchargement"
+  },
+  "contactPageSide": {
+    "confidentialNote": "Protégé par accord de confidentialité bilatérale et vérification anti-spam.",
+    "sending": "Envoi du message en cours...",
+    "protocolTag": "Protocole d'Accompagnement",
+    "protocolTitle": "Comment Fonctionne Notre Collaboration",
+    "step1Title": "Cadrage Initial :",
+    "step1Desc": "Discussion confidentielle pour définir votre périmètre réglementaire et vos risques.",
+    "step2Title": "Accord de Confidentialité (NDA) :",
+    "step2Desc": "Protection réciproque avant toute analyse documentaire détaillée.",
+    "step3Title": "Proposition Dédiée (SOW) :",
+    "step3Desc": "Périmètre d'intervention transparent, calendrier précis et livrables concrets.",
+    "reachDirect": "Vous pouvez également joindre directement notre cabinet :",
+    "whatsappUK": "WhatsApp (Royaume-Uni)",
+    "whatsappIT": "WhatsApp (Italie)",
+    "linkedin": "LinkedIn : EagleComply",
+    "locationsTitle": "Bureaux et Présence Opérationnelle :"
   }
 }
