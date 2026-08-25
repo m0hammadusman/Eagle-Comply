@@ -144,7 +144,6 @@ function AppContent() {
           onNavigate={navigate}
           onOpenSearch={() => setIsSearchOpen(true)}
           onOpenConsultation={() => setIsConsultationOpen(true)}
-          onOpenQuote={() => setIsQuoteOpen(true)}
         />
 
         {/* Main Routed Content */}
@@ -153,14 +152,12 @@ function AppContent() {
             <HomePage 
               onNavigate={navigate} 
               onOpenConsultation={() => setIsConsultationOpen(true)} 
-              onOpenQuote={() => setIsQuoteOpen(true)} 
             />
           )}
           {(currentRoute === 'solutions' || currentRoute === 'services') && (
             <SolutionsPage 
               onNavigate={navigate} 
               onOpenConsultation={() => setIsConsultationOpen(true)} 
-              onOpenQuote={() => setIsQuoteOpen(true)} 
             />
           )}
           {(currentRoute === 'solution-detail' || currentRoute === 'service-detail') && (
@@ -168,7 +165,6 @@ function AppContent() {
               params={routeParams} 
               onNavigate={navigate} 
               onOpenConsultation={() => setIsConsultationOpen(true)} 
-              onOpenQuote={() => setIsQuoteOpen(true)} 
             />
           )}
           {currentRoute === 'industries' && (
@@ -179,7 +175,6 @@ function AppContent() {
               params={routeParams} 
               onNavigate={navigate} 
               onOpenConsultation={() => setIsConsultationOpen(true)} 
-              onOpenQuote={() => setIsQuoteOpen(true)} 
             />
           )}
           {currentRoute === 'global-compliance' && (
@@ -190,7 +185,6 @@ function AppContent() {
               params={routeParams} 
               onNavigate={navigate} 
               onOpenConsultation={() => setIsConsultationOpen(true)} 
-              onOpenQuote={() => setIsQuoteOpen(true)} 
             />
           )}
           {currentRoute === 'regulations' && (
@@ -201,7 +195,6 @@ function AppContent() {
               params={routeParams} 
               onNavigate={navigate} 
               onOpenConsultation={() => setIsConsultationOpen(true)} 
-              onOpenQuote={() => setIsQuoteOpen(true)} 
             />
           )}
           {currentRoute === 'knowledge-center' && (
@@ -294,7 +287,6 @@ function AppContent() {
         <ComplianceChatbot 
           onNavigate={navigate}
           onOpenConsultation={() => setIsConsultationOpen(true)}
-          onOpenQuote={() => setIsQuoteOpen(true)}
         />
 
         {/* Floating WhatsApp Contact Speed Dial Overlay */}

@@ -282,7 +282,6 @@ export default function ComplianceChatbot({ onNavigate, onOpenConsultation, onOp
 
   const action = (a) => {
     if (a.action === 'consultation') onOpenConsultation?.();
-    if (a.action === 'quote') onOpenQuote?.();
     if (a.action === 'services') onNavigate?.('solutions');
   };
 

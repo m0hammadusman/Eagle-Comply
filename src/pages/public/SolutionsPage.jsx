@@ -200,7 +200,7 @@ export default function SolutionsPage({ onNavigate, onOpenConsultation, onOpenQu
         </div>
       </div>
 
-      {/* Consultation & SOW CTA */}
+      {/* Consultation CTA */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-[#091F5C] to-[#132759] text-white border border-[#1E3778] shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-2">
@@ -208,24 +208,18 @@ export default function SolutionsPage({ onNavigate, onOpenConsultation, onOpenQu
               TAILORED PRACTICE ENGAGEMENT
             </span>
             <h2 className="text-xl sm:text-2xl font-bold">
-              Require a Custom SOW or Multi-Jurisdiction Compliance Package?
+              Require a Multi-Jurisdiction Compliance Consultation or Practice Advisory?
             </h2>
             <p className="text-xs sm:text-sm text-blue-100/90 max-w-2xl leading-relaxed">
-              Our Senior Directors and Compliance Counsel structure customized statements of work across AML, licensing, risk governance, and regulatory legal defense.
+              Our Senior Directors and Compliance Counsel structure customized compliance architectures across AML, licensing, risk governance, and regulatory legal defense.
             </p>
           </div>
           <div className="flex flex-wrap gap-3 shrink-0">
             <button
               onClick={onOpenConsultation}
-              className="px-6 py-3 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-lg transition-all"
+              className="px-6 py-3 rounded-full bg-[#334DAF] hover:bg-[#253982] text-white font-bold text-xs shadow-lg transition-all cursor-pointer"
             >
               Book Partner Consultation
-            </button>
-            <button
-              onClick={onOpenQuote}
-              className="px-6 py-3 rounded-full bg-white/10 hover:bg-white/20 text-white font-semibold text-xs border border-white/20 transition-all"
-            >
-              Request SOW Estimate
             </button>
           </div>
         </div>
