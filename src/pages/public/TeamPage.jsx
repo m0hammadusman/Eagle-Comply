@@ -12,7 +12,6 @@ import {
   FileText,
   ExternalLink
 } from 'lucide-react';
-import { experts } from '../../data/complianceData';
 import { useLanguage } from '../../context/LanguageContext';
 import TeamBadges from '../../components/common/TeamBadges';
 

@@ -438,7 +438,44 @@
   "experience": {
     "tag": "ESPERIENZA ISTITUZIONALE",
     "title": "Risultati Certificati e Misurabili",
-    "subtitle": "Esperienza comprovata nell'ottenimento di licenze e nel superamento di gap assessment e audit indipendenti."
+    "subtitle": "Esperienza comprovata nell'ottenimento di licenze e nel superamento di gap assessment e audit indipendenti.",
+    "servicesTag": "ARCHITETTURA DEI SERVIZI",
+    "servicesTitle": "Servizi di Conformità Integrati",
+    "servicesSubtitle": "Seleziona un’area di pratica per visualizzarne ambito, deliverable tipici e valore strategico.",
+    "selected": "PRATICA SELEZIONATA",
+    "explore": "Esplora l’ambito completo e i deliverable",
+    "faqTag": "FAQ & PROTOCOLLI",
+    "faqTitle": "Domande Frequenti sulla Consulenza",
+    "ctaTag": "AVVIO IMMEDIATO",
+    "ctaTitle": "Pronto ad allineare la tua organizzazione ai requisiti normativi?",
+    "ctaDesc": "Parla direttamente con i nostri Senior Compliance Director per definire un piano su misura con accordo bilaterale di riservatezza.",
+    "ctaBtn": "Prenota sessione di scoping",
+    "steps": [
+      {
+        "title": "Diagnostica & Scoping",
+        "desc": "Analisi iniziale del modello di business, flussi operativi e obblighi normativi applicabili."
+      },
+      {
+        "title": "Ingegneria delle Policy",
+        "desc": "Redazione di policy e manuali conformi agli standard internazionali GAFI/FATF."
+      },
+      {
+        "title": "Calibrazione Operativa",
+        "desc": "Traduzione delle policy in procedure operative standard (SOP) per i team di prima linea."
+      },
+      {
+        "title": "Approvazione & Rollout",
+        "desc": "Supporto all’approvazione consiliare, formazione del personale e attivazione dei controlli."
+      }
+    ],
+    "faq1q": "Come ha inizio un incarico di consulenza?",
+    "faq1a": "Iniziamo con una sessione riservata coperta da NDA bilaterale per definire i requisiti ed emettere un capitolato (SOW) dettagliato.",
+    "faq2q": "Supportate le richieste di licenza presso autorità internazionali?",
+    "faq2a": "Sì, supportiamo procedimenti autorizzativi nel Regno Unito (FCA), nell’UE (MiCA/DORA), negli Emirati (ADGM/DIFC/VARA) e in altre giurisdizioni.",
+    "faq3q": "Qual è la vostra metodologia per le valutazioni dei rischi aziendali (EWRA)?",
+    "faq3a": "Utilizziamo un framework quantitativo e qualitativo conforme al GAFI per valutare rischi inerenti, efficacia dei presidi e rischio residuo.",
+    "faq4q": "Offrite formazione per organi direttivi e responsabili antiriciclaggio?",
+    "faq4a": "Sì, eroghiamo programmi formativi su misura per MLRO, team operativi e componenti del consiglio di amministrazione."
   },
   "chatbot": {
     "greet": "Ciao! Sono l’assistente EagleComply. Chiedi di AML/CFT, licenze, rischi, governance, aspetti legali, settori o giurisdizioni.",

@@ -438,7 +438,44 @@
   "experience": {
     "tag": "EXPÉRIENCE INSTITUTIONNELLE",
     "title": "Des Résultats Mesurables et Vérifiés",
-    "subtitle": "Un historique d'excellence pour accompagner les acteurs financiers et technologiques vers une conformité irréprochable."
+    "subtitle": "Un historique d'excellence pour accompagner les acteurs financiers et technologiques vers une conformité irréprochable.",
+    "servicesTag": "ARCHITECTURE DES SERVICES",
+    "servicesTitle": "Services de Conformité Intégrés",
+    "servicesSubtitle": "Sélectionnez un domaine pour inspecter son périmètre, ses livrables et sa valeur stratégique.",
+    "selected": "PRATIQUE SÉLECTIONNÉE",
+    "explore": "Explorer le périmètre complet et les livrables",
+    "faqTag": "FAQ & PROTOCOLES",
+    "faqTitle": "Questions Fréquentes sur nos Missions",
+    "ctaTag": "ENGAGEMENT IMMÉDIAT",
+    "ctaTitle": "Prêt à aligner votre organisation sur les exigences réglementaires ?",
+    "ctaDesc": "Échangez directement avec nos directeurs de conformité pour définir un cahier des charges et un accord bilatéral de confidentialité.",
+    "ctaBtn": "Réserver une session de cadrage",
+    "steps": [
+      {
+        "title": "Diagnostic & Cadrage",
+        "desc": "Revue préliminaire du modèle d’affaires, des flux et des obligations réglementaires applicables."
+      },
+      {
+        "title": "Ingénierie des Politiques",
+        "desc": "Rédaction de politiques et manuels sur mesure alignés sur les standards internationaux."
+      },
+      {
+        "title": "Calibration Opérationnelle",
+        "desc": "Traduction des politiques en procédures opérationnelles claires pour les équipes de première ligne."
+      },
+      {
+        "title": "Validation & Déploiement",
+        "desc": "Validation par les organes de direction, formation des équipes et mise en production des contrôles."
+      }
+    ],
+    "faq1q": "Comment s’organise le démarrage d’une mission de conseil ?",
+    "faq1a": "Nous débutons par une réunion confidentielle sous NDA bilatéral afin d’analyser vos besoins et d’émettre un Scope of Work (SOW) transparent.",
+    "faq2q": "Couvrez-vous les licences réglementaires internationales ?",
+    "faq2a": "Oui, nous couvrons le Royaume-Uni (FCA), l’Union Européenne (MiCA/DORA/AMLD), les Émirats (ADGM/DIFC/VARA) et d’autres juridictions clés.",
+    "faq3q": "Quelle est votre méthodologie pour les évaluations de risques EWRA ?",
+    "faq3a": "Nous appliquons une méthode quantitative et qualitative alignée sur le GAFI pour évaluer les risques inhérents, l’efficacité des contrôles et les risques résiduels.",
+    "faq4q": "Proposez-vous des formations pour les dirigeants et le conseil ?",
+    "faq4a": "Oui, nous dispensons des formations sur mesure adaptées aux responsables conformité (MLRO), aux équipes opérationnelles et aux administrateurs."
   },
   "chatbot": {
     "greet": "Bonjour ! Je suis l’assistant EagleComply. Posez vos questions sur l’AML/CFT, les licences, les risques, la gouvernance, le droit, les secteurs ou les juridictions.",

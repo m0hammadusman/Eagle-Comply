@@ -438,7 +438,44 @@
   "experience": {
     "tag": "EXPERIÊNCIA INSTITUCIONAL",
     "title": "Resultados Comprovados e Mensuráveis",
-    "subtitle": "Amplo histórico de sucesso em autorizações regulatórias, revisões independentes e mitigação de riscos."
+    "subtitle": "Amplo histórico de sucesso em autorizações regulatórias, revisões independentes e mitigação de riscos.",
+    "servicesTag": "ARQUITETURA DE SERVIÇOS",
+    "servicesTitle": "Serviços de Conformidade Integrados",
+    "servicesSubtitle": "Selecione uma área de prática para inspecionar o âmbito, entregáveis típicos e valor estratégico.",
+    "selected": "PRÁTICA SELECIONADA",
+    "explore": "Explorar âmbito completo e entregáveis",
+    "faqTag": "PERGUNTAS FREQUENTES & PROTOCOLOS",
+    "faqTitle": "Perguntas Frequentes sobre Consultoria",
+    "ctaTag": "INÍCIO IMEDIATO",
+    "ctaTitle": "Pronto para alinhar a sua entidade com os requisitos regulatórios?",
+    "ctaDesc": "Fale diretamente com os nossos Diretores Seniores de Compliance para definir um âmbito à medida com acordo de confidencialidade.",
+    "ctaBtn": "Agendar sessão de definição",
+    "steps": [
+      {
+        "title": "Diagnóstico e Definição",
+        "desc": "Revisão inicial do modelo de negócio, fluxos de produto e obrigações aplicáveis."
+      },
+      {
+        "title": "Engenharia de Políticas",
+        "desc": "Elaboração de manuais e políticas à medida alinhadas com padrões internacionais GAFI."
+      },
+      {
+        "title": "Calibração Operacional",
+        "desc": "Tradução de políticas em procedimentos operacionais diários para as equipas."
+      },
+      {
+        "title": "Aprovação e Implementação",
+        "desc": "Facilitação da aprovação da administração, capacitação e ativação de controlos."
+      }
+    ],
+    "faq1q": "Como se inicia um projeto de consultoria?",
+    "faq1a": "Iniciamos com uma sessão confidencial sob NDA bilateral para analisar os requisitos e emitir um Scope of Work (SOW) detalhado.",
+    "faq2q": "Dão apoio em licenciamentos regulatórios internacionais?",
+    "faq2a": "Sim, prestamos assessoria no Reino Unido (FCA), na União Europeia (MiCA/DORA), nos Emirados (ADGM/DIFC/VARA) e noutras praças financeiras.",
+    "faq3q": "Qual é a metodologia usada nas avaliações de risco globais (EWRA)?",
+    "faq3a": "Aplicamos um modelo quantitativo e qualitativo alinhado com o GAFI para analisar riscos inerentes, solidez de controlos e risco residual.",
+    "faq4q": "Disponibilizam formação para administradores e responsáveis de compliance?",
+    "faq4a": "Sim, realizamos programas de formação adaptados a diretores de compliance (MLRO), operacionais e órgãos de administração."
   },
   "chatbot": {
     "greet": "Olá! Sou o assistente EagleComply. Pergunte sobre AML/CFT, licenciamento, riscos, governança, jurídico, setores ou jurisdições.",

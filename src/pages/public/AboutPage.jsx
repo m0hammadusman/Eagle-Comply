@@ -22,7 +22,6 @@ import {
   Activity
 } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
-import { practitioners as teamPractitioners } from '../../data/complianceData';
 import TeamBadges from '../../components/common/TeamBadges';
 
 function LinkedInIcon({ className = "w-3.5 h-3.5" }) {
@@ -221,7 +220,7 @@ function PipelineConsole() {
 }
 
 export default function AboutPage({ onNavigate, onOpenConsultation, onOpenQuote }) {
-  const { t } = useLanguage();
+  const { t, experts } = useLanguage();
   const ap = t.aboutPage || {};
 
   const valueIcons = [ShieldCheck, Lock, Scale, Eye];
@@ -250,7 +249,7 @@ export default function AboutPage({ onNavigate, onOpenConsultation, onOpenQuote 
     icon: valueIcons[idx] || ShieldCheck
   }));
 
-  const seniorPractitioners = teamPractitioners;
+  const seniorPractitioners = experts || [];
 
   return (
     <div className="w-full">

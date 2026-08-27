@@ -513,7 +513,44 @@
   "experience": {
     "tag": "INSTITUTIONELLE ERFAHRUNG",
     "title": "Messbare Erfolge in der Regulierungspraxis",
-    "subtitle": "Bewährte Unterstützung regulierter Marktteilnehmer bei Zulassungen, Prüfungen und Systemaudits."
+    "subtitle": "Bewährte Unterstützung regulierter Marktteilnehmer bei Zulassungen, Prüfungen und Systemaudits.",
+    "servicesTag": "SERVICE-ARCHITEKTUR",
+    "servicesTitle": "Integrierte Compliance-Services",
+    "servicesSubtitle": "Wählen Sie einen Praxisbereich, um Umfang, typische Deliverables und Mehrwert zu prüfen.",
+    "selected": "AUSGEWÄHLTE PRAXIS",
+    "explore": "Vollständigen Leistungsumfang & Deliverables einsehen",
+    "faqTag": "FAQ & PROTOKOLLE",
+    "faqTitle": "Häufige Fragen zu unseren Beratungsmandaten",
+    "ctaTag": "SOFORTIGER START",
+    "ctaTitle": "Bereit, Ihre Organisation aufsichtsrechtlich abzusichern?",
+    "ctaDesc": "Sprechen Sie direkt mit unseren Senior Compliance Directors, um einen maßgeschneiderten Projektumfang und eine bilaterale Geheimhaltungsvereinbarung zu initiieren.",
+    "ctaBtn": "Scoping-Gespräch vereinbaren",
+    "steps": [
+      {
+        "title": "Diagnostik & Scoping",
+        "desc": "Prüfung von Geschäftsmodell, Produktflüssen und anwendbaren Aufsichtspflichten."
+      },
+      {
+        "title": "Policy-Entwicklung",
+        "desc": "Erstellung maßgeschneiderter Richtlinien und Handbücher nach internationalen Standards."
+      },
+      {
+        "title": "Operative Kalibrierung",
+        "desc": "Übersetzung von Richtlinien in verständliche SOPs für Frontline-Teams."
+      },
+      {
+        "title": "Freigabe & Rollout",
+        "desc": "Unterstützung bei Vorstandsbeschlüssen, Schulung der Teams und Aktivierung der Kontrollen."
+      }
+    ],
+    "faq1q": "Wie läuft die Initiierung eines Beratungsprojekts ab?",
+    "faq1a": "Wir starten mit einem vertraulichen Scoping-Gespräch unter bilateraler Geheimhaltungsvereinbarung (NDA) und erstellen ein präzises Scope of Work (SOW).",
+    "faq2q": "Unterstützen Sie bei internationalen Lizenzanträgen?",
+    "faq2a": "Ja, wir begleiten Lizenzierungen und Aufsichtsverfahren in Großbritannien (FCA), der EU (MiCA/DORA), den VAE (ADGM/DIFC/VARA) und weiteren Märkten.",
+    "faq3q": "Welche Methodik nutzen Sie für unternehmensweite Risikoanalysen (EWRA)?",
+    "faq3a": "Wir nutzen ein prüfungssicheres FATF-konformes Modell zur systematischen Analyse inhärenter Risiken, Kontrollwirksamkeit und Restrisiken.",
+    "faq4q": "Bieten Sie maßgeschneiderte Schulungen für MLROs und Vorstände an?",
+    "faq4a": "Ja, wir führen zielgruppenspezifische Schulungen für Geldwäschebeauftragte (MLRO), Frontline-Mitarbeiter und Aufsichtsgremien durch."
   },
   "chatbot": {
     "greet": "Hallo! Ich bin der EagleComply-Assistent. Fragen Sie zu AML/CFT, Lizenzen, Risiken, Governance, Recht, Branchen oder Jurisdiktionen.",

@@ -29,7 +29,6 @@ import {
   Cpu
 } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
-import { practitioners as teamPractitioners } from '../../data/complianceData';
 import TeamBadges from '../../components/common/TeamBadges';
 import GovernanceLattice from '../../components/canvas/GovernanceLattice';
 import ComplianceShield3D from '../../components/canvas/ComplianceShield3D';
@@ -101,7 +100,7 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
     { title: value[0], desc: value[1], image: ({ banking:`${import.meta.env.BASE_URL}assets/images/case-study-bank.jpg`, fintech:`${import.meta.env.BASE_URL}assets/images/fintech-banking.jpg`, payments:`${import.meta.env.BASE_URL}assets/images/critical-infra.jpg`, crypto:`${import.meta.env.BASE_URL}assets/images/blockchain-nodes.jpg` })[key], points: value[2] }
   ]));
 
-  const practitioners = teamPractitioners;
+  const practitioners = experts || [];
 
   return (
     <div className="w-full max-w-full overflow-x-hidden">

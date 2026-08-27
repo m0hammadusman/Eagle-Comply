@@ -16,7 +16,6 @@ import {
   Scale,
   Award
 } from 'lucide-react';
-import { experts } from '../../data/complianceData';
 import { useLanguage } from '../../context/LanguageContext';
 
 export function LinkedInIcon({ className = "w-4 h-4", ...props }) {

@@ -513,7 +513,44 @@
   "experience": {
     "tag": "TRAYECTORIA INSTITUCIONAL",
     "title": "Resultados Verificables en Cumplimiento",
-    "subtitle": "Un sólido historial de autorizaciones, auditorías superadas y marcos de riesgo implementados con éxito."
+    "subtitle": "Un sólido historial de autorizaciones, auditorías superadas y marcos de riesgo implementados con éxito.",
+    "servicesTag": "ARQUITECTURA DE SERVICIOS",
+    "servicesTitle": "Servicios Integrados de Cumplimiento",
+    "servicesSubtitle": "Seleccione un área de práctica para inspeccionar su alcance, entregables típicos y valor comercial.",
+    "selected": "PRÁCTICA SELECCIONADA",
+    "explore": "Explorar alcance completo y entregables",
+    "faqTag": "PREGUNTAS FRECUENTES Y PROTOCOLOS",
+    "faqTitle": "Preguntas Frecuentes sobre Asesoría",
+    "ctaTag": "COMPROMISO INMEDIATO",
+    "ctaTitle": "¿Listo para alinear su entidad con las exigencias regulatorias?",
+    "ctaDesc": "Hable directamente con nuestros Directores Senior de Cumplimiento para definir un alcance a medida bajo acuerdo de confidencialidad.",
+    "ctaBtn": "Reservar sesión de alcance",
+    "steps": [
+      {
+        "title": "Diagnóstico y Alcance",
+        "desc": "Revisión inicial del modelo de negocio, flujos de producto y obligaciones aplicables."
+      },
+      {
+        "title": "Ingeniería de Políticas",
+        "desc": "Redacción de manuales y políticas a medida alineadas con estándares internacionales."
+      },
+      {
+        "title": "Calibración Operativa",
+        "desc": "Traducción de políticas a procedimientos operativos diarios para equipos de primera línea."
+      },
+      {
+        "title": "Aprobación y Despliegue",
+        "desc": "Facilitación de aprobación del directorio, capacitación y puesta en marcha de controles."
+      }
+    ],
+    "faq1q": "¿Cómo comienza un proyecto de asesoría?",
+    "faq1a": "Iniciamos con una sesión confidencial bajo acuerdo de confidencialidad (NDA) para diagnosticar sus necesidades y emitir un Scope of Work (SOW) claro.",
+    "faq2q": "¿Cubren licencias y trámites regulatorios internacionales?",
+    "faq2a": "Sí, cubrimos el Reino Unido (FCA), la Unión Europea (MiCA/DORA/AMLD), los Emiratos (ADGM/DIFC/VARA) y otras jurisdicciones clave.",
+    "faq3q": "¿Cuál es su metodología para evaluaciones de riesgo EWRA?",
+    "faq3a": "Aplicamos una metodología cuantitativa y cualitativa según estándares GAFI para evaluar riesgos inherentes, controles y riesgos residuales.",
+    "faq4q": "¿Ofrecen capacitación para oficiales de cumplimiento y directorio?",
+    "faq4a": "Sí, brindamos programas de formación especializada para oficiales de cumplimiento (MLRO), equipos operativos y miembros del consejo."
   },
   "chatbot": {
     "greet": "¡Hola! Soy el asistente de EagleComply. Pregunte sobre AML/CFT, licencias, riesgos, gobierno, legal, sectores o jurisdicciones.",
