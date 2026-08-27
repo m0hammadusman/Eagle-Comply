@@ -87,7 +87,7 @@ eagle-compliance/
 │   ├── components/
 │   │   ├── canvas/             # Three.js 3D globe and interactive map visualizers
 │   │   ├── common/             # Navigation, Footer, Breadcrumbs, Badges, SearchModal
-│   │   ├── modals/             # Consultation, Quote, and Authentication dialogs
+│   │   ├── modals/             # Consultation, Resource Download, and Quote dialogs
 │   │   └── workflows/          # Cal.com scheduler and OrderServiceModal workflows
 │   ├── context/
 │   │   ├── LanguageContext.jsx # 10-language state, detector, and RTL manager
@@ -99,9 +99,7 @@ eagle-compliance/
 │   ├── hooks/
 │   │   └── useContentful.js    # Contentful headless CMS GraphQL/REST hooks
 │   ├── locales/                # 10 JSON translation dictionaries (en, ar, fr, de, ...)
-│   ├── pages/
-│   │   ├── admin/              # Portal & administrative dashboards
-│   │   └── public/             # Public pages (Home, About, Solutions, Industries, Team, etc.)
+│   ├── pages/public/           # Public pages (Home, About, Solutions, Industries, Team, etc.)
 │   ├── utils/
 │   │   └── contactDispatcher.js# Web3Forms API and transactional email dispatcher
 │   ├── App.jsx                 # Main application shell and route controller
