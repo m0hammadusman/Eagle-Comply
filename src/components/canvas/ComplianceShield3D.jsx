@@ -25,12 +25,12 @@ export default function ComplianceShield3D({ size = 280, className = '' }) {
       ctx.scale(2, 2);
 
       // Blue Palette Rings
-      const bluePrimary = isDark ? '#FF3333' : '#DD2A40';
-      const blueLight = isDark ? '#E4E7EC' : '#DD2A40';
+      const bluePrimary = isDark ? '#FF3333' : '#E31F1F';
+      const blueLight = isDark ? '#E4E4E4' : '#E31F1F';
 
       ctx.beginPath();
       ctx.arc(cx, cy, 95, 0, Math.PI * 2);
-      ctx.strokeStyle = isDark ? 'rgba(255, 51, 51, 0.3)' : 'rgba(221, 42, 64, 0.25)';
+      ctx.strokeStyle = isDark ? 'rgba(255, 51, 51, 0.3)' : 'rgba(227, 31, 31, 0.25)';
       ctx.lineWidth = 2;
       ctx.stroke();
 
@@ -53,7 +53,7 @@ export default function ComplianceShield3D({ size = 280, className = '' }) {
       ctx.closePath();
 
       const grad = ctx.createLinearGradient(cx - 50, cy - 50, cx + 50, cy + 50);
-      grad.addColorStop(0, isDark ? 'rgba(221, 42, 64, 0.95)' : 'rgba(249, 251, 255, 0.95)');
+      grad.addColorStop(0, isDark ? 'rgba(227, 31, 31, 0.95)' : 'rgba(249, 251, 255, 0.95)');
       grad.addColorStop(1, isDark ? 'rgba(18, 6, 8, 0.9)' : 'rgba(255, 241, 242, 0.95)');
       ctx.fillStyle = grad;
       ctx.fill();
@@ -67,7 +67,7 @@ export default function ComplianceShield3D({ size = 280, className = '' }) {
       ctx.moveTo(cx - 18, cy);
       ctx.lineTo(cx - 5, cy + 15);
       ctx.lineTo(cx + 20, cy - 15);
-      ctx.strokeStyle = isDark ? '#E4E7EC' : '#DD2A40';
+      ctx.strokeStyle = isDark ? '#E4E4E4' : '#E31F1F';
       ctx.lineWidth = 4;
       ctx.lineCap = 'round';
       ctx.lineJoin = 'round';

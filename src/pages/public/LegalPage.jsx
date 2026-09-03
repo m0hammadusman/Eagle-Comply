@@ -137,13 +137,13 @@ export default function LegalPage({ onNavigate, params }) {
 
       {/* Header Banner */}
       <div className="py-6 border-b border-surface-border space-y-3">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#DD2A40]/10 dark:bg-[#FF3333]/15 text-[#DD2A40] dark:text-[#FF3333] text-xs font-mono font-bold uppercase tracking-widest border border-[#DD2A40]/20 dark:border-[#FF3333]/30">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E31F1F]/10 dark:bg-[#FF3333]/15 text-[#E31F1F] dark:text-[#FF3333] text-xs font-mono font-bold uppercase tracking-widest border border-[#E31F1F]/20 dark:border-[#FF3333]/30">
           {lp.tag || 'INSTITUTIONAL GOVERNANCE & STATUTORY FRAMEWORK'}
         </div>
         <h1 className="font-sans tracking-tight text-3xl md:text-4xl font-bold text-black dark:text-white dark:text-white">
           {lp.title || 'Policies, Governance Architecture & Disclaimers'}
         </h1>
-        <p className="text-xs sm:text-sm text-slate-600 dark:text-[#667085] max-w-3xl leading-relaxed">
+        <p className="text-xs sm:text-sm text-slate-600 dark:text-[#7D797A] max-w-3xl leading-relaxed">
           {lp.subtitle || 'EagleComply maintains institutional-grade data privacy, cyber resilience, and governance policies aligned with UK GDPR, EU GDPR, and global regulatory standards.'}
         </p>
       </div>
@@ -168,7 +168,7 @@ export default function LegalPage({ onNavigate, params }) {
             </p>
           </div>
         </div>
-        <p className="text-[11px] text-slate-600 dark:text-[#667085] pt-1 leading-relaxed">
+        <p className="text-[11px] text-slate-600 dark:text-[#7D797A] pt-1 leading-relaxed">
           <strong>{lp.disclaimer3Title || 'Professional Services Notice:'}</strong> {lp.disclaimer3Desc || 'The materials, checklists, guides, and commentary on this website are provided for general informational and educational purposes only and do not constitute formal legal or statutory financial advice without an executed bilateral engagement agreement.'}
         </p>
       </div>
@@ -179,7 +179,7 @@ export default function LegalPage({ onNavigate, params }) {
           onClick={() => setActiveTab('all')}
           className={`px-4 py-2 rounded-xl text-xs font-bold transition-all whitespace-nowrap cursor-pointer ${
             activeTab === 'all'
-              ? 'bg-[#DD2A40] text-white dark:bg-[#FF3333] dark:text-[#000000] shadow-md'
+              ? 'bg-[#E31F1F] text-white dark:bg-[#FF3333] dark:text-[#030303] shadow-md'
               : 'bg-surface-subtle hover:bg-surface-raised text-slate-700 dark:text-slate-300 border border-surface-border'
           }`}
         >
@@ -191,7 +191,7 @@ export default function LegalPage({ onNavigate, params }) {
             onClick={() => setActiveTab(p.id)}
             className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all whitespace-nowrap flex items-center gap-1.5 cursor-pointer ${
               activeTab === p.id
-                ? 'bg-[#DD2A40] text-white dark:bg-[#FF3333] dark:text-[#000000] shadow-md'
+                ? 'bg-[#E31F1F] text-white dark:bg-[#FF3333] dark:text-[#030303] shadow-md'
                 : 'bg-surface-subtle hover:bg-surface-raised text-slate-700 dark:text-slate-300 border border-surface-border'
             }`}
           >
@@ -211,11 +211,11 @@ export default function LegalPage({ onNavigate, params }) {
               <div
                 key={p.id}
                 id={p.id}
-                className="p-6 rounded-3xl glass-panel border border-surface-border space-y-4 hover:border-[#DD2A40]/40 transition-all shadow-sm flex flex-col justify-between"
+                className="p-6 rounded-3xl glass-panel border border-surface-border space-y-4 hover:border-[#E31F1F]/40 transition-all shadow-sm flex flex-col justify-between"
               >
                 <div className="space-y-3">
                   <div className="flex items-center justify-between gap-2">
-                    <span className="text-[10px] font-mono font-bold px-2.5 py-1 rounded-full bg-[#DD2A40]/10 dark:bg-[#FF3333]/15 text-[#DD2A40] dark:text-[#FF3333] uppercase tracking-wider">
+                    <span className="text-[10px] font-mono font-bold px-2.5 py-1 rounded-full bg-[#E31F1F]/10 dark:bg-[#FF3333]/15 text-[#E31F1F] dark:text-[#FF3333] uppercase tracking-wider">
                       {p.category}
                     </span>
                     <span className="text-[10px] font-mono text-emerald-500 font-bold flex items-center gap-1">
@@ -224,14 +224,14 @@ export default function LegalPage({ onNavigate, params }) {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <div className="w-9 h-9 rounded-2xl bg-[#DD2A40]/10 dark:bg-[#FF3333]/15 flex items-center justify-center shrink-0 border border-surface-border text-[#DD2A40] dark:text-[#FF3333]">
+                    <div className="w-9 h-9 rounded-2xl bg-[#E31F1F]/10 dark:bg-[#FF3333]/15 flex items-center justify-center shrink-0 border border-surface-border text-[#E31F1F] dark:text-[#FF3333]">
                       <Icon className="w-4 h-4" />
                     </div>
                     <div>
                       <h3 className="text-base font-bold text-black dark:text-white dark:text-white">
                         {p.title}
                       </h3>
-                      <p className="text-xs text-slate-600 dark:text-[#667085] mt-1 leading-relaxed">
+                      <p className="text-xs text-slate-600 dark:text-[#7D797A] mt-1 leading-relaxed">
                         {p.summary}
                       </p>
                     </div>
@@ -240,7 +240,7 @@ export default function LegalPage({ onNavigate, params }) {
                   <div className="space-y-2 pt-2 border-t border-surface-border">
                     {p.content.map((point, i) => (
                       <div key={i} className="flex items-start gap-2 text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
-                        <ChevronRight className="w-3.5 h-3.5 text-[#DD2A40] dark:text-[#FF3333] shrink-0 mt-0.5 rtl:rotate-180" />
+                        <ChevronRight className="w-3.5 h-3.5 text-[#E31F1F] dark:text-[#FF3333] shrink-0 mt-0.5 rtl:rotate-180" />
                         <span>{point}</span>
                       </div>
                     ))}
@@ -248,10 +248,10 @@ export default function LegalPage({ onNavigate, params }) {
                 </div>
 
                 <div className="pt-4 border-t border-surface-border flex items-center justify-between text-xs">
-                  <span className="text-[11px] font-mono text-[#667085]">{lp.standardBaseline || 'Standard Baseline: ISO 27001 / GDPR'}</span>
+                  <span className="text-[11px] font-mono text-[#7D797A]">{lp.standardBaseline || 'Standard Baseline: ISO 27001 / GDPR'}</span>
                   <button 
                     onClick={() => onNavigate('contact')}
-                    className="inline-flex items-center gap-1 text-[#DD2A40] dark:text-[#FF3333] font-bold hover:underline cursor-pointer"
+                    className="inline-flex items-center gap-1 text-[#E31F1F] dark:text-[#FF3333] font-bold hover:underline cursor-pointer"
                   >
                     <span>{lp.requestCopy || 'Request Copy'}</span>
                     <ArrowRight className="w-3 h-3 rtl:rotate-180" />
@@ -263,7 +263,7 @@ export default function LegalPage({ onNavigate, params }) {
       </div>
 
       {/* Engagement & Mutual NDA Desk */}
-      <div className="p-8 rounded-3xl bg-gradient-to-br from-[#DD2A40] to-[#22252A] text-white border border-[#22252A] space-y-4 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+      <div className="p-8 rounded-3xl bg-gradient-to-br from-[#E31F1F] to-[#1E1E1E] text-white border border-[#1E1E1E] space-y-4 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="space-y-2 text-left rtl:text-right">
           <span className="text-xs font-mono font-bold tracking-wider text-cyan-300 uppercase">
             {lp.ndaTag || 'BILATERAL CONFIDENTIALITY & GOVERNANCE'}

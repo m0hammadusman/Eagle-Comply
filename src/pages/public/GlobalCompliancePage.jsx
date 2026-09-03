@@ -46,7 +46,7 @@ export default function GlobalCompliancePage({ onNavigate }) {
     <div className="w-full py-12 sm:py-10 lg:py-16 space-y-16 animate-fade-in">
       {/* Header Banner */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#DD2A40]/10 dark:bg-[#FF3333]/15 text-[#DD2A40] dark:text-[#FF3333] text-xs font-mono font-bold tracking-wider uppercase border border-[#DD2A40]/20 dark:border-[#FF3333]/30">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E31F1F]/10 dark:bg-[#FF3333]/15 text-[#E31F1F] dark:text-[#FF3333] text-xs font-mono font-bold tracking-wider uppercase border border-[#E31F1F]/20 dark:border-[#FF3333]/30">
           <Radio className="w-3.5 h-3.5 animate-pulse" />
           <span>{t.globalPage?.tag || 'Cross-Border Supervisory Directory'}</span>
         </div>
@@ -60,13 +60,13 @@ export default function GlobalCompliancePage({ onNavigate }) {
         {/* Search & Region Filter Bar */}
         <div className="max-w-2xl mx-auto pt-6 flex flex-col sm:flex-row gap-3">
           <div className="relative flex-1">
-            <Search className="w-4 h-4 text-[#667085] absolute left-3.5 top-1/2 -translate-y-1/2" />
+            <Search className="w-4 h-4 text-[#7D797A] absolute left-3.5 top-1/2 -translate-y-1/2" />
             <input
               type="text"
               placeholder={t.globalPage?.search || "Search by country, regulator (e.g. FCA, BaFin, VARA)..."}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-10 pr-4 py-2.5 rounded-xl glass-panel border border-surface-border text-sm text-black dark:text-white dark:text-white focus:outline-none focus:ring-2 focus:ring-[#DD2A40]"
+              className="w-full pl-10 pr-4 py-2.5 rounded-xl glass-panel border border-surface-border text-sm text-black dark:text-white dark:text-white focus:outline-none focus:ring-2 focus:ring-[#E31F1F]"
             />
           </div>
         </div>
@@ -87,7 +87,7 @@ export default function GlobalCompliancePage({ onNavigate }) {
               <div
                 key={c.id}
                 onClick={() => onNavigate('country-detail', { id: c.id })}
-                className="group relative rounded-3xl overflow-hidden glass-panel border border-surface-border hover:border-[#DD2A40] dark:hover:border-[#FF3333] transition-all duration-500 cursor-pointer flex flex-col justify-between shadow-lg hover:shadow-2xl"
+                className="group relative rounded-3xl overflow-hidden glass-panel border border-surface-border hover:border-[#E31F1F] dark:hover:border-[#FF3333] transition-all duration-500 cursor-pointer flex flex-col justify-between shadow-lg hover:shadow-2xl"
               >
                 {/* Visual Header Image */}
                 <div className="relative h-48 w-full overflow-hidden">
@@ -100,7 +100,7 @@ export default function GlobalCompliancePage({ onNavigate }) {
                   
                   <div className="absolute top-4 left-4 flex items-center gap-2">
                     <span className="text-2xl">{c.flag}</span>
-                    <span className="text-xs font-mono px-2.5 py-1 rounded-full bg-surface-raised/90 backdrop-blur-md text-[#DD2A40] dark:text-[#E4E7EC] border border-surface-border font-bold shadow-sm">
+                    <span className="text-xs font-mono px-2.5 py-1 rounded-full bg-surface-raised/90 backdrop-blur-md text-[#E31F1F] dark:text-[#E4E4E4] border border-surface-border font-bold shadow-sm">
                       {c.region}
                     </span>
                   </div>
@@ -109,7 +109,7 @@ export default function GlobalCompliancePage({ onNavigate }) {
                 {/* Body Content */}
                 <div className="p-6 space-y-4 flex-1 flex flex-col justify-between">
                   <div className="space-y-2">
-                    <h3 className="font-sans tracking-tight text-2xl font-bold text-black dark:text-white dark:text-white group-hover:text-[#DD2A40] dark:group-hover:text-[#FF3333] transition-colors leading-snug">
+                    <h3 className="font-sans tracking-tight text-2xl font-bold text-black dark:text-white dark:text-white group-hover:text-[#E31F1F] dark:group-hover:text-[#FF3333] transition-colors leading-snug">
                       {c.name}
                     </h3>
                     <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">
@@ -121,7 +121,7 @@ export default function GlobalCompliancePage({ onNavigate }) {
                     <span className="text-xs font-mono font-bold text-emerald-600 dark:text-emerald-400">
                       {c.status || 'Active Full Jurisdiction'}
                     </span>
-                    <span className="text-xs font-bold text-[#DD2A40] dark:text-[#FF3333] flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                    <span className="text-xs font-bold text-[#E31F1F] dark:text-[#FF3333] flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                       {t.globalPage?.inspect || 'Inspect Dossier'} <ArrowRight className="w-4 h-4 rtl:rotate-180" />
                     </span>
                   </div>

@@ -34,7 +34,7 @@ export default function KnowledgeCenterPage({ onNavigate, onOpenConsultation }) 
     <div className="w-full py-12 lg:py-16 space-y-12 animate-fade-in text-left rtl:text-right">
       {/* Header */}
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-3">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#DD2A40]/10 dark:bg-[#FF3333]/15 text-[#DD2A40] dark:text-[#FF3333] text-xs font-mono font-bold tracking-wider uppercase border border-[#DD2A40]/20 dark:border-[#FF3333]/30">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E31F1F]/10 dark:bg-[#FF3333]/15 text-[#E31F1F] dark:text-[#FF3333] text-xs font-mono font-bold tracking-wider uppercase border border-[#E31F1F]/20 dark:border-[#FF3333]/30">
           <BookOpen className="w-3.5 h-3.5" />
           <span>{kc.tag || 'EAGLECOMPLY RESOURCE CENTRE'}</span>
         </div>
@@ -52,11 +52,11 @@ export default function KnowledgeCenterPage({ onNavigate, onOpenConsultation }) 
           {(resources || []).map((res) => (
             <div
               key={res.id}
-              className="p-6 rounded-2xl glass-panel border border-surface-border shadow-sm space-y-4 flex flex-col justify-between hover:border-[#DD2A40] dark:hover:border-[#FF3333] transition-all text-left rtl:text-right"
+              className="p-6 rounded-2xl glass-panel border border-surface-border shadow-sm space-y-4 flex flex-col justify-between hover:border-[#E31F1F] dark:hover:border-[#FF3333] transition-all text-left rtl:text-right"
             >
               <div className="space-y-2.5">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#DD2A40] dark:text-[#FF3333]">
+                  <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#E31F1F] dark:text-[#FF3333]">
                     {res.category}
                   </span>
                   <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-surface-subtle text-slate-600 dark:text-slate-300 border border-surface-border font-bold">
@@ -74,14 +74,14 @@ export default function KnowledgeCenterPage({ onNavigate, onOpenConsultation }) 
               <div className="pt-4 border-t border-surface-border flex items-center justify-between">
                 <button
                   onClick={() => setDownloadModal(res)}
-                  className="px-4 py-2 rounded-xl bg-gradient-to-r from-[#DD2A40] to-[#DD2A40] dark:from-[#DD2A40] dark:to-[#FF3333] text-white dark:text-[#000000] text-xs font-bold shadow-md hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center gap-1.5 cursor-pointer"
+                  className="px-4 py-2 rounded-xl bg-gradient-to-r from-[#E31F1F] to-[#E31F1F] dark:from-[#E31F1F] dark:to-[#FF3333] text-white dark:text-[#030303] text-xs font-bold shadow-md hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center gap-1.5 cursor-pointer"
                 >
                   <Download className="w-3.5 h-3.5" />
                   <span>{kc.downloadBtn || 'Download Resource'}</span>
                 </button>
                 <button
                   onClick={onOpenConsultation}
-                  className="text-xs font-bold text-[#DD2A40] dark:text-[#FF3333] hover:underline cursor-pointer"
+                  className="text-xs font-bold text-[#E31F1F] dark:text-[#FF3333] hover:underline cursor-pointer"
                 >
                   {kc.requestAdvisory || 'Request Advisory'}
                 </button>
@@ -96,12 +96,12 @@ export default function KnowledgeCenterPage({ onNavigate, onOpenConsultation }) 
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
           <div className="bg-surface-raised border border-surface-border rounded-3xl p-6 sm:p-8 max-w-md w-full shadow-2xl space-y-4 text-left rtl:text-right">
             <div className="flex items-center justify-between">
-              <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#DD2A40] dark:text-[#FF3333]">
+              <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#E31F1F] dark:text-[#FF3333]">
                 {kc.modalTitle || 'Download Resource'}
               </span>
               <button 
                 onClick={() => setDownloadModal(null)}
-                className="text-[#667085] hover:text-slate-600 dark:hover:text-white font-bold cursor-pointer"
+                className="text-[#7D797A] hover:text-slate-600 dark:hover:text-white font-bold cursor-pointer"
               >
                 ✕
               </button>
@@ -128,16 +128,16 @@ export default function KnowledgeCenterPage({ onNavigate, onOpenConsultation }) 
                     value={emailInput}
                     onChange={(e) => setEmailInput(e.target.value)}
                     placeholder="name@company.com"
-                    className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-black dark:text-white dark:text-white focus:outline-none focus:ring-2 focus:ring-[#DD2A40]"
+                    className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-black dark:text-white dark:text-white focus:outline-none focus:ring-2 focus:ring-[#E31F1F]"
                   />
                 </div>
-                <div className="flex items-center gap-1.5 text-[10px] text-[#667085]">
-                  <Lock className="w-3 h-3 text-[#DD2A40] dark:text-[#FF3333]" />
+                <div className="flex items-center gap-1.5 text-[10px] text-[#7D797A]">
+                  <Lock className="w-3 h-3 text-[#E31F1F] dark:text-[#FF3333]" />
                   <span>{kc.modalPrivacy || 'We respect your privacy. No spam. Unsubscribe anytime.'}</span>
                 </div>
                 <button
                   type="submit"
-                  className="w-full py-2.5 rounded-xl bg-[#DD2A40] dark:bg-[#DD2A40] text-white text-xs font-bold shadow-md hover:opacity-90 transition-all flex items-center justify-center gap-1.5 cursor-pointer"
+                  className="w-full py-2.5 rounded-xl bg-[#E31F1F] dark:bg-[#E31F1F] text-white text-xs font-bold shadow-md hover:opacity-90 transition-all flex items-center justify-center gap-1.5 cursor-pointer"
                 >
                   <Download className="w-3.5 h-3.5" />
                   <span>{kc.modalSubmit || 'Get Instant Download'}</span>

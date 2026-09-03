@@ -22,7 +22,7 @@ function FormattedMessage({ text }) {
           });
           return (
             <div key={idx} className="flex items-start gap-1.5 pl-1.5">
-              <span className="text-[#DD2A40] dark:text-amber-400 font-bold shrink-0 mt-0.5">•</span>
+              <span className="text-[#E31F1F] dark:text-amber-400 font-bold shrink-0 mt-0.5">•</span>
               <span className="flex-1">{bulletParts}</span>
             </div>
           );
@@ -290,7 +290,7 @@ export default function ComplianceChatbot({ onNavigate, onOpenConsultation, onOp
       {/* Brand Aligned AI Assistant Floating Button */}
       <button 
         onClick={() => setOpen(v => !v)} 
-        className="fixed bottom-4 sm:bottom-6 right-4 sm:right-6 rtl:right-auto rtl:left-4 sm:rtl:left-6 z-40 px-4 py-2.5 sm:px-5 sm:py-3 rounded-full bg-[#DD2A40] hover:bg-[#8F1524] dark:bg-[#000000] dark:hover:bg-[#70101C] text-white font-bold text-xs sm:text-sm shadow-xl hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-300 flex items-center gap-2.5 border-2 border-[#DD2A40]/60 dark:border-[#FF3333]/50 cursor-pointer group select-none backdrop-blur-sm" 
+        className="fixed bottom-4 sm:bottom-6 right-4 sm:right-6 rtl:right-auto rtl:left-4 sm:rtl:left-6 z-40 px-4 py-2.5 sm:px-5 sm:py-3 rounded-full bg-[#E31F1F] hover:bg-[#8F1524] dark:bg-[#030303] dark:hover:bg-[#70101C] text-white font-bold text-xs sm:text-sm shadow-xl hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-300 flex items-center gap-2.5 border-2 border-[#E31F1F]/60 dark:border-[#FF3333]/50 cursor-pointer group select-none backdrop-blur-sm" 
         title={t.modals?.chatbotTitle || 'Eagle Regulatory Assistant'}
         aria-label="Open AI Assistant"
       >
@@ -332,14 +332,14 @@ export default function ComplianceChatbot({ onNavigate, onOpenConsultation, onOp
             <div className="flex items-center gap-1">
               <button 
                 onClick={() => setMessages([{ id: Date.now(), sender: 'bot', text: initialGreeting }])} 
-                className="p-1.5 rounded-lg text-[#667085] hover:text-slate-700 dark:hover:text-white transition-colors" 
+                className="p-1.5 rounded-lg text-[#7D797A] hover:text-slate-700 dark:hover:text-white transition-colors" 
                 title="Reset Conversation"
               >
                 <RotateCcw className="w-4 h-4" />
               </button>
               <button 
                 onClick={() => setOpen(false)} 
-                className="p-1.5 rounded-lg text-[#667085] hover:text-slate-700 dark:hover:text-white transition-colors" 
+                className="p-1.5 rounded-lg text-[#7D797A] hover:text-slate-700 dark:hover:text-white transition-colors" 
                 title="Close"
               >
                 <X className="w-4 h-4" />
@@ -352,7 +352,7 @@ export default function ComplianceChatbot({ onNavigate, onOpenConsultation, onOp
             {messages.map(msg => (
               <div key={msg.id} className={`flex flex-col ${msg.sender === 'user' ? 'items-end' : 'items-start'}`}>
                 {msg.sender === 'bot' && (
-                  <div className="flex items-center gap-1.5 mb-1 text-[10px] font-mono text-[#667085]">
+                  <div className="flex items-center gap-1.5 mb-1 text-[10px] font-mono text-[#7D797A]">
                     <img 
                       src={`${import.meta.env.BASE_URL}logo-light.png`}
                       alt="Eagle" 
@@ -366,7 +366,7 @@ export default function ComplianceChatbot({ onNavigate, onOpenConsultation, onOp
                     <span>EagleComply AI</span>
                   </div>
                 )}
-                <div className={`p-3 rounded-2xl max-w-[90%] ${msg.sender === 'user' ? 'bg-[#DD2A40] text-white rounded-br-none shadow-sm' : 'bg-surface-subtle border border-surface-border text-slate-800 dark:text-slate-200 rounded-bl-none shadow-xs'}`}>
+                <div className={`p-3 rounded-2xl max-w-[90%] ${msg.sender === 'user' ? 'bg-[#E31F1F] text-white rounded-br-none shadow-sm' : 'bg-surface-subtle border border-surface-border text-slate-800 dark:text-slate-200 rounded-bl-none shadow-xs'}`}>
                   <FormattedMessage text={msg.text} />
                 </div>
                 {msg.actions?.length > 0 && (
@@ -375,7 +375,7 @@ export default function ComplianceChatbot({ onNavigate, onOpenConsultation, onOp
                       <button 
                         key={i} 
                         onClick={() => action(a)} 
-                        className="px-2.5 py-1 rounded-lg bg-surface-base border border-surface-border hover:border-[#DD2A40] text-[11px] text-[#DD2A40] dark:text-[#FF3333] font-semibold flex items-center gap-1 shadow-2xs hover:scale-102 active:scale-98 transition-all cursor-pointer"
+                        className="px-2.5 py-1 rounded-lg bg-surface-base border border-surface-border hover:border-[#E31F1F] text-[11px] text-[#E31F1F] dark:text-[#FF3333] font-semibold flex items-center gap-1 shadow-2xs hover:scale-102 active:scale-98 transition-all cursor-pointer"
                       >
                         {a.label}
                         <ArrowRight className="inline w-3 h-3 rtl:rotate-180" />
@@ -386,7 +386,7 @@ export default function ComplianceChatbot({ onNavigate, onOpenConsultation, onOp
               </div>
             ))}
             {typing && (
-              <div className="flex items-center gap-2 text-[11px] text-[#667085] font-mono animate-pulse">
+              <div className="flex items-center gap-2 text-[11px] text-[#7D797A] font-mono animate-pulse">
                 <img 
                   src={`${import.meta.env.BASE_URL}logo-light.png`}
                   alt="Eagle" 
@@ -410,11 +410,11 @@ export default function ComplianceChatbot({ onNavigate, onOpenConsultation, onOp
               onChange={e => setInput(e.target.value)} 
               onKeyDown={e => e.key === 'Enter' && send()} 
               placeholder={t.modals?.chatbotPlaceholder || 'Ask about Shan Ali, Shahid, Zahid, AML, MiCA, DORA, services...'} 
-              className="flex-1 p-2.5 rounded-xl bg-surface-base border border-surface-border text-xs text-black dark:text-white dark:text-white outline-none focus:border-[#DD2A40]" 
+              className="flex-1 p-2.5 rounded-xl bg-surface-base border border-surface-border text-xs text-black dark:text-white dark:text-white outline-none focus:border-[#E31F1F]" 
             />
             <button 
               onClick={send} 
-              className="p-2.5 rounded-xl bg-[#DD2A40] text-white hover:bg-[#BA1B30] transition-colors cursor-pointer"
+              className="p-2.5 rounded-xl bg-[#E31F1F] text-white hover:bg-[#B42318] transition-colors cursor-pointer"
               title="Send message"
             >
               <Send className="w-4 h-4 rtl:rotate-180" />

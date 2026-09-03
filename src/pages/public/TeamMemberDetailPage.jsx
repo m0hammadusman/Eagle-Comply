@@ -42,16 +42,16 @@ export default function TeamMemberDetailPage({ params, onNavigate, onOpenConsult
         <div className="flex items-center justify-between gap-4 pb-6 border-b border-surface-border">
           <button
             onClick={() => onNavigate('team')}
-            className="inline-flex items-center gap-2 text-xs font-mono font-bold text-[#DD2A40] dark:text-[#FF3333] hover:underline cursor-pointer"
+            className="inline-flex items-center gap-2 text-xs font-mono font-bold text-[#E31F1F] dark:text-[#FF3333] hover:underline cursor-pointer"
           >
             <ArrowLeft className="w-4 h-4 rtl:rotate-180" />
             <span>{td.backBtn || 'Back to All Practice Directors'}</span>
           </button>
           
-          <div className="flex items-center gap-2 text-xs font-mono text-[#667085]">
-            <span className="cursor-pointer hover:text-[#DD2A40]" onClick={() => onNavigate('home')}>{t.nav?.home || 'Home'}</span>
+          <div className="flex items-center gap-2 text-xs font-mono text-[#7D797A]">
+            <span className="cursor-pointer hover:text-[#E31F1F]" onClick={() => onNavigate('home')}>{t.nav?.home || 'Home'}</span>
             <ChevronRight className="w-3.5 h-3.5 rtl:rotate-180" />
-            <span className="cursor-pointer hover:text-[#DD2A40]" onClick={() => onNavigate('team')}>{t.nav?.leadership || 'Team'}</span>
+            <span className="cursor-pointer hover:text-[#E31F1F]" onClick={() => onNavigate('team')}>{t.nav?.leadership || 'Team'}</span>
             <ChevronRight className="w-3.5 h-3.5 rtl:rotate-180" />
             <span className="text-black dark:text-white dark:text-white font-bold">{member.name}</span>
           </div>
@@ -71,21 +71,21 @@ export default function TeamMemberDetailPage({ params, onNavigate, onOpenConsult
                   alt={member.name}
                   className="w-full h-full object-cover object-top filter contrast-105"
                 />
-                <div className="absolute top-3 right-3 rtl:right-auto rtl:left-3 px-2.5 py-1 rounded-full bg-surface-raised/90 backdrop-blur-md text-[10px] font-mono font-bold text-[#DD2A40] dark:text-[#FF3333] border border-surface-border">
+                <div className="absolute top-3 right-3 rtl:right-auto rtl:left-3 px-2.5 py-1 rounded-full bg-surface-raised/90 backdrop-blur-md text-[10px] font-mono font-bold text-[#E31F1F] dark:text-[#FF3333] border border-surface-border">
                   {member.department || 'Executive Advisory'}
                 </div>
               </div>
 
               <div>
                 <h1 className="text-2xl font-bold text-black dark:text-white dark:text-white">{member.name}</h1>
-                <p className="text-xs font-semibold text-[#DD2A40] dark:text-[#FF3333] mt-1">{member.role}</p>
+                <p className="text-xs font-semibold text-[#E31F1F] dark:text-[#FF3333] mt-1">{member.role}</p>
               </div>
 
               {/* Action Buttons */}
               <div className="space-y-2 pt-2">
                 <button
                   onClick={() => onOpenConsultation?.()}
-                  className="w-full py-3 rounded-xl bg-gradient-to-r from-[#DD2A40] to-[#DD2A40] dark:from-[#DD2A40] dark:to-[#FF3333] text-white dark:text-[#000000] font-bold text-xs shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2 cursor-pointer"
+                  className="w-full py-3 rounded-xl bg-gradient-to-r from-[#E31F1F] to-[#E31F1F] dark:from-[#E31F1F] dark:to-[#FF3333] text-white dark:text-[#030303] font-bold text-xs shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2 cursor-pointer"
                 >
                   <Calendar className="w-4 h-4" />
                   <span>{td.bookConsultation || 'Book Consultation Session'}</span>
@@ -106,7 +106,7 @@ export default function TeamMemberDetailPage({ params, onNavigate, onOpenConsult
               </div>
 
               {/* Quick Contact Line */}
-              <div className="pt-3 border-t border-surface-border flex items-center justify-center gap-2 text-xs font-mono text-[#667085]">
+              <div className="pt-3 border-t border-surface-border flex items-center justify-center gap-2 text-xs font-mono text-[#7D797A]">
                 <Mail className="w-3.5 h-3.5" />
                 <span>info@eaglecomply.com</span>
               </div>
@@ -114,7 +114,7 @@ export default function TeamMemberDetailPage({ params, onNavigate, onOpenConsult
 
             {/* Jurisdictional & Language Footprint */}
             <div className="p-6 rounded-3xl glass-panel border border-surface-border space-y-4 shadow-sm text-left rtl:text-right">
-              <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#DD2A40] dark:text-[#FF3333] block">
+              <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#E31F1F] dark:text-[#FF3333] block">
                 {td.jurisdictionalCoverage || 'Jurisdictional Coverage'}
               </span>
               <div className="flex flex-wrap gap-2">
@@ -126,7 +126,7 @@ export default function TeamMemberDetailPage({ params, onNavigate, onOpenConsult
               </div>
 
               <div className="pt-3 border-t border-surface-border space-y-2">
-                <span className="text-[11px] font-mono font-bold uppercase tracking-wider text-[#667085] block">
+                <span className="text-[11px] font-mono font-bold uppercase tracking-wider text-[#7D797A] block">
                   {td.workingLanguages || 'Working Languages'}
                 </span>
                 <div className="flex items-center gap-2">
@@ -145,7 +145,7 @@ export default function TeamMemberDetailPage({ params, onNavigate, onOpenConsult
             
             {/* About / Executive Profile & Practice Mandate */}
             <div className="p-8 sm:p-10 rounded-3xl glass-panel border border-surface-border shadow-md space-y-6">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DD2A40]/10 dark:bg-[#FF3333]/15 text-[#DD2A40] dark:text-[#FF3333] text-xs font-mono font-bold uppercase">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#E31F1F]/10 dark:bg-[#FF3333]/15 text-[#E31F1F] dark:text-[#FF3333] text-xs font-mono font-bold uppercase">
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>{td.aboutTitle || 'EXECUTIVE PROFILE & ABOUT'}</span>
               </div>
@@ -167,7 +167,7 @@ export default function TeamMemberDetailPage({ params, onNavigate, onOpenConsult
                       {member.intro || member.bio}
                     </p>
                     {member.bio && member.bio !== member.intro && (
-                      <p className="leading-relaxed text-slate-600 dark:text-[#667085]">
+                      <p className="leading-relaxed text-slate-600 dark:text-[#7D797A]">
                         {member.bio}
                       </p>
                     )}
@@ -177,12 +177,12 @@ export default function TeamMemberDetailPage({ params, onNavigate, onOpenConsult
 
               {/* Core Specialisms Grid */}
               <div className="pt-6 border-t border-surface-border space-y-4">
-                <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#DD2A40] dark:text-[#FF3333] block">
+                <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#E31F1F] dark:text-[#FF3333] block">
                   {td.specialismsTitle || 'Core Practice Areas & Specialisms'}
                 </span>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {(member.specialisms || []).map((spec, i) => (
-                    <div key={i} className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-800 dark:text-slate-200 p-3 rounded-2xl bg-surface-subtle border border-surface-border/70 hover:border-[#DD2A40]/40 transition-colors">
+                    <div key={i} className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-800 dark:text-slate-200 p-3 rounded-2xl bg-surface-subtle border border-surface-border/70 hover:border-[#E31F1F]/40 transition-colors">
                       <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
                       <span className="font-semibold">{spec}</span>
                     </div>
@@ -192,7 +192,7 @@ export default function TeamMemberDetailPage({ params, onNavigate, onOpenConsult
             </div>
 
             {/* Direct Consultation Card */}
-            <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-[#DD2A40] via-[#111111] to-[#DD2A40] text-white shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-[#E31F1F] via-[#131313] to-[#E31F1F] text-white shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="space-y-2 text-center md:text-left rtl:md:text-right">
                 <span className="text-xs font-mono uppercase tracking-widest text-blue-200 font-bold inline-block px-3 py-1 rounded-full bg-white/10 border border-white/20">
                   {td.ctaTag || 'DIRECT ADVISORY & CONSULTATION'}
@@ -206,7 +206,7 @@ export default function TeamMemberDetailPage({ params, onNavigate, onOpenConsult
               </div>
               <button
                 onClick={() => onOpenConsultation?.()}
-                className="px-6 py-3.5 rounded-xl bg-white text-[#DD2A40] font-bold text-xs shadow-xl hover:bg-blue-50 transition-all shrink-0 hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
+                className="px-6 py-3.5 rounded-xl bg-white text-[#E31F1F] font-bold text-xs shadow-xl hover:bg-blue-50 transition-all shrink-0 hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
               >
                 {td.ctaBtn || 'Schedule Advisory Discussion'}
               </button>

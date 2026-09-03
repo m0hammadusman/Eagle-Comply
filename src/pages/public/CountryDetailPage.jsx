@@ -23,7 +23,7 @@ export default function CountryDetailPage({ params, onNavigate, onOpenConsultati
           <span className="text-5xl">{country.flag}</span>
           <div>
             <div className="flex items-center gap-3">
-              <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#DD2A40] dark:text-[#FF3333]">
+              <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#E31F1F] dark:text-[#FF3333]">
                 {country.region}
               </span>
               <span className="text-xs font-mono px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
@@ -36,14 +36,14 @@ export default function CountryDetailPage({ params, onNavigate, onOpenConsultati
           </div>
         </div>
 
-        <p className="text-sm sm:text-base text-slate-600 dark:text-[#667085] max-w-4xl leading-relaxed mt-4">
+        <p className="text-sm sm:text-base text-slate-600 dark:text-[#7D797A] max-w-4xl leading-relaxed mt-4">
           {country.overview}
         </p>
 
         <div className="flex flex-wrap gap-4 mt-8">
           <button
             onClick={onOpenConsultation}
-            className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#DD2A40] to-[#DD2A40] dark:from-[#DD2A40] dark:to-[#FF3333] text-white dark:text-[#000000] font-bold text-xs shadow-md flex items-center gap-2 cursor-pointer"
+            className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#E31F1F] to-[#E31F1F] dark:from-[#E31F1F] dark:to-[#FF3333] text-white dark:text-[#030303] font-bold text-xs shadow-md flex items-center gap-2 cursor-pointer"
           >
             <Calendar className="w-4 h-4" />
             <span>{detailCommon?.bookConsultation || 'Book Partner Consultation'}</span>
@@ -69,14 +69,14 @@ export default function CountryDetailPage({ params, onNavigate, onOpenConsultati
 
         <div className="space-y-8">
           <div className="p-6 rounded-3xl glass-panel border border-surface-border shadow-md space-y-4">
-            <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#DD2A40] dark:text-[#FF3333]">
+            <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#E31F1F] dark:text-[#FF3333]">
               {detailCommon?.status || 'Supervisory Practice Coverage'}
             </span>
             <div className="flex items-center gap-3">
-              <Shield className="w-5 h-5 text-[#DD2A40] dark:text-[#FF3333]" />
+              <Shield className="w-5 h-5 text-[#E31F1F] dark:text-[#FF3333]" />
               <span className="text-sm font-bold text-black dark:text-white dark:text-white">{country.name} Practice Desk</span>
             </div>
-            <p className="text-xs text-slate-600 dark:text-[#667085] leading-relaxed">
+            <p className="text-xs text-slate-600 dark:text-[#7D797A] leading-relaxed">
               Direct institutional compliance advisory, licensing readiness, and regulatory framework structuring.
             </p>
           </div>

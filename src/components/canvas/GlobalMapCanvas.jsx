@@ -70,11 +70,11 @@ export default function GlobalMapCanvas({ onSelectCountry }) {
       {/* Live System Status Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6 pb-4 border-b border-surface-border">
         <div className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-xl bg-[#DD2A40]/10 dark:bg-[#FF3333]/15 border border-[#DD2A40]/20 dark:border-[#FF3333]/30 flex items-center justify-center text-[#DD2A40] dark:text-[#FF3333]">
+          <div className="w-9 h-9 rounded-xl bg-[#E31F1F]/10 dark:bg-[#FF3333]/15 border border-[#E31F1F]/20 dark:border-[#FF3333]/30 flex items-center justify-center text-[#E31F1F] dark:text-[#FF3333]">
             <Radio className="w-5 h-5 animate-pulse" />
           </div>
           <div>
-            <div className="text-xs font-mono uppercase tracking-widest text-[#DD2A40] dark:text-[#FF3333] font-bold flex items-center gap-2">
+            <div className="text-xs font-mono uppercase tracking-widest text-[#E31F1F] dark:text-[#FF3333] font-bold flex items-center gap-2">
               <span>{radar?.radarTag || 'LIVE REGULATORY SURVEILLANCE RADAR'}</span>
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping inline-block" />
             </div>
@@ -98,7 +98,7 @@ export default function GlobalMapCanvas({ onSelectCountry }) {
       <div className="flex flex-col lg:flex-row gap-8 items-start">
         
         {/* Dynamic Telemetry Map Video with Interactive Region Highlight Overlay */}
-        <div className="relative w-full lg:w-2/3 h-64 sm:h-80 lg:h-[450px] rounded-2xl bg-[#000000] border border-[#FF3333]/30 overflow-hidden shadow-2xl group">
+        <div className="relative w-full lg:w-2/3 h-64 sm:h-80 lg:h-[450px] rounded-2xl bg-[#030303] border border-[#FF3333]/30 overflow-hidden shadow-2xl group">
           <video
             ref={videoRef}
             src={`${import.meta.env.BASE_URL}world-map.mp4`}
@@ -110,7 +110,7 @@ export default function GlobalMapCanvas({ onSelectCountry }) {
             onEnded={handleVideoEnded}
             className="w-full h-full object-cover rounded-2xl select-none"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#000000]/80 via-transparent to-[#000000]/30 pointer-events-none rounded-2xl" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#030303]/80 via-transparent to-[#030303]/30 pointer-events-none rounded-2xl" />
 
           {/* Interactive Geographic Radar Target HUD (Issue 11 fix) */}
           <div 
@@ -119,18 +119,18 @@ export default function GlobalMapCanvas({ onSelectCountry }) {
           >
             <div className="relative flex items-center justify-center">
               <span className="animate-ping absolute inline-flex h-12 w-12 rounded-full bg-cyan-400 opacity-60"></span>
-              <span className="relative inline-flex rounded-full h-5 w-5 bg-[#DD2A40] border-2 border-white shadow-lg items-center justify-center">
+              <span className="relative inline-flex rounded-full h-5 w-5 bg-[#E31F1F] border-2 border-white shadow-lg items-center justify-center">
                 <span className="h-2 w-2 rounded-full bg-cyan-300 animate-pulse"></span>
               </span>
             </div>
-            <div className="mt-1.5 px-2.5 py-1 rounded-lg bg-[#DD2A40]/90 text-white border border-cyan-400/40 shadow-xl backdrop-blur-md text-[11px] font-mono whitespace-nowrap flex items-center gap-1.5">
+            <div className="mt-1.5 px-2.5 py-1 rounded-lg bg-[#E31F1F]/90 text-white border border-cyan-400/40 shadow-xl backdrop-blur-md text-[11px] font-mono whitespace-nowrap flex items-center gap-1.5">
               <span>{activeCountry?.flag}</span>
               <span className="font-bold text-cyan-300">{activeCountry?.name}</span>
             </div>
           </div>
 
           {/* Map Footer Status Bar */}
-          <div className="absolute bottom-3 left-4 right-4 z-20 flex items-center justify-between text-xs font-mono text-cyan-200/90 bg-[#DD2A40]/75 backdrop-blur-md px-3.5 py-2 rounded-xl border border-white/10">
+          <div className="absolute bottom-3 left-4 right-4 z-20 flex items-center justify-between text-xs font-mono text-cyan-200/90 bg-[#E31F1F]/75 backdrop-blur-md px-3.5 py-2 rounded-xl border border-white/10">
             <div className="flex items-center gap-2">
               <Crosshair className="w-3.5 h-3.5 text-cyan-400 animate-spin" style={{ animationDuration: '6s' }} />
               <span>{radar?.targetJurisdiction || 'Target Jurisdiction'}: <strong>{activeCountry?.name}</strong></span>
@@ -145,7 +145,7 @@ export default function GlobalMapCanvas({ onSelectCountry }) {
             {/* Quick Jurisdiction Selector Pills (Issue 12 & 23 fixes) */}
             <div className="mb-4">
               <span className="text-xs font-bold text-slate-700 dark:text-slate-200 uppercase tracking-wider block mb-2.5 flex items-center gap-1.5">
-                <Globe2 className="w-3.5 h-3.5 text-[#DD2A40] dark:text-[#FF3333]" />
+                <Globe2 className="w-3.5 h-3.5 text-[#E31F1F] dark:text-[#FF3333]" />
                 {radar?.selectJurisdiction || 'Select Jurisdiction'}
               </span>
               <div className="grid grid-cols-3 gap-2">
@@ -161,8 +161,8 @@ export default function GlobalMapCanvas({ onSelectCountry }) {
                       }}
                       className={`px-2.5 py-2 rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition-all border cursor-pointer ${
                         isSelected
-                          ? 'bg-[#DD2A40] text-white dark:bg-[#FF3333] dark:text-[#000000] border-transparent font-bold shadow-md scale-[1.02]'
-                          : 'bg-surface-subtle border-surface-border text-slate-700 dark:text-slate-300 hover:border-[#DD2A40]/60 hover:bg-surface-raised'
+                          ? 'bg-[#E31F1F] text-white dark:bg-[#FF3333] dark:text-[#030303] border-transparent font-bold shadow-md scale-[1.02]'
+                          : 'bg-surface-subtle border-surface-border text-slate-700 dark:text-slate-300 hover:border-[#E31F1F]/60 hover:bg-surface-raised'
                       }`}
                     >
                       <span className="text-sm shrink-0">{c.flag}</span>
@@ -180,7 +180,7 @@ export default function GlobalMapCanvas({ onSelectCountry }) {
                   <h3 className="text-base font-bold text-black dark:text-white dark:text-white">
                     {activeCountry?.name}
                   </h3>
-                  <span className="text-xs font-mono text-[#DD2A40] dark:text-[#FF3333] uppercase tracking-wider font-bold">
+                  <span className="text-xs font-mono text-[#E31F1F] dark:text-[#FF3333] uppercase tracking-wider font-bold">
                     {activeCountry?.status || radar?.activeJurisdiction || 'ACTIVE FULL JURISDICTION'} • {activeCountry?.region}
                   </span>
                 </div>
@@ -192,8 +192,8 @@ export default function GlobalMapCanvas({ onSelectCountry }) {
 
               <div className="space-y-3 mb-4">
                 <div>
-                  <div className="text-xs font-mono font-bold text-[#667085] dark:text-[#667085] uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
-                    <Building2 className="w-3.5 h-3.5 text-[#DD2A40] dark:text-[#FF3333]" /> {radar?.supervisoryRegulators || 'Supervisory Regulators'}
+                  <div className="text-xs font-mono font-bold text-[#7D797A] dark:text-[#7D797A] uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+                    <Building2 className="w-3.5 h-3.5 text-[#E31F1F] dark:text-[#FF3333]" /> {radar?.supervisoryRegulators || 'Supervisory Regulators'}
                   </div>
                   <div className="flex flex-wrap gap-1.5">
                     {activeCountry?.regulators?.slice(0, 4).map((r, i) => (
@@ -205,8 +205,8 @@ export default function GlobalMapCanvas({ onSelectCountry }) {
                 </div>
 
                 <div>
-                  <div className="text-xs font-mono font-bold text-[#667085] dark:text-[#667085] uppercase tracking-wider mb-1 flex items-center gap-1.5">
-                    <Shield className="w-3.5 h-3.5 text-[#DD2A40] dark:text-[#FF3333]" /> {radar?.residentDesk || 'Regional Practice Office'}
+                  <div className="text-xs font-mono font-bold text-[#7D797A] dark:text-[#7D797A] uppercase tracking-wider mb-1 flex items-center gap-1.5">
+                    <Shield className="w-3.5 h-3.5 text-[#E31F1F] dark:text-[#FF3333]" /> {radar?.residentDesk || 'Regional Practice Office'}
                   </div>
                   <span className="text-xs font-semibold text-slate-800 dark:text-slate-200">
                     {activeCountry?.office}
@@ -218,7 +218,7 @@ export default function GlobalMapCanvas({ onSelectCountry }) {
 
           <button
             onClick={() => onSelectCountry && onSelectCountry(activeCountry)}
-            className="w-full py-3 px-4 rounded-xl bg-[#DD2A40] hover:bg-[#BA1B30] text-white text-xs font-bold transition-all flex items-center justify-center gap-2 shadow-md hover:scale-[1.02] active:scale-[0.98] mt-3 cursor-pointer"
+            className="w-full py-3 px-4 rounded-xl bg-[#E31F1F] hover:bg-[#B42318] text-white text-xs font-bold transition-all flex items-center justify-center gap-2 shadow-md hover:scale-[1.02] active:scale-[0.98] mt-3 cursor-pointer"
           >
             <span>{(radar?.inspectDossier || 'Inspect {name} Dossier').replace('{name}', activeCountry?.name || '')}</span>
             <ExternalLink className="w-3.5 h-3.5" />

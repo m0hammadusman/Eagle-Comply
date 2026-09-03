@@ -16,7 +16,7 @@ export default function InsightsPage({ onNavigate }) {
     <div className="w-full py-12 sm:py-10 lg:py-16 space-y-16 animate-fade-in">
       {/* Header */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#DD2A40]/10 dark:bg-[#FF3333]/15 text-[#DD2A40] dark:text-[#FF3333] text-xs font-mono font-bold tracking-wider uppercase border border-[#DD2A40]/20 dark:border-[#FF3333]/30">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E31F1F]/10 dark:bg-[#FF3333]/15 text-[#E31F1F] dark:text-[#FF3333] text-xs font-mono font-bold tracking-wider uppercase border border-[#E31F1F]/20 dark:border-[#FF3333]/30">
           <BookOpen className="w-3.5 h-3.5" />
           <span>{t.insightsPage?.tag || 'Executive Legal Analysis'}</span>
         </div>
@@ -35,18 +35,18 @@ export default function InsightsPage({ onNavigate }) {
             <div
               key={ins.id}
               onClick={() => onNavigate('article-detail', { id: ins.id })}
-              className="p-8 rounded-3xl glass-panel border border-surface-border shadow-lg space-y-4 flex flex-col justify-between hover:border-[#DD2A40] cursor-pointer transition-all"
+              className="p-8 rounded-3xl glass-panel border border-surface-border shadow-lg space-y-4 flex flex-col justify-between hover:border-[#E31F1F] cursor-pointer transition-all"
             >
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#DD2A40] dark:text-[#FF3333]">
+                  <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#E31F1F] dark:text-[#FF3333]">
                     {ins.category}
                   </span>
-                  <span className="text-xs font-mono text-[#667085] dark:text-[#667085] flex items-center gap-1">
+                  <span className="text-xs font-mono text-[#7D797A] dark:text-[#7D797A] flex items-center gap-1">
                     <Clock className="w-3.5 h-3.5" /> {ins.readTime}
                   </span>
                 </div>
-                <h3 className="text-2xl font-bold text-black dark:text-white dark:text-white leading-snug hover:text-[#DD2A40] transition-colors">
+                <h3 className="text-2xl font-bold text-black dark:text-white dark:text-white leading-snug hover:text-[#E31F1F] transition-colors">
                   {ins.title}
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">
@@ -56,9 +56,9 @@ export default function InsightsPage({ onNavigate }) {
 
               <div className="pt-4 border-t border-surface-border flex items-center justify-between">
                 <span className="text-xs font-medium text-slate-700 dark:text-slate-300 flex items-center gap-1.5">
-                  <User className="w-3.5 h-3.5 text-[#DD2A40]" /> {ins.authorName}
+                  <User className="w-3.5 h-3.5 text-[#E31F1F]" /> {ins.authorName}
                 </span>
-                <span className="text-xs font-bold text-[#DD2A40] dark:text-[#FF3333] flex items-center gap-1">
+                <span className="text-xs font-bold text-[#E31F1F] dark:text-[#FF3333] flex items-center gap-1">
                   {t.insightsPage?.read || 'Read Article'} <ArrowRight className="w-3.5 h-3.5 rtl:rotate-180" />
                 </span>
               </div>

@@ -112,7 +112,7 @@ export default function ContactPage({ onNavigate }) {
     <div className="w-full py-12 lg:py-16 space-y-12 animate-fade-in">
       {/* Header */}
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-3">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#DD2A40]/10 dark:bg-[#FF3333]/15 text-[#DD2A40] dark:text-[#FF3333] text-xs font-mono font-bold tracking-wider uppercase border border-[#DD2A40]/20 dark:border-[#FF3333]/30">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E31F1F]/10 dark:bg-[#FF3333]/15 text-[#E31F1F] dark:text-[#FF3333] text-xs font-mono font-bold tracking-wider uppercase border border-[#E31F1F]/20 dark:border-[#FF3333]/30">
           <Building2 className="w-3.5 h-3.5" />
           <span>{c.tag || 'EAGLECOMPLY CONSULTATION & ADVISORY'}</span>
         </div>
@@ -143,10 +143,10 @@ export default function ContactPage({ onNavigate }) {
                 </p>
 
                 <div className="p-4 rounded-2xl bg-surface-subtle border border-surface-border text-xs text-left max-w-md mx-auto space-y-1.5 font-mono">
-                  <div className="flex justify-between"><span className="text-[#667085]">{c.fullName || 'Sender'}:</span><strong>{formData.name}</strong></div>
-                  <div className="flex justify-between"><span className="text-[#667085]">{c.businessEmail || 'Email'}:</span><strong>{formData.email}</strong></div>
-                  <div className="flex justify-between"><span className="text-[#667085]">{c.companyOrg || 'Company'}:</span><strong>{formData.company || '—'}</strong></div>
-                  <div className="flex justify-between"><span className="text-[#667085]">{c.serviceRequired || 'Service'}:</span><strong className="truncate max-w-[200px]">{formData.service}</strong></div>
+                  <div className="flex justify-between"><span className="text-[#7D797A]">{c.fullName || 'Sender'}:</span><strong>{formData.name}</strong></div>
+                  <div className="flex justify-between"><span className="text-[#7D797A]">{c.businessEmail || 'Email'}:</span><strong>{formData.email}</strong></div>
+                  <div className="flex justify-between"><span className="text-[#7D797A]">{c.companyOrg || 'Company'}:</span><strong>{formData.company || '—'}</strong></div>
+                  <div className="flex justify-between"><span className="text-[#7D797A]">{c.serviceRequired || 'Service'}:</span><strong className="truncate max-w-[200px]">{formData.service}</strong></div>
                 </div>
 
                 <div className="pt-2">
@@ -163,7 +163,7 @@ export default function ContactPage({ onNavigate }) {
                         description: ''
                       });
                     }}
-                    className="px-6 py-2.5 rounded-full bg-[#DD2A40] dark:bg-[#DD2A40] text-xs font-bold text-white hover:opacity-90 shadow-sm transition-all cursor-pointer"
+                    className="px-6 py-2.5 rounded-full bg-[#E31F1F] dark:bg-[#E31F1F] text-xs font-bold text-white hover:opacity-90 shadow-sm transition-all cursor-pointer"
                   >
                     {c.sendAnother || 'Send Another Message'}
                   </button>
@@ -191,7 +191,7 @@ export default function ContactPage({ onNavigate }) {
                       required
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-black dark:text-white dark:text-white focus:outline-none focus:ring-2 focus:ring-[#DD2A40]"
+                      className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-black dark:text-white dark:text-white focus:outline-none focus:ring-2 focus:ring-[#E31F1F]"
                       placeholder={c.placeholders?.name || "e.g. Alexander Vance"}
                     />
                   </div>
@@ -205,7 +205,7 @@ export default function ContactPage({ onNavigate }) {
                       required
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-black dark:text-white dark:text-white focus:outline-none focus:ring-2 focus:ring-[#DD2A40]"
+                      className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-black dark:text-white dark:text-white focus:outline-none focus:ring-2 focus:ring-[#E31F1F]"
                       placeholder={c.placeholders?.email || "name@company.com"}
                     />
                   </div>
@@ -222,7 +222,7 @@ export default function ContactPage({ onNavigate }) {
                       required
                       value={formData.company}
                       onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-black dark:text-white dark:text-white focus:outline-none focus:ring-2 focus:ring-[#DD2A40]"
+                      className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-black dark:text-white dark:text-white focus:outline-none focus:ring-2 focus:ring-[#E31F1F]"
                       placeholder={c.placeholders?.company || "e.g. Apex Global Payments Ltd"}
                     />
                   </div>
@@ -236,7 +236,7 @@ export default function ContactPage({ onNavigate }) {
                       required
                       value={formData.jurisdiction}
                       onChange={(e) => setFormData({ ...formData, jurisdiction: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-black dark:text-white dark:text-white focus:outline-none focus:ring-2 focus:ring-[#DD2A40]"
+                      className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-black dark:text-white dark:text-white focus:outline-none focus:ring-2 focus:ring-[#E31F1F]"
                       placeholder={c.placeholders?.jurisdiction || "e.g. United Kingdom, UAE, Australia"}
                     />
                   </div>
@@ -251,7 +251,7 @@ export default function ContactPage({ onNavigate }) {
                       name="industry"
                       value={formData.industry}
                       onChange={(e) => setFormData({ ...formData, industry: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-black dark:text-white dark:text-white focus:outline-none focus:ring-2 focus:ring-[#DD2A40]"
+                      className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-black dark:text-white dark:text-white focus:outline-none focus:ring-2 focus:ring-[#E31F1F]"
                     >
                       {industryOptions.map((ind, i) => (
                         <option key={i} value={ind}>{ind}</option>
@@ -266,7 +266,7 @@ export default function ContactPage({ onNavigate }) {
                       name="service"
                       value={formData.service}
                       onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-black dark:text-white dark:text-white focus:outline-none focus:ring-2 focus:ring-[#DD2A40]"
+                      className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-black dark:text-white dark:text-white focus:outline-none focus:ring-2 focus:ring-[#E31F1F]"
                     >
                       {serviceOptions.map((srv, i) => (
                         <option key={i} value={srv}>{srv}</option>
@@ -285,11 +285,11 @@ export default function ContactPage({ onNavigate }) {
                     required
                     value={formData.description}
                     onChange={(e) => setFormData({ ...formData, description: e.target.value })}
-                    className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-black dark:text-white dark:text-white focus:outline-none focus:ring-2 focus:ring-[#DD2A40]"
+                    className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-black dark:text-white dark:text-white focus:outline-none focus:ring-2 focus:ring-[#E31F1F]"
                     placeholder={c.placeholders?.description || "Please outline your entity's compliance scope, target regulatory objectives, licensing timelines, or specific financial crime challenges..."}
                   />
-                  <div className="flex items-center gap-2 text-[11px] text-[#667085] dark:text-[#667085] mt-2">
-                    <Lock className="w-3.5 h-3.5 text-[#DD2A40] dark:text-[#FF3333]" />
+                  <div className="flex items-center gap-2 text-[11px] text-[#7D797A] dark:text-[#7D797A] mt-2">
+                    <Lock className="w-3.5 h-3.5 text-[#E31F1F] dark:text-[#FF3333]" />
                     <span>{t.contactPageSide?.confidentialNote || 'Protected by bilateral mutual confidentiality and anti-spam verification.'}</span>
                   </div>
                 </div>
@@ -297,7 +297,7 @@ export default function ContactPage({ onNavigate }) {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#DD2A40] to-[#DD2A40] dark:from-[#DD2A40] dark:to-[#FF3333] text-white dark:text-[#000000] font-bold text-xs shadow-xl hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2 disabled:opacity-50 cursor-pointer"
+                  className="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#E31F1F] to-[#E31F1F] dark:from-[#E31F1F] dark:to-[#FF3333] text-white dark:text-[#030303] font-bold text-xs shadow-xl hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2 disabled:opacity-50 cursor-pointer"
                 >
                   {isSubmitting ? (
                     <>
@@ -317,7 +317,7 @@ export default function ContactPage({ onNavigate }) {
 
           {/* Direct Engagement & Advisory Protocols */}
           <div className="lg:col-span-4 space-y-6 text-left rtl:text-right">
-            <div className="p-6 rounded-3xl bg-[#DD2A40] text-white space-y-4 shadow-xl">
+            <div className="p-6 rounded-3xl bg-[#E31F1F] text-white space-y-4 shadow-xl">
               <div className="text-xs font-mono font-bold uppercase tracking-wider text-blue-200">
                 {t.contactPageSide?.protocolTag || 'Advisory Protocol'}
               </div>
@@ -341,7 +341,7 @@ export default function ContactPage({ onNavigate }) {
             </div>
 
             <div className="p-6 rounded-3xl glass-panel border border-surface-border space-y-4 shadow-sm">
-              <div className="text-xs font-mono font-bold uppercase tracking-wider text-[#DD2A40] dark:text-[#FF3333]">
+              <div className="text-xs font-mono font-bold uppercase tracking-wider text-[#E31F1F] dark:text-[#FF3333]">
                 {c.directContacts || "Direct Contacts"}
               </div>
               <p className="text-xs text-slate-600 dark:text-slate-300">
@@ -381,20 +381,20 @@ export default function ContactPage({ onNavigate }) {
 
                 {/* Email */}
                 <div className="flex items-center gap-2 px-1 pt-1">
-                  <Mail className="w-3.5 h-3.5 text-[#DD2A40] dark:text-[#FF3333]" />
+                  <Mail className="w-3.5 h-3.5 text-[#E31F1F] dark:text-[#FF3333]" />
                   <a href="mailto:info@eaglecomply.com" className="hover:underline font-bold">info@eaglecomply.com</a>
                 </div>
                 
                 {/* LinkedIn */}
                 <div className="flex items-center gap-2 px-1">
-                  <LinkedInIcon className="w-3.5 h-3.5 text-[#DD2A40] dark:text-[#FF3333]" />
+                  <LinkedInIcon className="w-3.5 h-3.5 text-[#E31F1F] dark:text-[#FF3333]" />
                   <a href="https://www.linkedin.com/company/eaglecomply/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="hover:underline font-bold">{t.contactPageSide?.linkedin || 'LinkedIn: EagleComply'}</a>
                 </div>
               </div>
 
               {/* Locations summary list */}
-              <div className="pt-3 border-t border-surface-border text-xs text-slate-600 dark:text-[#667085] space-y-1.5">
-                <div className="text-[11px] font-mono uppercase tracking-wider text-[#667085] font-bold mb-2">
+              <div className="pt-3 border-t border-surface-border text-xs text-slate-600 dark:text-[#7D797A] space-y-1.5">
+                <div className="text-[11px] font-mono uppercase tracking-wider text-[#7D797A] font-bold mb-2">
                   {t.contactPageSide?.locationsTitle || 'Operational Hubs & Locations:'}
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 text-xs font-semibold text-slate-800 dark:text-slate-200">

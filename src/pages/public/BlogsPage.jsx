@@ -44,7 +44,7 @@ export default function BlogsPage({ onNavigate }) {
     <div className="w-full py-12 sm:py-16 lg:py-20 space-y-12 animate-fade-in text-left rtl:text-right">
       {/* Header Banner */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DD2A40]/10 dark:bg-[#FF3333]/15 text-[#DD2A40] dark:text-[#FF3333] text-xs font-mono font-bold tracking-wider uppercase border border-[#DD2A40]/20 dark:border-[#FF3333]/30">
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#E31F1F]/10 dark:bg-[#FF3333]/15 text-[#E31F1F] dark:text-[#FF3333] text-xs font-mono font-bold tracking-wider uppercase border border-[#E31F1F]/20 dark:border-[#FF3333]/30">
           <BookOpen className="w-3.5 h-3.5" />
           <span>{bp.tag || 'EAGLECOMPLY EDITORIAL & BLOGS'}</span>
         </div>
@@ -56,7 +56,7 @@ export default function BlogsPage({ onNavigate }) {
         </p>
 
         {/* Contentful Connection Pill */}
-        <div className="flex items-center justify-center gap-2 pt-1 text-[11px] font-mono text-[#667085]">
+        <div className="flex items-center justify-center gap-2 pt-1 text-[11px] font-mono text-[#7D797A]">
           <span className={`w-2 h-2 rounded-full ${isContentfulConfigured ? 'bg-emerald-500 animate-pulse' : 'bg-blue-500'}`} />
           <span>{isContentfulConfigured ? 'Live Contentful CMS Active' : 'Headless CMS Managed'}</span>
         </div>
@@ -73,8 +73,8 @@ export default function BlogsPage({ onNavigate }) {
                 onClick={() => setSelectedCategory(cat)}
                 className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
                   selectedCategory === cat
-                    ? 'bg-[#DD2A40] text-white shadow-sm dark:bg-[#FF3333] dark:text-[#DD2A40]'
-                    : 'bg-surface-base text-slate-600 dark:text-slate-300 hover:text-[#DD2A40] border border-surface-border'
+                    ? 'bg-[#E31F1F] text-white shadow-sm dark:bg-[#FF3333] dark:text-[#E31F1F]'
+                    : 'bg-surface-base text-slate-600 dark:text-slate-300 hover:text-[#E31F1F] border border-surface-border'
                 }`}
               >
                 {cat === 'All' ? (bp.allCategories || 'All') : cat}
@@ -84,13 +84,13 @@ export default function BlogsPage({ onNavigate }) {
 
           {/* Search Box */}
           <div className="relative w-full md:w-72">
-            <Search className="w-4 h-4 absolute left-3 rtl:left-auto rtl:right-3 top-1/2 -translate-y-1/2 text-[#667085]" />
+            <Search className="w-4 h-4 absolute left-3 rtl:left-auto rtl:right-3 top-1/2 -translate-y-1/2 text-[#7D797A]" />
             <input
               type="text"
               value={searchQuery}
               onChange={e => setSearchQuery(e.target.value)}
               placeholder={bp.searchPlaceholder || "Search blogs, topics, authors…"}
-              className="w-full pl-9 pr-4 rtl:pl-4 rtl:pr-9 py-1.5 rounded-xl bg-surface-base border border-surface-border text-xs text-black dark:text-white dark:text-white outline-none focus:border-[#DD2A40]"
+              className="w-full pl-9 pr-4 rtl:pl-4 rtl:pr-9 py-1.5 rounded-xl bg-surface-base border border-surface-border text-xs text-black dark:text-white dark:text-white outline-none focus:border-[#E31F1F]"
             />
           </div>
         </div>
@@ -130,15 +130,15 @@ export default function BlogsPage({ onNavigate }) {
               <div className="lg:col-span-7 p-5 sm:p-7 flex flex-col justify-between space-y-4">
                 <div className="space-y-2.5">
                   <div className="flex items-center gap-2">
-                    <span className="px-2.5 py-0.5 rounded-lg text-[11px] font-mono font-bold uppercase bg-[#DD2A40]/10 dark:bg-[#FF3333]/20 text-[#DD2A40] dark:text-[#FF3333]">
+                    <span className="px-2.5 py-0.5 rounded-lg text-[11px] font-mono font-bold uppercase bg-[#E31F1F]/10 dark:bg-[#FF3333]/20 text-[#E31F1F] dark:text-[#FF3333]">
                       {featuredPost.category}
                     </span>
-                    <span className="text-[11px] font-mono text-[#667085] flex items-center gap-1">
+                    <span className="text-[11px] font-mono text-[#7D797A] flex items-center gap-1">
                       <Clock className="w-3 h-3" /> {featuredPost.readTime}
                     </span>
                   </div>
 
-                  <h2 className="font-sans tracking-tight text-lg sm:text-xl md:text-2xl font-bold text-black dark:text-white dark:text-white group-hover:text-[#DD2A40] dark:group-hover:text-[#FF3333] transition-colors leading-snug">
+                  <h2 className="font-sans tracking-tight text-lg sm:text-xl md:text-2xl font-bold text-black dark:text-white dark:text-white group-hover:text-[#E31F1F] dark:group-hover:text-[#FF3333] transition-colors leading-snug">
                     {featuredPost.title}
                   </h2>
 
@@ -160,13 +160,13 @@ export default function BlogsPage({ onNavigate }) {
                       <div className="text-xs font-bold text-black dark:text-white dark:text-white">
                         {featuredPost.author?.name || 'EagleComply Advisor'}
                       </div>
-                      <div className="text-[10px] text-[#667085] font-mono">
+                      <div className="text-[10px] text-[#7D797A] font-mono">
                         {featuredPost.publishDate}
                       </div>
                     </div>
                   </div>
 
-                  <span className="text-xs font-bold text-[#DD2A40] dark:text-[#FF3333] flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                  <span className="text-xs font-bold text-[#E31F1F] dark:text-[#FF3333] flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                     {bp.readArticle || 'Read Article'} <ArrowRight className="w-3.5 h-3.5 rtl:rotate-180" />
                   </span>
                 </div>
@@ -198,7 +198,7 @@ export default function BlogsPage({ onNavigate }) {
 
                   <div className="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
                     <div className="space-y-2">
-                      <div className="flex items-center gap-2 text-[10px] font-mono text-[#667085]">
+                      <div className="flex items-center gap-2 text-[10px] font-mono text-[#7D797A]">
                         <span className="flex items-center gap-1">
                           <Calendar className="w-3 h-3" /> {post.publishDate}
                         </span>
@@ -208,7 +208,7 @@ export default function BlogsPage({ onNavigate }) {
                         </span>
                       </div>
 
-                      <h3 className="font-sans text-sm sm:text-base font-bold text-black dark:text-white dark:text-white group-hover:text-[#DD2A40] dark:group-hover:text-[#FF3333] transition-colors leading-snug line-clamp-2 min-h-[2.5rem]">
+                      <h3 className="font-sans text-sm sm:text-base font-bold text-black dark:text-white dark:text-white group-hover:text-[#E31F1F] dark:group-hover:text-[#FF3333] transition-colors leading-snug line-clamp-2 min-h-[2.5rem]">
                         {post.title}
                       </h3>
 
@@ -231,7 +231,7 @@ export default function BlogsPage({ onNavigate }) {
                         </span>
                       </div>
 
-                      <span className="text-xs font-bold text-[#DD2A40] dark:text-[#FF3333] flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                      <span className="text-xs font-bold text-[#E31F1F] dark:text-[#FF3333] flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                         {bp.read || 'Read'} <ArrowRight className="w-3.5 h-3.5 rtl:rotate-180" />
                       </span>
                     </div>
@@ -244,14 +244,14 @@ export default function BlogsPage({ onNavigate }) {
           {/* Empty State */}
           {filteredPosts.length === 0 && (
             <div className="p-12 rounded-3xl glass-panel border border-surface-border text-center space-y-3">
-              <Search className="w-8 h-8 text-[#667085] mx-auto" />
+              <Search className="w-8 h-8 text-[#7D797A] mx-auto" />
               <h3 className="text-base font-bold text-black dark:text-white dark:text-white">{bp.noPosts || 'No blog posts found'}</h3>
-              <p className="text-xs text-[#667085] max-w-sm mx-auto">
+              <p className="text-xs text-[#7D797A] max-w-sm mx-auto">
                 {bp.noPostsDesc || 'No articles matched your filter. Try clearing your search query.'}
               </p>
               <button
                 onClick={() => { setSearchQuery(''); setSelectedCategory('All'); }}
-                className="px-4 py-2 rounded-xl bg-[#DD2A40] text-white text-xs font-bold hover:bg-[#BA1B30] transition-colors cursor-pointer"
+                className="px-4 py-2 rounded-xl bg-[#E31F1F] text-white text-xs font-bold hover:bg-[#B42318] transition-colors cursor-pointer"
               >
                 {bp.resetFilters || 'Reset Filters'}
               </button>

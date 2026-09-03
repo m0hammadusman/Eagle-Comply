@@ -25,7 +25,7 @@ function renderInlineFormatting(text) {
           href={cleanUrl} 
           target="_blank" 
           rel="noopener noreferrer" 
-          className="text-[#DD2A40] dark:text-[#FF3333] underline font-medium hover:opacity-80"
+          className="text-[#E31F1F] dark:text-[#FF3333] underline font-medium hover:opacity-80"
         >
           {linkText}
         </a>
@@ -59,7 +59,7 @@ function FormattedArticleContent({ content }) {
                 loading="lazy"
               />
               {alt && alt !== 'image' && alt !== 'newImg' && alt !== 'img' && (
-                <figcaption className="px-4 py-2 text-center text-xs font-mono text-[#667085] dark:text-[#667085] border-t border-surface-border bg-surface-base">
+                <figcaption className="px-4 py-2 text-center text-xs font-mono text-[#7D797A] dark:text-[#7D797A] border-t border-surface-border bg-surface-base">
                   {alt}
                 </figcaption>
               )}
@@ -93,7 +93,7 @@ function FormattedArticleContent({ content }) {
         // 3. Blockquote
         if (text.startsWith('> ')) {
           return (
-            <blockquote key={sIdx} className="p-4 rounded-2xl bg-surface-subtle border-l-4 border-[#DD2A40] dark:border-[#FF3333] text-slate-800 dark:text-slate-200 italic my-4">
+            <blockquote key={sIdx} className="p-4 rounded-2xl bg-surface-subtle border-l-4 border-[#E31F1F] dark:border-[#FF3333] text-slate-800 dark:text-slate-200 italic my-4">
               {text.replace(/^>\s+/, '')}
             </blockquote>
           );
@@ -110,7 +110,7 @@ function FormattedArticleContent({ content }) {
                 const parts = renderInlineFormatting(cleanLine);
                 return (
                   <li key={lIdx} className="flex items-start gap-2 text-sm sm:text-base">
-                    <span className="text-[#DD2A40] dark:text-[#FF3333] font-bold mt-1 shrink-0">•</span>
+                    <span className="text-[#E31F1F] dark:text-[#FF3333] font-bold mt-1 shrink-0">•</span>
                     <span className="flex-1">{parts}</span>
                   </li>
                 );
@@ -200,7 +200,7 @@ export default function ArticleDetailPage({ params, onNavigate, onOpenConsultati
       <div>
         <button
           onClick={() => onNavigate(backRoute)}
-          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#667085] hover:text-[#DD2A40] dark:hover:text-[#FF3333] transition-colors cursor-pointer"
+          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#7D797A] hover:text-[#E31F1F] dark:hover:text-[#FF3333] transition-colors cursor-pointer"
         >
           <ArrowLeft className="w-4 h-4 rtl:rotate-180" /> {t.teamDetail?.backBtn || 'Back to'} {backLabel}
         </button>
@@ -220,13 +220,13 @@ export default function ArticleDetailPage({ params, onNavigate, onOpenConsultati
           <div className="space-y-4 border-b border-surface-border pb-6">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div className="flex flex-wrap items-center gap-2.5 text-xs font-mono">
-                <span className="px-3 py-1 rounded-full bg-[#DD2A40]/10 dark:bg-[#FF3333]/15 text-[#DD2A40] dark:text-[#FF3333] font-bold uppercase tracking-wider">
+                <span className="px-3 py-1 rounded-full bg-[#E31F1F]/10 dark:bg-[#FF3333]/15 text-[#E31F1F] dark:text-[#FF3333] font-bold uppercase tracking-wider">
                   {article.category || 'Regulatory Practice'}
                 </span>
-                <span className="text-[#667085] flex items-center gap-1">
+                <span className="text-[#7D797A] flex items-center gap-1">
                   <Calendar className="w-3.5 h-3.5" /> {article.publishDate || 'Recent'}
                 </span>
-                <span className="text-[#667085] flex items-center gap-1">
+                <span className="text-[#7D797A] flex items-center gap-1">
                   <Clock className="w-3.5 h-3.5" /> {article.readTime || '5 min read'}
                 </span>
               </div>
@@ -235,7 +235,7 @@ export default function ArticleDetailPage({ params, onNavigate, onOpenConsultati
               <div className="flex items-center gap-2">
                 <button
                   onClick={handleCopyLink}
-                  className="px-2.5 py-1.5 rounded-xl bg-surface-base border border-surface-border text-slate-600 dark:text-slate-300 hover:text-[#DD2A40] text-xs font-semibold flex items-center gap-1.5 transition-colors cursor-pointer shadow-xs"
+                  className="px-2.5 py-1.5 rounded-xl bg-surface-base border border-surface-border text-slate-600 dark:text-slate-300 hover:text-[#E31F1F] text-xs font-semibold flex items-center gap-1.5 transition-colors cursor-pointer shadow-xs"
                   title="Copy link"
                 >
                   {copied ? <Check className="w-3.5 h-3.5 text-emerald-500" /> : <Share2 className="w-3.5 h-3.5" />}
@@ -293,14 +293,14 @@ export default function ArticleDetailPage({ params, onNavigate, onOpenConsultati
                 <img
                   src={article.author.avatar}
                   alt={article.author.name}
-                  className="w-12 h-12 rounded-full object-cover object-top border-2 border-[#DD2A40] dark:border-[#FF3333] shadow-xs shrink-0"
+                  className="w-12 h-12 rounded-full object-cover object-top border-2 border-[#E31F1F] dark:border-[#FF3333] shadow-xs shrink-0"
                 />
               )}
               <div>
                 <div className="text-sm font-bold text-black dark:text-white dark:text-white">
                   {article.author?.name || 'EagleComply Advisory Board'}
                 </div>
-                <div className="text-xs text-[#667085] font-mono">
+                <div className="text-xs text-[#7D797A] font-mono">
                   {article.author?.role || 'Resident Regulatory Advisor'}
                 </div>
               </div>
@@ -333,14 +333,14 @@ export default function ArticleDetailPage({ params, onNavigate, onOpenConsultati
           {/* Tags */}
           {article.tags && article.tags.length > 0 && (
             <div className="pt-6 border-t border-surface-border space-y-2">
-              <span className="text-xs font-mono font-bold uppercase text-[#667085]">
+              <span className="text-xs font-mono font-bold uppercase text-[#7D797A]">
                 {t.detailCommon?.relatedRegulations || 'Related Regulatory Topics:'}
               </span>
               <div className="flex flex-wrap gap-2">
                 {article.tags.map(tag => (
                   <span
                     key={tag}
-                    className="px-3 py-1 rounded-xl text-xs font-mono font-semibold bg-surface-subtle border border-surface-border text-[#DD2A40] dark:text-[#FF3333]"
+                    className="px-3 py-1 rounded-xl text-xs font-mono font-semibold bg-surface-subtle border border-surface-border text-[#E31F1F] dark:text-[#FF3333]"
                   >
                     #{tag}
                   </span>
@@ -363,7 +363,7 @@ export default function ArticleDetailPage({ params, onNavigate, onOpenConsultati
                 <h4 className="text-base font-bold text-black dark:text-white dark:text-white">
                   {t.teamDetail?.ctaTag ? `${t.teamDetail.ctaTag}: ${article.author?.name || 'EagleComply'}` : `Discuss this analysis with ${article.author?.name || 'EagleComply'}`}
                 </h4>
-                <p className="text-xs text-[#667085] font-mono mt-0.5">
+                <p className="text-xs text-[#7D797A] font-mono mt-0.5">
                   {t.teamDetail?.ctaDesc || 'Direct consultation and supervisory advisory for your institution.'}
                 </p>
               </div>
@@ -371,7 +371,7 @@ export default function ArticleDetailPage({ params, onNavigate, onOpenConsultati
 
             <button
               onClick={() => onOpenConsultation?.()}
-              className="px-5 py-2.5 rounded-xl bg-[#DD2A40] dark:bg-[#DD2A40] hover:bg-[#22252A] dark:hover:bg-[#BA1B30] text-white font-bold text-xs shadow-md hover:shadow-lg transition-all cursor-pointer whitespace-nowrap"
+              className="px-5 py-2.5 rounded-xl bg-[#E31F1F] dark:bg-[#E31F1F] hover:bg-[#1E1E1E] dark:hover:bg-[#B42318] text-white font-bold text-xs shadow-md hover:shadow-lg transition-all cursor-pointer whitespace-nowrap"
             >
               {t.teamDetail?.bookConsultation || 'Book a Consultation'}
             </button>
