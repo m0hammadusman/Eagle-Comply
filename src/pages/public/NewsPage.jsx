@@ -38,11 +38,11 @@ export default function NewsPage({ onNavigate }) {
     <div className="w-full py-12 sm:py-16 lg:py-20 space-y-12 animate-fade-in text-left rtl:text-right">
       {/* Header Banner */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#334DAF]/10 dark:bg-[#7096D1]/15 text-[#334DAF] dark:text-[#7096D1] text-xs font-mono font-bold tracking-wider uppercase border border-[#334DAF]/20 dark:border-[#7096D1]/30">
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DD2A40]/10 dark:bg-[#FF3333]/15 text-[#DD2A40] dark:text-[#FF3333] text-xs font-mono font-bold tracking-wider uppercase border border-[#DD2A40]/20 dark:border-[#FF3333]/30">
           <Newspaper className="w-3.5 h-3.5" />
           <span>{np.tag || 'EAGLECOMPLY REGULATORY NEWSROOM'}</span>
         </div>
-        <h1 className="font-sans tracking-tight text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white">
+        <h1 className="font-sans tracking-tight text-3xl sm:text-4xl md:text-5xl font-bold text-black dark:text-white dark:text-white">
           {np.title || 'Regulatory News & Supervisory Updates'}
         </h1>
         <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
@@ -50,7 +50,7 @@ export default function NewsPage({ onNavigate }) {
         </p>
 
         {/* Contentful Connection Pill */}
-        <div className="flex items-center justify-center gap-2 pt-1 text-[11px] font-mono text-slate-500">
+        <div className="flex items-center justify-center gap-2 pt-1 text-[11px] font-mono text-[#667085]">
           <span className={`w-2 h-2 rounded-full ${isContentfulConfigured ? 'bg-emerald-500 animate-pulse' : 'bg-blue-500'}`} />
           <span>{isContentfulConfigured ? 'Live Contentful CMS Active' : 'Headless CMS Managed'}</span>
         </div>
@@ -68,7 +68,7 @@ export default function NewsPage({ onNavigate }) {
                 <span className="w-1.5 h-1.5 rounded-full bg-slate-950 animate-ping inline-block" />
                 {np.dispatchTag || 'SUPERVISORY DISPATCH'}
               </span>
-              <p className="text-xs sm:text-sm font-bold text-slate-900 dark:text-white leading-snug line-clamp-1">
+              <p className="text-xs sm:text-sm font-bold text-black dark:text-white dark:text-white leading-snug line-clamp-1">
                 {breakingNews.title}
               </p>
             </div>
@@ -90,8 +90,8 @@ export default function NewsPage({ onNavigate }) {
                 onClick={() => setSelectedCategory(cat)}
                 className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
                   selectedCategory === cat
-                    ? 'bg-[#334DAF] text-white shadow-sm dark:bg-[#7096D1] dark:text-[#091F5C]'
-                    : 'bg-surface-base text-slate-600 dark:text-slate-300 hover:text-[#334DAF] border border-surface-border'
+                    ? 'bg-[#DD2A40] text-white shadow-sm dark:bg-[#FF3333] dark:text-[#DD2A40]'
+                    : 'bg-surface-base text-slate-600 dark:text-slate-300 hover:text-[#DD2A40] border border-surface-border'
                 }`}
               >
                 {cat === 'All' ? (np.allCategories || 'All') : cat}
@@ -101,13 +101,13 @@ export default function NewsPage({ onNavigate }) {
 
           {/* Search Box */}
           <div className="relative w-full md:w-72">
-            <Search className="w-4 h-4 absolute left-3 rtl:left-auto rtl:right-3 top-1/2 -translate-y-1/2 text-slate-400" />
+            <Search className="w-4 h-4 absolute left-3 rtl:left-auto rtl:right-3 top-1/2 -translate-y-1/2 text-[#667085]" />
             <input
               type="text"
               value={searchQuery}
               onChange={e => setSearchQuery(e.target.value)}
               placeholder={np.searchPlaceholder || "Search news, regulations, authorities…"}
-              className="w-full pl-9 pr-4 rtl:pl-4 rtl:pr-9 py-1.5 rounded-xl bg-surface-base border border-surface-border text-xs text-slate-900 dark:text-white outline-none focus:border-[#334DAF]"
+              className="w-full pl-9 pr-4 rtl:pl-4 rtl:pr-9 py-1.5 rounded-xl bg-surface-base border border-surface-border text-xs text-black dark:text-white dark:text-white outline-none focus:border-[#DD2A40]"
             />
           </div>
         </div>
@@ -133,18 +133,18 @@ export default function NewsPage({ onNavigate }) {
             >
               <div className="flex-1 space-y-2.5">
                 <div className="flex flex-wrap items-center gap-2.5 text-[11px] font-mono">
-                  <span className="px-2.5 py-0.5 rounded-lg bg-[#334DAF]/10 dark:bg-[#7096D1]/20 text-[#334DAF] dark:text-[#7096D1] font-bold">
+                  <span className="px-2.5 py-0.5 rounded-lg bg-[#DD2A40]/10 dark:bg-[#FF3333]/20 text-[#DD2A40] dark:text-[#FF3333] font-bold">
                     {article.category}
                   </span>
-                  <span className="text-slate-400 flex items-center gap-1">
+                  <span className="text-[#667085] flex items-center gap-1">
                     <Calendar className="w-3 h-3" /> {article.publishDate}
                   </span>
-                  <span className="text-slate-400 flex items-center gap-1">
+                  <span className="text-[#667085] flex items-center gap-1">
                     <Clock className="w-3 h-3" /> {article.readTime}
                   </span>
                 </div>
 
-                <h3 className="font-sans text-base sm:text-lg font-bold text-slate-900 dark:text-white group-hover:text-[#334DAF] dark:group-hover:text-[#7096D1] transition-colors leading-snug">
+                <h3 className="font-sans text-base sm:text-lg font-bold text-black dark:text-white dark:text-white group-hover:text-[#DD2A40] dark:group-hover:text-[#FF3333] transition-colors leading-snug">
                   {article.title}
                 </h3>
 
@@ -155,7 +155,7 @@ export default function NewsPage({ onNavigate }) {
                 {article.tags && article.tags.length > 0 && (
                   <div className="flex flex-wrap gap-1.5 pt-1">
                     {article.tags.map(tag => (
-                      <span key={tag} className="text-[10px] font-mono px-2 py-0.5 rounded bg-surface-subtle border border-surface-border text-slate-500">
+                      <span key={tag} className="text-[10px] font-mono px-2 py-0.5 rounded bg-surface-subtle border border-surface-border text-[#667085]">
                         #{tag}
                       </span>
                     ))}
@@ -174,7 +174,7 @@ export default function NewsPage({ onNavigate }) {
                   </div>
                 )}
 
-                <div className="p-3 rounded-2xl bg-surface-subtle group-hover:bg-[#334DAF] group-hover:text-white text-[#334DAF] dark:text-[#7096D1] transition-colors">
+                <div className="p-3 rounded-2xl bg-surface-subtle group-hover:bg-[#DD2A40] group-hover:text-white text-[#DD2A40] dark:text-[#FF3333] transition-colors">
                   <ArrowRight className="w-4 h-4 rtl:rotate-180" />
                 </div>
               </div>
@@ -184,14 +184,14 @@ export default function NewsPage({ onNavigate }) {
           {/* Empty State */}
           {filteredArticles.length === 0 && (
             <div className="p-12 rounded-3xl glass-panel border border-surface-border text-center space-y-3">
-              <Search className="w-8 h-8 text-slate-400 mx-auto" />
-              <h3 className="text-base font-bold text-slate-900 dark:text-white">{np.noArticles || 'No regulatory updates found'}</h3>
-              <p className="text-xs text-slate-500 max-w-sm mx-auto">
+              <Search className="w-8 h-8 text-[#667085] mx-auto" />
+              <h3 className="text-base font-bold text-black dark:text-white dark:text-white">{np.noArticles || 'No regulatory updates found'}</h3>
+              <p className="text-xs text-[#667085] max-w-sm mx-auto">
                 {np.noArticlesDesc || 'No articles matched your filter. Try clearing your search query.'}
               </p>
               <button
                 onClick={() => { setSearchQuery(''); setSelectedCategory('All'); }}
-                className="px-4 py-2 rounded-xl bg-[#334DAF] text-white text-xs font-bold hover:bg-[#253982] transition-colors cursor-pointer"
+                className="px-4 py-2 rounded-xl bg-[#DD2A40] text-white text-xs font-bold hover:bg-[#BA1B30] transition-colors cursor-pointer"
               >
                 {np.resetFilters || 'Reset Filters'}
               </button>

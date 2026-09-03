@@ -108,29 +108,29 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
       {/* 1. Master Hero Section with 3D Lattice Background */}
       <section className="relative min-h-[75vh] lg:min-h-[85vh] flex items-center justify-center overflow-hidden py-10 sm:py-16 lg:py-24 border-b border-surface-border">
         <GovernanceLattice className="z-0" />
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-full max-w-[700px] h-[300px] sm:h-[400px] bg-gradient-to-tr from-[#091F5C]/30 via-[#334DAF]/20 to-[#7096D1]/15 blur-3xl pointer-events-none rounded-full" />
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-full max-w-[700px] h-[300px] sm:h-[400px] bg-gradient-to-tr from-[#DD2A40]/30 via-[#DD2A40]/20 to-[#FF3333]/15 blur-3xl pointer-events-none rounded-full" />
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#334DAF]/10 dark:bg-[#7096D1]/15 border border-[#334DAF]/25 dark:border-[#7096D1]/30 text-[#091F5C] dark:text-[#D0E4FE] text-xs font-semibold tracking-wide mb-4 sm:mb-6 animate-fade-in shadow-xs max-w-full truncate">
-            <Sparkles className="w-3.5 h-3.5 text-[#334DAF] dark:text-[#7096D1] shrink-0" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DD2A40]/10 dark:bg-[#FF3333]/15 border border-[#DD2A40]/25 dark:border-[#FF3333]/30 text-[#DD2A40] dark:text-[#E4E7EC] text-xs font-semibold tracking-wide mb-4 sm:mb-6 animate-fade-in shadow-xs max-w-full truncate">
+            <Sparkles className="w-3.5 h-3.5 text-[#DD2A40] dark:text-[#FF3333] shrink-0" />
             <span className="truncate">{t.hero?.badge || 'AML · Regulatory · Risk · Legal Compliance'}</span>
           </div>
 
-          <h1 className="font-sans text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#091F5C] dark:text-[#F9FBFF] max-w-4xl mx-auto leading-[1.15] mb-4 sm:mb-6">
+          <h1 className="font-sans text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#DD2A40] dark:text-[#FFFFFF] max-w-4xl mx-auto leading-[1.15] mb-4 sm:mb-6">
             {t.hero.h1}{' '}
             <span className="brand-gradient-text block sm:inline">
               {t.hero.h1Span}
             </span>
           </h1>
 
-          <p className="text-xs sm:text-sm md:text-base text-slate-600 dark:text-[#D0E4FE]/90 max-w-2xl mx-auto leading-relaxed mb-6 sm:mb-10 font-normal">
+          <p className="text-xs sm:text-sm md:text-base text-slate-600 dark:text-[#E4E7EC]/90 max-w-2xl mx-auto leading-relaxed mb-6 sm:mb-10 font-normal">
             {t.hero.desc}
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 max-w-md mx-auto w-full px-2 sm:px-0">
             <button
               onClick={onOpenConsultation}
-              className="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-[#334DAF] hover:bg-[#253982] text-white font-bold text-xs shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2 cursor-pointer"
+              className="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-[#DD2A40] hover:bg-[#BA1B30] text-white font-bold text-xs shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2 cursor-pointer"
             >
               <Calendar className="w-4 h-4" />
               <span>{t.nav.bookConsultation}</span>
@@ -159,14 +159,14 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
                     key={bIdx}
                     className="shrink-0 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl sm:rounded-2xl glass-panel border border-surface-border/80 dark:border-white/10 shadow-sm flex items-center gap-2.5 bg-white/90 dark:bg-[#0D1629]/80"
                   >
-                    <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl bg-[#334DAF]/10 dark:bg-cyan-500/15 border border-[#334DAF]/20 dark:border-cyan-500/30 text-[#334DAF] dark:text-cyan-400 flex items-center justify-center shrink-0">
+                    <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl bg-[#DD2A40]/10 dark:bg-cyan-500/15 border border-[#DD2A40]/20 dark:border-cyan-500/30 text-[#DD2A40] dark:text-cyan-400 flex items-center justify-center shrink-0">
                       <BadgeIcon className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                     </div>
                     <div className="text-left rtl:text-right">
-                      <div className="text-[11px] sm:text-xs font-bold text-slate-900 dark:text-white whitespace-nowrap">
+                      <div className="text-[11px] sm:text-xs font-bold text-black dark:text-white dark:text-white whitespace-nowrap">
                         {badge.title}
                       </div>
-                      <div className="text-[9px] sm:text-[10px] text-slate-500 dark:text-slate-400 font-mono whitespace-nowrap">
+                      <div className="text-[9px] sm:text-[10px] text-[#667085] dark:text-[#667085] font-mono whitespace-nowrap">
                         {badge.sub}
                       </div>
                     </div>
@@ -182,10 +182,10 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
       <section className="py-12 sm:py-16 lg:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center mb-10 sm:mb-16">
           <div className="lg:col-span-7 space-y-3 sm:space-y-4 text-center lg:text-left rtl:lg:text-right">
-            <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#334DAF] dark:text-[#7096D1]">
+            <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#DD2A40] dark:text-[#FF3333]">
               {t.pillars.tag}
             </span>
-            <h2 className="font-sans tracking-tight text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 dark:text-white">
+            <h2 className="font-sans tracking-tight text-2xl sm:text-3xl lg:text-4xl font-bold text-black dark:text-white dark:text-white">
               {t.pillars.title}
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed max-w-xl mx-auto lg:mx-0">
@@ -206,7 +206,7 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
                 <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
               </div>
               <div className="text-center pt-2.5 sm:pt-3">
-                <span className="text-[9px] sm:text-[10px] font-mono font-bold uppercase tracking-wider text-[#334DAF] dark:text-[#7096D1] flex items-center justify-center gap-1.5">
+                <span className="text-[9px] sm:text-[10px] font-mono font-bold uppercase tracking-wider text-[#DD2A40] dark:text-[#FF3333] flex items-center justify-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping inline-block" />
                   {t.pillars?.videoTag || 'EagleComply Governance Overview'}
                 </span>
@@ -236,10 +236,10 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
       <section className="py-12 sm:py-16 lg:py-24 bg-surface-subtle border-y border-surface-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
-            <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#334DAF] dark:text-[#7096D1]">
+            <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#DD2A40] dark:text-[#FF3333]">
               {hx.coverageTag}
             </span>
-            <h2 className="font-sans tracking-tight text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 dark:text-white mt-1">
+            <h2 className="font-sans tracking-tight text-2xl sm:text-3xl lg:text-4xl font-bold text-black dark:text-white dark:text-white mt-1">
               {hx.coverageTitle}
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-2">
@@ -255,11 +255,11 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
       <section className="py-12 sm:py-16 lg:py-24 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="p-5 sm:p-8 lg:p-12 rounded-2xl sm:rounded-3xl glass-panel border border-surface-border shadow-xl space-y-6 sm:space-y-8">
           <div className="text-center space-y-2 max-w-2xl mx-auto">
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#334DAF]/10 dark:bg-[#7096D1]/15 text-[#334DAF] dark:text-[#7096D1] text-[10px] sm:text-xs font-mono font-bold">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#DD2A40]/10 dark:bg-[#FF3333]/15 text-[#DD2A40] dark:text-[#FF3333] text-[10px] sm:text-xs font-mono font-bold">
               <Sliders className="w-3.5 h-3.5" />
               <span>{hx.diagTag}</span>
             </div>
-            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-slate-900 dark:text-white">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-black dark:text-white dark:text-white">
               {hx.diagTitle}
             </h3>
             <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300">
@@ -275,7 +275,7 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
               <select
                 value={diagSector}
                 onChange={(e) => setDiagSector(e.target.value)}
-                className="w-full px-3.5 py-2.5 rounded-xl bg-surface-raised border border-surface-border text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#334DAF]"
+                className="w-full px-3.5 py-2.5 rounded-xl bg-surface-raised border border-surface-border text-xs text-black dark:text-white dark:text-white focus:outline-none focus:ring-2 focus:ring-[#DD2A40]"
               >
                 <option value="banking">{dx.banking}</option>
                 <option value="fintech">{dx.fintech}</option>
@@ -292,7 +292,7 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
               <select
                 value={diagJurisdiction}
                 onChange={(e) => setDiagJurisdiction(e.target.value)}
-                className="w-full px-3.5 py-2.5 rounded-xl bg-surface-raised border border-surface-border text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#334DAF]"
+                className="w-full px-3.5 py-2.5 rounded-xl bg-surface-raised border border-surface-border text-xs text-black dark:text-white dark:text-white focus:outline-none focus:ring-2 focus:ring-[#DD2A40]"
               >
                 <option value="uk_eu">{dx.uk_eu}</option>
                 <option value="us">{dx.us}</option>
@@ -309,7 +309,7 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
               <select
                 value={diagService}
                 onChange={(e) => setDiagService(e.target.value)}
-                className="w-full px-3.5 py-2.5 rounded-xl bg-surface-raised border border-surface-border text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#334DAF]"
+                className="w-full px-3.5 py-2.5 rounded-xl bg-surface-raised border border-surface-border text-xs text-black dark:text-white dark:text-white focus:outline-none focus:ring-2 focus:ring-[#DD2A40]"
               >
                 <option value="aml">{dx.aml}</option>
                 <option value="licensing">{dx.licensing}</option>
@@ -321,10 +321,10 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
 
           <div className="p-5 sm:p-6 rounded-2xl bg-surface-subtle border border-surface-border flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div className="space-y-1 text-center md:text-left">
-              <div className="text-xs font-mono uppercase text-[#334DAF] dark:text-[#7096D1] font-bold">
+              <div className="text-xs font-mono uppercase text-[#DD2A40] dark:text-[#FF3333] font-bold">
                 {hx.recommended || 'Recommended Advisory Roadmap'}
               </div>
-              <div className="text-xs sm:text-sm font-bold text-slate-900 dark:text-white">
+              <div className="text-xs sm:text-sm font-bold text-black dark:text-white dark:text-white">
                 {diagSector === 'crypto' ? dx.cryptoAction :
                  diagSector === 'remittance' ? dx.remittanceAction :
                  diagSector === 'fintech' ? dx.fintechAction :
@@ -334,7 +334,7 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
 
             <button
               onClick={onOpenConsultation}
-              className="w-full md:w-auto px-6 py-3 rounded-xl bg-[#334DAF] hover:bg-[#253982] text-white text-xs font-bold shadow-md hover:scale-[1.02] active:scale-[0.98] transition-all text-center whitespace-nowrap cursor-pointer shrink-0"
+              className="w-full md:w-auto px-6 py-3 rounded-xl bg-[#DD2A40] hover:bg-[#BA1B30] text-white text-xs font-bold shadow-md hover:scale-[1.02] active:scale-[0.98] transition-all text-center whitespace-nowrap cursor-pointer shrink-0"
             >
               {hx.discuss || 'Discuss This Plan'}
             </button>
@@ -346,10 +346,10 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
       <section className="py-12 sm:py-16 lg:py-24 bg-surface-subtle/50 border-y border-surface-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
-            <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#334DAF] dark:text-[#7096D1]">
+            <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#DD2A40] dark:text-[#FF3333]">
               {hx.method}
             </span>
-            <h2 className="font-sans tracking-tight text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 dark:text-white mt-1">
+            <h2 className="font-sans tracking-tight text-2xl sm:text-3xl lg:text-4xl font-bold text-black dark:text-white dark:text-white mt-1">
               {hx.frameworkTitle}
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-2">
@@ -361,16 +361,16 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
             {frameworkRoadmap.map((item, idx) => (
               <div 
                 key={idx}
-                className="p-5 sm:p-6 rounded-2xl glass-panel border border-surface-border hover:border-[#334DAF] dark:hover:border-[#7096D1] transition-all flex flex-col justify-between space-y-3 shadow-sm group"
+                className="p-5 sm:p-6 rounded-2xl glass-panel border border-surface-border hover:border-[#DD2A40] dark:hover:border-[#FF3333] transition-all flex flex-col justify-between space-y-3 shadow-sm group"
               >
                 <div className="space-y-2">
-                  <span className="text-xl sm:text-2xl font-mono font-bold text-[#334DAF] dark:text-[#7096D1]">
+                  <span className="text-xl sm:text-2xl font-mono font-bold text-[#DD2A40] dark:text-[#FF3333]">
                     {item.step}
                   </span>
-                  <h4 className="text-xs sm:text-sm font-bold text-slate-900 dark:text-white group-hover:text-[#334DAF] dark:group-hover:text-[#7096D1] transition-colors">
+                  <h4 className="text-xs sm:text-sm font-bold text-black dark:text-white dark:text-white group-hover:text-[#DD2A40] dark:group-hover:text-[#FF3333] transition-colors">
                     {item.title}
                   </h4>
-                  <div className="text-[9px] sm:text-[10px] font-mono text-[#334DAF] dark:text-[#7096D1] font-semibold">
+                  <div className="text-[9px] sm:text-[10px] font-mono text-[#DD2A40] dark:text-[#FF3333] font-semibold">
                     {item.subtitle}
                   </div>
                   <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -386,10 +386,10 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
       {/* 6. Industry Regulatory Challenges Matrix */}
       <section className="py-12 sm:py-16 lg:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
-          <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#334DAF] dark:text-[#7096D1]">
+          <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#DD2A40] dark:text-[#FF3333]">
             {hx.industryVerticals}
           </span>
-          <h2 className="font-sans tracking-tight text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 dark:text-white mt-1">
+          <h2 className="font-sans tracking-tight text-2xl sm:text-3xl lg:text-4xl font-bold text-black dark:text-white dark:text-white mt-1">
             {hx.sectorTitle}
           </h2>
         </div>
@@ -402,7 +402,7 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
                 onClick={() => setActiveIndustryTab(key)}
                 className={`w-full text-left p-3 sm:p-4 rounded-xl sm:rounded-2xl border transition-all text-xs font-bold flex items-center justify-between ${
                   activeIndustryTab === key 
-                    ? 'bg-[#334DAF] text-white border-[#334DAF] shadow-lg' 
+                    ? 'bg-[#DD2A40] text-white border-[#DD2A40] shadow-lg' 
                     : 'glass-panel border-surface-border text-slate-700 dark:text-slate-300 hover:bg-surface-subtle'
                 }`}
               >
@@ -414,7 +414,7 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
 
           <div className="lg:col-span-8 p-5 sm:p-8 rounded-2xl sm:rounded-3xl glass-panel border border-surface-border shadow-xl grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
             <div className="space-y-3 sm:space-y-4">
-              <h3 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white">
+              <h3 className="text-lg sm:text-xl font-bold text-black dark:text-white dark:text-white">
                 {sectorDetails[activeIndustryTab].title}
               </h3>
               <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -430,7 +430,7 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
               </ul>
               <button
                 onClick={() => onNavigate('industries')}
-                className="mt-2 text-xs font-bold text-[#334DAF] dark:text-[#7096D1] hover:underline flex items-center gap-1"
+                className="mt-2 text-xs font-bold text-[#DD2A40] dark:text-[#FF3333] hover:underline flex items-center gap-1"
               >
                 <span>{hx.exploreSector}</span>
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -450,7 +450,7 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
       </section>
 
       {/* 7. Conversion Section */}
-      <section className="relative py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-[#091F5C] via-[#16295C] to-[#334DAF] text-white overflow-hidden">
+      <section className="relative py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-[#DD2A40] via-[#111111] to-[#DD2A40] text-white overflow-hidden">
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-4 sm:space-y-6">
           <span className="px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-white/10 text-blue-200 border border-white/20 text-[10px] sm:text-xs font-mono font-bold uppercase tracking-widest inline-block">
             {t.cta.tag}
@@ -464,7 +464,7 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 pt-2">
             <button
               onClick={onOpenConsultation}
-              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-3.5 rounded-xl bg-white text-[#091F5C] font-bold text-xs shadow-2xl hover:bg-blue-50 transition-all flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-3.5 rounded-xl bg-white text-[#DD2A40] font-bold text-xs shadow-2xl hover:bg-blue-50 transition-all flex items-center justify-center gap-2"
             >
               <Calendar className="w-4 h-4" />
               <span>{t.nav.bookConsultation}</span>

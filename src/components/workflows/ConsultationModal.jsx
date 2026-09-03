@@ -24,38 +24,38 @@ export default function ConsultationModal({ isOpen, onClose }) {
         cal("ui", {
           theme: isDark ? "dark" : "light",
           styles: {
-            branding: { brandColor: "#334DAF" }
+            branding: { brandColor: "#DD2A40" }
           },
           cssVarsPerTheme: {
             dark: {
-              "cal-brand": "#334DAF",
-              "cal-brand-emphasis": "#253982",
+              "cal-brand": "#DD2A40",
+              "cal-brand-emphasis": "#BA1B30",
               "cal-brand-text": "#FFFFFF",
-              "cal-brand-subtle": "#16295C",
-              "cal-bg-booker": "#101E42",
-              "cal-bg-muted": "#16295C",
-              "cal-bg-emphasis": "#1E3778",
-              "cal-border-booker": "#1E3778",
-              "cal-border-subtle": "#1E3778",
-              "cal-border-default": "#2B4E9E",
+              "cal-brand-subtle": "#111111",
+              "cal-bg-booker": "#000000",
+              "cal-bg-muted": "#111111",
+              "cal-bg-emphasis": "#22252A",
+              "cal-border-booker": "#22252A",
+              "cal-border-subtle": "#22252A",
+              "cal-border-default": "#2A2E35",
               "cal-text": "#FFFFFF",
-              "cal-text-muted": "#D0E4FE",
-              "cal-text-emphasis": "#F9FBFF"
+              "cal-text-muted": "#E4E7EC",
+              "cal-text-emphasis": "#FFFFFF"
             },
             light: {
-              "cal-brand": "#334DAF",
-              "cal-brand-emphasis": "#253982",
+              "cal-brand": "#DD2A40",
+              "cal-brand-emphasis": "#BA1B30",
               "cal-brand-text": "#FFFFFF",
-              "cal-brand-subtle": "#E8F2FE",
+              "cal-brand-subtle": "#F8F9FA",
               "cal-bg-booker": "#FFFFFF",
-              "cal-bg-muted": "#F9FBFF",
-              "cal-bg-emphasis": "#E8F2FE",
-              "cal-border-booker": "#D0E4FE",
-              "cal-border-subtle": "#D0E4FE",
-              "cal-border-default": "#D0E4FE",
-              "cal-text": "#091F5C",
-              "cal-text-muted": "#334DAF",
-              "cal-text-emphasis": "#091F5C"
+              "cal-bg-muted": "#FFFFFF",
+              "cal-bg-emphasis": "#F8F9FA",
+              "cal-border-booker": "#E4E7EC",
+              "cal-border-subtle": "#E4E7EC",
+              "cal-border-default": "#E4E7EC",
+              "cal-text": "#DD2A40",
+              "cal-text-muted": "#DD2A40",
+              "cal-text-emphasis": "#DD2A40"
             }
           },
           hideEventTypeDetails: false,
@@ -75,7 +75,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
       onClick={onClose}
     >
       <div 
-        className="w-full max-w-5xl bg-white dark:bg-[#0A1224] border border-slate-200 dark:border-[#1E3778]/60 rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden my-auto flex flex-col transition-all duration-300 font-sans" 
+        className="w-full max-w-5xl bg-white dark:bg-[#0A1224] border border-[#E4E7EC] dark:border-[#22252A] dark:border-[#22252A]/60 rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden my-auto flex flex-col transition-all duration-300 font-sans" 
         onClick={e => e.stopPropagation()}
       >
         {/* ======================================================== */}
@@ -84,21 +84,21 @@ export default function ConsultationModal({ isOpen, onClose }) {
         {/* ======================================================== */}
         {/* HEADER (~55px high with always-visible Close button)      */}
         {/* ======================================================== */}
-        <div className="shrink-0 px-4 sm:px-6 py-3 sm:py-3.5 bg-slate-50/90 dark:bg-[#0F1C36] border-b border-slate-200/80 dark:border-[#1E3778]/50 flex items-center justify-between z-10 text-left rtl:text-right">
+        <div className="shrink-0 px-4 sm:px-6 py-3 sm:py-3.5 bg-[#F8F9FA] dark:bg-[#111111]/90 dark:bg-[#111111] border-b border-[#E4E7EC] dark:border-[#22252A]/80 dark:border-[#22252A]/50 flex items-center justify-between z-10 text-left rtl:text-right">
           <div className="flex items-center gap-3 min-w-0">
-            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-[#334DAF]/10 dark:bg-[#7096D1]/15 text-[#334DAF] dark:text-[#7096D1] border border-[#334DAF]/20 dark:border-[#7096D1]/30 flex items-center justify-center shrink-0">
+            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-[#DD2A40]/10 dark:bg-[#FF3333]/15 text-[#DD2A40] dark:text-[#FF3333] border border-[#DD2A40]/20 dark:border-[#FF3333]/30 flex items-center justify-center shrink-0">
               <CalendarDays className="w-4 h-4 sm:w-5 sm:h-5" />
             </div>
             <div className="min-w-0">
               <div className="flex items-center gap-2">
-                <h2 className="font-bold text-sm sm:text-base text-slate-900 dark:text-white truncate">
+                <h2 className="font-bold text-sm sm:text-base text-black dark:text-white dark:text-white truncate">
                   {t.modals?.bookConsultation || 'Book Partner Scoping Consultation'}
                 </h2>
                 <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/25 font-bold shrink-0">
                   {t.modals?.liveCalendar || 'Live Calendar'}
                 </span>
               </div>
-              <p className="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 truncate">
+              <p className="text-[11px] sm:text-xs text-[#667085] dark:text-[#667085] truncate">
                 {t.modals?.consultationDesc || 'Direct consultation with EagleComply Senior Compliance Directors.'}
               </p>
             </div>
@@ -109,7 +109,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
               href={`https://app.cal.com/${calLink}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs font-mono text-[#334DAF] dark:text-[#7096D1] hover:underline hidden sm:flex items-center gap-1 mr-1 rtl:mr-0 rtl:ml-1"
+              className="text-xs font-mono text-[#DD2A40] dark:text-[#FF3333] hover:underline hidden sm:flex items-center gap-1 mr-1 rtl:mr-0 rtl:ml-1"
               title="Open full page in new tab"
             >
               <span>{t.modals?.newWindow || 'New Window'}</span>
@@ -117,7 +117,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
             </a>
             <button 
               onClick={onClose} 
-              className="p-1.5 sm:p-2 rounded-xl bg-white dark:bg-[#162544] hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-500 hover:text-slate-900 dark:hover:text-white border border-slate-200 dark:border-[#1E3778] transition-colors cursor-pointer"
+              className="p-1.5 sm:p-2 rounded-xl bg-white dark:bg-[#22252A] hover:bg-slate-200 dark:hover:bg-slate-700 text-[#667085] hover:text-black dark:text-white dark:hover:text-white border border-[#E4E7EC] dark:border-[#22252A] dark:border-[#22252A] transition-colors cursor-pointer"
               title="Close modal"
               aria-label="Close"
             >
@@ -130,7 +130,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
         {/* MAIN BODY: Live Cal.com 3-Column Interactive Scheduler    */}
         {/* ======================================================== */}
         <div className="p-3 sm:p-5 flex-1">
-          <div className="w-full h-[520px] sm:h-[550px] md:h-[570px] rounded-xl sm:rounded-2xl overflow-hidden border border-slate-200 dark:border-[#1E3778]/50 bg-white dark:bg-[#101E42]">
+          <div className="w-full h-[520px] sm:h-[550px] md:h-[570px] rounded-xl sm:rounded-2xl overflow-hidden border border-[#E4E7EC] dark:border-[#22252A] dark:border-[#22252A]/50 bg-white dark:bg-[#000000]">
             <Cal
               namespace="strategic-compliance-consultation"
               calLink={calLink}
@@ -147,13 +147,13 @@ export default function ConsultationModal({ isOpen, onClose }) {
         {/* ======================================================== */}
         {/* FOOTER: Security Guarantee & Calendar Notice             */}
         {/* ======================================================== */}
-        <div className="shrink-0 px-4 sm:px-6 py-2.5 sm:py-3 bg-slate-50/80 dark:bg-[#0F1C36]/80 border-t border-slate-200/80 dark:border-[#1E3778]/50 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500 dark:text-slate-400 font-mono">
+        <div className="shrink-0 px-4 sm:px-6 py-2.5 sm:py-3 bg-[#F8F9FA] dark:bg-[#111111]/80 dark:bg-[#111111]/80 border-t border-[#E4E7EC] dark:border-[#22252A]/80 dark:border-[#22252A]/50 flex flex-wrap items-center justify-between gap-2 text-xs text-[#667085] dark:text-[#667085] font-mono">
           <div className="flex items-center gap-1.5">
             <ShieldCheck className="w-4 h-4 text-emerald-500 shrink-0" />
             <span>{t.modals?.calendarNotice || 'Automated calendar invites with Google Meet / Zoom links dispatched immediately.'}</span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="text-[11px] text-slate-400">{t.modals?.ndaActive || 'Bilateral NDA Safeguards Active'}</span>
+            <span className="text-[11px] text-[#667085]">{t.modals?.ndaActive || 'Bilateral NDA Safeguards Active'}</span>
           </div>
         </div>
 

@@ -70,7 +70,7 @@ function BadgeItem({ member, onNavigate }) {
         style={{
           height: `${member.strapHeight}px`,
           width: '28px',
-          background: 'repeating-linear-gradient(0deg, #162447, #162447 2px, #091F5C 2px, #091F5C 4px)',
+          background: 'repeating-linear-gradient(0deg, #162447, #162447 2px, #DD2A40 2px, #DD2A40 4px)',
           boxShadow: '3px 0 10px rgba(0, 0, 0, 0.35), inset 0 0 3px rgba(0, 0, 0, 0.5)',
           transition: 'height 0.4s ease'
         }}
@@ -131,16 +131,16 @@ function BadgeItem({ member, onNavigate }) {
 
       {/* Outer Matte Plastic Holder (Theme Adaptive) */}
       <div
-        className="w-full h-[390px] sm:h-[410px] rounded-[22px] p-3 sm:p-3.5 relative -mt-1 shadow-[0_16px_36px_rgba(0,0,0,0.25)] dark:shadow-[0_24px_45px_rgba(0,0,0,0.6)] bg-slate-300 dark:bg-[#1E2738] border border-slate-400/50 dark:border-white/10 transform-origin-top transition-all duration-300 group-hover:translate-y-1.5 group-hover:scale-[1.02] group-hover:shadow-[0_26px_50px_rgba(9,31,92,0.35)] dark:group-hover:shadow-[0_28px_52px_rgba(0,0,0,0.7)] group-hover:border-[#334DAF]/50 dark:group-hover:border-cyan-400/40"
+        className="w-full h-[390px] sm:h-[410px] rounded-[22px] p-3 sm:p-3.5 relative -mt-1 shadow-[0_16px_36px_rgba(0,0,0,0.25)] dark:shadow-[0_24px_45px_rgba(0,0,0,0.6)] bg-slate-300 dark:bg-[#1E2738] border border-slate-400/50 dark:border-white/10 transform-origin-top transition-all duration-300 group-hover:translate-y-1.5 group-hover:scale-[1.02] group-hover:shadow-[0_26px_50px_rgba(221, 42, 64,0.35)] dark:group-hover:shadow-[0_28px_52px_rgba(0,0,0,0.7)] group-hover:border-[#DD2A40]/50 dark:group-hover:border-cyan-400/40"
       >
         {/* Hanging Slot Hole */}
         <div
-          className="w-11 h-2 bg-slate-500/80 dark:bg-slate-900 rounded-full mx-auto mb-2.5 shadow-inner"
+          className="w-11 h-2 bg-[#F8F9FA] dark:bg-[#111111]0/80 dark:bg-slate-900 rounded-full mx-auto mb-2.5 shadow-inner"
         />
 
         {/* Inner Card Surface */}
         <div
-          className="w-full h-[calc(100%-16px)] rounded-[14px] relative overflow-hidden flex flex-col justify-between p-3.5 sm:p-4 bg-white dark:bg-[#0D1629] text-slate-900 dark:text-white border border-slate-200/90 dark:border-white/10 shadow-sm"
+          className="w-full h-[calc(100%-16px)] rounded-[14px] relative overflow-hidden flex flex-col justify-between p-3.5 sm:p-4 bg-white dark:bg-[#0D1629] text-black dark:text-white dark:text-white border border-[#E4E7EC] dark:border-[#22252A]/90 dark:border-white/10 shadow-sm"
         >
           {/* Subtle Plastic Reflection Glare */}
           <div
@@ -179,7 +179,7 @@ function BadgeItem({ member, onNavigate }) {
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
               title={`Open ${member.fullName}'s LinkedIn profile`}
-              className="w-[52px] h-[52px] sm:w-[56px] sm:h-[56px] bg-white p-1 rounded-xl shadow-md border border-slate-200 shrink-0 hover:scale-105 transition-transform z-20 cursor-pointer block"
+              className="w-[52px] h-[52px] sm:w-[56px] sm:h-[56px] bg-white p-1 rounded-xl shadow-md border border-[#E4E7EC] dark:border-[#22252A] shrink-0 hover:scale-105 transition-transform z-20 cursor-pointer block"
             >
               <img
                 src={`https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=${encodeURIComponent(member.linkedin)}`}
@@ -199,7 +199,7 @@ function BadgeItem({ member, onNavigate }) {
                 className="h-full w-auto max-w-full object-contain object-bottom filter grayscale contrast-105 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-400 drop-shadow-xl"
               />
             ) : (
-              <div className="w-20 h-20 rounded-full bg-[#334DAF]/10 dark:bg-cyan-400/10 flex items-center justify-center text-[#334DAF] dark:text-cyan-400 mb-4 mr-2 border border-[#334DAF]/20">
+              <div className="w-20 h-20 rounded-full bg-[#DD2A40]/10 dark:bg-cyan-400/10 flex items-center justify-center text-[#DD2A40] dark:text-cyan-400 mb-4 mr-2 border border-[#DD2A40]/20">
                 <User className="w-10 h-10" />
               </div>
             )}
@@ -207,7 +207,7 @@ function BadgeItem({ member, onNavigate }) {
 
           {/* Layer 2: Bottom Blue Gradient Wash (In FRONT of Image, covering only bottom area) */}
           <div 
-            className="absolute inset-x-0 bottom-0 h-[46%] pointer-events-none z-[2] bg-gradient-to-t from-[#091F5C] via-[#091F5C]/90 via-[42%] to-transparent dark:from-[#14346B] dark:via-[#14346B]/90 dark:via-[42%] dark:to-transparent" 
+            className="absolute inset-x-0 bottom-0 h-[46%] pointer-events-none z-[2] bg-gradient-to-t from-[#DD2A40] via-[#DD2A40]/90 via-[42%] to-transparent dark:from-[#14346B] dark:via-[#14346B]/90 dark:via-[42%] dark:to-transparent" 
           />
 
           {/* Layer 3: Text & Footer Content (In FRONT of Blue Gradient Overlay) */}
@@ -261,11 +261,11 @@ export default function TeamBadges({
     <section className="relative w-full py-12 sm:py-16 px-4 sm:px-6 lg:px-8 overflow-hidden rounded-3xl bg-surface-subtle/70 dark:bg-[#070D1A] border border-surface-border shadow-xl my-6 transition-colors duration-300">
       {/* Header */}
       <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12 space-y-3">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#334DAF]/10 dark:bg-cyan-500/10 border border-[#334DAF]/20 dark:border-cyan-400/30 text-[#334DAF] dark:text-cyan-400 text-xs font-mono font-bold tracking-widest uppercase">
+        <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#DD2A40]/10 dark:bg-cyan-500/10 border border-[#DD2A40]/20 dark:border-cyan-400/30 text-[#DD2A40] dark:text-cyan-400 text-xs font-mono font-bold tracking-widest uppercase">
           <ShieldCheck className="w-3.5 h-3.5" />
           <span>EAGLECOMPLY ACCREDITED DIRECTORS</span>
         </div>
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold uppercase tracking-wider text-slate-900 dark:text-white drop-shadow-sm">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold uppercase tracking-wider text-black dark:text-white dark:text-white drop-shadow-sm">
           {title}
         </h2>
         {subtitle && (
@@ -285,7 +285,7 @@ export default function TeamBadges({
       </div>
 
       {/* Mobile Swipe Hint */}
-      <div className="md:hidden text-center text-[10.5px] font-mono font-bold tracking-widest text-slate-500 dark:text-cyan-400/80 flex items-center justify-center gap-2 pt-2 uppercase">
+      <div className="md:hidden text-center text-[10.5px] font-mono font-bold tracking-widest text-[#667085] dark:text-cyan-400/80 flex items-center justify-center gap-2 pt-2 uppercase">
         <span>&larr; Scroll horizontally to view all directors &rarr;</span>
       </div>
     </section>

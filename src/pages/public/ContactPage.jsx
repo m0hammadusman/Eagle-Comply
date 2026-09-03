@@ -112,11 +112,11 @@ export default function ContactPage({ onNavigate }) {
     <div className="w-full py-12 lg:py-16 space-y-12 animate-fade-in">
       {/* Header */}
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-3">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#334DAF]/10 dark:bg-[#7096D1]/15 text-[#334DAF] dark:text-[#7096D1] text-xs font-mono font-bold tracking-wider uppercase border border-[#334DAF]/20 dark:border-[#7096D1]/30">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#DD2A40]/10 dark:bg-[#FF3333]/15 text-[#DD2A40] dark:text-[#FF3333] text-xs font-mono font-bold tracking-wider uppercase border border-[#DD2A40]/20 dark:border-[#FF3333]/30">
           <Building2 className="w-3.5 h-3.5" />
           <span>{c.tag || 'EAGLECOMPLY CONSULTATION & ADVISORY'}</span>
         </div>
-        <h1 className="font-sans tracking-tight text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white">
+        <h1 className="font-sans tracking-tight text-3xl md:text-4xl lg:text-5xl font-bold text-black dark:text-white dark:text-white">
           {c.title || 'Discuss Your Compliance Requirements'}
         </h1>
         <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
@@ -135,7 +135,7 @@ export default function ContactPage({ onNavigate }) {
                 <div className="w-16 h-16 rounded-full bg-emerald-500/10 text-emerald-500 flex items-center justify-center mx-auto border border-emerald-500/20">
                   <ShieldCheck className="w-8 h-8" />
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900 dark:text-white">
+                <h3 className="text-2xl font-bold text-black dark:text-white dark:text-white">
                   {c.successTitle || 'Email Sent Successfully!'}
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 max-w-md mx-auto leading-relaxed">
@@ -143,10 +143,10 @@ export default function ContactPage({ onNavigate }) {
                 </p>
 
                 <div className="p-4 rounded-2xl bg-surface-subtle border border-surface-border text-xs text-left max-w-md mx-auto space-y-1.5 font-mono">
-                  <div className="flex justify-between"><span className="text-slate-500">{c.fullName || 'Sender'}:</span><strong>{formData.name}</strong></div>
-                  <div className="flex justify-between"><span className="text-slate-500">{c.businessEmail || 'Email'}:</span><strong>{formData.email}</strong></div>
-                  <div className="flex justify-between"><span className="text-slate-500">{c.companyOrg || 'Company'}:</span><strong>{formData.company || '—'}</strong></div>
-                  <div className="flex justify-between"><span className="text-slate-500">{c.serviceRequired || 'Service'}:</span><strong className="truncate max-w-[200px]">{formData.service}</strong></div>
+                  <div className="flex justify-between"><span className="text-[#667085]">{c.fullName || 'Sender'}:</span><strong>{formData.name}</strong></div>
+                  <div className="flex justify-between"><span className="text-[#667085]">{c.businessEmail || 'Email'}:</span><strong>{formData.email}</strong></div>
+                  <div className="flex justify-between"><span className="text-[#667085]">{c.companyOrg || 'Company'}:</span><strong>{formData.company || '—'}</strong></div>
+                  <div className="flex justify-between"><span className="text-[#667085]">{c.serviceRequired || 'Service'}:</span><strong className="truncate max-w-[200px]">{formData.service}</strong></div>
                 </div>
 
                 <div className="pt-2">
@@ -163,7 +163,7 @@ export default function ContactPage({ onNavigate }) {
                         description: ''
                       });
                     }}
-                    className="px-6 py-2.5 rounded-full bg-[#091F5C] dark:bg-[#334DAF] text-xs font-bold text-white hover:opacity-90 shadow-sm transition-all cursor-pointer"
+                    className="px-6 py-2.5 rounded-full bg-[#DD2A40] dark:bg-[#DD2A40] text-xs font-bold text-white hover:opacity-90 shadow-sm transition-all cursor-pointer"
                   >
                     {c.sendAnother || 'Send Another Message'}
                   </button>
@@ -191,7 +191,7 @@ export default function ContactPage({ onNavigate }) {
                       required
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#334DAF]"
+                      className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-black dark:text-white dark:text-white focus:outline-none focus:ring-2 focus:ring-[#DD2A40]"
                       placeholder={c.placeholders?.name || "e.g. Alexander Vance"}
                     />
                   </div>
@@ -205,7 +205,7 @@ export default function ContactPage({ onNavigate }) {
                       required
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#334DAF]"
+                      className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-black dark:text-white dark:text-white focus:outline-none focus:ring-2 focus:ring-[#DD2A40]"
                       placeholder={c.placeholders?.email || "name@company.com"}
                     />
                   </div>
@@ -222,7 +222,7 @@ export default function ContactPage({ onNavigate }) {
                       required
                       value={formData.company}
                       onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#334DAF]"
+                      className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-black dark:text-white dark:text-white focus:outline-none focus:ring-2 focus:ring-[#DD2A40]"
                       placeholder={c.placeholders?.company || "e.g. Apex Global Payments Ltd"}
                     />
                   </div>
@@ -236,7 +236,7 @@ export default function ContactPage({ onNavigate }) {
                       required
                       value={formData.jurisdiction}
                       onChange={(e) => setFormData({ ...formData, jurisdiction: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#334DAF]"
+                      className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-black dark:text-white dark:text-white focus:outline-none focus:ring-2 focus:ring-[#DD2A40]"
                       placeholder={c.placeholders?.jurisdiction || "e.g. United Kingdom, UAE, Australia"}
                     />
                   </div>
@@ -251,7 +251,7 @@ export default function ContactPage({ onNavigate }) {
                       name="industry"
                       value={formData.industry}
                       onChange={(e) => setFormData({ ...formData, industry: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#334DAF]"
+                      className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-black dark:text-white dark:text-white focus:outline-none focus:ring-2 focus:ring-[#DD2A40]"
                     >
                       {industryOptions.map((ind, i) => (
                         <option key={i} value={ind}>{ind}</option>
@@ -266,7 +266,7 @@ export default function ContactPage({ onNavigate }) {
                       name="service"
                       value={formData.service}
                       onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#334DAF]"
+                      className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-black dark:text-white dark:text-white focus:outline-none focus:ring-2 focus:ring-[#DD2A40]"
                     >
                       {serviceOptions.map((srv, i) => (
                         <option key={i} value={srv}>{srv}</option>
@@ -285,11 +285,11 @@ export default function ContactPage({ onNavigate }) {
                     required
                     value={formData.description}
                     onChange={(e) => setFormData({ ...formData, description: e.target.value })}
-                    className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#334DAF]"
+                    className="w-full px-3.5 py-2.5 rounded-xl glass-panel border border-surface-border text-xs text-black dark:text-white dark:text-white focus:outline-none focus:ring-2 focus:ring-[#DD2A40]"
                     placeholder={c.placeholders?.description || "Please outline your entity's compliance scope, target regulatory objectives, licensing timelines, or specific financial crime challenges..."}
                   />
-                  <div className="flex items-center gap-2 text-[11px] text-slate-500 dark:text-slate-400 mt-2">
-                    <Lock className="w-3.5 h-3.5 text-[#334DAF] dark:text-[#7096D1]" />
+                  <div className="flex items-center gap-2 text-[11px] text-[#667085] dark:text-[#667085] mt-2">
+                    <Lock className="w-3.5 h-3.5 text-[#DD2A40] dark:text-[#FF3333]" />
                     <span>{t.contactPageSide?.confidentialNote || 'Protected by bilateral mutual confidentiality and anti-spam verification.'}</span>
                   </div>
                 </div>
@@ -297,7 +297,7 @@ export default function ContactPage({ onNavigate }) {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#091F5C] to-[#334DAF] dark:from-[#334DAF] dark:to-[#7096D1] text-white dark:text-[#101E42] font-bold text-xs shadow-xl hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2 disabled:opacity-50 cursor-pointer"
+                  className="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#DD2A40] to-[#DD2A40] dark:from-[#DD2A40] dark:to-[#FF3333] text-white dark:text-[#000000] font-bold text-xs shadow-xl hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2 disabled:opacity-50 cursor-pointer"
                 >
                   {isSubmitting ? (
                     <>
@@ -317,7 +317,7 @@ export default function ContactPage({ onNavigate }) {
 
           {/* Direct Engagement & Advisory Protocols */}
           <div className="lg:col-span-4 space-y-6 text-left rtl:text-right">
-            <div className="p-6 rounded-3xl bg-[#091F5C] text-white space-y-4 shadow-xl">
+            <div className="p-6 rounded-3xl bg-[#DD2A40] text-white space-y-4 shadow-xl">
               <div className="text-xs font-mono font-bold uppercase tracking-wider text-blue-200">
                 {t.contactPageSide?.protocolTag || 'Advisory Protocol'}
               </div>
@@ -341,7 +341,7 @@ export default function ContactPage({ onNavigate }) {
             </div>
 
             <div className="p-6 rounded-3xl glass-panel border border-surface-border space-y-4 shadow-sm">
-              <div className="text-xs font-mono font-bold uppercase tracking-wider text-[#334DAF] dark:text-[#7096D1]">
+              <div className="text-xs font-mono font-bold uppercase tracking-wider text-[#DD2A40] dark:text-[#FF3333]">
                 {c.directContacts || "Direct Contacts"}
               </div>
               <p className="text-xs text-slate-600 dark:text-slate-300">
@@ -381,20 +381,20 @@ export default function ContactPage({ onNavigate }) {
 
                 {/* Email */}
                 <div className="flex items-center gap-2 px-1 pt-1">
-                  <Mail className="w-3.5 h-3.5 text-[#334DAF] dark:text-[#7096D1]" />
+                  <Mail className="w-3.5 h-3.5 text-[#DD2A40] dark:text-[#FF3333]" />
                   <a href="mailto:info@eaglecomply.com" className="hover:underline font-bold">info@eaglecomply.com</a>
                 </div>
                 
                 {/* LinkedIn */}
                 <div className="flex items-center gap-2 px-1">
-                  <LinkedInIcon className="w-3.5 h-3.5 text-[#334DAF] dark:text-[#7096D1]" />
+                  <LinkedInIcon className="w-3.5 h-3.5 text-[#DD2A40] dark:text-[#FF3333]" />
                   <a href="https://www.linkedin.com/company/eaglecomply/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="hover:underline font-bold">{t.contactPageSide?.linkedin || 'LinkedIn: EagleComply'}</a>
                 </div>
               </div>
 
               {/* Locations summary list */}
-              <div className="pt-3 border-t border-surface-border text-xs text-slate-600 dark:text-slate-400 space-y-1.5">
-                <div className="text-[11px] font-mono uppercase tracking-wider text-slate-500 font-bold mb-2">
+              <div className="pt-3 border-t border-surface-border text-xs text-slate-600 dark:text-[#667085] space-y-1.5">
+                <div className="text-[11px] font-mono uppercase tracking-wider text-[#667085] font-bold mb-2">
                   {t.contactPageSide?.locationsTitle || 'Operational Hubs & Locations:'}
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 text-xs font-semibold text-slate-800 dark:text-slate-200">

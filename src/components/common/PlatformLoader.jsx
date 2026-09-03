@@ -38,31 +38,31 @@ export default function PlatformLoader({ onFinish }) {
 
   return (
     <div 
-      className={`fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-[#F9FBFF] dark:bg-[#101E42] transition-opacity duration-300 pointer-events-none select-none ${
+      className={`fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-[#FFFFFF] dark:bg-[#000000] transition-opacity duration-300 pointer-events-none select-none ${
         isFadingOut ? 'opacity-0' : 'opacity-100'
       }`}
     >
       <div className="relative flex flex-col items-center max-w-xs w-full px-6 text-center space-y-4">
         
         {/* Animated Eagle Logo */}
-        <div className="relative flex items-center justify-center p-3 rounded-2xl bg-white dark:bg-[#16295C] border border-[#D0E4FE] dark:border-[#2B4E9E] shadow-xl">
+        <div className="relative flex items-center justify-center p-3 rounded-2xl bg-white dark:bg-[#111111] border border-[#E4E7EC] dark:border-[#2A2E35] shadow-xl">
           <EagleLogo className="h-16 w-auto animate-pulse" />
         </div>
 
         {/* Brand Title */}
         <div className="space-y-0.5">
-          <h2 className="text-sm font-bold tracking-tight text-slate-900 dark:text-white">
+          <h2 className="text-sm font-bold tracking-tight text-black dark:text-white dark:text-white">
             EAGLE COMPLIANCE
           </h2>
-          <p className="text-[10px] font-mono text-[#334DAF] dark:text-[#7096D1] uppercase tracking-widest font-semibold">
+          <p className="text-[10px] font-mono text-[#DD2A40] dark:text-[#FF3333] uppercase tracking-widest font-semibold">
             Global Regulatory Platform
           </p>
         </div>
 
         {/* Clean Progress Bar */}
-        <div className="w-48 h-1 bg-[#E8F2FE] dark:bg-[#1E3778] rounded-full overflow-hidden">
+        <div className="w-48 h-1 bg-[#F8F9FA] dark:bg-[#22252A] rounded-full overflow-hidden">
           <div 
-            className="h-full bg-[#334DAF] dark:bg-[#7096D1] transition-all duration-100 ease-out rounded-full"
+            className="h-full bg-[#DD2A40] dark:bg-[#FF3333] transition-all duration-100 ease-out rounded-full"
             style={{ width: `${progress}%` }}
           />
         </div>

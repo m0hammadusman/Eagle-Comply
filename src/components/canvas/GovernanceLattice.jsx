@@ -67,10 +67,10 @@ export default function GovernanceLattice({ className = '', interactive = true }
       tick++;
       ctx.clearRect(0, 0, width, height);
 
-      // New Palette Colors: #334DAF, #7096D1, #D0E4FE
-      const nodeColorPrimary = isDark ? '#7096D1' : '#334DAF';
-      const nodeColorAnchor = isDark ? '#D0E4FE' : '#091F5C';
-      const lineColor = isDark ? 'rgba(112, 150, 209,' : 'rgba(51, 77, 175,';
+      // New Palette Colors: #DD2A40, #FF3333, #E4E7EC
+      const nodeColorPrimary = isDark ? '#FF3333' : '#DD2A40';
+      const nodeColorAnchor = isDark ? '#E4E7EC' : '#DD2A40';
+      const lineColor = isDark ? 'rgba(255, 51, 51,' : 'rgba(221, 42, 64,';
 
       for (let i = 0; i < nodes.length; i++) {
         const n = nodes[i];
@@ -94,13 +94,13 @@ export default function GovernanceLattice({ className = '', interactive = true }
 
         ctx.beginPath();
         ctx.arc(n.x, n.y, n.isAnchor ? n.radius * 2 : n.radius, 0, Math.PI * 2);
-        ctx.fillStyle = n.isAnchor ? nodeColorAnchor : (isDark ? 'rgba(208, 228, 254, ' + alpha + ')' : 'rgba(9, 31, 92, ' + alpha + ')');
+        ctx.fillStyle = n.isAnchor ? nodeColorAnchor : (isDark ? 'rgba(254, 205, 211, ' + alpha + ')' : 'rgba(221, 42, 64, ' + alpha + ')');
         ctx.fill();
 
         if (n.isAnchor) {
           ctx.beginPath();
           ctx.arc(n.x, n.y, n.radius * 3.5 + pulse * 2, 0, Math.PI * 2);
-          ctx.strokeStyle = isDark ? 'rgba(112, 150, 209, 0.4)' : 'rgba(51, 77, 175, 0.3)';
+          ctx.strokeStyle = isDark ? 'rgba(255, 51, 51, 0.4)' : 'rgba(221, 42, 64, 0.3)';
           ctx.lineWidth = 1.2;
           ctx.stroke();
         }
@@ -137,7 +137,7 @@ export default function GovernanceLattice({ className = '', interactive = true }
             ctx.beginPath();
             ctx.moveTo(mouse.x, mouse.y);
             ctx.lineTo(n.x, n.y);
-            ctx.strokeStyle = isDark ? 'rgba(208, 228, 254, ' + alpha + ')' : 'rgba(51, 77, 175, ' + alpha + ')';
+            ctx.strokeStyle = isDark ? 'rgba(254, 205, 211, ' + alpha + ')' : 'rgba(221, 42, 64, ' + alpha + ')';
             ctx.lineWidth = 1.5;
             ctx.stroke();
           }

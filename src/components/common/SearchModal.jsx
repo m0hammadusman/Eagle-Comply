@@ -49,26 +49,26 @@ export default function SearchModal({ isOpen, onClose, onNavigate }) {
       >
         {/* Search Header Input */}
         <div className="p-4 sm:p-5 border-b border-surface-border flex items-center gap-3 bg-surface-subtle shrink-0">
-          <Search className="w-5 h-5 text-[#334DAF] dark:text-[#7096D1] shrink-0" />
+          <Search className="w-5 h-5 text-[#DD2A40] dark:text-[#FF3333] shrink-0" />
           <input
             type="text"
             placeholder={t.searchPlaceholder || "Search regulatory directives, practice areas, jurisdictions..."}
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             autoFocus
-            className="w-full bg-transparent border-none outline-none text-slate-900 dark:text-white placeholder-slate-400 text-sm sm:text-base"
+            className="w-full bg-transparent border-none outline-none text-black dark:text-white dark:text-white placeholder-slate-400 text-sm sm:text-base"
           />
           {query && (
             <button 
               onClick={() => setQuery('')}
-              className="text-xs font-mono text-slate-500 hover:text-slate-900 dark:hover:text-white px-2.5 py-1 bg-surface-base border border-surface-border rounded-lg cursor-pointer"
+              className="text-xs font-mono text-[#667085] hover:text-black dark:text-white dark:hover:text-white px-2.5 py-1 bg-surface-base border border-surface-border rounded-lg cursor-pointer"
             >
               Clear
             </button>
           )}
           <button 
             onClick={onClose}
-            className="p-2 bg-surface-base hover:bg-surface-raised text-slate-500 hover:text-slate-900 dark:hover:text-white border border-surface-border rounded-xl transition-colors cursor-pointer shrink-0"
+            className="p-2 bg-surface-base hover:bg-surface-raised text-[#667085] hover:text-black dark:text-white dark:hover:text-white border border-surface-border rounded-xl transition-colors cursor-pointer shrink-0"
             title="Close modal"
             aria-label="Close"
           >
@@ -78,21 +78,21 @@ export default function SearchModal({ isOpen, onClose, onNavigate }) {
 
         {/* Filter Pills */}
         <div className="flex items-center gap-2 p-3 border-b border-surface-border bg-surface-base/50 overflow-x-auto text-xs font-mono">
-          <span className="text-slate-400 font-bold uppercase tracking-wider text-[10px] shrink-0">Filter:</span>
+          <span className="text-[#667085] font-bold uppercase tracking-wider text-[10px] shrink-0">Filter:</span>
           {['all', 'solutions', 'regulations', 'countries', 'insights', 'resources'].map(f => (
             <button
               key={f}
               onClick={() => setFilter(f)}
               className={`px-2.5 py-1 rounded-lg capitalize transition-all shrink-0 ${
                 filter === f 
-                  ? 'bg-[#334DAF] text-white dark:bg-[#7096D1] dark:text-[#101E42] font-bold' 
-                  : 'text-slate-600 dark:text-slate-400 hover:bg-surface-subtle'
+                  ? 'bg-[#DD2A40] text-white dark:bg-[#FF3333] dark:text-[#000000] font-bold' 
+                  : 'text-slate-600 dark:text-[#667085] hover:bg-surface-subtle'
               }`}
             >
               {f}
             </button>
           ))}
-          <span className="ml-auto text-[11px] text-slate-500 font-bold shrink-0">
+          <span className="ml-auto text-[11px] text-[#667085] font-bold shrink-0">
             {totalResults} Results
           </span>
         </div>
@@ -100,16 +100,16 @@ export default function SearchModal({ isOpen, onClose, onNavigate }) {
         {/* Results Scroll Area */}
         <div className="p-4 overflow-y-auto space-y-4 flex-1">
           {totalResults === 0 ? (
-            <div className="text-center py-12 text-slate-500 space-y-2">
+            <div className="text-center py-12 text-[#667085] space-y-2">
               <p className="text-sm">No regulatory matches found for "{query}"</p>
-              <p className="text-xs font-mono text-slate-400">Try searching for "DORA", "AI Act", "VARA", or "GDPR"</p>
+              <p className="text-xs font-mono text-[#667085]">Try searching for "DORA", "AI Act", "VARA", or "GDPR"</p>
             </div>
           ) : (
             <>
               {/* Solutions */}
               {(filter === 'all' || filter === 'solutions') && results.solutions.length > 0 && (
                 <div className="space-y-2">
-                  <div className="text-[11px] font-mono font-bold uppercase tracking-widest text-[#334DAF] dark:text-[#7096D1] flex items-center gap-1.5">
+                  <div className="text-[11px] font-mono font-bold uppercase tracking-widest text-[#DD2A40] dark:text-[#FF3333] flex items-center gap-1.5">
                     <Shield className="w-3.5 h-3.5" /> Solutions & Practice Areas ({results.solutions.length})
                   </div>
                   <div className="grid gap-2">
@@ -123,14 +123,14 @@ export default function SearchModal({ isOpen, onClose, onNavigate }) {
                         className="p-3 rounded-xl bg-surface-subtle hover:bg-surface-base border border-surface-border cursor-pointer flex items-center justify-between transition-all group"
                       >
                         <div>
-                          <div className="text-sm font-bold text-slate-900 dark:text-white group-hover:text-[#334DAF] dark:group-hover:text-[#7096D1]">
+                          <div className="text-sm font-bold text-black dark:text-white dark:text-white group-hover:text-[#DD2A40] dark:group-hover:text-[#FF3333]">
                             {s.name}
                           </div>
-                          <div className="text-xs text-slate-600 dark:text-slate-400 line-clamp-1">
+                          <div className="text-xs text-slate-600 dark:text-[#667085] line-clamp-1">
                             {s.shortDesc}
                           </div>
                         </div>
-                        <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-[#334DAF] dark:group-hover:text-[#7096D1] shrink-0 ml-4 rtl:rotate-180" />
+                        <ArrowRight className="w-4 h-4 text-[#667085] group-hover:text-[#DD2A40] dark:group-hover:text-[#FF3333] shrink-0 ml-4 rtl:rotate-180" />
                       </div>
                     ))}
                   </div>
@@ -140,7 +140,7 @@ export default function SearchModal({ isOpen, onClose, onNavigate }) {
               {/* Regulations */}
               {(filter === 'all' || filter === 'regulations') && results.regulations.length > 0 && (
                 <div className="space-y-2">
-                  <div className="text-[11px] font-mono font-bold uppercase tracking-widest text-[#334DAF] dark:text-[#7096D1] flex items-center gap-1.5">
+                  <div className="text-[11px] font-mono font-bold uppercase tracking-widest text-[#DD2A40] dark:text-[#FF3333] flex items-center gap-1.5">
                     <BookOpen className="w-3.5 h-3.5" /> Statutory Regulations ({results.regulations.length})
                   </div>
                   <div className="grid gap-2">
@@ -154,14 +154,14 @@ export default function SearchModal({ isOpen, onClose, onNavigate }) {
                         className="p-3 rounded-xl bg-surface-subtle hover:bg-surface-base border border-surface-border cursor-pointer flex items-center justify-between transition-all group"
                       >
                         <div>
-                          <div className="text-sm font-bold text-slate-900 dark:text-white group-hover:text-[#334DAF] dark:group-hover:text-[#7096D1]">
+                          <div className="text-sm font-bold text-black dark:text-white dark:text-white group-hover:text-[#DD2A40] dark:group-hover:text-[#FF3333]">
                             {r.name}
                           </div>
-                          <div className="text-xs text-slate-600 dark:text-slate-400 line-clamp-1">
+                          <div className="text-xs text-slate-600 dark:text-[#667085] line-clamp-1">
                             {r.shortDesc}
                           </div>
                         </div>
-                        <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-[#334DAF] dark:group-hover:text-[#7096D1] shrink-0 ml-4 rtl:rotate-180" />
+                        <ArrowRight className="w-4 h-4 text-[#667085] group-hover:text-[#DD2A40] dark:group-hover:text-[#FF3333] shrink-0 ml-4 rtl:rotate-180" />
                       </div>
                     ))}
                   </div>
@@ -171,7 +171,7 @@ export default function SearchModal({ isOpen, onClose, onNavigate }) {
               {/* Countries */}
               {(filter === 'all' || filter === 'countries') && results.countries.length > 0 && (
                 <div className="space-y-2">
-                  <div className="text-[11px] font-mono font-bold uppercase tracking-widest text-[#334DAF] dark:text-[#7096D1] flex items-center gap-1.5">
+                  <div className="text-[11px] font-mono font-bold uppercase tracking-widest text-[#DD2A40] dark:text-[#FF3333] flex items-center gap-1.5">
                     <Globe2 className="w-3.5 h-3.5" /> Countries & Jurisdictions ({results.countries.length})
                   </div>
                   <div className="grid gap-2">
@@ -187,15 +187,15 @@ export default function SearchModal({ isOpen, onClose, onNavigate }) {
                         <div className="flex items-center gap-3">
                           <span className="text-2xl">{c.flag}</span>
                           <div>
-                            <div className="text-sm font-bold text-slate-900 dark:text-white group-hover:text-[#334DAF] dark:group-hover:text-[#7096D1]">
+                            <div className="text-sm font-bold text-black dark:text-white dark:text-white group-hover:text-[#DD2A40] dark:group-hover:text-[#FF3333]">
                               {c.name}
                             </div>
-                            <div className="text-xs text-slate-600 dark:text-slate-400 line-clamp-1">
+                            <div className="text-xs text-slate-600 dark:text-[#667085] line-clamp-1">
                               {c.overview}
                             </div>
                           </div>
                         </div>
-                        <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-[#334DAF] dark:group-hover:text-[#7096D1] shrink-0 ml-4 rtl:rotate-180" />
+                        <ArrowRight className="w-4 h-4 text-[#667085] group-hover:text-[#DD2A40] dark:group-hover:text-[#FF3333] shrink-0 ml-4 rtl:rotate-180" />
                       </div>
                     ))}
                   </div>

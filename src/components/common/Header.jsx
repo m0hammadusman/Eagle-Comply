@@ -95,14 +95,14 @@ export default function Header({ onNavigate, currentRoute, onOpenSearch, onOpenC
                     }}
                     className={`px-2 xl:px-3 py-1.5 rounded-xl text-xs xl:text-sm font-semibold transition-all flex items-center gap-1.5 whitespace-nowrap shrink-0 ${
                       isActive 
-                        ? 'text-[#334DAF] dark:text-[#7096D1] bg-[#334DAF]/10 dark:bg-[#7096D1]/15 font-bold' 
-                        : 'text-slate-700 dark:text-slate-200 hover:text-[#334DAF] dark:hover:text-[#7096D1] hover:bg-surface-subtle'
+                        ? 'text-[#DD2A40] dark:text-[#FF3333] bg-[#DD2A40]/10 dark:bg-[#FF3333]/15 font-bold' 
+                        : 'text-slate-700 dark:text-slate-200 hover:text-[#DD2A40] dark:hover:text-[#FF3333] hover:bg-surface-subtle'
                     }`}
                   >
                     {ItemIcon && <ItemIcon className="w-3.5 h-3.5 shrink-0" />}
                     <span className="whitespace-nowrap">{item.label}</span>
                     {hasSubmenu && (
-                      <ChevronDown className={`w-3.5 h-3.5 shrink-0 transition-transform duration-200 ${activeMegaMenu === item.id ? 'rotate-180 text-[#334DAF] dark:text-[#7096D1]' : 'text-slate-400'}`} />
+                      <ChevronDown className={`w-3.5 h-3.5 shrink-0 transition-transform duration-200 ${activeMegaMenu === item.id ? 'rotate-180 text-[#DD2A40] dark:text-[#FF3333]' : 'text-[#667085]'}`} />
                     )}
                   </button>
 
@@ -120,12 +120,12 @@ export default function Header({ onNavigate, currentRoute, onOpenSearch, onOpenC
                             onClick={() => { onNavigate(child.route); setActiveMegaMenu(null); }}
                             className={`w-full p-2.5 rounded-xl hover:bg-surface-subtle transition-all text-left rtl:text-right flex flex-col border ${
                               currentRoute === child.route 
-                                ? 'bg-[#334DAF]/10 text-[#334DAF] dark:text-[#7096D1] border-[#334DAF]/20' 
+                                ? 'bg-[#DD2A40]/10 text-[#DD2A40] dark:text-[#FF3333] border-[#DD2A40]/20' 
                                 : 'border-transparent text-slate-800 dark:text-slate-200'
                             }`}
                           >
                             <span className="text-xs font-bold">{child.label}</span>
-                            <span className="text-[11px] text-slate-500 line-clamp-1">{child.desc}</span>
+                            <span className="text-[11px] text-[#667085] line-clamp-1">{child.desc}</span>
                           </button>
                         ))}
                       </div>
@@ -143,7 +143,7 @@ export default function Header({ onNavigate, currentRoute, onOpenSearch, onOpenC
                         {item.id === 'solutions' && (
                           <>
                             <div className="col-span-8 space-y-3">
-                              <div className="text-xs font-mono uppercase tracking-wider text-[#334DAF] dark:text-[#7096D1] font-bold">
+                              <div className="text-xs font-mono uppercase tracking-wider text-[#DD2A40] dark:text-[#FF3333] font-bold">
                                 {t.solutionsSec?.tag || 'Regulatory Practice Areas'}
                               </div>
                               <div className="grid grid-cols-2 gap-2">
@@ -153,10 +153,10 @@ export default function Header({ onNavigate, currentRoute, onOpenSearch, onOpenC
                                     onClick={() => { onNavigate('solution-detail', { id: sol.id }); setActiveMegaMenu(null); }}
                                     className="p-3 rounded-xl hover:bg-surface-subtle transition-all text-left rtl:text-right flex flex-col justify-center group/card border border-transparent hover:border-surface-border"
                                   >
-                                    <div className="text-xs font-bold text-slate-900 dark:text-white group-hover/card:text-[#334DAF] dark:group-hover/card:text-[#7096D1] transition-colors">
+                                    <div className="text-xs font-bold text-black dark:text-white dark:text-white group-hover/card:text-[#DD2A40] dark:group-hover/card:text-[#FF3333] transition-colors">
                                       {sol.name}
                                     </div>
-                                    <div className="text-[11px] text-slate-500 line-clamp-1 mt-0.5">
+                                    <div className="text-[11px] text-[#667085] line-clamp-1 mt-0.5">
                                       {sol.valueProp || sol.shortDesc}
                                     </div>
                                   </button>
@@ -165,17 +165,17 @@ export default function Header({ onNavigate, currentRoute, onOpenSearch, onOpenC
                             </div>
                             <div className="col-span-4 bg-surface-subtle p-4 rounded-xl border border-surface-border flex flex-col justify-between">
                               <div>
-                                <span className="text-[10px] font-mono font-bold text-[#334DAF] dark:text-[#7096D1] uppercase">{t.solutionsSec?.megaTitle || 'Enterprise Assurance'}</span>
-                                <h4 className="font-bold text-sm text-slate-900 dark:text-white mt-1">
+                                <span className="text-[10px] font-mono font-bold text-[#DD2A40] dark:text-[#FF3333] uppercase">{t.solutionsSec?.megaTitle || 'Enterprise Assurance'}</span>
+                                <h4 className="font-bold text-sm text-black dark:text-white dark:text-white mt-1">
                                   {t.solutionsSec?.megaSubtitle || 'Full-Scope Compliance'}
                                 </h4>
-                                <p className="text-[11px] text-slate-500 mt-1">
+                                <p className="text-[11px] text-[#667085] mt-1">
                                   {t.solutionsSec?.megaDesc || 'CE-marking, DORA ICT registers, and regulatory defense.'}
                                 </p>
                               </div>
                               <button
                                 onClick={() => { onNavigate('solutions'); setActiveMegaMenu(null); }}
-                                className="mt-3 text-xs font-bold text-[#334DAF] dark:text-[#7096D1] hover:underline flex items-center gap-1 whitespace-nowrap"
+                                className="mt-3 text-xs font-bold text-[#DD2A40] dark:text-[#FF3333] hover:underline flex items-center gap-1 whitespace-nowrap"
                               >
                                 {t.solutionsSec?.viewAll || 'See all services'} <ArrowRight className="w-3 h-3 rtl:rotate-180" />
                               </button>
@@ -185,7 +185,7 @@ export default function Header({ onNavigate, currentRoute, onOpenSearch, onOpenC
 
                         {item.id === 'industries' && (
                           <div className="col-span-12">
-                            <div className="text-xs font-mono uppercase tracking-wider text-[#334DAF] dark:text-[#7096D1] font-bold mb-3">
+                            <div className="text-xs font-mono uppercase tracking-wider text-[#DD2A40] dark:text-[#FF3333] font-bold mb-3">
                               {t.nav?.industries || 'Specialized Industry Verticals'}
                             </div>
                             <div className="grid grid-cols-3 gap-3">
@@ -195,10 +195,10 @@ export default function Header({ onNavigate, currentRoute, onOpenSearch, onOpenC
                                   onClick={() => { onNavigate('industry-detail', { id: ind.id }); setActiveMegaMenu(null); }}
                                   className="p-3 rounded-xl hover:bg-surface-subtle transition-all text-left rtl:text-right border border-transparent hover:border-surface-border group/ind"
                                 >
-                                  <div className="text-xs font-bold text-slate-900 dark:text-white group-hover/ind:text-[#334DAF] dark:group-hover/ind:text-[#7096D1]">
+                                  <div className="text-xs font-bold text-black dark:text-white dark:text-white group-hover/ind:text-[#DD2A40] dark:group-hover/ind:text-[#FF3333]">
                                     {ind.name}
                                   </div>
-                                  <div className="text-[11px] text-slate-500 mt-0.5 line-clamp-1">
+                                  <div className="text-[11px] text-[#667085] mt-0.5 line-clamp-1">
                                     {ind.heroTag}
                                   </div>
                                 </button>
@@ -210,10 +210,10 @@ export default function Header({ onNavigate, currentRoute, onOpenSearch, onOpenC
                         {item.id === 'global-compliance' && (
                           <div className="col-span-12 flex items-center gap-6">
                             <div className="flex-1 space-y-4">
-                              <h4 className="text-lg font-bold text-slate-900 dark:text-white">
+                              <h4 className="text-lg font-bold text-black dark:text-white dark:text-white">
                                 {t.nav?.globalCompliance || 'Global Compliance Hub'}
                               </h4>
-                              <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                              <p className="text-sm text-slate-600 dark:text-[#667085] leading-relaxed">
                                 {t.globalSec?.desc || 'Navigate regional variations in AI, Crypto, Privacy, and ESG regulations through our interactive global map.'}
                               </p>
                               <div className="grid grid-cols-2 gap-3 pt-2">
@@ -224,11 +224,11 @@ export default function Header({ onNavigate, currentRoute, onOpenSearch, onOpenC
                                   </div>
                                 ))}
                               </div>
-                              <button onClick={() => onNavigate('global-compliance')} className="mt-4 px-4 py-2 rounded-lg bg-[#334DAF] text-white text-xs font-bold hover:bg-[#2B4E9E] transition-colors">
+                              <button onClick={() => onNavigate('global-compliance')} className="mt-4 px-4 py-2 rounded-lg bg-[#DD2A40] text-white text-xs font-bold hover:bg-[#2A2E35] transition-colors">
                                 {t.globalSec?.btn || 'Open Interactive Map'}
                               </button>
                             </div>
-                            <div className="w-64 h-48 rounded-xl bg-[#091F5C] overflow-hidden relative shadow-inner">
+                            <div className="w-64 h-48 rounded-xl bg-[#DD2A40] overflow-hidden relative shadow-inner">
                               <div className="absolute inset-0 opacity-40 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]" />
                               <Globe2 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 text-blue-400/20" />
                             </div>
@@ -274,7 +274,7 @@ export default function Header({ onNavigate, currentRoute, onOpenSearch, onOpenC
                       }}
                       className={`w-full text-left px-4 py-2 text-sm transition-colors flex items-center justify-between ${
                         language === lang.code 
-                          ? 'bg-[#334DAF]/10 dark:bg-[#7096D1]/15 text-[#334DAF] dark:text-[#7096D1] font-bold' 
+                          ? 'bg-[#DD2A40]/10 dark:bg-[#FF3333]/15 text-[#DD2A40] dark:text-[#FF3333] font-bold' 
                           : 'text-slate-700 dark:text-slate-300 hover:bg-surface-subtle'
                       }`}
                     >
@@ -301,7 +301,7 @@ export default function Header({ onNavigate, currentRoute, onOpenSearch, onOpenC
             {/* Book Consultation CTA */}
             <button
               onClick={onOpenConsultation}
-              className="hidden md:inline-flex items-center gap-1.5 px-3.5 xl:px-4 py-2 rounded-xl bg-[#334DAF] hover:bg-[#253982] text-white font-bold text-xs shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all whitespace-nowrap shrink-0 ml-1 cursor-pointer"
+              className="hidden md:inline-flex items-center gap-1.5 px-3.5 xl:px-4 py-2 rounded-xl bg-[#DD2A40] hover:bg-[#BA1B30] text-white font-bold text-xs shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all whitespace-nowrap shrink-0 ml-1 cursor-pointer"
             >
               <Calendar className="w-3.5 h-3.5 shrink-0" />
               <span className="hidden lg:block whitespace-nowrap">{t.nav?.bookConsultation || 'Consultation'}</span>
@@ -329,10 +329,10 @@ export default function Header({ onNavigate, currentRoute, onOpenSearch, onOpenC
                     <button
                       key={child.id}
                       onClick={() => { onNavigate(child.route); setIsMobileMenuOpen(false); }}
-                      className={`w-full p-2.5 rounded-xl text-left rtl:text-right text-sm font-semibold flex items-center justify-between whitespace-nowrap ${currentRoute === child.route ? 'text-[#334DAF] dark:text-[#7096D1] bg-[#334DAF]/10 font-bold' : 'text-slate-800 dark:text-slate-200'}`}
+                      className={`w-full p-2.5 rounded-xl text-left rtl:text-right text-sm font-semibold flex items-center justify-between whitespace-nowrap ${currentRoute === child.route ? 'text-[#DD2A40] dark:text-[#FF3333] bg-[#DD2A40]/10 font-bold' : 'text-slate-800 dark:text-slate-200'}`}
                     >
                       <span>{child.label}</span>
-                      <ArrowRight className="w-4 h-4 text-slate-400 rtl:rotate-180" />
+                      <ArrowRight className="w-4 h-4 text-[#667085] rtl:rotate-180" />
                     </button>
                   ))}
                 </div>
@@ -340,10 +340,10 @@ export default function Header({ onNavigate, currentRoute, onOpenSearch, onOpenC
                 <button
                   key={item.id}
                   onClick={() => { onNavigate(item.route); setIsMobileMenuOpen(false); }}
-                  className={`w-full p-2.5 rounded-xl text-left rtl:text-right text-sm font-semibold flex items-center justify-between whitespace-nowrap ${currentRoute === item.route ? 'text-[#334DAF] dark:text-[#7096D1] bg-[#334DAF]/10 font-bold' : 'text-slate-800 dark:text-slate-200'}`}
+                  className={`w-full p-2.5 rounded-xl text-left rtl:text-right text-sm font-semibold flex items-center justify-between whitespace-nowrap ${currentRoute === item.route ? 'text-[#DD2A40] dark:text-[#FF3333] bg-[#DD2A40]/10 font-bold' : 'text-slate-800 dark:text-slate-200'}`}
                 >
                   <span>{item.label}</span>
-                  <ArrowRight className="w-4 h-4 text-slate-400 rtl:rotate-180" />
+                  <ArrowRight className="w-4 h-4 text-[#667085] rtl:rotate-180" />
                 </button>
               )
             ))}
@@ -352,7 +352,7 @@ export default function Header({ onNavigate, currentRoute, onOpenSearch, onOpenC
           <div className="pt-4 border-t border-surface-border flex flex-col gap-2">
             <button
               onClick={() => { onOpenConsultation(); setIsMobileMenuOpen(false); }}
-              className="w-full py-3 rounded-xl bg-gradient-to-r from-[#091F5C] to-[#334DAF] dark:from-[#334DAF] dark:to-[#7096D1] text-white dark:text-[#101E42] font-bold text-sm shadow-md text-center whitespace-nowrap"
+              className="w-full py-3 rounded-xl bg-gradient-to-r from-[#DD2A40] to-[#DD2A40] dark:from-[#DD2A40] dark:to-[#FF3333] text-white dark:text-[#000000] font-bold text-sm shadow-md text-center whitespace-nowrap"
             >
               {t.common?.bookConsultation || 'Book Consultation'}
             </button>

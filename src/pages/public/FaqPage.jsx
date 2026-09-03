@@ -149,11 +149,11 @@ export default function FaqPage({ onNavigate, onOpenConsultation }) {
       
       {/* Header Banner */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#334DAF]/10 dark:bg-[#7096D1]/15 text-[#334DAF] dark:text-[#7096D1] text-xs font-mono font-bold tracking-wider uppercase border border-[#334DAF]/20 dark:border-[#7096D1]/30">
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DD2A40]/10 dark:bg-[#FF3333]/15 text-[#DD2A40] dark:text-[#FF3333] text-xs font-mono font-bold tracking-wider uppercase border border-[#DD2A40]/20 dark:border-[#FF3333]/30">
           <HelpCircle className="w-3.5 h-3.5" />
           <span>{fq.tag || 'COMPLIANCE KNOWLEDGEBASE'}</span>
         </div>
-        <h1 className="font-sans tracking-tight text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white">
+        <h1 className="font-sans tracking-tight text-3xl md:text-4xl lg:text-5xl font-bold text-black dark:text-white dark:text-white">
           {fq.title || 'Frequently Asked Questions'}
         </h1>
         <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
@@ -162,13 +162,13 @@ export default function FaqPage({ onNavigate, onOpenConsultation }) {
 
         {/* Search Input */}
         <div className="pt-4 max-w-xl mx-auto relative">
-          <Search className="w-4 h-4 text-slate-400 absolute left-4 rtl:left-auto rtl:right-4 top-1/2 -translate-y-1/2" />
+          <Search className="w-4 h-4 text-[#667085] absolute left-4 rtl:left-auto rtl:right-4 top-1/2 -translate-y-1/2" />
           <input
             type="text"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             placeholder={fq.searchPlaceholder || "Search compliance topics, AML, MiCA, Licensing, DORA..."}
-            className="w-full pl-11 pr-4 rtl:pl-4 rtl:pr-11 py-3 rounded-2xl bg-surface-subtle border border-surface-border text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-[#334DAF] transition-all shadow-sm"
+            className="w-full pl-11 pr-4 rtl:pl-4 rtl:pr-11 py-3 rounded-2xl bg-surface-subtle border border-surface-border text-sm text-black dark:text-white dark:text-white placeholder-slate-400 focus:outline-none focus:border-[#DD2A40] transition-all shadow-sm"
           />
         </div>
 
@@ -180,7 +180,7 @@ export default function FaqPage({ onNavigate, onOpenConsultation }) {
               onClick={() => setSelectedCategory(cat)}
               className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
                 selectedCategory === cat
-                  ? 'bg-[#334DAF] text-white dark:bg-[#7096D1] dark:text-[#101E42] shadow-sm'
+                  ? 'bg-[#DD2A40] text-white dark:bg-[#FF3333] dark:text-[#000000] shadow-sm'
                   : 'bg-surface-subtle text-slate-600 dark:text-slate-300 hover:bg-surface-raised border border-surface-border'
               }`}
             >
@@ -194,16 +194,16 @@ export default function FaqPage({ onNavigate, onOpenConsultation }) {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         {filteredCategories.length === 0 ? (
           <div className="p-12 text-center rounded-3xl glass-panel border border-surface-border space-y-3">
-            <HelpCircle className="w-8 h-8 text-slate-400 mx-auto" />
-            <p className="text-sm font-bold text-slate-900 dark:text-white">{fq.noResults || 'No matching questions found'}</p>
-            <p className="text-xs text-slate-500">{fq.noResultsDesc || 'Try searching for a different keyword or view all categories.'}</p>
+            <HelpCircle className="w-8 h-8 text-[#667085] mx-auto" />
+            <p className="text-sm font-bold text-black dark:text-white dark:text-white">{fq.noResults || 'No matching questions found'}</p>
+            <p className="text-xs text-[#667085]">{fq.noResultsDesc || 'Try searching for a different keyword or view all categories.'}</p>
           </div>
         ) : (
           filteredCategories.map((catSection, cIndex) => (
             <div key={cIndex} className="space-y-4">
               <div className="flex items-center gap-2 border-b border-surface-border pb-2">
-                <ShieldCheck className="w-4 h-4 text-[#334DAF] dark:text-[#7096D1]" />
-                <h2 className="text-base font-bold text-slate-900 dark:text-white uppercase tracking-wide font-mono text-xs">
+                <ShieldCheck className="w-4 h-4 text-[#DD2A40] dark:text-[#FF3333]" />
+                <h2 className="text-base font-bold text-black dark:text-white dark:text-white uppercase tracking-wide font-mono text-xs">
                   {catSection.category}
                 </h2>
               </div>
@@ -222,11 +222,11 @@ export default function FaqPage({ onNavigate, onOpenConsultation }) {
                         onClick={() => toggleItem(catSection.catIdx, itemIdx)}
                         className="w-full p-5 text-left rtl:text-right flex items-center justify-between gap-4 focus:outline-none cursor-pointer"
                       >
-                        <span className="font-bold text-sm text-slate-900 dark:text-white">
+                        <span className="font-bold text-sm text-black dark:text-white dark:text-white">
                           {item.q}
                         </span>
                         <ChevronDown
-                          className={`w-4 h-4 text-[#334DAF] dark:text-[#7096D1] shrink-0 transition-transform duration-200 ${
+                          className={`w-4 h-4 text-[#DD2A40] dark:text-[#FF3333] shrink-0 transition-transform duration-200 ${
                             isOpen ? 'rotate-180' : ''
                           }`}
                         />
@@ -248,7 +248,7 @@ export default function FaqPage({ onNavigate, onOpenConsultation }) {
 
       {/* Query & Consultation Footer Prompt */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-[#091F5C] via-[#16295C] to-[#334DAF] text-white shadow-2xl text-center space-y-5">
+        <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-[#DD2A40] via-[#111111] to-[#DD2A40] text-white shadow-2xl text-center space-y-5">
           <div className="space-y-2">
             <span className="text-xs font-mono uppercase tracking-widest text-blue-200 font-bold inline-block px-3 py-1 rounded-full bg-white/10 border border-white/20">
               {fq.inquiryTag || 'DIRECT INQUIRY & SUPPORT'}
@@ -264,7 +264,7 @@ export default function FaqPage({ onNavigate, onOpenConsultation }) {
           <div className="pt-2 flex flex-wrap items-center justify-center gap-3.5">
             <button
               onClick={onOpenConsultation}
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white text-[#091F5C] hover:bg-blue-50 font-bold text-xs shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer"
+              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white text-[#DD2A40] hover:bg-blue-50 font-bold text-xs shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer"
             >
               <Calendar className="w-4 h-4" />
               <span>{fq.sendQuery || 'Send Query & Book Session'}</span>

@@ -88,11 +88,11 @@ export default function ContactWorldMap({ onSelectLocation }) {
     <div className="w-full rounded-3xl glass-panel border border-surface-border p-6 lg:p-8 space-y-6 shadow-xl">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-surface-border">
         <div className="space-y-1">
-          <div className="flex items-center gap-2 text-xs font-mono font-bold tracking-wider uppercase text-[#334DAF] dark:text-[#7096D1]">
-            <Globe2 className="w-4 h-4 text-[#334DAF] dark:text-[#7096D1]" />
+          <div className="flex items-center gap-2 text-xs font-mono font-bold tracking-wider uppercase text-[#DD2A40] dark:text-[#FF3333]">
+            <Globe2 className="w-4 h-4 text-[#DD2A40] dark:text-[#FF3333]" />
             <span>GLOBAL ADVISORY PRESENCE & REGIONAL OFFICES</span>
           </div>
-          <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
+          <h2 className="text-xl sm:text-2xl font-bold text-black dark:text-white dark:text-white">
             Operational Locations: United Kingdom, Italy & Pakistan
           </h2>
         </div>
@@ -106,7 +106,7 @@ export default function ContactWorldMap({ onSelectLocation }) {
                 onClick={() => setSelectedId(loc.id)}
                 className={`flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all ${
                   isActive
-                    ? "bg-[#334DAF] dark:bg-[#7096D1] text-white dark:text-[#101E42] shadow-md scale-[1.02]"
+                    ? "bg-[#DD2A40] dark:bg-[#FF3333] text-white dark:text-[#000000] shadow-md scale-[1.02]"
                     : "bg-surface-subtle hover:bg-surface-raised text-slate-700 dark:text-slate-300 border border-surface-border"
                 }`}
               >
@@ -114,8 +114,8 @@ export default function ContactWorldMap({ onSelectLocation }) {
                 <span>{loc.name}</span>
                 <span className={`text-[10px] px-1.5 py-0.5 rounded-md font-mono ${
                   isActive
-                    ? "bg-white/20 dark:bg-black/20 text-white dark:text-[#101E42]"
-                    : "bg-surface-raised text-slate-500"
+                    ? "bg-white/20 dark:bg-black/20 text-white dark:text-[#000000]"
+                    : "bg-surface-raised text-[#667085]"
                 }`}>{loc.code}</span>
               </button>
             );
@@ -124,7 +124,7 @@ export default function ContactWorldMap({ onSelectLocation }) {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-        <div className="lg:col-span-7 bg-[#091F5C] dark:bg-[#0c1633] rounded-2xl p-4 sm:p-6 border border-[#1E3778] relative overflow-hidden shadow-inner flex flex-col justify-between min-h-[360px]">
+        <div className="lg:col-span-7 bg-[#DD2A40] dark:bg-[#0c1633] rounded-2xl p-4 sm:p-6 border border-[#22252A] relative overflow-hidden shadow-inner flex flex-col justify-between min-h-[360px]">
           <div className="flex items-center justify-between text-[11px] font-mono text-blue-200/70 mb-2">
             <span className="flex items-center gap-1.5">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
@@ -141,12 +141,12 @@ export default function ContactWorldMap({ onSelectLocation }) {
                   <stop offset="100%" stopColor="#3B82F6" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient id="mapGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="#1E3778" stopOpacity="0.7" />
-                  <stop offset="100%" stopColor="#132759" stopOpacity="0.9" />
+                  <stop offset="0%" stopColor="#22252A" stopOpacity="0.7" />
+                  <stop offset="100%" stopColor="#22252A" stopOpacity="0.9" />
                 </linearGradient>
               </defs>
 
-              <g stroke="rgba(208, 228, 254, 0.08)" strokeWidth="1" strokeDasharray="3 3">
+              <g stroke="rgba(254, 205, 211, 0.08)" strokeWidth="1" strokeDasharray="3 3">
                 <line x1="0" y1="112" x2="1000" y2="112" />
                 <line x1="0" y1="225" x2="1000" y2="225" />
                 <line x1="0" y1="337" x2="1000" y2="337" />
@@ -155,12 +155,12 @@ export default function ContactWorldMap({ onSelectLocation }) {
                 <line x1="750" y1="0" x2="750" y2="450" />
               </g>
 
-              <path d="M 120,60 Q 220,50 280,100 Q 300,160 260,200 Q 230,240 190,240 Q 150,200 130,130 Z" fill="url(#mapGradient)" stroke="#2B4C9B" strokeWidth="1.2" opacity="0.85" />
-              <path d="M 230,250 Q 290,260 280,340 Q 250,420 220,430 Q 190,360 210,290 Z" fill="url(#mapGradient)" stroke="#2B4C9B" strokeWidth="1.2" opacity="0.85" />
-              <path d="M 440,70 Q 560,50 720,70 Q 880,90 920,150 Q 840,200 750,170 Q 640,140 540,110 Q 470,90 440,70 Z" fill="url(#mapGradient)" stroke="#2B4C9B" strokeWidth="1.2" opacity="0.85" />
-              <path d="M 460,160 Q 550,160 570,230 Q 560,330 500,380 Q 450,300 440,210 Z" fill="url(#mapGradient)" stroke="#2B4C9B" strokeWidth="1.2" opacity="0.85" />
-              <path d="M 640,160 Q 770,160 840,230 Q 780,300 700,260 Q 640,210 640,160 Z" fill="url(#mapGradient)" stroke="#2B4C9B" strokeWidth="1.2" opacity="0.85" />
-              <path d="M 780,290 Q 880,280 890,360 Q 830,410 770,370 Z" fill="url(#mapGradient)" stroke="#2B4C9B" strokeWidth="1.2" opacity="0.85" />
+              <path d="M 120,60 Q 220,50 280,100 Q 300,160 260,200 Q 230,240 190,240 Q 150,200 130,130 Z" fill="url(#mapGradient)" stroke="#BA1B30" strokeWidth="1.2" opacity="0.85" />
+              <path d="M 230,250 Q 290,260 280,340 Q 250,420 220,430 Q 190,360 210,290 Z" fill="url(#mapGradient)" stroke="#BA1B30" strokeWidth="1.2" opacity="0.85" />
+              <path d="M 440,70 Q 560,50 720,70 Q 880,90 920,150 Q 840,200 750,170 Q 640,140 540,110 Q 470,90 440,70 Z" fill="url(#mapGradient)" stroke="#BA1B30" strokeWidth="1.2" opacity="0.85" />
+              <path d="M 460,160 Q 550,160 570,230 Q 560,330 500,380 Q 450,300 440,210 Z" fill="url(#mapGradient)" stroke="#BA1B30" strokeWidth="1.2" opacity="0.85" />
+              <path d="M 640,160 Q 770,160 840,230 Q 780,300 700,260 Q 640,210 640,160 Z" fill="url(#mapGradient)" stroke="#BA1B30" strokeWidth="1.2" opacity="0.85" />
+              <path d="M 780,290 Q 880,280 890,360 Q 830,410 770,370 Z" fill="url(#mapGradient)" stroke="#BA1B30" strokeWidth="1.2" opacity="0.85" />
 
               <path d="M 485,135 Q 502,150 520,165" fill="none" stroke="#60A5FA" strokeWidth="1.5" strokeDasharray="4 4" opacity="0.7" />
               <path d="M 520,165 Q 600,170 675,195" fill="none" stroke="#60A5FA" strokeWidth="1.5" strokeDasharray="4 4" opacity="0.7" />
@@ -171,9 +171,9 @@ export default function ContactWorldMap({ onSelectLocation }) {
                   <g key={loc.id} className="cursor-pointer" onClick={() => setSelectedId(loc.id)}>
                     <circle cx={loc.coords.x} cy={loc.coords.y} r={isSelected ? 18 : 12} fill="none" stroke={isSelected ? "#38BDF8" : "#60A5FA"} strokeWidth="1.5" opacity="0.8" className="animate-ping" style={{ transformOrigin: `${loc.coords.x}px ${loc.coords.y}px`, animationDuration: "2.5s" }} />
                     <circle cx={loc.coords.x} cy={loc.coords.y} r={isSelected ? 14 : 9} fill={isSelected ? "#38BDF8" : "#2563EB"} opacity="0.4" />
-                    <circle cx={loc.coords.x} cy={loc.coords.y} r={isSelected ? 6.5 : 4.5} fill={isSelected ? "#FFFFFF" : "#93C5FD"} stroke="#091F5C" strokeWidth="1.5" />
+                    <circle cx={loc.coords.x} cy={loc.coords.y} r={isSelected ? 6.5 : 4.5} fill={isSelected ? "#FFFFFF" : "#93C5FD"} stroke="#DD2A40" strokeWidth="1.5" />
                     <g transform={`translate(${loc.coords.x}, ${loc.coords.y - 14})`}>
-                      <rect x="-36" y="-16" width="72" height="18" rx="9" fill={isSelected ? "#0284C7" : "#091F5C"} stroke={isSelected ? "#38BDF8" : "#1E3778"} strokeWidth="1" />
+                      <rect x="-36" y="-16" width="72" height="18" rx="9" fill={isSelected ? "#0284C7" : "#DD2A40"} stroke={isSelected ? "#38BDF8" : "#22252A"} strokeWidth="1" />
                       <text x="0" y="-4" textAnchor="middle" fill="#FFFFFF" fontSize="9" fontWeight="bold" fontFamily="monospace">{loc.flag} {loc.code}</text>
                     </g>
                   </g>
@@ -182,7 +182,7 @@ export default function ContactWorldMap({ onSelectLocation }) {
             </svg>
           </div>
 
-          <div className="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-[#1E3778] text-xs font-mono text-blue-200">
+          <div className="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-[#22252A] text-xs font-mono text-blue-200">
             <div className="flex items-center gap-4">
               <span className="flex items-center gap-1.5">
                 <span className="w-2.5 h-2.5 rounded-full bg-sky-400" />
@@ -202,8 +202,8 @@ export default function ContactWorldMap({ onSelectLocation }) {
         </div>
 
         <div className="lg:col-span-5 space-y-4">
-          <div className="p-6 rounded-2xl bg-gradient-to-br from-[#091F5C] to-[#132759] text-white border border-[#1E3778] shadow-xl space-y-5">
-            <div className="flex items-start justify-between gap-3 pb-3 border-b border-[#1E3778]">
+          <div className="p-6 rounded-2xl bg-gradient-to-br from-[#DD2A40] to-[#22252A] text-white border border-[#22252A] shadow-xl space-y-5">
+            <div className="flex items-start justify-between gap-3 pb-3 border-b border-[#22252A]">
               <div>
                 <div className="flex items-center gap-2">
                   <span className="text-2xl">{selectedLocation.flag}</span>
@@ -258,7 +258,7 @@ export default function ContactWorldMap({ onSelectLocation }) {
               </a>
             </div>
 
-            <div className="pt-2 border-t border-[#1E3778] flex items-center justify-between text-[11px] font-mono text-blue-200/80">
+            <div className="pt-2 border-t border-[#22252A] flex items-center justify-between text-[11px] font-mono text-blue-200/80">
               <span className="flex items-center gap-1.5">
                 <Clock className="w-3.5 h-3.5 text-blue-300" /> Timezone: {selectedLocation.timezone}
               </span>
@@ -275,12 +275,12 @@ export default function ContactWorldMap({ onSelectLocation }) {
                 onClick={() => setSelectedId(loc.id)}
                 className={`p-3 rounded-xl border text-left transition-all ${
                   loc.id === selectedId
-                    ? "bg-[#334DAF]/10 dark:bg-[#7096D1]/15 border-[#334DAF] dark:border-[#7096D1]"
+                    ? "bg-[#DD2A40]/10 dark:bg-[#FF3333]/15 border-[#DD2A40] dark:border-[#FF3333]"
                     : "glass-panel border-surface-border hover:bg-surface-raised"
                 }`}
               >
                 <div className="text-base mb-1">{loc.flag}</div>
-                <div className="text-xs font-bold text-slate-900 dark:text-white truncate">{loc.name}</div>
+                <div className="text-xs font-bold text-black dark:text-white dark:text-white truncate">{loc.name}</div>
               </button>
             ))}
           </div>

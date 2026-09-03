@@ -17,8 +17,8 @@ export default class ErrorBoundary extends React.Component {
   render() {
     if (this.state.hasError) {
       return (
-        <div className="min-h-screen flex items-center justify-center p-6 bg-[#101E42] text-white">
-          <div className="max-w-lg p-8 rounded-3xl bg-[#091F5C] border border-[#7096D1]/30 shadow-2xl text-center space-y-4">
+        <div className="min-h-screen flex items-center justify-center p-6 bg-[#000000] text-white">
+          <div className="max-w-lg p-8 rounded-3xl bg-[#DD2A40] border border-[#FF3333]/30 shadow-2xl text-center space-y-4">
             <h2 className="text-2xl font-bold text-[#38BDF8]">Eagle Compliance System Recovery</h2>
             <p className="text-xs text-slate-300">
               An unexpected render error occurred. Click below to reload the platform cleanly.
@@ -28,7 +28,7 @@ export default class ErrorBoundary extends React.Component {
             </div>
             <button
               onClick={() => { this.setState({ hasError: false }); window.location.reload(); }}
-              className="px-6 py-2.5 rounded-xl bg-[#334DAF] text-white font-bold text-xs shadow-md hover:bg-[#38BDF8] hover:text-[#101E42] transition-all"
+              className="px-6 py-2.5 rounded-xl bg-[#DD2A40] text-white font-bold text-xs shadow-md hover:bg-[#38BDF8] hover:text-[#000000] transition-all"
             >
               Reload Platform
             </button>

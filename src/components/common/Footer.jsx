@@ -48,11 +48,11 @@ export default function Footer({ onNavigate }) {
   const f = t.footer || {};
 
   return (
-    <footer className="w-full bg-[#091F5C] dark:bg-[#101E42] text-slate-300 border-t border-[#1E3778] pt-10 pb-8 transition-colors duration-300">
+    <footer className="w-full bg-[#DD2A40] dark:bg-[#000000] text-slate-300 border-t border-[#22252A] pt-10 pb-8 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Practice Locations Bar */}
-        <div className="mb-8 pb-5 border-b border-[#1E3778] flex flex-col md:flex-row md:items-center justify-between gap-3">
+        <div className="mb-8 pb-5 border-b border-[#22252A] flex flex-col md:flex-row md:items-center justify-between gap-3">
           <div className="flex items-center gap-2">
             <Globe2 className="w-4 h-4 text-sky-400 shrink-0" />
             <span className="text-xs sm:text-sm font-semibold tracking-wider text-slate-200">
@@ -62,21 +62,21 @@ export default function Footer({ onNavigate }) {
           <div className="flex flex-wrap items-center gap-2 text-xs font-medium text-white">
             <button 
               onClick={() => onNavigate('contact')} 
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#1E3778] hover:bg-[#28489d] border border-blue-400/30 shadow-xs transition-all text-left cursor-pointer"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#22252A] hover:bg-[#BA1B30] border border-blue-400/30 shadow-xs transition-all text-left cursor-pointer"
             >
               <span>🇬🇧</span>
               <span><strong>{t.common?.uk || 'United Kingdom'}</strong></span>
             </button>
             <button 
               onClick={() => onNavigate('contact')} 
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#1E3778] hover:bg-[#28489d] border border-blue-400/30 shadow-xs transition-all text-left cursor-pointer"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#22252A] hover:bg-[#BA1B30] border border-blue-400/30 shadow-xs transition-all text-left cursor-pointer"
             >
               <span>🇮🇹</span>
               <span><strong>{t.common?.italy || 'Italy'}</strong></span>
             </button>
             <button 
               onClick={() => onNavigate('contact')} 
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#1E3778] hover:bg-[#28489d] border border-blue-400/30 shadow-xs transition-all text-left cursor-pointer"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#22252A] hover:bg-[#BA1B30] border border-blue-400/30 shadow-xs transition-all text-left cursor-pointer"
             >
               <span>🇵🇰</span>
               <span><strong>{t.common?.pakistan || 'Pakistan'}</strong></span>
@@ -85,7 +85,7 @@ export default function Footer({ onNavigate }) {
         </div>
 
         {/* 5-Column High-Density Balanced Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 lg:gap-5 pb-8 border-b border-[#1E3778] items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 lg:gap-5 pb-8 border-b border-[#22252A] items-start">
           
           {/* Col 1: Brand & Identity (lg:col-span-3) */}
           <div className="lg:col-span-3 space-y-3">
@@ -123,7 +123,7 @@ export default function Footer({ onNavigate }) {
               </a>
               <a
                 href="mailto:info@eaglecomply.com"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#1E3778] hover:bg-[#28489d] text-white text-xs font-medium border border-blue-400/30 transition-colors"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#22252A] hover:bg-[#BA1B30] text-white text-xs font-medium border border-blue-400/30 transition-colors"
               >
                 <Mail className="w-3.5 h-3.5 text-blue-300" />
                 <span>{f.emailDirect || 'Email Us'}</span>
@@ -132,7 +132,7 @@ export default function Footer({ onNavigate }) {
                 href="https://www.linkedin.com/company/eaglecomply/?viewAsMember=true"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#1E3778] hover:bg-[#28489d] text-white text-xs font-medium border border-blue-400/30 transition-colors"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#22252A] hover:bg-[#BA1B30] text-white text-xs font-medium border border-blue-400/30 transition-colors"
               >
                 <LinkedInIcon className="w-3.5 h-3.5 text-blue-300" />
                 <span>LinkedIn</span>
@@ -283,7 +283,7 @@ export default function Footer({ onNavigate }) {
         </div>
 
         {/* Streamlined Disclaimers Note in Natural Sequence */}
-        <div className="py-4 border-b border-[#1E3778]/50 text-xs text-slate-300 leading-relaxed space-y-1.5">
+        <div className="py-4 border-b border-[#22252A]/50 text-xs text-slate-300 leading-relaxed space-y-1.5">
           <p>
             <strong className="text-amber-300 font-semibold">Statutory Disclaimers:</strong> We do not provide financial promotion in the UK. We do not provide accountancy and tax services.
           </p>
