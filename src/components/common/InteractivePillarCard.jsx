@@ -14,7 +14,7 @@ export default function InteractivePillarCard({
   return (
     <div 
       onClick={onClick}
-      className="group relative rounded-3xl overflow-hidden glass-panel border border-surface-border hover:border-[#E31F1F] dark:hover:border-[#FF3333] shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer flex flex-col justify-between min-h-[340px]"
+      className="group relative rounded-3xl overflow-hidden glass-panel border border-surface-border hover:border-[#334DAF] dark:hover:border-[#7096D1] shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer flex flex-col justify-between min-h-[340px]"
     >
       {/* Background Image with Dynamic Gradient & Hover Zoom */}
       <div className="absolute inset-0 overflow-hidden">
@@ -29,7 +29,7 @@ export default function InteractivePillarCard({
       {/* Top Header Cluster */}
       <div className="relative z-10 p-6 flex items-start justify-between gap-3">
         <div>
-          <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-[#E31F1F] dark:text-[#FF3333] block">
+          <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-[#334DAF] dark:text-[#7096D1] block">
             {category}
           </span>
           <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-surface-subtle border border-surface-border text-slate-700 dark:text-slate-300 font-semibold mt-1 inline-block">
@@ -37,14 +37,14 @@ export default function InteractivePillarCard({
           </span>
         </div>
 
-        <div className="w-8 h-8 rounded-full bg-surface-subtle border border-surface-border flex items-center justify-center text-[#7D797A] group-hover:bg-[#E31F1F] group-hover:text-white dark:group-hover:bg-[#FF3333] dark:group-hover:text-[#030303] transition-colors">
+        <div className="w-8 h-8 rounded-full bg-surface-subtle border border-surface-border flex items-center justify-center text-slate-500 group-hover:bg-[#334DAF] group-hover:text-white dark:group-hover:bg-[#7096D1] dark:group-hover:text-[#101E42] transition-colors">
           <ArrowRight className="w-4 h-4 rtl:rotate-180 group-hover:translate-x-0.5 transition-transform" />
         </div>
       </div>
 
       {/* Bottom Content Cluster */}
       <div className="relative z-10 p-6 pt-0 space-y-3">
-        <h3 className="text-xl font-bold text-black dark:text-white dark:text-white group-hover:text-[#E31F1F] dark:group-hover:text-[#FF3333] transition-colors">
+        <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-[#334DAF] dark:group-hover:text-[#7096D1] transition-colors">
           {title}
         </h3>
         
@@ -55,8 +55,8 @@ export default function InteractivePillarCard({
         {/* Live Metric / Capability Pill */}
         {stats && (
           <div className="pt-3 border-t border-surface-border/60 flex items-center justify-between text-[11px] font-mono">
-            <span className="text-[#7D797A]">{stats.label}</span>
-            <span className="font-bold text-[#E31F1F] dark:text-[#FF3333]">{stats.value}</span>
+            <span className="text-slate-400">{stats.label}</span>
+            <span className="font-bold text-[#334DAF] dark:text-[#7096D1]">{stats.value}</span>
           </div>
         )}
       </div>

@@ -4,43 +4,41 @@
 
 @layer base {
   :root {
-    --color-surface-base: #FFFFFF;        /* Sokin Pure White */
-    --color-surface-raised: #FFFFFF;      /* Sokin Card White */
-    --color-surface-subtle: #F5F3F2;      /* Sokin Light Gray Background */
-    --color-surface-border: #E4E4E4;      /* Sokin Border Light */
-    --color-text-primary: #000000;        /* Sokin Black Headings */
-    --color-text-body: #131313;           /* Sokin Black Body */
-    --color-text-secondary: #7D797A;      /* Sokin Muted Text */
-    --color-brand-primary: #E31F1F;       /* Sokin Signature Red */
-    --color-brand-accent: #FF3333;        /* Sokin Red-Orange */
-    --color-brand-highlight: #560101;     /* Sokin Bordeaux */
+    --color-surface-base: #F9FBFF;
+    --color-surface-raised: #FFFFFF;
+    --color-surface-subtle: #E8F2FE;
+    --color-surface-border: #D0E4FE;
+    --color-text-primary: #091F5C;
+    --color-text-secondary: #334DAF;
+    --color-brand-primary: #091F5C;
+    --color-brand-accent: #334DAF;
+    --color-brand-highlight: #7096D1;
   }
 
   .dark {
-    --color-surface-base: #030303;        /* Sokin Dark Background */
-    --color-surface-raised: #131313;      /* Sokin Card Dark */
-    --color-surface-subtle: #1E1E1E;      /* Sokin Container Dark */
-    --color-surface-border: #292929;      /* Sokin Border Dark */
-    --color-text-primary: #FFFFFF;        /* Sokin White Text */
-    --color-text-body: #F8F8F8;           /* Sokin Off-White */
-    --color-text-secondary: #868686;      /* Sokin Muted Dark */
-    --color-brand-primary: #E31F1F;       /* Sokin Red */
-    --color-brand-accent: #FF3333;        /* Sokin Accent */
-    --color-brand-highlight: #FFBEBE;     /* Sokin Pink */
+    /* Soft, pleasant, modern midnight-slate palette (reduced intensity & less harsh) */
+    --color-surface-base: #101E42;
+    --color-surface-raised: #16295C;
+    --color-surface-subtle: #1E3778;
+    --color-surface-border: #2B4E9E;
+    --color-text-primary: #FFFFFF;
+    --color-text-secondary: #D0E4FE;
+    --color-brand-primary: #334DAF;
+    --color-brand-accent: #7096D1;
+    --color-brand-highlight: #D0E4FE;
   }
 
   body {
     background-color: var(--color-surface-base);
-    color: var(--color-text-body);
+    color: var(--color-text-primary);
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     transition: background-color 0.25s ease, color 0.25s ease;
     overflow-x: hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    color: var(--color-text-primary);
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.02em;
   }
 
   [dir="rtl"] {
@@ -49,91 +47,69 @@
 }
 
 .glass-panel {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.88);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid #E4E4E4;
+  border: 1px solid rgba(208, 228, 254, 0.9);
 }
 
 .dark .glass-panel {
-  background: rgba(19, 19, 19, 0.94);
+  background: rgba(22, 41, 92, 0.82);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid #262626;
+  border: 1px solid rgba(112, 150, 209, 0.28);
 }
 
 .glass-panel-accent {
-  background: #F5F3F2;
-  border: 1px solid #E4E4E4;
-  box-shadow: 0 10px 30px -10px rgba(227, 31, 31, 0.12);
+  background: rgba(232, 242, 254, 0.9);
+  border: 1px solid rgba(51, 77, 175, 0.3);
+  box-shadow: 0 10px 30px -10px rgba(51, 77, 175, 0.15);
 }
 
 .dark .glass-panel-accent {
-  background: #1E1E1E;
-  border: 1px solid #2E2E2E;
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
+  background: rgba(30, 55, 120, 0.85);
+  border: 1px solid rgba(112, 150, 209, 0.45);
+  box-shadow: 0 10px 30px -10px rgba(51, 77, 175, 0.3);
 }
 
 .brand-gradient-text {
-  background: linear-gradient(135deg, #E31F1F 0%, #FF3333 100%);
+  background: linear-gradient(135deg, #091F5C 0%, #334DAF 50%, #7096D1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .dark .brand-gradient-text {
-  background: linear-gradient(135deg, #FFFFFF 0%, #FFBEBE 40%, #E31F1F 100%);
+  background: linear-gradient(135deg, #FFFFFF 0%, #D0E4FE 50%, #7096D1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .brand-gradient-btn {
-  background: #E31F1F;
+  background: linear-gradient(135deg, #091F5C 0%, #334DAF 100%);
   color: #FFFFFF;
-  border-radius: 99999px;
-  font-weight: 600;
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .brand-gradient-btn:hover {
-  background: #B42318;
-  box-shadow: 0 4px 18px rgba(227, 31, 31, 0.35);
-  transform: translateY(-1px);
+  background: linear-gradient(135deg, #122D7A 0%, #3D5CD4 100%);
 }
 
 .dark .brand-gradient-btn {
-  background: #E31F1F;
+  background: linear-gradient(135deg, #334DAF 0%, #7096D1 100%);
   color: #FFFFFF;
 }
 
 .dark .brand-gradient-btn:hover {
-  background: #FF3333;
-  box-shadow: 0 4px 20px rgba(227, 31, 31, 0.5);
-}
-
-/* Sokin Secondary Outline Button */
-.sokin-btn-outline {
-  background: transparent;
-  color: var(--color-text-primary);
-  border: 1px solid #E4E4E4;
-  border-radius: 99999px;
-  font-weight: 600;
-  transition: all 0.2s ease;
-}
-
-.dark .sokin-btn-outline {
-  border-color: #292929;
-  color: #FFFFFF;
-}
-
-.sokin-btn-outline:hover {
-  border-color: #E31F1F;
-  color: #E31F1F;
+  background: linear-gradient(135deg, #3D5CD4 0%, #8CB1EA 100%);
 }
 
 /* Infinite Seamless Marquee Animation */
 @keyframes marqueeSeamlessLTR {
-  0% { transform: translateX(-50%); }
-  100% { transform: translateX(0%); }
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 .animate-marquee-seamless {
@@ -147,14 +123,17 @@
   animation-play-state: paused;
 }
 
+
 /* --- GLOBAL SCROLL REVEAL SYSTEM --- */
-.reveal-base { visibility: hidden; }
+.reveal-base {
+  visibility: hidden;
+}
 
 .reveal-up, .reveal-left, .reveal-right, .reveal-scale {
   opacity: 0;
   transition-property: opacity, transform;
   transition-duration: 1100ms;
-  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1); /* Premium Apple-like ease */
   will-change: opacity, transform;
 }
 
@@ -163,6 +142,7 @@
 .reveal-right { transform: translateX(50px); }
 .reveal-scale { transform: scale(0.94); }
 
+/* Apply revealed state */
 .is-revealed.reveal-up,
 .is-revealed.reveal-left,
 .is-revealed.reveal-right {
@@ -177,12 +157,14 @@
   visibility: visible;
 }
 
+/* Stagger Utilities */
 .delay-100 { transition-delay: 100ms !important; }
 .delay-200 { transition-delay: 200ms !important; }
 .delay-300 { transition-delay: 300ms !important; }
 .delay-400 { transition-delay: 400ms !important; }
 .delay-500 { transition-delay: 500ms !important; }
 
+/* Accessibility: Respect Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
   .reveal-up, .reveal-left, .reveal-right, .reveal-scale {
     transition-duration: 600ms;
@@ -190,9 +172,14 @@
   }
 }
 
+/* Seamless Marquee Animations */
 @keyframes marquee-ltr {
-  0% { transform: translateX(-50%); }
-  100% { transform: translateX(0%); }
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 .animate-marquee-ltr {
@@ -205,6 +192,7 @@
   animation-play-state: paused;
 }
 
+/* Universal Responsive & Extended Screen Optimizations */
 html {
   scroll-behavior: smooth;
   text-rendering: optimizeLegibility;
@@ -212,26 +200,35 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Fluid responsive typography scaling */
 @media (max-width: 640px) {
-  body { font-size: 14px; }
+  body {
+    font-size: 14px;
+  }
 }
 
+/* Extended Displays (4K / Ultrawide) containment */
 @media (min-width: 2000px) {
-  .max-w-7xl, .max-w-6xl, .max-w-5xl { max-width: 1540px; }
+  .max-w-7xl, .max-w-6xl, .max-w-5xl {
+    max-width: 1540px;
+  }
 }
 
+/* Hardware accelerated smooth marquee */
 .animate-marquee-ltr {
   will-change: transform;
   transform: translateZ(0);
 }
 
+
+/* Premium seamless motion graphics used across interior pages */
 @keyframes eagleFloat {
   0%,100% { transform: translate3d(0,0,0) rotate(0deg); }
   50% { transform: translate3d(0,-8px,0) rotate(0.5deg); }
 }
 @keyframes eaglePulseGlow {
-  0%,100% { box-shadow: 0 0 0 0 rgba(227,31,31,0.15); }
-  50% { box-shadow: 0 0 0 12px rgba(227,31,31,0); }
+  0%,100% { box-shadow: 0 0 0 0 rgba(51,77,175,0.08); }
+  50% { box-shadow: 0 0 0 12px rgba(51,77,175,0); }
 }
 @keyframes eagleShimmer {
   0% { background-position: -220% 0; }

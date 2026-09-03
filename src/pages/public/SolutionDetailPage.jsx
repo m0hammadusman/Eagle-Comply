@@ -37,20 +37,20 @@ export default function SolutionDetailPage({ params, onNavigate, onOpenConsultat
       {/* Hero Header */}
       <div className="py-8 border-b border-surface-border mb-12">
         <div className="flex items-center gap-3 mb-3">
-          <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#E31F1F] dark:text-[#FF3333]">
+          <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#334DAF] dark:text-[#7096D1]">
             {solution.category}
           </span>
-          <span className="text-xs font-mono px-2.5 py-0.5 rounded bg-[#E31F1F]/10 dark:bg-[#FF3333]/15 text-[#E31F1F] dark:text-[#FF3333] border border-[#E31F1F]/30 dark:border-[#FF3333]/40">
+          <span className="text-xs font-mono px-2.5 py-0.5 rounded bg-[#334DAF]/10 dark:bg-[#7096D1]/15 text-[#334DAF] dark:text-[#7096D1] border border-[#334DAF]/30 dark:border-[#7096D1]/40">
             {solution.badge}
           </span>
         </div>
-        <h1 className="font-sans tracking-tight text-3xl md:text-4xl lg:text-5xl font-bold text-black dark:text-white dark:text-white">
+        <h1 className="font-sans tracking-tight text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white">
           {solution.name}
         </h1>
-        <p className="text-lg text-[#E31F1F] dark:text-[#FF3333] font-sans tracking-tight italic mt-2">
+        <p className="text-lg text-[#334DAF] dark:text-[#7096D1] font-sans tracking-tight italic mt-2">
           "{solution.valueProp}"
         </p>
-        <p className="text-sm sm:text-base text-slate-600 dark:text-[#7D797A] mt-4 max-w-4xl leading-relaxed">
+        <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 mt-4 max-w-4xl leading-relaxed">
           {solution.shortDesc}
         </p>
 
@@ -58,7 +58,7 @@ export default function SolutionDetailPage({ params, onNavigate, onOpenConsultat
         <div className="flex flex-wrap gap-4 mt-8">
           <button
             onClick={onOpenConsultation}
-            className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#E31F1F] to-[#E31F1F] dark:from-[#E31F1F] dark:to-[#FF3333] text-white dark:text-[#030303] font-bold text-xs shadow-lg hover:shadow-[#E31F1F]/20 transition-all flex items-center gap-2 cursor-pointer"
+            className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#091F5C] to-[#334DAF] dark:from-[#334DAF] dark:to-[#7096D1] text-white dark:text-[#101E42] font-bold text-xs shadow-lg hover:shadow-[#334DAF]/20 transition-all flex items-center gap-2 cursor-pointer"
           >
             <Calendar className="w-4 h-4" />
             <span>{detailCommon?.bookConsultation || 'Book Partner Consultation'}</span>
@@ -72,13 +72,13 @@ export default function SolutionDetailPage({ params, onNavigate, onOpenConsultat
           
           {/* Challenges Section */}
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold text-black dark:text-white dark:text-white">
+            <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
               {detailCommon?.challenges || 'Primary Regulatory Challenges'}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {(solution.challenges || []).map((ch, i) => (
                 <div key={i} className="p-4 rounded-2xl bg-surface-subtle border border-surface-border flex items-start gap-3">
-                  <div className="w-5 h-5 rounded-full bg-[#E31F1F]/10 dark:bg-[#FF3333]/20 text-[#E31F1F] dark:text-[#FF3333] flex items-center justify-center shrink-0 mt-0.5 text-xs font-mono font-bold">
+                  <div className="w-5 h-5 rounded-full bg-[#334DAF]/10 dark:bg-[#7096D1]/20 text-[#334DAF] dark:text-[#7096D1] flex items-center justify-center shrink-0 mt-0.5 text-xs font-mono font-bold">
                     {i + 1}
                   </div>
                   <p className="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">{ch}</p>
@@ -89,7 +89,7 @@ export default function SolutionDetailPage({ params, onNavigate, onOpenConsultat
 
           {/* Deliverables Section */}
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold text-black dark:text-white dark:text-white">
+            <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
               {detailCommon?.deliverables || 'Core Institutional Deliverables'}
             </h2>
             <div className="space-y-3">
@@ -104,18 +104,18 @@ export default function SolutionDetailPage({ params, onNavigate, onOpenConsultat
 
           {/* Process / Steps */}
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold text-black dark:text-white dark:text-white">
+            <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
               {detailCommon?.methodology || 'Implementation Methodology'}
             </h2>
             <div className="space-y-4">
               {(solution.process || []).map((step) => (
                 <div key={step.step} className="p-5 rounded-2xl glass-panel border border-surface-border flex gap-4 items-start">
-                  <div className="w-8 h-8 rounded-xl bg-[#E31F1F] dark:bg-[#FF3333] text-white dark:text-[#030303] font-bold font-mono text-sm flex items-center justify-center shrink-0">
+                  <div className="w-8 h-8 rounded-xl bg-[#334DAF] dark:bg-[#7096D1] text-white dark:text-[#101E42] font-bold font-mono text-sm flex items-center justify-center shrink-0">
                     {step.step}
                   </div>
                   <div>
-                    <h3 className="text-base font-bold text-black dark:text-white dark:text-white">{step.title}</h3>
-                    <p className="text-xs text-slate-600 dark:text-[#7D797A] mt-1 leading-relaxed">{step.desc}</p>
+                    <h3 className="text-base font-bold text-slate-900 dark:text-white">{step.title}</h3>
+                    <p className="text-xs text-slate-600 dark:text-slate-400 mt-1 leading-relaxed">{step.desc}</p>
                   </div>
                 </div>
               ))}
@@ -128,28 +128,28 @@ export default function SolutionDetailPage({ params, onNavigate, onOpenConsultat
           
           {/* Lead Partner Card */}
           <div className="p-6 rounded-3xl glass-panel border border-surface-border shadow-md space-y-4">
-            <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#E31F1F] dark:text-[#FF3333]">
+            <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#334DAF] dark:text-[#7096D1]">
               {detailCommon?.leadExpert || 'Lead Practice Partner'}
             </span>
             <div className="flex items-center gap-4">
               <img 
                 src={`${import.meta.env.BASE_URL}${(leadExpert.photo || '').replace(/^\/+/, '')}`} 
                 alt={leadExpert.name}
-                className="w-14 h-14 rounded-2xl object-cover object-top border-2 border-[#E31F1F]/20 dark:border-[#FF3333]/20 bg-surface-subtle"
+                className="w-14 h-14 rounded-2xl object-cover object-top border-2 border-[#334DAF]/20 dark:border-[#7096D1]/20 bg-surface-subtle"
               />
               <div>
-                <h4 className="text-base font-bold text-black dark:text-white dark:text-white">{leadExpert.name}</h4>
-                <p className="text-xs text-[#E31F1F] dark:text-[#FF3333]">{leadExpert.title}</p>
+                <h4 className="text-base font-bold text-slate-900 dark:text-white">{leadExpert.name}</h4>
+                <p className="text-xs text-[#334DAF] dark:text-[#7096D1]">{leadExpert.title}</p>
               </div>
             </div>
-            <p className="text-xs text-slate-600 dark:text-[#7D797A] leading-relaxed">
+            <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
               {leadExpert.bio}
             </p>
           </div>
 
           {/* Related Regulations */}
           <div className="p-6 rounded-3xl glass-panel border border-surface-border shadow-md space-y-4">
-            <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#E31F1F] dark:text-[#FF3333]">
+            <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#334DAF] dark:text-[#7096D1]">
               {detailCommon?.relatedRegulations || 'Primary Statutory Frameworks'}
             </span>
             <div className="space-y-2">
@@ -157,10 +157,10 @@ export default function SolutionDetailPage({ params, onNavigate, onOpenConsultat
                 <div 
                   key={r.id}
                   onClick={() => onNavigate('regulation-detail', { id: r.id })}
-                  className="p-3 rounded-xl bg-surface-subtle border border-surface-border hover:border-[#E31F1F] cursor-pointer flex items-center justify-between transition-all"
+                  className="p-3 rounded-xl bg-surface-subtle border border-surface-border hover:border-[#334DAF] cursor-pointer flex items-center justify-between transition-all"
                 >
                   <span className="text-xs font-bold text-slate-800 dark:text-slate-200">{r.name}</span>
-                  <ArrowRight className="w-3.5 h-3.5 text-[#E31F1F] dark:text-[#FF3333] rtl:rotate-180" />
+                  <ArrowRight className="w-3.5 h-3.5 text-[#334DAF] dark:text-[#7096D1] rtl:rotate-180" />
                 </div>
               ))}
             </div>

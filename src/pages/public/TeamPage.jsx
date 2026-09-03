@@ -31,7 +31,7 @@ export default function TeamPage({ onNavigate, onOpenConsultation }) {
     <div className="w-full space-y-16 animate-fade-in">
       
       {/* 1. Full-Width Edge-to-Edge Background Hero Section */}
-      <section className="relative w-full min-h-[480px] sm:min-h-[540px] lg:min-h-[600px] flex items-center justify-center border-b border-[#1E1E1E] overflow-hidden">
+      <section className="relative w-full min-h-[480px] sm:min-h-[540px] lg:min-h-[600px] flex items-center justify-center border-b border-[#1E3778] overflow-hidden">
         
         {/* Full-Cover Background Image Layer from Left to Right */}
         <div className="absolute inset-0 w-full h-full z-0">
@@ -41,14 +41,14 @@ export default function TeamPage({ onNavigate, onOpenConsultation }) {
             className="w-full h-full object-cover object-top"
           />
           {/* Executive Backdrop Overlay for Sharp Readable Text and Clear Visibility */}
-          <div className="absolute inset-0 bg-gradient-to-b from-[#E31F1F]/80 via-[#E31F1F]/45 to-[#E31F1F]/85 backdrop-brightness-90" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#091F5C]/80 via-[#091F5C]/45 to-[#091F5C]/85 backdrop-brightness-90" />
         </div>
 
         {/* Hero Content in the Middle of Hero Section */}
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 text-center space-y-4">
           
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/20 backdrop-blur-md text-white text-xs font-mono font-bold tracking-wider uppercase border border-white/30 shadow-lg">
-            <Users className="w-3.5 h-3.5 text-[#FF3333]" />
+            <Users className="w-3.5 h-3.5 text-sky-300" />
             <span>{tp.tag || 'OUR COMPLIANCE LEADERSHIP'}</span>
           </div>
 
@@ -56,7 +56,7 @@ export default function TeamPage({ onNavigate, onOpenConsultation }) {
             {tp.title || 'Senior Practice Directors & Regulatory Counsel'}
           </h1>
 
-          <p className="text-sm sm:text-base lg:text-lg text-neutral-100 font-medium leading-relaxed max-w-2xl mx-auto drop-shadow-md">
+          <p className="text-sm sm:text-base lg:text-lg text-blue-50 font-medium leading-relaxed max-w-2xl mx-auto drop-shadow-md">
             {tp.subtitle || 'Directing multi-jurisdictional AML/CFT frameworks, regulatory licensing, statutory governance, corporate legal opinions, and prudential financial assurance.'}
           </p>
 
@@ -75,13 +75,13 @@ export default function TeamPage({ onNavigate, onOpenConsultation }) {
       {/* Detailed Senior Practice Directory Grid */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         <div className="text-center max-w-2xl mx-auto space-y-2">
-          <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#E31F1F] dark:text-[#FF3333]">
+          <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#334DAF] dark:text-[#7096D1]">
             {tp.dossierTag || 'Executive Dossiers'}
           </span>
-          <h2 className="text-2xl sm:text-3xl font-bold text-black dark:text-white dark:text-white">
+          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">
             {tp.dossierTitle || 'Comprehensive Practice Profiles'}
           </h2>
-          <p className="text-xs text-[#7D797A]">
+          <p className="text-xs text-slate-500">
             {tp.dossierSubtitle || 'Select any director to view their detailed work experience, certifications, and research publications.'}
           </p>
         </div>
@@ -93,7 +93,7 @@ export default function TeamPage({ onNavigate, onOpenConsultation }) {
             return (
               <div
                 key={exp.id}
-                className="p-8 rounded-3xl glass-panel border border-surface-border shadow-lg space-y-6 flex flex-col justify-between hover:border-[#E31F1F] dark:hover:border-[#FF3333] transition-all group text-left rtl:text-right"
+                className="p-8 rounded-3xl glass-panel border border-surface-border shadow-lg space-y-6 flex flex-col justify-between hover:border-[#334DAF] dark:hover:border-[#7096D1] transition-all group text-left rtl:text-right"
               >
                 <div className="space-y-4">
                   
@@ -103,21 +103,21 @@ export default function TeamPage({ onNavigate, onOpenConsultation }) {
                       <img 
                         src={photoSrc} 
                         alt={exp.name}
-                        className="w-20 h-20 rounded-2xl object-cover object-top shadow-md border-2 border-[#E31F1F]/20 dark:border-[#FF3333]/20 bg-surface-subtle"
+                        className="w-20 h-20 rounded-2xl object-cover object-top shadow-md border-2 border-[#334DAF]/20 dark:border-[#7096D1]/20 bg-surface-subtle"
                       />
-                      <span className="absolute -bottom-2 -right-1 rtl:-right-auto rtl:-left-1 px-2 py-0.5 rounded-full bg-[#E31F1F] text-white text-[9px] font-mono font-bold">
+                      <span className="absolute -bottom-2 -right-1 rtl:-right-auto rtl:-left-1 px-2 py-0.5 rounded-full bg-[#334DAF] text-white text-[9px] font-mono font-bold">
                         {tp.directorLabel || 'DIRECTOR'}
                       </span>
                     </div>
 
                     <div className="space-y-1">
-                      <h3 className="text-xl font-bold text-black dark:text-white dark:text-white group-hover:text-[#E31F1F] dark:group-hover:text-[#FF3333] transition-colors">
+                      <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-[#334DAF] dark:group-hover:text-[#7096D1] transition-colors">
                         {exp.name}
                       </h3>
-                      <p className="text-xs font-semibold text-[#E31F1F] dark:text-[#FF3333]">
+                      <p className="text-xs font-semibold text-[#334DAF] dark:text-[#7096D1]">
                         {exp.role}
                       </p>
-                      <div className="flex items-center gap-1.5 text-[11px] font-mono text-[#7D797A]">
+                      <div className="flex items-center gap-1.5 text-[11px] font-mono text-slate-500">
                         <MapPin className="w-3 h-3" />
                         <span>{exp.location || 'Global Practice'}</span>
                       </div>
@@ -131,7 +131,7 @@ export default function TeamPage({ onNavigate, onOpenConsultation }) {
 
                   {/* Core Specialisms */}
                   <div className="space-y-1.5 pt-2 border-t border-surface-border/60">
-                    <span className="text-[10px] font-mono font-bold uppercase text-[#7D797A]">
+                    <span className="text-[10px] font-mono font-bold uppercase text-slate-400">
                       {tp.disciplinesLabel || 'Primary Disciplines'}
                     </span>
                     <div className="flex flex-wrap gap-1.5">
@@ -141,7 +141,7 @@ export default function TeamPage({ onNavigate, onOpenConsultation }) {
                         </span>
                       ))}
                       {(exp.specialisms?.length || 0) > 3 && (
-                        <span className="text-[11px] px-2 py-1 rounded-lg bg-surface-subtle text-[#7D797A] font-mono">
+                        <span className="text-[11px] px-2 py-1 rounded-lg bg-surface-subtle text-slate-500 font-mono">
                           +{exp.specialisms.length - 3} more
                         </span>
                       )}
@@ -154,7 +154,7 @@ export default function TeamPage({ onNavigate, onOpenConsultation }) {
                 <div className="pt-4 border-t border-surface-border flex items-center justify-between gap-3">
                   <button
                     onClick={() => onNavigate('team-detail', { id: exp.id })}
-                    className="inline-flex items-center gap-2 text-xs font-bold text-[#E31F1F] dark:text-[#FF3333] hover:underline cursor-pointer"
+                    className="inline-flex items-center gap-2 text-xs font-bold text-[#334DAF] dark:text-[#7096D1] hover:underline cursor-pointer"
                   >
                     <span>{tp.viewProfile || 'View Profile'}</span>
                     <ArrowRight className="w-3.5 h-3.5 rtl:rotate-180" />
@@ -174,7 +174,7 @@ export default function TeamPage({ onNavigate, onOpenConsultation }) {
                     )}
                     <button
                       onClick={onOpenConsultation}
-                      className="px-3 py-2 rounded-xl bg-[#E31F1F] hover:bg-[#1E1E1E] text-white dark:bg-[#FF3333] dark:text-[#030303] text-xs font-bold shadow-sm transition-all cursor-pointer"
+                      className="px-3 py-2 rounded-xl bg-[#334DAF] hover:bg-[#253B8A] text-white dark:bg-[#7096D1] dark:text-[#101E42] text-xs font-bold shadow-sm transition-all cursor-pointer"
                     >
                       {tp.bookSession || 'Book Session'}
                     </button>
@@ -189,20 +189,20 @@ export default function TeamPage({ onNavigate, onOpenConsultation }) {
 
       {/* Bottom CTA Banner */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-[#E31F1F] via-[#131313] to-[#E31F1F] text-white shadow-2xl text-center space-y-4">
-          <span className="text-xs font-mono uppercase tracking-widest text-slate-300 font-bold inline-block px-3 py-1 rounded-full bg-white/10 border border-white/20">
+        <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-[#091F5C] via-[#16295C] to-[#334DAF] text-white shadow-2xl text-center space-y-4">
+          <span className="text-xs font-mono uppercase tracking-widest text-blue-200 font-bold inline-block px-3 py-1 rounded-full bg-white/10 border border-white/20">
             {tp.ctaTag || 'Institutional Advisory'}
           </span>
           <h2 className="text-2xl sm:text-3xl font-bold">
             {tp.ctaTitle || 'Retain Senior Compliance Directors for Your Board'}
           </h2>
-          <p className="text-xs sm:text-sm text-slate-200 max-w-xl mx-auto">
+          <p className="text-xs sm:text-sm text-blue-100/80 max-w-xl mx-auto">
             {tp.ctaDesc || 'Engage our senior practitioners for independent AML/CFT audits, regulatory authorization dossiers, and ongoing compliance oversight.'}
           </p>
           <div className="pt-2">
             <button
               onClick={onOpenConsultation}
-              className="px-8 py-3.5 rounded-xl bg-white text-[#E31F1F] font-bold text-xs shadow-xl hover:bg-[#F5F3F2] transition-all inline-flex items-center gap-2 cursor-pointer"
+              className="px-8 py-3.5 rounded-xl bg-white text-[#091F5C] font-bold text-xs shadow-xl hover:bg-blue-50 transition-all inline-flex items-center gap-2 cursor-pointer"
             >
               <Calendar className="w-4 h-4" />
               <span>{tp.ctaBtn || 'Schedule Initial Consultation'}</span>

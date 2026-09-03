@@ -103,15 +103,15 @@ function PipelineConsole() {
   const strokeDashoffset = circumference - (circumference * progress);
 
   return (
-    <div className="w-full max-w-5xl mx-auto rounded-[28px] glass-panel bg-white/90 dark:bg-[#030303] border border-[#E4E4E4] dark:border-[#1E1E1E]/80 dark:border-white/10 p-6 sm:p-10 shadow-2xl backdrop-blur-xl relative overflow-hidden transition-colors duration-300">
+    <div className="w-full max-w-5xl mx-auto rounded-[28px] glass-panel bg-white/90 dark:bg-[#0B1324] border border-slate-200/80 dark:border-white/10 p-6 sm:p-10 shadow-2xl backdrop-blur-xl relative overflow-hidden transition-colors duration-300">
       
       {/* Top Console Bar */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-6 border-b border-[#E4E4E4] dark:border-[#1E1E1E]/80 dark:border-white/10 mb-8">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg font-mono text-xs font-bold uppercase tracking-wider text-[#E31F1F] dark:text-[#E31F1F] bg-[#E31F1F]/10 dark:bg-[#E31F1F]/10 border border-[#E31F1F]/20 dark:border-[#E31F1F]/30">
-          <span className="w-2 h-2 rounded-full bg-[#E31F1F] dark:bg-[#E31F1F] animate-ping" />
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-6 border-b border-slate-200/80 dark:border-white/10 mb-8">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg font-mono text-xs font-bold uppercase tracking-wider text-[#334DAF] dark:text-cyan-400 bg-[#334DAF]/10 dark:bg-cyan-500/10 border border-[#334DAF]/20 dark:border-cyan-500/30">
+          <span className="w-2 h-2 rounded-full bg-[#334DAF] dark:bg-cyan-400 animate-ping" />
           <span>{ap.methodologyBadge || 'Methodology & Architecture'}</span>
         </div>
-        <div className="font-mono text-xs text-[#7D797A] dark:text-[#7D797A] flex items-center gap-1.5">
+        <div className="font-mono text-xs text-slate-500 dark:text-slate-400 flex items-center gap-1.5">
           <span>{ap.executionPipeline || 'EXECUTION PIPELINE:'}</span>
           <span className="text-emerald-600 dark:text-emerald-400 font-bold">{ap.activeStatus || 'ACTIVE'}</span>
         </div>
@@ -132,15 +132,15 @@ function PipelineConsole() {
                 onClick={() => handleStepClick(idx)}
                 className={`flex items-center gap-4 p-3.5 rounded-2xl border transition-all relative z-10 text-left ${
                   isActive
-                    ? 'bg-[#F5F3F2] dark:bg-[#131313] border-[#E31F1F]/40 dark:border-[#E31F1F]/40 shadow-lg'
+                    ? 'bg-blue-50/90 dark:bg-[#0F1E38] border-[#334DAF]/40 dark:border-cyan-500/40 shadow-lg'
                     : 'bg-transparent border-transparent hover:bg-slate-100/60 dark:hover:bg-white/5'
                 }`}
               >
                 <div
                   className={`w-8 h-8 rounded-xl font-mono text-xs font-bold flex items-center justify-center shrink-0 border transition-all ${
                     isActive
-                      ? 'bg-[#E31F1F] dark:bg-[#E31F1F] text-white dark:text-slate-950 border-[#E31F1F] dark:border-[#FF3333] scale-105 shadow-md shadow-red-500/20'
-                      : 'bg-slate-100 dark:bg-slate-800 text-[#7D797A] dark:text-[#7D797A] border-[#E4E4E4] dark:border-[#1E1E1E] dark:border-white/10'
+                      ? 'bg-[#091F5C] dark:bg-cyan-400 text-white dark:text-slate-950 border-[#091F5C] dark:border-cyan-300 scale-105 shadow-md shadow-blue-500/20'
+                      : 'bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 border-slate-200 dark:border-white/10'
                   }`}
                 >
                   0{idx + 1}
@@ -148,8 +148,8 @@ function PipelineConsole() {
                 <span
                   className={`text-sm font-semibold transition-colors ${
                     isActive
-                      ? 'text-[#E31F1F] dark:text-white font-bold'
-                      : 'text-slate-600 dark:text-[#7D797A]'
+                      ? 'text-[#091F5C] dark:text-white font-bold'
+                      : 'text-slate-600 dark:text-slate-400'
                   }`}
                 >
                   {item.title}
@@ -160,17 +160,17 @@ function PipelineConsole() {
         </div>
 
         {/* Right Active Showcase Hub */}
-        <div className="md:col-span-7 rounded-2xl p-6 sm:p-8 min-h-[360px] flex flex-col justify-between relative overflow-hidden bg-gradient-to-br from-[#F5F3F2] via-slate-50 to-[#FFF5F5] dark:from-[#131313] dark:via-[#030303] dark:to-[#030303] border border-[#E31F1F]/20 dark:border-[#E31F1F]/25 shadow-inner">
+        <div className="md:col-span-7 rounded-2xl p-6 sm:p-8 min-h-[360px] flex flex-col justify-between relative overflow-hidden bg-gradient-to-br from-blue-50/80 via-slate-50 to-indigo-50/40 dark:from-[#0E1A33] dark:via-[#0A1428] dark:to-[#060D1A] border border-[#334DAF]/20 dark:border-cyan-500/25 shadow-inner">
           <div className="space-y-4">
             <div className="flex items-center gap-4">
-              <div className="w-14 h-14 rounded-2xl bg-[#E31F1F]/10 dark:bg-[#E31F1F]/15 border border-[#E31F1F]/25 dark:border-[#E31F1F]/30 text-[#E31F1F] dark:text-[#E31F1F] flex items-center justify-center shrink-0 shadow-sm">
+              <div className="w-14 h-14 rounded-2xl bg-[#334DAF]/10 dark:bg-cyan-500/15 border border-[#334DAF]/25 dark:border-cyan-500/30 text-[#334DAF] dark:text-cyan-400 flex items-center justify-center shrink-0 shadow-sm">
                 <IconComponent className="w-7 h-7" />
               </div>
               <div>
-                <div className="font-mono text-xs font-bold text-[#E31F1F] dark:text-[#E31F1F] tracking-wider">
+                <div className="font-mono text-xs font-bold text-[#334DAF] dark:text-cyan-400 tracking-wider">
                   {currentItem.index}
                 </div>
-                <h3 className="text-xl sm:text-2xl font-bold text-black dark:text-white dark:text-white mt-0.5 leading-snug">
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mt-0.5 leading-snug">
                   {currentItem.title}
                 </h3>
               </div>
@@ -182,10 +182,10 @@ function PipelineConsole() {
           </div>
 
           {/* Telemetry Output Box with Progress Ring */}
-          <div className="mt-6 p-3.5 sm:p-4 rounded-xl bg-white/90 dark:bg-[#030303]/70 border border-dashed border-slate-300 dark:border-white/15 flex items-center justify-between gap-3 shadow-sm">
+          <div className="mt-6 p-3.5 sm:p-4 rounded-xl bg-white/90 dark:bg-[#030712]/70 border border-dashed border-slate-300 dark:border-white/15 flex items-center justify-between gap-3 shadow-sm">
             <div className="font-mono text-xs text-slate-600 dark:text-slate-300">
-              <span className="text-[#7D797A] uppercase text-[10px] block font-bold">{ap.deliverableLabel || 'DELIVERABLE:'}</span>
-              <span className="font-bold text-black dark:text-white dark:text-slate-100">{currentItem.output}</span>
+              <span className="text-slate-400 uppercase text-[10px] block font-bold">{ap.deliverableLabel || 'DELIVERABLE:'}</span>
+              <span className="font-bold text-slate-900 dark:text-slate-100">{currentItem.output}</span>
             </div>
 
             {/* Circular Timer Ring */}
@@ -199,7 +199,7 @@ function PipelineConsole() {
                   r="14"
                 />
                 <circle
-                  className="stroke-[#E31F1F] dark:stroke-cyan-400 fill-none transition-all duration-75"
+                  className="stroke-[#334DAF] dark:stroke-cyan-400 fill-none transition-all duration-75"
                   strokeWidth="3"
                   strokeDasharray="88"
                   strokeDashoffset={strokeDashoffset}
@@ -260,12 +260,12 @@ export default function AboutPage({ onNavigate, onOpenConsultation, onOpenQuote 
             
             {/* Left Content Column */}
             <div className="lg:col-span-7 space-y-5 text-left rtl:text-right">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#E31F1F]/10 dark:bg-[#FF3333]/15 border border-[#E31F1F]/25 dark:border-[#FF3333]/30 text-[#E31F1F] dark:text-[#E4E4E4] text-xs font-mono font-bold tracking-wider uppercase">
-                <Sparkles className="w-3.5 h-3.5 text-[#E31F1F] dark:text-[#FF3333]" />
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#334DAF]/10 dark:bg-[#7096D1]/15 border border-[#334DAF]/25 dark:border-[#7096D1]/30 text-[#091F5C] dark:text-[#D0E4FE] text-xs font-mono font-bold tracking-wider uppercase">
+                <Sparkles className="w-3.5 h-3.5 text-[#334DAF] dark:text-[#7096D1]" />
                 <span>{ap.tag || 'ABOUT EAGLECOMPLY'}</span>
               </div>
 
-              <h1 className="font-sans text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-black dark:text-white dark:text-white leading-[1.15]">
+              <h1 className="font-sans text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 dark:text-white leading-[1.15]">
                 {t.brand?.tagline || ap.title || 'Complex Regulations. Clear Solutions. Confident Growth.'}
               </h1>
 
@@ -277,14 +277,14 @@ export default function AboutPage({ onNavigate, onOpenConsultation, onOpenQuote 
               <div className="pt-2 flex flex-wrap items-center gap-3">
                 <button
                   onClick={() => onOpenConsultation?.()}
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-[#E31F1F] to-[#E31F1F] dark:from-[#E31F1F] dark:to-[#FF3333] text-white dark:text-[#030303] font-bold text-xs shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-[#091F5C] to-[#334DAF] dark:from-[#334DAF] dark:to-[#7096D1] text-white dark:text-[#101E42] font-bold text-xs shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer"
                 >
                   <Calendar className="w-4 h-4" />
                   <span>{ap.bookConsultation || t.nav?.bookConsultation || 'Book a Consultation'}</span>
                 </button>
                 <button
                   onClick={() => onNavigate?.('solutions')}
-                  className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-surface-base border border-surface-border text-slate-800 dark:text-slate-200 hover:border-[#E31F1F] font-bold text-xs transition-all shadow-sm cursor-pointer"
+                  className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-surface-base border border-surface-border text-slate-800 dark:text-slate-200 hover:border-[#334DAF] font-bold text-xs transition-all shadow-sm cursor-pointer"
                 >
                   <span>{ap.explorePractice || 'Explore Practice Areas'}</span>
                   <ArrowRight className="w-4 h-4 rtl:rotate-180" />
@@ -294,23 +294,23 @@ export default function AboutPage({ onNavigate, onOpenConsultation, onOpenQuote 
               {/* Key Practice Credential Highlights */}
               <div className="pt-4 grid grid-cols-3 gap-3 border-t border-surface-border/60 max-w-lg">
                 <div>
-                  <div className="text-base sm:text-lg font-bold text-black dark:text-white dark:text-white font-mono">100%</div>
-                  <div className="text-[11px] text-[#7D797A] font-mono">{ap.auditTested || 'Audit Tested'}</div>
+                  <div className="text-base sm:text-lg font-bold text-slate-900 dark:text-white font-mono">100%</div>
+                  <div className="text-[11px] text-slate-500 font-mono">{ap.auditTested || 'Audit Tested'}</div>
                 </div>
                 <div>
-                  <div className="text-base sm:text-lg font-bold text-black dark:text-white dark:text-white font-mono">FATF</div>
-                  <div className="text-[11px] text-[#7D797A] font-mono">{ap.alignedBaselines || 'Aligned Baselines'}</div>
+                  <div className="text-base sm:text-lg font-bold text-slate-900 dark:text-white font-mono">FATF</div>
+                  <div className="text-[11px] text-slate-500 font-mono">{ap.alignedBaselines || 'Aligned Baselines'}</div>
                 </div>
                 <div>
-                  <div className="text-base sm:text-lg font-bold text-black dark:text-white dark:text-white font-mono">UK / EU</div>
-                  <div className="text-[11px] text-[#7D797A] font-mono">{ap.crossBorder || 'Cross-Border Depth'}</div>
+                  <div className="text-base sm:text-lg font-bold text-slate-900 dark:text-white font-mono">UK / EU</div>
+                  <div className="text-[11px] text-slate-500 font-mono">{ap.crossBorder || 'Cross-Border Depth'}</div>
                 </div>
               </div>
             </div>
 
             {/* Right Video Showcase Column */}
             <div className="lg:col-span-5 relative">
-              <div className="relative rounded-3xl overflow-hidden glass-panel border border-surface-border shadow-2xl bg-[#E31F1F]/5 dark:bg-[#030303]/40 aspect-[4/3] sm:aspect-[16/11] flex items-center justify-center group">
+              <div className="relative rounded-3xl overflow-hidden glass-panel border border-surface-border shadow-2xl bg-[#091F5C]/5 dark:bg-[#101E42]/40 aspect-[4/3] sm:aspect-[16/11] flex items-center justify-center group">
                 <video
                   autoPlay
                   loop
@@ -342,10 +342,10 @@ export default function AboutPage({ onNavigate, onOpenConsultation, onOpenQuote 
       <section className="py-14 lg:py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div className="space-y-4 text-left rtl:text-right">
-            <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#E31F1F] dark:text-[#FF3333]">
+            <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#334DAF] dark:text-[#7096D1]">
               {ap.purposeTag || 'Our Purpose'}
             </span>
-            <h2 className="text-2xl sm:text-3xl font-bold text-black dark:text-white dark:text-white">
+            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">
               {ap.purposeTitle || 'Demystifying Complex Regulatory Frameworks'}
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -367,20 +367,20 @@ export default function AboutPage({ onNavigate, onOpenConsultation, onOpenQuote 
             </div>
           </div>
 
-          <div className="p-8 rounded-3xl bg-gradient-to-br from-[#E31F1F] to-[#1E1E1E] text-white space-y-5 shadow-xl text-left rtl:text-right">
-            <div className="text-xs font-mono uppercase tracking-widest text-slate-300">
+          <div className="p-8 rounded-3xl bg-gradient-to-br from-[#091F5C] to-[#1E3778] text-white space-y-5 shadow-xl text-left rtl:text-right">
+            <div className="text-xs font-mono uppercase tracking-widest text-blue-200">
               {ap.eagleIdentityTag || 'The Eagle Identity'}
             </div>
             <h3 className="text-xl font-bold text-white">
               {ap.eagleIdentityTitle || 'Vigilance, Oversight & Integrity'}
             </h3>
-            <p className="text-xs text-slate-200 leading-relaxed">
+            <p className="text-xs text-blue-100/85 leading-relaxed">
               {ap.eagleIdentityP1 || 'In financial regulation, the eagle represents vigilant oversight, keen discernment, and the ability to view the broader regulatory landscape.'}
             </p>
-            <p className="text-xs text-slate-200 leading-relaxed">
+            <p className="text-xs text-blue-100/85 leading-relaxed">
               {ap.eagleIdentityP2 || 'We help institutions detect compliance risks early, navigate multi-jurisdictional hurdles with clarity, and soar with confidence into new regulated markets.'}
             </p>
-            <div className="pt-2 border-t border-white/20 flex items-center justify-between text-xs font-mono text-slate-300">
+            <div className="pt-2 border-t border-white/20 flex items-center justify-between text-xs font-mono text-blue-200">
               <span>{t.brand?.separated || 'Brand Ethos'}</span>
               <span className="font-bold">{ap.brandEthos || 'Authoritative · Practical · Trusted'}</span>
             </div>
@@ -392,10 +392,10 @@ export default function AboutPage({ onNavigate, onOpenConsultation, onOpenQuote 
       <section className="py-14 lg:py-20 bg-surface-subtle border-y border-surface-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-10">
-            <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#E31F1F] dark:text-[#FF3333]">
+            <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#334DAF] dark:text-[#7096D1]">
               {ap.valuesTag || 'Core Principles'}
             </span>
-            <h2 className="text-2xl sm:text-3xl font-bold text-black dark:text-white dark:text-white mt-1">
+            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mt-1">
               {ap.valuesTitle || 'Our Professional Values'}
             </h2>
           </div>
@@ -406,12 +406,12 @@ export default function AboutPage({ onNavigate, onOpenConsultation, onOpenQuote 
               return (
                 <div 
                   key={idx}
-                  className="p-6 rounded-2xl glass-panel border border-surface-border hover:border-[#E31F1F] dark:hover:border-[#FF3333] transition-all space-y-2.5 shadow-sm text-left rtl:text-right"
+                  className="p-6 rounded-2xl glass-panel border border-surface-border hover:border-[#334DAF] dark:hover:border-[#7096D1] transition-all space-y-2.5 shadow-sm text-left rtl:text-right"
                 >
-                  <div className="w-10 h-10 rounded-xl bg-[#E31F1F]/10 dark:bg-[#FF3333]/15 text-[#E31F1F] dark:text-[#FF3333] flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-xl bg-[#334DAF]/10 dark:bg-[#7096D1]/15 text-[#334DAF] dark:text-[#7096D1] flex items-center justify-center">
                     <Icon className="w-5 h-5" />
                   </div>
-                  <h3 className="text-sm font-bold text-black dark:text-white dark:text-white">
+                  <h3 className="text-sm font-bold text-slate-900 dark:text-white">
                     {val.title}
                   </h3>
                   <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -427,10 +427,10 @@ export default function AboutPage({ onNavigate, onOpenConsultation, onOpenQuote 
       {/* 4. Interactive Pipeline Console (Methodology) */}
       <section className="py-16 lg:py-24 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#E31F1F] dark:text-[#FF3333]">
+          <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#334DAF] dark:text-[#7096D1]">
             {ap.methodologyTag || 'Interactive Methodology'}
           </span>
-          <h2 className="text-2xl sm:text-4xl font-bold text-black dark:text-white dark:text-white mt-1">
+          <h2 className="text-2xl sm:text-4xl font-bold text-slate-900 dark:text-white mt-1">
             {ap.methodologyTitle || 'Execution Pipeline & Delivery Architecture'}
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-2">
@@ -443,7 +443,7 @@ export default function AboutPage({ onNavigate, onOpenConsultation, onOpenQuote 
 
       {/* 6. Call to Action */}
       <section className="py-14 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-        <h2 className="text-2xl font-bold text-black dark:text-white dark:text-white">
+        <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
           {ap.ctaTitle || 'Ready to Elevate Your Institutional Compliance?'}
         </h2>
         <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 max-w-xl mx-auto">
@@ -452,7 +452,7 @@ export default function AboutPage({ onNavigate, onOpenConsultation, onOpenQuote 
         <div className="pt-2 flex justify-center gap-3">
           <button
             onClick={onOpenConsultation}
-            className="px-6 py-2.5 rounded-xl bg-[#E31F1F] dark:bg-[#E31F1F] text-white text-xs font-bold shadow-lg hover:opacity-90 transition-all flex items-center gap-2 cursor-pointer"
+            className="px-6 py-2.5 rounded-xl bg-[#091F5C] dark:bg-[#334DAF] text-white text-xs font-bold shadow-lg hover:opacity-90 transition-all flex items-center gap-2 cursor-pointer"
           >
             <Calendar className="w-3.5 h-3.5" />
             <span>{ap.bookConsultation || t.nav?.bookConsultation || 'Book a Consultation'}</span>

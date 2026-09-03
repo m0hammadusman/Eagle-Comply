@@ -131,7 +131,7 @@ function AppContent() {
         <PlatformLoader onFinish={() => setIsLoading(false)} />
       )}
 
-      <div className="min-h-screen w-full flex flex-col bg-surface-base text-black dark:text-white dark:text-slate-100 transition-colors duration-300">
+      <div className="min-h-screen w-full flex flex-col bg-surface-base text-slate-900 dark:text-slate-100 transition-colors duration-300">
         {/* Universal Header */}
         <Header
           currentRoute={currentRoute}

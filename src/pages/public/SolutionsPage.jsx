@@ -98,11 +98,11 @@ export default function SolutionsPage({ onNavigate, onOpenConsultation, onOpenQu
     <div className="w-full py-12 lg:py-16 space-y-16 animate-fade-in">
       {/* Header Banner */}
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-3">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E31F1F]/10 dark:bg-[#FF3333]/15 text-[#E31F1F] dark:text-[#FF3333] text-xs font-mono font-bold tracking-wider uppercase border border-[#E31F1F]/20 dark:border-[#FF3333]/30">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#334DAF]/10 dark:bg-[#7096D1]/15 text-[#334DAF] dark:text-[#7096D1] text-xs font-mono font-bold tracking-wider uppercase border border-[#334DAF]/20 dark:border-[#7096D1]/30">
           <Sparkles className="w-3.5 h-3.5" />
           <span>{sp.tag || 'EAGLECOMPLY PRACTICE AREAS'}</span>
         </div>
-        <h1 className="font-sans tracking-tight text-3xl md:text-4xl lg:text-5xl font-bold text-black dark:text-white dark:text-white">
+        <h1 className="font-sans tracking-tight text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white">
           {sp.title || 'End-to-End Compliance & Advisory Services'}
         </h1>
         <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
@@ -117,7 +117,7 @@ export default function SolutionsPage({ onNavigate, onOpenConsultation, onOpenQu
               onClick={() => setSelectedCategory(cat.id)}
               className={`px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
                 selectedCategory === cat.id
-                  ? 'bg-[#E31F1F] text-white shadow-md'
+                  ? 'bg-[#334DAF] text-white shadow-md'
                   : 'glass-panel border border-surface-border text-slate-700 dark:text-slate-300 hover:bg-surface-subtle'
               }`}
             >
@@ -138,7 +138,7 @@ export default function SolutionsPage({ onNavigate, onOpenConsultation, onOpenQu
               <div
                 key={sol.id}
                 onClick={() => onNavigate('solution-detail', { id: sol.id })}
-                className="group relative rounded-3xl overflow-hidden glass-panel border border-surface-border hover:border-[#E31F1F] dark:hover:border-[#FF3333] transition-all duration-300 cursor-pointer flex flex-col justify-between shadow-md hover:shadow-2xl text-left rtl:text-right"
+                className="group relative rounded-3xl overflow-hidden glass-panel border border-surface-border hover:border-[#334DAF] dark:hover:border-[#7096D1] transition-all duration-300 cursor-pointer flex flex-col justify-between shadow-md hover:shadow-2xl text-left rtl:text-right"
               >
                 {/* Visual Header Image */}
                 <div className="relative h-48 w-full overflow-hidden">
@@ -150,12 +150,12 @@ export default function SolutionsPage({ onNavigate, onOpenConsultation, onOpenQu
                   <div className="absolute inset-0 bg-gradient-to-t from-surface-raised via-surface-raised/40 to-transparent" />
                   
                   <div className="absolute top-4 left-4 rtl:left-auto rtl:right-4">
-                    <span className="text-[10px] font-mono px-3 py-1 rounded-full bg-surface-raised/90 backdrop-blur-md text-[#E31F1F] dark:text-[#E4E4E4] border border-surface-border font-bold">
+                    <span className="text-[10px] font-mono px-3 py-1 rounded-full bg-surface-raised/90 backdrop-blur-md text-[#334DAF] dark:text-[#D0E4FE] border border-surface-border font-bold">
                       {sol.badge}
                     </span>
                   </div>
 
-                  <div className="absolute bottom-3 right-4 rtl:right-auto rtl:left-4 w-10 h-10 rounded-2xl bg-surface-raised/90 backdrop-blur-md text-[#E31F1F] dark:text-[#FF3333] border border-surface-border flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                  <div className="absolute bottom-3 right-4 rtl:right-auto rtl:left-4 w-10 h-10 rounded-2xl bg-surface-raised/90 backdrop-blur-md text-[#334DAF] dark:text-[#7096D1] border border-surface-border flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
                     <Icon className="w-5 h-5" />
                   </div>
                 </div>
@@ -163,10 +163,10 @@ export default function SolutionsPage({ onNavigate, onOpenConsultation, onOpenQu
                 {/* Content */}
                 <div className="p-6 space-y-4">
                   <div>
-                    <span className="text-[10px] font-mono uppercase tracking-wider text-[#7D797A] font-bold block mb-1">
+                    <span className="text-[10px] font-mono uppercase tracking-wider text-slate-400 font-bold block mb-1">
                       {sol.category}
                     </span>
-                    <h3 className="font-sans text-lg font-bold text-black dark:text-white dark:text-white group-hover:text-[#E31F1F] dark:group-hover:text-[#FF3333] transition-colors line-clamp-1">
+                    <h3 className="font-sans text-lg font-bold text-slate-900 dark:text-white group-hover:text-[#334DAF] dark:group-hover:text-[#7096D1] transition-colors line-clamp-1">
                       {sol.name}
                     </h3>
                   </div>
@@ -176,9 +176,9 @@ export default function SolutionsPage({ onNavigate, onOpenConsultation, onOpenQu
                   </p>
 
                   <div className="space-y-1.5 pt-2 border-t border-surface-border/70">
-                    <div className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#7D797A] flex items-center justify-between">
+                    <div className="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-400 flex items-center justify-between">
                       <span>{sp.coreDeliverables || 'Core Deliverables:'}</span>
-                      <span className="text-[10px] text-[#E31F1F] font-normal">{(sol.deliverables || sol.scope || []).length} modules</span>
+                      <span className="text-[10px] text-sky-500 font-normal">{(sol.deliverables || sol.scope || []).length} modules</span>
                     </div>
                     <ul className="space-y-1">
                       {(sol.deliverables || sol.scope || []).slice(0, 4).map((sc, i) => (
@@ -191,7 +191,7 @@ export default function SolutionsPage({ onNavigate, onOpenConsultation, onOpenQu
                   </div>
 
                   <div className="pt-4 border-t border-surface-border flex items-center justify-between">
-                    <span className="text-xs font-bold text-[#E31F1F] dark:text-[#FF3333] flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                    <span className="text-xs font-bold text-[#334DAF] dark:text-[#7096D1] flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                       {sp.explorePractice || 'Explore Practice Area'} <ArrowRight className="w-3.5 h-3.5 rtl:rotate-180" />
                     </span>
                   </div>
@@ -204,22 +204,22 @@ export default function SolutionsPage({ onNavigate, onOpenConsultation, onOpenQu
 
       {/* Consultation CTA */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-[#E31F1F] to-[#1E1E1E] text-white border border-[#1E1E1E] shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6 text-left rtl:text-right">
+        <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-[#091F5C] to-[#132759] text-white border border-[#1E3778] shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6 text-left rtl:text-right">
           <div className="space-y-2">
-            <span className="text-xs font-mono font-bold tracking-wider text-[#FF3333] uppercase">
+            <span className="text-xs font-mono font-bold tracking-wider text-cyan-300 uppercase">
               {sp.tailoredTag || 'TAILORED PRACTICE ENGAGEMENT'}
             </span>
             <h2 className="text-xl sm:text-2xl font-bold">
               {sp.tailoredTitle || 'Require a Multi-Jurisdiction Compliance Consultation or Practice Advisory?'}
             </h2>
-            <p className="text-xs sm:text-sm text-slate-200 max-w-2xl leading-relaxed">
+            <p className="text-xs sm:text-sm text-blue-100/90 max-w-2xl leading-relaxed">
               {sp.tailoredDesc || 'Our Senior Directors and Compliance Counsel structure customized compliance architectures across AML, licensing, risk governance, and regulatory legal defense.'}
             </p>
           </div>
           <div className="flex flex-wrap gap-3 shrink-0">
             <button
               onClick={onOpenConsultation}
-              className="px-6 py-3 rounded-full bg-[#E31F1F] hover:bg-[#B42318] text-white font-bold text-xs shadow-lg transition-all cursor-pointer"
+              className="px-6 py-3 rounded-full bg-[#334DAF] hover:bg-[#253982] text-white font-bold text-xs shadow-lg transition-all cursor-pointer"
             >
               {sp.bookConsultation || 'Book Partner Consultation'}
             </button>
@@ -231,10 +231,10 @@ export default function SolutionsPage({ onNavigate, onOpenConsultation, onOpenQu
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="p-8 rounded-3xl glass-panel border border-surface-border shadow-xl space-y-6">
           <div className="text-center max-w-2xl mx-auto space-y-2">
-            <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#E31F1F] dark:text-[#FF3333]">
+            <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#334DAF] dark:text-[#7096D1]">
               {sp.compareTitle || 'Service Comparison'}
             </span>
-            <h3 className="text-2xl font-bold text-black dark:text-white dark:text-white">
+            <h3 className="text-2xl font-bold text-slate-900 dark:text-white">
               {sp.compareSubtitle || 'Institutional Deliverables by Practice Area'}
             </h3>
           </div>
@@ -242,7 +242,7 @@ export default function SolutionsPage({ onNavigate, onOpenConsultation, onOpenQu
           <div className="overflow-x-auto">
             <table className="w-full text-left rtl:text-right text-xs border-collapse">
               <thead>
-                <tr className="border-b border-surface-border text-[#7D797A] font-mono">
+                <tr className="border-b border-surface-border text-slate-400 font-mono">
                   <th className="pb-3 font-bold uppercase">{sp.thPractice || 'Practice Area'}</th>
                   <th className="pb-3 font-bold uppercase">{sp.thStandards || 'Target Regulatory Standards'}</th>
                   <th className="pb-3 font-bold uppercase">{sp.thDeliverables || 'Key Deliverables'}</th>
@@ -259,7 +259,7 @@ export default function SolutionsPage({ onNavigate, onOpenConsultation, onOpenQu
                   { name: "Independent AML/CFT Reviews", standards: "Supervisory Mandated Independent Audits", deliverables: "Assurance Report, Risk-Rated Findings, Roadmap", timeline: "3–5 Weeks" }
                 ]).map((row, rIdx) => (
                   <tr key={rIdx}>
-                    <td className="py-3.5 font-bold text-black dark:text-white dark:text-white">{row.name}</td>
+                    <td className="py-3.5 font-bold text-slate-900 dark:text-white">{row.name}</td>
                     <td className="py-3.5">{row.standards}</td>
                     <td className="py-3.5">{row.deliverables}</td>
                     <td className="py-3.5 font-mono">{row.timeline}</td>

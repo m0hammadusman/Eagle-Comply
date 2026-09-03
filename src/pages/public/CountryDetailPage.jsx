@@ -23,27 +23,27 @@ export default function CountryDetailPage({ params, onNavigate, onOpenConsultati
           <span className="text-5xl">{country.flag}</span>
           <div>
             <div className="flex items-center gap-3">
-              <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#E31F1F] dark:text-[#FF3333]">
+              <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#334DAF] dark:text-[#7096D1]">
                 {country.region}
               </span>
               <span className="text-xs font-mono px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
                 {country.status || 'Active Full Jurisdiction'}
               </span>
             </div>
-            <h1 className="font-sans tracking-tight text-3xl md:text-4xl lg:text-5xl font-bold text-black dark:text-white dark:text-white mt-1">
+            <h1 className="font-sans tracking-tight text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white mt-1">
               {country.name}
             </h1>
           </div>
         </div>
 
-        <p className="text-sm sm:text-base text-slate-600 dark:text-[#7D797A] max-w-4xl leading-relaxed mt-4">
+        <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 max-w-4xl leading-relaxed mt-4">
           {country.overview}
         </p>
 
         <div className="flex flex-wrap gap-4 mt-8">
           <button
             onClick={onOpenConsultation}
-            className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#E31F1F] to-[#E31F1F] dark:from-[#E31F1F] dark:to-[#FF3333] text-white dark:text-[#030303] font-bold text-xs shadow-md flex items-center gap-2 cursor-pointer"
+            className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#091F5C] to-[#334DAF] dark:from-[#334DAF] dark:to-[#7096D1] text-white dark:text-[#101E42] font-bold text-xs shadow-md flex items-center gap-2 cursor-pointer"
           >
             <Calendar className="w-4 h-4" />
             <span>{detailCommon?.bookConsultation || 'Book Partner Consultation'}</span>
@@ -54,7 +54,7 @@ export default function CountryDetailPage({ params, onNavigate, onOpenConsultati
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
         <div className="lg:col-span-2 space-y-10">
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold text-black dark:text-white dark:text-white">
+            <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
               {detailCommon?.regulators || 'Competent Supervisory Authorities'}
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
@@ -69,14 +69,14 @@ export default function CountryDetailPage({ params, onNavigate, onOpenConsultati
 
         <div className="space-y-8">
           <div className="p-6 rounded-3xl glass-panel border border-surface-border shadow-md space-y-4">
-            <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#E31F1F] dark:text-[#FF3333]">
+            <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#334DAF] dark:text-[#7096D1]">
               {detailCommon?.status || 'Supervisory Practice Coverage'}
             </span>
             <div className="flex items-center gap-3">
-              <Shield className="w-5 h-5 text-[#E31F1F] dark:text-[#FF3333]" />
-              <span className="text-sm font-bold text-black dark:text-white dark:text-white">{country.name} Practice Desk</span>
+              <Shield className="w-5 h-5 text-[#334DAF] dark:text-[#7096D1]" />
+              <span className="text-sm font-bold text-slate-900 dark:text-white">{country.name} Practice Desk</span>
             </div>
-            <p className="text-xs text-slate-600 dark:text-[#7D797A] leading-relaxed">
+            <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
               Direct institutional compliance advisory, licensing readiness, and regulatory framework structuring.
             </p>
           </div>
