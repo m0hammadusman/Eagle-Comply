@@ -19,7 +19,7 @@ export default function RegulationDetailPage({ params, onNavigate, onOpenConsult
 
       <div className="py-8 border-b border-surface-border mb-12">
         <div className="flex items-center gap-3 mb-3">
-          <span className="text-xs font-mono font-bold text-blue-400">
+          <span className="text-xs font-mono font-bold text-[#E31F1F]">
             {reg.jurisdiction}
           </span>
           <span className="text-xs font-mono px-2.5 py-0.5 rounded bg-[#E31F1F]/10 dark:bg-[#FF3333]/15 text-[#E31F1F] dark:text-[#FF3333] border border-[#E31F1F]/30 dark:border-[#FF3333]/40">

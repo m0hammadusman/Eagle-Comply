@@ -118,21 +118,21 @@ export default function GlobalMapCanvas({ onSelectCountry }) {
             style={{ top: activeCoord.top, left: activeCoord.left }}
           >
             <div className="relative flex items-center justify-center">
-              <span className="animate-ping absolute inline-flex h-12 w-12 rounded-full bg-cyan-400 opacity-60"></span>
+              <span className="animate-ping absolute inline-flex h-12 w-12 rounded-full bg-[#E31F1F] opacity-60"></span>
               <span className="relative inline-flex rounded-full h-5 w-5 bg-[#E31F1F] border-2 border-white shadow-lg items-center justify-center">
-                <span className="h-2 w-2 rounded-full bg-cyan-300 animate-pulse"></span>
+                <span className="h-2 w-2 rounded-full bg-[#FF3333] animate-pulse"></span>
               </span>
             </div>
-            <div className="mt-1.5 px-2.5 py-1 rounded-lg bg-[#E31F1F]/90 text-white border border-cyan-400/40 shadow-xl backdrop-blur-md text-[11px] font-mono whitespace-nowrap flex items-center gap-1.5">
+            <div className="mt-1.5 px-2.5 py-1 rounded-lg bg-[#E31F1F]/90 text-white border border-[#E31F1F]/40 shadow-xl backdrop-blur-md text-[11px] font-mono whitespace-nowrap flex items-center gap-1.5">
               <span>{activeCountry?.flag}</span>
-              <span className="font-bold text-cyan-300">{activeCountry?.name}</span>
+              <span className="font-bold text-[#FF3333]">{activeCountry?.name}</span>
             </div>
           </div>
 
           {/* Map Footer Status Bar */}
-          <div className="absolute bottom-3 left-4 right-4 z-20 flex items-center justify-between text-xs font-mono text-cyan-200/90 bg-[#E31F1F]/75 backdrop-blur-md px-3.5 py-2 rounded-xl border border-white/10">
+          <div className="absolute bottom-3 left-4 right-4 z-20 flex items-center justify-between text-xs font-mono text-[#FFBEBE] bg-[#E31F1F]/75 backdrop-blur-md px-3.5 py-2 rounded-xl border border-white/10">
             <div className="flex items-center gap-2">
-              <Crosshair className="w-3.5 h-3.5 text-cyan-400 animate-spin" style={{ animationDuration: '6s' }} />
+              <Crosshair className="w-3.5 h-3.5 text-[#E31F1F] animate-spin" style={{ animationDuration: '6s' }} />
               <span>{radar?.targetJurisdiction || 'Target Jurisdiction'}: <strong>{activeCountry?.name}</strong></span>
             </div>
             <span className="hidden sm:inline-block text-emerald-400 font-bold">● {radar?.radarLocked || 'Radar Locked'}</span>

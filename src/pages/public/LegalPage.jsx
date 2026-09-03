@@ -265,13 +265,13 @@ export default function LegalPage({ onNavigate, params }) {
       {/* Engagement & Mutual NDA Desk */}
       <div className="p-8 rounded-3xl bg-gradient-to-br from-[#E31F1F] to-[#1E1E1E] text-white border border-[#1E1E1E] space-y-4 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="space-y-2 text-left rtl:text-right">
-          <span className="text-xs font-mono font-bold tracking-wider text-cyan-300 uppercase">
+          <span className="text-xs font-mono font-bold tracking-wider text-[#FF3333] uppercase">
             {lp.ndaTag || 'BILATERAL CONFIDENTIALITY & GOVERNANCE'}
           </span>
           <h2 className="text-xl sm:text-2xl font-bold">
             {lp.ndaTitle || 'Execute a Mutual Bilateral NDA Before Engagement'}
           </h2>
-          <p className="text-xs sm:text-sm text-blue-100/90 max-w-2xl leading-relaxed">
+          <p className="text-xs sm:text-sm text-slate-200 max-w-2xl leading-relaxed">
             {lp.ndaDesc || 'All prospective client consultations and compliance scoping sessions are protected by standard mutual confidentiality protocols. Request our standard bilateral NDA or provide your institutional format.'}
           </p>
         </div>

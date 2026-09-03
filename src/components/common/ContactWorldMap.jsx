@@ -124,10 +124,10 @@ export default function ContactWorldMap({ onSelectLocation }) {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-        <div className="lg:col-span-7 bg-[#E31F1F] dark:bg-[#0c1633] rounded-2xl p-4 sm:p-6 border border-[#1E1E1E] relative overflow-hidden shadow-inner flex flex-col justify-between min-h-[360px]">
-          <div className="flex items-center justify-between text-[11px] font-mono text-blue-200/70 mb-2">
+        <div className="lg:col-span-7 bg-[#131313] dark:bg-[#030303] rounded-2xl p-4 sm:p-6 border border-[#262626] relative overflow-hidden shadow-inner flex flex-col justify-between min-h-[360px]">
+          <div className="flex items-center justify-between text-[11px] font-mono text-slate-300 mb-2">
             <span className="flex items-center gap-1.5">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+              <span className="w-2 h-2 rounded-full bg-[#E31F1F] animate-pulse" />
               GLOBAL COMPLIANCE RADAR: 3 ACTIVE LOCATIONS
             </span>
             <span>PROJECTION: MERCATOR</span>
@@ -137,8 +137,8 @@ export default function ContactWorldMap({ onSelectLocation }) {
             <svg viewBox="0 0 1000 450" className="w-full h-full object-contain filter drop-shadow-md select-none">
               <defs>
                 <radialGradient id="hubGlow" cx="50%" cy="50%" r="50%">
-                  <stop offset="0%" stopColor="#60A5FA" stopOpacity="0.8" />
-                  <stop offset="100%" stopColor="#3B82F6" stopOpacity="0" />
+                  <stop offset="0%" stopColor="#FF3333" stopOpacity="0.8" />
+                  <stop offset="100%" stopColor="#E31F1F" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient id="mapGradient" x1="0%" y1="0%" x2="100%" y2="100%">
                   <stop offset="0%" stopColor="#1E1E1E" stopOpacity="0.7" />
@@ -146,7 +146,7 @@ export default function ContactWorldMap({ onSelectLocation }) {
                 </linearGradient>
               </defs>
 
-              <g stroke="rgba(254, 205, 211, 0.08)" strokeWidth="1" strokeDasharray="3 3">
+              <g stroke="rgba(255, 255, 255, 0.08)" strokeWidth="1" strokeDasharray="3 3">
                 <line x1="0" y1="112" x2="1000" y2="112" />
                 <line x1="0" y1="225" x2="1000" y2="225" />
                 <line x1="0" y1="337" x2="1000" y2="337" />
@@ -155,25 +155,25 @@ export default function ContactWorldMap({ onSelectLocation }) {
                 <line x1="750" y1="0" x2="750" y2="450" />
               </g>
 
-              <path d="M 120,60 Q 220,50 280,100 Q 300,160 260,200 Q 230,240 190,240 Q 150,200 130,130 Z" fill="url(#mapGradient)" stroke="#B42318" strokeWidth="1.2" opacity="0.85" />
-              <path d="M 230,250 Q 290,260 280,340 Q 250,420 220,430 Q 190,360 210,290 Z" fill="url(#mapGradient)" stroke="#B42318" strokeWidth="1.2" opacity="0.85" />
-              <path d="M 440,70 Q 560,50 720,70 Q 880,90 920,150 Q 840,200 750,170 Q 640,140 540,110 Q 470,90 440,70 Z" fill="url(#mapGradient)" stroke="#B42318" strokeWidth="1.2" opacity="0.85" />
-              <path d="M 460,160 Q 550,160 570,230 Q 560,330 500,380 Q 450,300 440,210 Z" fill="url(#mapGradient)" stroke="#B42318" strokeWidth="1.2" opacity="0.85" />
-              <path d="M 640,160 Q 770,160 840,230 Q 780,300 700,260 Q 640,210 640,160 Z" fill="url(#mapGradient)" stroke="#B42318" strokeWidth="1.2" opacity="0.85" />
-              <path d="M 780,290 Q 880,280 890,360 Q 830,410 770,370 Z" fill="url(#mapGradient)" stroke="#B42318" strokeWidth="1.2" opacity="0.85" />
+              <path d="M 120,60 Q 220,50 280,100 Q 300,160 260,200 Q 230,240 190,240 Q 150,200 130,130 Z" fill="url(#mapGradient)" stroke="#262626" strokeWidth="1.2" opacity="0.85" />
+              <path d="M 230,250 Q 290,260 280,340 Q 250,420 220,430 Q 190,360 210,290 Z" fill="url(#mapGradient)" stroke="#262626" strokeWidth="1.2" opacity="0.85" />
+              <path d="M 440,70 Q 560,50 720,70 Q 880,90 920,150 Q 840,200 750,170 Q 640,140 540,110 Q 470,90 440,70 Z" fill="url(#mapGradient)" stroke="#262626" strokeWidth="1.2" opacity="0.85" />
+              <path d="M 460,160 Q 550,160 570,230 Q 560,330 500,380 Q 450,300 440,210 Z" fill="url(#mapGradient)" stroke="#262626" strokeWidth="1.2" opacity="0.85" />
+              <path d="M 640,160 Q 770,160 840,230 Q 780,300 700,260 Q 640,210 640,160 Z" fill="url(#mapGradient)" stroke="#262626" strokeWidth="1.2" opacity="0.85" />
+              <path d="M 780,290 Q 880,280 890,360 Q 830,410 770,370 Z" fill="url(#mapGradient)" stroke="#262626" strokeWidth="1.2" opacity="0.85" />
 
-              <path d="M 485,135 Q 502,150 520,165" fill="none" stroke="#60A5FA" strokeWidth="1.5" strokeDasharray="4 4" opacity="0.7" />
-              <path d="M 520,165 Q 600,170 675,195" fill="none" stroke="#60A5FA" strokeWidth="1.5" strokeDasharray="4 4" opacity="0.7" />
+              <path d="M 485,135 Q 502,150 520,165" fill="none" stroke="#E31F1F" strokeWidth="1.5" strokeDasharray="4 4" opacity="0.7" />
+              <path d="M 520,165 Q 600,170 675,195" fill="none" stroke="#E31F1F" strokeWidth="1.5" strokeDasharray="4 4" opacity="0.7" />
 
               {activeLocations.map((loc) => {
                 const isSelected = loc.id === selectedId;
                 return (
                   <g key={loc.id} className="cursor-pointer" onClick={() => setSelectedId(loc.id)}>
-                    <circle cx={loc.coords.x} cy={loc.coords.y} r={isSelected ? 18 : 12} fill="none" stroke={isSelected ? "#38BDF8" : "#60A5FA"} strokeWidth="1.5" opacity="0.8" className="animate-ping" style={{ transformOrigin: `${loc.coords.x}px ${loc.coords.y}px`, animationDuration: "2.5s" }} />
-                    <circle cx={loc.coords.x} cy={loc.coords.y} r={isSelected ? 14 : 9} fill={isSelected ? "#38BDF8" : "#2563EB"} opacity="0.4" />
-                    <circle cx={loc.coords.x} cy={loc.coords.y} r={isSelected ? 6.5 : 4.5} fill={isSelected ? "#FFFFFF" : "#93C5FD"} stroke="#E31F1F" strokeWidth="1.5" />
+                    <circle cx={loc.coords.x} cy={loc.coords.y} r={isSelected ? 18 : 12} fill="none" stroke={isSelected ? "#FF3333" : "#E31F1F"} strokeWidth="1.5" opacity="0.8" className="animate-ping" style={{ transformOrigin: `${loc.coords.x}px ${loc.coords.y}px`, animationDuration: "2.5s" }} />
+                    <circle cx={loc.coords.x} cy={loc.coords.y} r={isSelected ? 14 : 9} fill={isSelected ? "#FF3333" : "#E31F1F"} opacity="0.4" />
+                    <circle cx={loc.coords.x} cy={loc.coords.y} r={isSelected ? 6.5 : 4.5} fill={isSelected ? "#FFFFFF" : "#FFBEBE"} stroke="#E31F1F" strokeWidth="1.5" />
                     <g transform={`translate(${loc.coords.x}, ${loc.coords.y - 14})`}>
-                      <rect x="-36" y="-16" width="72" height="18" rx="9" fill={isSelected ? "#0284C7" : "#E31F1F"} stroke={isSelected ? "#38BDF8" : "#1E1E1E"} strokeWidth="1" />
+                      <rect x="-36" y="-16" width="72" height="18" rx="9" fill={isSelected ? "#E31F1F" : "#1E1E1E"} stroke={isSelected ? "#FF3333" : "#262626"} strokeWidth="1" />
                       <text x="0" y="-4" textAnchor="middle" fill="#FFFFFF" fontSize="9" fontWeight="bold" fontFamily="monospace">{loc.flag} {loc.code}</text>
                     </g>
                   </g>
@@ -182,10 +182,10 @@ export default function ContactWorldMap({ onSelectLocation }) {
             </svg>
           </div>
 
-          <div className="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-[#1E1E1E] text-xs font-mono text-blue-200">
+          <div className="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-[#1E1E1E] text-xs font-mono text-slate-300">
             <div className="flex items-center gap-4">
               <span className="flex items-center gap-1.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-sky-400" />
+                <span className="w-2.5 h-2.5 rounded-full bg-[#E31F1F]" />
                 <span>United Kingdom</span>
               </span>
               <span className="flex items-center gap-1.5">
@@ -197,7 +197,7 @@ export default function ContactWorldMap({ onSelectLocation }) {
                 <span>Pakistan</span>
               </span>
             </div>
-            <span className="text-[11px] text-blue-300/70">Click pin or card to view location details</span>
+            <span className="text-[11px] text-[#FFBEBE]">Click pin or card to view location details</span>
           </div>
         </div>
 
@@ -220,16 +220,16 @@ export default function ContactWorldMap({ onSelectLocation }) {
             </div>
 
             <div className="space-y-1.5">
-              <div className="text-[11px] font-mono uppercase tracking-wider text-blue-300 font-bold">
+              <div className="text-[11px] font-mono uppercase tracking-wider text-[#FFBEBE] font-bold">
                 Regulatory Scope & Supervisory Coverage:
               </div>
-              <p className="text-xs text-blue-100/90 leading-relaxed">
+              <p className="text-xs text-slate-200 leading-relaxed">
                 {selectedLocation.coverage}
               </p>
             </div>
 
             <div className="space-y-2.5 pt-2">
-              <div className="text-[11px] font-mono uppercase tracking-wider text-blue-300 font-bold">
+              <div className="text-[11px] font-mono uppercase tracking-wider text-[#FFBEBE] font-bold">
                 Direct Contact & Instant Messaging:
               </div>
 
@@ -251,16 +251,16 @@ export default function ContactWorldMap({ onSelectLocation }) {
                 className="w-full flex items-center justify-between px-5 py-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-medium text-xs border border-white/15 transition-all"
               >
                 <div className="flex items-center gap-2.5">
-                  <Mail className="w-4 h-4 text-blue-300" />
+                  <Mail className="w-4 h-4 text-[#FFBEBE]" />
                   <span>Email: <strong>{selectedLocation.email}</strong></span>
                 </div>
-                <ArrowRight className="w-3.5 h-3.5 text-blue-300" />
+                <ArrowRight className="w-3.5 h-3.5 text-[#FFBEBE]" />
               </a>
             </div>
 
-            <div className="pt-2 border-t border-[#1E1E1E] flex items-center justify-between text-[11px] font-mono text-blue-200/80">
+            <div className="pt-2 border-t border-[#1E1E1E] flex items-center justify-between text-[11px] font-mono text-slate-300">
               <span className="flex items-center gap-1.5">
-                <Clock className="w-3.5 h-3.5 text-blue-300" /> Timezone: {selectedLocation.timezone}
+                <Clock className="w-3.5 h-3.5 text-[#FFBEBE]" /> Timezone: {selectedLocation.timezone}
               </span>
               <span className="flex items-center gap-1">
                 <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" /> Bilateral NDA

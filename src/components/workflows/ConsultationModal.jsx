@@ -75,7 +75,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
       onClick={onClose}
     >
       <div 
-        className="w-full max-w-5xl bg-white dark:bg-[#0A1224] border border-[#E4E4E4] dark:border-[#1E1E1E] dark:border-[#1E1E1E]/60 rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden my-auto flex flex-col transition-all duration-300 font-sans" 
+        className="w-full max-w-5xl bg-white dark:bg-[#030303] border border-[#E4E4E4] dark:border-[#1E1E1E] dark:border-[#1E1E1E]/60 rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden my-auto flex flex-col transition-all duration-300 font-sans" 
         onClick={e => e.stopPropagation()}
       >
         {/* ======================================================== */}

@@ -250,13 +250,13 @@ export default function FaqPage({ onNavigate, onOpenConsultation }) {
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-[#E31F1F] via-[#131313] to-[#E31F1F] text-white shadow-2xl text-center space-y-5">
           <div className="space-y-2">
-            <span className="text-xs font-mono uppercase tracking-widest text-blue-200 font-bold inline-block px-3 py-1 rounded-full bg-white/10 border border-white/20">
+            <span className="text-xs font-mono uppercase tracking-widest text-slate-300 font-bold inline-block px-3 py-1 rounded-full bg-white/10 border border-white/20">
               {fq.inquiryTag || 'DIRECT INQUIRY & SUPPORT'}
             </span>
             <h3 className="text-2xl sm:text-3xl font-bold">
               {fq.inquiryTitle || 'If you have any other questions, send us your query.'}
             </h3>
-            <p className="text-xs sm:text-sm text-blue-100/85 max-w-xl mx-auto leading-relaxed">
+            <p className="text-xs sm:text-sm text-slate-200 max-w-xl mx-auto leading-relaxed">
               {fq.inquiryDesc || "Our practice directors and regulatory counsel are ready to review your firm's specific regulatory challenges, audit requirements, or license applications."}
             </p>
           </div>
@@ -264,7 +264,7 @@ export default function FaqPage({ onNavigate, onOpenConsultation }) {
           <div className="pt-2 flex flex-wrap items-center justify-center gap-3.5">
             <button
               onClick={onOpenConsultation}
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white text-[#E31F1F] hover:bg-blue-50 font-bold text-xs shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer"
+              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white text-[#E31F1F] hover:bg-[#F5F3F2] font-bold text-xs shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer"
             >
               <Calendar className="w-4 h-4" />
               <span>{fq.sendQuery || 'Send Query & Book Session'}</span>

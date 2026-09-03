@@ -48,7 +48,7 @@ export default function TeamPage({ onNavigate, onOpenConsultation }) {
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 text-center space-y-4">
           
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/20 backdrop-blur-md text-white text-xs font-mono font-bold tracking-wider uppercase border border-white/30 shadow-lg">
-            <Users className="w-3.5 h-3.5 text-sky-300" />
+            <Users className="w-3.5 h-3.5 text-[#FF3333]" />
             <span>{tp.tag || 'OUR COMPLIANCE LEADERSHIP'}</span>
           </div>
 
@@ -56,7 +56,7 @@ export default function TeamPage({ onNavigate, onOpenConsultation }) {
             {tp.title || 'Senior Practice Directors & Regulatory Counsel'}
           </h1>
 
-          <p className="text-sm sm:text-base lg:text-lg text-blue-50 font-medium leading-relaxed max-w-2xl mx-auto drop-shadow-md">
+          <p className="text-sm sm:text-base lg:text-lg text-neutral-100 font-medium leading-relaxed max-w-2xl mx-auto drop-shadow-md">
             {tp.subtitle || 'Directing multi-jurisdictional AML/CFT frameworks, regulatory licensing, statutory governance, corporate legal opinions, and prudential financial assurance.'}
           </p>
 
@@ -174,7 +174,7 @@ export default function TeamPage({ onNavigate, onOpenConsultation }) {
                     )}
                     <button
                       onClick={onOpenConsultation}
-                      className="px-3 py-2 rounded-xl bg-[#E31F1F] hover:bg-[#253B8A] text-white dark:bg-[#FF3333] dark:text-[#030303] text-xs font-bold shadow-sm transition-all cursor-pointer"
+                      className="px-3 py-2 rounded-xl bg-[#E31F1F] hover:bg-[#1E1E1E] text-white dark:bg-[#FF3333] dark:text-[#030303] text-xs font-bold shadow-sm transition-all cursor-pointer"
                     >
                       {tp.bookSession || 'Book Session'}
                     </button>
@@ -190,19 +190,19 @@ export default function TeamPage({ onNavigate, onOpenConsultation }) {
       {/* Bottom CTA Banner */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-[#E31F1F] via-[#131313] to-[#E31F1F] text-white shadow-2xl text-center space-y-4">
-          <span className="text-xs font-mono uppercase tracking-widest text-blue-200 font-bold inline-block px-3 py-1 rounded-full bg-white/10 border border-white/20">
+          <span className="text-xs font-mono uppercase tracking-widest text-slate-300 font-bold inline-block px-3 py-1 rounded-full bg-white/10 border border-white/20">
             {tp.ctaTag || 'Institutional Advisory'}
           </span>
           <h2 className="text-2xl sm:text-3xl font-bold">
             {tp.ctaTitle || 'Retain Senior Compliance Directors for Your Board'}
           </h2>
-          <p className="text-xs sm:text-sm text-blue-100/80 max-w-xl mx-auto">
+          <p className="text-xs sm:text-sm text-slate-200 max-w-xl mx-auto">
             {tp.ctaDesc || 'Engage our senior practitioners for independent AML/CFT audits, regulatory authorization dossiers, and ongoing compliance oversight.'}
           </p>
           <div className="pt-2">
             <button
               onClick={onOpenConsultation}
-              className="px-8 py-3.5 rounded-xl bg-white text-[#E31F1F] font-bold text-xs shadow-xl hover:bg-blue-50 transition-all inline-flex items-center gap-2 cursor-pointer"
+              className="px-8 py-3.5 rounded-xl bg-white text-[#E31F1F] font-bold text-xs shadow-xl hover:bg-[#F5F3F2] transition-all inline-flex items-center gap-2 cursor-pointer"
             >
               <Calendar className="w-4 h-4" />
               <span>{tp.ctaBtn || 'Schedule Initial Consultation'}</span>

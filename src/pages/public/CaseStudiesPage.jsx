@@ -136,7 +136,7 @@ export default function CaseStudiesPage({ onNavigate, onOpenConsultation }) {
       {/* ======================================================== */}
       {/* 1. HERO SECTION WITH 3D NETWORK GLOBE & FLOATING METRICS */}
       {/* ======================================================== */}
-      <section className="relative w-full pt-12 pb-16 overflow-hidden border-b border-surface-border bg-[#050D24] dark:bg-[#07112A] text-white">
+      <section className="relative w-full pt-12 pb-16 overflow-hidden border-b border-surface-border bg-[#030303] dark:bg-[#131313] text-white">
         {/* Background Atmosphere Glows */}
         <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-[#E31F1F]/20 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 left-10 w-96 h-96 bg-[#131313]/40 rounded-full blur-3xl pointer-events-none" />
@@ -211,7 +211,7 @@ export default function CaseStudiesPage({ onNavigate, onOpenConsultation }) {
                   <span className="w-1.5 h-1.5 rounded-full bg-[#FF3333] animate-ping" />
                 </div>
                 <div className="text-2xl font-bold text-white font-mono">45+</div>
-                <div className="text-[10px] text-blue-200">
+                <div className="text-[10px] text-slate-300">
                   {csPage.telemetry?.reachSub || 'Jurisdictions Served'}
                 </div>
               </div>
@@ -225,7 +225,7 @@ export default function CaseStudiesPage({ onNavigate, onOpenConsultation }) {
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
                 </div>
                 <div className="text-2xl font-bold text-white font-mono">{liveProjectsCount}+</div>
-                <div className="text-[10px] text-blue-200">
+                <div className="text-[10px] text-slate-300">
                   {csPage.telemetry?.outcomesSub || 'Projects Delivered'}
                 </div>
               </div>
@@ -239,7 +239,7 @@ export default function CaseStudiesPage({ onNavigate, onOpenConsultation }) {
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                 </div>
                 <div className="text-2xl font-bold text-emerald-400 font-mono">{liveSuccessRate}%</div>
-                <div className="text-[10px] text-blue-200">
+                <div className="text-[10px] text-slate-300">
                   {csPage.telemetry?.successSub || 'Average Clearance Rate'}
                 </div>
               </div>
@@ -535,7 +535,7 @@ export default function CaseStudiesPage({ onNavigate, onOpenConsultation }) {
                 <h3 className="text-xl sm:text-2xl font-bold text-white">
                   {csPage.ctaTitle || "Let's Achieve Your Next Regulatory Milestone"}
                 </h3>
-                <p className="text-xs text-blue-200/80 max-w-xl leading-relaxed">
+                <p className="text-xs text-slate-300 max-w-xl leading-relaxed">
                   {csPage.ctaSubtitle || 'Partner with Eagle Compliance for outcome-driven regulatory intelligence designed for complex, high-stakes environments.'}
                 </p>
               </div>
@@ -545,7 +545,7 @@ export default function CaseStudiesPage({ onNavigate, onOpenConsultation }) {
             <div className="shrink-0">
               <button
                 onClick={onOpenConsultation}
-                className="px-6 py-3.5 rounded-xl bg-[#E31F1F] hover:bg-[#253B8C] text-white text-xs font-bold shadow-lg hover:scale-105 active:scale-95 transition-all flex items-center gap-2.5 whitespace-nowrap"
+                className="px-6 py-3.5 rounded-xl bg-[#E31F1F] hover:bg-[#1E1E1E] text-white text-xs font-bold shadow-lg hover:scale-105 active:scale-95 transition-all flex items-center gap-2.5 whitespace-nowrap"
               >
                 <Calendar className="w-4 h-4" />
                 <span>{csPage.ctaBtn || 'Book a Consultation'}</span>

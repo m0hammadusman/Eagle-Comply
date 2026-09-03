@@ -51,7 +51,7 @@ export default function NewsPage({ onNavigate }) {
 
         {/* Contentful Connection Pill */}
         <div className="flex items-center justify-center gap-2 pt-1 text-[11px] font-mono text-[#7D797A]">
-          <span className={`w-2 h-2 rounded-full ${isContentfulConfigured ? 'bg-emerald-500 animate-pulse' : 'bg-blue-500'}`} />
+          <span className={`w-2 h-2 rounded-full ${isContentfulConfigured ? 'bg-emerald-500 animate-pulse' : 'bg-[#E31F1F]'}`} />
           <span>{isContentfulConfigured ? 'Live Contentful CMS Active' : 'Headless CMS Managed'}</span>
         </div>
       </div>

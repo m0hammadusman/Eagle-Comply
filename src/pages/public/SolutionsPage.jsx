@@ -178,7 +178,7 @@ export default function SolutionsPage({ onNavigate, onOpenConsultation, onOpenQu
                   <div className="space-y-1.5 pt-2 border-t border-surface-border/70">
                     <div className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#7D797A] flex items-center justify-between">
                       <span>{sp.coreDeliverables || 'Core Deliverables:'}</span>
-                      <span className="text-[10px] text-sky-500 font-normal">{(sol.deliverables || sol.scope || []).length} modules</span>
+                      <span className="text-[10px] text-[#E31F1F] font-normal">{(sol.deliverables || sol.scope || []).length} modules</span>
                     </div>
                     <ul className="space-y-1">
                       {(sol.deliverables || sol.scope || []).slice(0, 4).map((sc, i) => (
@@ -206,13 +206,13 @@ export default function SolutionsPage({ onNavigate, onOpenConsultation, onOpenQu
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-[#E31F1F] to-[#1E1E1E] text-white border border-[#1E1E1E] shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6 text-left rtl:text-right">
           <div className="space-y-2">
-            <span className="text-xs font-mono font-bold tracking-wider text-cyan-300 uppercase">
+            <span className="text-xs font-mono font-bold tracking-wider text-[#FF3333] uppercase">
               {sp.tailoredTag || 'TAILORED PRACTICE ENGAGEMENT'}
             </span>
             <h2 className="text-xl sm:text-2xl font-bold">
               {sp.tailoredTitle || 'Require a Multi-Jurisdiction Compliance Consultation or Practice Advisory?'}
             </h2>
-            <p className="text-xs sm:text-sm text-blue-100/90 max-w-2xl leading-relaxed">
+            <p className="text-xs sm:text-sm text-slate-200 max-w-2xl leading-relaxed">
               {sp.tailoredDesc || 'Our Senior Directors and Compliance Counsel structure customized compliance architectures across AML, licensing, risk governance, and regulatory legal defense.'}
             </p>
           </div>

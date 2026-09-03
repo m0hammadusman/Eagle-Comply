@@ -54,7 +54,7 @@ export default function Footer({ onNavigate }) {
         {/* Practice Locations Bar */}
         <div className="mb-8 pb-5 border-b border-[#1E1E1E] flex flex-col md:flex-row md:items-center justify-between gap-3">
           <div className="flex items-center gap-2">
-            <Globe2 className="w-4 h-4 text-sky-400 shrink-0" />
+            <Globe2 className="w-4 h-4 text-[#E31F1F] shrink-0" />
             <span className="text-xs sm:text-sm font-semibold tracking-wider text-slate-200">
               {f.practiceDesks || 'Operational Locations & Presence:'}
             </span>
@@ -62,21 +62,21 @@ export default function Footer({ onNavigate }) {
           <div className="flex flex-wrap items-center gap-2 text-xs font-medium text-white">
             <button 
               onClick={() => onNavigate('contact')} 
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#1E1E1E] hover:bg-[#B42318] border border-blue-400/30 shadow-xs transition-all text-left cursor-pointer"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#1E1E1E] hover:bg-[#B42318] border border-[#E31F1F]/30 shadow-xs transition-all text-left cursor-pointer"
             >
               <span>🇬🇧</span>
               <span><strong>{t.common?.uk || 'United Kingdom'}</strong></span>
             </button>
             <button 
               onClick={() => onNavigate('contact')} 
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#1E1E1E] hover:bg-[#B42318] border border-blue-400/30 shadow-xs transition-all text-left cursor-pointer"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#1E1E1E] hover:bg-[#B42318] border border-[#E31F1F]/30 shadow-xs transition-all text-left cursor-pointer"
             >
               <span>🇮🇹</span>
               <span><strong>{t.common?.italy || 'Italy'}</strong></span>
             </button>
             <button 
               onClick={() => onNavigate('contact')} 
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#1E1E1E] hover:bg-[#B42318] border border-blue-400/30 shadow-xs transition-all text-left cursor-pointer"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#1E1E1E] hover:bg-[#B42318] border border-[#E31F1F]/30 shadow-xs transition-all text-left cursor-pointer"
             >
               <span>🇵🇰</span>
               <span><strong>{t.common?.pakistan || 'Pakistan'}</strong></span>
@@ -123,18 +123,18 @@ export default function Footer({ onNavigate }) {
               </a>
               <a
                 href="mailto:info@eaglecomply.com"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#1E1E1E] hover:bg-[#B42318] text-white text-xs font-medium border border-blue-400/30 transition-colors"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#1E1E1E] hover:bg-[#B42318] text-white text-xs font-medium border border-[#E31F1F]/30 transition-colors"
               >
-                <Mail className="w-3.5 h-3.5 text-blue-300" />
+                <Mail className="w-3.5 h-3.5 text-[#FFBEBE]" />
                 <span>{f.emailDirect || 'Email Us'}</span>
               </a>
               <a
                 href="https://www.linkedin.com/company/eaglecomply/?viewAsMember=true"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#1E1E1E] hover:bg-[#B42318] text-white text-xs font-medium border border-blue-400/30 transition-colors"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#1E1E1E] hover:bg-[#B42318] text-white text-xs font-medium border border-[#E31F1F]/30 transition-colors"
               >
-                <LinkedInIcon className="w-3.5 h-3.5 text-blue-300" />
+                <LinkedInIcon className="w-3.5 h-3.5 text-[#FFBEBE]" />
                 <span>LinkedIn</span>
               </a>
             </div>
@@ -322,7 +322,7 @@ export default function Footer({ onNavigate }) {
               href="mailto:info@eaglecomply.com" 
               className="inline-flex items-center gap-1.5 hover:text-white transition-colors"
             >
-              <Mail className="w-3.5 h-3.5 text-blue-300" />
+              <Mail className="w-3.5 h-3.5 text-[#FFBEBE]" />
               <span>info@eaglecomply.com</span>
             </a>
             <a 
@@ -331,7 +331,7 @@ export default function Footer({ onNavigate }) {
               rel="noopener noreferrer" 
               className="inline-flex items-center gap-1.5 hover:text-white transition-colors"
             >
-              <LinkedInIcon className="w-3.5 h-3.5 text-blue-300" />
+              <LinkedInIcon className="w-3.5 h-3.5 text-[#FFBEBE]" />
               <span>{f.linkedin || 'LinkedIn'}</span>
             </a>
             <span className="flex items-center gap-1.5 text-xs text-slate-300">

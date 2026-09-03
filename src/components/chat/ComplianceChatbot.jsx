@@ -295,10 +295,10 @@ export default function ComplianceChatbot({ onNavigate, onOpenConsultation, onOp
         aria-label="Open AI Assistant"
       >
         <span className="relative flex h-2.5 w-2.5 shrink-0">
-          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-          <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-cyan-400"></span>
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#E31F1F] opacity-75"></span>
+          <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#E31F1F]"></span>
         </span>
-        <MessageSquare className="w-4 h-4 text-cyan-300 group-hover:scale-110 transition-transform shrink-0" />
+        <MessageSquare className="w-4 h-4 text-[#FF3333] group-hover:scale-110 transition-transform shrink-0" />
         <span className="font-bold tracking-wide text-white whitespace-nowrap">
           {t.modals?.chatButtonText || 'Ask AI Assistant'}
         </span>

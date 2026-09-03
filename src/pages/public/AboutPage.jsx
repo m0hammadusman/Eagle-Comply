@@ -103,12 +103,12 @@ function PipelineConsole() {
   const strokeDashoffset = circumference - (circumference * progress);
 
   return (
-    <div className="w-full max-w-5xl mx-auto rounded-[28px] glass-panel bg-white/90 dark:bg-[#0B1324] border border-[#E4E4E4] dark:border-[#1E1E1E]/80 dark:border-white/10 p-6 sm:p-10 shadow-2xl backdrop-blur-xl relative overflow-hidden transition-colors duration-300">
+    <div className="w-full max-w-5xl mx-auto rounded-[28px] glass-panel bg-white/90 dark:bg-[#030303] border border-[#E4E4E4] dark:border-[#1E1E1E]/80 dark:border-white/10 p-6 sm:p-10 shadow-2xl backdrop-blur-xl relative overflow-hidden transition-colors duration-300">
       
       {/* Top Console Bar */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-6 border-b border-[#E4E4E4] dark:border-[#1E1E1E]/80 dark:border-white/10 mb-8">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg font-mono text-xs font-bold uppercase tracking-wider text-[#E31F1F] dark:text-cyan-400 bg-[#E31F1F]/10 dark:bg-cyan-500/10 border border-[#E31F1F]/20 dark:border-cyan-500/30">
-          <span className="w-2 h-2 rounded-full bg-[#E31F1F] dark:bg-cyan-400 animate-ping" />
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg font-mono text-xs font-bold uppercase tracking-wider text-[#E31F1F] dark:text-[#E31F1F] bg-[#E31F1F]/10 dark:bg-[#E31F1F]/10 border border-[#E31F1F]/20 dark:border-[#E31F1F]/30">
+          <span className="w-2 h-2 rounded-full bg-[#E31F1F] dark:bg-[#E31F1F] animate-ping" />
           <span>{ap.methodologyBadge || 'Methodology & Architecture'}</span>
         </div>
         <div className="font-mono text-xs text-[#7D797A] dark:text-[#7D797A] flex items-center gap-1.5">
@@ -132,14 +132,14 @@ function PipelineConsole() {
                 onClick={() => handleStepClick(idx)}
                 className={`flex items-center gap-4 p-3.5 rounded-2xl border transition-all relative z-10 text-left ${
                   isActive
-                    ? 'bg-blue-50/90 dark:bg-[#0F1E38] border-[#E31F1F]/40 dark:border-cyan-500/40 shadow-lg'
+                    ? 'bg-[#F5F3F2] dark:bg-[#131313] border-[#E31F1F]/40 dark:border-[#E31F1F]/40 shadow-lg'
                     : 'bg-transparent border-transparent hover:bg-slate-100/60 dark:hover:bg-white/5'
                 }`}
               >
                 <div
                   className={`w-8 h-8 rounded-xl font-mono text-xs font-bold flex items-center justify-center shrink-0 border transition-all ${
                     isActive
-                      ? 'bg-[#E31F1F] dark:bg-cyan-400 text-white dark:text-slate-950 border-[#E31F1F] dark:border-cyan-300 scale-105 shadow-md shadow-blue-500/20'
+                      ? 'bg-[#E31F1F] dark:bg-[#E31F1F] text-white dark:text-slate-950 border-[#E31F1F] dark:border-[#FF3333] scale-105 shadow-md shadow-red-500/20'
                       : 'bg-slate-100 dark:bg-slate-800 text-[#7D797A] dark:text-[#7D797A] border-[#E4E4E4] dark:border-[#1E1E1E] dark:border-white/10'
                   }`}
                 >
@@ -160,14 +160,14 @@ function PipelineConsole() {
         </div>
 
         {/* Right Active Showcase Hub */}
-        <div className="md:col-span-7 rounded-2xl p-6 sm:p-8 min-h-[360px] flex flex-col justify-between relative overflow-hidden bg-gradient-to-br from-blue-50/80 via-slate-50 to-indigo-50/40 dark:from-[#0E1A33] dark:via-[#0A1428] dark:to-[#060D1A] border border-[#E31F1F]/20 dark:border-cyan-500/25 shadow-inner">
+        <div className="md:col-span-7 rounded-2xl p-6 sm:p-8 min-h-[360px] flex flex-col justify-between relative overflow-hidden bg-gradient-to-br from-[#F5F3F2] via-slate-50 to-[#FFF5F5] dark:from-[#131313] dark:via-[#030303] dark:to-[#030303] border border-[#E31F1F]/20 dark:border-[#E31F1F]/25 shadow-inner">
           <div className="space-y-4">
             <div className="flex items-center gap-4">
-              <div className="w-14 h-14 rounded-2xl bg-[#E31F1F]/10 dark:bg-cyan-500/15 border border-[#E31F1F]/25 dark:border-cyan-500/30 text-[#E31F1F] dark:text-cyan-400 flex items-center justify-center shrink-0 shadow-sm">
+              <div className="w-14 h-14 rounded-2xl bg-[#E31F1F]/10 dark:bg-[#E31F1F]/15 border border-[#E31F1F]/25 dark:border-[#E31F1F]/30 text-[#E31F1F] dark:text-[#E31F1F] flex items-center justify-center shrink-0 shadow-sm">
                 <IconComponent className="w-7 h-7" />
               </div>
               <div>
-                <div className="font-mono text-xs font-bold text-[#E31F1F] dark:text-cyan-400 tracking-wider">
+                <div className="font-mono text-xs font-bold text-[#E31F1F] dark:text-[#E31F1F] tracking-wider">
                   {currentItem.index}
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold text-black dark:text-white dark:text-white mt-0.5 leading-snug">
@@ -182,7 +182,7 @@ function PipelineConsole() {
           </div>
 
           {/* Telemetry Output Box with Progress Ring */}
-          <div className="mt-6 p-3.5 sm:p-4 rounded-xl bg-white/90 dark:bg-[#030712]/70 border border-dashed border-slate-300 dark:border-white/15 flex items-center justify-between gap-3 shadow-sm">
+          <div className="mt-6 p-3.5 sm:p-4 rounded-xl bg-white/90 dark:bg-[#030303]/70 border border-dashed border-slate-300 dark:border-white/15 flex items-center justify-between gap-3 shadow-sm">
             <div className="font-mono text-xs text-slate-600 dark:text-slate-300">
               <span className="text-[#7D797A] uppercase text-[10px] block font-bold">{ap.deliverableLabel || 'DELIVERABLE:'}</span>
               <span className="font-bold text-black dark:text-white dark:text-slate-100">{currentItem.output}</span>
@@ -368,19 +368,19 @@ export default function AboutPage({ onNavigate, onOpenConsultation, onOpenQuote 
           </div>
 
           <div className="p-8 rounded-3xl bg-gradient-to-br from-[#E31F1F] to-[#1E1E1E] text-white space-y-5 shadow-xl text-left rtl:text-right">
-            <div className="text-xs font-mono uppercase tracking-widest text-blue-200">
+            <div className="text-xs font-mono uppercase tracking-widest text-slate-300">
               {ap.eagleIdentityTag || 'The Eagle Identity'}
             </div>
             <h3 className="text-xl font-bold text-white">
               {ap.eagleIdentityTitle || 'Vigilance, Oversight & Integrity'}
             </h3>
-            <p className="text-xs text-blue-100/85 leading-relaxed">
+            <p className="text-xs text-slate-200 leading-relaxed">
               {ap.eagleIdentityP1 || 'In financial regulation, the eagle represents vigilant oversight, keen discernment, and the ability to view the broader regulatory landscape.'}
             </p>
-            <p className="text-xs text-blue-100/85 leading-relaxed">
+            <p className="text-xs text-slate-200 leading-relaxed">
               {ap.eagleIdentityP2 || 'We help institutions detect compliance risks early, navigate multi-jurisdictional hurdles with clarity, and soar with confidence into new regulated markets.'}
             </p>
-            <div className="pt-2 border-t border-white/20 flex items-center justify-between text-xs font-mono text-blue-200">
+            <div className="pt-2 border-t border-white/20 flex items-center justify-between text-xs font-mono text-slate-300">
               <span>{t.brand?.separated || 'Brand Ethos'}</span>
               <span className="font-bold">{ap.brandEthos || 'Authoritative · Practical · Trusted'}</span>
             </div>

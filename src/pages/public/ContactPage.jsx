@@ -318,13 +318,13 @@ export default function ContactPage({ onNavigate }) {
           {/* Direct Engagement & Advisory Protocols */}
           <div className="lg:col-span-4 space-y-6 text-left rtl:text-right">
             <div className="p-6 rounded-3xl bg-[#E31F1F] text-white space-y-4 shadow-xl">
-              <div className="text-xs font-mono font-bold uppercase tracking-wider text-blue-200">
+              <div className="text-xs font-mono font-bold uppercase tracking-wider text-slate-300">
                 {t.contactPageSide?.protocolTag || 'Advisory Protocol'}
               </div>
               <h3 className="text-base font-bold text-white">
                 {t.contactPageSide?.protocolTitle || 'How Our Engagement Works'}
               </h3>
-              <ul className="space-y-2.5 text-xs text-blue-100/90 leading-relaxed">
+              <ul className="space-y-2.5 text-xs text-slate-200 leading-relaxed">
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                   <span><strong>{t.contactPageSide?.step1Title || 'Initial Scoping:'}</strong> {t.contactPageSide?.step1Desc || 'Confidential discussion to assess your specific regulatory and risk perimeter.'}</span>

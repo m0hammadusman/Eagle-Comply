@@ -157,7 +157,7 @@ export default function PageEnhancements({ route, onNavigate, onOpenConsultation
             <div>
               <div className="text-xs font-mono uppercase tracking-wider text-[#E4E4E4]">{e.ctaTag || 'NEXT STEP'}</div>
               <h3 className="mt-1 text-xl font-bold">{e.ctaTitle || 'Need guidance on a compliance issue?'}</h3>
-              <p className="mt-1 text-xs text-blue-100/75">{e.ctaDesc || 'Share your situation and discuss practical options with EagleComply.'}</p>
+              <p className="mt-1 text-xs text-slate-200">{e.ctaDesc || 'Share your situation and discuss practical options with EagleComply.'}</p>
             </div>
             <button onClick={onOpenConsultation} className="px-5 py-3 rounded-xl bg-white text-[#E31F1F] font-bold text-xs hover:scale-[1.02] transition-transform">
               {e.ctaBtn || 'Book a Consultation'}

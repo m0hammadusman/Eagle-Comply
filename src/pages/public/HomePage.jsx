@@ -157,9 +157,9 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
                 return (
                   <div
                     key={bIdx}
-                    className="shrink-0 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl sm:rounded-2xl glass-panel border border-surface-border/80 dark:border-white/10 shadow-sm flex items-center gap-2.5 bg-white/90 dark:bg-[#0D1629]/80"
+                    className="shrink-0 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl sm:rounded-2xl glass-panel border border-surface-border/80 dark:border-white/10 shadow-sm flex items-center gap-2.5 bg-white/90 dark:bg-[#131313]/80"
                   >
-                    <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl bg-[#E31F1F]/10 dark:bg-cyan-500/15 border border-[#E31F1F]/20 dark:border-cyan-500/30 text-[#E31F1F] dark:text-cyan-400 flex items-center justify-center shrink-0">
+                    <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl bg-[#E31F1F]/10 dark:bg-[#E31F1F]/15 border border-[#E31F1F]/20 dark:border-[#E31F1F]/30 text-[#E31F1F] dark:text-[#E31F1F] flex items-center justify-center shrink-0">
                       <BadgeIcon className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                     </div>
                     <div className="text-left rtl:text-right">
@@ -452,19 +452,19 @@ export default function HomePage({ onNavigate, onOpenConsultation, onOpenQuote }
       {/* 7. Conversion Section */}
       <section className="relative py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-[#E31F1F] via-[#131313] to-[#E31F1F] text-white overflow-hidden">
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-4 sm:space-y-6">
-          <span className="px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-white/10 text-blue-200 border border-white/20 text-[10px] sm:text-xs font-mono font-bold uppercase tracking-widest inline-block">
+          <span className="px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-white/10 text-slate-300 border border-white/20 text-[10px] sm:text-xs font-mono font-bold uppercase tracking-widest inline-block">
             {t.cta.tag}
           </span>
           <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white leading-snug">
             {t.cta.title}
           </h2>
-          <p className="text-xs sm:text-sm text-blue-100/90 max-w-xl mx-auto leading-relaxed">
+          <p className="text-xs sm:text-sm text-slate-200 max-w-xl mx-auto leading-relaxed">
             {hx.conversionDesc}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 pt-2">
             <button
               onClick={onOpenConsultation}
-              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-3.5 rounded-xl bg-white text-[#E31F1F] font-bold text-xs shadow-2xl hover:bg-blue-50 transition-all flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-3.5 rounded-xl bg-white text-[#E31F1F] font-bold text-xs shadow-2xl hover:bg-[#F5F3F2] transition-all flex items-center justify-center gap-2"
             >
               <Calendar className="w-4 h-4" />
               <span>{t.nav.bookConsultation}</span>

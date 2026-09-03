@@ -230,7 +230,7 @@ export default function Header({ onNavigate, currentRoute, onOpenSearch, onOpenC
                             </div>
                             <div className="w-64 h-48 rounded-xl bg-[#E31F1F] overflow-hidden relative shadow-inner">
                               <div className="absolute inset-0 opacity-40 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]" />
-                              <Globe2 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 text-blue-400/20" />
+                              <Globe2 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 text-[#E31F1F]" />
                             </div>
                           </div>
                         )}

@@ -24,13 +24,13 @@ export default function WhatsAppFloatingWidget() {
             </div>
             <button
               onClick={() => setIsOpen(false)}
-              className="p-1.5 rounded-full text-blue-300 hover:text-white hover:bg-white/10 transition-colors"
+              className="p-1.5 rounded-full text-[#FFBEBE] hover:text-white hover:bg-white/10 transition-colors"
             >
               <X className="w-4 h-4" />
             </button>
           </div>
 
-          <p className="text-[11px] text-blue-100/80 leading-relaxed">
+          <p className="text-[11px] text-slate-200 leading-relaxed">
             Directly message our resident regulatory and AML/CFT compliance team on WhatsApp:
           </p>
 
@@ -68,7 +68,7 @@ export default function WhatsAppFloatingWidget() {
             </a>
           </div>
 
-          <div className="pt-2 border-t border-[#1E1E1E] flex items-center justify-between text-[10px] font-mono text-blue-200/70">
+          <div className="pt-2 border-t border-[#1E1E1E] flex items-center justify-between text-[10px] font-mono text-slate-300">
             <span className="flex items-center gap-1">
               <ShieldCheck className="w-3 h-3 text-emerald-400" /> Bilateral NDA Protected
             </span>

@@ -194,19 +194,19 @@ export default function TeamMemberDetailPage({ params, onNavigate, onOpenConsult
             {/* Direct Consultation Card */}
             <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-[#E31F1F] via-[#131313] to-[#E31F1F] text-white shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="space-y-2 text-center md:text-left rtl:md:text-right">
-                <span className="text-xs font-mono uppercase tracking-widest text-blue-200 font-bold inline-block px-3 py-1 rounded-full bg-white/10 border border-white/20">
+                <span className="text-xs font-mono uppercase tracking-widest text-slate-300 font-bold inline-block px-3 py-1 rounded-full bg-white/10 border border-white/20">
                   {td.ctaTag || 'DIRECT ADVISORY & CONSULTATION'}
                 </span>
                 <h3 className="text-2xl font-bold text-white">
                   Consult with {member.name}
                 </h3>
-                <p className="text-xs sm:text-sm text-blue-100/85 max-w-xl leading-relaxed">
+                <p className="text-xs sm:text-sm text-slate-200 max-w-xl leading-relaxed">
                   {td.ctaDesc || 'Engage our senior practice directors for custom statutory gap analyses, licensing dossiers, and independent audit assurance.'}
                 </p>
               </div>
               <button
                 onClick={() => onOpenConsultation?.()}
-                className="px-6 py-3.5 rounded-xl bg-white text-[#E31F1F] font-bold text-xs shadow-xl hover:bg-blue-50 transition-all shrink-0 hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
+                className="px-6 py-3.5 rounded-xl bg-white text-[#E31F1F] font-bold text-xs shadow-xl hover:bg-[#F5F3F2] transition-all shrink-0 hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
               >
                 {td.ctaBtn || 'Schedule Advisory Discussion'}
               </button>
