@@ -42,6 +42,7 @@ import CaseStudiesPage from './pages/public/CaseStudiesPage';
 import CareersPage from './pages/public/CareersPage';
 import ContactPage from './pages/public/ContactPage';
 import LegalPage from './pages/public/LegalPage';
+import BookConsultationPage from './pages/public/BookConsultationPage';
 
 function AppContent() {
   const [isLoading, setIsLoading] = useState(true);
@@ -55,6 +56,7 @@ function AppContent() {
     const parts = clean.split('/').filter(Boolean);
     if (!parts.length) return { route: 'home', params: null };
     const [section, slug] = parts;
+    if (section === 'book-consultation' || section === 'consultation') return { route: 'book-consultation', params: null };
     if (section === 'services') return slug ? { route: 'solution-detail', params: { id: slug } } : { route: 'solutions', params: null };
     if (section === 'solutions') return slug ? { route: 'solution-detail', params: { id: slug } } : { route: 'solutions', params: null };
     if (section === 'industries') return slug ? { route: 'industry-detail', params: { id: slug } } : { route: 'industries', params: null };
@@ -65,7 +67,8 @@ function AppContent() {
     if (section === 'news') return slug ? { route: 'article-detail', params: { id: slug } } : { route: 'news', params: null };
     if (section === 'article') return slug ? { route: 'article-detail', params: { id: slug } } : { route: 'insights', params: null };
     const direct = {
-      about:'about', contact:'contact', resources:'knowledge-center', 'knowledge-center':'knowledge-center',
+      about:'about', contact:'contact', 'book-consultation':'book-consultation', consultation:'book-consultation',
+      resources:'knowledge-center', 'knowledge-center':'knowledge-center',
       experts:'experts', 'case-studies':'case-studies', careers:'careers', legal:'legal',
       'global-compliance':'global-compliance', blogs:'blogs', news:'news'
     };
@@ -80,6 +83,7 @@ function AppContent() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isConsultationOpen, setIsConsultationOpen] = useState(false);
   const [orderResource, setOrderResource] = useState(null);
+  const [isChatOpen, setIsChatOpen] = useState(false);
 
   // Initialize Global Scroll Reveal
   useScrollReveal([currentRoute]);
@@ -94,7 +98,7 @@ function AppContent() {
       insights: '/insights/', 'article-detail': `/insights/${id || ''}`,
       blogs: '/blogs/', news: '/news/',
       'knowledge-center': '/resources/', experts: '/experts/', 'case-studies': '/case-studies/',
-      careers: '/careers/', contact: '/contact/', legal: '/legal/', portal: '/portal/',
+      careers: '/careers/', contact: '/contact/', 'book-consultation': '/book-consultation/', legal: '/legal/', portal: '/portal/',
       consultant: '/consultant/'
     };
     const path = map[route] || '/';
@@ -197,8 +201,15 @@ function AppContent() {
               onOrderResource={(res) => setOrderResource(res)} 
             />
           )}
+          {currentRoute === 'book-consultation' && (
+            <BookConsultationPage onNavigate={navigate} />
+          )}
           {currentRoute === 'insights' && (
-            <InsightsPage onNavigate={navigate} />
+            <InsightsPage 
+              params={routeParams}
+              onNavigate={navigate} 
+              onOpenConsultation={() => setIsConsultationOpen(true)}
+            />
           )}
           {currentRoute === 'article-detail' && (
             <ArticleDetailPage 
@@ -209,6 +220,7 @@ function AppContent() {
           )}
           {currentRoute === 'about' && (
             <AboutPage 
+              params={routeParams}
               onNavigate={navigate} 
               onOpenConsultation={() => setIsConsultationOpen(true)} 
             />
@@ -269,12 +281,16 @@ function AppContent() {
 
         {/* Live AI Regulatory Assistant */}
         <ComplianceChatbot 
+          isOpen={isChatOpen}
+          setIsOpen={setIsChatOpen}
           onNavigate={navigate}
           onOpenConsultation={() => setIsConsultationOpen(true)}
         />
 
         {/* Floating WhatsApp Contact Speed Dial Overlay */}
-        <WhatsAppFloatingWidget />
+        <WhatsAppFloatingWidget 
+          isChatOpen={isChatOpen}
+        />
 
         {/* Global Modals */}
         <SearchModal 

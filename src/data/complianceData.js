@@ -1,3 +1,246 @@
+export const servicePillars = [
+  {
+    id: "financial-crime-compliance",
+    slug: "financial-crime-compliance",
+    name: "Financial Crime Compliance",
+    shortName: "Compliance Framework and Advisory",
+    heading: "Compliance frameworks, licensing support and regulatory advice for businesses operating in regulated markets.",
+    tagline: "AML/CFT frameworks, KYC and KYB, customer due diligence, sanctions and screening, transaction monitoring, investigations, reviews, remediation and managed compliance support.",
+    overview: "EagleComply helps businesses establish compliance frameworks, understand regulatory obligations and prepare for market entry. We support financial institutions, FinTech companies, payment providers, remittance businesses, digital asset firms and other organisations managing financial crime and regulatory requirements.\n\nOur work connects your business model, customer base, products, transaction flows and operating jurisdictions with the policies, procedures and governance arrangements needed to manage those requirements. We deliver tailored documentation, regulatory analysis and implementation guidance for new ventures and established businesses.",
+    jurisdictions: ["Australia", "United Kingdom", "Pakistan", "European Union"],
+    subOfferings: [
+      "AML/CFT Frameworks & Risk Assessments",
+      "KYC/KYB, CDD & Customer Onboarding",
+      "Sanctions & Screening",
+      "Transaction Monitoring & Investigations",
+      "Reviews, Testing & Remediation",
+      "Managed Compliance Services"
+    ],
+    detailedSections: [
+      {
+        id: "compliance-frameworks",
+        title: "Compliance Frameworks, Policies & Procedures",
+        desc: "We develop and review compliance frameworks that define responsibilities, establish controls and guide day-to-day decision-making. Our policy packs combine written policies with operating procedures, risk assessments, checklists and reporting templates.",
+        items: [
+          "AML/CFT and AML/CTF frameworks: anti-money laundering, counter-terrorist financing and counter-proliferation financing policies, programmes and procedures.",
+          "Business-wide risk assessments: assessment of customer, product, service, geographic, delivery-channel and transaction risks.",
+          "Customer due diligence: Know Your Customer (KYC), Know Your Business (KYB), Customer Due Diligence (CDD), Enhanced Due Diligence (EDD) and ongoing monitoring procedures.",
+          "Beneficial ownership: identification and verification of ultimate beneficial owners, ownership structures and controlling persons.",
+          "Source of funds and source of wealth: evidence requirements, assessment procedures and escalation standards.",
+          "Sanctions and screening: targeted financial sanctions, politically exposed persons (PEPs), adverse media and screening governance.",
+          "Transaction monitoring and reporting: monitoring frameworks, alert escalation, suspicious activity assessment and regulatory reporting procedures.",
+          "Governance and internal controls: compliance responsibilities, management oversight, record retention, policy approval and review cycles.",
+          "Business conduct policies: anti-bribery and corruption, conflicts of interest, outsourcing and complaints handling."
+        ]
+      },
+      {
+        id: "travel-rule-compliance",
+        title: "Travel Rule & Transfer Compliance",
+        desc: "We advise payment and digital asset businesses on Travel Rule requirements and the information accompanying transfers of funds and virtual assets.",
+        items: [
+          "Originator and beneficiary information requirements and verification standards.",
+          "Counterparty due diligence and VASP verification processes.",
+          "Technical data exchange procedures and messaging protocols.",
+          "Self-hosted / unhosted wallet risk arrangements and threshold compliance.",
+          "Record retention, audit trails, and exception handling for missing or incomplete transfer information.",
+          "Connecting FATF Recommendations 15 and 16 with national transfer requirements."
+        ]
+      },
+      {
+        id: "licensing-authorisation",
+        title: "Licensing, Authorisation & Market Entry",
+        desc: "We support businesses establishing regulated operations, launching new services and expanding into new markets. Our regulatory perimeter assessments identify the permissions, registrations and authorisations associated with the proposed business activities.",
+        items: [
+          "Regulatory perimeter and business-model analysis.",
+          "Licensing, authorisation and registration assessments.",
+          "Market-entry planning and application roadmaps.",
+          "Regulatory business plans and operating-model documentation.",
+          "Governance structures and compliance arrangements.",
+          "Application forms and supporting documentation.",
+          "Coordination of financial information and forecasts.",
+          "Application readiness reviews.",
+          "Responses to regulatory questions and information requests.",
+          "Cross-border service and expansion assessments."
+        ]
+      },
+      {
+        id: "compliance-advisory",
+        title: "Compliance Advisory & Regulatory Change",
+        desc: "We provide project-based and ongoing advice on regulatory requirements, compliance weaknesses and changes to business activities.",
+        items: [
+          "Regulatory obligations mapping and perimeter scoping.",
+          "Compliance gap assessments and regulatory change impact analysis.",
+          "Policy reviews and remediation planning.",
+          "Assessing the implications of new products, customer segments, distribution channels and operating markets.",
+          "Practical recommendations identifying requirements, business impact, and accountable ownership."
+        ]
+      },
+      {
+        id: "international-standards",
+        title: "International Standards & Regulatory Frameworks",
+        desc: "Our advisory work connects the Financial Action Task Force (FATF) Recommendations with national and EU legislation. FATF establishes international standards for combating money laundering, terrorist financing and proliferation financing; jurisdictions implement those standards through their own legal and supervisory frameworks.",
+        frameworks: [
+          {
+            jurisdiction: "Australia",
+            details: "Anti-Money Laundering and Counter-Terrorism Financing Act 2006, AML/CTF Rules 2025, AUSTRAC guidance and implementation of Australia’s AML/CTF reforms. Programme development, risk assessment, CDD, reporting procedures, and Travel Rule implementation."
+          },
+          {
+            jurisdiction: "United Kingdom",
+            details: "Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017, as amended, and associated supervisory requirements. Financial crime frameworks, CDD, governance documentation, and cryptoasset Travel Rule under Part 7A."
+          },
+          {
+            jurisdiction: "Pakistan",
+            details: "Anti-Money Laundering Act 2010, State Bank of Pakistan AML/CFT/CPF Regulations, SECP AML/CFT Regulations 2020 (as amended), and Financial Monitoring Unit (FMU) reporting requirements. Risk assessments, CDD, targeted financial sanctions, and compliance documentation."
+          },
+          {
+            jurisdiction: "European Union",
+            details: "National AML/CFT legislation implementing Directive (EU) 2015/849, as amended, Regulation (EU) 2023/1113 on information accompanying transfers of funds and certain crypto-assets, and readiness for the Anti-Money Laundering Regulation (EU) 2024/1624 (applicable from 10 July 2027) and Directive (EU) 2024/1640."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: "regulatory-commercial-advisory",
+    slug: "regulatory-commercial-advisory",
+    name: "Regulatory & Commercial Advisory",
+    shortName: "Legal support and advisory",
+    heading: "Practical legal advice, commercial contracts and business documentation that support informed decisions.",
+    tagline: "Financial services and FinTech regulation, licensing and market entry, commercial contracts, negotiation, governance documentation and digital asset regulation.",
+    overview: "EagleComply provides legal and commercial advisory services to help businesses understand their obligations, manage legal risk and establish clear business relationships. We advise on commercial arrangements, draft and negotiate agreements, and prepare documentation supporting business operations.\n\nOur work focuses on commercial matters, financial services, FinTech, technology and digital assets. We combine legal analysis with an understanding of your business objectives, contractual commitments and operational responsibilities.",
+    jurisdictions: ["Australia", "United Kingdom", "Pakistan", "European Union"],
+    subOfferings: [
+      "Financial Services & FinTech Regulation",
+      "Licensing, Authorisation & Market Entry",
+      "Commercial Contracts & Negotiation",
+      "Governance, Policies & Regulatory Documentation",
+      "Digital Assets & Blockchain Regulation"
+    ],
+    detailedSections: [
+      {
+        id: "legal-consultancy",
+        title: "Business Legal Advice & Ongoing Support",
+        desc: "We provide legal advice on the issues businesses encounter when establishing relationships, entering agreements and developing their operations. Our support covers individual matters and ongoing advisory engagements.",
+        items: [
+          "Legal consultations, written advice and advisory notes.",
+          "Legal risk assessments and analysis of contractual rights and obligations.",
+          "Review of proposed business arrangements and partnership structures.",
+          "Legal research and analysis for financial services, FinTech, technology and digital asset businesses.",
+          "Advice on customer terms, business terms and commercial disclosures.",
+          "Assessment of the legal implications of new products, services and commercial relationships.",
+          "Ongoing legal support for management and internal business teams."
+        ]
+      },
+      {
+        id: "commercial-contracts",
+        title: "Commercial Contracts & Negotiation",
+        desc: "We draft, review and negotiate commercial agreements that define deliverables, allocate responsibilities and establish how parties manage performance and risk.",
+        items: [
+          "Master Services Agreements (MSAs).",
+          "Statements of Work (SOWs) and Service-Level Agreements (SLAs).",
+          "Supplier, consultancy and professional services agreements.",
+          "Outsourcing and service-provider agreements.",
+          "Software, Software-as-a-Service (SaaS) and technology licensing agreements.",
+          "Non-Disclosure Agreements (NDAs) and confidentiality agreements.",
+          "Partnership, collaboration and joint venture agreements.",
+          "Referral, introducer and distribution agreements.",
+          "Customer terms and conditions and standard business terms.",
+          "Contract amendments, renewals and termination arrangements.",
+          "Negotiation support: contract mark-ups, issues lists, proposed amendments and assessment of alternative terms."
+        ]
+      },
+      {
+        id: "privacy-data-protection",
+        title: "Privacy, Data Protection & Website Documentation",
+        desc: "We advise on privacy and data protection matters and prepare documentation reflecting how businesses collect information, deliver services and interact with customers.",
+        items: [
+          "Privacy notices and privacy policies.",
+          "Cookie notices and consent wording.",
+          "Website terms of use and acceptable use policies.",
+          "Customer disclosures and professional services disclaimers.",
+          "Data Processing Agreements (DPAs).",
+          "Data-sharing agreements and contractual data protection provisions.",
+          "Confidentiality and information-handling documentation."
+        ]
+      },
+      {
+        id: "contract-templates-governance",
+        title: "Contract Templates & Corporate Governance Documentation",
+        desc: "We develop reusable legal documents and governance materials that support consistent contracting, clear authority and documented business decisions.",
+        items: [
+          "Standard contract templates and clause libraries.",
+          "Contract review checklists and approval matrices.",
+          "Board resolutions and delegated authority documentation.",
+          "Internal contracting procedures and governance documentation."
+        ]
+      }
+    ]
+  },
+  {
+    id: "accounting-finance",
+    slug: "accounting-finance",
+    name: "Accounting & Finance",
+    shortName: "Audit and Finance",
+    heading: "Accurate bookkeeping, reliable financial reporting and management accounts that explain business performance.",
+    tagline: "Outsourced accounting, management reporting, payroll, tax and statutory compliance, finance advisory, internal controls and audit readiness.",
+    overview: "EagleComply provides accounting support for businesses that need organised records, consistent reporting and a clear view of their financial position. We maintain accounting records, reconcile balances and prepare reports that support management oversight and business decisions.\n\nWe provide outsourced bookkeeping and reporting services and work alongside existing finance teams. Each engagement establishes reporting deadlines, information requirements, review responsibilities and deliverables from the outset.",
+    jurisdictions: ["United Kingdom", "Pakistan", "European Union"],
+    subOfferings: [
+      "Outsourced Accounting & Bookkeeping",
+      "Financial Reporting & Management Accounts",
+      "Payroll Services",
+      "Tax & Statutory Compliance",
+      "Finance Advisory & CFO Support",
+      "Internal Controls & Audit Readiness"
+    ],
+    detailedSections: [
+      {
+        id: "bookkeeping-accounting",
+        title: "Bookkeeping & Accounting Support",
+        desc: "We record, classify and reconcile business transactions, maintaining accurate accounting records supported by clear documentation.",
+        items: [
+          "Sales and purchase ledger maintenance.",
+          "Accounts payable and accounts receivable records.",
+          "Income, expenditure and transaction coding.",
+          "Bank and credit card reconciliations.",
+          "Balance sheet reconciliations.",
+          "Expense recording and supporting documentation.",
+          "General ledger maintenance.",
+          "Month-end journals, accruals and prepayments.",
+          "Preparation of supporting accounting schedules."
+        ]
+      },
+      {
+        id: "financial-reporting",
+        title: "Financial Reporting & Management Accounts",
+        desc: "We prepare financial reports and management accounts that explain profitability, cash flow and financial position.",
+        items: [
+          "Monthly and quarterly management accounts.",
+          "Profit and loss statements.",
+          "Balance sheets and supporting schedules.",
+          "Cash flow reporting.",
+          "Budget-to-actual comparisons and variance analysis.",
+          "Accounts receivable and accounts payable ageing reports.",
+          "Key performance indicator (KPI) reporting.",
+          "Management reporting packs.",
+          "Year-end accounting schedules and financial reporting support."
+        ]
+      },
+      {
+        id: "accounting-cleanup",
+        title: "Accounting Clean-Up & Reconciliation",
+        desc: "We help businesses address incomplete records, unresolved balances and accumulated bookkeeping backlogs.",
+        items: [
+          "Reviewing historical ledger entries and reconciling control accounts.",
+          "Correcting transaction classifications and preparing supporting schedules.",
+          "Identifying discrepancies and organising records into a consistent accounting base.",
+          "Improving month-end procedures and reporting formats for continuous clarity."
+        ]
+      }
+    ]
+  }
+];
+
 export const solutions = [
   {
     "id": "financial-crime-compliance",
@@ -1762,138 +2005,193 @@ export const solutions = [
 
 export const industries = [
   {
-    "id": "banking",
-    "name": "Banking & Credit Institutions",
-    "badge": "Core Sector",
-    "heroTag": "Institutional Banking Compliance",
-    "desc": "Comprehensive compliance architectures for retail, commercial, and private banks navigating evolving AML, prudential, and regulatory standards.",
-    "challenges": [
-      "Complex customer due diligence across diversified domestic and international accounts",
-      "High-volume transaction monitoring and false positive reduction",
-      "Prudential capital reporting, governance, and board risk oversight",
-      "Strict sanctions screening across real-time payment corridors"
+    id: "fintech-payments",
+    name: "FinTech & Payments",
+    badge: "Core Regulated Sector",
+    heroTag: "Scalable FinTech & Payment Governance",
+    desc: "FinTech and payments businesses need regulatory, financial crime, commercial and finance structures that can scale with the product. EagleComply supports payment services, technology enabled financial products and related platforms across licensing, AML/CFT, customer onboarding, sanctions, transaction monitoring, contracts and reporting.",
+    overview: "FinTech and payments businesses need regulatory, financial crime, commercial and finance structures that can scale with the product. EagleComply supports payment services, technology enabled financial products and related platforms across licensing, AML/CFT, customer onboarding, sanctions, transaction monitoring, contracts and reporting.\n\nOur work connects the regulatory perimeter with the customer journey, payment flow, third party model, partner relationships, compliance governance and finance requirements of the business.",
+    deliverables: [
+      "Regulatory perimeter and licensing",
+      "AML/CFT frameworks and risk assessments",
+      "KYC, KYB and customer onboarding",
+      "Sanctions and transaction monitoring",
+      "Payment and technology contracts",
+      "Customer terms and regulatory documentation",
+      "Market entry and cross border analysis",
+      "Accounting, reporting and finance operations"
     ],
-    "services": [
+    challenges: [
+      "Scaling customer onboarding and automated KYC/KYB without increasing fraud rates",
+      "Meeting multi-jurisdiction payment licensing thresholds across the UK, EU, and APAC",
+      "Managing partner bank compliance expectations and safeguarding requirements",
+      "Complying with Travel Rule and cross-border settlement transparency standards"
+    ],
+    services: [
       "financial-crime-compliance",
-      "regulatory-compliance",
-      "risk-governance",
-      "compliance-reviews"
-    ]
+      "regulatory-commercial-advisory",
+      "accounting-finance"
+    ],
+    regulations: ["uk-mlr-2017", "eu-6amld", "fatf-standards"]
   },
   {
-    "id": "fintech",
-    "name": "FinTech & Digital Challengers",
-    "badge": "High Growth",
-    "heroTag": "Agile FinTech Governance",
-    "desc": "Scalable compliance frameworks designed for fast-growing financial technology companies, neo-banks, and digital lending platforms.",
-    "challenges": [
-      "Building compliance operations that match rapid digital user acquisition",
-      "Meeting licensing and regulatory readiness requirements without slowing down product innovation",
-      "Managing partner bank compliance expectations and third-party oversight",
-      "Automating KYC and continuous risk monitoring workflows"
+    id: "banks-financial-institutions",
+    name: "Banks & Financial Institutions",
+    badge: "Institutional",
+    heroTag: "Institutional Banking & Supervisory Controls",
+    desc: "Banks and financial institutions operate mature control environments but regularly require specialist support for reviews, remediation, regulatory change and operational capacity. EagleComply provides targeted assistance across AML/CFT, KYC, sanctions, transaction monitoring, investigations, quality assurance and governance.",
+    overview: "Banks and financial institutions operate mature control environments but regularly require specialist support for reviews, remediation, regulatory change and operational capacity. EagleComply provides targeted assistance across AML/CFT, KYC, sanctions, transaction monitoring, investigations, quality assurance and governance.\n\nEngagements can focus on a defined control, a customer portfolio, an investigation backlog, a remediation programme or a broader financial crime workstream. Work is structured to fit the institution’s existing policies, systems, lines of defence and decision authorities.",
+    deliverables: [
+      "AML/CFT framework and risk assessment review",
+      "KYC and EDD remediation",
+      "Sanctions and screening controls",
+      "Transaction monitoring and investigations",
+      "Control testing and quality assurance",
+      "Regulatory change implementation",
+      "Managed financial crime support",
+      "Governance and regulatory documentation"
     ],
-    "services": [
-      "regulatory-compliance",
+    challenges: [
+      "Clearing transaction monitoring alert backlogs and conducting deep-dive investigations",
+      "Managing high-risk customer remediation (EDD, beneficial ownership, source of wealth)",
+      "Complying with rapid regulatory change across cross-border supervisory authorities",
+      "Establishing defensible Three Lines of Defense accountability and board reporting"
+    ],
+    services: [
       "financial-crime-compliance",
-      "legal-compliance",
-      "compliance-training"
-    ]
+      "regulatory-commercial-advisory",
+      "accounting-finance"
+    ],
+    regulations: ["fatf-standards", "eu-6amld", "us-bsa-aml", "uk-mlr-2017"]
   },
   {
-    "id": "payments",
-    "name": "Payment Service Providers (PSPs)",
-    "badge": "High Velocity",
-    "heroTag": "Payment Compliance Architecture",
-    "desc": "Specialized compliance for payment gateways, merchant acquirers, e-money issuers, and open banking payment institutions.",
-    "challenges": [
-      "Merchant onboarding due diligence and underwriting risk management",
-      "Real-time fraud prevention, transaction monitoring, and chargeback controls",
-      "Safeguarding of client funds and regulatory capital calculations",
-      "Navigating payment directives (PSD2/PSD3) and cross-border settlement rules"
+    id: "remittance-money-services",
+    name: "Remittance & Money Services",
+    badge: "Cross-Border Corridors",
+    heroTag: "Cross-Border Remittance & Corridor Risk",
+    desc: "Remittance and money services businesses operate high volume cross border transaction models with significant exposure to customer, corridor, sanctions and partner risk. EagleComply supports the compliance and commercial framework around onboarding, monitoring, reporting, licensing and partner relationships.",
+    overview: "Remittance and money services businesses operate high volume cross border transaction models with significant exposure to customer, corridor, sanctions and partner risk. EagleComply supports the compliance and commercial framework around onboarding, monitoring, reporting, licensing and partner relationships.\n\nThe service reflects the operational realities of remittance, including rapid customer journeys, multiple payout routes, cross border transaction flows, banking relationships and regulatory reporting.",
+    deliverables: [
+      "AML/CFT programmes and risk assessments",
+      "KYC, KYB and enhanced due diligence",
+      "Sanctions and payment screening",
+      "Transaction monitoring and investigations",
+      "Licensing and regulatory applications",
+      "Bank and payout partner agreements",
+      "Regulatory reporting and documentation",
+      "Accounting and management reporting"
     ],
-    "services": [
+    challenges: [
+      "Securing and retaining correspondent banking relationships amid industry de-risking",
+      "Managing high-volume corridor sanctions screening with low latency",
+      "Agent and sub-agent network oversight, audits, and compliance training",
+      "Fulfilling local regulatory reporting across multi-currency payout channels"
+    ],
+    services: [
       "financial-crime-compliance",
-      "regulatory-compliance",
-      "risk-governance",
-      "compliance-reviews"
-    ]
+      "regulatory-commercial-advisory",
+      "accounting-finance"
+    ],
+    regulations: ["fatf-standards", "uk-mlr-2017", "eu-6amld"]
   },
   {
-    "id": "remittance-msb",
-    "name": "Money Service Businesses & Remittance",
-    "badge": "Cross-Border",
-    "heroTag": "Global Remittance Oversight",
-    "desc": "High-trust compliance support for money transfer operators, remittance networks, and foreign exchange brokers operating in international corridors.",
-    "challenges": [
-      "Corridor-specific ML/TF risk profiling and cross-border payment transparency",
-      "Agent and sub-agent network monitoring, training, and audits",
-      "Securing and retaining correspondent and de-risked banking relationships",
-      "Executing rigorous independent annual AML/CFT program reviews"
+    id: "digital-assets-crypto",
+    name: "Digital Assets & Crypto",
+    badge: "Web3 & Blockchain",
+    heroTag: "Virtual Asset Regulatory & Travel Rule Architecture",
+    desc: "Digital asset businesses face evolving requirements across authorisation, AML/CFT, sanctions, custody, customer treatment and cross border activity. EagleComply combines digital asset regulatory analysis with financial crime controls, governance documentation and commercial support.",
+    overview: "Digital asset businesses face evolving requirements across authorisation, AML/CFT, sanctions, custody, customer treatment and cross border activity. EagleComply combines digital asset regulatory analysis with financial crime controls, governance documentation and commercial support.\n\nThe work covers exchanges, wallet providers, custodians, token issuers, stablecoin models, cryptoasset service providers, DeFi structures and other blockchain based financial services.",
+    deliverables: [
+      "Cryptoasset regulatory perimeter analysis",
+      "CASP and VASP authorisation support",
+      "MiCA and jurisdiction specific compliance",
+      "Crypto AML/CFT frameworks",
+      "Wallet, exchange and custody models",
+      "Sanctions and blockchain related risk controls",
+      "Stablecoins, tokenisation and DeFi",
+      "Commercial and governance documentation"
     ],
-    "services": [
+    challenges: [
+      "Implementing FATF Travel Rule protocols and counterparty VASP verification",
+      "Preparing comprehensive authorization packs under EU MiCA and UK/ADGM regimes",
+      "Managing illicit wallet exposure, mixing service risks, and blockchain forensics",
+      "Drafting robust custody terms, token risk disclosures, and governance policies"
+    ],
+    services: [
       "financial-crime-compliance",
-      "compliance-reviews",
-      "compliance-training",
-      "regulatory-compliance"
-    ]
+      "regulatory-commercial-advisory",
+      "accounting-finance"
+    ],
+    regulations: ["eu-mica", "fatf-standards", "uk-mlr-2017"]
   },
   {
-    "id": "digital-assets",
-    "name": "Crypto & Digital Asset Businesses",
-    "badge": "Emerging Frontier",
-    "heroTag": "Virtual Asset Regulatory Advisory",
-    "desc": "Practical regulatory and legal compliance for crypto exchanges, custody providers, token issuers, and Web3 projects.",
-    "challenges": [
-      "Complying with FATF Travel Rule requirements and blockchain analytics integration",
-      "Securing VASP/CASP licensing across jurisdictions (e.g. EU MiCA, UAE VARA, UK FCA)",
-      "Token classification legal reviews and whitepaper compliance",
-      "Counterparty due diligence and unhosted wallet risk management"
+    id: "lending-credit",
+    name: "Lending & Credit",
+    badge: "Credit & Financing",
+    heroTag: "Credit Operations, Disclosures & Control Frameworks",
+    desc: "Lending and credit businesses need clear alignment between regulatory permissions, customer onboarding, credit processes, AML/CFT controls, disclosures, contracts and reporting. EagleComply supports traditional and technology enabled lending models across these connected areas.",
+    overview: "Lending and credit businesses need clear alignment between regulatory permissions, customer onboarding, credit processes, AML/CFT controls, disclosures, contracts and reporting. EagleComply supports traditional and technology enabled lending models across these connected areas.\n\nThe service covers regulatory analysis, licensing preparation, KYC and customer controls, contractual documentation, governance policies and finance reporting, with emphasis on consistent treatment from application through the life of the credit relationship.",
+    deliverables: [
+      "Regulatory perimeter and licensing support",
+      "KYC, KYB and customer onboarding",
+      "AML/CFT and sanctions controls",
+      "Customer terms, disclosures and agreements",
+      "Third party and technology contracts",
+      "Governance and compliance policies",
+      "Financial reporting and management accounts",
+      "Internal controls and audit readiness"
     ],
-    "services": [
-      "legal-compliance",
-      "financial-crime-compliance",
-      "regulatory-compliance",
-      "compliance-reviews"
-    ]
+    challenges: [
+      "Aligning statutory lending disclosures with digital customer journeys",
+      "Establishing robust credit risk assessment alongside AML customer due diligence",
+      "Managing loan documentation, securitization agreements, and supplier contracts",
+      "Structuring periodic management accounts and statutory audit readiness"
+    ],
+    services: [
+      "regulatory-commercial-advisory",
+      "accounting-finance",
+      "financial-crime-compliance"
+    ],
+    regulations: ["uk-mlr-2017", "eu-6amld"]
   },
   {
-    "id": "financial-services",
-    "name": "Financial Institutions & Asset Managers",
-    "badge": "Institutional",
-    "heroTag": "Asset & Wealth Management Compliance",
-    "desc": "Governance, risk management, and compliance advisory for wealth managers, investment funds, family offices, and broker-dealers.",
-    "challenges": [
-      "Investor due diligence, source of wealth (SoW), and source of funds (SoF) verification",
-      "Market conduct, conflicts of interest, and best execution monitoring",
-      "Institutional risk appetite formulation and operational risk management",
-      "Navigating cross-border marketing and distribution regulations"
+    id: "professional-services",
+    name: "Professional Services & Other Regulated Businesses",
+    badge: "Professional Practices",
+    heroTag: "Proportionate Compliance for Professional Practices",
+    desc: "Professional services and other regulated businesses need compliance arrangements that are proportionate to their services, customers, transaction exposure and professional obligations. EagleComply supports firms that require structured AML/CFT, KYC, sanctions, governance, documentation and finance controls without the operating scale of a large financial institution.",
+    overview: "Professional services and other regulated businesses need compliance arrangements that are proportionate to their services, customers, transaction exposure and professional obligations. EagleComply supports firms that require structured AML/CFT, KYC, sanctions, governance, documentation and finance controls without the operating scale of a large financial institution.\n\nThe work focuses on practical procedures, clear ownership and documentation that staff can apply consistently across client onboarding, screening, risk assessment, training, monitoring and ongoing compliance activity.",
+    deliverables: [
+      "AML/CFT frameworks and risk assessments",
+      "Client due diligence and onboarding",
+      "Sanctions and PEP screening",
+      "Policies, procedures and training",
+      "Compliance reviews and remediation",
+      "Regulatory documentation",
+      "Internal controls and finance processes",
+      "Ongoing compliance and accounting support"
     ],
-    "services": [
-      "risk-governance",
-      "regulatory-compliance",
-      "legal-compliance",
-      "compliance-reviews"
-    ]
-  },
-  {
-    "id": "startups",
-    "name": "Startups & Regulated Entrants",
-    "badge": "Launchpad",
-    "heroTag": "Startup Regulatory Readiness",
-    "desc": "Practical, cost-effective compliance foundations for early-stage startups entering regulated financial and tech markets.",
-    "challenges": [
-      "Establishing initial compliance policies and terms without excessive overhead",
-      "Preparing convincing compliance packs for investors, partners, and regulators",
-      "Understanding exact regulatory thresholds and licensing triggers",
-      "Building foundational AML, privacy, and customer verification processes"
+    challenges: [
+      "Designing proportionate compliance controls that don’t overwhelm operational staff",
+      "Managing source of wealth and beneficial ownership verification for high-value clients",
+      "Maintaining ongoing sanctions screening and PEP identification procedures",
+      "Ensuring clean bookkeeping, financial reporting, and tax compliance"
     ],
-    "services": [
-      "regulatory-compliance",
-      "legal-compliance",
+    services: [
       "financial-crime-compliance",
-      "compliance-training"
-    ]
-  }
+      "regulatory-commercial-advisory",
+      "accounting-finance"
+    ],
+    regulations: ["fatf-standards", "uk-mlr-2017", "gdpr"]
+  },
+  // Backward compatibility alias entries
+  { id: "banking", name: "Banks & Financial Institutions", badge: "Institutional", desc: "Institutional banking frameworks and compliance capacity.", services: ["financial-crime-compliance"], isAlias: true, targetId: "banks-financial-institutions" },
+  { id: "fintech", name: "FinTech & Payments", badge: "High Growth", desc: "Scalable compliance for fast-growing financial technology companies.", services: ["regulatory-commercial-advisory"], isAlias: true, targetId: "fintech-payments" },
+  { id: "payments", name: "FinTech & Payments", badge: "High Velocity", desc: "Specialized payment and transaction compliance architecture.", services: ["financial-crime-compliance"], isAlias: true, targetId: "fintech-payments" },
+  { id: "remittance-msb", name: "Remittance & Money Services", badge: "Cross-Border", desc: "High-trust compliance support for money service businesses.", services: ["financial-crime-compliance"], isAlias: true, targetId: "remittance-money-services" },
+  { id: "digital-assets", name: "Digital Assets & Crypto", badge: "Web3 & Blockchain", desc: "Virtual asset regulatory advisory and crypto compliance.", services: ["regulatory-commercial-advisory"], isAlias: true, targetId: "digital-assets-crypto" },
+  { id: "financial-services", name: "Banks & Financial Institutions", badge: "Institutional", desc: "Governance, risk management, and compliance advisory.", services: ["financial-crime-compliance"], isAlias: true, targetId: "banks-financial-institutions" },
+  { id: "startups", name: "Professional Services & Other Regulated Businesses", badge: "Launchpad", desc: "Practical compliance foundations for growing businesses.", services: ["regulatory-commercial-advisory"], isAlias: true, targetId: "professional-services" }
 ];
 
 export const practitioners = [
@@ -2602,5 +2900,148 @@ export const careers = [
     "location": "Dubai / Remote",
     "type": "Full-Time",
     "description": "Assist fintech, payment, and digital asset clients with regulatory authorization dossiers, gap assessments, and compliance monitoring programs."
+  }
+];
+
+
+export const expertDisciplines = [
+  {
+    id: "fcc-banking",
+    title: "Financial Crime Compliance & Banking",
+    category: "Financial Crime Compliance",
+    badge: "Specialist Discipline",
+    icon: "ShieldCheck",
+    desc: "Specialist expertise across AML/CFT frameworks, banking compliance, enterprise risk assessment, customer due diligence, sanctions, transaction monitoring, regulatory expectations, control design and compliance reviews."
+  },
+  {
+    id: "kyc-aml-ops",
+    title: "KYC, AML & Financial Crime Operations",
+    category: "Operations & Onboarding",
+    badge: "Operational Discipline",
+    icon: "UserCheck",
+    desc: "Operational expertise across KYC and KYB, CDD and EDD, customer onboarding, beneficial ownership, source of funds and source of wealth, screening, transaction monitoring, investigations, quality assurance, remediation and managed compliance support."
+  },
+  {
+    id: "reg-commercial",
+    title: "Regulatory & Commercial Advisory",
+    category: "Legal & Regulatory",
+    badge: "Advisory Discipline",
+    icon: "Scale",
+    desc: "Expertise in financial services and FinTech regulation, licensing and authorisation, market entry, regulatory documentation, commercial contracts, negotiation, customer and business terms, governance, digital assets and blockchain regulation."
+  },
+  {
+    id: "accounting-finance",
+    title: "Accounting & Finance",
+    category: "Chartered Accountancy",
+    badge: "Finance Discipline",
+    icon: "Landmark",
+    desc: "Chartered accountancy expertise across outsourced accounting, financial reporting, management accounts, payroll, tax and statutory compliance, finance advisory, internal controls and audit readiness."
+  }
+];
+
+export const ourApproach = [
+  {
+    step: "01",
+    title: "Understand the business",
+    desc: "We begin with the business model, products, services, customer base, jurisdictions, delivery channels, transaction flows, existing controls and the commercial outcome that needs to be achieved."
+  },
+  {
+    step: "02",
+    title: "Assess the requirement",
+    desc: "We identify the applicable regulatory, operational, documentation and finance requirements, then assess the current position, material gaps and priority risks."
+  },
+  {
+    step: "03",
+    title: "Design the solution",
+    desc: "We develop the framework, policy, process, contract, control, risk assessment, governance document or finance solution required for the engagement."
+  },
+  {
+    step: "04",
+    title: "Implement the work",
+    desc: "We translate the design into operating procedures, customer workflows, training, remediation actions, documentation, reporting and accountable ownership."
+  },
+  {
+    step: "05",
+    title: "Support operations",
+    desc: "Our specialists provide project based and ongoing support across KYC, screening, transaction monitoring, remediation, compliance monitoring, accounting and finance operations."
+  },
+  {
+    step: "06",
+    title: "Review and strengthen",
+    desc: "We review controls, files, processes and documentation to confirm that the framework remains effective, proportionate and aligned with the business and the relevant regulatory environment."
+  }
+];
+
+export const jurisdictionCoverage = [
+  {
+    id: "european-union",
+    name: "European Union",
+    region: "Europe",
+    flag: "🇪🇺",
+    tag: "Directive (EU) 2015/849 · MiCA · AMLR (EU) 2024/1624",
+    desc: "Our European Union work covers AML/CFT, customer due diligence, sanctions, financial services and payments regulation, licensing and market entry, MiCA and digital asset regulation, governance documentation, commercial arrangements and cross border compliance. EU level requirements are considered together with the rules and supervisory expectations that apply in the relevant Member State."
+  },
+  {
+    id: "gcc-markets",
+    name: "Gulf Cooperation Council Markets",
+    region: "Middle East",
+    flag: "🌐",
+    tag: "Saudi Arabia · UAE · Bahrain · Qatar · Kuwait · Oman",
+    desc: "Our GCC work covers financial crime compliance, payments and remittance, KYC, sanctions, regulatory documentation, commercial arrangements, licensing preparation, market entry and selected digital asset matters across Saudi Arabia, the United Arab Emirates, Bahrain, Qatar, Kuwait and Oman. Each engagement is aligned to the regulator and legal framework governing the relevant activity."
+  },
+  {
+    id: "pakistan",
+    name: "Pakistan",
+    region: "South Asia",
+    flag: "🇵🇰",
+    tag: "State Bank of Pakistan · SECP · FMU",
+    desc: "Our Pakistan work covers AML/CFT, banking and financial sector compliance, KYC and customer due diligence, sanctions and screening, transaction monitoring, regulatory documentation, commercial contracts, accounting and finance. Relevant requirements of the State Bank of Pakistan, the Securities and Exchange Commission of Pakistan and the Financial Monitoring Unit are reflected according to the activity and regulated sector."
+  },
+  {
+    id: "australia",
+    name: "Australia",
+    region: "Asia-Pacific",
+    flag: "🇦🇺",
+    tag: "AML/CTF Act 2006 · Rules 2025 · AUSTRAC",
+    desc: "Our Australia work covers AML/CTF, AUSTRAC obligations, remittance and payments, KYC and customer due diligence, sanctions, transaction monitoring, AML/CTF framework development, remediation, regulatory documentation and accounting and finance support. Work is aligned with the current Australian AML/CTF framework and the obligations applicable to the relevant service."
+  },
+  {
+    id: "united-states",
+    name: "United States",
+    region: "North America",
+    flag: "🇺🇸",
+    tag: "BSA / AML · FinCEN · OFAC Sanctions",
+    desc: "Our United States work covers BSA and AML compliance, FinCEN related requirements, KYC and customer due diligence, OFAC sanctions controls, transaction monitoring, investigations, financial crime operations, regulatory research and commercial documentation. Federal requirements and activity specific state requirements are considered according to the business model."
+  }
+];
+
+export const insightsCategories = [
+  {
+    id: "regulatory-updates",
+    name: "Regulatory Updates",
+    badge: "Supervisory Horizon",
+    tagline: "New laws, rules, supervisory statements, consultations and enforcement developments",
+    description: "Regulatory Updates covers new laws, rules, supervisory statements, consultations, enforcement developments and implementation deadlines across the jurisdictions and sectors supported by EagleComply. Each update explains the development, the businesses affected and the practical impact on governance, controls, documentation or operations."
+  },
+  {
+    id: "articles-analysis",
+    name: "Articles & Analysis",
+    badge: "In-Depth Commentary",
+    tagline: "Specialist commentary on financial crime, regulation, FinTech and digital assets",
+    description: "Articles & Analysis provides deeper specialist commentary on financial crime compliance, financial services regulation, FinTech, payments, digital assets, commercial matters and accounting and finance. The analysis focuses on regulatory reasoning, emerging risk, implementation challenges and the practical consequences for business models and control frameworks."
+  },
+  {
+    id: "guides-resources",
+    name: "Guides & Resources",
+    badge: "Implementation Toolkits",
+    tagline: "Practical material for businesses preparing for compliance, commercial and finance work",
+    description: "Guides & Resources provides practical material for businesses preparing for compliance, regulatory, commercial or finance work. Resources cover areas such as AML/CFT readiness, KYC and customer onboarding, sanctions, licensing preparation, transaction monitoring, governance documentation, financial reporting and internal controls."
+  },
+  {
+    id: "news-events",
+    name: "News & Events",
+    badge: "Firm Updates & Briefings",
+    tagline: "Firm updates, professional appointments, webinars and conferences",
+    description: "News & Events brings together EagleComply firm updates, professional appointments, speaking engagements, webinars, training sessions, conferences and other public professional activity connected to our areas of expertise."
   }
 ];

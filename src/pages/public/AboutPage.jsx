@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   ShieldCheck, 
   Scale, 
@@ -6,331 +6,145 @@ import {
   FileText, 
   CheckCircle2, 
   Lock, 
-  Award, 
   Sparkles, 
   Calendar, 
   ArrowRight, 
-  Target, 
-  Eye, 
-  Briefcase, 
   Check, 
   Globe2, 
-  ScanEye,
-  Cpu,
-  Terminal,
-  ShieldAlert,
-  Activity
+  UserCheck,
+  Landmark,
+  Layers,
+  Activity,
+  Target
 } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
-import TeamBadges from '../../components/common/TeamBadges';
+import { expertDisciplines, ourApproach, jurisdictionCoverage } from '../../data/complianceData';
 
-function LinkedInIcon({ className = "w-3.5 h-3.5" }) {
-  return (
-    <svg className={className} fill="currentColor" viewBox="0 0 24 24">
-      <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64a1.66 1.66 0 0 0-1.67 1.66 1.67 1.67 0 0 0 1.67 1.67 1.67 1.67 0 0 0 1.67-1.67 1.66 1.66 0 0 0-1.67-1.66Z" />
-    </svg>
-  );
-}
-
-function PipelineConsole() {
+export default function AboutPage({ params, onNavigate, onOpenConsultation }) {
   const { t } = useLanguage();
-  const ap = t.aboutPage || {};
-
-  const icons = [ScanEye, Cpu, Terminal, ShieldAlert];
-
-  const defaultPipeline = [
-    {
-      index: "PHASE 01 // DISCOVERY",
-      title: "Diagnostic & Risk Discovery",
-      desc: "We conduct an in-depth review of your products, customer corridors, business model, and operational processes against applicable regulatory baselines.",
-      output: "Regulatory Gap Matrix & Perimeter Map"
-    },
-    {
-      index: "PHASE 02 // ARCHITECTURE",
-      title: "Practical Control Design",
-      desc: "We translate complex statutory rules into clear policies, standard operating procedures, and automated workflows that frontline teams can execute.",
-      output: "Customized SOPs & Policy Blueprints"
-    },
-    {
-      index: "PHASE 03 // DEPLOYMENT",
-      title: "Implementation & Staff Training",
-      desc: "We embed compliance routines into your daily operations and train compliance staff, management, and board members on their legal duties.",
-      output: "Operationalized Governance & Board Briefing"
-    },
-    {
-      index: "PHASE 04 // SURVEILLANCE",
-      title: "Ongoing Assurance & Reviews",
-      desc: "We conduct periodic independent testing, gap assessments, and regulatory horizon scanning to keep your organization ahead of supervisory changes.",
-      output: "Continuous Audit Logs & Risk Horizon Radar"
-    }
-  ];
-
-  const pipelineData = (ap.pipelineData || defaultPipeline).map((item, idx) => ({
-    ...item,
-    icon: icons[idx] || ScanEye
-  }));
-
-  const [activeStep, setActiveStep] = useState(0);
-  const [progress, setProgress] = useState(0);
-  const duration = 4000;
-  const startTimeRef = useRef(Date.now());
+  
+  // Section Navigation: 'who-we-are' | 'our-experts' | 'our-approach' | 'jurisdictions'
+  const [activeTab, setActiveTab] = useState(params?.section || 'who-we-are');
 
   useEffect(() => {
-    startTimeRef.current = Date.now();
-    const interval = setInterval(() => {
-      const elapsed = Date.now() - startTimeRef.current;
-      const p = Math.min(elapsed / duration, 1);
-      setProgress(p);
-
-      if (p >= 1) {
-        setActiveStep((prev) => (prev + 1) % pipelineData.length);
-        startTimeRef.current = Date.now();
+    if (params?.section) {
+      setActiveTab(params.section);
+      const element = document.getElementById(params.section);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
       }
-    }, 50);
-
-    return () => clearInterval(interval);
-  }, [activeStep, pipelineData.length]);
-
-  const handleStepClick = (index) => {
-    setActiveStep(index);
-    startTimeRef.current = Date.now();
-    setProgress(0);
-  };
-
-  const currentItem = pipelineData[activeStep] || pipelineData[0];
-  const IconComponent = currentItem.icon;
-  const circumference = 88;
-  const strokeDashoffset = circumference - (circumference * progress);
-
-  return (
-    <div className="w-full max-w-5xl mx-auto rounded-[28px] glass-panel bg-white/90 dark:bg-[#0B1324] border border-slate-200/80 dark:border-white/10 p-6 sm:p-10 shadow-2xl backdrop-blur-xl relative overflow-hidden transition-colors duration-300">
-      
-      {/* Top Console Bar */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-6 border-b border-slate-200/80 dark:border-white/10 mb-8">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg font-mono text-xs font-bold uppercase tracking-wider text-[#334DAF] dark:text-cyan-400 bg-[#334DAF]/10 dark:bg-cyan-500/10 border border-[#334DAF]/20 dark:border-cyan-500/30">
-          <span className="w-2 h-2 rounded-full bg-[#334DAF] dark:bg-cyan-400 animate-ping" />
-          <span>{ap.methodologyBadge || 'Methodology & Architecture'}</span>
-        </div>
-        <div className="font-mono text-xs text-slate-500 dark:text-slate-400 flex items-center gap-1.5">
-          <span>{ap.executionPipeline || 'EXECUTION PIPELINE:'}</span>
-          <span className="text-emerald-600 dark:text-emerald-400 font-bold">{ap.activeStatus || 'ACTIVE'}</span>
-        </div>
-      </div>
-
-      {/* Split Dashboard Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-        
-        {/* Left Step Pipeline Navigation */}
-        <div className="md:col-span-5 flex flex-col gap-3 relative">
-          <div className="absolute left-[26px] top-6 bottom-6 w-[2px] bg-slate-200 dark:bg-white/10 z-0" />
-
-          {pipelineData.map((item, idx) => {
-            const isActive = activeStep === idx;
-            return (
-              <button
-                key={idx}
-                onClick={() => handleStepClick(idx)}
-                className={`flex items-center gap-4 p-3.5 rounded-2xl border transition-all relative z-10 text-left ${
-                  isActive
-                    ? 'bg-blue-50/90 dark:bg-[#0F1E38] border-[#334DAF]/40 dark:border-cyan-500/40 shadow-lg'
-                    : 'bg-transparent border-transparent hover:bg-slate-100/60 dark:hover:bg-white/5'
-                }`}
-              >
-                <div
-                  className={`w-8 h-8 rounded-xl font-mono text-xs font-bold flex items-center justify-center shrink-0 border transition-all ${
-                    isActive
-                      ? 'bg-[#091F5C] dark:bg-cyan-400 text-white dark:text-slate-950 border-[#091F5C] dark:border-cyan-300 scale-105 shadow-md shadow-blue-500/20'
-                      : 'bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 border-slate-200 dark:border-white/10'
-                  }`}
-                >
-                  0{idx + 1}
-                </div>
-                <span
-                  className={`text-sm font-semibold transition-colors ${
-                    isActive
-                      ? 'text-[#091F5C] dark:text-white font-bold'
-                      : 'text-slate-600 dark:text-slate-400'
-                  }`}
-                >
-                  {item.title}
-                </span>
-              </button>
-            );
-          })}
-        </div>
-
-        {/* Right Active Showcase Hub */}
-        <div className="md:col-span-7 rounded-2xl p-6 sm:p-8 min-h-[360px] flex flex-col justify-between relative overflow-hidden bg-gradient-to-br from-blue-50/80 via-slate-50 to-indigo-50/40 dark:from-[#0E1A33] dark:via-[#0A1428] dark:to-[#060D1A] border border-[#334DAF]/20 dark:border-cyan-500/25 shadow-inner">
-          <div className="space-y-4">
-            <div className="flex items-center gap-4">
-              <div className="w-14 h-14 rounded-2xl bg-[#334DAF]/10 dark:bg-cyan-500/15 border border-[#334DAF]/25 dark:border-cyan-500/30 text-[#334DAF] dark:text-cyan-400 flex items-center justify-center shrink-0 shadow-sm">
-                <IconComponent className="w-7 h-7" />
-              </div>
-              <div>
-                <div className="font-mono text-xs font-bold text-[#334DAF] dark:text-cyan-400 tracking-wider">
-                  {currentItem.index}
-                </div>
-                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mt-0.5 leading-snug">
-                  {currentItem.title}
-                </h3>
-              </div>
-            </div>
-
-            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-              {currentItem.desc}
-            </p>
-          </div>
-
-          {/* Telemetry Output Box with Progress Ring */}
-          <div className="mt-6 p-3.5 sm:p-4 rounded-xl bg-white/90 dark:bg-[#030712]/70 border border-dashed border-slate-300 dark:border-white/15 flex items-center justify-between gap-3 shadow-sm">
-            <div className="font-mono text-xs text-slate-600 dark:text-slate-300">
-              <span className="text-slate-400 uppercase text-[10px] block font-bold">{ap.deliverableLabel || 'DELIVERABLE:'}</span>
-              <span className="font-bold text-slate-900 dark:text-slate-100">{currentItem.output}</span>
-            </div>
-
-            {/* Circular Timer Ring */}
-            <div className="relative w-8 h-8 flex items-center justify-center shrink-0">
-              <svg className="w-full h-full -rotate-90" viewBox="0 0 32 32">
-                <circle
-                  className="stroke-slate-200 dark:stroke-white/10 fill-none"
-                  strokeWidth="3"
-                  cx="16"
-                  cy="16"
-                  r="14"
-                />
-                <circle
-                  className="stroke-[#334DAF] dark:stroke-cyan-400 fill-none transition-all duration-75"
-                  strokeWidth="3"
-                  strokeDasharray="88"
-                  strokeDashoffset={strokeDashoffset}
-                  strokeLinecap="round"
-                  cx="16"
-                  cy="16"
-                  r="14"
-                />
-              </svg>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-  );
-}
-
-export default function AboutPage({ onNavigate, onOpenConsultation, onOpenQuote }) {
-  const { t, experts } = useLanguage();
-  const ap = t.aboutPage || {};
-
-  const valueIcons = [ShieldCheck, Lock, Scale, Eye];
-  
-  const defaultValues = [
-    {
-      title: "Professional Ethics & Integrity",
-      desc: "We adhere to the highest standards of professional conduct, objective assessment, and unbiased regulatory guidance."
-    },
-    {
-      title: "Strict Confidentiality",
-      desc: "All client disclosures, risk assessments, and documentation are safeguarded under mutual bilateral NDA protocols."
-    },
-    {
-      title: "Risk-Based Approach",
-      desc: "We engineer proportionate compliance frameworks tailored to your actual institutional risk profile and operational realities."
-    },
-    {
-      title: "Vigilance & Clear Vision",
-      desc: "Like the eagle, we identify regulatory risks early and provide clear foresight across evolving international supervisory standards."
     }
-  ];
+  }, [params]);
 
-  const brandValues = (ap.brandValues || defaultValues).map((val, idx) => ({
-    ...val,
-    icon: valueIcons[idx] || ShieldCheck
-  }));
-
-  const seniorPractitioners = experts || [];
+  const handleTabChange = (tabId) => {
+    setActiveTab(tabId);
+    const element = document.getElementById(tabId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <div className="w-full">
+      
       {/* 1. Hero Header */}
-      <section className="relative pt-4 sm:pt-6 pb-8 sm:pb-12 lg:pt-6 lg:pb-12 bg-surface-subtle/70 border-b border-surface-border overflow-hidden">
+      <section className="relative pt-8 sm:pt-12 pb-12 sm:pb-16 bg-surface-subtle/70 border-b border-surface-border overflow-hidden">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#334DAF]/10 dark:bg-[#7096D1]/15 border border-[#334DAF]/25 dark:border-[#7096D1]/30 text-[#091F5C] dark:text-[#D0E4FE] text-xs font-mono font-bold tracking-wider uppercase">
+            <Sparkles className="w-3.5 h-3.5 text-[#334DAF] dark:text-[#7096D1]" />
+            <span>ABOUT EAGLECOMPLY</span>
+          </div>
+
+          <h1 className="font-sans text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 dark:text-white leading-[1.15] max-w-4xl mx-auto">
+            Compliance, regulation and finance foundations for businesses operating in complex markets.
+          </h1>
+
+          <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed font-normal max-w-3xl mx-auto">
+            EagleComply is a specialist advisory firm supporting businesses that operate in regulated markets or require stronger compliance, governance, commercial and finance foundations. Our work combines financial crime expertise, regulatory and commercial analysis, and accounting and finance capability in a single multidisciplinary model.
+          </p>
+
+          {/* Sub-Navigation Pill Bar */}
+          <div className="pt-4 flex flex-wrap items-center justify-center gap-2">
+            {[
+              { id: 'who-we-are', label: 'Who We Are' },
+              { id: 'our-experts', label: 'Our Experts' },
+              { id: 'our-approach', label: 'Our Approach' },
+              { id: 'jurisdictions', label: 'Jurisdictions' }
+            ].map(tab => (
+              <button
+                key={tab.id}
+                onClick={() => handleTabChange(tab.id)}
+                className={`px-5 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer border ${
+                  activeTab === tab.id
+                    ? 'bg-[#091F5C] dark:bg-[#7096D1] text-white dark:text-[#091F5C] border-[#091F5C] shadow-md'
+                    : 'bg-surface-raised border-surface-border text-slate-700 dark:text-slate-300 hover:border-[#334DAF]'
+                }`}
+              >
+                {tab.label}
+              </button>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 2. SUBSECTION 1: WHO WE ARE */}
+      <section id="who-we-are" className="py-14 lg:py-20 w-full bg-surface-base dark:bg-[#101E42] border-b border-surface-border dark:border-[#1E3778]/60 scroll-mt-20 transition-colors">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
             
-            {/* Left Content Column */}
             <div className="lg:col-span-7 space-y-5 text-left rtl:text-right">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#334DAF]/10 dark:bg-[#7096D1]/15 border border-[#334DAF]/25 dark:border-[#7096D1]/30 text-[#091F5C] dark:text-[#D0E4FE] text-xs font-mono font-bold tracking-wider uppercase">
-                <Sparkles className="w-3.5 h-3.5 text-[#334DAF] dark:text-[#7096D1]" />
-                <span>{ap.tag || 'ABOUT EAGLECOMPLY'}</span>
-              </div>
-
-              <h1 className="font-sans text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 dark:text-white leading-[1.15]">
-                {t.brand?.tagline || ap.title || 'Complex Regulations. Clear Solutions. Confident Growth.'}
-              </h1>
-
-              <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed font-normal max-w-2xl">
-                {ap.description || 'EagleComply is an international compliance advisory firm helping financial institutions, fintechs, payment companies, remittance businesses, and startups operate with complete regulatory certainty.'}
+              <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#334DAF] dark:text-[#7096D1]">
+                SUBSECTION 01 // OVERVIEW
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white leading-tight">
+                Who We Are
+              </h2>
+              
+              <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
+                EagleComply is built around practical specialist expertise. Two members of the team focus on AML/CFT, KYC, banking compliance, sanctions, transaction monitoring and financial crime operations. A regulatory and commercial specialist covers financial services regulation, FinTech, licensing, commercial contracts, negotiation, terms and conditions, governance documentation and digital assets. The accounting and finance practice is led by a UK based Chartered Accountant with expertise in accounting, reporting, payroll, statutory compliance, finance support and internal controls.
               </p>
 
-              {/* Action Buttons */}
-              <div className="pt-2 flex flex-wrap items-center gap-3">
-                <button
-                  onClick={() => onOpenConsultation?.()}
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-[#091F5C] to-[#334DAF] dark:from-[#334DAF] dark:to-[#7096D1] text-white dark:text-[#101E42] font-bold text-xs shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer"
-                >
-                  <Calendar className="w-4 h-4" />
-                  <span>{ap.bookConsultation || t.nav?.bookConsultation || 'Book a Consultation'}</span>
-                </button>
-                <button
-                  onClick={() => onNavigate?.('solutions')}
-                  className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-surface-base border border-surface-border text-slate-800 dark:text-slate-200 hover:border-[#334DAF] font-bold text-xs transition-all shadow-sm cursor-pointer"
-                >
-                  <span>{ap.explorePractice || 'Explore Practice Areas'}</span>
-                  <ArrowRight className="w-4 h-4 rtl:rotate-180" />
-                </button>
-              </div>
+              <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
+                This combination reflects the way regulated businesses actually operate. A licensing project can require an AML/CFT framework, customer documentation, commercial agreements, governance arrangements and financial information. A remediation project can require policy changes, file reviews, operational support and stronger internal controls. EagleComply brings these workstreams together so that the final solution is consistent across the business.
+              </p>
 
-              {/* Key Practice Credential Highlights */}
-              <div className="pt-4 grid grid-cols-3 gap-3 border-t border-surface-border/60 max-w-lg">
-                <div>
-                  <div className="text-base sm:text-lg font-bold text-slate-900 dark:text-white font-mono">100%</div>
-                  <div className="text-[11px] text-slate-500 font-mono">{ap.auditTested || 'Audit Tested'}</div>
-                </div>
-                <div>
-                  <div className="text-base sm:text-lg font-bold text-slate-900 dark:text-white font-mono">FATF</div>
-                  <div className="text-[11px] text-slate-500 font-mono">{ap.alignedBaselines || 'Aligned Baselines'}</div>
-                </div>
-                <div>
-                  <div className="text-base sm:text-lg font-bold text-slate-900 dark:text-white font-mono">UK / EU</div>
-                  <div className="text-[11px] text-slate-500 font-mono">{ap.crossBorder || 'Cross-Border Depth'}</div>
-                </div>
+              <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
+                Our work is proportionate to the size, complexity and risk profile of the organisation. We focus on clear analysis, usable documentation, defined responsibilities and controls that management and operational teams can apply in practice.
+              </p>
+
+              <div className="pt-2 flex flex-wrap gap-4 text-xs font-mono text-slate-700 dark:text-slate-300">
+                <span className="flex items-center gap-1.5 font-bold">
+                  <Check className="w-4 h-4 text-emerald-500" /> Proportionate to Size & Risk
+                </span>
+                <span className="flex items-center gap-1.5 font-bold">
+                  <Check className="w-4 h-4 text-emerald-500" /> Usable Operational Documentation
+                </span>
+                <span className="flex items-center gap-1.5 font-bold">
+                  <Check className="w-4 h-4 text-emerald-500" /> Coordinated Multidisciplinary Team
+                </span>
               </div>
             </div>
 
-            {/* Right Video Showcase Column */}
-            <div className="lg:col-span-5 relative">
-              <div className="relative rounded-3xl overflow-hidden glass-panel border border-surface-border shadow-2xl bg-[#091F5C]/5 dark:bg-[#101E42]/40 aspect-[4/3] sm:aspect-[16/11] flex items-center justify-center group">
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  preload="auto"
-                  className="w-full h-full object-cover rounded-3xl"
-                  poster={`${import.meta.env.BASE_URL}assets/images/governance-boardroom.jpg`}
+            <div className="lg:col-span-5 p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-[#091F5C] to-[#1E3778] text-white space-y-4 shadow-xl text-left rtl:text-right border border-[#1E3778]">
+              <span className="text-xs font-mono uppercase tracking-widest text-blue-200">
+                OUR TARGET ORGANISATIONS
+              </span>
+              <h3 className="text-xl font-bold text-white">
+                Who We Work With
+              </h3>
+              <p className="text-xs text-blue-100/90 leading-relaxed">
+                We work with financial institutions, FinTech and payment businesses, remittance providers, digital asset businesses, lenders, professional services firms and other regulated organisations.
+              </p>
+              <p className="text-xs text-blue-100/90 leading-relaxed">
+                Our services cover both advisory and operational needs, from framework design and licensing preparation to customer due diligence, remediation, contract negotiation, reporting and ongoing support.
+              </p>
+              <div className="pt-4 border-t border-white/20">
+                <button
+                  onClick={() => onOpenConsultation ? onOpenConsultation() : onNavigate('contact')}
+                  className="w-full py-2.5 rounded-xl bg-white text-[#091F5C] hover:bg-blue-50 font-bold text-xs transition-all text-center cursor-pointer shadow-md"
                 >
-                  <source src={`${import.meta.env.BASE_URL}about-video.mp4`} type="video/mp4" />
-                  <source src={`${import.meta.env.BASE_URL}assets/about-video.mp4`} type="video/mp4" />
-                  <source src={`${import.meta.env.BASE_URL}world-map.mp4`} type="video/mp4" />
-                </video>
-
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none rounded-3xl" />
-
-                <div className="absolute top-3.5 left-3.5 rtl:left-auto rtl:right-3.5 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] font-mono flex items-center gap-2 pointer-events-none">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-                  <span className="font-bold">{ap.motionTag || 'EAGLECOMPLY MOTION'}</span>
-                </div>
+                  Book a Consultation
+                </button>
               </div>
             </div>
 
@@ -338,133 +152,183 @@ export default function AboutPage({ onNavigate, onOpenConsultation, onOpenQuote 
         </div>
       </section>
 
-      {/* 2. Purpose & Mandate */}
-      <section className="py-14 lg:py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          <div className="space-y-4 text-left rtl:text-right">
+      {/* 3. SUBSECTION 2: OUR EXPERTS */}
+      <section id="our-experts" className="py-14 lg:py-20 w-full bg-[#F4F7FC] dark:bg-[#0B142B] border-b border-surface-border dark:border-[#1E3778]/60 scroll-mt-20 transition-colors">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
             <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#334DAF] dark:text-[#7096D1]">
-              {ap.purposeTag || 'Our Purpose'}
+              SUBSECTION 02 // MULTIDISCIPLINARY CAPABILITY
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">
-              {ap.purposeTitle || 'Demystifying Complex Regulatory Frameworks'}
+              Our Experts
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-              {ap.purposeP1 || 'Regulatory compliance should not be an impediment to business innovation; it should be the solid foundation that enables sustainable, long-term growth.'}
+              EagleComply brings together four distinct specialist disciplines into a single synchronized advisory practice, addressing complex compliance, legal, commercial and finance challenges through one coordinated team.
             </p>
-            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-              {ap.purposeP2 || 'EagleComply was established to bridge the divide between complex statutory directives and practical business execution. We deliver tailored AML/CFT programs, regulatory authorization support, enterprise risk frameworks, and legal compliance advisory designed to protect your institutional reputation and satisfy supervisory scrutiny.'}
-            </p>
-            <div className="pt-2 flex flex-wrap gap-4 text-xs font-mono text-slate-700 dark:text-slate-300">
-              <span className="flex items-center gap-1.5 font-bold">
-                <Check className="w-4 h-4 text-emerald-500" /> {ap.fatfAligned || 'FATF Aligned'}
-              </span>
-              <span className="flex items-center gap-1.5 font-bold">
-                <Check className="w-4 h-4 text-emerald-500" /> {ap.intlDepth || 'International Depth'}
-              </span>
-              <span className="flex items-center gap-1.5 font-bold">
-                <Check className="w-4 h-4 text-emerald-500" /> {ap.riskMethodology || 'Risk-Based Methodology'}
-              </span>
-            </div>
           </div>
 
-          <div className="p-8 rounded-3xl bg-gradient-to-br from-[#091F5C] to-[#1E3778] text-white space-y-5 shadow-xl text-left rtl:text-right">
-            <div className="text-xs font-mono uppercase tracking-widest text-blue-200">
-              {ap.eagleIdentityTag || 'The Eagle Identity'}
-            </div>
-            <h3 className="text-xl font-bold text-white">
-              {ap.eagleIdentityTitle || 'Vigilance, Oversight & Integrity'}
-            </h3>
-            <p className="text-xs text-blue-100/85 leading-relaxed">
-              {ap.eagleIdentityP1 || 'In financial regulation, the eagle represents vigilant oversight, keen discernment, and the ability to view the broader regulatory landscape.'}
-            </p>
-            <p className="text-xs text-blue-100/85 leading-relaxed">
-              {ap.eagleIdentityP2 || 'We help institutions detect compliance risks early, navigate multi-jurisdictional hurdles with clarity, and soar with confidence into new regulated markets.'}
-            </p>
-            <div className="pt-2 border-t border-white/20 flex items-center justify-between text-xs font-mono text-blue-200">
-              <span>{t.brand?.separated || 'Brand Ethos'}</span>
-              <span className="font-bold">{ap.brandEthos || 'Authoritative · Practical · Trusted'}</span>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {expertDisciplines.map((expert) => (
+              <div 
+                key={expert.id}
+                className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[#101E42] border border-[#D0E4FE] dark:border-[#1E3778] hover:border-[#334DAF] dark:hover:border-[#7096D1] transition-all shadow-md space-y-4 text-left rtl:text-right"
+              >
+                <div className="flex items-center justify-between">
+                  <span className="text-[10px] font-mono font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-[#334DAF]/10 dark:bg-[#7096D1]/15 text-[#334DAF] dark:text-[#7096D1] border border-[#334DAF]/20 dark:border-[#7096D1]/30">
+                    {expert.category}
+                  </span>
+                  <span className="text-xs font-mono text-slate-500 dark:text-slate-400">
+                    {expert.badge}
+                  </span>
+                </div>
+
+                <h3 className="text-xl font-bold text-slate-900 dark:text-white">
+                  {expert.title}
+                </h3>
+
+                <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                  {expert.desc}
+                </p>
+
+                <div className="pt-3 border-t border-[#D0E4FE]/70 dark:border-[#1E3778]/70 text-xs text-[#334DAF] dark:text-[#7096D1] font-semibold flex items-center gap-1.5">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-500" />
+                  <span>Integrated Cross-Disciplinary Engagement Lead</span>
+                </div>
+              </div>
+            ))}
           </div>
+
+          <div className="mt-10 text-center">
+            <button
+              onClick={() => onNavigate('team')}
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-[#091F5C] to-[#334DAF] hover:from-[#1E3778] hover:to-[#2B4E9E] text-white font-bold text-xs shadow-md hover:shadow-lg transition-all cursor-pointer"
+            >
+              <span>Meet the Leadership Team & Senior Directors</span>
+              <ArrowRight className="w-3.5 h-3.5 rtl:rotate-180" />
+            </button>
+          </div>
+
         </div>
       </section>
 
-      {/* 3. Our Values */}
-      <section className="py-14 lg:py-20 bg-surface-subtle border-y border-surface-border">
+      {/* 4. SUBSECTION 3: OUR APPROACH */}
+      <section id="our-approach" className="py-14 lg:py-20 w-full bg-surface-base dark:bg-[#101E42] border-b border-surface-border dark:border-[#1E3778]/60 scroll-mt-20 transition-colors">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-10">
+          <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
             <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#334DAF] dark:text-[#7096D1]">
-              {ap.valuesTag || 'Core Principles'}
+              SUBSECTION 03 // METHODOLOGY
             </span>
-            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mt-1">
-              {ap.valuesTitle || 'Our Professional Values'}
+            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">
+              Our Approach
             </h2>
+            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+              Our engagements follow a structured six-step methodology that moves from foundational business diagnostic to tailored design, frontline implementation, operational support, and ongoing review.
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {brandValues.map((val, idx) => {
-              const Icon = val.icon;
-              return (
-                <div 
-                  key={idx}
-                  className="p-6 rounded-2xl glass-panel border border-surface-border hover:border-[#334DAF] dark:hover:border-[#7096D1] transition-all space-y-2.5 shadow-sm text-left rtl:text-right"
-                >
-                  <div className="w-10 h-10 rounded-xl bg-[#334DAF]/10 dark:bg-[#7096D1]/15 text-[#334DAF] dark:text-[#7096D1] flex items-center justify-center">
-                    <Icon className="w-5 h-5" />
-                  </div>
-                  <h3 className="text-sm font-bold text-slate-900 dark:text-white">
-                    {val.title}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {ourApproach.map((step) => (
+              <div 
+                key={step.step}
+                className="p-6 rounded-2xl bg-white dark:bg-[#152754] border border-[#D0E4FE] dark:border-[#223E84] flex flex-col justify-between space-y-4 text-left rtl:text-right shadow-sm hover:shadow-md transition-all"
+              >
+                <div className="space-y-2">
+                  <span className="text-2xl font-mono font-bold text-[#334DAF] dark:text-[#7096D1]">
+                    {step.step}
+                  </span>
+                  <h3 className="text-base font-bold text-slate-900 dark:text-white">
+                    {step.title}
                   </h3>
                   <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-                    {val.desc}
+                    {step.desc}
                   </p>
                 </div>
-              );
-            })}
+                <div className="pt-2 border-t border-[#D0E4FE]/70 dark:border-[#223E84]/70 text-[10px] font-mono text-slate-500 dark:text-slate-400 uppercase">
+                  Phase {step.step} Milestone
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* 4. Interactive Pipeline Console (Methodology) */}
-      <section className="py-16 lg:py-24 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-2xl mx-auto mb-12">
-          <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#334DAF] dark:text-[#7096D1]">
-            {ap.methodologyTag || 'Interactive Methodology'}
-          </span>
-          <h2 className="text-2xl sm:text-4xl font-bold text-slate-900 dark:text-white mt-1">
-            {ap.methodologyTitle || 'Execution Pipeline & Delivery Architecture'}
+      {/* 5. SUBSECTION 4: JURISDICTIONS */}
+      <section id="jurisdictions" className="py-14 lg:py-20 w-full bg-[#F4F7FC] dark:bg-[#0B142B] border-b border-surface-border dark:border-[#1E3778]/60 scroll-mt-20 transition-colors">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
+            <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#334DAF] dark:text-[#7096D1]">
+              SUBSECTION 04 // CROSS-BORDER COVERAGE
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">
+              Jurisdictions
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+              EagleComply supports businesses across the European Union, Gulf Cooperation Council markets, Pakistan, Australia and the United States. Cross border work is scoped around the activity, customer base, regulatory perimeter and professional requirements of the relevant jurisdiction.
+            </p>
+          </div>
+
+          <div className="space-y-6">
+            {jurisdictionCoverage.map((j) => (
+              <div 
+                key={j.id}
+                className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[#101E42] border border-[#D0E4FE] dark:border-[#1E3778] space-y-3 text-left rtl:text-right shadow-md"
+              >
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-[#D0E4FE]/70 dark:border-[#1E3778]/70">
+                  <div className="flex items-center gap-3">
+                    <span className="text-2xl">{j.flag}</span>
+                    <h3 className="text-lg font-bold text-slate-900 dark:text-white">
+                      {j.name}
+                    </h3>
+                  </div>
+                  <span className="text-xs font-mono text-[#334DAF] dark:text-[#7096D1] font-semibold">
+                    {j.tag}
+                  </span>
+                </div>
+
+                <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
+                  {j.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+
+        </div>
+      </section>
+
+      {/* 6. Bottom Consultation CTA */}
+      <section className="py-16 sm:py-20 w-full bg-gradient-to-br from-[#091F5C] via-[#102468] to-[#1E3778] text-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 text-white text-xs font-mono font-bold tracking-wider uppercase border border-white/20">
+            <Calendar className="w-3.5 h-3.5 text-blue-300" />
+            <span>START WITH THE BUSINESS MODEL, JURISDICTION AND OUTCOME</span>
+          </div>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
+            Ready to Scope Your Compliance, Legal or Finance Requirement?
           </h2>
-          <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-2">
-            {ap.methodologyDesc || 'Click on any phase to inspect our interactive delivery stages, workflows, and tangible compliance deliverables.'}
+          <p className="text-xs sm:text-sm md:text-base text-blue-100/90 max-w-2xl mx-auto leading-relaxed">
+            Start with the business model, jurisdiction and outcome you need to achieve. An initial consultation is used to understand the issue, identify the relevant workstream and define the scope of specialist support required.
           </p>
-        </div>
-
-        <PipelineConsole />
-      </section>
-
-      {/* 6. Call to Action */}
-      <section className="py-14 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-        <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
-          {ap.ctaTitle || 'Ready to Elevate Your Institutional Compliance?'}
-        </h2>
-        <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 max-w-xl mx-auto">
-          {ap.ctaDesc || 'Contact EagleComply today to schedule a confidential discussion with our senior compliance practitioners.'}
-        </p>
-        <div className="pt-2 flex justify-center gap-3">
-          <button
-            onClick={onOpenConsultation}
-            className="px-6 py-2.5 rounded-xl bg-[#091F5C] dark:bg-[#334DAF] text-white text-xs font-bold shadow-lg hover:opacity-90 transition-all flex items-center gap-2 cursor-pointer"
-          >
-            <Calendar className="w-3.5 h-3.5" />
-            <span>{ap.bookConsultation || t.nav?.bookConsultation || 'Book a Consultation'}</span>
-          </button>
-          <button
-            onClick={() => onNavigate('contact')}
-            className="px-6 py-2.5 rounded-xl glass-panel border border-surface-border text-slate-800 dark:text-white text-xs font-bold hover:bg-surface-subtle transition-all cursor-pointer"
-          >
-            {ap.contactUs || 'Contact Us'}
-          </button>
+          <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
+            <button
+              onClick={() => onOpenConsultation ? onOpenConsultation() : onNavigate('contact')}
+              className="px-8 py-3.5 rounded-xl bg-white text-[#091F5C] hover:bg-slate-100 font-bold text-xs shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer flex items-center gap-2"
+            >
+              <Calendar className="w-4 h-4 text-[#334DAF]" />
+              <span>Book a Consultation</span>
+            </button>
+            <button
+              onClick={() => onNavigate('contact')}
+              className="px-8 py-3.5 rounded-xl bg-transparent hover:bg-white/10 text-white border border-white/30 font-semibold text-xs transition-all cursor-pointer flex items-center gap-2"
+            >
+              <span>Contact Our Practice</span>
+              <ArrowRight className="w-4 h-4" />
+            </button>
+          </div>
         </div>
       </section>
+
     </div>
   );
 }

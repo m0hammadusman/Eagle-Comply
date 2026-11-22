@@ -5,7 +5,7 @@
     "services": "Services",
     "industries": "Industries",
     "insights": "Insights",
-    "resources": "Resources",
+    "resources": "Guides & Resources",
     "contact": "Contact",
     "solutions": "Services",
     "globalCompliance": "Jurisdictions",
@@ -17,10 +17,10 @@
     "bookConsultation": "Book a Consultation"
   },
   "hero": {
-    "badge": "AML · Regulatory · Risk · Legal Compliance",
-    "h1": "Navigate Compliance",
-    "h1Span": "with Confidence.",
-    "desc": "We simplify complex AML, regulatory, risk and legal compliance requirements into practical solutions that protect your business and support sustainable growth.",
+    "badge": "Financial Crime Compliance · Regulatory & Commercial Advisory · Accounting & Finance",
+    "h1": "Compliance, regulation and finance for businesses operating in complex markets.",
+    "h1Span": "",
+    "desc": "EagleComply brings together financial crime compliance, regulatory and commercial advisory, and accounting and finance expertise. We support regulated and growth focused businesses with the frameworks, controls, documentation and operational support required to enter markets, manage risk, strengthen governance and run reliable business processes.",
     "bookBtn": "Book a Consultation",
     "quoteBtn": "Explore Our Services"
   },
@@ -155,8 +155,8 @@
     "book": "Book Session"
   },
   "aboutPage": {
-    "tag": "INSTITUTIONAL HERITAGE & MANDATE",
-    "title": "About Eagle Compliance",
+    "tag": "ABOUT EAGLECOMPLY",
+    "title": "Who We Are & Our Multidisciplinary Model",
     "subtitle": "We are a specialized regulatory intelligence practice uniting algorithmic scientists, former supervisory enforcement officers, and international legal scholars.",
     "dossier": "INSTITUTIONAL DOSSIER NO. EC-2026-HERITAGE",
     "established": "ESTABLISHED: LONDON & BRUSSELS (2019)",
@@ -242,7 +242,15 @@
         "desc": "Encrypted. Controlled. Always."
       }
     ],
-    "certificationsTitle": "CERTIFICATIONS & PARTNERSHIPS"
+    "certificationsTitle": "CERTIFICATIONS & PARTNERSHIPS",
+    "description": "EagleComply is a specialist advisory firm supporting businesses that operate in regulated markets or require stronger compliance, governance, commercial and finance foundations. Our work combines financial crime expertise, regulatory and commercial analysis, and accounting and finance capability in a single multidisciplinary model.",
+    "whoWeAreTitle": "Who We Are",
+    "whoWeAreP1": "EagleComply is built around practical specialist expertise. Two members of the team focus on AML/CFT, KYC, banking compliance, sanctions, transaction monitoring and financial crime operations. A regulatory and commercial specialist covers financial services regulation, FinTech, licensing, commercial contracts, negotiation, terms and conditions, governance documentation and digital assets. The accounting and finance practice is led by a UK based Chartered Accountant with expertise in accounting, reporting, payroll, statutory compliance, finance support and internal controls.",
+    "whoWeAreP2": "This combination reflects the way regulated businesses actually operate. A licensing project can require an AML/CFT framework, customer documentation, commercial agreements, governance arrangements and financial information. A remediation project can require policy changes, file reviews, operational support and stronger internal controls. EagleComply brings these workstreams together so that the final solution is consistent across the business.",
+    "whoWeAreP3": "Our work is proportionate to the size, complexity and risk profile of the organisation. We focus on clear analysis, usable documentation, defined responsibilities and controls that management and operational teams can apply in practice.",
+    "ourExpertsTitle": "Our Experts",
+    "ourApproachTitle": "Our Approach",
+    "jurisdictionsTitle": "Jurisdictions"
   },
   "caseStudiesPage": {
     "tag": "PROVEN ENTERPRISE OUTCOMES",
@@ -473,8 +481,8 @@
     "name": "EagleComply",
     "separated": "Eagle Comply",
     "tagline": "Complex Regulations. Clear Solutions. Confident Growth.",
-    "subphrase": "AML | Regulatory | Risk | Legal Compliance",
-    "disclaimer": "EagleComply provides independent regulatory compliance advisory, risk management consulting, and legal research support. Website content is for general informational purposes only and does not constitute jurisdiction-specific formal legal representation or statutory financial advice."
+    "subphrase": "Financial Crime Compliance · Regulatory & Commercial Advisory · Accounting & Finance",
+    "disclaimer": "EagleComply is an independent regulatory compliance, risk management, and legal advisory consultancy. Materials on eaglecomply.com are provided for informational and educational purposes only and do not constitute formal legal or financial advice without an executed bilateral engagement agreement."
   },
   "targetClients": {
     "tag": "Who We Help",

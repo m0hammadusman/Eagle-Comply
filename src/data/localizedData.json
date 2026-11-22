@@ -711,6 +711,132 @@
           "Building foundational AML, privacy, and customer verification processes"
         ],
         "deliverables": []
+      },
+      "fintech-payments": {
+        "name": "FinTech & Payments",
+        "heroTag": "Scalable FinTech & Payment Governance",
+        "overview": "FinTech and payments businesses need regulatory, financial crime, commercial and finance structures that can scale with the product. EagleComply supports payment services, technology enabled financial products and related platforms across licensing, AML/CFT, customer onboarding, sanctions, transaction monitoring, contracts and reporting.\n\nOur work connects the regulatory perimeter with the customer journey, payment flow, third party model, partner relationships, compliance governance and finance requirements of the business.",
+        "deliverables": [
+          "Regulatory perimeter and licensing",
+          "AML/CFT frameworks and risk assessments",
+          "KYC, KYB and customer onboarding",
+          "Sanctions and transaction monitoring",
+          "Payment and technology contracts",
+          "Customer terms and regulatory documentation",
+          "Market entry and cross border analysis",
+          "Accounting, reporting and finance operations"
+        ],
+        "challenges": [
+          "Scaling customer onboarding and automated KYC/KYB without increasing fraud rates",
+          "Meeting multi-jurisdiction payment licensing thresholds across the UK, EU, and APAC",
+          "Managing partner bank compliance expectations and safeguarding requirements",
+          "Complying with Travel Rule and cross-border settlement transparency standards"
+        ]
+      },
+      "banks-financial-institutions": {
+        "name": "Banks & Financial Institutions",
+        "heroTag": "Institutional Banking & Supervisory Controls",
+        "overview": "Banks and financial institutions operate mature control environments but regularly require specialist support for reviews, remediation, regulatory change and operational capacity. EagleComply provides targeted assistance across AML/CFT, KYC, sanctions, transaction monitoring, investigations, quality assurance and governance.\n\nEngagements can focus on a defined control, a customer portfolio, an investigation backlog, a remediation programme or a broader financial crime workstream. Work is structured to fit the institution’s existing policies, systems, lines of defence and decision authorities.",
+        "deliverables": [
+          "AML/CFT framework and risk assessment review",
+          "KYC and EDD remediation",
+          "Sanctions and screening controls",
+          "Transaction monitoring and investigations",
+          "Control testing and quality assurance",
+          "Regulatory change implementation",
+          "Managed financial crime support",
+          "Governance and regulatory documentation"
+        ],
+        "challenges": [
+          "Clearing transaction monitoring alert backlogs and conducting deep-dive investigations",
+          "Managing high-risk customer remediation (EDD, beneficial ownership, source of wealth)",
+          "Complying with rapid regulatory change across cross-border supervisory authorities",
+          "Establishing defensible Three Lines of Defense accountability and board reporting"
+        ]
+      },
+      "remittance-money-services": {
+        "name": "Remittance & Money Services",
+        "heroTag": "Cross-Border Remittance & Corridor Risk",
+        "overview": "Remittance and money services businesses operate high volume cross border transaction models with significant exposure to customer, corridor, sanctions and partner risk. EagleComply supports the compliance and commercial framework around onboarding, monitoring, reporting, licensing and partner relationships.\n\nThe service reflects the operational realities of remittance, including rapid customer journeys, multiple payout routes, cross border transaction flows, banking relationships and regulatory reporting.",
+        "deliverables": [
+          "AML/CFT programmes and risk assessments",
+          "KYC, KYB and enhanced due diligence",
+          "Sanctions and payment screening",
+          "Transaction monitoring and investigations",
+          "Licensing and regulatory applications",
+          "Bank and payout partner agreements",
+          "Regulatory reporting and documentation",
+          "Accounting and management reporting"
+        ],
+        "challenges": [
+          "Securing and retaining correspondent banking relationships amid industry de-risking",
+          "Managing high-volume corridor sanctions screening with low latency",
+          "Agent and sub-agent network oversight, audits, and compliance training",
+          "Fulfilling local regulatory reporting across multi-currency payout channels"
+        ]
+      },
+      "digital-assets-crypto": {
+        "name": "Digital Assets & Crypto",
+        "heroTag": "Virtual Asset Regulatory & Travel Rule Architecture",
+        "overview": "Digital asset businesses face evolving requirements across authorisation, AML/CFT, sanctions, custody, customer treatment and cross border activity. EagleComply combines digital asset regulatory analysis with financial crime controls, governance documentation and commercial support.\n\nThe work covers exchanges, wallet providers, custodians, token issuers, stablecoin models, cryptoasset service providers, DeFi structures and other blockchain based financial services.",
+        "deliverables": [
+          "Cryptoasset regulatory perimeter analysis",
+          "CASP and VASP authorisation support",
+          "MiCA and jurisdiction specific compliance",
+          "Crypto AML/CFT frameworks",
+          "Wallet, exchange and custody models",
+          "Sanctions and blockchain related risk controls",
+          "Stablecoins, tokenisation and DeFi",
+          "Commercial and governance documentation"
+        ],
+        "challenges": [
+          "Implementing FATF Travel Rule protocols and counterparty VASP verification",
+          "Preparing comprehensive authorization packs under EU MiCA and UK/ADGM regimes",
+          "Managing illicit wallet exposure, mixing service risks, and blockchain forensics",
+          "Drafting robust custody terms, token risk disclosures, and governance policies"
+        ]
+      },
+      "lending-credit": {
+        "name": "Lending & Credit",
+        "heroTag": "Credit Operations, Disclosures & Control Frameworks",
+        "overview": "Lending and credit businesses need clear alignment between regulatory permissions, customer onboarding, credit processes, AML/CFT controls, disclosures, contracts and reporting. EagleComply supports traditional and technology enabled lending models across these connected areas.\n\nThe service covers regulatory analysis, licensing preparation, KYC and customer controls, contractual documentation, governance policies and finance reporting, with emphasis on consistent treatment from application through the life of the credit relationship.",
+        "deliverables": [
+          "Regulatory perimeter and licensing support",
+          "KYC, KYB and customer onboarding",
+          "AML/CFT and sanctions controls",
+          "Customer terms, disclosures and agreements",
+          "Third party and technology contracts",
+          "Governance and compliance policies",
+          "Financial reporting and management accounts",
+          "Internal controls and audit readiness"
+        ],
+        "challenges": [
+          "Aligning statutory lending disclosures with digital customer journeys",
+          "Establishing robust credit risk assessment alongside AML customer due diligence",
+          "Managing loan documentation, securitization agreements, and supplier contracts",
+          "Structuring periodic management accounts and statutory audit readiness"
+        ]
+      },
+      "professional-services": {
+        "name": "Professional Services & Other Regulated Businesses",
+        "heroTag": "Proportionate Compliance for Professional Practices",
+        "overview": "Professional services and other regulated businesses need compliance arrangements that are proportionate to their services, customers, transaction exposure and professional obligations. EagleComply supports firms that require structured AML/CFT, KYC, sanctions, governance, documentation and finance controls without the operating scale of a large financial institution.\n\nThe work focuses on practical procedures, clear ownership and documentation that staff can apply consistently across client onboarding, screening, risk assessment, training, monitoring and ongoing compliance activity.",
+        "deliverables": [
+          "AML/CFT frameworks and risk assessments",
+          "Client due diligence and onboarding",
+          "Sanctions and PEP screening",
+          "Policies, procedures and training",
+          "Compliance reviews and remediation",
+          "Regulatory documentation",
+          "Internal controls and finance processes",
+          "Ongoing compliance and accounting support"
+        ],
+        "challenges": [
+          "Designing proportionate compliance controls that don’t overwhelm operational staff",
+          "Managing source of wealth and beneficial ownership verification for high-value clients",
+          "Maintaining ongoing sanctions screening and PEP identification procedures",
+          "Ensuring clean bookkeeping, financial reporting, and tax compliance"
+        ]
       }
     },
     "countries": {
